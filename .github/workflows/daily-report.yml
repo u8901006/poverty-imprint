@@ -24,7 +24,7 @@ jobs:
           fetch-depth: 0
 
       - name: Setup Node.js 24
-        uses: actions/setup-node@cdca7365b2dadb8aad0a3bc9cb1d25c2b2c4dc7e  # v4.3.0
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020  # v4.4.0
         with:
           node-version: "24"
 
@@ -50,12 +50,12 @@ jobs:
       - name: Check papers data
         id: papers
         run: |
-          if [ -f papers.json ] && python3 -c "import json; d=json.load(open('papers.json')); print(d.get('count',0))" 2>/dev/null; then
-            COUNT=$(node -e "const d=require('./papers.json');console.log(d.count||0)")
+          if [ -f papers.json ]; then
+            COUNT=$(node -e "import{readFileSync}from'fs';const d=JSON.parse(readFileSync('papers.json'));console.log(d.count||0)")
             echo "count=$COUNT" >> "$GITHUB_OUTPUT"
           else
             echo "count=0" >> "$GITHUB_OUTPUT"
-            node -e "require('fs').writeFileSync('papers.json',JSON.stringify({date:'${{ steps.date.outputs.target }}',count:0,papers:[]},null,2))"
+            node -e "import{writeFileSync}from'fs';writeFileSync('papers.json',JSON.stringify({date:'${{ steps.date.outputs.target }}',count:0,papers:[]},null,2))"
           fi
 
       - name: Generate report with Zhipu AI
