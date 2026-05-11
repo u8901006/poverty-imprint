@@ -1,0 +1,5 @@
+node_modules/
+papers.json
+.env
+.env.local
+.DS_Store
