@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-05-12</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-05-12">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-05-12">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-05-12</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 9 篇文獻</span>
+      <span class="stat-item">&#128193; 5 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本批九篇文獻涵蓋從生物微觀機制到宏觀社會決定因素，深刻揭示「貧窮印記」與健康不平等的交織。神經發展研究顯示，南非處境不利兒童與先天性心臟病兒童受早期逆境顯著影響，突顯產前心理健康之關鍵。老化與認知領域證實，非經濟社會剝奪損害晚年認知，憂鬱症透過血脂異常加速生物老化，慢性病（如鐮刀型細胞貧血）則導致早發性虛弱。心理健康分析則展現社會人口結構與公共危機如何加劇群體心理不平等。臨床上，高血壓患者專屬憂鬱篩檢工具提升了身心整合照護可行性。最後，塞內加爾地下水研究點出環境資源作為底層健康決定因素的價值。整體印證了生物嵌入與社會環境對健康的深遠影響。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">大腦發展與神經科學</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:67%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">認知與行為</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">3 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">表觀遺傳與生物老化</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:67%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">大腦發展與神經科學 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42116223" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Pilot Feasibility Stud</span>
+      <span class="paper-date">2026 May 12</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs40814-026-01790-1" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Identifying biomarkers of neurodevelopmental and mental health outcomes in a prospective longitudinal cohort of South African children: design and feasibility of the Safe Passage BONO study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">在南非兒童前瞻性縱向隊列中識別神經發展與心理健康結果的生物標記物：安全通道BONO研究的設計與可行性。</p>
+    <p class="paper-authors">Springer PE, Brink LT, Potter M, Mackay W et al.</p>
+    <p class="paper-abstract">本研究旨在介紹南非兒童「安全通道BONO」研究的設計與可行性。該前瞻性縱向隊列研究針對南非兒童，旨在識別神經發展與心理健康結果的生物標記物。研究探討了在資源受限環境中，早期生活壓力與逆境如何透過生物途徑影響兒童的大腦發展。透過收集多維度數據，包括臨床評估與生物樣本，研究驗證了在該特定人群進行深度生物嵌入研究的可行性，為未來探討貧窮與健康不平等的機制奠定基礎，有助於制定早期預防介入策略。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">南非兒童</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">早期生活壓力與逆境</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">神經發展與心理健康生物標記物的識別與研究可行性</div></div>
+</div>
+    <ul class="findings"><li>成功建立南非兒童前瞻性縱向隊列研究</li><li>驗證在資源受限環境中收集生物標記物的可行性</li><li>為探討貧窮與神經發展的關聯提供基礎框架</li></ul>
+    <div class="keywords"><span class="keyword-pill">生物標記物</span><span class="keyword-pill">神經發展</span><span class="keyword-pill">縱向研究</span><span class="keyword-pill">南非兒童</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42115723" style="animation-delay:0.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">Pediatr Res</span>
+      <span class="paper-date">2026 May 12</span>
+      <a class="paper-doi" href="https://doi.org/10.1038%2Fs41390-026-05051-y" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Prenatal parental mental health and neurodevelopment in children with congenital heart disease.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">產前父母心理健康與患有先天性心臟病兒童的神經發展。</p>
+    <p class="paper-authors">Calderon J, Martins S, Deninotti J, Derridj N et al.</p>
+    <p class="paper-abstract">本研究探討產前父母心理健康狀態對患有先天性心臟病（CHD）兒童神經發展的影響。先天性心臟病兒童本身面臨較高的神經發展遲緩風險，而父母的產前心理壓力可能進一步加劇此風險。研究透過追蹤評估，分析產前抑鬱、焦慮等心理健康指標與兒童後續神經發展表現之間的關聯。結果顯示，產前父母的心理健康狀況是CHD兒童神經發展預後的關鍵因素，強調在兒童心臟病臨床照護中，必須將父母的產前心理支持納入常规管理，以減少跨代傳遞的負面影響。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">患有先天性心臟病的兒童及其父母</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">產前父母心理健康狀態（如壓力、焦慮）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無明確對照組（關聯性分析）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">兒童的神經發展結果</div></div>
+</div>
+    <ul class="findings"><li>產前父母心理健康與CHD兒童神經發展顯著相關</li><li>父母產前壓力可能加劇CHD兒童的神經發展遲緩風險</li><li>建議將產前心理支持納入CHD家族的常规照護</li></ul>
+    <div class="keywords"><span class="keyword-pill">產前心理健康</span><span class="keyword-pill">先天性心臟病</span><span class="keyword-pill">神經發展</span><span class="keyword-pill">跨代影響</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">認知與行為 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42115891" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Alzheimers Dis</span>
+      <span class="paper-date">2026 May 11</span>
+      <a class="paper-doi" href="https://doi.org/10.1177%2F13872877261449395" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Non-economic social deprivation and cognitive functioning later in life: Results from the DELCODE study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">非經濟性社會剝奪與晚年認知功能：來自DELCODE研究的結果。</p>
+    <p class="paper-authors">Rodriguez FS, Kleineidam L, Hoffmann W, Peters O et al.</p>
+    <p class="paper-abstract">本研究利用DELCODE研究的數據，探討非經濟性的社會剝奪與晚年認知功能之間的關聯。不同於傳統聚焦於收入或財富的經濟貧困指標，本研究強調社會孤立、缺乏支持等非經濟維度的社會剝奪對認知老化的影響。研究結果表明，非經濟社會剝奪與晚年較差的認知功能表現顯著相關，且這種關聯獨立於經濟狀況與其他潛在混淆變項。此發現突顯了在評估老年認知功能衰退（如阿茲海默症）風險時，社會融入度與非經濟社會資源的重要性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">DELCODE研究中的老年參與者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">非經濟性社會剝奪（如社會孤立）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低度非經濟社會剝奪者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">晚年的認知功能表現</div></div>
+</div>
+    <ul class="findings"><li>非經濟社會剝奪與晚年認知功能下降顯著相關</li><li>該關聯獨立於傳統的經濟貧困指標</li><li>社會孤立是老年認知衰退的重要風險因子</li></ul>
+    <div class="keywords"><span class="keyword-pill">社會剝奪</span><span class="keyword-pill">認知功能</span><span class="keyword-pill">老化</span><span class="keyword-pill">DELCODE研究</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">3 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42114859" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMJ Open</span>
+      <span class="paper-date">2026 May 11</span>
+      <a class="paper-doi" href="https://doi.org/10.1136%2Fbmjopen-2025-109727" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Clustering socio-demographic of Indonesian adolescents and their associations with depression: a cross-sectional study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">印尼青少年社會人口特徵的聚類及其與憂鬱症的關聯：一項橫斷面研究。</p>
+    <p class="paper-authors">Murti FAK, Nursalam N, Kustanti CY, McKenna L et al.</p>
+    <p class="paper-abstract">本橫斷面研究旨在探討印尼青少年社會人口特徵的聚類分佈，及其與憂鬱症狀的關聯。研究透過聚類分析將青少年依據社會人口學變項（如家庭結構、父母教育水平、居住地等）進行分群，並評估各群體的憂鬱症盛行率。結果發現，具有特定社會人口特徵（如低社經地位或特定家庭結構）的青少年群體，其憂鬱症狀的風險顯著較高。此研究揭示了在開發中國家，社會決定因素如何透過群體聚類的方式影響青少年心理健康，為針對性校園或社區心理介入提供了實證基礎。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">印尼青少年</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">不同的社會人口特徵聚類</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同社會人口聚類群組間的比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">憂鬱症狀的盛行率與嚴重程度</div></div>
+</div>
+    <ul class="findings"><li>印尼青少年可依社會人口特徵分為不同風險群組</li><li>低社經地位相關聚類的青少年憂鬱症風險最高</li><li>社會決定因素對青少年心理健康的影響具有群聚效應</li></ul>
+    <div class="keywords"><span class="keyword-pill">青少年憂鬱症</span><span class="keyword-pill">社會人口學</span><span class="keyword-pill">聚類分析</span><span class="keyword-pill">社會決定因素</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42113880" style="animation-delay:0.88s">
+    <div class="paper-meta">
+      <span class="paper-journal">PLoS One</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1371%2Fjournal.pone.0343552" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title">Spatiotemporal analysis of psychoactive drug consumption in Brazil during the COVID-19 pandemic.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">COVID-19疫情期間巴西精神活性藥物消耗的時空分析。</p>
+    <p class="paper-authors">Freitas EL, Erbisti RS, Grinberg-Weller B, Pinto DCC et al.</p>
+    <p class="paper-abstract">本研究針對巴西在COVID-19疫情期間的精神活性藥物消耗量進行時空分析。疫情帶來的社會孤立與經濟不確定性顯著影響了公共心理健康，本研究利用時空模型探討抗憂鬱劑、抗焦慮劑等藥物在不同地區與時間點的消耗模式。結果顯示，疫情期間精神活性藥物的消耗量出現顯著的區域性與時間性波動，反映出疫情對不同社區心理壓力的不均衡影響。此研究提供了宏觀視角，說明重大公共衛生危機如何加劇既有的心理健康不平等。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">巴西各地理區域的居民（群體層級數據）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">COVID-19疫情及其帶來的社會經濟影響</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">疫情前或不同地理區域間的比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">精神活性藥物的消耗量時空分佈</div></div>
+</div>
+    <ul class="findings"><li>疫情期間巴西精神活性藥物消耗量呈現顯著時空差異</li><li>藥物消耗模式反映了不同地區承受的疫情心理壓力不均</li><li>公共衛生危機加劇了心理健康資源需求的區域不平衡</li></ul>
+    <div class="keywords"><span class="keyword-pill">精神活性藥物</span><span class="keyword-pill">時空分析</span><span class="keyword-pill">COVID-19</span><span class="keyword-pill">心理健康不平等</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42116323" style="animation-delay:0.96s">
+    <div class="paper-meta">
+      <span class="paper-journal">Medicine (Baltimore)</span>
+      <span class="paper-date">2026 May 8</span>
+      <a class="paper-doi" href="https://doi.org/10.1097%2FMD.0000000000048593" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Development, validation, and visualization of a novel depression screening tool for hypertensive patients based on NHANES data: A cross-sectional study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">基於NHANES數據開發、驗證與視覺化高血壓患者新型憂鬱症篩檢工具：一項橫斷面研究。</p>
+    <p class="paper-authors">Tian M, Liu Q, Guo J, Chen W et al.</p>
+    <p class="paper-abstract">本研究基於NHANES數據，旨在開發、驗證並視覺化一種專門針對高血壓患者的新型憂鬱症篩檢工具。高血壓患者因長期疾病壓力與血管病變，常合併較高的憂鬱症風險，但現有通用篩檢工具可能未能充分考慮其特異性。研究透過大規模人口數據分析，篩選出與高血壓患者憂鬱症高度相關的特徵變項，建立了一個具備高敏感度與特異度的預測模型。該工具的視覺化呈現（如列線圖）有助於基層醫療人員快速識別高風險個案，促進慢性病管理中的身心整合照護。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">高血壓患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">新型憂鬱症篩檢工具（基於NHANES數據建立）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">傳統篩檢方法或金標準診斷</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">篩檢工具的敏感度、特異度與預測效能</div></div>
+</div>
+    <ul class="findings"><li>成功開發並驗證針對高血壓患者的專屬憂鬱症篩檢工具</li><li>該工具在NHANES數據集中展現出良好的預測效能</li><li>視覺化列線圖有利於臨床基層快速篩檢應用</li></ul>
+    <div class="keywords"><span class="keyword-pill">憂鬱症篩檢</span><span class="keyword-pill">高血壓</span><span class="keyword-pill">NHANES</span><span class="keyword-pill">列線圖</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">表觀遺傳與生物老化 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42113055" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Eur Arch Psychiatry Clin Neurosci</span>
+      <span class="paper-date">2026 May 11</span>
+      <a class="paper-doi" href="https://doi.org/10.1007%2Fs00406-026-02258-2" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Dyslipidemia as a key nexus linking depression and aging acceleration: unraveling the mediating role of lipid accumulation product (LAP).</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">血脂異常作為連結憂鬱症與老化加速的關鍵樞紐：剖析脂質累積產物（LAP）的中介角色。</p>
+    <p class="paper-authors">Zhang L, Yang Q, Xu C, Hu Y et al.</p>
+    <p class="paper-abstract">本研究探討血脂異常作為連結憂鬱症與老化加速之間關鍵樞紐的角色，並剖析脂質累積產物（LAP）的中介效應。研究針對憂鬱症患者進行生物指標分析，發現憂鬱症狀與生物老化加速顯著相關，而血脂異常在其中扮演著核心的中介角色。LAP作為衡量異常脂肪分佈的指標，有效解釋了憂鬱症導致身體機能退化與細胞老化的部分路徑。此發現從代謝與生理學角度，揭示了心理健康不佳如何透過生物嵌入機制直接加速身體老化，為精神與身體共病的預防提供了新靶點。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">具備完整生物指標數據的研究對象（含憂鬱症患者）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">憂鬱症狀與血脂異常（LAP）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無憂鬱症或低LAP之對照</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">生物老化加速指標</div></div>
+</div>
+    <ul class="findings"><li>憂鬱症與生物老化加速顯著相關</li><li>血脂異常是憂鬱症導致老化加速的關鍵中介變項</li><li>脂質累積產物（LAP）可有效量化此代謝風險路徑</li></ul>
+    <div class="keywords"><span class="keyword-pill">憂鬱症</span><span class="keyword-pill">生物老化加速</span><span class="keyword-pill">血脂異常</span><span class="keyword-pill">脂質累積產物</span></div>
+  </div>
+  <div class="paper-card" data-pmid="41926751" style="animation-delay:1.28s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Gerontol A Biol Sci Med Sci</span>
+      <span class="paper-date">2026 May 7</span>
+      <a class="paper-doi" href="https://doi.org/10.1093%2Fgerona%2Fglag091" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Frailty phenotype in adults with sickle cell disease.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">鐮刀型細胞貧血成人患者中的虛弱表型。</p>
+    <p class="paper-authors">Oyedeji CI, Mohamed RE, Faldowski R, Callaway T et al.</p>
+    <p class="paper-abstract">本研究探討鐮刀型細胞貧血（SCD）成人患者中的虛弱表型。SCD是一種慢性遺傳性血液疾病，患者常因慢性溶血、發炎與缺氧而經歷早發性器官損傷，導致類似老化的生理衰退。研究透過評估肌力、體力活動、疲勞感等指標，識別SCD患者中的虛弱表型。結果顯示，相較於一般同齡人，SCD成人患者展現出極高的虛弱盛行率，這反映了慢性疾病壓力如何透過生物嵌入機制導致提前老化。此研究強調將老年醫學的虛弱評估引入年輕慢性病患者的臨床重要性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">患有鐮刀型細胞貧血的成人患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">鐮刀型細胞貧血帶來的慢性生理壓力</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">一般健康同齡成人</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">虛弱表型的盛行率與特徵</div></div>
+</div>
+    <ul class="findings"><li>SCD成人患者的虛弱盛行率顯著高於一般同齡人口</li><li>慢性發炎與缺氧是導致SCD患者提前老化的主要生理機制</li><li>建議將老年醫學的虛弱評估常規應用於SCD患者照護</li></ul>
+    <div class="keywords"><span class="keyword-pill">鐮刀型細胞貧血</span><span class="keyword-pill">虛弱表型</span><span class="keyword-pill">提前老化</span><span class="keyword-pill">慢性發炎</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42113359" style="animation-delay:1.6s">
+    <div class="paper-meta">
+      <span class="paper-journal">Environ Geochem Health</span>
+      <span class="paper-date">2026 May 11</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20341.%20doi%3A%2010.1007%2Fs10653-026-03242-4" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title">Hydrogeochemical and isotopic characterization of the upper and intermediate aquifers of the casamance (Senegal).</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">塞內加爾卡薩芒斯地區上方與中間含水層的水文地球化學與同位素特徵分析。</p>
+    <p class="paper-authors">Diaw MM, Bassène I, Gueye ID, Diongue DML et al.</p>
+    <p class="paper-abstract">本研究針對塞內加爾卡薩芒斯地區的上方與中間含水層進行水文地球化學與同位素特徵分析。水資源的化學組成與安全飲用水的可及性是影響公共健康的重要環境決定因素，特別是在開發中國家的鄉村地區。研究透過採集與分析水樣，探討地下水的化學演化和水質空間分佈。結果揭示了該地區含水層的水文地球化學特徵及潛在的污染或礦化風險。雖然本研究主要為地質科學導向，但其提供的基礎數據對於評估該地區環境社會決定因素及保障社區水資源安全具有重要支撐價值。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">塞內加爾卡薩芒斯地區的地下水含水層</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">自然地質演化與人類活動影響</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">上方與中間含水層的比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">水文地球化學與同位素特徵</div></div>
+</div>
+    <ul class="findings"><li>厘清了卡薩芒斯地區上下含水層的地球化學特徵差異</li><li>識別了地下水的化學演化過程</li><li>為該地區水資源管理與環境健康風險評估提供基礎數據</li></ul>
+    <div class="keywords"><span class="keyword-pill">水文地球化學</span><span class="keyword-pill">含水層</span><span class="keyword-pill">同位素分析</span><span class="keyword-pill">環境決定因素</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
