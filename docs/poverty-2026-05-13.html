@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-05-13</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-05-13">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-05-13">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-05-13</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 10 篇文獻</span>
+      <span class="stat-item">&#128193; 4 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本匯總分析10篇關於貧窮印記及其健康影響的文獻。研究揭示社會經濟地位與不平等對心理健康的深遠影響。貧窮、移民與無家可歸顯著增加非自願住院與自殺風險，低收入癌症患者的心理狀態亦影響存活。在機制上，貧困青少年持續使用無效應對策略會增加抑鬱風險，長期脫離勞動力則損害中年認知。政策方面，英國統一福利制度損害福祉，美國勞動所得稅抵免則有助短期緩解貧困。氣候變遷與收入不平等也是新興威脅。整體而言，文獻強調除臨床介入外，解決上游社會決定因素與設計包容性福利政策是緩解貧窮印記的關鍵。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">5 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:40%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:40%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">認知與行為</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:20%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">5 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42121234" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Ann Gen Psychiatry</span>
+      <span class="paper-date">2026 May 13</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs12991-026-00668-z" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Impacts of climate change on mental health and its underlying mechanisms: an umberella review.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">氣候變遷對心理健康及其潛在機制的影響：一項綜述。</p>
+    <p class="paper-authors">Davariniamotlaghquchan A, Niazmand Z, Shafiee M, Ostadtaghizadeh A</p>
+    <p class="paper-abstract">這篇綜述分析了氣候變遷對心理健康的影響及其機制。氣候相關壓力源會直接導致創傷後壓力症、抑鬱和焦慮，也會透過貧窮、遷移等社會經濟破壞產生間接影響。兒童、低收入地區居民等弱勢群體風險更高。研究建議加強針對性的精神科介入和預防措施，並整合至公共衛生規劃中以支持弱勢族群。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">易受傷害人群（兒童、低收入地區居民）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">氣候相關壓力源</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">精神疾病（PTSD、抑鬱、焦慮）</div></div>
+</div>
+    <ul class="findings"><li>氣候變遷直接增加 PTSD、抑鬱和焦慮風險</li><li>間接途徑包括貧窮、遷移和社會網絡破壞</li><li>生態焦慮和鄉愁是環境變化的心理反應</li></ul>
+    <div class="keywords"><span class="keyword-pill">氣候變遷</span><span class="keyword-pill">心理健康</span><span class="keyword-pill">創傷後壓力症</span><span class="keyword-pill">社會經濟因素</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42119058" style="animation-delay:0.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Homosex</span>
+      <span class="paper-date">2026 May 12</span>
+      <a class="paper-doi" href="https://doi.org/10.1080%2F00918369.2026.2663837" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">An Intersectional Analysis of Intraminority Stigma Experiences and Community Involvement Among Young, Middle-Aged, and Older Gay Men.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">年輕、中年和老年男同性戀者群內污名經驗與社區參與的交叉分析。</p>
+    <p class="paper-authors">Shepherd BF, Weinstein ER, Stripling AM, Maki JL et al.</p>
+    <p class="paper-abstract">本研究探討不同年齡男同性戀者的群內污名經驗。發現年長者遭受更多年齡污名，而年輕者則遭受更多身體與性別表達污名。低社經地位與肥胖加劇了污名經歷。研究指出，污名經驗會影響社區參與，且此關聯因年齡而異，強調需要考慮年齡與社會地位的交叉性來理解心理健康。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">19至79歲男同性戀者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">群內污名（年齡、身材、性別表達等）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同年齡組別</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">社區參與度與心理健康狀況</div></div>
+</div>
+    <ul class="findings"><li>年長男同性戀者面臨更多年齡污名，年輕者面臨更多身材污名</li><li>低社經地位加劇了群內的社經污名</li><li>污名與社區參與的關係隨年齡變化</li></ul>
+    <div class="keywords"><span class="keyword-pill">男同性戀者</span><span class="keyword-pill">少數群體壓力</span><span class="keyword-pill">污名</span><span class="keyword-pill">交叉性</span><span class="keyword-pill">社區參與</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42118706" style="animation-delay:0.16s">
+    <div class="paper-meta">
+      <span class="paper-journal">Neuropsychobiology</span>
+      <span class="paper-date">2026 May 12</span>
+      <a class="paper-doi" href="https://doi.org/10.1159%2F000552408" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Evidence on Deliberate Self-Harm, Suicidal Ideation and Suicides in Pakistan: A Scoping Review of Methods, Contributing Factors and Associated Mental Disorders.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">巴基斯坦故意自殘、自殺意念和自殺的證據：方法、促成因素和相關精神障礙的範圍綜述。</p>
+    <p class="paper-authors">Talha Z, Ahmad HS, Uzakova A, Shehzadi N et al.</p>
+    <p class="paper-abstract">本範圍綜述回顧了巴基斯坦的自殺與故意自殘文獻。女性、年輕成年人和跨性別者為高風險群，主要風險因素包含家庭暴力、學業壓力與低社經地位。最常見的方法為服毒自殺。研究指出，由於缺乏監測系統，問題被低估，呼籲加強監測、限制致命手段獲取及跨部門合作以進行預防。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">巴基斯坦人口</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">風險因素（暴力、學業壓力、低社經地位）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">自殺、自殘、自殺意念</div></div>
+</div>
+    <ul class="findings"><li>女性、青年和跨性別者是高風險群體</li><li>低社經地位和家庭暴力是主要促成因素</li><li>服毒是最常見的自殺方式</li></ul>
+    <div class="keywords"><span class="keyword-pill">自殺</span><span class="keyword-pill">巴基斯坦</span><span class="keyword-pill">自殘</span><span class="keyword-pill">社會經濟地位</span><span class="keyword-pill">家庭暴力</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42087336" style="animation-delay:0.24s">
+    <div class="paper-meta">
+      <span class="paper-journal">JNCI Cancer Spectr</span>
+      <span class="paper-date">2026 May 9</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20pkag029.%20doi%3A%2010.1093%2Fjncics%2Fpkag029" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Psychosocial factors and overall mortality after prostate cancer diagnosis among predominantly low-income Black and White adults.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">主要為低收入黑人和白人成年人中前列腺癌診斷後的心理社會因素與總死亡率。</p>
+    <p class="paper-authors">DeMoulin D, Lipworth L, Aldrich MC, Russo LJ et al.</p>
+    <p class="paper-abstract">本研究探討心理社會因素對低收入前列腺癌患者死亡率的影響。在白人患者中，主要抑鬱症狀與較低的存活率顯著相關，但在黑人患者中未觀察到此關聯，甚至呈現相反趨勢。研究指出心理社會因素與死亡率之間的關聯複雜且受種族調節，建議減少死亡率的計畫應考慮患者的心理需求與人口背景。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">低收入前列腺癌患者（黑人及白人）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">心理社會因素（抑鬱症狀、控制感）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">種族差異</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">總死亡率</div></div>
+</div>
+    <ul class="findings"><li>白人患者的抑鬱症狀與較低存活率相關</li><li>黑人患者中未發現抑鬱與死亡的相同關聯</li><li>心理因素對死亡的影響存在種族差異</li></ul>
+    <div class="keywords"><span class="keyword-pill">前列腺癌</span><span class="keyword-pill">死亡率</span><span class="keyword-pill">抑鬱</span><span class="keyword-pill">心理社會因素</span><span class="keyword-pill">低收入</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42121139" style="animation-delay:0.32s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMC Womens Health</span>
+      <span class="paper-date">2026 May 12</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs12905-026-04531-x" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Exploring addiction treatment experiences among Iranian women in residential medium-term center: a qualitative study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">探討伊朗女性在中期住宿中心的成癮治療經驗：一項定性研究。</p>
+    <p class="paper-authors">Khazaee-Pool M, Taymoori P, Dolan K, Ponnet K et al.</p>
+    <p class="paper-abstract">這項定性研究探索伊朗女性在成癮康復中心的經歷。研究發現阻礙康復的因素包括不適當的家庭環境、經濟困難和結構性障礙；而促進因素包括無毒環境、綜合治療課程和同伴支持。結論建議設計針對這些因素的干預措施，以提高生活品質並促進物質使用障礙女性的持續戒癮。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">伊朗物質使用障礙女性</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">住宿治療經驗</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">康復過程中的促進與阻礙因素</div></div>
+</div>
+    <ul class="findings"><li>經濟困難和家庭問題是主要阻礙</li><li>無毒環境和同伴支持是重要促進因素</li><li>需針對性別和文化背景設計干預</li></ul>
+    <div class="keywords"><span class="keyword-pill">物質使用障礙</span><span class="keyword-pill">女性</span><span class="keyword-pill">伊朗</span><span class="keyword-pill">定性研究</span><span class="keyword-pill">康復阻礙</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42118786" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Psychiatr Serv</span>
+      <span class="paper-date">2026 May 12</span>
+      <a class="paper-doi" href="https://doi.org/10.1176%2Fappi.ps.20250408" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Social Determinants and Trends in Involuntary Psychiatric Detentions: A Decade of Population-Based Data.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">非自願精神科拘留的社會決定因素與趨勢：十年人口數據。</p>
+    <p class="paper-authors">Kim S, MacQuarrie E, Oh S, Do R et al.</p>
+    <p class="paper-abstract">本研究分析安大略省十年人口數據，探討非自願精神科拘留的社會決定因素。移民、無家可歸者及低教育程度者面臨更高的非自願住院風險。研究顯示非自願入院率逐年上升，且原住民在精神評估中比例偏高。結論建議解決上游社會決定因素（如住房與收入支持），並提供文化安全的預防性護理以促進健康公平。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">安大略省成人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社會決定因素（移民、無家可歸、教育）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同社會人口學特徵</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">非自願精神科拘留與評估</div></div>
+</div>
+    <ul class="findings"><li>移民和無家可歸者非自願住院風險較高</li><li>教育程度是保護因子</li><li>非自願入院率每年增長 3.3%</li></ul>
+    <div class="keywords"><span class="keyword-pill">非自願入院</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">無家可歸</span><span class="keyword-pill">移民</span><span class="keyword-pill">健康公平</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42119462" style="animation-delay:0.48s">
+    <div class="paper-meta">
+      <span class="paper-journal">Soc Sci Med</span>
+      <span class="paper-date">2026 May 7</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.socscimed.2026.119380" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title">Testing the sociocultural model of eating disorders: A cross-national analysis of income inequality, gender equality, and eating disorder rates.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">檢驗飲食失調的社會文化模型：收入不平等、性別平等與飲食失調率的跨國分析。</p>
+    <p class="paper-authors">Harris EA, Barlow FK, Wu A, Russo-Batterham D et al.</p>
+    <p class="paper-abstract">本研究首次分析國家收入不平等與性別平等對飲食失調率的影響。區域間分析顯示，收入不平等與較高的飲食失調負擔和網路討論量相關，性別平等的影響則混合且不明確。區域內分析證據有限。研究支持收入不平等與健康不良的關聯，並指出需理論與測量上的進一步探討。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">國家層級數據</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">收入不平等（基尼係數）、性別平等指數</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">區域間與區域內比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">飲食失調 DALYs 與推文率</div></div>
+</div>
+    <ul class="findings"><li>區域間收入不平等與較高的飲食失調率相關</li><li>性別平等與飲食失調率的關係不一致</li><li>宏觀社會因素對飲食失調有潛在影響</li></ul>
+    <div class="keywords"><span class="keyword-pill">收入不平等</span><span class="keyword-pill">飲食失調</span><span class="keyword-pill">性別平等</span><span class="keyword-pill">跨國研究</span><span class="keyword-pill">社會決定因素</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42124942" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMJ Public Health</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1136%2Fbmjph-2025-003762" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Impacts of the Universal Credit welfare reform on well-being: a natural experiment study using UK population survey data.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">統一社會福利改革對福祉的影響：使用英國人口調查數據的自然實驗研究。</p>
+    <p class="paper-authors">Baxter AJ, Tindall M, Wickham S, Marimpi M et al.</p>
+    <p class="paper-abstract">本研究利用自然實驗評估英國「統一福利」改革對低收入戶心理健康的影響。結果顯示，實施該政策導致生活滿意度、快樂感和生活價值感下降，焦慮上升，其影響幅度甚至超過COVID-19疫情。殘障、單身和25歲以下群體受創最深。結論呼籲改革以減少貧困與失業對健康福祉的負面影響。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">英國工作年齡低收入家庭</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">統一福利制度 的推行</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未實施或實施前的地區</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理福祉（生活滿意度、快樂、焦慮）</div></div>
+</div>
+    <ul class="findings"><li>統一福利顯著降低生活滿意度和快樂感</li><li>焦慮水準顯著上升</li><li>影響幅度比 COVID-19 疫情還大</li></ul>
+    <div class="keywords"><span class="keyword-pill">統一福利</span><span class="keyword-pill">福利改革</span><span class="keyword-pill">福祉</span><span class="keyword-pill">貧困</span><span class="keyword-pill">政策評估</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42119717" style="animation-delay:0.88s">
+    <div class="paper-meta">
+      <span class="paper-journal">Am J Prev Med</span>
+      <span class="paper-date">2026 May 11</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.amepre.2026.108386" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Lifetime Patterns of Earned Income Tax Credit eligibility and cognition: A sequence analysis approach.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">本研究利用序列分析檢視美國勞動所得稅抵免（EITC）資格與中晚年認知的關聯。結果顯示，僅短期符合EITC資格者的認知功能與長期高收入者相似；然而，長期貧困或長期無收入（非勞動力）者的認知功能較差。這表明EITC有助於短期緩解貧窮對認知的損害，但對無法工作者需提供更多支持。</p>
+    <p class="paper-authors">Pacca L, Wang G, Qian H, Hamad R et al.</p>
+    
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">NLSY79 參與者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">25至45歲期間的 EITC 資格軌跡</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同的收入軌跡群組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">約48歲時的認知功能</div></div>
+</div>
+    <ul class="findings"><li>短期貧困緩解（EITC）能保護認知功能</li><li>長期無收入導致最差的認知表現</li><li>僅靠勞動力市場的政策可能無法保護非工作者</li></ul>
+    <div class="keywords"><span class="keyword-pill">勞動所得稅抵免</span><span class="keyword-pill">認知</span><span class="keyword-pill">貧困</span><span class="keyword-pill">生命歷程</span><span class="keyword-pill">社會政策</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">認知與行為 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42119554" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Psychiatr Res</span>
+      <span class="paper-date">2026 May 9</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jpsychires.2026.05.009" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Impacts of perseverative coping on depression risk among young people living in poverty.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">持續性應對對生活在貧困中的青年抑鬱風險的影響。</p>
+    <p class="paper-authors">Kato T</p>
+    <p class="paper-abstract">本研究檢視持續性應對策略對日本貧困青少年抑鬱風險的影響。結果顯示，貧困青少年的持續性應對水準較高，且這種無效的應對策略會預測較高的未來抑鬱風險。這表明持續性應對是一種適應不良的機制。基於雙重過程理論的介入措施可能有助於預測並降低貧困青少年的抑鬱風險。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">日本貧困青年（18-24歲）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">持續性應對</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">基線抑鬱症狀控制</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">抑鬱風險</div></div>
+</div>
+    <ul class="findings"><li>貧困青少年有較高的持續性應對水準</li><li>持續性應對增加未來的抑鬱風險</li><li>應對策略是貧困與抑鬱之間的重要中介</li></ul>
+    <div class="keywords"><span class="keyword-pill">貧困</span><span class="keyword-pill">持續性應對</span><span class="keyword-pill">抑鬱</span><span class="keyword-pill">青年</span><span class="keyword-pill">雙重過程理論</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
