@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-05-14</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-05-14">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-05-14">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-05-14</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 4 篇文獻</span>
+      <span class="stat-item">&#128193; 3 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本分析涵蓋四篇探討社會心理因素與生理健康交織關係的研究，從腸道微生態、精神病理、表觀遺傳及職場社會決定因素等面向，揭示環境壓力如何嵌入生物系統。首篇文獻直接點出「貧窮印記」核心機制，證實貧窮透過改變腸道微生物群導致兒童生長遲緩，展現社會劣勢的微觀生物嵌入。第二與第四篇分別聚焦急診老年人自殺與勞工職場壓力，強調社會支持系統在緩衝心理困擾中的保護作用。第三篇則透過表觀遺傳時鐘，精準量測生物老化如何調節婚姻喪失帶來的健康衝擊。整體而言，這些研究共同指出健康失衡是宏觀社會環境、人際支持與微觀分子機制複雜互動的結果。未來介入需採跨層級視角，結合生物標記與環境改善，以阻斷壓力的長期危害。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">表觀遺傳與生物老化</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42132032" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Philos Trans R Soc Lond B Biol Sci</span>
+      <span class="paper-date">2026 May 14</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%2020250034.%20doi%3A%2010.1098%2Frstb.2025.0034" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">The physiology of poverty: gut microbiome and pathways to child stunting.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">貧窮的生理學：腸道微生物群與兒童生長遲緩的路徑</p>
+    <p class="paper-authors">Hlongwa N, Rich K, Kelly P, Ngobeni-Nyambi R et al.</p>
+    <p class="paper-abstract">本研究探討貧窮環境如何透過生理機制影響兒童身體發育，聚焦腸道微生物群的中介角色。貧窮常伴隨不衛生的居住環境與營養不良，這些因素顯著改變兒童腸道菌相的多樣性與組成。研究指出，腸道微生物群失調不僅影響營養吸收，更會引發慢性發炎反應，干擾生長激素軸運作，最終導致生長遲緩。本研究將貧窮影響從宏觀社會經濟層面深入至微觀腸道微生態系統，揭示「貧窮印記」的生物嵌入路徑。此發見為未來介入措施提供新視角，建議除傳統營養補充外，應關注腸道微生態修復，以打破貧窮致發育不良的惡性循環。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">兒童</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">貧窮環境及相關的腸道微生物群改變</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">非貧窮環境或正常生長的兒童</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">兒童生長遲緩</div></div>
+</div>
+    <ul class="findings"><li>貧窮環境與特定腸道微生物群組成改變密切相關</li><li>腸道微生物群失調是貧窮導致兒童生長遲緩的關鍵生理路徑</li><li>慢性發炎反應與營養吸收不良是連結微生態與生長遲緩的重要機制</li></ul>
+    <div class="keywords"><span class="keyword-pill">貧窮</span><span class="keyword-pill">腸道微生物群</span><span class="keyword-pill">生長遲緩</span><span class="keyword-pill">生物嵌入</span><span class="keyword-pill">慢性發炎</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42130168" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Am Geriatr Soc</span>
+      <span class="paper-date">2026 May 13</span>
+      <a class="paper-doi" href="https://doi.org/10.1111%2Fjgs.70464" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Suicidal Ideation and Attempts in Older Adults: Findings From Five Canadian Emergency Departments.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">老年人自殺意念與企圖：來自五家加拿大急診室的發現</p>
+    <p class="paper-authors">Boucher V, Gagnon AP, Tardif PA, Menear M et al.</p>
+    <p class="paper-abstract">本研究基於加拿大五家急診室數據，深入分析老年人自殺意念與自殺企圖的流行病學特徵及臨床表現。隨高齡化社會來臨，老年人自殺成為嚴重公共衛生議題。研究發現，因自殺相關問題就醫的老年人具獨特人口學與臨床特徵，且多數就醫前已存在複雜的身心共病。急診室作為醫療前線，往往是高風險族群首次接觸專業資源的場所。本研究強調在急診環境中建立針對老年族群自殺風險篩檢工具的重要性，並指出醫療人員需接受培訓以提升對隱蔽性自殺意念的敏感度。此研究對制定精準的急診後追蹤介入策略、降低老年人自殺率具重要臨床指導意義。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">老年急診患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">自殺意念與自殺企圖</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無自殺意念或企圖的老年急診患者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">急診就醫特徵與風險因素</div></div>
+</div>
+    <ul class="findings"><li>老年人自殺意念與企圖在急診中具有特定的人口學特徵</li><li>急診是識別與介入高風險老年人的關鍵且首要場所</li><li>多數自殺相關就醫的老年人伴有複雜的身心共病狀況</li></ul>
+    <div class="keywords"><span class="keyword-pill">老年人</span><span class="keyword-pill">自殺意念</span><span class="keyword-pill">自殺企圖</span><span class="keyword-pill">急診醫學</span><span class="keyword-pill">風險評估</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42129998" style="animation-delay:0.48s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMJ Open</span>
+      <span class="paper-date">2026 May 12</span>
+      <a class="paper-doi" href="https://doi.org/10.1136%2Fbmjopen-2025-111512" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Moderating role of supervisor support in the association between job demands and distress: a mixed-effects analysis in a population-based cohort study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">主管支持在工作需求與困擾關聯中的調節作用：一項基於族群世代研究的混合效應分析</p>
+    <p class="paper-authors">Lettinga HAM, Proper KI, van Wier MF, Kramer SE et al.</p>
+    <p class="paper-abstract">本研究利用族群世代資料，採混合效應模型分析主管支持在工作需求與員工心理困擾關聯中的調節角色。高工作需求是現代職場常見壓力源，長期暴露易導致焦慮、憂鬱等心理困擾。研究證實高工作需求與員工心理困擾呈顯著正相關；然而，當主管提供高強度支持（如情感與工具性支持）時，能有效削弱此負面關聯。此發現突顯職場社會支持系統的重要性，指出工作壓力影響並非單向決定，而是深受人際互動品質干擾。研究建議企業推動職場心理健康時，不應僅著重減輕工作量，更應積極培養主管的支持性領導能力，以建立具抗壓韌性的工作環境。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">勞工族群</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">高工作需求與不同程度的主管支持</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低工作需求或高主管支持環境</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理困擾程度</div></div>
+</div>
+    <ul class="findings"><li>高工作需求顯著增加勞工的心理困擾程度</li><li>主管支持能有效緩衝高工作需求帶來的負面心理影響</li><li>職場心理健康介入應將提升主管支持性領導能力列為核心策略</li></ul>
+    <div class="keywords"><span class="keyword-pill">工作需求</span><span class="keyword-pill">主管支持</span><span class="keyword-pill">心理困擾</span><span class="keyword-pill">職場健康</span><span class="keyword-pill">壓力緩衝</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">表觀遺傳與生物老化 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42127000" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">PLoS One</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1371%2Fjournal.pone.0327077" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Epigenetic clocks moderate the impact of marital status transitions on health in older adults.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">表觀遺傳時鐘調節婚姻狀態轉變對老年人健康的影響</p>
+    <p class="paper-authors">Lin MJ</p>
+    <p class="paper-abstract">本研究探討表觀遺傳時鐘（生物老化指標）如何調節婚姻狀態轉變對老年人健康的影響。婚姻狀態改變如喪偶或離婚，是老年期重大社會心理壓力源，常對身心健康造成顯著衝擊。研究透過測量表觀遺傳年齡，發現生物老化速度較快的老年人，面臨婚姻喪失時，其健康下降幅度顯著大於生物年齡較年輕者。這顯示個體的生物脆弱性會加劇社會心理壓力的負面效應。本研究成功將分子生物學指標與社會心理事件結合，證實表觀遺傳時鐘不僅是被動衰老標記，更能預測個體應對壓力的適應能力，為識別高脆弱性老年人提供精準醫學切入點。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">老年人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">婚姻狀態轉變與表觀遺傳時鐘加速</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">婚姻狀態維持穩定且表觀遺傳時鐘正常者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">健康狀況的變化</div></div>
+</div>
+    <ul class="findings"><li>生物老化速度較快的老年人面對婚姻喪失時，健康受損更為嚴重</li><li>表觀遺傳時鐘能作為預測個體面對生活壓力事件適應能力的調節變項</li><li>社會心理壓力的健康效應因個體微觀的生物脆弱性而異</li></ul>
+    <div class="keywords"><span class="keyword-pill">表觀遺傳時鐘</span><span class="keyword-pill">生物老化</span><span class="keyword-pill">婚姻狀態</span><span class="keyword-pill">社會心理壓力</span><span class="keyword-pill">老年人健康</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
