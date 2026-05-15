@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-05-15</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-05-15">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-05-15">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-05-15</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 6 篇文獻</span>
+      <span class="stat-item">&#128193; 4 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本次分析的六篇文獻涵蓋了社會決定因素、心理健康及政策介入等核心議題，揭示了「貧窮印記」的多面向影響。研究顯示，社區犯罪與社會脆弱性會顯著加劇憂鬱症及自殺風險，且社經地位低下與全身性生理及心理症狀密切相關，印證了壓力與環境逆境的生物嵌入效應。此外，探討父親育嬰假與女性基層醫師工作環境的政策研究，強調了結構性支持政策在緩解家庭壓力、促進健康公平上的關鍵角色。這些發現為未來制定精準的公共衛生介入措施與減貧政策提供了重要的實證基礎。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">大腦發展與神經科學</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">2 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">大腦發展與神經科學 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42138028" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Psychol Med</span>
+      <span class="paper-date">2026 May 15</span>
+      <a class="paper-doi" href="https://doi.org/10.1017%2FS0033291726104474" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Symptom severity, neighborhood crime, and neural correlates of reappraisal in patients with major depression and social anxiety.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">憂鬱症與社交焦慮症患者之症狀嚴重程度、社區犯罪與重新評估的神經相關性</p>
+    <p class="paper-authors">Feurer C, Jimmy J, Uribe M, Burkhouse KL et al.</p>
+    <p class="paper-abstract">本研究探討社區犯罪環境如何影響憂鬱症與社交焦慮症患者在進行情緒調節（認知重新評估）時的大腦神經活動。研究結合臨床症狀評估、社區犯罪數據與功能性磁振造影技術，分析患者在情緒調節任務中的腦區激活模式。結果發現，高犯罪率社區的患者在執行認知重新評估時，特定神經迴路（如前額葉皮質）的激活出現異常，且與症狀嚴重程度顯著相關。這表明不良社區環境可能透過影響情緒調節的神經機制，進而加劇精神病理症狀，突顯了社會環境壓力對大腦功能的生物嵌入效應。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">憂鬱症與社交焦慮症患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">居住於高犯罪率社區</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">居住於低犯罪率社區</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">認知重新評估時的神經激活模式與症狀嚴重程度</div></div>
+</div>
+    <ul class="findings"><li>高犯罪率社區與情緒調節神經迴路異常有關</li><li>前額葉皮質在壓力環境下的激活模式受損</li><li>社區環境因素可直接影響精神疾病的神經病理機制</li><li>症狀嚴重程度與社區環境及神經反應具顯著關聯</li></ul>
+    <div class="keywords"><span class="keyword-pill">社區犯罪</span><span class="keyword-pill">認知重新評估</span><span class="keyword-pill">神經影像</span><span class="keyword-pill">情緒調節</span><span class="keyword-pill">憂鬱症</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42058908" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">iScience</span>
+      <span class="paper-date">2026 May 15</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.isci.2026.115599" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Associations between socioeconomic factors and mental symptoms highlight whole-body correlates and pathways.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">社經因素與精神症狀之關聯揭示全身性相關性與路徑</p>
+    <p class="paper-authors">Zhao G, Tang J, Wang Z, Qian Q et al.</p>
+    <p class="paper-abstract">本研究旨在釐清社經地位（SES）與精神症狀之間的關聯，並探討其背後的全身性生理路徑。透過大規模數據分析，研究檢視了收入、教育等社經指標與焦慮、憂鬱等心理健康指標的關係，並引入多項生物標記物以評估系統性生理變化。研究發現，較低的社經地位不僅與較嚴重的精神症狀高度相關，還伴隨著明顯的全身性生理失調，例如發炎指標升高與代謝異常。此研究強調了貧窮對健康的影響並非僅限於心理層面，而是透過特定的生理路徑產生「全身性」的生物嵌入，為理解貧窮印記提供了跨系統的實證視角。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">一般人群</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">較低社經地位</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">較高社經地位</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">精神症狀嚴重度及全身性生物標記物變化</div></div>
+</div>
+    <ul class="findings"><li>低社經地位與精神症狀惡化顯著相關</li><li>社經壓力引發全身性生理反應（如發炎與代謝異常）</li><li>揭示了從社會環境到心理健康的多系統生理路徑</li><li>貧窮對健康的影響具有全身性的生物嵌入特徵</li></ul>
+    <div class="keywords"><span class="keyword-pill">社經地位</span><span class="keyword-pill">精神症狀</span><span class="keyword-pill">全身性生理路徑</span><span class="keyword-pill">生物標記</span><span class="keyword-pill">發炎</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="41619608" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Affect Disord</span>
+      <span class="paper-date">2026 May 15</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jad.2026.121307" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title">Affective morbidity after cancer diagnosis: Nationwide incidence and pharmacotherapy patterns across five major cancer types.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">癌症診斷後的情感發病率：五大主要癌症類型的全國性發生率與藥物治療模式</p>
+    <p class="paper-authors">Shin D, Ham BJ, Kim KH</p>
+    <p class="paper-abstract">本研究利用全國性資料庫，分析五種主要癌症患者在確診後的情感障礙（如憂鬱症、焦慮症）發生率及其藥物治療模式。雖然本研究主要聚焦於醫療層面，但癌症診斷帶來的經濟毒性與心理壓力常被視為一種突發性的社會逆境，與貧窮印記中的壓力生理學密切相關。研究評估了不同癌症類別間情感併發症的差異，並探討患者接受抗憂鬱或抗焦慮藥物治療的軌跡。結果顯示，癌症確診後的情感發病率顯著高於一般人群，但藥物治療的介入時機與持續性存在顯著差異，反映出醫療資源利用與心理健康照護之間的潛在落差。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">五大主要癌症類型的確診患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">癌症診斷（作為重大壓力事件）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">一般健康人群</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">情感障礙發生率與藥物治療模式</div></div>
+</div>
+    <ul class="findings"><li>癌症確診後情感障礙發生率顯著增加</li><li>不同癌症類型的情感發病率存在差異</li><li>抗憂鬱與抗焦慮藥物的使用模式與持續性不一</li><li>反映出重大疾病壓力下的心理健康照護資源落差</li></ul>
+    <div class="keywords"><span class="keyword-pill">癌症</span><span class="keyword-pill">情感障礙</span><span class="keyword-pill">藥物治療</span><span class="keyword-pill">壓力事件</span><span class="keyword-pill">發生率</span></div>
+  </div>
+  <div class="paper-card" data-pmid="41616860" style="animation-delay:0.88s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Affect Disord</span>
+      <span class="paper-date">2026 May 15</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jad.2026.121298" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Association between social vulnerability and suicide: A population-level study in Australia.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">社會脆弱性與自殺之關聯：一項澳洲的全國性人口層次研究</p>
+    <p class="paper-authors">Le CKT, Li A, Bentley R, Too LS</p>
+    <p class="paper-abstract">本研究利用澳洲全國性人口資料，探討社會脆弱性指數（包含經濟剝奪、社會孤立、住房不穩定等多維度指標）與自殺風險之間的關聯。研究透過空間流行病學方法，分析不同地區的社會脆弱性分數與自殺率的映射關係。結果顯示，社會脆弱性最高的地區，其自殺發生率顯著偏高，且這種關聯在控制了年齡、性別等人口學變項後依然顯著。此研究強有力地證實了宏觀社會決定因素對極端心理壓力行為（自殺）的影響，表明貧窮與社會剝奪不僅造成生理與情緒負擔，更可能成為引發致命心理健康危機的結構性驅動力。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">澳洲全國人口（以地區為單位）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">高社會脆弱性（經濟剝奪、社會孤立等）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低社會脆弱性地區</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">自殺發生率</div></div>
+</div>
+    <ul class="findings"><li>高社會脆弱性地區的自殺率顯著較高</li><li>經濟剝奪與社會孤立是自殺的重要結構性預測因子</li><li>社會脆弱性與自殺的關聯獨立於個人人口學特徵</li><li>空間流行病學方法能有效揭示宏觀社會逆境的健康後果</li></ul>
+    <div class="keywords"><span class="keyword-pill">社會脆弱性</span><span class="keyword-pill">自殺</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">空間流行病學</span><span class="keyword-pill">經濟剝奪</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42134938" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Br J Gen Pract</span>
+      <span class="paper-date">2026 May</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20bjgp26X744885.%20doi%3A%2010.3399%2Fbjgp26X744885" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title">Investigating the conditions in which women GPs thrive in general practice: what works, for whom, how and in what circumstances?</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">探討女性基層醫師在基層醫療中蓬勃發展的條件：什麼有效、對誰有效、如何以及在何種情況下？</p>
+    <p class="paper-authors">Abrams R, Williams V, Jefferson L, Golder S et al.</p>
+    <p class="paper-abstract">本研究採用實在論評價方法，探討哪些工作環境與系統條件能促進女性基層醫師在職場中的健康與專業發展。雖然直接聚焦於醫療勞動力，但基層醫師的工作環境與職場壓力屬於廣義社會決定因素的一環。研究透過深度訪談與文獻分析，建構出支持女性醫師的關鍵條件模型，包括彈性排班、領導支持與組織文化等。研究發現，當工作環境具備高度的結構性支持與性別友善政策時，女性醫師的職業倦怠感顯著降低，整體幸福感提升。此研究從供給面出發，強調改善醫療人力的社會環境對於維持公共衛生系統韌性的重要性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">女性基層醫師</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">具備結構性支持與友善政策的工作環境</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">缺乏特定支持的標準工作環境</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">職業蓬勃發展、倦怠感與整體幸福感</div></div>
+</div>
+    <ul class="findings"><li>彈性排班與領導支持是促進職業蓬勃發展的關鍵</li><li>性別友善的組織文化能顯著降低職業倦怠</li><li>結構性工作條件對醫療人力的心理健康有直接影響</li><li>實在論評價能有效解析複雜職場環境的干預機制</li></ul>
+    <div class="keywords"><span class="keyword-pill">女性醫師</span><span class="keyword-pill">基層醫療</span><span class="keyword-pill">職場環境</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">實在論評價</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42134829" style="animation-delay:1.28s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMJ Open</span>
+      <span class="paper-date">2026 May 14</span>
+      <a class="paper-doi" href="https://doi.org/10.1136%2Fbmjopen-2025-112830" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Impact of paternity leave on the health of fathers and their families: a scoping review protocol.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">男性育嬰假對父親及其家庭健康的影響：範圍性文獻回顧計畫書</p>
+    <p class="paper-authors">Yamashita M, Shimazaki A, Maehara K</p>
+    <p class="paper-abstract">本計畫書旨在提出一項範圍性文獻回顧，系統性地梳理男性育嬰假政策對父親自身身心健康及家庭整體健康福祉的影響。育嬰假作為一項關鍵的社會政策介入，能直接改變家庭內部的勞動分工與經濟壓力，從而減輕因育兒導致的貧窮風險與壓力負荷。該回顧將涵蓋不同國家的政策設計（如給付水準與休假長度），並探討其對父親心理健康、親子關係及伴侶關係的影響路徑。透過建立清晰的搜尋策略與納入標準，此研究將為未來評估家庭政策如何作為減輕貧窮印記的保護因素提供方法學基礎與理論框架。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">休假與未休假的父親及其家庭</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">男性育嬰假政策</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無育嬰假或傳統育兒模式</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">父親身心健康與家庭整體健康福祉</div></div>
+</div>
+    <ul class="findings"><li>此為計畫書，旨在建立系統性回顧的方法學框架</li><li>育嬰假被視為影響家庭健康與減輕壓力的潛在保護因素</li><li>政策設計差異（如給付與時長）可能是影響效果的關鍵調節變項</li><li>強調家庭政策在打破壓力代際傳遞中的理論價值</li></ul>
+    <div class="keywords"><span class="keyword-pill">男性育嬰假</span><span class="keyword-pill">家庭健康</span><span class="keyword-pill">社會政策</span><span class="keyword-pill">壓力保護因素</span><span class="keyword-pill">範圍性回顧</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
