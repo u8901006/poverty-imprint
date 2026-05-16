@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-05-16</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-05-16">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-05-16">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-05-16</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 5 篇文獻</span>
+      <span class="stat-item">&#128193; 4 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本組文獻廣泛探討了「貧窮印記」從社會環境到個體生理與行為的多重維度。研究涵蓋了家庭暴力對孕產婦健康的影響、性別少數群體面臨的交叉性壓力與物質濫用，以及針對低社經地位兒童的具體介入方案（如RAMSR課程與ICAN暑期計畫）。此外，宏觀政策分析揭示了最低工資提升對降低槍支自殺率的保護作用。這些研究一致指出，無論是透過臨床篩檢、教育介入還是經濟政策，針對社會決定因素的早期干預對於緩解貧窮帶來的健康不平等、認知滯後與精神病理風險至關重要。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">認知與行為</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">2 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42138279" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Afr J Reprod Health</span>
+      <span class="paper-date">2026 May 15</span>
+      <a class="paper-doi" href="https://doi.org/10.29063%2Fajrh2026%2Fv30i9.11" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Domestic violence during pregnancy and its maternal and reproductive health consequences in mainland China: A systematic review and meta-analysis.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">中國大陸懷孕期間家庭暴力及其對母親和生殖健康的後果：系統性回顧與後設分析。</p>
+    <p class="paper-authors">Cui Y, Mohamad Aun NS, Mohamad MS, Rajaratnam S</p>
+    <p class="paper-abstract">本研究透過系統性回顧與後設分析，探討中國大陸懷孕期間家庭暴力對母親及生殖健康的影響。結果顯示，家庭暴力與流產、低出生體重及產後抑鬱等不良健康結果顯著相關。研究指出，家庭暴力是重要的社會決定因素，對孕產婦造成深遠的生理與心理壓力。文獻強調在產前護理中納入暴力篩檢與介入措施的必要性，以改善孕產婦健康結果並阻斷不良健康結果的跨代傳遞。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">中國大陸孕婦</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">懷孕期間家庭暴力</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無暴力經驗孕婦</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">母親與生殖健康後果 (如流產、低出生體重、產後抑鬱)</div></div>
+</div>
+    <ul class="findings"><li>懷孕期間家庭暴力發生率顯著且與不良妊娠結果相關</li><li>家庭暴力增加產後心理健康問題風險</li><li>建議將家庭暴力防治納入常规產檢</li></ul>
+    <div class="keywords"><span class="keyword-pill">家庭暴力</span><span class="keyword-pill">懷孕</span><span class="keyword-pill">生殖健康</span><span class="keyword-pill">社會決定因素</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42139868" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Soc Sci Med</span>
+      <span class="paper-date">2026 May 11</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.socscimed.2026.119392" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Psychosocial problems, sexual violence victimization, and substance use among sexual and gender minorities in India: An intersectional multilevel analysis of individual heterogeneity and discriminatory accuracy (I-MAIHDA).</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">印度性別與性少數群體的心理社會問題、性暴力受害與物質使用：交叉性多層次分析。</p>
+    <p class="paper-authors">Chakrapani V, Scheim AI, Tsai AC, Shunmugam M et al.</p>
+    <p class="paper-abstract">本研究運用交叉性多層次分析法（I-MAIHDA），探討印度性別與性少數群體的心理社會問題、性暴力受害與物質使用。研究發現，多重身分認同帶來的交叉歧視顯著增加了該群體遭受性暴力與物質濫用的風險。這反映了社會結構性不平等如何轉化為個體層次的心理壓力與病理行為。結果強調，公共衛生介入需考量交叉性，針對邊緣化群體的特定脆弱性設計精準的心理健康與物質成癮防治策略。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">印度性別與性少數群體</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">交叉性歧視與社會壓力</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">非少數群體或少數數據中的其他亞群</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理社會問題、性暴力、物質使用</div></div>
+</div>
+    <ul class="findings"><li>交叉性歧視顯著預測性暴力與物質使用</li><li>多重邊緣化身份產生累積性健康風險</li><li>需採用交叉性框架分析少數群體健康</li></ul>
+    <div class="keywords"><span class="keyword-pill">性別與性少數</span><span class="keyword-pill">交叉性</span><span class="keyword-pill">物質使用</span><span class="keyword-pill">性暴力</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">認知與行為 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="41805019" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">Child Dev</span>
+      <span class="paper-date">2026 May 15</span>
+      <a class="paper-doi" href="https://doi.org/10.1093%2Fchidev%2Faacag015" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Effectiveness of rhythm and movement for self-regulation (RAMSR) for low socioeconomic preschoolers delivered by teachers trained online in Hong Kong.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">線上受訓教師對香港低社經地位學前兒童實施節奏與運動自我調節課程的有效性。</p>
+    <p class="paper-authors">Williams KE, Wan Y, Bentley L, Ng SP et al.</p>
+    <p class="paper-abstract">本研究評估了在香港低社經地位學前兒童中，由線上受訓教師實施的「節奏與運動自我調節」（RAMSR）課程的有效性。隨機對照試驗結果顯示，RAMSR介入顯著提升了兒童的自我調節能力、節奏同步性及課堂行為表現。此低成本且具擴展性的介入方案，證明了透過動作與音樂訓練可以有效增進貧窮兒童的執行功能與行為控制，緩解社經劣勢對兒童認知發展的負面衝擊。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">香港低社經地位學前兒童</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">RAMSR節奏與運動自我調節課程</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">一般課程或對照組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">自我調節能力、行為表現</div></div>
+</div>
+    <ul class="findings"><li>RAMSR顯著改善低收入兒童的自我調節能力</li><li>線上教師培訓模式具備可行性與擴展性</li><li>音樂與動作介入有助於緩解貧窮對發展的影響</li></ul>
+    <div class="keywords"><span class="keyword-pill">自我調節</span><span class="keyword-pill">低社經地位</span><span class="keyword-pill">學前兒童介入</span><span class="keyword-pill">執行功能</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42140347" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Contemp Clin Trials</span>
+      <span class="paper-date">2026 May 14</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.cct.2026.108350" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Integrated Childhood Activity And Nutrition (ICAN) study: Protocol for a randomized controlled trial to prevent summer learning loss and promote child health.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">綜合兒童活動與營養（ICAN）研究：預防夏季學習衰退並促進兒童健康的隨機對照試驗協議。</p>
+    <p class="paper-authors">Kinder CJ, Liu R, McCabe E, Madson J et al.</p>
+    <p class="paper-abstract">本研究介紹了「綜合兒童活動與營養」（ICAN）研究的隨機對照試驗協議，旨在預防低收入兒童的夏季學習衰退並促進健康。該計畫結合體育活動與營養支持，針對暑假期間資源匮乏的問題進行介入。協議詳述了招募流程與評估指標，預期將驗證綜合介入方案對改善兒童認知保留率與生理健康的成效，為制定針對貧窮兒童暑期支持的公共衛生政策提供實證依據。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">兒童 (特別是低收入背景)</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">ICAN綜合活動與營養計畫</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">等待名單對照組或常規照護</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">學習衰退程度、健康指標</div></div>
+</div>
+    <ul class="findings"><li>建立針對暑期學習損失的整合性介入方案</li><li>結合營養與活動以應對假期貧富差距</li><li>為評估介入效果提供嚴謹的試驗設計</li></ul>
+    <div class="keywords"><span class="keyword-pill">夏季學習衰退</span><span class="keyword-pill">兒童營養</span><span class="keyword-pill">隨機對照試驗協議</span><span class="keyword-pill">健康不平等</span></div>
+  </div>
+  <div class="paper-card" data-pmid="39227146" style="animation-delay:1.28s">
+    <div class="paper-meta">
+      <span class="paper-journal">Inj Prev</span>
+      <span class="paper-date">2026 May 15</span>
+      <a class="paper-doi" href="https://doi.org/10.1136%2Fip-2024-045266" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Association between state minimum wage and firearm suicides in the USA, 2000-2020.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">2000-2020年美國各州最低工資與槍支自殺率的關聯。</p>
+    <p class="paper-authors">Merrill-Francis M, Dunphy C, Lennon N, Chen MS et al.</p>
+    <p class="paper-abstract">本研究分析2000至2020年美國各州最低工資與槍支自殺率的關聯。縱貫性數據分析結果顯示，最低工資的提升顯著降低了槍支自殺率，提示經濟保障對心理健康具有保護作用。研究指出，經濟政策不僅影響財務狀況，更是預防自殺等極端心理健康結果的關鍵社會決定因素。此發現支持將提高最低工資作為減少貧窮相關心理傷害與死亡率的廣泛公共衛生策略。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國人口</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">州最低工資提升</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">最低工資較低或未提升的州</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">槍支自殺率</div></div>
+</div>
+    <ul class="findings"><li>提高最低工資與槍支自殺率下降顯著相關</li><li>經濟政策對心理衛生有宏觀影響</li><li>經濟保障可作為自殺預防的社會層級介入手段</li></ul>
+    <div class="keywords"><span class="keyword-pill">最低工資</span><span class="keyword-pill">槍支自殺</span><span class="keyword-pill">經濟政策</span><span class="keyword-pill">公共衛生</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
