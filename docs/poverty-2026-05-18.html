@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-05-18</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-05-18">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-05-18">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-05-18</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 2 篇文獻</span>
+      <span class="stat-item">&#128193; 2 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>這兩篇文獻分別從人際關係與物理環境兩個維度，探討了社會決定因素如何透過生物嵌入與壓力生理機制影響身心健康的「貧窮印記」。第一篇研究聚焦於主觀孤獨感與客觀社交孤立，揭示了這些社會剝奪因素如何透過腦腸軸等壓力生理路徑，實質增加腸易激綜合徵的發病風險，凸顯了心理社會壓力源對軀體健康的深遠影響。第二篇研究則將視角擴展至宏觀的社區環境，證實了空氣污染作為一種典型的環境社會決定因素，與心理健康障礙的盛行率密切相關，反映了環境不平等對大腦與精神健康的潛在危害。綜合而言，這兩項研究共同強調，貧窮或弱勢處境帶來的健康印記不僅限於傳統的經濟匱乏，更延伸至社交隔離與居住環境惡化。未來在臨床照護與公共衛生政策上，必須採取跨領域的結構性介入，將改善社交支持網絡與環境正義納入預防與治療身心疾病的整體策略中。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42143372" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Ann Gen Psychiatry</span>
+      <span class="paper-date">2026 May 16</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs12991-026-00649-2" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Association between social isolation, loneliness and the incidence of irritable bowel syndrome: a prospective cohort study in the UK Biobank.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">社交孤立、孤獨感與腸易激綜合徵發病率的關聯：基於英國生物銀行的前瞻性隊列研究</p>
+    <p class="paper-authors">Yao M, Zhang X, Lei F, Yan T et al.</p>
+    <p class="paper-abstract">本研究旨在探討社交孤立與孤獨感與腸易激綜合徵（IBS）發病率之間的潛在關聯。利用英國生物銀行的大型前瞻性隊列數據，研究人員對無基線IBS的參與者進行長期追蹤，透過問卷評估社交孤立與主觀孤獨感，並透過醫療記錄確認IBS的新發病例。研究結果顯示，無論是客觀的社交孤立還是主觀的孤獨感，均顯著增加未來罹患IBS的風險。這項發現強調了心理社會壓力源透過腦腸軸影響腸道健康的生理機制，指出社交剝奪不僅影響心理健康，更會導致明顯的軀體化症狀與腸胃道功能障礙。臨床上，對於IBS患者的治療或許應納入社交支持網絡的評估與介入。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">英國生物銀行中無基線腸易激綜合徵的參與者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社交孤立與主觀孤獨感</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無社交孤立或低度孤獨感的參與者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">腸易激綜合徵（IBS）的新發病率</div></div>
+</div>
+    <ul class="findings"><li>客觀社交孤立顯著增加未來罹患腸易激綜合徵的風險</li><li>主觀孤獨感與IBS的發生率呈現顯著的正向關聯</li><li>心理社會壓力源可能透過腦腸軸機制導致腸道功能障礙</li></ul>
+    <div class="keywords"><span class="keyword-pill">社交孤立</span><span class="keyword-pill">孤獨感</span><span class="keyword-pill">腸易激綜合徵</span><span class="keyword-pill">腦腸軸</span><span class="keyword-pill">前瞻性隊列研究</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42142627" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Span J Psychiatry Ment Health</span>
+      <span class="paper-date">2026 May 15</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20S2950-2853(26)00035-9.%20doi%3A%2010.1016%2Fj.sjpmh.2026.03.004" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Air Pollution Exposure and Mental Health Disorders in Catalonia: A Population-Based Cross-Sectional Study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">加泰羅尼亞的空氣污染暴露與心理健康障礙：一項基於人群的橫斷面研究</p>
+    <p class="paper-authors">Solerdelcoll RVI, Alonso MJP, Valenzuela-Pascual C, Mas A et al.</p>
+    <p class="paper-abstract">本研究探討環境空氣污染暴露與心理健康障礙之間的關聯，以加泰羅尼亞地區人口為基礎進行橫斷面分析。研究透過空氣品質監測數據估算參與者長期暴露於懸浮微粒及二氧化氮等污染物的濃度，並利用醫療紀錄評估心理健康障礙的盛行率。分析結果指出，長期暴露於較高濃度的空氣污染物與心理健康問題（如焦慮、憂鬱等）的風險增加顯著相關。此研究揭示了環境不平等對心理健康的深遠影響，顯示出居住於空氣污染較嚴重地區的居民面臨更高的精神病理風險。這項發現為公共衛生政策提供了重要依據，強調改善空氣品質不僅是環境議題，更是預防心理健康疾病、促進社會公平的關鍵介入手段。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">加泰羅尼亞地區的基層人口</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">長期環境空氣污染暴露（如PM2.5、NO2）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">暴露於較低濃度空氣污染物的對照組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康障礙的盛行率與風險</div></div>
+</div>
+    <ul class="findings"><li>空氣污染暴露與心理健康障礙風險增加顯著相關</li><li>懸浮微粒及二氧化氮是影響心理健康的潛在環境危險因子</li><li>環境不平等是導致心理健康區域差異的重要社會決定因素</li></ul>
+    <div class="keywords"><span class="keyword-pill">空氣污染</span><span class="keyword-pill">心理健康障礙</span><span class="keyword-pill">環境不平等</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">橫斷面研究</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
