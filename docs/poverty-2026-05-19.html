@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-05-19</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-05-19">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-05-19">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-05-19</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 7 篇文獻</span>
+      <span class="stat-item">&#128193; 5 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本次分析的七篇文獻從不同維度呼應了「貧窮印記」與社會決定因素對健康的深遠影響。在社會決定層面，研究顯示區域剝奪指數會直接導致骨科手術復原不佳，而生活成本危機更使弱勢群體陷入食物與能源等多重剝奪，凸顯結構性貧窮的傷害。在生物嵌入層面，新生兒期心率變異性異常被證實能預測長期神經發育障礙，印證早期生理壓力的長期「印記」效應。此外，文獻指出教育與資產等社經優勢能緩衝生活事件的心理衝擊，而低社經地位卻成為阻礙民眾獲取專業心理服務的障礙。綜上而言，這些研究強調無論是生理復原或心理健康，皆深受個體所處的社經脈絡影響，未來政策需將減少社會剝奪納入核心干預策略。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">大腦發展與神經科學</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">認知與行為</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">3 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42151537" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Pediatr Res</span>
+      <span class="paper-date">2026 May 19</span>
+      <a class="paper-doi" href="https://doi.org/10.1038%2Fs41390-026-05111-3" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Neonatal pre-discharge heart rate variability and neurodevelopmental outcomes at 1- and 5-years in children with transposition of the great arteries.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">大動脈轉位兒童新生兒出院前心率變異性與1歲及5歲時的神經發育結果</p>
+    <p class="paper-authors">Somasundaram V, Liamlahi R, Berger F, Balmer C et al.</p>
+    <p class="paper-abstract">本研究探討患有大動脈轉位（TGA）的新生兒，在出院前的心率變異性（HRV）與其1歲及5歲時神經發育結果之間的關聯。HRV是反映自主神經系統功能與壓力生理調節的重要生物標記。研究追蹤這些先天性心臟病兒童，發現新生兒期較低的HRV（代表自主神經調節能力較弱）與長期追蹤時較差的神經發育表現顯著相關。這項發現支持了「生物嵌入」的概念，即早期生命階段的生理壓力與自主神經系統失調，會在神經發展層面留下長期的印記。臨床上，HRV可作為此類高風險嬰幼兒神經發育遲緩的早期預測指標。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">患有大動脈轉位的新生兒</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">出院前心率變異性(HRV)水平</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同HRV水平比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">1歲及5歲時的神經發育結果</div></div>
+</div>
+    <ul class="findings"><li>新生兒期較低的心率變異性與較差的神經發育結果顯著相關</li><li>早期自主神經系統失調能預測長期神經發展缺損</li><li>HRV可作為先天性心臟病兒童神經發育風險的早期生物標記</li></ul>
+    <div class="keywords"><span class="keyword-pill">心率變異性</span><span class="keyword-pill">神經發育</span><span class="keyword-pill">生物嵌入</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">大腦發展與神經科學 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42150051" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">JMIR Res Protoc</span>
+      <span class="paper-date">2026 May 18</span>
+      <a class="paper-doi" href="https://doi.org/10.2196%2F92115" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title">Modeling Negative Symptom Domain Neurobiology: Protocol for an Observational, Transdiagnostic, Translational Study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">陰性症狀域神經生物學建模：一項觀察性、跨診斷、轉化研究方案</p>
+    <p class="paper-authors">Oprea DC, Untu I, Vieru DS, Dascălu C et al.</p>
+    <p class="paper-abstract">本篇研究方案旨在建立一個跨診斷的觀察性研究框架，以探討精神疾病中「陰性症狀」的神經生物學基礎。陰性症狀常見於精神分裂症等障礙，嚴重影響患者功能，但病理機制尚不明確。該計畫結合多模態神經影像學、電生理學及臨床評估，針對具有顯著陰性症狀的患者進行深度表型分析，並與健康對照組比較。此轉化醫學研究預期將揭示陰性症狀背後的特定神經迴路與腦網路異常，為未來開發針對性的神經調節或藥物治療提供客觀的生物標記與理論依據。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">具有陰性症狀的精神疾病患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">多模態神經影像與電生理學檢測</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">健康對照組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">陰性症狀的神經生物學標記與腦網路異常</div></div>
+</div>
+    <ul class="findings"><li>此為研究方案，旨在建立陰性症狀的跨診斷神經生物學模型</li><li>結合多模態影像與電生理技術以尋找客觀生物標記</li><li>預期揭示陰性症狀背後的特定神經迴路異常</li></ul>
+    <div class="keywords"><span class="keyword-pill">陰性症狀</span><span class="keyword-pill">神經影像學</span><span class="keyword-pill">跨診斷</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">認知與行為 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42151901" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMC Public Health</span>
+      <span class="paper-date">2026 May 18</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs12889-026-27631-7" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">The association between ADHD symptoms and different dimensions of problematic use of social media among adolescent in the &quot;LifeOnSoMe&quot;-study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">ADHD症狀與青少年社群媒體問題性使用不同維度的關聯</p>
+    <p class="paper-authors">Danielsen HE, Finserås TR, Bøe T, Hjetland GJ et al.</p>
+    <p class="paper-abstract">本研究利用「LifeOnSoMe」研究資料，探討青少年注意力不足過動症（ADHD）症狀與社群媒體問題性使用（PUSM）各維度之間的關聯。研究針對青少年樣本，評估ADHD症狀及PUSM的四個維度：沉迷、衝動、逃避與強迫。結果顯示，ADHD症狀與所有PUSM維度均呈顯著正相關，其中衝動症狀與社群媒體的衝動性使用關聯最為強烈，而過動/衝動綜合症狀則主要預測逃避型使用。此研究強調了在數位時代，針對具有ADHD特質的青少年進行社群媒體使用篩檢與干预的重要性，以預防潛在的行為成瘾問題。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">青少年</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">ADHD症狀</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無ADHD症狀者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">社群媒體問題性使用（沉迷、衝動、逃避、強迫）</div></div>
+</div>
+    <ul class="findings"><li>ADHD症狀與社群媒體問題性使用的所有維度均顯著正相關</li><li>衝動症狀與社群媒體的衝動性使用關聯最強</li><li>過動/衝動症狀主要預測逃避型社群媒體使用</li></ul>
+    <div class="keywords"><span class="keyword-pill">ADHD</span><span class="keyword-pill">社群媒體成瘾</span><span class="keyword-pill">青少年行為</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">3 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42149872" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">PLoS One</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1371%2Fjournal.pone.0348726" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">The association between life events and mental health among adults in Java, Indonesia: Investigating the moderating effects by education, asset index, and rural-urban area of residence.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">印尼爪哇成人生活事件與心理健康的關聯：教育、資產指數與城鄉居住地的調節作用</p>
+    <p class="paper-authors">Idaiani S, Fajri M, Irmansyah I, Gibson J et al.</p>
+    <p class="paper-abstract">本研究探討印尼爪哇地區成人生活事件與心理健康之間的關聯，並分析社會經濟地位（教育程度、資產指數）及城鄉居住地在此關聯中的調節效果。研究發現，負面生活事件顯著增加心理困擾的風險。然而，這種不利影響在不同社經群體中存在差異：較高的教育水平和資產指數能夠顯著緩衝負面生活事件對心理健康的衝擊。此外，城鄉差異也發揮了調節作用，顯示出資源分配與社會支持網絡的不均等。該研究強調了在低中收入國家，社會決定因素對心理健康韌性具有關鍵的保護作用。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">印尼爪哇地區成人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">負面生活事件</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無或低負面生活事件者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康狀態（受教育、資產、城鄉調節）</div></div>
+</div>
+    <ul class="findings"><li>負面生活事件顯著增加心理困擾風險</li><li>高教育水平與高資產指數能緩衝生活事件的負面衝擊</li><li>城鄉居住地對生活事件與心理健康的關聯具有調節作用</li></ul>
+    <div class="keywords"><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">心理健康</span><span class="keyword-pill">生活事件</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42148671" style="animation-delay:1.28s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Public Health (Oxf)</span>
+      <span class="paper-date">2026 May 18</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20fdag036.%20doi%3A%2010.1093%2Fpubmed%2Ffdag036" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Voices from the foodbank: experiencing food insecurity in North-West England during the cost-of-living crisis.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">來自食物銀行的聲音：生活成本危機期間在英格蘭西北部經歷食物不安全</p>
+    <p class="paper-authors">Khan K, Atas N, Clarkson D, Heaton L et al.</p>
+    <p class="paper-abstract">本研究透過質性研究方法，探討在英國生活成本危機期間，英格蘭西北部食物銀行使用者的食物不安全經驗。研究深入訪談依賴食物銀行的民眾，發現受訪者普遍面臨多重的剝奪與壓力，不僅限於食物短缺，還包括能源匱乏、住房不安定與債務危機。食物銀行雖然提供緊急救濟，但受訪者形容這種經歷帶有強烈的污名化與無力感。研究指出，當前的慈善救濟模式無法解決系統性的貧窮問題，呼籲政府必須採取上游政策介入，如改善社會安全網與提高基本工資，以根除結構性食物不安全。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">英格蘭西北部食物銀行使用者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">生活成本危機與食物不安全經驗</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">多重剝奪經驗、污名化感受、對政策介入的呼籲</div></div>
+</div>
+    <ul class="findings"><li>食物不安全常伴隨能源、住房與債務等多重剝奪</li><li>使用食物銀行帶來強烈的污名化與心理壓力</li><li>慈善救濟無法取代系統性的政府扶貧政策</li></ul>
+    <div class="keywords"><span class="keyword-pill">食物不安全</span><span class="keyword-pill">貧窮</span><span class="keyword-pill">生活成本危機</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42152963" style="animation-delay:1.36s">
+    <div class="paper-meta">
+      <span class="paper-journal">Orthop J Sports Med</span>
+      <span class="paper-date">2026 May</span>
+      <a class="paper-doi" href="https://doi.org/10.1177%2F23259671261438134" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Influence of Area Deprivation Index and Social Vulnerability Index on PROMIS Outcomes and MCID Achievement Following ACL Reconstruction.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">區域剝奪指數與社會脆弱性指數對前十字韌帶重建術後PROMIS結果與MCID達成的影響</p>
+    <p class="paper-authors">Castle P, Prabhavalkar ON, Holloway MR, Shaikh HJF et al.</p>
+    <p class="paper-abstract">本研究探討社會決定因素——具體為區域剝奪指數（ADI）和社會脆弱性指數（SVI），對患者接受前十字韌帶重建（ACLR）手術後自我報告結果（PROMIS）及達到最小臨床重要差異（MCID）的影響。研究分析接受ACLR的患者資料，結果顯示，居住在高度剝奪或高社會脆弱性地區的患者，其術後功能與疼痛改善幅度顯著較差，且達到MCID的比例較低。這表明社區層級的社會經濟劣勢會直接轉化為較差的醫療結果。該研究強調，骨科醫師在術後護理中必須將社會脆弱性納入評估，並為高風險患者提供額外資源。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">接受前十字韌帶重建術的患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">高區域剝奪指數(ADI)與高社會脆弱性指數(SVI)</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低ADI與低SVI地區患者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">術後PROMIS評分與MCID達成率</div></div>
+</div>
+    <ul class="findings"><li>高ADI與高SVI地區患者術後PROMIS改善幅度較差</li><li>社會經濟劣勢地區患者達到MCID的比例顯著較低</li><li>社區層級的脆弱性直接影響骨科手術的復原結果</li></ul>
+    <div class="keywords"><span class="keyword-pill">區域剝奪指數</span><span class="keyword-pill">社會脆弱性</span><span class="keyword-pill">手術結果</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42149849" style="animation-delay:1.6s">
+    <div class="paper-meta">
+      <span class="paper-journal">PLoS One</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1371%2Fjournal.pone.0326556" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Sociodemographic and mental health predictors of mental health service use across provider types.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">不同服務提供者類型中心理健康服務使用的社會人口學與心理健康預測因素</p>
+    <p class="paper-authors">Pang N, Yeung J</p>
+    <p class="paper-abstract">本研究旨在識別影響民眾使用不同類型心理健康服務（如專科醫療、基層醫療等）的預測因素。研究分析社會人口學變項與心理健康狀態如何影響服務選擇。結果顯示，心理症狀的嚴重程度是尋求專科治療的最強預測因子，但社會人口學障礙（如低社經地位）會阻礙民眾進入專業醫療體系，使其轉而依賴基層或非正式支持。此研究揭示了心理健康服務資源分配的不平等，呼籲政策制定者應針對弱勢群體設計無障礙的介入策略，以減少獲取服務的差異，落實精神健康的社會公平。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">有心理健康需求的民眾</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">不同類型的心理健康服務</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未使用服務者或不同服務類型間比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">服務使用的預測因素與選擇差異</div></div>
+</div>
+    <ul class="findings"><li>症狀嚴重程度是使用專科服務的最強預測因子</li><li>低社經地位等人口學障礙阻礙專業醫療服務的使用</li><li>弱勢群體較依賴基層或非正式支持網絡</li></ul>
+    <div class="keywords"><span class="keyword-pill">心理健康服務</span><span class="keyword-pill">社會人口學</span><span class="keyword-pill">服務可及性</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
