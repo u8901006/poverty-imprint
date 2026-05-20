@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-05-20</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-05-20">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-05-20">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-05-20</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 7 篇文獻</span>
+      <span class="stat-item">&#128193; 4 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本次分析的七篇文獻透過「貧窮印記」框架，揭示社會決定因素如何轉化為個體健康負擔。在生物嵌入層面，胎盤血管病變與兒童二手菸暴露引發的發炎反應，展現了母體壓力與環境毒物如何在生命早期刻下生物標記。社區環境研究則提醒基礎設施配置亦是潛在壓力源。心理健康文獻凸顯了兒童心理危機的龐大經濟成本，以及慢性發炎加劇憂鬱症的機制。最核心的是政策介入研究，無論是數位治療打破服務壁壘，或伴侶證書制度減輕結構性污名，皆證實包容性政策能緩解慢性壓力的生物嵌入。整體而言，這些研究呼籲政策須關注生命早期逆境預防與制度支持，以阻斷健康不平等的跨代傳遞。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">2 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42156001" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Matern Fetal Neonatal Med</span>
+      <span class="paper-date">2026 Dec</span>
+      <a class="paper-doi" href="https://doi.org/10.1080%2F14767058.2026.2669893" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Placental pathology in pregnancies complicated by hypertensive disorders of pregnancy and small for gestational age neonates: prevalence and severity of maternal vascular malperfusion in a prospectively collected cohort.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">妊娠期高血壓疾病與小於胎齡兒併發症妊娠中的胎盤病理學：前瞻性隊列中母體血管灌注不良的盛行率與嚴重程度</p>
+    <p class="paper-authors">Schreiber-Gonzalez S, Freedman A, Miller G, Keenan Devlin L et al.</p>
+    <p class="paper-abstract">本研究探討妊娠期高血壓疾病與小於胎齡兒新生兒的胎盤病理特徵，聚焦母體血管灌注不良的盛行率與嚴重程度。在貧窮印記的研究脈絡下，母體遭受的社會環境壓力與資源缺乏常導致妊娠高血壓與胎兒生長受限，而胎盤作為關鍵介導者，其血管灌注不良病變正是壓力生物嵌入的重要指標。研究透過前瞻性隊列資料分析發現，合併高血壓與小於胎齡兒的胎盤其病變最為顯著。這意味著不良的母體環境透過胎盤血管病變限制胎兒營養供應，將低出生體重等健康劣勢印記於新生兒身上，為理解生命早期社會決定因素如何轉化為生理風險提供了關鍵的病理學證據。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">患有妊娠期高血壓疾病且分娩小於胎齡兒的孕婦</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">患有妊娠期高血壓及小於胎齡兒的妊娠狀態</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無妊娠期高血壓且胎兒體重正常之妊娠</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">胎盤母體血管灌注不良的盛行率與嚴重程度</div></div>
+</div>
+    <ul class="findings"><li>合併高血壓與小於胎齡兒之胎盤的血管灌注不良病變最為嚴重</li><li>母體血管灌注不良是胎盤損傷的主要表現形式</li><li>胎盤病理變化與胎兒生長受限程度具有直接關聯</li></ul>
+    <div class="keywords"><span class="keyword-pill">胎盤病理</span><span class="keyword-pill">母體血管灌注不良</span><span class="keyword-pill">小於胎齡兒</span><span class="keyword-pill">妊娠高血壓</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42154892" style="animation-delay:0.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Appl Oral Sci</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1590%2F1678-7765-2025-0840" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Salivary cotinine and S100A8/A9 levels in children exposed to environmental tobacco smoke: a case-control study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">暴露於環境二手菸兒童的唾液古丁尼與S100A8/A9濃度：病例對照研究</p>
+    <p class="paper-authors">Kockanat A, Acipinar S</p>
+    <p class="paper-abstract">本研究透過病例對照設計，檢測暴露於環境二手菸兒童唾液中的古丁尼與S100A8/A9發炎標誌物濃度。在生物嵌入與壓力生理學框架下，二手菸暴露是社經劣勢環境中極具代表性的有害暴露源。研究不僅客觀量化了兒童的菸草暴露程度，更進一步發現二手菸暴露會引起口腔局部的系統性發炎反應。這項發現對貧窮印記研究至關重要，因為它展示了環境毒物如何在兒童發育早期引發慢性發炎，將外在的社會環境劣勢具體轉化為可測量的生物壓力指標。這種發炎狀態的早期啟動，可能是導致後續心血管疾病等貧窮相關健康差距的潛在生理基礎。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">兒童</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">暴露於環境二手菸</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未暴露於環境二手菸</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">唾液古丁尼濃度與S100A8/A9發炎指標水平</div></div>
+</div>
+    <ul class="findings"><li>二手菸暴露兒童的唾液古丁尼濃度顯著較高</li><li>二手菸暴露會導致兒童唾液中S100A8/A9發炎標誌物上升</li><li>環境毒物暴露能在兒童早期誘發可測量的生物發炎反應</li></ul>
+    <div class="keywords"><span class="keyword-pill">二手菸</span><span class="keyword-pill">古丁尼</span><span class="keyword-pill">S100A8/A9</span><span class="keyword-pill">發炎標誌物</span><span class="keyword-pill">生物嵌入</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42154547" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Proc Natl Acad Sci U S A</span>
+      <span class="paper-date">2026 May 26</span>
+      <a class="paper-doi" href="https://doi.org/10.1073%2Fpnas.2525715123" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title">Wind turbine proximity and health: Longitudinal evidence from US households.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">風力發電機鄰近性與健康：來自美國家庭的縱向證據</p>
+    <p class="paper-authors">Rott N, Almond D, Giuntella O</p>
+    <p class="paper-abstract">本研究利用美國家庭數據，以縱向研究設計探討居住地與風力發電機的距離對居民健康的影響。在社區與社會決定因素的框架下，可再生能源基礎設施的空間配置往往與當地的經濟條件與土地使用政策交織，進而產生差異化的健康外部性。研究評估了風力發電機帶來的環境噪音與視覺衝擊是否構成慢性環境壓力源，從而影響居民身心理健康。這項研究對貧窮印記領域的貢獻在於，揭示了特定社區環境特徵如綠能設施鄰近性，作為一種非傳統的社會決定因素，如何潛在地透過壓力途徑在鄰里層級刻下健康印記，為評估環境正義與社區健康政策提供了實證基礎。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國家庭居民</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">居住於靠近風力發電機的地區</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">居住於遠離風力發電機的地區</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">居民健康狀況變化</div></div>
+</div>
+    <ul class="findings"><li>風力發電機的鄰近性對健康影響具有縱向差異</li><li>環境基礎設施配置是社區健康的潛在決定因素</li><li>綠能設施可能帶來非意圖的健康外部性</li></ul>
+    <div class="keywords"><span class="keyword-pill">風力發電機</span><span class="keyword-pill">社區環境</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">縱向研究</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42157297" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">Trials</span>
+      <span class="paper-date">2026 May 20</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs13063-026-09786-1" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Cost-effectiveness of a smartphone-based personalized lifestyle intervention for symptoms of depression in primary care: protocol for a cluster-randomized controlled trial (LIDIAS).</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">基層醫療中基於智慧手機的個性化生活方式介入改善憂鬱症狀之成本效益：集群隨機對照試驗方案</p>
+    <p class="paper-authors">Jagtenberg EM, Ligthart SA, Muilwijk OG, Akkermans RP et al.</p>
+    <p class="paper-abstract">本研究提出LIDIAS試驗方案，旨在評估基層醫療中利用智慧手機提供個性化生活方式介入，以改善憂鬱症狀的成本效益。在政策介入與扶貧效果的脈絡下，低收入或邊緣化群體往往面臨嚴重的心理治療資源缺口。此種數位健康介入作為具備擴展性的公共政策工具，能打破傳統心理治療的地理與經濟壁壘。研究採用集群隨機對照試驗設計，不僅關注臨床症狀緩解，更著重於健康經濟學評估。若證實具成本效益，此類智慧手機介入將能作為消除心理健康不平等的策略，減輕弱勢群體因憂鬱症導致的社經劣勢，從政策層面緩解貧窮與心理健康的惡性循環。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">基層醫療中出現憂鬱症狀的患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">基於智慧手機的個性化生活方式介入</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">常規基層醫療照護</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">憂鬱症狀改善程度及介入之成本效益</div></div>
+</div>
+    <ul class="findings"><li>數位介入可作為基層醫療憂鬱症治療的輔助工具</li><li>成本效益分析是評估公共衛生政策可行性的關鍵</li><li>智慧手機介入有潛力縮小心理健康服務的資源落差</li></ul>
+    <div class="keywords"><span class="keyword-pill">數位健康</span><span class="keyword-pill">憂鬱症</span><span class="keyword-pill">成本效益分析</span><span class="keyword-pill">基層醫療</span><span class="keyword-pill">健康不平等</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42156153" style="animation-delay:0.88s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMJ Open</span>
+      <span class="paper-date">2026 May 19</span>
+      <a class="paper-doi" href="https://doi.org/10.1136%2Fbmjopen-2025-106055" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Association between same-sex partnership certificate schemes and mental health in sexual and gender minority adults: nationwide cross-sectional study in Japan.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">同性伴侶證書制度與性別少數群體成人心理健康之關聯：日本全國性橫斷面研究</p>
+    <p class="paper-authors">Tatsuno Y, Minami T, Tomio J, Tabuchi T et al.</p>
+    <p class="paper-abstract">本研究透過日本全國性橫斷面資料，探討同性伴侶證書制度與性別少數群體成人心理健康的關聯。在政策介入視角下，結構性污名與法律排斥是導致該群體面臨社經劣勢與高憂鬱症盛行率的核心驅動力。同性伴侶證書作為地方性的制度認可，能有效減輕少數群體壓力。研究發現，居住在已實施該制度地區的性別少數成人，其心理健康顯著較佳。此結果印證包容性社會政策能發揮緩衝作用，減輕結構性歧視帶來的慢性壓力與生物嵌入風險，為透過制度變革促進弱勢群體心理福祉與社會流動提供了公共衛生論述。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">日本性別少數群體成人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">居住於實施同性伴侶證書制度之地區</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">居住於未實施該制度之地區</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康狀態</div></div>
+</div>
+    <ul class="findings"><li>同性伴侶證書制度與性別少數成人的較佳心理健康顯著相關</li><li>制度性認可可有效減輕少數群體壓力</li><li>地方包容性政策對整體心理健康具有正向溢出效應</li></ul>
+    <div class="keywords"><span class="keyword-pill">同性伴侶證書</span><span class="keyword-pill">性別少數群體</span><span class="keyword-pill">心理健康</span><span class="keyword-pill">結構性污名</span><span class="keyword-pill">政策介入</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42156150" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMJ Open</span>
+      <span class="paper-date">2026 May 19</span>
+      <a class="paper-doi" href="https://doi.org/10.1136%2Fbmjopen-2025-107143" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Cost of emergency hospital admissions to acute general wards for mental health problems among children and young people in England, 2012-2022: a retrospective observational study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">2012至2022年英格蘭兒童與青少年因心理健康問題急診入院至急性一般病房之成本：回顧性觀察研究</p>
+    <p class="paper-authors">Pilvar H, Cornaglia F, Ward JL, Vazquez-Vazquez A et al.</p>
+    <p class="paper-abstract">本研究為回顧性觀察研究，旨在量化過去十年間英格蘭兒童及青少年因心理健康問題緊急入住急性一般病房的經濟成本。在心理健康與精神病理框架下，兒童青少年時期的精神危機往往是早期社會逆境與貧窮壓力累積的爆發點。研究揭示了相關急診住院成本的龐大規模與增長趨勢，反映出現有專業兒童心理衛生資源的嚴重不足，導致非專科病房承擔極大壓力。從貧窮印記角度來看，這些高昂的醫療支出是社會未能有效介入早期逆境所導致的下游經濟負擔，凸顯了將資源前置投資於預防兒童心理危機的緊迫性與長期經濟效益。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">英格蘭因心理健康問題急診入院的兒童與青少年</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">2012至2022年間的時間跨度與急性一般病房住院經驗</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無（歷史趨勢與成本描述）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">急診入院次數與相關醫療成本</div></div>
+</div>
+    <ul class="findings"><li>兒童青少年心理問題急診入急性病房的成本極高且呈上升趨勢</li><li>非專科病房承受了龐大的兒童心理危機照護壓力</li><li>現有兒童青少年心理健康資源存在嚴重短缺</li></ul>
+    <div class="keywords"><span class="keyword-pill">兒童青少年心理健康</span><span class="keyword-pill">急診入院</span><span class="keyword-pill">醫療成本</span><span class="keyword-pill">精神病理</span><span class="keyword-pill">資源分配</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42153790" style="animation-delay:1.28s">
+    <div class="paper-meta">
+      <span class="paper-journal">Am J Rhinol Allergy</span>
+      <span class="paper-date">2026 May 19</span>
+      <a class="paper-doi" href="https://doi.org/10.1177%2F19458924261448266" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Association of Depression in Patients With Chronic Rhinosinusitis Comorbid Asthma and Allergic Rhinitis: A Cross-Sectional Study With the All of Us Research Database.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">慢性鼻竇炎合併氣喘與過敏性鼻炎患者之憂鬱症關聯：使用All of Us研究資料庫的橫斷面研究</p>
+    <p class="paper-authors">Thomas S, Choi A, Kravitz M, Colley P et al.</p>
+    <p class="paper-abstract">本研究利用大型資料庫，探討慢性鼻竇炎患者合併氣喘與過敏性鼻炎時與憂鬱症的關聯性。在心理健康與精神病理脈絡中，慢性發炎性疾病與憂鬱症的共病現象提供了免疫大腦軸線作為生物嵌入機制的視角。長期暴露於不佳的環境條件如空氣污染，常與低收入社區相關，會加劇呼吸道發炎反應，進而透過全身性發炎途徑影響中樞神經系統，增加憂鬱症風險。研究指出，合併氣喘與過敏性鼻炎的慢性鼻竇炎患者，其憂鬱症盛行率顯著增高。此發現強調了在評估貧窮環境下的健康印記時，不能忽視身體慢性發炎與精神病理之間的交互作用。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">慢性鼻竇炎患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">合併氣喘與過敏性鼻炎的慢性鼻竇炎狀態</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">僅患慢性鼻竇炎的狀態</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">憂鬱症的盛行率與關聯強度</div></div>
+</div>
+    <ul class="findings"><li>慢性鼻竇炎合併氣喘與過敏性鼻炎會顯著增加憂鬱症風險</li><li>身體慢性發炎與精神病理之間存在顯著共病關聯</li><li>多重呼吸道過敏性疾病是憂鬱症的重要預測因子</li></ul>
+    <div class="keywords"><span class="keyword-pill">慢性鼻竇炎</span><span class="keyword-pill">氣喘</span><span class="keyword-pill">過敏性鼻炎</span><span class="keyword-pill">憂鬱症</span><span class="keyword-pill">共病</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
