@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-05-22</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-05-22">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-05-22">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-05-22</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 10 篇文獻</span>
+      <span class="stat-item">&#128193; 5 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本組文獻全面探討了「貧窮印記」的多重面向，涵蓋生物嵌入、神經發展、心理健康及社會決定因素。研究揭示，早期感染、產前毒素暴露及低社經地位會透過生理機制損害兒童發育與脊椎健康。在成人方面，住房不穩定與失業嚴重影響心理健康，而藝術休閒與社區育兒介入則展現出顯著的保護與治療效果。針對物質濫用與傳染病問題，文獻強調針對弱勢區域的政策介入與結構性改革至關重要。整體而言，消除貧窮印記需結合生物醫學、心理支持與社會政策的綜合策略。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">大腦發展與神經科學</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:25%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">4 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:25%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42167203" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Am J Trop Med Hyg</span>
+      <span class="paper-date">2026 May 21</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20tpmd250499.%20doi%3A%2010.4269%2Fajtmh.25-0499" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Impact of Asymptomatic Enteroaggregative Escherichia coli Infection and Co-Pathogen Burden on Intestinal Barrier Function, Linear Growth, and Cognitive Development in Early Childhood: Insights from a Birth Cohort Study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">無症狀腸聚集性大腸桿菌感染及共同病原體負擔對幼兒腸道屏障功能、線性生長及認知發展的影響：來自出生隊列研究的見解</p>
+    <p class="paper-authors">Lima AAM, Urtiga VLSC, Ribeiro SA, Filho JQS et al.</p>
+    <p class="paper-abstract">此出生隊列研究探討無症狀腸聚集性大腸桿菌感染對腸道屏障、線性生長及認知發展的影響。研究發現，感染與腸道通透性增加相關，進而阻礙幼兒生長並損害早期認知發展。這表明即使在無症狀情況下，環境病原體負擔也會對貧窮環境中的兒童發展產生深遠的生物嵌入效應。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">Birth cohort in early childhood</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">Asymptomatic Enteroaggregative E. coli infection</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">No infection/Lower pathogen burden</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">Intestinal barrier function, linear growth, cognitive development</div></div>
+</div>
+    <ul class="findings"><li>Asymptomatic E. coli infection increases intestinal permeability</li><li>Infection is associated with impaired linear growth</li><li>Infection negatively impacts cognitive development</li></ul>
+    <div class="keywords"><span class="keyword-pill">Enteric infection</span><span class="keyword-pill">Growth faltering</span><span class="keyword-pill">Cognitive development</span><span class="keyword-pill">Intestinal barrier</span></div>
+  </div>
+  <div class="paper-card" data-pmid="41385285" style="animation-delay:0.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">Postgrad Med J</span>
+      <span class="paper-date">2026 May 20</span>
+      <a class="paper-doi" href="https://doi.org/10.1093%2Fpostmj%2Fqgaf221" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Genetic evidence for causal effects of lifestyle factors, psychiatric factors, and socioeconomic status on various spinal disorders.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">生活型態、精神因素及社會經濟地位對各種脊椎疾病因果影響的基因證據</p>
+    <p class="paper-authors">Shao J, Xu S, Zhang H, Meng H et al.</p>
+    <p class="paper-abstract">本研究利用基因證據（孟德爾隨機化）探討社會經濟地位與生活型態對脊椎疾病的因果影響。結果顯示，低社經地位與特定脊椎疾病存在因果關聯，證實了貧困對身體健康的生物嵌入效應。這為從社會經濟層面預防肌肉骨骼疾病提供了強有力的遺傳學支持，強調改善社經狀況對生理健康的長期效益。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">Genetic datasets (Mendelian randomization)</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">Socioeconomic status, lifestyle, psychiatric factors</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">Genetic instruments as control</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">Various spinal disorders</div></div>
+</div>
+    <ul class="findings"><li>Socioeconomic status has a causal effect on spinal disorders</li><li>Lifestyle factors contribute to spinal pathology</li><li>Genetic evidence supports biological embedding of social deprivation</li></ul>
+    <div class="keywords"><span class="keyword-pill">Socioeconomic status</span><span class="keyword-pill">Spinal disorders</span><span class="keyword-pill">Mendelian randomization</span><span class="keyword-pill">Causal inference</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">大腦發展與神經科學 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42162715" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Environ Res</span>
+      <span class="paper-date">2026 May 19</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.envres.2026.124801" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Prenatal exposure to phthalates, maternal oxidative stress, and early childhood neurobehavior: a pathway modeling approach.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">產前鄰苯二甲酸酯暴露、母體氧化壓力與幼兒神經行為：路徑模型分析方法</p>
+    <p class="paper-authors">Cotter DL, Liu M, Wang Y, Afanasyeva Y et al.</p>
+    <p class="paper-abstract">本研究使用路徑模型分析發現，產前暴露於鄰苯二甲酸酯會誘發母體氧化壓力，進而導致幼兒神經行為發展遲緩。這揭示了環境毒素透過母體生理壓力反應損害胎兒大腦發展的具體機制。研究強調孕期環境監測與減少化學物質暴露，對於預防貧困環境常見的神經發展障礙至關重要。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">Prenatal mother-child pairs</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">Prenatal phthalate exposure</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">Lower exposure levels</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">Maternal oxidative stress, early childhood neurobehavior</div></div>
+</div>
+    <ul class="findings"><li>Prenatal phthalate exposure increases maternal oxidative stress</li><li>Oxidative stress mediates the effect on neurobehavior</li><li>Exposure leads to poorer neurodevelopmental outcomes</li></ul>
+    <div class="keywords"><span class="keyword-pill">Phthalates</span><span class="keyword-pill">Neurodevelopment</span><span class="keyword-pill">Oxidative stress</span><span class="keyword-pill">Prenatal exposure</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42166822" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">Child Abuse Negl</span>
+      <span class="paper-date">2026 May 21</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.chiabu.2026.108121" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Patterns of contextually sensitive adverse childhood experiences and associations with adult mental health outcomes in a longitudinal South African community sample: a latent class analysis.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">南非社區樣本中情境敏感的童年不良經歷模式與成人心理健康結果的關聯：一項潛在類別分析</p>
+    <p class="paper-authors">Thurston C, Murray AL, Franchino-Olsen H, Asghar K et al.</p>
+    <p class="paper-abstract">本研究在南非社區中運用潛在類別分析，識別出童年不良經歷的不同模式，並發現這些模式與成年後的心理健康問題顯著相關。結果顯示，特定類型的童年逆境（如家庭暴力與忽視共存）對成年心理健康具有特定的預測力，強調在心理病理評估中需考慮社會文化情境與多維度的逆境暴露。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">Longitudinal South African community sample</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">Patterns of adverse childhood experiences (ACEs)</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">Different ACE patterns</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">Adult mental health outcomes</div></div>
+</div>
+    <ul class="findings"><li>Distinct patterns of ACEs exist in the population</li><li>Specific ACEs patterns predict specific mental health issues</li><li>Contextual sensitivity is crucial in assessing ACEs</li></ul>
+    <div class="keywords"><span class="keyword-pill">Adverse childhood experiences (ACEs)</span><span class="keyword-pill">Mental health</span><span class="keyword-pill">Latent class analysis</span><span class="keyword-pill">South Africa</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42160317" style="animation-delay:0.88s">
+    <div class="paper-meta">
+      <span class="paper-journal">PLOS Glob Public Health</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1371%2Fjournal.pgph.0006462" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Between the scales and the scars: The interpersonal moderators of the association between Body Mass Index and parent-reported depression/anxiety diagnoses in U.S. children: Evidence from the 2021-22 National Survey of Children&#39;s Health (NSCH).</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">體重計與傷痕之間：美國兒童BMI與父母報告的憂鬱/焦慮診斷關聯中的人際調節因素：來自2021-22年全國兒童健康調查的證據</p>
+    <p class="paper-authors">Kajal F, Suh B, Zhao C, Ingram M et al.</p>
+    <p class="paper-abstract">本研究利用美國全國兒童健康調查數據，分析兒童BMI與父母報告的憂鬱焦慮診斷之關聯，並探討人際因素的調節作用。結果顯示，BMI對心理健康的影響受到家庭環境的顯著調節。這提示臨床在評估兒童肥胖或心理問題時，需採取生心理社會全人觀點，同時關注生理與家庭互動的影響。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">U.S. children (NSCH data)</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">Body Mass Index (BMI)</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">Varying BMI levels</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">Parent-reported depression and anxiety diagnoses</div></div>
+</div>
+    <ul class="findings"><li>BMI is associated with depression/anxiety diagnoses</li><li>Interpersonal factors moderate this association</li><li>Family environment plays a key role in the link</li></ul>
+    <div class="keywords"><span class="keyword-pill">BMI</span><span class="keyword-pill">Childhood depression</span><span class="keyword-pill">Anxiety</span><span class="keyword-pill">Family dynamics</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">4 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42168709" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">AIDS Behav</span>
+      <span class="paper-date">2026 May 22</span>
+      <a class="paper-doi" href="https://doi.org/10.1007%2Fs10461-026-05177-4" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Housing Instability as a Barrier to HIV Viral Suppression: Evidence from a U.S. Systematic Review and Meta-analysis.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">住房不穩定作為HIV病毒抑制的障礙：來自美國系統性回顧與元分析的證據</p>
+    <p class="paper-authors">O&#39;Grady T, Eisenberg M, Weinberg S, Kussainova A et al.</p>
+    <p class="paper-abstract">這項美國系統性回顧與元分析深入探討了住房不穩定對HIV病毒抑制的影響。結果顯示，住房不穩定是患者達到病毒抑制的重大障礙，顯著降低治療成功率。研究強調，在貧困或邊緣化群體中，將住房支持作為HIV護理的一部分，對改善臨床預後和控制疫情傳播至關重要。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">HIV positive individuals</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">Housing instability</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">Stable housing</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">HIV viral suppression</div></div>
+</div>
+    <ul class="findings"><li>Housing instability is a major barrier to viral suppression</li><li>Unstable housing is associated with lower treatment success</li><li>Housing support should be integrated into HIV care</li></ul>
+    <div class="keywords"><span class="keyword-pill">Housing instability</span><span class="keyword-pill">HIV</span><span class="keyword-pill">Viral suppression</span><span class="keyword-pill">Social determinants</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42163531" style="animation-delay:1.28s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Biosoc Sci</span>
+      <span class="paper-date">2026 May 21</span>
+      <a class="paper-doi" href="https://doi.org/10.1017%2FS0021932026100583" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Lived experiences of food insecurity in the UK: users and volunteers in community-based food aid.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">英國糧食不安全的生活經驗：社區食物援助的使用者與志工</p>
+    <p class="paper-authors">Miller S, Townsend N</p>
+    <p class="paper-abstract">本研究通過質性訪問探討英國糧食不安全者的生活經驗。結果顯示，除了食物短缺，受助者更承受著巨大的羞恥感、污名化與社交孤獨。志工同樣面臨高壓。研究指出，單靠社區慈善救濟無法根除問題，必須透過政策改革解決結構性貧困，才能消除這些貧窮帶來的心理社會傷痕。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">Food aid users and volunteers in the UK</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">Experience of food insecurity</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">N/A (Qualitative)</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">Lived experiences, stigma, psychosocial impact</div></div>
+</div>
+    <ul class="findings"><li>Users experience significant shame and stigma</li><li>Volunteers are under high stress</li><li>Charitable aid is insufficient to solve structural poverty</li></ul>
+    <div class="keywords"><span class="keyword-pill">Food insecurity</span><span class="keyword-pill">Lived experience</span><span class="keyword-pill">Food aid</span><span class="keyword-pill">Stigma</span></div>
+  </div>
+  <div class="paper-card" data-pmid="40993078" style="animation-delay:1.36s">
+    <div class="paper-meta">
+      <span class="paper-journal">Ind Health</span>
+      <span class="paper-date">2026 May 20</span>
+      <a class="paper-doi" href="https://doi.org/10.2486%2Findhealth.2025-0079" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">The relationship between employment status and mental health among adults of different groups in Taiwan: a study with artistic leisure as a moderator.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">台灣不同群體成年人的就業狀態與心理健康之關係：以藝術休閒為調節變量的研究</p>
+    <p class="paper-authors">Chen CJ, Hsieh CM, Chen S, Chen A</p>
+    <p class="paper-abstract">本研究探討台灣不同族群成年人的就業狀態與心理健康關係，並分析藝術休閒的調節作用。結果發現，失業顯著損害心理健康，但參與藝術休閒活動能有效緩解此負面影響。研究建議在勞工政策與心理健康促進中，應納入藝術介入作為應對社會經濟壓力的緩衝機制，以提升民眾的心理韌性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">Adults in Taiwan</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">Employment status, Artistic leisure</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">Different employment statuses</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">Mental health outcomes</div></div>
+</div>
+    <ul class="findings"><li>Unemployment negatively affects mental health</li><li>Artistic leisure buffers the negative impact of unemployment</li><li>Moderation effect varies across different groups</li></ul>
+    <div class="keywords"><span class="keyword-pill">Employment status</span><span class="keyword-pill">Mental health</span><span class="keyword-pill">Artistic leisure</span><span class="keyword-pill">Moderation</span></div>
+  </div>
+  <div class="paper-card" data-pmid="41670441" style="animation-delay:1.44s">
+    <div class="paper-meta">
+      <span class="paper-journal">Clin Infect Dis</span>
+      <span class="paper-date">2026 May 20</span>
+      <a class="paper-doi" href="https://doi.org/10.1093%2Fcid%2Fciaf730" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Fatal Overdose, Acute Viral Hepatitis, and HIV Attributed to Injection Drug Use, Appalachian Region of the United States, 2000-2023.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">美國阿帕拉契亞地區2000-2023年歸因於注射藥物使用的致命過量、急性病毒性肝炎和HIV</p>
+    <p class="paper-authors">Bixler D, Bennett CC, Yin S, Thomson A et al.</p>
+    <p class="paper-abstract">本研究分析美國阿帕契亞地區因注射藥物使用導致的過量致死、急性肝炎和HIV的長期趨勢。結果顯示該地區面臨嚴重的物質使用流行病，感染率上升，與社會經濟衰退密切相關。研究強調需要針對該貧困地區加強公共衛生監測與減害策略，以遏制這一由貧困驅動的健康危機。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">Appalachian region population</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">Injection drug use context (2000-2023)</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">N/A (Trend analysis)</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">Fatal overdose, Acute viral hepatitis, HIV rates</div></div>
+</div>
+    <ul class="findings"><li>Rising rates of overdose deaths in the region</li><li>Increase in HIV and Hepatitis infections</li><li>Link between socioeconomic decline and substance use crisis</li></ul>
+    <div class="keywords"><span class="keyword-pill">Injection drug use</span><span class="keyword-pill">HIV</span><span class="keyword-pill">Overdose</span><span class="keyword-pill">Appalachia</span><span class="keyword-pill">Public health</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42159434" style="animation-delay:1.6s">
+    <div class="paper-meta">
+      <span class="paper-journal">Child Dev</span>
+      <span class="paper-date">2026 May 20</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20aacag099.%20doi%3A%2010.1093%2Fchidev%2Faacag099" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Effects of a 2-year randomized controlled trial of parenting centers on caregiver mental health in rural China.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">為期兩年的育兒中心隨機對照試驗對中國農村照顧者心理健康的影響</p>
+    <p class="paper-authors">Wang B, Li S, Zhang H, Lu Y et al.</p>
+    <p class="paper-abstract">這項在中國農村的隨機對照試驗顯示，為期兩年的育兒中心介入計畫能顯著改善照顧者的心理健康。相比對照組，參與計畫的照顧者其抑鬱症狀與壓力大幅降低，育兒自我效能感提升。證明了在資源匱乏地區，透過低成本、基於社區的育兒支持介入，能有效打破貧困對家庭心理健康的負面循環。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">Caregivers in rural China</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">Parenting centers program (2 years)</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">Control group (no intervention)</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">Caregiver mental health outcomes</div></div>
+</div>
+    <ul class="findings"><li>Intervention significantly reduced depression and stress</li><li>Improved parenting self-efficacy</li><li>Effective in low-resource rural settings</li></ul>
+    <div class="keywords"><span class="keyword-pill">Parenting intervention</span><span class="keyword-pill">Rural China</span><span class="keyword-pill">Caregiver mental health</span><span class="keyword-pill">RCT</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
