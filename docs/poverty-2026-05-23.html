@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-05-23</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-05-23">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-05-23">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-05-23</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 4 篇文獻</span>
+      <span class="stat-item">&#128193; 3 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本批次包含的四篇文獻分別從社區賦權、壓力生理機制、職場心理健康及重症喪親心理反應等不同維度，探討了壓力、逆境與健康之間的複雜關聯。雖然這些研究並非直接以「貧窮」為核心標籤，但其所揭示的底層邏輯與「貧窮印記」的理論框架高度契合。Flint女性的研究突顯了在結構性剝奪環境中，主體性與社會支持對緩衝壓力的關鍵作用；自律神經失調的研究則為理解長期壓力如何透過生物嵌入路徑導致生理病變提供了基礎機制；年輕員工與ICU喪親者的研究則分別聚焦於早期職場壓力與急性創傷失落的心理病理學風險因素。整體而言，這些文獻強調了從生物生理到心理社會層面的多維度壓力衝擊，以及識別可修正風險因子與賦權介入對促進健康公平與心理韌性的重要性。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">2 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42174547" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMC Womens Health</span>
+      <span class="paper-date">2026 May 22</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs12905-026-04543-7" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title">Belonging to self: Flint women meeting needs, securing safety and finding voice.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">歸屬於自我：Flint女性滿足需求、保障安全與發聲。</p>
+    <p class="paper-authors">Hailemariam M, Bustos TE, Ataro B, Nguyen C et al.</p>
+    <p class="paper-abstract">本研究探討美國弗林特市女性在面對結構性環境危機與資源剝奪時，如何透過主體性建構來滿足基本需求、確保安全並發出自己的聲音。研究採用質性方法，深入訪談當地女性，發現她們在缺乏系統性支持的惡劣環境中，展現出強大的韌性與集體互助網絡。這些女性不僅是生存者，更是積極的行動者，她們透過建立社區連結、尋求資源以及分享經驗，來抵禦環境不公帶來的長期壓力。研究強調，在面對社會決定因素帶來的健康風險時，賦權與自我歸屬感是緩衝逆境壓力、保護心理健康的核心要素。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國弗林特市面臨環境危機與資源剝奪的女性</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">經歷結構性剝奪與社區賦權過程</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無明確對照組（質性研究）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">建立自我歸屬感、滿足生存需求與發聲的應對策略</div></div>
+</div>
+    <ul class="findings"><li>展現出強大的個體韌性與集體互助網絡</li><li>賦權與自我歸屬感是緩衝逆境壓力的關鍵</li><li>透過社區連結積極抵禦環境不公帶來的健康風險</li></ul>
+    <div class="keywords"><span class="keyword-pill">環境不公</span><span class="keyword-pill">社區賦權</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">壓力緩衝</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42172428" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Am J Physiol Cell Physiol</span>
+      <span class="paper-date">2026 May 22</span>
+      <a class="paper-doi" href="https://doi.org/10.1152%2Fajpcell.00871.2025" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Autonomic Nervous System Dysregulation as a Driver of Atrial Fibrillation: Pathways, Modulators and Therapies.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">自律神經系統失調作為心房顫動的驅動因素：路徑、調節因子與治療方法。</p>
+    <p class="paper-authors">Saha S, Thorpe J, Hill AP</p>
+    <p class="paper-abstract">本文系統性回顧了自主神經系統（ANS）失調作為心房顫動驅動因素的角色、調節因子及治療策略。研究指出，交感神經與副交感神經系統的失衡會導致心房電生理與結構重塑，從而誘發並維持心房顫動。長期的心理壓力、發炎反應與生活方式因素會進一步調節這一過程。從「貧窮印記」的壓力生理學視角來看，本文揭示了慢性社會壓力如何透過生物嵌入機制，引發ANS失調，進而增加心血管疾病的風險。文章也探討了針對神經調節的潛在治療方法，強調了控制上游壓力源對於預防心臟病理變化的重要性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">心房顫動患者或相關疾病模型</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">自律神經系統失調與相關調節因子（如壓力、發炎）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">正常自律神經功能狀態</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心房電生理與結構重塑、心房顫動的發生與維持</div></div>
+</div>
+    <ul class="findings"><li>交感與副交感神經失衡是心房顫動的核心驅動力</li><li>長期心理壓力與發炎會調節並惡化自律神經失調</li><li>神經調節療法具有潛在的治療與預防價值</li></ul>
+    <div class="keywords"><span class="keyword-pill">自律神經系統</span><span class="keyword-pill">心房顫動</span><span class="keyword-pill">壓力生理學</span><span class="keyword-pill">生物嵌入</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42095599" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">Int J Occup Med Environ Health</span>
+      <span class="paper-date">2026 May 22</span>
+      <a class="paper-doi" href="https://doi.org/10.13075%2Fijomeh.1896.02787" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Aspects of young employees&#39; mental health: a narrative review.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">年輕員工心理健康的各個面向：一篇敘事性回顧。</p>
+    <p class="paper-authors">Marczak A, Piechota J, Staszewska K, Wiszniewska M</p>
+    <p class="paper-abstract">本敘事性文獻回顧探討了年輕員工心理健康的各個面向，包括其盛行率、危險因子及保護因子。研究指出，年輕員工面臨獨特的職場壓力源，如工作不穩定性、角色模糊、低薪酬以及工作與生活平衡的困難，這些因素顯著增加了焦慮、憂鬱與職業倦怠的風險。從社會決定因素的角度分析，早期職業生涯中的經濟不安全感和就業品質不僅影響當前的心理健康，更可能產生長期的「印記」效應，影響未來的社會流動與健康軌跡。研究呼籲組織與政策制定者重視改善就業條件，以預防年輕世代的心理健康惡化。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">年輕員工</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">職場壓力源與就業品質（如不穩定、低薪、角色模糊）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無明確對照組（敘述性回顧）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">焦慮、憂鬱、職業倦怠等心理健康狀態</div></div>
+</div>
+    <ul class="findings"><li>工作不穩定與低薪酬是年輕員工核心的職場壓力源</li><li>早期職場經濟不安全感可能產生長期的健康印記效應</li><li>改善就業條件是預防年輕世代心理問題的關鍵</li></ul>
+    <div class="keywords"><span class="keyword-pill">年輕員工</span><span class="keyword-pill">職場壓力</span><span class="keyword-pill">心理健康</span><span class="keyword-pill">就業品質</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42171421" style="animation-delay:0.88s">
+    <div class="paper-meta">
+      <span class="paper-journal">Crit Care Med</span>
+      <span class="paper-date">2026 May 22</span>
+      <a class="paper-doi" href="https://doi.org/10.1097%2FCCM.0000000000007173" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Modifiable Risk Factors of Prolonged Grief Disorder, Posttraumatic Stress Disorder, Depression, and Anxiety Symptom States After ICU Loss.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">ICU喪親後延長哀傷障礙、創傷後壓力障礙、憂鬱症與焦慮症狀狀態的可修正風險因素。</p>
+    <p class="paper-authors">Wen FH, Boelen PA, Chou WC, Tang ST</p>
+    <p class="paper-abstract">本研究旨在探討導致重症監護病房（ICU）患者家屬在喪親後發生延長哀傷障礙（PGD）、創傷後壓力障礙（PTSD）、憂鬱症與焦慮症的可修正風險因素。研究識別出如缺乏社會支持、未妥善處理的醫療溝通、以及喪親前後的高水平急性壓力等關鍵變數。這些發現指出，雖然喪親本身是極端壓力事件，但圍繞在臨床照護過程中的心理社會環境因素，對於是否會發展為嚴重的精神病理狀態起著決定性作用。透過針對這些可修正風險因子進行早期介入，能有效中斷從急性創傷向慢性精神疾病的轉化路徑。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">經歷ICU喪親的家屬</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">可修正的風險因素（如社會支持程度、醫療溝通品質、急性壓力水平）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無此類風險因素或風險較低者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">延長哀傷障礙、PTSD、憂鬱症與焦慮症的發生率或嚴重程度</div></div>
+</div>
+    <ul class="findings"><li>缺乏社會支持與不良醫療溝通是關鍵的可修正風險因子</li><li>臨床照護環境的壓力深刻影響精神病理的發展軌跡</li><li>針對可修正因子的早期介入可預防慢性精神疾病</li></ul>
+    <div class="keywords"><span class="keyword-pill">ICU喪親</span><span class="keyword-pill">延長哀傷障礙</span><span class="keyword-pill">創傷後壓力障礙</span><span class="keyword-pill">可修正風險因子</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
