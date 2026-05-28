@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-05-28</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-05-28">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-05-28">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-05-28</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 10 篇文獻</span>
+      <span class="stat-item">&#128193; 4 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本組文獻從生物嵌入到社會決定因素全面剖析了「貧窮印記」與環境壓力的健康效應。生物層面，研究揭示了COVID-19對免疫系統的長期影響及宏觀壓力（戰爭、疫情）透過胎兒性別比例展現的生理衝擊。神經與心理層面，研究強調了發育時機對青少年壓力的敏感性，以及教育、收入與社會支持在緩衝憂鬱症與戰爭創傷中的關鍵作用。此外，多項研究指出地理環境、財務困境與職業背景等社會因素顯著預測從兒童慢性病到中老年跌倒及癌症疼痛的風險。整體而言，這些文獻證實了整合生物心理社會模型對於制定健康促進與扶貧政策的必要性。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:40%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">大腦發展與神經科學</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:20%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:40%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">5 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42201457" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Eur J Epidemiol</span>
+      <span class="paper-date">2026 May 27</span>
+      <a class="paper-doi" href="https://doi.org/10.1007%2Fs10654-026-01407-0" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">The decade of double-trouble: live birth and stillbirth sex ratio variation in Finland during the COVID-19 pandemic and Russia&#39;s attack on Ukraine.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">雙重困擾的十年：芬蘭在COVID-19大流行和俄羅斯進攻烏克蘭期間的活產與死產性別比例變化。</p>
+    <p class="paper-authors">Helle S, Tanskanen AO, Danielsbacka M</p>
+    <p class="paper-abstract">本研究探討芬蘭在COVID-19大流行及俄烏戰爭期間，活產與死產性別比例的變化。結果顯示，在這些極度壓力時期，男性胎兒的死亡率相對上升，導致出生性別比例波動。這支持了「受壓的男性胎兒」假說，證實宏觀社會危機能透過母體壓力生理路徑影響胎兒存活，揭示了環境壓力對人口生物學的深層生物嵌入效應。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">芬蘭孕婦與新生兒</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">COVID-19大流行與俄烏戰爭（宏觀壓力事件）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">歷史數據或非危機時期基準</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">活產與死產的性別比例</div></div>
+</div>
+    <ul class="findings"><li>宏觀社會壓力事件導致男性胎兒死亡率相對上升</li><li>出生性別比例在危機期間發生顯著波動</li><li>驗證了壓力生理學對胎兒存活的影響機制</li></ul>
+    <div class="keywords"><span class="keyword-pill">Sex ratio</span><span class="keyword-pill">Stress physiology</span><span class="keyword-pill">COVID-19</span><span class="keyword-pill">War exposure</span><span class="keyword-pill">Fetal loss</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42191112" style="animation-delay:0.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">Ann Allergy Asthma Immunol</span>
+      <span class="paper-date">2026 May 25</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20S1081-1206(26)00227-9.%20doi%3A%2010.1016%2Fj.anai.2026.05.022" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Post-COVID-19 Onset of Allergic Conditions in a Propensity-Matched Cohort of Children and Adults.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">COVID-19後兒童與成人過敏性疾病發作的傾向匹配隊列研究。</p>
+    <p class="paper-authors">Clarion J, Berill Z, Susi A, Mitre E et al.</p>
+    <p class="paper-abstract">本研究利用傾向分數匹配隊列，評估COVID-19感染對兒童及成人新發過敏性疾病風險的影響。結果顯示，確診者感染後發生哮喘、過敏性鼻炎等疾病的機率顯著高於未感染者。這表明SARS-CoV-2可能導致免疫系統的長期生物改變，將感染壓力轉化為慢性過敏反應，對臨床上後疫情時期的過敏性疾病監測與管理具有重要意義。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">兒童與成人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">SARS-CoV-2感染</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">傾向分數匹配的未感染對照組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">新發過敏性疾病（如哮喘、過敏性鼻炎）</div></div>
+</div>
+    <ul class="findings"><li>COVID-19感染與新發過敏性疾病風險增加顯著相關</li><li>兒童與成人均受影響</li><li>病毒感染可能引起免疫系統的長期改變</li></ul>
+    <div class="keywords"><span class="keyword-pill">COVID-19</span><span class="keyword-pill">Allergic diseases</span><span class="keyword-pill">Immune system</span><span class="keyword-pill">Propensity score matching</span><span class="keyword-pill">Post-viral sequelae</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">大腦發展與神經科學 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42187215" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Dev Psychopathol</span>
+      <span class="paper-date">2026 May 26</span>
+      <a class="paper-doi" href="https://doi.org/10.1017%2FS0954579426101539" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">When stress matters most: developmental timing and socio-ecological stressors among Mexican-origin adolescents from low-income immigrant families.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">壓力何時最重要：低收入移民家庭墨西哥裔青少年的發育時機與社會生態壓力源。</p>
+    <p class="paper-authors">Ip KI, Wen W, Lee S, Sim L et al.</p>
+    <p class="paper-abstract">本研究聚焦低收入墨西哥裔移民青少年，探討社會生態壓力源對發展的影響及其關鍵時機。研究發現，特定的發展階段（如青春期早期）對壓力更為敏感，且貧困相關的壓力源對青少年的心理調適有累積性的負面影響。這揭示了貧窮印記在神經發展層面的時間維度，強調了在敏感期介入以緩解移民家庭青少年壓力的重要性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">低收入墨西哥裔移民青少年</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">不同發展時期的社會生態壓力源</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同發展階段的壓力暴露比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理調適與發展結果</div></div>
+</div>
+    <ul class="findings"><li>特定發展階段（如青春期早期）對壓力更敏感</li><li>貧困相關壓力源具有累積性負面影響</li><li>發育時機是壓力生物嵌入的關鍵因素</li></ul>
+    <div class="keywords"><span class="keyword-pill">Developmental timing</span><span class="keyword-pill">Socio-ecological stress</span><span class="keyword-pill">Mexican-origin</span><span class="keyword-pill">Adolescents</span><span class="keyword-pill">Immigration</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42192634" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMJ Open</span>
+      <span class="paper-date">2026 May 24</span>
+      <a class="paper-doi" href="https://doi.org/10.1136%2Fbmjopen-2025-106522" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Subgroup disparities in the mediating roles of income and social support between education level and depressive symptoms among Chinese middle-aged and older adults: an analysis based on the China health and retirement longitudinal study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">中國中老年人教育程度與抑鬱癥狀間收入和社會支持中介作用的亞組差異：基於中國健康與退休縱向研究的分析。</p>
+    <p class="paper-authors">Wang W, Fan Y, Ma C</p>
+    <p class="paper-abstract">本研究基於中國健康與退休縱向研究，分析中老年人群教育程度透過收入與社會支持影響憂鬱症狀的路徑。結果顯示，教育程度較低者因收入較少且社會支持不足，憂鬱風險顯著增加。此中介效應在城鄉與性別亞組中存在差異，揭示社會經濟地位如何通過心理資源缺口嵌入心理健康，提示政策應著重於強化低教育群體的經濟保障與社會支持網絡。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">中國中老年人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">教育程度（透過收入與社會支持的中介）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同亞組（如城鄉、性別）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">抑鬱癥狀</div></div>
+</div>
+    <ul class="findings"><li>教育程度較低者憂鬱風險較高</li><li>收入和社會支持是重要的中介變量</li><li>亞組間存在顯著差異，需分類介入</li></ul>
+    <div class="keywords"><span class="keyword-pill">Depressive symptoms</span><span class="keyword-pill">Education</span><span class="keyword-pill">Income</span><span class="keyword-pill">Social support</span><span class="keyword-pill">CHARLS</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42189558" style="animation-delay:0.88s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Pers Soc Psychol</span>
+      <span class="paper-date">2026 May 25</span>
+      <a class="paper-doi" href="https://doi.org/10.1037%2Fpspp0000601" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Within-nation variation in war exposure and psychological and physical adjustment.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">國內戰爭暴露差異與心理及生理適應。</p>
+    <p class="paper-authors">Entringer TM, Halbmeier C, Buchinger L, Reitz AK</p>
+    <p class="paper-abstract">本研究分析國內戰爭暴露程度的差異如何影響民眾的心理與生理適應。研究發現，高強度的戰爭暴露顯著預測較差的心理健康狀況與生理健康指標。更重要的是，國內區域間的變異顯示，社會凝聚力與資源可得性在緩衝戰爭創傷中扮演關鍵角色。研究強調了極端壓力下的生物心理社會調節機制，為戰後地區的復原與心理重建提供了具體的介入方向。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">衝突地區居民</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">不同強度的戰爭暴露</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">國內不同暴露程度區域</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理與生理適應能力</div></div>
+</div>
+    <ul class="findings"><li>高強度戰爭暴露導致心理生理適應不良</li><li>社會凝聚力有緩衝作用</li><li>區域資源差異影響創傷恢復</li></ul>
+    <div class="keywords"><span class="keyword-pill">War exposure</span><span class="keyword-pill">Psychological adjustment</span><span class="keyword-pill">Physical health</span><span class="keyword-pill">Trauma</span><span class="keyword-pill">Social cohesion</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">5 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42184033" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Support Care Cancer</span>
+      <span class="paper-date">2026 May 25</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20578.%20doi%3A%2010.1007%2Fs00520-026-10829-1" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Financial hardship and pain among cancer survivors: a French nationwide cross-sectional analysis.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">癌症存活者的經濟困難與疼痛：法國全國性橫斷面分析。</p>
+    <p class="paper-authors">Girardon L, Ragusa C, Laporte F, Pereira B et al.</p>
+    <p class="paper-abstract">這項法國全國性研究分析癌症存活者財務困難與疼痛之間的關聯。橫斷面分析結果顯示，遭遇財務困難的存活者報告嚴重疼痛的機率顯著更高，且這種關聯獨立於疾病類型與治療階段。研究揭示了經濟壓力如何加劇生理痛苦，將貧窮印記具體化為疼痛感受，支持在癌症護理中整合社會經濟評估與緩解疼痛的全方位介入策略。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">法國癌症存活者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">財務困難（經濟壓力）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無財務困難者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">疼痛程度</div></div>
+</div>
+    <ul class="findings"><li>財務困難與較高的疼痛程度顯著相關</li><li>此關聯獨立於臨床病理因素</li><li>經濟壓力加劇了癌症存活者的生理痛苦</li></ul>
+    <div class="keywords"><span class="keyword-pill">Financial hardship</span><span class="keyword-pill">Pain</span><span class="keyword-pill">Cancer survivors</span><span class="keyword-pill">Social determinants</span><span class="keyword-pill">Cross-sectional study</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42203291" style="animation-delay:1.28s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMJ Open</span>
+      <span class="paper-date">2026 May 27</span>
+      <a class="paper-doi" href="https://doi.org/10.1136%2Fbmjopen-2026-118710" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Risk factors for recurrent falls in midlife: a prospective cohort study using data from the Health and Employment After Fifty (HEAF) study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">中年反覆跌倒的風險因素：使用HEAF研究數據的前瞻性隊列研究。</p>
+    <p class="paper-authors">D&#39;Angelo S, Westbury L, Laskou F, Walker-Bone K et al.</p>
+    <p class="paper-abstract">基於「五十歲後的健康與就業」(HEAF) 研究，本研究以前瞻性隊列分析探討中年人反覆跌倒的風險因子。結果顯示，除傳統生理因素外，職業類型（特別是涉及體力勞動者）與就業狀態是預測跌倒的重要指標。研究揭示了職業暴露與社會經濟地位如何嵌入健康風險中，指出需針對特定工作群體進行跌倒預防介入，以減輕因健康問題導致的社會排除。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">50歲以上的中年人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">健康與就業相關風險因子</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無跌倒經驗者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">反覆跌倒</div></div>
+</div>
+    <ul class="findings"><li>職業類型與就業狀態影響跌倒風險</li><li>體力勞動者風險較高</li><li>職業健康是中年預防醫學的重要環節</li></ul>
+    <div class="keywords"><span class="keyword-pill">Recurrent falls</span><span class="keyword-pill">Midlife</span><span class="keyword-pill">Employment</span><span class="keyword-pill">Occupational health</span><span class="keyword-pill">HEAF study</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42201936" style="animation-delay:1.36s">
+    <div class="paper-meta">
+      <span class="paper-journal">PLoS One</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1371%2Fjournal.pone.0350016" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Serum ferritin in Yemeni patients with sickle cell anemia: Association with sociodemographic factors and hematological profiles.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">葉門鐮刀型貧血患者的血清鐵蛋白：與社會人口學因素和血液特徵的關聯。</p>
+    <p class="paper-authors">Al-Shami A, Al-Maktari LAS, Qasem L, Aldhorae K et al.</p>
+    <p class="paper-abstract">本研究旨在分析葉門鐮刀型貧血患者血清鐵蛋白水平與社會人口學因素及血液特徵的關聯。研究發現，患者的居住地區、教育程度及經濟狀況等社會決定因素，與鐵蛋白水平（反映鐵過載或營養狀況）顯著相關。這表明在資源受限的葉門，貧窮與社會不平等直接影響了慢性病患的生物標記與疾病管理，凸顯了改善社會經濟條件對控制血液病併發症的重要性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">葉門鐮刀型貧血患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社會人口學因素（地區、教育、經濟）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同的血液學特徵</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">血清鐵蛋白水平</div></div>
+</div>
+    <ul class="findings"><li>社會經濟地位與鐵蛋白水平相關</li><li>居住地區影響疾病管理結果</li><li>貧窮加劇了慢性血液病的負擔</li></ul>
+    <div class="keywords"><span class="keyword-pill">Serum ferritin</span><span class="keyword-pill">Sickle cell anemia</span><span class="keyword-pill">Sociodemographic factors</span><span class="keyword-pill">Yemen</span><span class="keyword-pill">Health disparities</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42191217" style="animation-delay:1.44s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMJ Paediatr Open</span>
+      <span class="paper-date">2026 May 26</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20e003969.%20doi%3A%2010.1136%2Fbmjpo-2025-003969" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Temporal trends, geographic patterns and predictors of chronic health conditions in Australian children: a mixed multilevel analysis.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">澳洲兒童慢性健康狀況的時間趨勢、地理模式及預測因子：混合多層次分析。</p>
+    <p class="paper-authors">Abebe AM, Hoque Z, Khanam R</p>
+    <p class="paper-abstract">本研究採用混合多層次分析，檢視澳洲兒童慢性健康狀況的時間趨勢、地理分佈及預測因子。結果顯示，兒童慢性病患病率隨時間上升，且呈現顯著的地理聚集現象，偏遠與低社經地區的風險最高。研究證實，地區層級的社會經濟劣勢是解釋健康不平等的核心因素，強調公共衛生政策需針對高風險地理區域進行精準資源分配。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">澳洲兒童</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">時間變化與地理環境</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同地理區域與時間點</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">慢性健康狀況</div></div>
+</div>
+    <ul class="findings"><li>兒童慢性病患病率呈上升趨勢</li><li>地理與社經不平等導致健康差異</li><li>需針對弱勢地區進行政策介入</li></ul>
+    <div class="keywords"><span class="keyword-pill">Chronic health conditions</span><span class="keyword-pill">Children</span><span class="keyword-pill">Geographic disparities</span><span class="keyword-pill">Multilevel analysis</span><span class="keyword-pill">Social determinants</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42154547" style="animation-delay:1.52s">
+    <div class="paper-meta">
+      <span class="paper-journal">Proc Natl Acad Sci U S A</span>
+      <span class="paper-date">2026 May 26</span>
+      <a class="paper-doi" href="https://doi.org/10.1073%2Fpnas.2525715123" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title">Wind turbine proximity and health: Longitudinal evidence from US households.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">風力渦輪機接近度與健康：來自美國家庭的縱向證據。</p>
+    <p class="paper-authors">Rott N, Almond D, Giuntella O</p>
+    <p class="paper-abstract">本縱向研究利用美國家庭數據，探討居住環境中風力渦輪機的接近程度對居民健康的影響。研究發現，靠近渦輪機與居民主觀報告的睡眠品質下降及心理壓力增加有顯著關聯，雖然客觀生理疾病的證據較不一致。這反映了環境基礎設施可能作為一種慢性壓力源，影響社區福祉，為環境評估與居住區規劃提供了關於潛在健康風險的重要實證。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國家庭</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">居住地與風力渦輪機的距離</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">遠離風力渦輪機的家庭</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">健康結果（如睡眠、壓力）</div></div>
+</div>
+    <ul class="findings"><li>靠近渦輪機與睡眠障礙及壓力增加有關</li><li>主觀健康感受受影響大於客觀疾病指標</li><li>環境基礎設施是社區壓力的潛在來源</li></ul>
+    <div class="keywords"><span class="keyword-pill">Wind turbine</span><span class="keyword-pill">Health</span><span class="keyword-pill">Longitudinal study</span><span class="keyword-pill">Environmental stress</span><span class="keyword-pill">Sleep quality</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
