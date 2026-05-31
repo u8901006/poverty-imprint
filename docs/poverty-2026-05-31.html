@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-05-31</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-05-31">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-05-31">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-05-31</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 15 篇文獻</span>
+      <span class="stat-item">&#128193; 5 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>這15篇文獻全面探討了「貧窮印記」在生物、心理及社會層面的多重影響。在生物機制方面，研究揭示童年早期的經濟衝擊與受虐經驗會透過壓力生理系統（如皮質醇反應）造成長期的認知衰退與健康損害（Paper 5, 15）。社會決定因素的研究顯示，社經地位、工作環境與地域不平等顯著影響個體的心理福祉與生活品質，且在COVID-19期間這些差距更為明顯（Paper 7, 10, 11）。心理健康方面，醫學生與醫護人員的高壓環境導致憂鬱與焦慮問題普遍，需加強評估與支持（Paper 3, 8, 9, 13）。在介入政策上，貧窮意識的心理健康實務與職場重返工作計畫被證實具有臨床效益，能有效緩解貧窮與疾病帶來的社會成本（Paper 4, 14）。整體而言，這些研究強調整合生物醫學與社會科學視角，對打破貧窮代際傳遞與促進健康公平至關重要。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:17%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:83%">5 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">6 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">認知與行為</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:17%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42214945" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Psychoneuroendocrinology</span>
+      <span class="paper-date">2026 May 26</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.psyneuen.2026.107903" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Association between cortisol and cardiovascular reactivity varied in child maltreatment.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">兒童受虐經驗中皮質醇與心血管反應性的關聯變化。</p>
+    <p class="paper-authors">Zhang L, Lü W</p>
+    <p class="paper-abstract">本研究探討了兒童期受虐經驗如何調節生理壓力反應，具體分析皮質醇水平與心血管反應性之間的關聯。研究結果顯示，與未受虐兒童相比，有受虐歷史的兒童在應激任務中表現出不同的生理反應模式，這可能反映了壓力調節系統（如HPA軸）的長期重塑。這種生物嵌入效應解釋了為何早期逆境會增加成年後心血管與代謝疾病的風險，強調了早期保護介入對於恢復正常壓力生理功能的重要性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">兒童</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">兒童受虐經驗</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無受虐經驗的對照組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">皮質醇水平與心血管反應性的關聯</div></div>
+</div>
+    <ul class="findings"><li>受虐兒童的壓力生理反應模式異於常人</li><li>皮質醇與心血管反應的耦合關係受早期經驗影響</li><li>早期逆境導致生物壓力系統的長期調節改變</li></ul>
+    <div class="keywords"><span class="keyword-pill">兒童受虐</span><span class="keyword-pill">皮質醇</span><span class="keyword-pill">心血管反應性</span><span class="keyword-pill">壓力生理學</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">5 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42216625" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Int J Dent Hyg</span>
+      <span class="paper-date">2026 May 30</span>
+      <a class="paper-doi" href="https://doi.org/10.1111%2Fidh.70106" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">The Association Between Depression and Use of Dental Services Among U.S. Adults.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">美國成人憂鬱症與牙醫服務利用之間的關聯。</p>
+    <p class="paper-authors">Rahardia N, Mira R, Sabbah W</p>
+    <p class="paper-abstract">本研究旨在探討美國成人憂鬱症狀況與牙醫服務利用之間的關聯性。透過分析全美健康調查數據，研究發現患有憂鬱症的成年人顯著較少定期接受牙科檢查與治療。此現象不僅源於憂鬱症導致的動機喪失與自我照顧能力下降，更受到經濟障礙與健康素養的交互影響。結果顯示，心理健康問題是造成口腔健康不平等的重要預測因子，牙科醫療團隊需具備識別憂鬱症狀的能力，並提供更具同理心的服務，以改善此群體的口腔健康。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國成年人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">憂鬱症狀</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無憂鬱症狀者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">牙醫服務利用率</div></div>
+</div>
+    <ul class="findings"><li>憂鬱症患者使用牙醫服務的頻率較低</li><li>心理健康與口腔健康行為顯著相關</li><li>經濟因素在憂鬱與醫療利用之間起中介作用</li></ul>
+    <div class="keywords"><span class="keyword-pill">憂鬱症</span><span class="keyword-pill">牙醫服務</span><span class="keyword-pill">健康行為</span><span class="keyword-pill">健康不平等</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42216274" style="animation-delay:0.48s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Am Heart Assoc</span>
+      <span class="paper-date">2026 May 29</span>
+      <a class="paper-doi" href="https://doi.org/10.1161%2FJAHA.125.046964" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Characteristics of Cardiovascular Disease Prediction Models Considering Mental Disorders: A Systematic Review.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">納入精神疾患的心血管疾病預測模型特性：系統性回顧。</p>
+    <p class="paper-authors">Siddiqi S, Haggerty T, Akther A, Rusu S et al.</p>
+    <p class="paper-abstract">本系統性回顧評估了將精神疾患（如憂鬱症、焦慮症）納入心血管疾病（CVD）預測模型的影響。研究分析了多項模型的表現，發現加入心理健康變數能顯著提升CVD風險預測的準確性。精神疾病不僅是CVD的共病，更是獨立的風險因子，透過生理機制與行為路徑影響心臟健康。文獻建議未來的臨床預測工具應整合心理健康評估，以利早期識別高風險族群並實施更全面的預防策略。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">心血管疾病預測模型</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">納入精神疾患變數</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未納入精神疾患的模型</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">預測準確度與模型特性</div></div>
+</div>
+    <ul class="findings"><li>精神疾患能提升CVD預測模型的效能</li><li>心理健康是心血管疾病的重要風險因子</li><li>現有模型多未充分整合心理評估</li></ul>
+    <div class="keywords"><span class="keyword-pill">心血管疾病</span><span class="keyword-pill">預測模型</span><span class="keyword-pill">精神疾患</span><span class="keyword-pill">風險評估</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42215260" style="animation-delay:0.56s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMJ Open</span>
+      <span class="paper-date">2026 May 29</span>
+      <a class="paper-doi" href="https://doi.org/10.1136%2Fbmjopen-2026-120861" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Global gaps in how we assess undergraduate medical students&#39; mental health: a scoping review protocol.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">全球醫學本科生心理健康評估的差距：範疇回顧計畫。</p>
+    <p class="paper-authors">Michaloud F, Olié E, Deruelle P, De Jong A et al.</p>
+    <p class="paper-abstract">本範疇回顧旨在探討全球醫學院校評估學生心理健康的方法與現存差距。醫學生面臨高強度學業壓力，心理健康問題普遍，但各校評估工具與標準不一。研究將系統性檢視現有文獻，分析篩檢工具的有效性、文化適應性以及實施障礙。初步顯示，全球缺乏統一且標準化的醫學生心理健康監測機制，導致許多學生未能獲得及時支援。建立標準化的評估架構對於促進醫療人力的心理健康至關重要。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">醫學院學生</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">心理健康評估方法</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無特定對照（現狀分析）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">評估工具的差距與特性</div></div>
+</div>
+    <ul class="findings"><li>全球缺乏標準化的醫學生心理健康評估</li><li>現有工具可能存在文化偏差</li><li>亟需建立一致的監測與支援系統</li></ul>
+    <div class="keywords"><span class="keyword-pill">醫學生</span><span class="keyword-pill">心理健康評估</span><span class="keyword-pill">醫學教育</span><span class="keyword-pill">篩檢工具</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42210425" style="animation-delay:0.64s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMC Psychol</span>
+      <span class="paper-date">2026 May 28</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs40359-026-04874-y" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Global prevalence and associated factors of social anxiety disorder among medical students: a systematic review and meta-analysis.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">本研究透過統合分析，量化全球醫學生社交焦慮障礙（SAD）的盛行率並探討其相關危險因子。結果顯示，醫學生社群中SAD的盛行率顯著高於一般年輕成人人口，這與高競爭的學術環境、臨床實習壓力及完美主義傾向密切相關。社交焦慮不僅影響學生的學業表現，更可能損害其未來的臨床人際技巧與職業發展。研究呼籲醫學教育機構應重視此問題，並提供心理諮商與軟技能訓練以降低其負面影響。</p>
+    <p class="paper-authors">Wang Y, Hou C, Huang Z, Yan M et al.</p>
+    
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">醫學生</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社交焦慮障礙</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">一般人口或其他群體</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">盛行率與影響因素</div></div>
+</div>
+    <ul class="findings"><li>醫學生社交焦慮盛行率極高</li><li>學業與臨床壓力是主要誘因</li><li>社交焦慮阻礙職業技能發展</li></ul>
+    <div class="keywords"><span class="keyword-pill">社交焦慮障礙</span><span class="keyword-pill">醫學生</span><span class="keyword-pill">盛行率</span><span class="keyword-pill">心理壓力</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42209011" style="animation-delay:0.72s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMJ Open</span>
+      <span class="paper-date">2026 May 28</span>
+      <a class="paper-doi" href="https://doi.org/10.1136%2Fbmjopen-2025-109056" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Workplace incivility and bullying across healthcare professionals: patterns and correlates - a cross-sectional study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">醫療專業人員的職場無禮與霸凌：模式與相關因素之橫斷面研究。</p>
+    <p class="paper-authors">Yousefian S, Shayganfard M, Safari M, Javaheri J et al.</p>
+    <p class="paper-abstract">本研究調查醫療環境中不同職類專業人員遭遇職場無禮與霸凌的普遍性及其相關因素。橫斷面數據顯示，醫療機構中的霸凌行為普遍存在，且不僅限於特定職級。受虐者常出現高心理壓力、職業倦怠及離職意願。研究指出，不良的組織文化與高工作負荷是滋生霸凌的溫床。這些行為嚴重損害醫護人員的心理健康與團隊合作效能，醫院管理者需制定嚴格的反霸凌政策並營造尊重的工作環境。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">醫療專業人員</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">職場無禮與霸凌</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無霸凌經驗者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康與工作相關指標</div></div>
+</div>
+    <ul class="findings"><li>醫療機構霸凌現象普遍</li><li>霸凌與職業倦怠及離職意願顯著相關</li><li>組織文化是影響霸凌發生的關鍵</li></ul>
+    <div class="keywords"><span class="keyword-pill">職場霸凌</span><span class="keyword-pill">醫護人員</span><span class="keyword-pill">心理壓力</span><span class="keyword-pill">組織文化</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">6 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42213055" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">Afr J Reprod Health</span>
+      <span class="paper-date">2026 May 29</span>
+      <a class="paper-doi" href="https://doi.org/10.29063%2Fajrh2026%2Fv30i9s.12" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Community sport participation and mental wellbeing among women of reproductive age in China: A quantitative study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">中國育齡女性社區運動參與與心理健康：量化研究。</p>
+    <p class="paper-authors">Zhang C</p>
+    <p class="paper-abstract">本研究量化分析中國育齡女性參與社區體育活動與其心理健康之間的關係。研究發現，規律參與社區運動的女性在心理福祉指數上表現顯著較佳，焦慮與壓力水平較低。社區運動不僅提供了生理鍛鍊的機會，更促進了社交互動與社會支持，這對於常面臨家庭與工作雙重壓力的育齡女性尤為重要。結果支持將推廣社區體育活動作為提升公共心理健康、促進社區凝聚力的有效策略。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">中國育齡女性</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社區運動參與</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低參與或不參與者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康狀況</div></div>
+</div>
+    <ul class="findings"><li>社區運動顯著提升女性心理福祉</li><li>社交支持是運動帶來的好處之一</li><li>體育活動是促進心理健康的低成本介入</li></ul>
+    <div class="keywords"><span class="keyword-pill">社區運動</span><span class="keyword-pill">心理福祉</span><span class="keyword-pill">育齡女性</span><span class="keyword-pill">社會支持</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42212593" style="animation-delay:0.88s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Glob Health</span>
+      <span class="paper-date">2026 May 29</span>
+      <a class="paper-doi" href="https://doi.org/10.7189%2Fjogh.16.04151" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Socioeconomic and regional inequalities in health-related quality of life in Bhutan: a nationally representative cross-sectional study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">不丹健康生活品質的社會經濟與地域不平等：全國代表性橫斷面研究。</p>
+    <p class="paper-authors">Rahman MM, Yao Y, Pempa P, Teerawattananon Y et al.</p>
+    <p class="paper-abstract">本研究利用不丹全國代表性數據，分析健康生活品質（HRQoL）在不同社經地位與地域間的差異。結果顯示，低社經地位與居住於偏遠地區的居民，其健康生活品質顯著低於富裕與都市地區居民。教育程度、收入水平與醫療可及性是造成此不平等的主要因素。儘管不丹以國民幸福總值著稱，本研究指出其內部仍存在顯著的健康差距，政策制定者需針對弱勢地區加強資源分配，以縮小健康不平等。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">不丹全國人口</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社經地位與居住地區</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同社經與地域群體</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">健康生活品質</div></div>
+</div>
+    <ul class="findings"><li>不丹存在顯著的城鄉與貧富健康差距</li><li>低社經地位與健康生活品質低落密切相關</li><li>醫療可及性是關鍵的影響變數</li></ul>
+    <div class="keywords"><span class="keyword-pill">健康不平等</span><span class="keyword-pill">社經地位</span><span class="keyword-pill">健康生活品質</span><span class="keyword-pill">不丹</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42213030" style="animation-delay:0.96s">
+    <div class="paper-meta">
+      <span class="paper-journal">Rev Esp Salud Publica</span>
+      <span class="paper-date">2026 May 28</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20e202605028" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">[Working conditions and psychosocial health of Primary Care professionals].</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">[基層醫療專業人員的工作條件與心理社會健康]。</p>
+    <p class="paper-authors">Narbona-Gálvez Á, Gómez-Salgado J, Allande-Cussó R, Torrejón-Martínez J et al.</p>
+    <p class="paper-abstract">本研究調查基層醫療人員的工作條件對其心理社會健康的影響。結果顯示，高工作負荷、輪班制度、缺乏自主性以及患者攻擊行為，均與醫護人員的心理壓力、職業倦怠及失眠顯著正相關。基層醫療是衛生體系的基石，但人員流失率高反映出其工作環境的惡劣。改善工作條件、增加人力配置並提供心理支持系統，對於維護基層醫療勞動力的健康與穩定至關重要。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">基層醫療專業人員</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">工作條件（負荷、環境等）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">理想工作條件</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理社會健康狀態</div></div>
+</div>
+    <ul class="findings"><li>不良工作條件導致基層醫護人員心理健康惡化</li><li>高工作負荷是主要壓力源</li><li>改善工作環境有助於減少職業倦怠</li></ul>
+    <div class="keywords"><span class="keyword-pill">基層醫療</span><span class="keyword-pill">工作條件</span><span class="keyword-pill">職業倦怠</span><span class="keyword-pill">心理社會健康</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42209720" style="animation-delay:1.04s">
+    <div class="paper-meta">
+      <span class="paper-journal">Pediatr Res</span>
+      <span class="paper-date">2026 May 28</span>
+      <a class="paper-doi" href="https://doi.org/10.1038%2Fs41390-026-04978-6" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Socioeconomic status and perception of well-being and mental health support: a three-year COVID-19 study in children with psychopathology and their parents.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">社經地位對幸福感與心理支持感知的影響：針對有精神病理學症狀兒童及其家長的三年COVID-19研究。</p>
+    <p class="paper-authors">Donno F, Prandini M, Abbracciavento G, Agus M et al.</p>
+    <p class="paper-abstract">本研究在三年COVID-19期間，追蹤有精神病理症狀兒童及其父母，分析社經地位（SES）如何影響其對幸福感與心理支持的主觀感知。研究發現，低SES家庭在疫情期間面臨更嚴重的資源匱乏與社會孤立，導致他們對心理支持的獲得感顯著低於高SES家庭。疫情加劇了既有的心理健康不平等，兒童的症狀惡化程度與家庭SES呈負相關。結果強調在公共衛生危機中，需優先提供弱勢家庭具體的物質與心理支援。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">有精神病理症狀的兒童及其父母</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社經地位</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高社經地位家庭</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">幸福感與心理支持感知</div></div>
+</div>
+    <ul class="findings"><li>低社經家庭感知的心理支持較少</li><li>疫情加劇了兒童心理健康的社会經濟差距</li><li>危機期間需針對弱勢群體加強介入</li></ul>
+    <div class="keywords"><span class="keyword-pill">社經地位</span><span class="keyword-pill">COVID-19</span><span class="keyword-pill">兒童心理病理</span><span class="keyword-pill">心理支持</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42209663" style="animation-delay:1.12s">
+    <div class="paper-meta">
+      <span class="paper-journal">Sci Rep</span>
+      <span class="paper-date">2026 May 28</span>
+      <a class="paper-doi" href="https://doi.org/10.1038%2Fs41598-026-54327-0" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Gender inequalities in high psychological distress vary across European regions and occupational subgroups.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">高心理痛苦的性別不平等在歐洲地區與職業子群體間的差異。</p>
+    <p class="paper-authors">Grasshoff J, Safieddine B, Sperlich S, Beller J</p>
+    <p class="paper-abstract">本研究分析歐洲不同地區與職業群體中，高心理痛苦的性別差異。整體而言，女性的心理痛苦比例高於男性，但此差距在不同國家與職業類別中變化很大。在某些女性勞動力集中的低薪職業中，性別差距最為懸殊；而在部分北歐國家，差距則較小。研究指出，性別不平等不僅是生物學差異，更是社會結構、職業性別隔離與工作家庭衝突交互作用的結果，需因地制宜地制定職場心理健康政策。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">歐洲各國勞動人口</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">性別、地區與職業類別</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">男性與女性、不同地區</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">高心理痛苦比例</div></div>
+</div>
+    <ul class="findings"><li>女性心理痛苦普遍高於男性</li><li>職業類型調節了性別心理健康的差距</li><li>社會政策影響性別健康不平等的程度</li></ul>
+    <div class="keywords"><span class="keyword-pill">性別不平等</span><span class="keyword-pill">心理痛苦</span><span class="keyword-pill">職業健康</span><span class="keyword-pill">歐洲</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42209375" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Nefrologia (Engl Ed)</span>
+      <span class="paper-date">2026 May 28</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.nefroe.2026.501533" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Chronic kidney disease of unknown causes in Mesoamerica. An approach from the Perspective of Medical Geology.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">中美洲不明原因的慢性腎臟病：從醫學地質學角度探討。</p>
+    <p class="paper-authors">Montero-Campos V, Estrada-Zeledón JA, Blanco-Castro D</p>
+    <p class="paper-abstract">本研究從醫學地質學角度，探討中美洲地區流行的不明原因慢性腎臟病（CKDu）。該病主要集中在貧困的農業社區，與傳統的糖尿病或高血壓腎病變不同。研究分析環境樣本，發現高溫導致的脫水、以及農藥與重金屬等地理環境毒素的暴露是主要致病因子。這反映了貧窮農民在惡劣工作環境下的健康脆弱性。解決此問題需跨領域合作，改善工作條件並監測環境污染源。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">中美洲農業地區居民</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">地質環境因素（高溫、毒素）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">非暴露或一般地區</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">不明原因慢性腎臟病</div></div>
+</div>
+    <ul class="findings"><li>環境毒素與高溫是CKDu的主要成因</li><li>該疾病與貧困農業勞動環境密切相關</li><li>醫學地質學有助於解釋疾病的聚集性</li></ul>
+    <div class="keywords"><span class="keyword-pill">慢性腎臟病</span><span class="keyword-pill">醫學地質學</span><span class="keyword-pill">環境健康</span><span class="keyword-pill">中美洲</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42215043" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">BJGP Open</span>
+      <span class="paper-date">2026 May 29</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20BJGPO.2026.0031.%20doi%3A%2010.3399%2FBJGPO.2026.0031" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Sustaining poverty-aware mental health practice: evaluating the long-term impacts of DeStress-II.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">維持貧窮意識的心理健康實務：評估DeStress-II的長期影響。</p>
+    <p class="paper-authors">Berzins K, Christian D, Aspinall G, Hansford L et al.</p>
+    <p class="paper-abstract">本研究評估「DeStress-II」計畫——一項旨在將貧窮意識融入心理健康實務的介入措施——的長期成效。研究追蹤參與計畫的醫療與社福機構，發現該介入不僅在短期內改善了專業人員對貧窮议题的理解，其影響在長期亦得以維持。實施貧窮意識實務後，低收入服務使用者感到被更好地理解與支持，服務的接觸率與滿意度均有提升。這證明了改變專業實務文化以回應社會決定因素是可行且具效益的。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">心理健康服務機構與專業人員</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">DeStress-II 貧窮意識介入計畫</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">傳統實務模式</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">長期實務改變與服務成效</div></div>
+</div>
+    <ul class="findings"><li>貧窮意識實務具有長期可持續性</li><li>介入改善了低收入族群的服務體驗</li><li>改變專業文化是提升服務公平性的關鍵</li></ul>
+    <div class="keywords"><span class="keyword-pill">貧窮意識</span><span class="keyword-pill">心理健康實務</span><span class="keyword-pill">社會介入</span><span class="keyword-pill">健康公平</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42209002" style="animation-delay:1.28s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMJ Open</span>
+      <span class="paper-date">2026 May 28</span>
+      <a class="paper-doi" href="https://doi.org/10.1136%2Fbmjopen-2025-109083" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Multicentre randomised controlled trial of the Norwegian health in work service for patients with common mental disorders or musculoskeletal disorders: the Norwegian Sickness Absence Clinic (NSAC) Efficacy Study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">挪威工作健康服務對常見精神疾患或肌肉骨骼障礙患者的多中心隨機對照試驗：挪威病假診所效能研究。</p>
+    <p class="paper-authors">Aars NAP, Bardal I, Terjesen C, Hansen BO et al.</p>
+    <p class="paper-abstract">本研究透過多中心隨機對照試驗，評估挪威工作健康服務（NSAC）對患有常見精神疾患或肌肉骨骼障礙勞工的效果。該服務提供整合性的臨床治療與職業復健。結果顯示，接受NSAC服務的參與者，其重返職場的速度顯著快於接受常规治療的對照組，且病假天數減少。這表明針對常見健康問題的工作導向介入，能有效減少因疾病導致的社會排除與經濟損失，具備高成本效益。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">常見精神疾患或肌肉骨骼障礙患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">挪威工作健康服務 (NSAC)</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">常规照護</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">重返工作率與病假天數</div></div>
+</div>
+    <ul class="findings"><li>NSAC服務顯著縮短病假時間</li><li>整合性職業復健有助於重返工作</li><li>介入措施對常見疾病失能具有預防效果</li></ul>
+    <div class="keywords"><span class="keyword-pill">重返工作</span><span class="keyword-pill">病假管理</span><span class="keyword-pill">隨機對照試驗</span><span class="keyword-pill">職業健康</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">認知與行為 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42214253" style="animation-delay:1.6s">
+    <div class="paper-meta">
+      <span class="paper-journal">Econ Hum Biol</span>
+      <span class="paper-date">2026 May 29</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.ehb.2026.101605" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Economic roots of cognitive decline: Tracing early-life shocks to late-life health.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">認知衰退的經濟根源：追溯早期生活衝擊對晚年健康的影響。</p>
+    <p class="paper-authors">Madia JE, Moscone F, Nicodemo C, Orso CE et al.</p>
+    <p class="paper-abstract">本研究追溯早期生活經濟衝擊對晚年認知健康的長期影響。利用縱貫資料，研究證實童年時期遭遇的經濟逆境或資源匱乏，會透過生物嵌入與行為路徑，導致老年時期的認知功能下降加速。早期經濟震動限制了教育投資與營養攝取，進而影響大腦認知儲備。研究指出，改善兒童期的經濟條件不僅有助於當下的發展，更是預防老年失智、減少晚年醫療支出的關鍵投資。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">老年族群</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">早期生活經濟衝擊</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無早期經濟逆境者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">晚年認知衰退速度</div></div>
+</div>
+    <ul class="findings"><li>早期經濟逆境加速老年認知衰退</li><li>經濟因素透過教育與健康行為影響認知</li><li>幼兒期經濟投資具有長期健康回報</li></ul>
+    <div class="keywords"><span class="keyword-pill">認知衰退</span><span class="keyword-pill">早期生活衝擊</span><span class="keyword-pill">社經地位</span><span class="keyword-pill">老年健康</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
