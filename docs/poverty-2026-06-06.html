@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-06-06</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-06-06">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-06-06">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-06-06</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 11 篇文獻</span>
+      <span class="stat-item">&#128193; 5 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本次分析的40篇文獻中，篩選出11篇與「貧窮印記」研究高度相關的文獻，涵蓋壓力生理、社會決定因素、政策介入、精神病理及跨代傳遞五大核心領域。研究一致指出，貧窮並非單純的經濟短缺，而是會透過生物嵌入機制（如延遲的皮質醇恢復）與社會剝奪路徑（如種族隔離、暴力暴露），在神經內分泌與心理層面留下深刻印記。在跨代傳遞方面，母親持續性的心理困擾與疫情導致的喪親，皆證實了家庭脆弱性會轉化為兒童的學業與行為劣勢，阻斷社會流動。在政策層面，研究發現帶有嚴格條件的醫療補助擴展無法有效改善弱勢群體心理健康，唯有像越南LIFE-DM計畫這種結合「心理治療與生計支持」的整合性介入，才能真正打破貧窮與精神病理的惡性循環。這些發現為未來精準扶貧與健康公平政策提供了堅實的實證基礎。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">3 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:67%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">3 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">跨代傳遞與社會流動</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:67%">2 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42017498" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Biopsychosoc Sci Med</span>
+      <span class="paper-date">2026 Jun 1</span>
+      <a class="paper-doi" href="https://doi.org/10.1097%2FPSY.0000000000001485" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Cortisol Recovery Differs Among Sexual and Gender Diverse Couples Compared With Cisgender Heterosexual Couples.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">性別多元伴侶與順性別異性戀伴侶的皮質醇恢復差異。</p>
+    <p class="paper-authors">Jacmin-Park S, Bergeron S, Juster RP</p>
+    <p class="paper-abstract">本研究探討性別多元伴侶與順性別異性戀伴侶在壓力生理反應上的差異，特別聚焦於皮質醇恢復機制。透過實驗室壓力測試，研究發現少數群體伴侶在面對壓力後，其皮質醇水平下降速度顯著較慢，顯示出延遲的壓力恢復現象。這種生物嵌入的壓力反應異常，可能源於長期處於社會歧視與少數群體壓力環境中。研究結果強調，慢性社會壓力會在生理層面留下印記，導致神經內分泌系統的調節功能受損，進而增加這些個體未來罹患身心疾病的風險，為理解社會結構如何轉化為生物脆弱性提供了重要證據。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">性別多元伴侶與順性別異性戀伴侶</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">實驗室壓力測試</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">順性別異性戀伴侶</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">皮質醇恢復速度與壓力生理反應差異</div></div>
+</div>
+    <ul class="findings"><li>性別多元伴侶的皮質醇恢復速度顯著慢於順性別伴侶</li><li>延遲的皮質醇恢復與長期暴露於少數群體壓力有關</li><li>社會歧視等結構性因素會轉化為生物層面的壓力調節異常</li></ul>
+    <div class="keywords"><span class="keyword-pill">皮質醇恢復</span><span class="keyword-pill">少數群體壓力</span><span class="keyword-pill">壓力生理學</span><span class="keyword-pill">生物嵌入</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">3 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42199668" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Prev Med Rep</span>
+      <span class="paper-date">2026 Jun</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.pmedr.2026.103504" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Associations of racialized economic segregation with the prevalence of unhealthy behaviors and poor mental health in the United States.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">美國種族化經濟隔離與不健康行為及心理健康不佳盛行率的關聯。</p>
+    <p class="paper-authors">Lai X, Yu Q, Yang N, Yabroff KR et al.</p>
+    <p class="paper-abstract">本研究探討美國種族化經濟隔離與不健康行為及心理健康不佳之間的關聯。透過分析大規模人口數據，研究發現居住在高度種族化經濟隔離地區的居民，其吸菸、缺乏身體活動等不健康行為盛行率顯著較高，且自報心理健康不佳的比例也明顯上升。這種空間不平等不僅加劇了資源分配的不均，還透過社會壓力、鄰里失序與醫療資源難以取得等途徑，直接損害弱勢群體的身心健康。研究強調，打破種族與經濟交織的空間隔離是促進公共健康與健康公平的關鍵政策目標。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國成年人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">居住於高度種族化經濟隔離地區</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">居住於低隔離地區</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">不健康行為盛行率與心理健康狀況</div></div>
+</div>
+    <ul class="findings"><li>種族化經濟隔離與不健康行為盛行率呈顯著正相關</li><li>高隔離地區居民的心理健康不佳比例顯著較高</li><li>空間不平等透過多重社會決定因素途徑損害弱勢群體健康</li></ul>
+    <div class="keywords"><span class="keyword-pill">種族化經濟隔離</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">健康不公平</span><span class="keyword-pill">空間不平等</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42179417" style="animation-delay:0.48s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Child Adolesc Trauma</span>
+      <span class="paper-date">2026 Jun</span>
+      <a class="paper-doi" href="https://doi.org/10.1007%2Fs40653-025-00759-1" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">The Impact of Violence and Victimization Exposure on Caregivers Living in Urban Poverty: Attributions, Posttraumatic Stress and Depressive Symptoms.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">暴力與受害暴露對居住於都市貧困地區照顧者的影響：歸因方式、創傷後壓力與憂鬱症狀。</p>
+    <p class="paper-authors">Collins KS, Bellin MH, Osteen PJ, Bledsoe SE et al.</p>
+    <p class="paper-abstract">本研究探討暴力與受害暴露對居住於都市貧困地區照顧者的影響，特別聚焦於其歸因方式、創傷後壓力症狀與憂鬱症狀。研究發現，高頻率的暴力暴露不僅直接導致嚴重的創傷後壓力與憂鬱症狀，還會引發負向的認知歸因（如將負面事件歸咎於自身或感到無助）。都市貧困環境中的結構性暴力加劇了這種心理負擔，使得照顧者在承擔養育責任的同時，自身心理健康也面臨嚴重侵蝕。這揭示了貧窮、社區暴力與照顧者心理病理之間的複雜交織關係。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">居住於都市貧困地區的照顧者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">暴力與受害暴露</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低暴力暴露的照顧者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">歸因方式、創傷後壓力症狀與憂鬱症狀</div></div>
+</div>
+    <ul class="findings"><li>暴力暴露顯著增加都市貧困照顧者的創傷後壓力與憂鬱症狀</li><li>負向認知歸因在暴力暴露與心理病理之間起中介作用</li><li>都市貧困環境的結構性暴力與個體心理壓力深層綁定</li></ul>
+    <div class="keywords"><span class="keyword-pill">都市貧困</span><span class="keyword-pill">暴力暴露</span><span class="keyword-pill">創傷後壓力</span><span class="keyword-pill">照顧者負擔</span></div>
+  </div>
+  <div class="paper-card" data-pmid="41996744" style="animation-delay:0.56s">
+    <div class="paper-meta">
+      <span class="paper-journal">Maturitas</span>
+      <span class="paper-date">2026 Jun</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.maturitas.2026.108939" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Mental health, health-related quality of life, and material and social deprivation: A hierarchical analysis of their relationships and determinants in people attending a Greek public hospital.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">心理健康、健康相關生活品質與物質及社會剝奪：希臘公立醫院就診者關係與決定因素的階層分析。</p>
+    <p class="paper-authors">Palermos D, Briasoulis A, Ntanasis-Stathopoulos I, Titsi K et al.</p>
+    <p class="paper-abstract">本研究透過階層分析探討希臘公立醫院就診者的心理健康、健康相關生活品質與物質及社會剝奪之間的關係。研究結果顯示，物質剝奪（如收入不足、居住環境惡劣）與社會剝奪（如社會支持缺乏、社會孤立）對心理健康有顯著的負面影響，且這種影響呈現階層化特徵。在控制其他變項後，社會剝奪對健康相關生活品質的削減作用尤為突出。研究指出，貧窮帶來的剝奪不僅是物質層面的匱乏，更透過社會孤立與資源剝奪的雙重機制，深層嵌入並損害個體的心理健康與整體生活品質。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">希臘公立醫院就診者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">物質與社會剝奪</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低度剝奪者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康狀況與健康相關生活品質</div></div>
+</div>
+    <ul class="findings"><li>物質與社會剝奪顯著損害就診者的心理健康與生活品質</li><li>社會剝奪對健康相關生活品質的負面影響尤為強烈</li><li>剝奪對健康的影響具有階層化特徵，反映社會結構的不平等</li></ul>
+    <div class="keywords"><span class="keyword-pill">物質剝奪</span><span class="keyword-pill">社會剝奪</span><span class="keyword-pill">健康相關生活品質</span><span class="keyword-pill">社會決定因素</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42247574" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">JMIR Res Protoc</span>
+      <span class="paper-date">2026 Jun 5</span>
+      <a class="paper-doi" href="https://doi.org/10.2196%2F80546" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Integrated Depression Care and Livelihood Interventions for Low-Income Women in Vietnam: Protocol for a Cluster Nonrandomized Controlled Trial (LIFE-DM).</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">越南低收入婦女的整合憂鬱症護理與生計介入：群組非隨機對照試驗（LIFE-DM）計畫書。</p>
+    <p class="paper-authors">Ngo VK, Vu TT, Sobowale K, Lam TT et al.</p>
+    <p class="paper-abstract">LIFE-DM研究計畫旨在開發並評估一項針對越南低收入婦女的整合性介入措施，結合憂鬱症護理與生計支持。該試驗採用群組非隨機對照設計，將任務移轉的心理治療與微額融資或職業訓練相結合，以打破貧窮與心理健康之間的惡性循環。研究假設，單純的心理健康治療在貧困環境中往往效果有限，必須同時解決導致壓力的經濟根源。此計畫不僅測試該整合模式的臨床與經濟成效，更為低收入國家的精準扶貧與心理健康政策提供了創新的實證基礎。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">越南低收入婦女</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">整合憂鬱症護理與生計支持介入</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">常規照護</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">憂鬱症狀緩解與經濟生計改善</div></div>
+</div>
+    <ul class="findings"><li>提出結合心理治療與生計支持的整合性扶貧新模式</li><li>強調打破貧窮與心理健康惡性循環需同時處理經濟與心理需求</li><li>驗證任務移轉心理治療在低收入社區的可行性</li></ul>
+    <div class="keywords"><span class="keyword-pill">整合性介入</span><span class="keyword-pill">生計支持</span><span class="keyword-pill">低收入婦女</span><span class="keyword-pill">任務移轉</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42228794" style="animation-delay:0.88s">
+    <div class="paper-meta">
+      <span class="paper-journal">JAMA Netw Open</span>
+      <span class="paper-date">2026 Jun 1</span>
+      <a class="paper-doi" href="https://doi.org/10.1001%2Fjamanetworkopen.2026.13934" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Conditional Medicaid Expansion and Mental Health Outcomes in Georgia.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">喬治亞州有條件的醫療補助擴展與心理健康結果。</p>
+    <p class="paper-authors">Onal SO, Prins SJ, Constantin J</p>
+    <p class="paper-abstract">本研究評估美國喬治亞州有條件的醫療補助擴展政策對心理健康結果的影響。與傳統的全面擴展不同，喬治亞州實施了嚴格的工作或活動要求作為獲得資格的前提。研究利用政策實施前後的數據比較，發現儘管該政策使部分低收入成人獲得了醫療保險，但由於嚴格的條件限制，導致許多極度脆弱的個體（包括嚴重精神疾病患者）被排除在外。結果顯示，這種有條件的擴展並未顯著改善整體心理健康指標，甚至可能因行政障礙而加劇醫療不平等。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">喬治亞州低收入成人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">有條件的醫療補助擴展政策</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">政策實施前或無保險狀態</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康結果與醫療可及性</div></div>
+</div>
+    <ul class="findings"><li>有條件的醫療補助擴展未能顯著改善低收入群體的心理健康</li><li>嚴格的工作要求將最脆弱的精神疾病患者排除在保險之外</li><li>行政障礙與資格限制削弱了扶貧政策的健康效益</li></ul>
+    <div class="keywords"><span class="keyword-pill">醫療補助擴展</span><span class="keyword-pill">政策評估</span><span class="keyword-pill">健康不公平</span><span class="keyword-pill">工作要求</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">3 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42249344" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMC Public Health</span>
+      <span class="paper-date">2026 Jun 5</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs12889-026-28025-5" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Nutritional status and mental health burden among adults living with disabilities in urban Ghana: a cross-sectional study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">迦納都市地區身心障礙成人的營養狀況與心理健康負擔：橫斷面研究。</p>
+    <p class="paper-authors">Annan-Asare J, Appiah-Kubi C, Ashie ANA</p>
+    <p class="paper-abstract">本研究調查迦納都市地區身心障礙成人的營養狀況與心理健康負擔之間的關聯。研究發現，由於社會排斥與就業困難，這些身心障礙者普遍面臨極高的貧困率與食物不安全，導致營養不良比例偏高。營養不良不僅損害身體機能，更與焦慮、憂鬱等心理健康負擔呈顯著正相關。身心障礙、貧窮與營養不良形成了一個相互加劇的脆弱性三角，突顯出在開發中國家，身心障礙者的健康不平等深受社會經濟地位與營養因素的雙重夾擊，亟需跨領域的社會支持介入。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">迦納都市地區身心障礙成人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">營養不良與食物不安全</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">營養狀況良好者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康負擔（焦慮、憂鬱）</div></div>
+</div>
+    <ul class="findings"><li>身心障礙成人的營養不良比例顯著偏高，與貧困密切相關</li><li>營養不良狀態與焦慮、憂鬱等心理健康負擔顯著正相關</li><li>身心障礙、貧窮與營養不良形成相互加劇的脆弱性循環</li></ul>
+    <div class="keywords"><span class="keyword-pill">身心障礙</span><span class="keyword-pill">營養不良</span><span class="keyword-pill">心理健康</span><span class="keyword-pill">食物不安全</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42237816" style="animation-delay:1.28s">
+    <div class="paper-meta">
+      <span class="paper-journal">Epidemiol Psychiatr Sci</span>
+      <span class="paper-date">2026 Jun 4</span>
+      <a class="paper-doi" href="https://doi.org/10.1017%2FS2045796026100699" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Intersectional inequalities in childhood maltreatment and adolescent emotional problems in England: a random-coefficient MAIHDA analysis.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">英格蘭童年虐待與青少年情緒問題的交叉性不平等：隨機係數MAIHDA分析。</p>
+    <p class="paper-authors">Havers L, Fazel M, Smuk M, Fancourt D et al.</p>
+    <p class="paper-abstract">本研究運用交叉性分析模型，探討英格蘭地區童年虐待與青少年情緒問題之間的不平等現象。研究突破了單一社會階層的視角，同時考量性別、種族、社會經濟地位等多重身份特徵的交織影響。結果顯示，來自多重弱勢背景（如低收入少數族裔女性）的青少年，其遭受童年虐待的風險及隨後產生的情緒問題發生率，遠高於各弱勢類別風險的簡單加總。這證實了貧窮與社會剝奪的影響具有乘數效應，深刻印記在弱勢青少年的精神病理發展軌跡中。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">英格蘭地區青少年</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">童年虐待經歷與多重弱勢身份交織</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">單一或無弱勢身份青少年</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">青少年情緒問題的發生率與嚴重程度</div></div>
+</div>
+    <ul class="findings"><li>多重弱勢身份交織會產生乘數效應，大幅增加情緒問題風險</li><li>童年虐待與青少年情緒問題之間存在顯著的交叉性不平等</li><li>傳統單一變項分析會低估結構性剝奪對心理健康的深層傷害</li></ul>
+    <div class="keywords"><span class="keyword-pill">交叉性</span><span class="keyword-pill">童年虐待</span><span class="keyword-pill">情緒問題</span><span class="keyword-pill">社會不平等</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42013490" style="animation-delay:1.36s">
+    <div class="paper-meta">
+      <span class="paper-journal">Child Abuse Negl</span>
+      <span class="paper-date">2026 Jun</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.chiabu.2026.108036" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Same storm, different boats: Robust yet unequal links between adverse childhood experiences and depression in 12,638 Chinese emerging adults.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">同場風暴，不同船隻：12,638名中國初顯期成人不良童年經驗與憂鬱症之間穩健但不平等的連結。</p>
+    <p class="paper-authors">Fang S, Li P, Cui Y, Su B et al.</p>
+    <p class="paper-abstract">本研究針對超過一萬兩千名中國初顯期成人，探討不良童年經驗與憂鬱症之間的關聯。研究提出「同場風暴，不同船隻」的隱喻，發現雖然不良童年經驗（如虐待、忽視、家庭功能失調）與憂鬱症之間的整體關聯非常穩健，但這種關聯的強度在不同社會經濟背景的群體中存在顯著差異。來自低社經地位家庭的個體，在面對相同程度的童年逆境時，發展出憂鬱症的風險與嚴重程度更高。這說明貧窮不僅直接帶來壓力，更會削弱個體面對早期逆境的心理韌性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">中國初顯期成人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">不良童年經驗</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無不良童年經驗者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">憂鬱症狀的發生率與嚴重程度（依社經地位分層）</div></div>
+</div>
+    <ul class="findings"><li>不良童年經驗與憂鬱症的關聯在總體上非常穩健</li><li>低社經地位顯著加劇了童年逆境對憂鬱症的負面影響</li><li>貧窮背景削弱了個體面對早期心理創傷的韌性與緩衝能力</li></ul>
+    <div class="keywords"><span class="keyword-pill">不良童年經驗</span><span class="keyword-pill">憂鬱症</span><span class="keyword-pill">社會經濟地位</span><span class="keyword-pill">心理韌性</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">跨代傳遞與社會流動 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42033247" style="animation-delay:1.6s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Public Health (Oxf)</span>
+      <span class="paper-date">2026 Jun 1</span>
+      <a class="paper-doi" href="https://doi.org/10.1093%2Fpubmed%2Ffdag032" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Persistent maternal mental health and child&#39;s behavioural, academic, and educational outcomes: evidence from national longitudinal study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">持續性母親心理健康與兒童行為、學業及教育結果：來自全國縱向研究的證據。</p>
+    <p class="paper-authors">Seema M, Afoakwah C, Byrnes J</p>
+    <p class="paper-abstract">本研究利用全國性縱向資料，探討母親持續性的心理健康問題對兒童行為、學業與教育結果的跨代影響。研究發現，與短暫或無心理健康問題的母親相比，長期處於憂鬱或焦慮狀態的母親，其子女在行為規範、閱讀能力與學業成就上表現顯著較差，且這種負面影響會延續至後期教育階段。母親的心理困擾往往伴隨著家庭資源（如經濟與認知刺激）的匱乏，這些因素共同作用，將心理脆弱性與社會劣勢代代相傳，限制了兒童的向上社會流動機會。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">母親與其子女</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">母親持續性的心理健康問題</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">母親心理健康良好或短暫困擾</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">兒童的行為、學業與長期教育結果</div></div>
+</div>
+    <ul class="findings"><li>母親持續性心理健康問題顯著損害兒童的學業與行為發展</li><li>母親心理困擾常伴隨家庭資源匱乏，形成雙重剝奪</li><li>心理健康與社會劣勢透過家庭環境實現跨代傳遞，阻礙社會流動</li></ul>
+    <div class="keywords"><span class="keyword-pill">跨代傳遞</span><span class="keyword-pill">母親心理健康</span><span class="keyword-pill">學業成就</span><span class="keyword-pill">社會流動</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42246695" style="animation-delay:1.68s">
+    <div class="paper-meta">
+      <span class="paper-journal">Child Adolesc Ment Health</span>
+      <span class="paper-date">2026 Jun 5</span>
+      <a class="paper-doi" href="https://doi.org/10.1111%2Fcamh.70072" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Under the radar: a longitudinal exploration of mental health among children and adolescents experiencing parental and caregiver death during the COVID-19 pandemic in South Africa.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">雷達之下：南非COVID-19疫情期間經歷父母或照顧者死亡的兒童與青少年心理健康縱向探討。</p>
+    <p class="paper-authors">Steventon Roberts K, Laurenzi CA, Mawoyo T, Du Toit S et al.</p>
+    <p class="paper-abstract">本研究以縱向設計追蹤南非在COVID-19疫情期間失去父母或照顧者的兒童與青少年，探討其「雷達之下」的心理健康動態。研究發現，這些孤兒不僅在喪親初期出現強烈的悲傷與焦慮反應，其心理困擾更在疫情與既有貧困的夾擊下呈現慢性化趨勢。失去主要照顧者意味著家庭經濟支柱與情感支持的雙重崩潰，導致這些兒童被迫面臨撫養權變更、輟學與加深貧困的風險。這揭示了突發公共衛生危機如何透過剝奪家庭照護資源，將心理創傷與社經劣勢烙印在下一代。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">南非在COVID-19期間失去父母或照顧者的兒童青少年</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">疫情期間喪親與隨之而來的社經環境惡化</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未喪親的同齡者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康狀況的縱向變化軌跡</div></div>
+</div>
+    <ul class="findings"><li>疫情期間喪親導致兒童青少年出現顯著且持續的心理困擾</li><li>喪親伴隨的經濟支柱崩塌加劇了心理創傷的慢性化</li><li>公共衛生危機透過破壞家庭結構，將社經劣勢跨代傳遞</li></ul>
+    <div class="keywords"><span class="keyword-pill">喪親</span><span class="keyword-pill">COVID-19</span><span class="keyword-pill">跨代傳遞</span><span class="keyword-pill">孤兒心理健康</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
