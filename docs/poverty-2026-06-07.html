@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-06-07</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-06-07">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-06-07">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-06-07</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 16 篇文獻</span>
+      <span class="stat-item">&#128193; 5 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本批次文獻從多維度深刻揭示了「貧窮印記」在當代社會中的運作機制。在生物嵌入層面，研究證實童年早期經濟壓力會透過敏感期效應改變壓力調節系統並導致後期抑鬱，且多基因風險在物質濫用等逆境反應中具關鍵作用。在社會決定因素方面，文獻指出社經剝奪與結構性不平等（如醫療與心理保健的雙重壁壘）將弱勢群體推向更深困境，甚至導致非法器官販賣等極端剝削。政策介入分析則批判現行制度缺陷，如將貧困誤判為兒童疏忽、雙重系統介入加劇青少年創傷，以及限制性墮胎政策惡化女性心理狀態。最終，這些研究呼籲必須拋棄單一醫療視角，轉向結合創傷知情照護、醫社整合與預防性經濟支持的系統性變革，才能有效阻斷貧窮與創傷的跨代傳遞。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">5 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">5 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:60%">3 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:40%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">跨代傳遞與社會流動</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:20%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">5 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42228330" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Neurocrit Care</span>
+      <span class="paper-date">2026 Jun 2</span>
+      <a class="paper-doi" href="https://doi.org/10.1007%2Fs12028-026-02542-y" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Association of Socioeconomic Deprivation with 1-Year Functional Outcomes in Mechanically Ventilated Patients with Stroke.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">社會經濟剝奪與中風機械通氣患者一年期功能預後的關聯</p>
+    <p class="paper-authors">Marouk A, Sonneville R, Collet M, Degos V et al.</p>
+    <p class="paper-abstract">本研究探討社會經濟剝奪與機械通氣中風患者一年期功能預後之間的關聯。中風不僅是醫療危機，更是深刻反映社會不平等的指標。研究納入因中風接受機械通氣的患者，透過多重指標評估其社會經濟地位（如收入、教育與社區剝奪指數），並追蹤其出院後一年的功能獨立性與生存狀態。結果顯示，來自高度社會經濟剝奪背景的患者，在一年後的日常生活活動能力與神經功能恢復顯著較差，且再入院率與死亡率更高。這項研究凸顯了「貧窮印記」如何透過急性醫療事件被放大，表明在重症照護與復健過程中，若忽視社會決定因素，將進一步加劇健康不平等。臨床實務應將社會經濟評估納入中風的標準護理路徑。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">接受機械通氣的中風患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社會經濟剝奪暴露</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低社會經濟剝奪患者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">一年期功能預後、死亡率</div></div>
+</div>
+    <ul class="findings"><li>社會經濟剝奪與中風後一年期不良功能預後顯著相關</li><li>高剝奪組患者的再入院率與死亡率較高</li><li>急性醫療事件中社會決定因素的影響被放大</li></ul>
+    <div class="keywords"><span class="keyword-pill">社會經濟剝奪</span><span class="keyword-pill">中風</span><span class="keyword-pill">功能預後</span><span class="keyword-pill">健康不平等</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42227746" style="animation-delay:0.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">Proc (Bayl Univ Med Cent)</span>
+      <span class="paper-date">2026 Jun 2</span>
+      <a class="paper-doi" href="https://doi.org/10.1080%2F08998280.2026.2676493" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Understanding county-level mental health determinants to guide community prevention efforts.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">了解縣級心理健康決定因素以指導社區預防工作</p>
+    <p class="paper-authors">Fang F, Li L</p>
+    <p class="paper-abstract">本研究旨在探討美國縣級層面的心理健康決定因素，以提供社區預防工作的實證基礎。心理健康不僅受個人特質影響，更深受其所處的社會經濟與社區環境塑造。研究透過分析縣級的人口統計、經濟指標、醫療資源可及性及社會資本等數據，識別出與心理健康問題高發率相關的結構性因素。研究發現，高貧困率、失業率、低醫療保險覆蓋率以及缺乏社會凝聚力，是預測社區心理健康狀況惡化的核心指標。此外，不同地理位置（如城鄉差異）也展現出獨特的風險配置。此研究強調，要有效預防心理健康危機，必須超越個體層面的干預，轉向針對貧困與資源分配不均等社區層級的系統性改善，從源頭減輕貧窮對心理的印記。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國各縣級行政區</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">縣級社會經濟與環境指標</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同指標水平的縣</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">社區心理健康狀況</div></div>
+</div>
+    <ul class="findings"><li>高貧困率與失業率是社區心理健康惡化的核心預測指標</li><li>醫療資源可及性與社會凝聚力對社區心理狀態有顯著影響</li><li>城鄉差異在心理健康決定因素中呈現不同的風險配置</li></ul>
+    <div class="keywords"><span class="keyword-pill">社區心理健康決定因素</span><span class="keyword-pill">社會經濟地位</span><span class="keyword-pill">預防策略</span><span class="keyword-pill">健康不平等</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42058927" style="animation-delay:0.16s">
+    <div class="paper-meta">
+      <span class="paper-journal">AJPM Focus</span>
+      <span class="paper-date">2026 Jun</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.focus.2025.100412" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Sociodemographic, Financial, and Mental Health Predictors of Frequency of Dental Visits in Middle-Aged and Young Adults in the U.S.: Findings From the National Health Interview Survey 2023.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">美國中青年牙科就診頻率的社會人口統計、財務與心理健康預測因子</p>
+    <p class="paper-authors">Weissman JD, Lee JJ, Jay M, Malaspina D</p>
+    <p class="paper-abstract">本研究利用2023年美國國家健康訪問調查數據，探討影響中青年牙科就診頻率的社會人口統計、財務與心理健康預測因子。口腔健康是整體健康的鏡子，但常被排除在傳統醫療體系之外，成為貧窮與社會剝奪的直接反映。研究發現，低收入、缺乏牙科保險以及高心理健康壓力（如抑鬱與焦慮症状）是導致牙科就診頻率顯著降低的關鍵障礙。財務不安全感不僅限制了直接的就醫能力，其引發的心理壓力也進一步削弱了個體的醫療尋求行為。這項發現揭示了貧窮如何透過雙重路徑——資源缺乏與心理耗竭——導致口腔健康不平等。政策制定者應將牙科保健納入心理健康與社會救助的整合框架中。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國中青年成年人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社會人口統計、財務狀況與心理健康因素</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同財務與心理健康狀態者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">牙科就診頻率</div></div>
+</div>
+    <ul class="findings"><li>低收入與缺乏牙科保險顯著降低就醫頻率</li><li>心理健康壓力（如抑鬱焦慮）獨立預測牙科就醫障礙</li><li>貧窮透過資源缺乏與心理耗竭雙重路徑導致口腔健康不平等</li></ul>
+    <div class="keywords"><span class="keyword-pill">牙科就醫障礙</span><span class="keyword-pill">財務不安全感</span><span class="keyword-pill">心理健康</span><span class="keyword-pill">社會決定因素</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42249452" style="animation-delay:0.24s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMC Med Ethics</span>
+      <span class="paper-date">2026 Jun 5</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs12910-026-01505-4" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title">From recruitment to regret: a crime script analysis of illegal kidney donation in Pakistan.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">從招募到後悔：巴基斯坦非法腎臟捐贈的犯罪腳本分析</p>
+    <p class="paper-authors">Saleem J, Asghar RS, Sarwar U, Ali F et al.</p>
+    <p class="paper-abstract">本研究運用犯罪腳本分析，深入探討巴基斯坦非法腎臟捐贈的招募與後悔過程。在極度貧困的壓迫下，出售器官成為弱勢群體求生的最後手段，這是「貧窮印記」最極端且具破壞性的體現。研究描繪了從最初的經濟誘惑、仲介的欺騙性招募，到手術過程中的資訊不對等，以及術後遭遇的健康惡化與持續貧困的完整犯罪鏈。多數賣腎者不僅未能擺脫債務，反而因併發症喪失勞動力，陷入更深層的絕望與社會排斥。此研究揭示了全球器官販運如何系統性剝削貧困人口，強調僅靠法律禁止不足夠，必須配合消除極端貧窮與提供基層社會安全網，才能阻斷這種由貧窮驅動的生物剝削。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">巴基斯坦非法腎臟捐贈者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">非法器官捐贈的招募與交易過程</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">犯罪腳本過程、術後經濟與健康狀態</div></div>
+</div>
+    <ul class="findings"><li>非法賣腎過程呈現系統性的欺騙與剝削腳本</li><li>賣腎者術後常因健康惡化而陷入更深的貧困</li><li>極端貧困是驅動器官販運的根本動力</li></ul>
+    <div class="keywords"><span class="keyword-pill">器官販運</span><span class="keyword-pill">極端貧困</span><span class="keyword-pill">犯罪腳本分析</span><span class="keyword-pill">生物剝削</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42237299" style="animation-delay:0.32s">
+    <div class="paper-meta">
+      <span class="paper-journal">Int J Equity Health</span>
+      <span class="paper-date">2026 Jun 3</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs12939-026-02893-0" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Nipah virus destroyed my personal, family, and social life: stories of the hardship faced by Nipah survivors in Bangladesh.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">尼帕病毒毀了我的個人、家庭和社會生活：孟加拉國尼帕病毒倖存者面臨的困難故事</p>
+    <p class="paper-authors">Mondal UK, Rahman DI, Aquib WR, Bablu AR et al.</p>
+    <p class="paper-abstract">本研究透過深度訪談，記錄孟加拉國尼帕病毒倖存者在個人、家庭及社會層面所面臨的長期困難。作為一種高致死率的動物源性疾病，尼帕病毒不僅帶來急性的生理威脅，更在倖存者身上留下深刻的「貧窮與疾病印記」。研究發現，倖存者在康復後遭遇嚴重的神經後遺症，導致喪失勞動能力，進而引發家庭經濟崩潰。此外，社區對疾病的污名化使他們被社會孤立，喪失原有的社會支持網絡。這種生理、經濟與社會三重打擊形成惡性循環，將原本處於邊緣的農村家庭進一步推向絕對貧困。研究呼籲，傳染病後的照護不應僅限於醫療，更需包含經濟重建與反污名化的社會介入。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">孟加拉國尼帕病毒倖存者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">尼帕病毒感染與其後遺症</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">個人、家庭與社會層面的長期困難</div></div>
+</div>
+    <ul class="findings"><li>神經後遺症導致倖存者喪失勞動能力並引發家庭經濟崩潰</li><li>社區污名化使倖存者遭受嚴重的社會孤立</li><li>疾病、經濟與社會排斥形成加劇貧困的惡性循環</li></ul>
+    <div class="keywords"><span class="keyword-pill">尼帕病毒</span><span class="keyword-pill">疾病污名化</span><span class="keyword-pill">社會孤立</span><span class="keyword-pill">健康社會決定因素</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">5 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42241952" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Child Abuse Negl</span>
+      <span class="paper-date">2026 Jun 4</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.chiabu.2026.108147" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Dual system involvement: A scoping review on the intersection of child welfare and juvenile justice systems.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">雙重系統介入：兒童福利與少年司法系統交集的範圍審查</p>
+    <p class="paper-authors">Magalhães E, Park K, d&#39;Eça L, Brazão N</p>
+    <p class="paper-abstract">本範圍審查探討了兒童福利系統與少年司法系統的交集，即所謂的「雙重系統介入」現象。經歷雙重系統介入的青少年，通常是遭受過嚴重童年逆境、貧困與家庭失功能的極度弱勢群體。研究系統性地梳理了導致青少年從兒童福利轉銜至少年司法的風險因素，包括安置不穩定、缺乏精神健康服務以及結構性的種族與階級不平等。結果顯示，雙重系統介入不僅未能提供足夠的保護，反而常因系統的懲罰性本質而加劇創傷，形成「從受害者到加害者」的悲劇性軌跡。這凸顯了現行制度在應對貧窮印記時的失靈，強烈呼籲跨系統的合作與創傷知情照護的落實，以打破這種制度性轉銜的惡性循環。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">同時接觸兒童福利與少年司法系統的青少年</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">雙重系統介入經驗</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">單一系統介入或一般青少年</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">創傷加劇、系統轉銜風險因素</div></div>
+</div>
+    <ul class="findings"><li>雙重系統介入青少年多來自高逆境與貧困背景</li><li>系統的懲罰性本質常加劇而非緩解其創傷</li><li>安置不穩定與缺乏精神健康服務是轉銜至司法系統的關鍵</li></ul>
+    <div class="keywords"><span class="keyword-pill">雙重系統介入</span><span class="keyword-pill">少年司法</span><span class="keyword-pill">兒童福利</span><span class="keyword-pill">結構性不平等</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42241094" style="animation-delay:0.48s">
+    <div class="paper-meta">
+      <span class="paper-journal">Am Psychol</span>
+      <span class="paper-date">2026 Jun 4</span>
+      <a class="paper-doi" href="https://doi.org/10.1037%2Famp0001735" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Two dimensions of access: Availability and affordability of mental health care across the United States.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">可及性的兩個維度：美國各地心理保健的可獲得性與可負擔性</p>
+    <p class="paper-authors">Park J, Kim HR, Duffy RD, Vogel D et al.</p>
+    <p class="paper-abstract">本研究深入分析了美國心理保健在「可獲得性」與「可負擔性」這兩個維度上的地理與人口差異。心理不平等的根源往往在於系統性的資源分配不均。研究透過全國數據評估各州與縣級的心理醫療資源密度與保險覆蓋情況，發現低收入地區與少數族裔聚集區同時面臨嚴重的資源沙漠與高額自付費用的雙重壁壘。這種結構性的可及性缺失，意味著最需要心理健康支援的弱勢群體反而最難獲得服務，導致貧窮與心理疾病之間的惡性循環難以打破。研究強調，擴大保險覆蓋與增加社區基層心理資源是消除心理醫療不平等的關鍵政策槓桿。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國各州與縣級地區</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">心理保健的可獲得性與可負擔性指標</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高資源與低資源地區</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理保健服務的實際可及性差異</div></div>
+</div>
+    <ul class="findings"><li>低收入地區面臨心理醫療資源沙漠與財務壁壘的雙重困境</li><li>資源分配不均加劇了貧窮與心理疾病的惡性循環</li><li>擴大保險覆蓋與基層資源是消除不平等的關鍵政策</li></ul>
+    <div class="keywords"><span class="keyword-pill">心理保健可及性</span><span class="keyword-pill">可負擔性</span><span class="keyword-pill">資源分配不均</span><span class="keyword-pill">健康政策</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42148278" style="animation-delay:0.56s">
+    <div class="paper-meta">
+      <span class="paper-journal">SSM Ment Health</span>
+      <span class="paper-date">2026 Jun</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20100600.%20doi%3A%2010.1016%2Fj.ssmmh.2026.100600" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Restrictive abortion policy climate is associated with increased depression symptoms among women in the United States: Findings from a 25-year longitudinal study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">限制性墮胎政策氣候與美國女性抑鬱症狀增加相關：來自25年縱向研究的發現</p>
+    <p class="paper-authors">McKetta S, Gimbrone C, Maslowsky J, Rudolph KE et al.</p>
+    <p class="paper-abstract">本研究基於25年的縱向追蹤資料，探討美國限制性墮胎政策氣候與女性抑鬱症狀之間的關聯。生殖權利的剝奪不僅是法律問題，更是深刻影響女性心理健康的社會決定因素。研究發現，居住在實施嚴格墮胎限制政策州份的女性，其抑鬱症狀的發生率與嚴重程度顯著高於居住在政策寬鬆地區的女性。這種效應在低收入與少數族裔女性中尤為明顯，因為她們更缺乏跨州尋求醫療服務的資源。限制性政策透過引發長期的生殖焦慮、失控感與結構性壓力，直接在女性身上刻下心理創傷的印記。此研究為保護生殖健康作為公共心理健康議題提供了強有力的實證基礎。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國女性</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">居住州份的墮胎政策限制程度</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">居住於寬鬆墮胎政策州份的女性</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">抑鬱症狀的發生率與嚴重程度</div></div>
+</div>
+    <ul class="findings"><li>限制性墮胎政策與女性抑鬱症狀增加顯著相關</li><li>政策帶來的負面心理效應在低收入女性中被放大</li><li>生殖權利的剝奪透過失控感與結構性壓力損害心理健康</li></ul>
+    <div class="keywords"><span class="keyword-pill">墮胎政策</span><span class="keyword-pill">抑鬱症狀</span><span class="keyword-pill">生殖健康</span><span class="keyword-pill">結構性壓力</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42052773" style="animation-delay:0.64s">
+    <div class="paper-meta">
+      <span class="paper-journal">Aust J Rural Health</span>
+      <span class="paper-date">2026 Jun</span>
+      <a class="paper-doi" href="https://doi.org/10.1111%2Fajr.70199" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">How Can Community Paramedics Help in Addressing Mental Health for Vulnerable Australians?</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">社區救護員如何幫助解決澳洲弱勢群體的心理健康問題？</p>
+    <p class="paper-authors">Hemming L, Hardman R, Reynolds L, Sharples R et al.</p>
+    <p class="paper-abstract">本研究探討社區救護員在解決澳洲弱勢群體心理健康問題中所能發揮的作用。傳統的緊急醫療系統常因缺乏對社會背景的理解，而無法有效回應弱勢群體的心理危機。研究指出，經過特殊訓練的社區救護員能夠跨越醫療與社會服務的界線，在非醫院環境中及早識別處於危機狀態的個體，特別是那些因貧困、社會孤立或住房不穩定而無法接觸常規心理衛生體系的人。這種基於社區的流動介入模式，不僅減少了急診室的過度使用，更透過建立信任關係，將脆弱個體連結至長期的社會支持網絡。此模式展示了重新設計急症醫療前線以對抗貧窮與心理危機交織問題的巨大潛力。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">澳洲面臨心理健康危機的弱勢群體</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社區救護員的介入與評估</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">傳統緊急醫療回應</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理危機緩解、急診使用率、社會支持連結</div></div>
+</div>
+    <ul class="findings"><li>社區救護員能有效識別傳統體系難以觸及的弱勢心理危機個體</li><li>此模式減少了急診室的過度使用並提升了照護連續性</li><li>跨越醫療與社會服務界線是處理貧窮相關心理危機的關鍵</li></ul>
+    <div class="keywords"><span class="keyword-pill">社區救護員</span><span class="keyword-pill">弱勢群體</span><span class="keyword-pill">心理危機介入</span><span class="keyword-pill">醫社整合</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42060948" style="animation-delay:0.72s">
+    <div class="paper-meta">
+      <span class="paper-journal">Child Abuse Negl</span>
+      <span class="paper-date">2026 Jun</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.chiabu.2026.108073" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">The flawed nature and impacts of the Child Abuse Prevention and Treatment Act (CAPTA).</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">《兒童虐待預防與治療法》（CAPTA）的缺陷性質與影響</p>
+    <p class="paper-authors">Merritt DH, Halverson JL, Ludeke R, Chewe J et al.</p>
+    <p class="paper-abstract">本研究嚴厲批判美國《兒童虐待預防與治療法》（CAPTA）的設計缺陷及其對弱勢家庭的負面影響。CAPTA本意是保護兒童，但研究指出，其資金結構與強制通報機制在實際運作中常將貧困誤判為疏忽，導致低收入家庭不成比例地遭受兒童福利系統的監控與介入。這種將「貧困路徑化」的做法，不僅未能有效解決導致家庭壓力的根本經濟問題，反而因強制親子分離而對兒童造成深遠的創傷。研究強調，CAPTA強化了對貧困的懲罰性回應，而非提供支持性資源，呼籲政策必須從「調查與懲罰」轉向「預防與扶助」，避免國家力量加深貧窮家庭的心理印記。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">受CAPTA影響的低收入與弱勢家庭</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">CAPTA政策的強制通報與介入機制</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">非強制介入的預防性支持模式</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">親子分離率、家庭創傷、系統性歧視</div></div>
+</div>
+    <ul class="findings"><li>CAPTA的強制通報機制常將貧困誤判為兒童疏忽</li><li>低收入家庭不成比例地承受親子分離的創傷</li><li>現行政策傾向懲罰貧窮而非提供經濟支持</li></ul>
+    <div class="keywords"><span class="keyword-pill">兒童福利政策</span><span class="keyword-pill">CAPTA</span><span class="keyword-pill">貧困路徑化</span><span class="keyword-pill">系統性歧視</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">3 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42179411" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Child Adolesc Trauma</span>
+      <span class="paper-date">2026 Jun</span>
+      <a class="paper-doi" href="https://doi.org/10.1007%2Fs40653-025-00795-x" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">The Deadly Mati Wildfire in Greece: Long-Term Psychosocial Impact on Adolescents.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">希臘致命的馬蒂野火：對青少年的長期心理社會影響</p>
+    <p class="paper-authors">Kolaitis G, Zaravinos-Tsakos F, Tzavara C, Palaiologou A et al.</p>
+    <p class="paper-abstract">本研究評估希臘馬蒂致命野火對青少年造成的長期心理社會影響。極端氣候災害作為一種急劇的環境創傷，會在受害者生命中留下持久的心理印記。研究針對受災地區的青少年進行長期追蹤，發現高比例的受訪者表現出創傷後壓力症候群（PTSD）、抑鬱與焦慮症狀。值得注意的是，那些家庭在災前已處於社會經濟劣勢的青少年，其心理症狀最為嚴重且難以恢復。野火不僅摧毀了實體家園，更瓦解了他們的社區支持網絡與安全感。此研究揭示了氣候災害如何與既有的社會不平等交互作用，對弱勢青少年的心理健康造成複合性打擊，強調災後心理重建必須優先考慮社會經濟脆弱性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">經歷希臘馬蒂野火的青少年</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">暴露於致命野火災害</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未受災或災前社經地位較高者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">長期PTSD、抑鬱與焦慮症狀</div></div>
+</div>
+    <ul class="findings"><li>野火災害導致青少年高比例的長期PTSD與抑鬱症狀</li><li>災前社會經濟劣勢顯著加劇了災後的心理創傷嚴重度</li><li>氣候災害與社會不平等交互作用造成複合性心理打擊</li></ul>
+    <div class="keywords"><span class="keyword-pill">極端氣候災害</span><span class="keyword-pill">創傷後壓力症候群</span><span class="keyword-pill">社會經濟劣勢</span><span class="keyword-pill">青少年心理學</span></div>
+  </div>
+  <div class="paper-card" data-pmid="41969734" style="animation-delay:0.88s">
+    <div class="paper-meta">
+      <span class="paper-journal">Public Health Chall</span>
+      <span class="paper-date">2026 Jun</span>
+      <a class="paper-doi" href="https://doi.org/10.1002%2Fpuh2.70218" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">The Impact of Substance Abuse Problems and Serious Mental Illness/Serious Emotional Distress on Post-Discharge Residential Status Among Clients With Behavioral and Cognitive Disorders: Evidence From SAMHSA MH-CLD Data.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">物質濫用與嚴重精神疾病對行為與認知障礙客戶出院後居住狀態的影響</p>
+    <p class="paper-authors">Moges E, Rochez N, Peycha W, Chakraborty A</p>
+    <p class="paper-abstract">本研究利用SAMHSA的MH-CLD數據，探討物質濫用問題與嚴重精神疾病對行為與認知障礙客戶出院後居住狀態的影響。對於身處社會邊緣的這類群體，醫療出院往往伴隨著居住不穩定的巨大風險。研究發現，同時罹患物質濫用與嚴重精神疾病的個體，在出院後面臨極高的無家可歸或居住於不穩定環境的風險。缺乏適當的社區安置支持、低社會經濟地位以及斷裂的醫療連續性是主要驅動因素。這反映了當前精神醫療體系在「出院準備」上的結構性缺陷，導致弱勢患者從醫院這個暫時避風港直接跌入無家可歸的困境，進一步惡化其病情並加重社會成本。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">患有行為與認知障礙的醫療出院客戶</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">合併物質濫用與嚴重精神疾病</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無此類共病的出院客戶</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">出院後的居住不穩定或無家可歸風險</div></div>
+</div>
+    <ul class="findings"><li>合併物質濫用與嚴重精神疾病極大地增加出院後無家可歸風險</li><li>缺乏社區安置支持與低社經地位是導致居住不穩定的主因</li><li>現行出院準備機制未能阻斷從醫院到街頭的跌落循環</li></ul>
+    <div class="keywords"><span class="keyword-pill">出院後安置</span><span class="keyword-pill">無家可歸</span><span class="keyword-pill">嚴重精神疾病</span><span class="keyword-pill">物質濫用</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42251154" style="animation-delay:0.96s">
+    <div class="paper-meta">
+      <span class="paper-journal">Commun Med (Lond)</span>
+      <span class="paper-date">2026 Jun 6</span>
+      <a class="paper-doi" href="https://doi.org/10.1038%2Fs43856-026-01715-2" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Development and validation of the lifetime sense of safety scale in Kenyan adults.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">肯尼亞成年人終生安全感量表的開發與驗證</p>
+    <p class="paper-authors">Blackmon K, Nyambura AN, Gitere A, Muyela LA et al.</p>
+    <p class="paper-abstract">本研究在肯尼亞成人樣本中開發並驗證了「終生安全感量表」。安全感是心理福祉的基礎，但在經歷長期貧困、衝突或結構性暴力的環境中，這種基本心理需求常被系統性地破壞。研究透過嚴謹的心理測量程序，確認了該量表在低資源與高壓力環境下的信效度，涵蓋了身體安全、經濟安全與社會心理安全等多個維度。研究發現，低安全感不僅與焦慮、抑鬱顯著相關，更是預測個體對未來抱持悲觀態度的核心指標。此量表的開發為在「全球南方」國家評估貧窮與暴力所造成的隱性心理印記提供了關鍵工具，有助於設計更符合在地脈絡的心理介入措施。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">肯尼亞成年人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">無（測量工具開發研究）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">終生安全感量表的信度、效度及與心理健康的關聯</div></div>
+</div>
+    <ul class="findings"><li>成功開發適用於低資源環境的終生安全感量表</li><li>安全感涵蓋身體、經濟與社會心理三個關鍵維度</li><li>低安全感與抑鬱、焦慮及未來悲觀態度顯著相關</li></ul>
+    <div class="keywords"><span class="keyword-pill">安全感</span><span class="keyword-pill">心理測量</span><span class="keyword-pill">肯尼亞</span><span class="keyword-pill">心理福祉</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42219759" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Psychol Med</span>
+      <span class="paper-date">2026 Jun 1</span>
+      <a class="paper-doi" href="https://doi.org/10.1017%2FS003329172610470X" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Polygenic risk factors for comorbid diagnoses in individuals with substance use disorders: A phenome-wide survival analysis.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">物質使用障礙個體共病診斷的多基因風險因素：全表型存活分析</p>
+    <p class="paper-authors">Barr PB, Neale ZE, Bigdeli TB, Chatzinakos C et al.</p>
+    <p class="paper-abstract">本研究透過全表型存活分析，探討物質使用障礙（SUD）個體中共病診斷的多基因風險因素。物質濫用常與貧困及逆境生活環境交織，但本研究聚焦於其背後的生物遺傳易感性。研究分析了大規模基因體數據，發現SUD患者伴隨的其他精神疾病（如憂鬱症、精神分裂症）具有獨特且可區分的多基因風險分數（PRS）架構。這意味著，除了社會環境的壓力外，生物嵌入的遺傳風險在決定SUD患者的長期精神病理軌跡中扮演關鍵角色。此發現挑戰了純社會學視角的解釋，強調在理解貧窮與成癮的關係時，必須採用「社會-生物」交互作用的框架，以識別出最易受環境壓力引發共病的高風險群體。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">患有物質使用障礙的個體</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">特定精神共病診斷的多基因風險分數</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無共病的物質使用障礙個體</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">共病發生的存活曲線與風險比</div></div>
+</div>
+    <ul class="findings"><li>SUD共病患者具有獨特且可區分的多基因風險架構</li><li>多基因風險在決定SUD患者長期精神病理軌跡中具關鍵作用</li><li>需採用社會-生物交互框架理解成癮與環境壓力的關係</li></ul>
+    <div class="keywords"><span class="keyword-pill">多基因風險分數</span><span class="keyword-pill">物質使用障礙</span><span class="keyword-pill">精神共病</span><span class="keyword-pill">生物嵌入</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42011421" style="animation-delay:1.28s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Mood Anxiety Disord</span>
+      <span class="paper-date">2026 Jun</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.xjmad.2026.100171" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Accumulation and sensitive period effects for childhood abuse and financial hardship on depressive symptoms in late adolescence.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">童年虐待與經濟困難對青春期晚期抑鬱症狀的累積與敏感期效應</p>
+    <p class="paper-authors">Dunn EC, Cheng TW, Zhu Y, Lussier AA et al.</p>
+    <p class="paper-abstract">本研究檢視童年虐待與經濟困難對青春期晚期抑鬱症狀的累積效應與敏感期效應。這是探究「貧窮印記」如何透過生物嵌入機制影響大腦與心理發展的典範研究。研究追蹤了從兒童期到青春期晚期的隊列，發現逆境暴露的「時機」與「劑量」同樣重要：童年早期的經濟困難對後期抑鬱症具有特別強烈的敏感期效應，而虐待則呈現線性的累積傷害。這表明，發生於大腦神經可塑性關鍵窗口期的貧困壓力，會被「嵌入」到生理壓力調節系統中，導致青春期晚期對壓力過度反應及抑鬱。此研究為早期生命階段的經濟介入提供了神經發展時間表上的強力實證支持。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">追蹤至青春期晚期的個體</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">童年虐待與經濟困難的時機與累積暴露</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無或低暴露對照組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">青春期晚期抑鬱症狀</div></div>
+</div>
+    <ul class="findings"><li>童年早期的經濟困難對後期抑鬱症具有顯著的敏感期效應</li><li>童年虐待對抑鬱症的影響呈現線性累積特徵</li><li>貧困壓力在神經發展關鍵窗口期被嵌入生理壓力系統</li></ul>
+    <div class="keywords"><span class="keyword-pill">敏感期</span><span class="keyword-pill">累積風險</span><span class="keyword-pill">童年逆境</span><span class="keyword-pill">生物嵌入</span><span class="keyword-pill">抑鬱症</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">跨代傳遞與社會流動 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="41978323" style="animation-delay:1.6s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Trauma Stress</span>
+      <span class="paper-date">2026 Jun</span>
+      <a class="paper-doi" href="https://doi.org/10.1002%2Fjts.70070" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Saliendo adelante: Understanding trauma and resilience in immigrant families from Central America.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">向前邁進：了解中美洲移民家庭的創傷與韌性</p>
+    <p class="paper-authors">Bjugstad A, Cardoso JB, Ortiz JH, Borelli JL</p>
+    <p class="paper-abstract">本研究透過質性方法，深入探討來自中美洲的移民家庭在遷移過程中所經歷的創傷與展現出的韌性。這些家庭往往為了逃離家鄉的極端貧困與幫派暴力，但在遷移與安置過程中又面臨多重創傷。研究發現，創傷不僅存在於個體層面，更在家庭系統內部傳遞，父母的心理困頓與生存壓力會影響其教養方式，進而影響子女的行為與情緒發展，呈現出跨代傳遞的風險。然而，研究也強調了這些家庭的強大韌性，如家族凝聚力的強化與對未來的希望感。這表明，要打破貧窮與創傷的跨代印記，不能僅依賴臨床治療，更需建立支持移民家庭結構的社區政策與文化敏感環境。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">來自中美洲的移民家庭</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">經歷遷移與安置過程中的多重創傷</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無（質性研究）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">創傷的跨代傳遞機制與家庭韌性表現</div></div>
+</div>
+    <ul class="findings"><li>創傷在移民家庭內部透過教養壓力產生跨代傳遞風險</li><li>家族凝聚力與希望感是抵禦創傷的核心保護因子</li><li>打破創傷印記需結合臨床治療與支持家庭結構的社區政策</li></ul>
+    <div class="keywords"><span class="keyword-pill">移民家庭</span><span class="keyword-pill">跨代創傷傳遞</span><span class="keyword-pill">家庭韌性</span><span class="keyword-pill">文化敏感性</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
