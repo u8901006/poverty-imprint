@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-06-12</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-06-12">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-06-12">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-06-12</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 10 篇文獻</span>
+      <span class="stat-item">&#128193; 6 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本次分析的十篇文獻廣泛涵蓋了貧窮與社會決定因素如何透過不同路徑影響健康結果，從微觀的生理壓力累積到宏觀的經濟政策效應皆有涉獵。在生物嵌入方面，研究強調了非穩態負荷作為量化累積壓力的關鍵指標，而創新的生命歷程統計方法則為拆解跨代傳遞的複雜中介機制提供了強大工具。在心理健康領域，多維度剝奪被證實會動態且長期地惡化憂鬱症狀，且宏觀經濟繁榮與心理健康之間存在顯著關聯。針對弱勢群體的介入研究顯示，具包容性與文化敏感度的設計（如針對低收入中風老人的行為激活、青少年的數位健康App）是消除健康不平等的關鍵。此外，無論是心律失常照護、乳癌治療還是傳統草藥使用，文獻一致指出，社會經濟地位與資源可及性深深塑造了患者的疾病經驗與治療預後。整體而言，這些研究呼籲未來的醫療實踐與政策必須超越單一生物醫學視角，深度整合社會結構因素以實現真正的健康公平。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:67%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">3 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">認知與行為</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:67%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">跨代傳遞與社會流動</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42279435" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Cancers (Basel)</span>
+      <span class="paper-date">2026 Jun 5</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%201854.%20doi%3A%2010.3390%2Fcancers18111854" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Allostatic Load as a Measure of Cumulative Physiological Stress in Cancer: Implications for Prehabilitation in Head and Neck Cancers-A Narrative Review.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">非穩態負荷作為癌症中累積生理壓力的衡量指標：對頭頸癌預復健的啟示-敘述性回顧</p>
+    <p class="paper-authors">Kiszka M, Skotny A, Kanicka M, Burnejko-Jaśkiewicz E et al.</p>
+    <p class="paper-abstract">本篇敘述性文獻探討「非穩態負荷」作為衡量癌症患者累積生理壓力的指標，特別聚焦於頭頸癌的術前復健。非穩態負荷反映長期壓力導致的神經內分泌及免疫系統耗損，與貧窮及社會剝奪造成的生物嵌入效應密切相關。作者主張將AL納入癌症預復健評估，有助於識別高風險患者並制定個別化介入策略，以改善治療耐受性與整體預後。此概念為理解社會經濟地位如何轉化為生理負擔提供了重要框架。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">頭頸癌患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">非穩態負荷評估</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無對照組（敘述性回顧）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">預復健策略與臨床預後</div></div>
+</div>
+    <ul class="findings"><li>非穩態負荷能有效量化癌症患者的累積壓力</li><li>AL評估有助於優化術前預復健計畫</li><li>長期壓力的生理耗損直接影響癌症治療結果</li></ul>
+    <div class="keywords"><span class="keyword-pill">非穩態負荷</span><span class="keyword-pill">累積壓力</span><span class="keyword-pill">預復健</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42277714" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMC Public Health</span>
+      <span class="paper-date">2026 Jun 11</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs12889-026-28102-9" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Multidimensional deprivation and depressive symptom trajectories among single-person households in South Korea: an age-stratified longitudinal study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">南韓單人家庭的多維度剝奪與憂鬱症狀軌跡：一項年齡分層的縱向研究</p>
+    <p class="paper-authors">Kwon T</p>
+    <p class="paper-abstract">本研究透過年齡分層的縱向追蹤設計，探討南韓單人家庭面臨的多維度剝奪（如經濟、社會、住房等）與憂鬱症狀軌跡之間的關聯。研究發現，經歷多維度剝奪的單人家庭，其憂鬱症狀隨時間加劇的風險顯著較高，且不同年齡層呈現差異化的脆弱性。年輕族群主要受就業與經濟不穩定影響，而老年族群則因社會孤立與健康劣勢加劇心理負擔。此研究凸顯了貧窮與社會排斥對心理健康的長期且動態的影響。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">南韓單人家庭</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">多維度剝奪（貧窮與社會排斥）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無或低度剝奪者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">憂鬱症狀發展軌跡</div></div>
+</div>
+    <ul class="findings"><li>多維度剝奪顯著預測單人家庭的憂鬱症狀惡化</li><li>年齡層在剝奪與憂鬱的關聯中具有調節效應</li><li>單人家庭的貧窮印記需針對不同生命階段進行差異化評估</li></ul>
+    <div class="keywords"><span class="keyword-pill">多維度剝奪</span><span class="keyword-pill">單人家庭</span><span class="keyword-pill">憂鬱症狀軌跡</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42259561" style="animation-delay:0.48s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMJ Open</span>
+      <span class="paper-date">2026 Jun 8</span>
+      <a class="paper-doi" href="https://doi.org/10.1136%2Fbmjopen-2025-113549" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Is there an association between mental health and economic prosperity? A longitudinal ecological study in England, 2011-2019.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">心理健康與經濟繁榮之間是否存在關聯？2011-2019年英格蘭的縱向生態學研究</p>
+    <p class="paper-authors">Mignon D, Khavandi S, Bambra C, Sutton M et al.</p>
+    <p class="paper-abstract">這項縱向生態學研究分析了2011至2019年間英格蘭地區心理健康與經濟繁榮之間的雙向關聯。研究使用地區層級的數據，探討經濟指標變動與心理健康結果的動態交互作用。結果顯示，經濟繁榮度的提升與整體心理健康狀況的改善呈現顯著正向關聯，且此關係在調整時間趨勢後依然穩健。這項發現支持了宏觀經濟政策可作為促進公共心理健康的重要社會決定因素介入手段。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">英格蘭地區人口</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">經濟繁榮指標變動</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">經濟表現穩定或衰退地區</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">地區整體心理健康指標</div></div>
+</div>
+    <ul class="findings"><li>經濟繁榮與地區心理健康改善具有正向關聯</li><li>宏觀經濟環境是心理健康的重要社會決定因素</li><li>縱向生態設計有助於捕捉經濟與健康的動態關係</li></ul>
+    <div class="keywords"><span class="keyword-pill">經濟繁榮</span><span class="keyword-pill">心理健康</span><span class="keyword-pill">生態學研究</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42252135" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMJ Open</span>
+      <span class="paper-date">2026 Jun 7</span>
+      <a class="paper-doi" href="https://doi.org/10.1136%2Fbmjopen-2026-120452" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Behavioural activation for the prevention of poststroke depression in low-income older stroke survivors (LIVE WEL): protocol for a randomised controlled trial.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">行為激活用於預防低收入老年中風倖存者中風後憂鬱症（LIVE WEL）：隨機對照試驗計畫書</p>
+    <p class="paper-authors">Beauchamp JES, Savitz SI, Sharrief A, Reininger BM et al.</p>
+    <p class="paper-abstract">本篇為LIVE WEL隨機對照試驗的計畫書，旨在評估行為激活（BA）療法對預防低收入老年中風倖存者中風後憂鬱症的有效性。針對低收入且缺乏醫療資源的弱勢老年族群，該研究設計結合了文化敏感度與社區可及性。透過隨機分組對照，試圖驗證BA作為一種具成本效益的心理介入措施，能否減輕貧窮與疾病雙重夾擊下的精神病理風險，為弱勢群體的健康公平政策提供實證基礎。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">低收入老年中風倖存者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">行為激活療法</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">常規照護或等待名單對照組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">中風後憂鬱症發生率</div></div>
+</div>
+    <ul class="findings"><li>針對低收入中風老人設計了具備文化適切性的BA介入方案</li><li>試圖證實心理介入能緩解貧窮帶來的健康不平等</li><li>強調在弱勢群體中進行隨機對照試驗的可行性與重要性</li></ul>
+    <div class="keywords"><span class="keyword-pill">行為激活</span><span class="keyword-pill">中風後憂鬱</span><span class="keyword-pill">低收入老人</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">3 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42275599" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Europace</span>
+      <span class="paper-date">2026 Jun 11</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20euag144.%20doi%3A%2010.1093%2Feuropace%2Feuag144" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Diversity, equity and inclusion in arrhythmia care: A European Heart Rhythm Association survey.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">心律失常照護中的多樣性、公平性與包容性：歐洲心臟節律協會調查</p>
+    <p class="paper-authors">Mills MT, Zylla MM, Duray GZ, Karvonen J et al.</p>
+    <p class="paper-abstract">本調查由歐洲心臟節律協會主導，探討心律失常照護領域中的多樣性、公平性與包容性（DEI）現況。研究透過問卷調查歐洲各國的心臟電生理專家，發現現行醫療體系在性別、種族及社會經濟地位等方面仍存在顯著的照護差異。研究呼籲將DEI原則納入心律失常的臨床指南與設備研發中，以消除因社會決定因素導致的醫療不公平現象，確保所有患者獲得平等的治療機會。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">歐洲心臟電生理醫療人員</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">DEI（多樣性、公平性、包容性）現況調查</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無對照組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心律失常照護中的差異與DEI落實程度</div></div>
+</div>
+    <ul class="findings"><li>心律失常照護中存在基於社會人口學特徵的顯著差異</li><li>性別與社會經濟地位影響患者接受先進療法的機會</li><li>專家共識支持將DEI納入未來臨床指南</li></ul>
+    <div class="keywords"><span class="keyword-pill">醫療公平</span><span class="keyword-pill">心律失常</span><span class="keyword-pill">社會決定因素</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42252134" style="animation-delay:1.28s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMJ Open</span>
+      <span class="paper-date">2026 Jun 7</span>
+      <a class="paper-doi" href="https://doi.org/10.1136%2Fbmjopen-2025-104459" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title">Use of medicinal herbs in an Iranian population: cross-sectional findings from the Fasa PERSIAN Cohort Study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">伊朗人群的藥用植物使用情況：來自Fasa PERSIAN隊列研究的橫斷面發現</p>
+    <p class="paper-authors">Mosavat SH, Poor AK, Homayounfar R, Naghizadeh MM et al.</p>
+    <p class="paper-abstract">本研究為Fasa PERSIAN隊列研究的橫斷面分析，調查伊朗人群中藥用植物的使用現況及其社會決定因素。研究發現，藥用植物的使用與特定的人口學特徵、經濟狀態及文化背景密切相關。在醫療資源相對受限或經濟條件較差的地區，民眾可能更依賴傳統草藥作為替代或補充療法。此研究揭示了在資源分配不均的環境下，健康尋求行為如何受到當地社會經濟與文化結構的深刻影響。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">伊朗Fasa地區參與PERSIAN隊列的居民</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">藥用植物的使用行為</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">非使用者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">藥用植物使用率及相關社會人口學因素</div></div>
+</div>
+    <ul class="findings"><li>藥用植物使用在該地區相當普遍，受文化傳統深遠影響</li><li>經濟狀態與醫療資源可及性會驅動民眾選擇替代療法</li><li>臨床醫師應主動詢問並了解弱勢患者的草藥使用情況</li></ul>
+    <div class="keywords"><span class="keyword-pill">藥用植物</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">替代醫學</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42277263" style="animation-delay:1.36s">
+    <div class="paper-meta">
+      <span class="paper-journal">Sci Rep</span>
+      <span class="paper-date">2026 Jun 11</span>
+      <a class="paper-doi" href="https://doi.org/10.1038%2Fs41598-026-56470-0" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Quality of life experiences of breast cancer patients undergoing chemotherapy: a descriptive qualitative study from Ayder Comprehensive Specialized Hospital, Ethiopia.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">乳癌患者化療期間的生活質量經驗：來自衣索比亞Ayder綜合專科醫院的描述性質性研究</p>
+    <p class="paper-authors">Hailu Aregawi D, Berhe Gebru H, Berhe Kahsay H, Kidanu Berhe K et al.</p>
+    <p class="paper-abstract">此描述性質性研究探討衣索比亞乳癌患者在化療期間的生活質量經驗。研究聚焦於資源受限的次撒哈拉非洲地區，透過深度訪談揭示患者在面對疾病時，因經濟困難、交通不便與社會支持不足而加劇的身心折磨。研究結果顯示，貧窮不僅限制了醫療可近性，更直接侵蝕了患者的尊嚴與應對能力。這強調了在低收入國家，改善乳癌照護必須同時處理深層的社會經濟障礙。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">衣索比亞乳癌化療患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">化療與資源受限環境</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無對照組（質性研究）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">生活質量經驗與面臨的社會經濟障礙</div></div>
+</div>
+    <ul class="findings"><li>經濟困難是影響低收入國家乳癌患者生活質量的核心因素</li><li>醫療可及性與交通成本加劇了治療期間的身心負擔</li><li>社會支持網絡的缺乏進一步惡化貧窮患者的健康結果</li></ul>
+    <div class="keywords"><span class="keyword-pill">生活質量</span><span class="keyword-pill">乳癌</span><span class="keyword-pill">資源受限環境</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">認知與行為 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42274015" style="animation-delay:1.6s">
+    <div class="paper-meta">
+      <span class="paper-journal">JMIR Form Res</span>
+      <span class="paper-date">2026 Jun 10</span>
+      <a class="paper-doi" href="https://doi.org/10.2196%2F82410" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Inclusivity in Insomnia: Adolescents&#39; Perspectives on the Sleep Solved App: Qualitative Interview Study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">失眠照護的包容性：青少年對Sleep Solved App的觀點：質性訪談研究</p>
+    <p class="paper-authors">Bennett SE, Lewis GM, Chambers S, Johnston MH et al.</p>
+    <p class="paper-abstract">本質性訪談研究探討青少年對「Sleep Solved」失眠數位療法App的包容性觀點。研究關注不同社會經濟背景與神經多樣性青少年在使用數位健康工具時的體驗。結果顯示，雖然數位介入具備可及性優勢，但若未考慮低收入家庭的面板設備限制、數位素養差異以及界面設計的文化適切性，可能會進一步擴大健康不平等。研究強調，針對弱勢青少年的睡眠介入必須將包容性設計置於核心。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">經歷失眠的青少年</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">Sleep Solved 數位健康App</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無對照組（質性訪談）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">對App包容性與可用性的感知</div></div>
+</div>
+    <ul class="findings"><li>數位健康工具的設計若缺乏包容性，可能加劇健康不平等</li><li>低收入與數位素養差異是青少年使用睡眠App的主要障礙</li><li>青少年呼籲在數位介入中融入更多元與貼近其生活情境的元素</li></ul>
+    <div class="keywords"><span class="keyword-pill">數位健康</span><span class="keyword-pill">睡眠障礙</span><span class="keyword-pill">包容性設計</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42260895" style="animation-delay:1.68s">
+    <div class="paper-meta">
+      <span class="paper-journal">Medicine (Baltimore)</span>
+      <span class="paper-date">2026 Jun 5</span>
+      <a class="paper-doi" href="https://doi.org/10.1097%2FMD.0000000000049243" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title">Association of hemoglobin-to-red blood cell distribution width ratio (HRR) and sleep duration with stroke: A cross-sectional study from NHANES 2008-2018.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">血紅蛋白與紅血球分布寬度比值（HRR）及睡眠時間與中風的關聯：來自NHANES 2008-2018的橫斷面研究</p>
+    <p class="paper-authors">Xue H, Zhao Y, Xu H, Si X et al.</p>
+    <p class="paper-abstract">本橫斷面研究利用NHANES 2008-2018年數據，探討血紅蛋白與紅血球分布寬度比值（HRR）及睡眠時間與中風之間的關聯。研究將HRR作為炎症與貧血的潛在生物標記，分析其與睡眠行為交互作用對腦血管健康的影響。結果發現，異常的睡眠時間與較低的HRR水平均與中風風險增加獨立相關。此研究從行為（睡眠）與生理指標（HRR）的交叉視角，提供了中風預防的潛在風險評估模式。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">NHANES資料庫中的美國成年人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">HRR水平與睡眠時間</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">正常HRR與適當睡眠時間者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">中風發生率</div></div>
+</div>
+    <ul class="findings"><li>較低的HRR比值與中風風險增加顯著相關</li><li>過長或過短的睡眠時間均為中風的危險因子</li><li>HRR可作為評估腦血管風險的潛在經濟有效生物標記</li></ul>
+    <div class="keywords"><span class="keyword-pill">紅血球分布寬度</span><span class="keyword-pill">睡眠時間</span><span class="keyword-pill">中風風險</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">跨代傳遞與社會流動 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42282153" style="animation-delay:2s">
+    <div class="paper-meta">
+      <span class="paper-journal">medRxiv</span>
+      <span class="paper-date">2026 Jun 6</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%202026.05.29.26354427.%20doi%3A%2010.64898%2F2026.05.29.26354427" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title">Direct and mediated effects (DME) SLCMA: a novel method for life course modelling with time-varying covariates.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">直接與中介效應結構潛在類別混合分析（DME SLCMA）：一種處理隨時間變動協變量的生命歷程建模新方法</p>
+    <p class="paper-authors">Beer S, Simpkin AJ, Eldeeb SY, Zar HJ et al.</p>
+    <p class="paper-abstract">本研究提出一種名為「直接與中介效應結構潛在類別混合分析」（DME SLCMA）的新穎統計方法，專門用於處理包含隨時間變動協變量的生命歷程資料建模。此方法克服了傳統方法在分析貧窮、創傷等複雜生命歷程暴露時無法同時處理時間變動性與潛在類別路徑的缺點。透過實例展示，該模型能精準拆解早期社會經濟地位如何透過中期的心理壓力中介，最終導致成年後的健康結果，為跨代傳遞研究提供了強大工具。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">生命歷程流行病學研究資料</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">DME SLCMA 統計方法</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">傳統縱向分析方法</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">模型擬合度與中介路徑辨識準確度</div></div>
+</div>
+    <ul class="findings"><li>開發出能同時處理時間變動協變量與潛在類別的新演算法</li><li>該方法能有效釐清貧窮跨代傳遞的複雜中介機制</li><li>提升了生命歷程流行病學在評估長期社會決定因素影響的方法學嚴謹度</li></ul>
+    <div class="keywords"><span class="keyword-pill">生命歷程建模</span><span class="keyword-pill">縱向數據分析</span><span class="keyword-pill">中介效應</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
