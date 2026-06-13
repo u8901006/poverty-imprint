@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-06-13</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-06-13">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-06-13">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-06-13</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 8 篇文獻</span>
+      <span class="stat-item">&#128193; 4 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本批次八篇文獻雖然涵蓋了醫學教育、傳染病後遺症及暴力犯罪等多元議題，但其核心皆深刻指向社會決定因素如何作為結構性逆境，在個體與群體身上烙下深遠印記。在生物機制層面，系統性回顧證實了低社經地位能加速表觀遺傳老化，而不良童年經驗則透過深層心理嵌入削弱晚年主觀壽命預期。在社區與結構層面，歷史紅線、交通隔離與鄰里剝奪被證實會直接導致槍枝暴力風險上升，並在兒童保護系統中引發針對弱勢家庭的結構性偏見。此外，新冠疫情進一步放大了這些不平等，導致弱勢亞群的生活質量與健康結果惡化，而精神疾病患者亦面臨嚴重的社會排除。這些研究共同揭示，貧窮與歧視不僅是經濟問題，更是透過生物嵌入、空間隔離與制度性排除，跨世代威脅公共健康的根本病因。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">表觀遺傳與生物老化</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:25%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:25%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">4 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42286872" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Med Educ Online</span>
+      <span class="paper-date">2026 Dec 31</span>
+      <a class="paper-doi" href="https://doi.org/10.1080%2F10872981.2026.2687300" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Training climate matters: programmatic openness, individual belonging, and trainee mistreatment in graduate medical education.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">培訓氣候的重要性：醫學畢業後教育中的計畫開放性、個人歸屬感與受訓者不當對待。</p>
+    <p class="paper-authors">Ma T, Zheng B, Soh M, Curtis J et al.</p>
+    <p class="paper-abstract">本研究探討醫學畢業後教育中的培訓氣候，特別是計畫開放性與個人歸屬感，對受訓者遭遇不當對待的影響。研究發現，當培訓環境缺乏開放性且受訓者感受到低度歸屬感時，不當對待如言語霸凌與過度勞動的發生率顯著上升。這種負面培訓氣候不僅損害受訓者的心理健康，更可能透過慢性壓力的累積，產生類似於其他社會逆境的印記效應，導致職業倦怠與憂鬱症狀。研究強調，建立包容且開放的學習環境是預防職場霸凌、維護醫療人員心理健康的關鍵結構性介入措施，這對於防止醫療體系內部的人力資源耗竭具有重要意義。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">醫學畢業後教育受訓者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">培訓氣候（計畫開放性、歸屬感）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同培訓氣候環境</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">受訓者不當對待發生率與心理健康狀態</div></div>
+</div>
+    <ul class="findings"><li>低計畫開放性與低歸屬感顯著增加不當對待風險</li><li>負面培訓氣候透過慢性壓力損害受訓者心理健康</li><li>結構性環境因素是預防醫療職場霸凌的關鍵</li></ul>
+    <div class="keywords"><span class="keyword-pill">培訓氣候</span><span class="keyword-pill">歸屬感</span><span class="keyword-pill">不當對待</span><span class="keyword-pill">醫學教育</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42265056" style="animation-delay:0.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">Epidemiol Psychiatr Sci</span>
+      <span class="paper-date">2026 Jun 10</span>
+      <a class="paper-doi" href="https://doi.org/10.1017%2FS2045796026100730" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Social inclusion inequalities between individuals with mental disorders and the general population: a systematic review and meta-analysis.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">精神疾病患者與一般大眾之間的社會包容不平等：系統性文獻回顧與薈萃分析。</p>
+    <p class="paper-authors">Pollice G, Marchi M, Trapani M, Pagnucco A et al.</p>
+    <p class="paper-abstract">本系統性文獻回顧與薈萃分析比較了精神疾病患者與一般大眾在社會包容度上的不平等現象。研究涵蓋了就業參與、社會網絡、婚姻狀況及社區參與等多個維度。結果顯示，精神疾病患者在各項社會包容指標上均顯著低於一般人口，這種排除現象在重度精神疾病患者中尤為突出。社會汙名化與結構性歧視被認為是導致此不平等的主要驅動力。這些社會排除不僅加劇了心理症狀，更可能透過增加社會孤立與貧困風險，進一步在患者身上烙下貧窮與疾病的交織印記，形成難以打破的惡性循環。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">精神疾病患者與一般大眾</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">患有精神疾病</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無精神疾病的一般大眾</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">社會包容度指標（就業、社交網絡等）</div></div>
+</div>
+    <ul class="findings"><li>精神疾病患者面臨顯著的社會包容不平等</li><li>重度精神疾病患者的社會排除現象最為嚴重</li><li>汙名化與結構性歧視是加劇不平等的關鍵機制</li></ul>
+    <div class="keywords"><span class="keyword-pill">精神疾病</span><span class="keyword-pill">社會包容</span><span class="keyword-pill">社會汙名</span><span class="keyword-pill">健康不平等</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">表觀遺傳與生物老化 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42286117" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Nat Hum Behav</span>
+      <span class="paper-date">2026 Jun 12</span>
+      <a class="paper-doi" href="https://doi.org/10.1038%2Fs41562-026-02477-6" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Social determinants of health and epigenetic clocks: a systematic review and meta-analysis of 140 studies.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">社會決定因素與表觀遺傳時鐘：包含140項研究的系統性文獻回顧與薈萃分析。</p>
+    <p class="paper-authors">Willems YE, Rezaki AD, Aikins M, Bahl A et al.</p>
+    <p class="paper-abstract">本系統性文獻回顧與薈萃分析納入140項研究，探討社會決定因素如教育、收入、種族歧視與鄰里環境等，與表觀遺傳時鐘之間的關聯。研究結果顯示，較低的社會經濟地位與較快的表觀遺傳老化顯著相關。特定社會剝奪指標，如貧困線以下生活或長期暴露於結構性歧視，會導致生物年齡超過實際年齡。這項大規模的綜合分析證實了社會環境逆境能夠在分子層面產生貧窮印記，加速細胞與生理老化過程，為理解健康不平等的生物機制提供了強有力的流行病學證據。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">一般研究人群</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社會決定因素暴露（低社經地位、歧視等）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高社經地位或無暴露者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">表觀遺傳時鐘加速（生物老化指標）</div></div>
+</div>
+    <ul class="findings"><li>低社經地位與加速的表觀遺傳老化顯著相關</li><li>結構性歧視是加速生物老化的關鍵社會決定因素</li><li>不同類型的表觀遺傳時鐘對社會逆境的敏感度存在差異</li></ul>
+    <div class="keywords"><span class="keyword-pill">表觀遺傳時鐘</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">生物老化</span><span class="keyword-pill">健康不平等</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="41863316" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Gerontol B Psychol Sci Soc Sci</span>
+      <span class="paper-date">2026 Jun 7</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20gbag042.%20doi%3A%2010.1093%2Fgeronb%2Fgbag042" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">The deepest well: longitudinal association of adverse childhood experiences with subjective life expectancy in later life.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">最深的那口井：不良童年經驗與晚年主觀預期壽命的縱向關聯。</p>
+    <p class="paper-authors">Zhai X, Zhou Z, Wang Z, Zhuang Y et al.</p>
+    <p class="paper-abstract">本研究探討不良童年經驗與晚年主觀預期壽命之間的縱向關聯。研究追蹤了成年個體的童年逆境，如虐待、忽視與家庭功能失調，並評估其在老年階段對自身壽命的預期。結果發現，童年不良經驗得分越高，個體在晚年的主觀預期壽命越短。這種關聯部分由成年後期的慢性疾病狀態、抑鬱症狀及社會經濟劣勢所中介。研究揭示了早期生活壓力不僅造成生理層面的損害，更會深層嵌入個體的心理認知中，削弱對未來的生存信念，顯示童年貧窮與逆境的印記具有跨越生命週期的持久影響力。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">老年族群</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">不良童年經驗</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無或低度不良童年經驗暴露者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">晚年主觀預期壽命</div></div>
+</div>
+    <ul class="findings"><li>童年逆境顯著降低晚年的主觀預期壽命</li><li>慢性疾病與抑鬱症狀在童年逆境與預期壽命間起中介作用</li><li>早期壓力會深層嵌入並改變個體對未來生存的認知</li></ul>
+    <div class="keywords"><span class="keyword-pill">不良童年經驗</span><span class="keyword-pill">主觀預期壽命</span><span class="keyword-pill">生命週期</span><span class="keyword-pill">生物嵌入</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">4 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42284487" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Rev Esc Enferm USP</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1590%2F1980-220X-REEUSP-2025-0565en" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Post-COVID-19 social determinants of health and quality of life: a longitudinal study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">後新冠疫情時期的社會決定因素與生活質量：一項縱向研究。</p>
+    <p class="paper-authors">Florencio SSG, Lima FET, Lima GA, Fontenele MGM et al.</p>
+    <p class="paper-abstract">本項縱向研究旨在探討後新冠疫情時期，社會決定因素對個體生活質量的影響。研究追蹤了染疫康復者的收入變化、教育程度、住房穩定性及社會支持網絡等指標。結果發現，疫情加劇了既有的社會不平等，低收入的康復者其生活質量顯著低於高收入者。此外，缺乏醫療可及性與居住於高社會剝奪地區的個體，在身心健康恢復上面臨更大阻礙。研究指出，新冠疫情不僅是公共衛生危機，更深化了貧窮與脆弱性帶來的長期負面印記，強調在疫情後重建中必須優先考量社會經濟弱勢群體的結構性需求。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">新冠肺炎康復者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社會決定因素（收入、住房、醫療可及性）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同社經地位層級</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">生活質量</div></div>
+</div>
+    <ul class="findings"><li>低社經地位與後疫情時期較差的生活質量顯著相關</li><li>疫情加劇了既有社會不平等對健康恢復的阻礙</li><li>住房不穩定與缺乏社會支持是延緩康復的關鍵因素</li></ul>
+    <div class="keywords"><span class="keyword-pill">新冠肺炎後遺症</span><span class="keyword-pill">生活質量</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">社會不平等</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42276798" style="animation-delay:1.28s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMJ Open</span>
+      <span class="paper-date">2026 Jun 11</span>
+      <a class="paper-doi" href="https://doi.org/10.1136%2Fbmjopen-2025-105749" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Identifying social determinants of health subgroups and their associations with health outcomes in a prospective US adult COVID-19 cohort: an analysis of the INSPIRE registry.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">在美國成人新冠肺炎前瞻性隊列中識別社會決定因素亞群及其與健康結果的關聯：INSPIRE登記庫分析。</p>
+    <p class="paper-authors">Burrola-Mendez Y, Lin E, Parrish C, Hsu C et al.</p>
+    <p class="paper-abstract">本研究利用INSPIRE登記庫的美國成人新冠肺炎前瞻性隊列，透過潛在類別分析識別出基於社會決定因素的亞群，並評估其與健康結果的關聯。研究成功區分出高度弱勢如低收入、少數族裔與低健康素養，以及相對優勢的亞群。結果顯示，高度弱勢亞群在感染後三十天及九十天內，經歷更嚴重的急性症狀、較高的住院率以及持續的長期新冠症狀。此研究強調了單一社經指標不足以捕捉複雜的社會剝奪交織現象，精準識別高風險亞群有助於臨床上針對性地分配資源，減輕疫情對弱勢群體的深遠影響。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國成人新冠肺炎患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社會決定因素亞群（高度弱勢對比優勢）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">相對優勢亞群</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">急性症狀嚴重度、住院率、長期新冠症狀</div></div>
+</div>
+    <ul class="findings"><li>識別出具備不同風險特徵的社會決定因素亞群</li><li>高度弱勢亞群面臨更差的新冠肺炎臨床結果</li><li>多維度社會剝奪交織顯著加劇長期新冠風險</li></ul>
+    <div class="keywords"><span class="keyword-pill">新冠肺炎</span><span class="keyword-pill">社會決定因素亞群</span><span class="keyword-pill">長期新冠</span><span class="keyword-pill">健康不平等</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42284064" style="animation-delay:1.36s">
+    <div class="paper-meta">
+      <span class="paper-journal">Am Surg</span>
+      <span class="paper-date">2026 Jun 12</span>
+      <a class="paper-doi" href="https://doi.org/10.1177%2F00031348261451718" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Transportation Access as a Structural Determinant of Firearm Violence.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">交通便利性作為槍枝暴力的結構性決定因素。</p>
+    <p class="paper-authors">Altman J, Campbell A, Smith E, Persons E et al.</p>
+    <p class="paper-abstract">本研究探討交通便利性作為結構性社會決定因素與槍枝暴力之間的關聯。研究分析發現，居住於大眾運輸資源匱乏、交通隔離嚴重的邊緣化社區，其槍枝暴力發生率顯著較高。缺乏交通可及性不僅限制了居民獲得就業機會、醫療服務與教育資源，還加劇了社區的經濟剝奪與社會孤立，從而滋生暴力犯罪。此研究將交通規劃視為公共衛生議題，指出基礎設施的不平等分配是導致暴力風險升高的深層結構因素，強調改善交通可及性是打破暴力循環、消除貧窮空間印記的潛在預防策略。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">社區層級</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">交通可及性（低度對比高度）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高交通可及性社區</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">槍枝暴力發生率</div></div>
+</div>
+    <ul class="findings"><li>交通可及性低與槍枝暴力發生率顯著相關</li><li>交通隔離加劇社區經濟剝奪與社會孤立</li><li>改善交通基礎設施可作為預防暴力的公共衛生策略</li></ul>
+    <div class="keywords"><span class="keyword-pill">交通可及性</span><span class="keyword-pill">槍枝暴力</span><span class="keyword-pill">結構性決定因素</span><span class="keyword-pill">社區剝奪</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42283443" style="animation-delay:1.44s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Trauma Acute Care Surg</span>
+      <span class="paper-date">2026 Jun 12</span>
+      <a class="paper-doi" href="https://doi.org/10.1097%2FTA.0000000000005078" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Historical redlining and neighborhood deprivation are associated with caregiver exclusion following evaluation for suspected child physical abuse: A multicenter study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">歷史紅線與鄰里剝奪與疑似兒童身體虐待評估後的照顧者排除相關：一項多中心研究。</p>
+    <p class="paper-authors">Wilson NA, Lima SM, Lillvis D, Wu YS et al.</p>
+    <p class="paper-abstract">此多中心研究探討歷史紅線政策與當前鄰里剝奪程度，是否與疑似兒童身體虐待評估後的照顧者排除有關。研究發現，居住於曾被紅線標註且目前高度剝奪的鄰里，其照顧者在評估後被排除如失去監護權或被迫分離的機率顯著較高。這顯示系統性種族歧視與結構性貧困的歷史空間印記，至今仍透過醫療與兒保系統的決策過程發揮影響。研究揭示了隱含的結構性偏見可能導致弱勢家庭面臨進一步的剝奪，呼籲在兒童保護決策中引入結構性公平視角以避免複製歷史不公。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">疑似兒童身體虐待案件的照顧者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">歷史紅線與鄰里剝奪</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">非紅線且低剝奪鄰里的照顧者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">照顧者排除率</div></div>
+</div>
+    <ul class="findings"><li>歷史紅線地區的照顧者面臨更高的系統性排除風險</li><li>鄰里剝奪與兒保系統的負面決策顯著相關</li><li>結構性歧視的空間印記持續影響現代醫療與社會福利決策</li></ul>
+    <div class="keywords"><span class="keyword-pill">歷史紅線</span><span class="keyword-pill">兒童虐待評估</span><span class="keyword-pill">鄰里剝奪</span><span class="keyword-pill">結構性歧視</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
