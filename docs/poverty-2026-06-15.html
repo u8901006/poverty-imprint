@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-06-15</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-06-15">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-06-15">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-06-15</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 5 篇文獻</span>
+      <span class="stat-item">&#128193; 2 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本次分析的五篇文獻從多個維度探討了社會經濟因素與健康的複雜交互作用，深刻反映「貧窮印記」的廣泛影響。在表觀遺傳層面，研究證實早期環境毒素暴露與低社經地位會協同加速生物老化，揭示貧窮在分子層面的刻痕。在心理健康層面，文獻涵蓋青少年的月經貧窮、中老年喪偶及社經劣勢，展現經濟剝奪如何透過壓力與資源限制引發憂鬱症狀。交叉滯後研究更清晰描繪出低社經地位、缺乏活動與憂鬱之間的雙向惡性循環。此外，針對憂鬱症職業功能評估的研究，突顯了精神疾病導致生產力喪失與經濟下滑的風險。整體而言，這些研究呼籲公共衛生政策須整合社會支持、環境正義與行為介入，以打破貧窮與健康劣勢的循環。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">表觀遺傳與生物老化</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:25%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">4 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">表觀遺傳與生物老化 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="41916475" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Environ Res</span>
+      <span class="paper-date">2026 Jun 15</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.envres.2026.124377" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Arsenic exposure at birth, socioeconomic status, and epigenetic aging among adults in northern Chile.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">智利北部成人出生時砷暴露、社經地位與表觀遺傳老化之關聯。</p>
+    <p class="paper-authors">Kwon D, Bozack AK, Ferreccio C, McCormick N et al.</p>
+    <p class="paper-abstract">本研究探討出生時期砷暴露、社經地位與成年後表觀遺傳老化之間的交互作用。研究以智利北部曾受高砷暴露影響的成人為對象，透過DNA甲基化時鐘評估其生物老化程度。結果發現，早期生命階段的砷暴露會加速表觀遺傳老化，而低社經地位進一步加劇了這種不良影響。這表明環境毒素與社會經濟劣勢會產生協同作用，在分子層面留下深遠的「貧窮與環境印記」。該研究為雙重打擊假說提供了實證支持，強調在評估環境健康風險時，必須將社會經濟因素納入考量，以理解早期逆境如何透過表觀遺傳機制導致長期的生物性老化和健康不平等。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">智利北部成人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">出生時砷暴露與低社經地位</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無暴露或高社經地位者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">表觀遺傳老化程度</div></div>
+</div>
+    <ul class="findings"><li>早期砷暴露顯著加速成年後的表觀遺傳老化</li><li>低社經地位加劇了砷暴露對生物老化的負面影響</li><li>環境毒素與社經劣勢在分子層面產生協同作用</li><li>印證了早期逆境透過表觀遺傳機制影響長期健康</li></ul>
+    <div class="keywords"><span class="keyword-pill">表觀遺傳老化</span><span class="keyword-pill">砷暴露</span><span class="keyword-pill">社經地位</span><span class="keyword-pill">DNA甲基化</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">4 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42045099" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Sex Health</span>
+      <span class="paper-date">2026 Jun 15</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20SH25196.%20doi%3A%2010.1071%2FSH25196" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Exploring menstrual poverty and its impact on adolescent mental health.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">探討月經貧窮及其對青少年心理健康的影響。</p>
+    <p class="paper-authors">Tatar AE, Pehlivantürk Kızılkan M, Erdem Torun Ş, Tulun Y et al.</p>
+    <p class="paper-abstract">本研究探討月經貧窮對青少年心理健康的具體影響。月經貧窮指因經濟限制而無法獲得足夠的生理期衛生用品，這在低收入家庭青少年中尤為常見。研究分析無法妥善處理月經對青少年造成的心理壓力、焦慮與自卑感。結果顯示，經歷月經貧窮的青少年面臨較高的憂鬱與焦慮症狀風險，且可能導致學校缺課與社會孤立，進而惡化其整體心理健康狀態。此研究強調解決基本衛生需求對於預防青少年心理健康危機的重要性，並呼籲將月經產品納入公共衛生政策，以減輕貧窮帶來的心理印記與社會剝奪。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">青少年</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">月經貧窮</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無月經貧窮者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康狀態（焦慮、憂鬱）</div></div>
+</div>
+    <ul class="findings"><li>月經貧窮顯著增加青少年焦慮與憂鬱風險</li><li>經濟限制導致的衛生用品缺乏會引發社會孤立</li><li>月經貧窮與學校缺課率上升相關</li><li>基本衛生需求未滿足會留下長期心理壓力印記</li></ul>
+    <div class="keywords"><span class="keyword-pill">月經貧窮</span><span class="keyword-pill">青少年心理健康</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">焦慮症狀</span></div>
+  </div>
+  <div class="paper-card" data-pmid="41655850" style="animation-delay:0.48s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Affect Disord</span>
+      <span class="paper-date">2026 Jun 15</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jad.2026.121334" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Bidirectional associations between socioeconomic status, physical activity, and depressive symptoms in middle-aged and older adults: A cross-lagged prospective cohort study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">中老年人社經地位、身體活動與憂鬱症狀的雙向關聯：交叉滯後前瞻性隊列研究。</p>
+    <p class="paper-authors">Ge J, Chen M, Xiong X, Zhai Y</p>
+    <p class="paper-abstract">本研究透過交叉滯後前瞻性隊列設計，探討中老年人群中社經地位、身體活動與憂鬱症狀之間的雙向關聯。貧窮不僅是憂鬱症的結果，也可能是其成因，形成惡性循環。研究發現，較低的基線社經地位會預測後續較少的身體活動和較高的憂鬱症狀；反之，高憂鬱症狀也會導致後續身體活動減少，進而可能削弱維持或提升社經地位的能力。這項研究清晰描繪出低社經地位、缺乏活動與憂鬱的動態雙向路徑，強調在臨床與公共衛生介入中，必須同時考量心理健康與社會經濟因素，透過促進身體活動來打破貧窮與憂鬱相互強化的負向迴圈。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">中老年成年人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社經地位與身體活動的動態變化</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同時間點的交叉滯後比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">憂鬱症狀的變化</div></div>
+</div>
+    <ul class="findings"><li>低社經地位顯著預測後續的身體活動減少與憂鬱症狀增加</li><li>憂鬱症狀會反向導致身體活動下降，形成惡性循環</li><li>身體活動在社經地位與憂鬱症狀之間扮演關鍵中介角色</li><li>打破貧窮與憂鬱的雙向連結需多面向介入策略</li></ul>
+    <div class="keywords"><span class="keyword-pill">社經地位</span><span class="keyword-pill">身體活動</span><span class="keyword-pill">憂鬱症狀</span><span class="keyword-pill">雙向關聯</span></div>
+  </div>
+  <div class="paper-card" data-pmid="41690626" style="animation-delay:0.56s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Affect Disord</span>
+      <span class="paper-date">2026 Jun 15</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jad.2026.121391" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Health and well-being after spousal loss among older men and women.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">老年男女喪偶後的健康與福祉。</p>
+    <p class="paper-authors">Kawaguchi K, Nakagomi A, Ide K, Shirai K et al.</p>
+    <p class="paper-abstract">本研究探討老年男性和女性在經歷配偶死亡後的健康與福祉變化。喪偶是晚年最重大的生活壓力事件之一，經常伴隨著社會支持網絡的斷裂與潛在的經濟資源減少，這對於原本處於社經弱勢的老年人影響尤為深遠。研究追蹤喪偶前後的身心健康指標，發現喪偶會導致短期的心理健康顯著下降及身體機能衰退，且性別差異明顯。女性在長期福祉恢復上面臨更大挑戰，部分歸因於喪偶後經濟安全保障的降低。此研究揭示了失去核心社會連結如何透過壓力生理學與資源剝奪機制，對老年人的整體健康產生深遠的負面印記。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">老年男性和女性</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">經歷配偶死亡（喪偶）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未喪偶的老年人</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">健康與福祉變化</div></div>
+</div>
+    <ul class="findings"><li>喪偶導致老年人短期心理健康顯著下降與身體機能衰退</li><li>喪偶對健康的影響存在顯著的性別差異</li><li>女性喪偶後因經濟保障降低面臨更嚴峻的長期福祉挑戰</li><li>社會支持喪失與經濟資源減少共同作用惡化健康</li></ul>
+    <div class="keywords"><span class="keyword-pill">喪偶</span><span class="keyword-pill">老年福祉</span><span class="keyword-pill">性別差異</span><span class="keyword-pill">社會支持</span></div>
+  </div>
+  <div class="paper-card" data-pmid="41713605" style="animation-delay:0.64s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Affect Disord</span>
+      <span class="paper-date">2026 Jun 15</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jad.2026.121451" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Lam Employment Absence and Productivity Scale (LEAPS): Analysis of the minimal clinically important difference (MCID) in patients with major depressive disorder using data from the CAN-BIND-1 study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">Lam就業缺勤與生產力量表：基於CAN-BIND-1研究數據分析重度憂鬱症患者中的最小臨床重要差異。</p>
+    <p class="paper-authors">Sachdeva S, Li VW, Chakrabarty T, Frey BN et al.</p>
+    <p class="paper-abstract">本研究利用CAN-BIND-1研究數據，分析Lam就業缺勤與生產力量表在重度憂鬱症患者中的最小臨床重要差異。準確評估憂鬱症患者的工作功能缺損對於理解疾病經濟負擔至關重要，因為生產力下降往往是導致個人與家庭陷入經濟困境的關鍵因素。研究透過錨定法與分佈法計算MCID，確立了LEAPS量表在臨床試驗中偵測有意義功能改善的閾值。此發現有助於醫療人員更精確地評估治療不僅在症狀緩解，更在恢復社會與職業功能上的成效，從而間接預防因長期失能所引發的社會經濟地位下滑與貧窮風險。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">重度憂鬱症患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">使用LEAPS量表評估</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">治療前後或不同治療反應組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">最小臨床重要差異（MCID）</div></div>
+</div>
+    <ul class="findings"><li>成功確立LEAPS量表在重度憂鬱症患者中的MCID閾值</li><li>LEAPS能有效偵測臨床上有意義的職業功能改善</li><li>精準的功能評估有助於衡量治療對恢復社會生產力的貢獻</li><li>預防生產力喪失對避免憂鬱症導致的經濟劣勢具有重要意義</li></ul>
+    <div class="keywords"><span class="keyword-pill">重度憂鬱症</span><span class="keyword-pill">生產力損失</span><span class="keyword-pill">最小臨床重要差異</span><span class="keyword-pill">職業功能</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
