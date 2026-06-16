@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-06-16</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-06-16">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-06-16">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-06-16</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 16 篇文獻</span>
+      <span class="stat-item">&#128193; 6 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本次分析的16篇文獻深刻揭示了社會經濟地位、政策環境與生物健康之間的複雜連結，充分體現了「貧窮印記」在個體與群體層面的多維影響。在社會決定因素方面，研究顯示低收入與主觀社經地位不佳顯著增加照顧者負擓、抑鬱風險及認知衰退，突顯了資源分配不均對心理健康的長期損害。生物學研究則指出，促炎飲食模式與不良健康指標緊密相關，反映了貧困環境下營養選擇受限對生理的老化與疾病的生物嵌入效應。政策介入方面，失業保險的削減被證實對心理健康造成負面衝擊，而mHealth及虛擬實境等創新工具則展現了提升弱勢族群醫療可近性的潛力。整體而言，這些文獻支持通過結構性政策改革與精準醫療介入來打破貧窮與健康的惡性循環。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">3 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">跨代傳遞與社會流動</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">3 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">3 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">3 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">3 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">表觀遺傳與生物老化</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">3 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42295256" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Am J Orthopsychiatry</span>
+      <span class="paper-date">2026 Jun 15</span>
+      <a class="paper-doi" href="https://doi.org/10.1037%2Fort0000937" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Parenting and social support: Caregiver strain in social context for low-income Black mothers.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">教養與社會支持：低收入黑人母親在社會背景下的照顧者負擔。</p>
+    <p class="paper-authors">Maríñez-Lora AM, Moses JO, Shernoff ES, Frazier SL et al.</p>
+    <p class="paper-abstract">本研究探討了低收入黑人母親面臨的教養壓力與照顧者負擔，並分析社會支持在其中的調節作用。研究強調了結構性貧困與種族背景如何交互影響家庭的壓力反應。結果顯示，缺乏足夠的社會支持會顯著加劇照顧者的心理與生理負擔。此發現呼籲臨床介入應考慮家庭所在的社會生態背景，並加強社區支持網絡以減少貧窮帶來的累積性壓力。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">低收入黑人母親</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">教養壓力與社會支持環境</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同支持水平或背景比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">照顧者負擔</div></div>
+</div>
+    <ul class="findings"><li>低收入黑人母親面臨極高的照顧者負擔</li><li>社會支持能有效緩解教養帶來的壓力</li><li>結構性貧困是影響家庭心理健康的主要因素</li></ul>
+    <div class="keywords"><span class="keyword-pill">低收入家庭</span><span class="keyword-pill">照顧者負擔</span><span class="keyword-pill">社會支持</span><span class="keyword-pill">種族健康差異</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42290159" style="animation-delay:0.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Health Psychol</span>
+      <span class="paper-date">2026 Jun 14</span>
+      <a class="paper-doi" href="https://doi.org/10.1177%2F13591053261454661" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Subjective socioeconomic status and the multidimensional health of Chinese residents.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">中國居民的主觀社會經濟地位與多維健康。</p>
+    <p class="paper-authors">Hu ZX, Yan YP, Liu JC, Gan KP</p>
+    <p class="paper-abstract">本研究調查了中國居民的主觀社會經濟地位（SES）與其多維健康狀況之間的關聯。研究利用橫斷面數據，分析個體對自身社會地位的主觀感知如何影響身體、心理及社會健康層面。結果發現，無論客觀經濟狀況如何，較低的主觀SES均與較差的整體健康指標顯著相關。這表明心理感知的社會地位是健康預測的重要指標，甚至可能比客觀收入更能反映壓力對健康的衝擊。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">中國居民</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">主觀社會經濟地位</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同主觀SES等級</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">多維健康指標</div></div>
+</div>
+    <ul class="findings"><li>主觀SES低與多維健康差顯著相關</li><li>主觀感知對健康的影響獨立於客觀經濟條件</li><li>提升社會地位感知可能有助於改善公共健康</li></ul>
+    <div class="keywords"><span class="keyword-pill">主觀社會經濟地位</span><span class="keyword-pill">多維健康</span><span class="keyword-pill">健康不平等</span><span class="keyword-pill">社會心理壓力</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42298634" style="animation-delay:0.16s">
+    <div class="paper-meta">
+      <span class="paper-journal">Health Qual Life Outcomes</span>
+      <span class="paper-date">2026 Jun 15</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs12955-026-02562-4" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">How health literacy and eHealth literacy influence quality of life in older adults with chronic diseases: a network and path analysis.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">健康素養與電子健康素養如何影響慢性病老年人的生活品質：網絡與路徑分析。</p>
+    <p class="paper-authors">Zou H, Zhou S, Jin L, Xie L et al.</p>
+    <p class="paper-abstract">本研究旨在探討健康素養（HL）及電子健康素養對慢性病老年患者生活品質的影響路徑。採用網絡分析和路徑分析法，研究發現較高的健康素養直接促進生活品質，並通過改善自我管理行為產生間接效益。電子健康素養則在數位時代對於獲取健康資源至關重要。結果強調，提升老年族群的健康素養是緩解慢性病負擔、縮小健康差距的關鍵策略。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">患有慢性病的老年人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">健康素養與電子健康素養</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同素養水平</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">生活品質</div></div>
+</div>
+    <ul class="findings"><li>健康素養直接且正向影響生活品質</li><li>電子健康素養有助於現代健康資源獲取</li><li>自我管理行為是關鍵的中介變量</li></ul>
+    <div class="keywords"><span class="keyword-pill">健康素養</span><span class="keyword-pill">電子健康素養</span><span class="keyword-pill">慢性病</span><span class="keyword-pill">生活品質</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">跨代傳遞與社會流動 <span class="category-count">3 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42295256" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Am J Orthopsychiatry</span>
+      <span class="paper-date">2026 Jun 15</span>
+      <a class="paper-doi" href="https://doi.org/10.1037%2Fort0000937" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Establishing research and translation priorities and care pathways for families where a parent lives with mental ill health.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">為患有精神疾病的父母家庭建立研究、轉化優先事項及照護途徑。</p>
+    <p class="paper-authors">Maríñez-Lora AM, Moses JO, Shernoff ES, Frazier SL et al.</p>
+    <p class="paper-abstract">本研究旨在針對父母患有精神疾病的家庭，確立研究優先順序及最佳的照護服務模式。研究綜合了多方利益相關者的觀點，強調這類家庭面臨的跨代風險，包括兒童發展受阻與家庭功能失調。結果提出了一套整合性的照護途徑建議，旨在早期識別風險並提供家庭為中心的介入措施，以阻斷心理問題的跨代傳遞並促進社會流動。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">父母患有精神疾病的家庭</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">擬定的研究優先事項與照護模式</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">現有或缺乏的服務模式</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">照護優先順序與臨床指引</div></div>
+</div>
+    <ul class="findings"><li>父母精神健康問題對家庭有深遠的跨代影響</li><li>需建立家庭為中心的整合照護途徑</li><li>研究應優先關注早期預防與介入策略</li></ul>
+    <div class="keywords"><span class="keyword-pill">跨代傳遞</span><span class="keyword-pill">親職精神健康</span><span class="keyword-pill">家庭照護</span><span class="keyword-pill">早期介入</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42289712" style="animation-delay:0.48s">
+    <div class="paper-meta">
+      <span class="paper-journal">Child Adolesc Psychiatry Ment Health</span>
+      <span class="paper-date">2026 Jun 14</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs13034-026-01116-2" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Mechanisms linking family socioeconomic status to children&#39;s depressive symptoms: a longitudinal moderated mediation analysis.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">連結家庭社會經濟地位與兒童抑鬱症狀的機制：一項縱向調節中介分析。</p>
+    <p class="paper-authors">Bai H, Wang T, Yang Y, Lin H et al.</p>
+    <p class="paper-abstract">本研究利用縱向數據，探討家庭社會經濟地位（SES）如何通過特定機制影響兒童的抑鬱症狀，並檢驗其中的調節與中介效應。結果顯示，低家庭SES通過增加親子衝突或降低家庭凝聚力等途徑，進而導致兒童抑鬱水平上升。此外，研究發現某些個人特質或環境因素可調節此路徑。這揭示了貧困影響兒童心理健康具體的心理社會機制。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">兒童與青少年</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">家庭社會經濟地位（SES）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">SES變化及不同家庭環境</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">抑鬱症狀</div></div>
+</div>
+    <ul class="findings"><li>家庭SES透過家庭動態影響兒童抑鬱</li><li>親子關係是關鍵的中介變量</li><li>介入家庭互動可緩解貧困的心理衝擊</li></ul>
+    <div class="keywords"><span class="keyword-pill">家庭社經地位</span><span class="keyword-pill">兒童抑鬱</span><span class="keyword-pill">縱向研究</span><span class="keyword-pill">中介機制</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42289977" style="animation-delay:0.56s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Gerontol B Psychol Sci Soc Sci</span>
+      <span class="paper-date">2026 Jun 13</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20gbag107.%20doi%3A%2010.1093%2Fgeronb%2Fgbag107" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Lifecourse socioeconomic status and subjective cognitive decline among diverse older adults.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">多元化老年人生命歷程社會經濟地位與主觀認知衰退。</p>
+    <p class="paper-authors">Chen NX, Peterson RL, Colbeth HL, Barnes LL et al.</p>
+    <p class="paper-abstract">本研究檢視了生命歷程中的社會經濟地位（從童年到老年）與多元化老年人主觀認知衰退（SCD）之間的關聯。分析發現，低終身SES與較高的主觀認知衰退風險顯著相關，且教育程度和職業成就在其中扮演重要角色。研究強調，生命早期的經濟劣勢可能對大腦健康產生長期遺留效應，並增加晚年患認知障礙的風險，提示需在生命早期進行資源投資。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">多元化老年族群</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">生命歷程社會經濟地位</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同SES軌跡</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">主觀認知衰退</div></div>
+</div>
+    <ul class="findings"><li>低終身SES增加主觀認知衰退風險</li><li>教育與職業對認知儲備有保護作用</li><li>生命早期貧困對晚年大腦健康有持續影響</li></ul>
+    <div class="keywords"><span class="keyword-pill">生命歷程流行病學</span><span class="keyword-pill">認知衰退</span><span class="keyword-pill">社會經濟地位</span><span class="keyword-pill">老年健康</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">3 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42299729" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">LGBT Health</span>
+      <span class="paper-date">2026 Jun 16</span>
+      <a class="paper-doi" href="https://doi.org/10.1177%2F23258292261444749" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Psychosocial Adversity and Health Service Utilization Among Men Who Have Sex with Men Who Use Stimulants: A Latent Class Analysis.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">使用興奮劑的男男性行為者之社會心理逆境與健康服務利用：潛在類別分析。</p>
+    <p class="paper-authors">Mayo D, Safren SA, Mimiaga MJ, Pantalone DW et al.</p>
+    <p class="paper-abstract">本研究探討使用興奮劑的男男性行為者（MSM）中，社會心理逆境與醫療服務利用之間的關係。透過潛在類別分析，研究識別出具有不同逆境特徵的亞群，並發現高逆境類別群體在健康服務使用上存在特定模式。結果表明，積累的社會心理逆境不僅惡化心理健康，也影響求助行為。建議針對此邊緣化群體設計更具包容性的干預措施，以減少服務使用的障礙。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">使用興奮劑的男男性行為者（MSM）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社會心理逆境</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同潛在類別群體</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">健康服務利用</div></div>
+</div>
+    <ul class="findings"><li>社會心理逆境與健康服務使用模式顯著相關</li><li>高逆境群體面臨更多的醫療障礙</li><li>需針對邊緣群體提供精準心理支持</li></ul>
+    <div class="keywords"><span class="keyword-pill">男男性行為者</span><span class="keyword-pill">物質使用</span><span class="keyword-pill">社會心理逆境</span><span class="keyword-pill">健康服務利用</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42296136" style="animation-delay:0.88s">
+    <div class="paper-meta">
+      <span class="paper-journal">PLoS One</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1371%2Fjournal.pone.0350426" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Burnout among Syrian medical residents: A cross-sectional study using the burnout assessment tool (BAT).</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">敘利亞住院醫師的職業倦怠：使用職業倦怠評估工具的橫斷面研究。</p>
+    <p class="paper-authors">Al-Jawad M, Douba Z, Tabasho S, Zakhour G et al.</p>
+    <p class="paper-abstract">本研究評估了在戰後及資源匱乏環境下工作的敘利亞住院醫師之職業倦怠情況。使用職業倦怠評估工具（BAT）進行橫斷面調查，結果顯示受試者普遍存在高水平的倦怠症狀。研究指出，工作壓力大、資源不足及不穩定的社會環境是主要誘因。這凸顯了在極端壓力環境下，醫療人員的心理健康危機，急需系統性的支持與政策介入。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">敘利亞住院醫師</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">高壓工作與戰後環境</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無特定對照（描述性研究）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">職業倦怠程度</div></div>
+</div>
+    <ul class="findings"><li>敘利亞住院醫師面臨極高的職業倦怠風險</li><li>工作環境資源匱乏是主要原因</li><li>亟需關注戰地醫療人員的心理支持</li></ul>
+    <div class="keywords"><span class="keyword-pill">職業倦怠</span><span class="keyword-pill">醫療人員</span><span class="keyword-pill">戰後醫療</span><span class="keyword-pill">職業健康</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42288914" style="animation-delay:0.96s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMC Psychol</span>
+      <span class="paper-date">2026 Jun 13</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs40359-026-04726-9" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">A systematic review of psychosocial interventions for children affected by armed conflict: mapping what works, for whom, and under what conditions.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">針對受武裝衝突影響兒童的社會心理介入之系統性回顧：繪製有效對象、人群及條件。</p>
+    <p class="paper-authors">Shamsi A, Khalili R</p>
+    <p class="paper-abstract">本系統性回顧整合了針對受武裝衝突影響兒童的社會心理介入措施之研究，旨在分析哪些介入有效、對誰有效以及在何種條件下最有效。結果顯示，結構化且具文化敏感性的介入計畫最能改善兒童的心理健康與社會功能。研究強調，在極端貧困與暴力環境中，提供穩定的心理支持環境是保護兒童發展的關鍵。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">受武裝衝突影響的兒童</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">各種社會心理介入措施</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無介入或不同介入方式</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康與社會功能改善</div></div>
+</div>
+    <ul class="findings"><li>結構化介入對衝突地區兒童最有效</li><li>文化適應性是介入成功的關鍵</li><li>需根據特定環境條件定制介入方案</li></ul>
+    <div class="keywords"><span class="keyword-pill">武裝衝突</span><span class="keyword-pill">兒童心理</span><span class="keyword-pill">社會心理介入</span><span class="keyword-pill">系統性回顧</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">3 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42298292" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Health Econ</span>
+      <span class="paper-date">2026 Jun 15</span>
+      <a class="paper-doi" href="https://doi.org/10.1002%2Fhec.70122" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">The Impact of Unemployment Insurance Benefit Cuts on Mental Health: Evidence From Early Pandemic Program Expirations.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">失業保險福利削減對心理健康的影響：來自早期大流行計劃到期的證據。</p>
+    <p class="paper-authors">Guo X, Peng L, Shi X</p>
+    <p class="paper-abstract">本研究利用大流行期間失業保險計劃到期的自然實驗，評估經濟援助削減對民眾心理健康的影響。數據顯示，隨著失業保險福利的減少，受影響群體的心理健康狀況顯著惡化，特別是抑鬱和焦慮症狀增加。研究證實了社會安全網在維持公共心理健康中的核心作用，並指出削減福利政策可能帶來廣泛的負面健康後果。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">失業保險領取者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">失業保險福利削減</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">福利削減前後或與非受影響群體比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康指標</div></div>
+</div>
+    <ul class="findings"><li>失業保險削減導致心理健康顯著惡化</li><li>經濟安全網對預防心理問題至關重要</li><li>公共政策直接影響群體心理健康水準</li></ul>
+    <div class="keywords"><span class="keyword-pill">失業保險</span><span class="keyword-pill">社會福利政策</span><span class="keyword-pill">心理健康</span><span class="keyword-pill">經濟安全網</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42294742" style="animation-delay:1.28s">
+    <div class="paper-meta">
+      <span class="paper-journal">Harv Rev Psychiatry</span>
+      <span class="paper-date">2026 Jun 10</span>
+      <a class="paper-doi" href="https://doi.org/10.1097%2FHRP.0000000000000464" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Application of mHealth Approaches to Increase Access to and Engagement of Mental Health Treatment Among Underserved Communities.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">應用mHealth方法增加弱勢社群的心理健康治療可及性與參與度。</p>
+    <p class="paper-authors">Pineiro DA, Mayorga NA, Zhen-Duan J</p>
+    <p class="paper-abstract">本研究探討了移動健康技術在改善弱勢社群心理健康服務可及性與參與度方面的應用效果。文章回顧了現有的mHealth介入模式，指出這類技術能有效克服地理、財務與汙名化障礙。結果顯示，針對低收入或邊緣群體設計的mHealth方案，能顯著提高治療的持續率與效果，是縮小心理健康服務差距的有效工具。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">弱勢社群</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">mHealth心理介入方案</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">傳統治療模式</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">治療可及性與參與度</div></div>
+</div>
+    <ul class="findings"><li>mHealth能有效克服傳統治療的障礙</li><li>提升弱勢群體對心理健康的參與度</li><li>技術輔助是實現健康公平的重要手段</li></ul>
+    <div class="keywords"><span class="keyword-pill">mHealth</span><span class="keyword-pill">弱勢社群</span><span class="keyword-pill">心理治療</span><span class="keyword-pill">健康公平</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42296535" style="animation-delay:1.36s">
+    <div class="paper-meta">
+      <span class="paper-journal">JMIR Res Protoc</span>
+      <span class="paper-date">2026 Jun 15</span>
+      <a class="paper-doi" href="https://doi.org/10.2196%2F88001" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Developing a Virtual Reality Application for Social and Emotional Wellbeing and Cultural Determinants of Health Support With an Aboriginal Community of Sydney...</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">與雪梨原住民社區合作開發支持社會情緒健康與文化健康決定因素的虛擬實境應用程式。</p>
+    <p class="paper-authors">Garay J, Phillips S, Purdam J, Duczynski J et al.</p>
+    <p class="paper-abstract">本研究描述了與澳洲雪梨原住民社區合作開發虛擬實境（VR）應用程式的方案，旨在支持社區的社會情緒健康並強化文化健康決定因素。該專案注重文化安全與社區參與，旨在評估VR技術在原住民健康促進中的可接受性與可行性。此研究展示了利用創新科技保留文化傳統並改善邊緣化族群心理健康的新途徑。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">澳洲原住民社區</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">虛擬實境（VR）應用程式</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無對照（可行性研究）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">可接受性、可行性及社會情緒健康</div></div>
+</div>
+    <ul class="findings"><li>VR技術在原住民社區具有潛在應用價值</li><li>文化結合是技術介入成功的關鍵</li><li>數位工具可支持文化健康決定因素</li></ul>
+    <div class="keywords"><span class="keyword-pill">虛擬實境</span><span class="keyword-pill">原住民健康</span><span class="keyword-pill">文化決定因素</span><span class="keyword-pill">社會情緒健康</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">3 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42299546" style="animation-delay:1.6s">
+    <div class="paper-meta">
+      <span class="paper-journal">Medicine (Baltimore)</span>
+      <span class="paper-date">2026 Jun 12</span>
+      <a class="paper-doi" href="https://doi.org/10.1097%2FMD.0000000000049198" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Association between Dietary Inflammatory Index and stroke prevalence among American adults: NHANES 2007 to 2016.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">美國成人飲食發炎指數與中風患病率的關聯：NHANES 2007年至2016年。</p>
+    <p class="paper-authors">Lian C, Zhong P, Song M, Wei Z</p>
+    <p class="paper-abstract">本研究利用NHANES數據，分析美國成人的飲食發炎指數（DII）與中風患病率之間的關係。結果顯示，具有促炎飲食習慣的個體中風患病率顯著高於抗炎飲食者。這表明飲食作為一種可改變的行為因素，其引發的系統性炎症反應可能是中風的重要風險路徑，尤其對於缺乏健康飲食選擇的低收入群體影響更大。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國成年人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">飲食發炎指數（DII）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同DII水平（促炎vs抗炎）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">中風患病率</div></div>
+</div>
+    <ul class="findings"><li>促炎飲食與中風風險增加顯著相關</li><li>飲食引發的炎症是心血管疾病的潛在機制</li><li>營養介入對預防中風具有重要意義</li></ul>
+    <div class="keywords"><span class="keyword-pill">飲食發炎指數</span><span class="keyword-pill">中風</span><span class="keyword-pill">系統性炎症</span><span class="keyword-pill">營養流行病學</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42287445" style="animation-delay:1.68s">
+    <div class="paper-meta">
+      <span class="paper-journal">Eur J Nutr</span>
+      <span class="paper-date">2026 Jun 13</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20160.%20doi%3A%2010.1007%2Fs00394-026-03990-0" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Pro-inflammatory dietary patterns and physical fitness in Spanish adolescents: a cross-sectional analysis from the EHDLA study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">西班牙青少年的促炎飲食模式與體適能：來自EHDLA研究的橫斷面分析。</p>
+    <p class="paper-authors">López-Gil JF, Muñoz-Pardeza J, Yáñez-Sepúlveda R, Miño C et al.</p>
+    <p class="paper-abstract">本研究調查了西班牙青少年的促炎飲食模式與體適能之間的關聯。橫斷面分析結果表明，攝取高促炎飲食的青少年通常表現出較低的體適能水平。這暗示了不良飲食習慣可能在青少年時期即對生理功能產生負面影響，限制了身體活動能力。此發現支持在青春期進行飲食教育以改善生理健康潛力的必要性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">西班牙青少年</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">促炎飲食模式</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同飲食模式</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">體適能</div></div>
+</div>
+    <ul class="findings"><li>促炎飲食與青少年體適能低落相關</li><li>飲食品質影響身體活動能力</li><li>青少年時期建立健康飲食對生理發展重要</li></ul>
+    <div class="keywords"><span class="keyword-pill">促炎飲食</span><span class="keyword-pill">體適能</span><span class="keyword-pill">青少年</span><span class="keyword-pill">炎症</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42288413" style="animation-delay:1.76s">
+    <div class="paper-meta">
+      <span class="paper-journal">Pain Manag Nurs</span>
+      <span class="paper-date">2026 Jun 13</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20S1524-9042(26)00175-X.%20doi%3A%2010.1016%2Fj.pmn.2026.05.007" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Factors Associated With Pain and Physical Function in Osteoarthritis: A Systematic Review.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">骨關節炎疼痛與身體功能的相關因素：系統性回顧。</p>
+    <p class="paper-authors">Rofi&#39;i AYAB, Sasat S, Nunthaitaweekul P</p>
+    <p class="paper-abstract">本系統性回顧整合了影響骨關節炎患者疼痛與身體功能的各類因素。研究廣泛納入了生物、心理及社會因素，發現除了生理病變外，社會經濟狀況和心理壓力也是加劇疼痛與功能受限的重要預測因子。結果強調，骨關節炎的管理不應僅限於生物醫學模式，而應納入社會心理層面的評估與介入，以全面改善患者生活品質。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">骨關節炎患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">各類生物、心理、社會因素</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">因素的有無或程度</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">疼痛程度與身體功能</div></div>
+</div>
+    <ul class="findings"><li>社會心理因素顯著影響骨關節炎疼痛</li><li>綜合評估模式優於單純生物醫學模式</li><li>改善社會環境有助於緩解症狀</li></ul>
+    <div class="keywords"><span class="keyword-pill">骨關節炎</span><span class="keyword-pill">疼痛</span><span class="keyword-pill">身體功能</span><span class="keyword-pill">生物心理社會模式</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">表觀遺傳與生物老化 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42299563" style="animation-delay:2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Medicine (Baltimore)</span>
+      <span class="paper-date">2026 Jun 12</span>
+      <a class="paper-doi" href="https://doi.org/10.1097%2FMD.0000000000049205" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Association between the Zhejiang University index and biological aging in US adults: A cross-sectional study based on NHANES 1999 to 2018.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">浙江大學指數與美國成人生物老化的關聯：基於NHANES 1999年至2018年的橫斷面研究。</p>
+    <p class="paper-authors">Chen C, Chen Y, Gao G, Liu W et al.</p>
+    <p class="paper-abstract">本研究評估了浙江大學指數（ZJU index，一種飲食營養評估指標）與美國成年人生物老化程度之間的關聯。利用NHANES長期數據分析顯示，該指數與多種生物老化標誌物顯著相關，表明飲食營養狀況直接影響細胞與分子的老化進程。這支持了飲食作為環境暴露因素，可透過表觀遺傳或代謝途徑在體內留下「生物印記」，從而加速或延緩老化。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國成年人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">浙江大學指數（ZJU index）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同指數水平</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">生物老化指標</div></div>
+</div>
+    <ul class="findings"><li>飲食營養指數與生物老化顯著相關</li><li>不良飲食可能加速生物老化過程</li><li>飲食介入是潛在的抗老化策略</li></ul>
+    <div class="keywords"><span class="keyword-pill">浙江大學指數</span><span class="keyword-pill">生物老化</span><span class="keyword-pill">營養流行病學</span><span class="keyword-pill">NHANES</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
