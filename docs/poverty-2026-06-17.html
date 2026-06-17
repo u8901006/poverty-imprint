@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-06-17</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-06-17">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-06-17">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-06-17</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 9 篇文獻</span>
+      <span class="stat-item">&#128193; 5 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本彙編包含9篇研究，探討社會經濟地位、壓力與健康的關聯。研究涵蓋心理健康、營養不安全、慢性病管理及跨代傳遞等主題。關鍵發現指出，食物不安全與低收入顯著惡化HIV與心臟康复患者的臨床結果；母親憂鬱症與社會環境會透過生物機制影響幼兒生長；文化歸屬感則是原住民心理健康的緩衝因子。整體而言，這些文獻強調整合社會支持與醫療介入對於打破貧窮循環與改善公共健康的重要性。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">4 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">跨代傳遞與社會流動</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:25%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:25%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:25%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">4 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42302093" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Int J Circumpolar Health</span>
+      <span class="paper-date">2026 Dec 31</span>
+      <a class="paper-doi" href="https://doi.org/10.1080%2F22423982.2026.2688014" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Mental health in the Sámi population and the importance of cultural affiliation: cross-sectional analyses at two time points in mid and Northern Norway.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">薩米人口的心理健康與文化歸屬感的重要性：挪威中部和北部的兩個時間點橫斷面分析。</p>
+    <p class="paper-authors">Helander L, Silviken A, Heir T</p>
+    <p class="paper-abstract">本研究調查挪威薩米人口的心理健康，分析文化歸屬感的影響。橫斷面分析顯示，文化歸屬感對心理健康具有顯著保護作用，能有效緩解社會邊緣化帶來的壓力。研究強調，在原住民健康政策中，維持文化連結與傳統對促進心理福祉及減少健康不平等至關重要。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">挪威薩米人口</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">文化歸屬感</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同時間點與文化歸屬程度</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康狀況</div></div>
+</div>
+    <ul class="findings"><li>文化歸屬感對心理健康有保護作用</li><li>薩米人口面臨特定的心理健康挑戰</li><li>文化連結能緩解邊緣化壓力</li></ul>
+    <div class="keywords"><span class="keyword-pill">原住民健康</span><span class="keyword-pill">文化歸屬感</span><span class="keyword-pill">心理健康</span><span class="keyword-pill">薩米人</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42304658" style="animation-delay:0.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">Med Sci Monit</span>
+      <span class="paper-date">2026 Jun 17</span>
+      <a class="paper-doi" href="https://doi.org/10.12659%2FMSM.952218" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Couple Relationships and Interaction During Pregnancy: A Comprehensive Review of Key Relational Dynamics.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">懷孕期間的伴侶關係與互動：關鍵關係動態的綜合評述。</p>
+    <p class="paper-authors">Huang Y, Xiao X, Shan C, Huang C</p>
+    <p class="paper-abstract">本文綜述懷孕期間伴侶關係動態對孕產婦及胎兒發展的影響。研究指出，伴侶間的互動品質、衝突解決模式及情感支持直接關聯到孕產婦的壓力水平與心理健康。懷孕期間的良好關係有助於緩衝生理壓力，對於促進母婴健康及預防產前抑鬱具有重要意義。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">懷孕伴侶</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">關係動態與互動品質</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不良關係動態</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">孕產婦壓力與心理健康</div></div>
+</div>
+    <ul class="findings"><li>伴侶支持能降低孕期壓力</li><li>關係衝突與產前抑鬱相關</li><li>孕期是介入家庭關係的關鍵時期</li></ul>
+    <div class="keywords"><span class="keyword-pill">懷孕</span><span class="keyword-pill">伴侶關係</span><span class="keyword-pill">產前心理健康</span><span class="keyword-pill">壓力緩衝</span></div>
+  </div>
+  <div class="paper-card" data-pmid="41503846" style="animation-delay:0.16s">
+    <div class="paper-meta">
+      <span class="paper-journal">Nutr Hosp</span>
+      <span class="paper-date">2026 Jun 16</span>
+      <a class="paper-doi" href="https://doi.org/10.20960%2Fnh.05946" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Mental health, quality of life and associated factors in adults with celiac disease.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">乳糜瀉成年人的心理健康、生活質量及其相關因素。</p>
+    <p class="paper-authors">Ozel Coskun BD, Sevinc N</p>
+    <p class="paper-abstract">本研究探討乳糜瀉成人患者的心理健康狀況與生活質量。結果顯示，嚴格的飲食限制帶來的社會與心理負擔，常導致焦慮、抑鬱及生活質量下降。疾病的管理壓力與社交隔離是主要影響因子，臨床應在生理治療外，重視患者的心理社會支持需求。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">乳糜瀉成人患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">疾病狀態與飲食管理</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">一般人群（隱含）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康與生活質量</div></div>
+</div>
+    <ul class="findings"><li>乳糜瀉患者心理健康風險較高</li><li>飲食限制造成社交與心理壓力</li><li>需整合心理照護於疾病管理中</li></ul>
+    <div class="keywords"><span class="keyword-pill">乳糜瀉</span><span class="keyword-pill">心理健康</span><span class="keyword-pill">生活質量</span><span class="keyword-pill">慢性病負擔</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42302893" style="animation-delay:0.24s">
+    <div class="paper-meta">
+      <span class="paper-journal">Hemodial Int</span>
+      <span class="paper-date">2026 Jun 16</span>
+      <a class="paper-doi" href="https://doi.org/10.1111%2Fhdi.70102" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Mental Health Disorders in End-Stage Kidney Disease: A Narrative Review of Clinical Considerations for Integrated Management.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">末期腎臟病的精神健康障礙：整合管理的臨床考量敘述性評述。</p>
+    <p class="paper-authors">Malhotra K, Fangue-Nelon J, Singh G</p>
+    <p class="paper-abstract">本評述探討末期腎臟病患者中普遍存在的焦慮與抑鬱問題。研究指出，生理負擔與治療依賴性惡化心理健康，反之心理問題亦影響治療效果。文章強調實施整合性護理模式，同步處理腎臟治療與精神健康障礙，對於提升患者存活率與生活品質至關重要。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">末期腎臟病患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">整合管理模式</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">傳統分科治療</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">精神健康障礙與臨床結果</div></div>
+</div>
+    <ul class="findings"><li>ESKD患者精神疾病盛行率高</li><li>雙向惡化循環影響預後</li><li>整合護理模式能改善治療成效</li></ul>
+    <div class="keywords"><span class="keyword-pill">末期腎臟病</span><span class="keyword-pill">精神健康</span><span class="keyword-pill">整合醫療</span><span class="keyword-pill">憂鬱症</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42301371" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Matern Child Health J</span>
+      <span class="paper-date">2026 Jun 16</span>
+      <a class="paper-doi" href="https://doi.org/10.1007%2Fs10995-026-04285-w" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Association of Food Insecurity with Mental Health and Clinical Outcomes Among Women Living with HIV/AIDS: A Cross-Sectional Study of Southwestern Iran.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">感染HIV/AIDS婦女的食物不安全與心理健康及臨床結果的關聯：伊朗西南部的一項橫斷面研究。</p>
+    <p class="paper-authors">Joulaei H, Foroozanfar Z, Riasatian M, Mohsenpour M</p>
+    <p class="paper-abstract">針對伊朗西南部感染HIV婦女的研究顯示，食物不安全與較差的臨床結果及心理健康顯著相關。在貧困與疾病雙重壓力下，缺乏安全食物來源會惡化憂鬱與焦慮症狀。研究建議，HIV治療計畫應整合食物支援與心理服務，以改善此弱势群體的健康預後。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">伊朗西南部感染HIV/AIDS的婦女</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">食物不安全</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">食物安全狀態</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康與臨床治療結果</div></div>
+</div>
+    <ul class="findings"><li>食物不安全普遍存在於HIV婦女中</li><li>食物不足直接惡化心理健康狀況</li><li>需提供營養支持作為HIV治療的一部分</li></ul>
+    <div class="keywords"><span class="keyword-pill">食物不安全</span><span class="keyword-pill">HIV/AIDS</span><span class="keyword-pill">婦女健康</span><span class="keyword-pill">社會決定因素</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42261955" style="animation-delay:0.48s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Am Heart Assoc</span>
+      <span class="paper-date">2026 Jun 16</span>
+      <a class="paper-doi" href="https://doi.org/10.1161%2FJAHA.125.046838" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Association Between Socioeconomic Characteristics Among Individuals Who Completed Cardiac Rehabilitation in Low-Resource Settings With Their Depressive Symptoms and Quality of Life: Analysis From the ICRR.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">低資源環境下完成心臟康復個體的社會經濟特徵與其抑鬱症狀及生活質量的關聯：來自ICRR的分析。</p>
+    <p class="paper-authors">Manandi D, Turk-Adawi K, Candelaria D, Zende A et al.</p>
+    <p class="paper-abstract">本研究分析低資源環境下心臟康復患者的社經地位對康復效果的影響。發現較低的社經地位與較高的抑鬱症狀及較低的生活質量顯著相關。即使在完成康復後，貧困仍是預測心理恢復不佳的重要因素，顯示康復計畫需納入社經支持介入。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">低資源環境下的心臟康復患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社會經濟特徵</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同社經地位分層</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">抑鬱症狀與生活質量</div></div>
+</div>
+    <ul class="findings"><li>低社經地位導致較高的康復後抑鬱</li><li>貧困影響心臟康復的長期成效</li><li>需關注低資源患者的社會心理需求</li></ul>
+    <div class="keywords"><span class="keyword-pill">社會經濟地位</span><span class="keyword-pill">心臟康復</span><span class="keyword-pill">抑鬱症</span><span class="keyword-pill">健康不平等</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">跨代傳遞與社會流動 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="41878928" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">Nutr Hosp</span>
+      <span class="paper-date">2026 Jun 16</span>
+      <a class="paper-doi" href="https://doi.org/10.20960%2Fnh.06364" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Intrauterine growth restriction, social circumstances, maternal depression and toddler stunting ‒ A population-based prospective study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">子宮內生長遲緩、社會環境、母親憂鬱症與幼兒發育遲緩——一項基於人口的前瞻性研究。</p>
+    <p class="paper-authors">Pereyra-González I, Gómez Ayora A, Ferreira A, Fletcher AM</p>
+    <p class="paper-abstract">本研究探討子宮內生長遲緩、社會環境及母親憂鬱症對幼兒發育遲緩的影響。前瞻性數據顯示，社經逆境與母親心理健康問題是幼兒生長受阻的重要預測因子。研究證實了貧窮與壓力的跨代傳遞機制，強調改善孕產婦社會心理狀況對於打破營養不良循環的關鍵作用。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">母嬰對</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">子宮內生長遲緩、社會環境、母親憂鬱</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無上述風險因子的母嬰</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">幼兒發育遲緩</div></div>
+</div>
+    <ul class="findings"><li>母親憂鬱顯著增加幼兒發育遲緩風險</li><li>社會逆境會透過生物機制影響下一代</li><li>早期介入母親心理健康有助於兒童成長</li></ul>
+    <div class="keywords"><span class="keyword-pill">跨代傳遞</span><span class="keyword-pill">發育遲緩</span><span class="keyword-pill">母親憂鬱</span><span class="keyword-pill">社會逆境</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42296088" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">PLOS Ment Health</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1371%2Fjournal.pmen.0000266" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Establishing research and translation priorities and care pathways for families where a parent lives with mental ill health.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">為父母患有精神疾病的家庭確立研究與轉化優先事項及照護路徑。</p>
+    <p class="paper-authors">Maybery D, Davidson G, Grant A, Piché G et al.</p>
+    <p class="paper-abstract">本研究旨在為父母患有精神疾病的家庭制定照護優先事項與臨床路徑。研究指出，這些家庭常面臨貧困與照護雙重壓力，需建立能同時支援父母與兒童的整合服務模式。確立清晰的轉化優先事項有助於資源分配，打破精神疾病與貧困的惡性循環。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">父母患有精神疾病的家庭</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">研究優先事項與照護路徑</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">現有零散服務</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">照護架構與政策建議</div></div>
+</div>
+    <ul class="findings"><li>需建立以家庭為中心的整合照護模式</li><li>父母精神健康影響整體家庭社經狀況</li><li>明確的政策優先事項有助於改善服務</li></ul>
+    <div class="keywords"><span class="keyword-pill">家庭照護</span><span class="keyword-pill">政策優先事項</span><span class="keyword-pill">精神健康</span><span class="keyword-pill">社會服務轉化</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42303192" style="animation-delay:1.6s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Stroke Cerebrovasc Dis</span>
+      <span class="paper-date">2026 Jun 16</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jstrokecerebrovasdis.2026.108679" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Associations Between n-3 and n-6 Polyunsaturated Fatty Acids and Stroke Risk, Mediated by the Dietary Inflammatory Index: Evidence from NHANES 2007-2018.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">膳食發炎指數介導的n-3和n-6多不飽和脂肪酸與中風風險的關聯：來自NHANES 2007-2018的證據。</p>
+    <p class="paper-authors">Liu G, Zhang D, Fu Y, Song Z et al.</p>
+    <p class="paper-abstract">本研究分析NHANES數據，探討膳食脂肪酸與中風風險的關聯及其炎症機制。發現膳食發炎指數在n-3與n-6脂肪酸影響中風風險中起關鍵中介作用。研究揭示飲食引發的生理炎症反應是連結營養攝取與心血管健康的重要生物路徑，強調抗炎飲食對疾病預防的重要性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">NHANES 2007-2018 參與者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">n-3/n-6脂肪酸攝入與膳食發炎指數</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同營養攝取水平</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">中風風險</div></div>
+</div>
+    <ul class="findings"><li>膳食發炎指數介導脂肪酸對中風的影響</li><li>炎症反應是飲食影響心血管健康的關鍵機制</li><li>調整脂肪酸比例有助降低中風風險</li></ul>
+    <div class="keywords"><span class="keyword-pill">膳食發炎指數</span><span class="keyword-pill">中風風險</span><span class="keyword-pill">多不飽和脂肪酸</span><span class="keyword-pill">炎症機制</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
