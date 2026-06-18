@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-06-18</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-06-18">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-06-18">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-06-18</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 10 篇文獻</span>
+      <span class="stat-item">&#128193; 6 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本批十篇文獻從多個維度揭示了貧窮與社會不利處境對健康的深遠影響，涵蓋生物嵌入、神經發育、心理健康及政策介入等核心領域。在生物機制層面，研究證實皮質醇壓力反應與青少年大腦結構網絡的關聯，而社會決定因素更透過神經生物學途徑影響精神分裂症病程。在心理健康層面，多項研究一致指出家庭社經特徵、母親抑鬱與結構性暴力對不同年齡層心理健康的損害，並延伸至兒童營養不良等跨代傳遞效應。在政策與社會結構層面，文獻探討了原住民賠償的歷史正義議題、塞拉利昂藥物危機的結構性暴力本質，以及蘇格蘭兒童津貼的評估框架。整體而言，這些研究強有力地支持貧窮不僅是經濟問題，更是透過生物嵌入與社會機制深刻塑造健康軌跡的結構性決定因素，呼籲跨層次的整合性介入策略。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:67%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">3 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">大腦發展與神經科學</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">跨代傳遞與社會流動</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:67%">2 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42309218" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Span J Psychiatry Ment Health</span>
+      <span class="paper-date">2026 Jun 17</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20S2950-2853(26)00039-6.%20doi%3A%2010.1016%2Fj.sjpmh.2026.03.006" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Cardiovascular health based on life&#39;s essential eight and its association with depressive symptoms in older Mexican adults: a cross-sectional study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">基於「生命八要素」的心血管健康及其與墨西哥老年人抑鬱症狀的關聯：一項橫斷面研究</p>
+    <p class="paper-authors">Mena A, Aybar M, Esparza F, Murguiondo-Pérez R et al.</p>
+    <p class="paper-abstract">本研究探討基於「生命八要素」的心血管健康指標與墨西哥老年人抑鬱症狀之間的關聯。這項橫斷面研究透過評估飲食、體力活動、尼古丁暴露、睡眠、體重、血脂、血糖和血壓等八項指標來衡量心血管健康程度，並將其與抑鬱症狀進行交叉分析。研究結果顯示，較低的心血管健康得分與較高程度的抑鬱症狀顯著相關，特別是在某些特定指標上表現不佳的個體。此研究強調了在老年醫療照護中，整合心血管健康促進與心理健康篩檢的重要性，並指出改善生活型態可能對緩解老年抑鬱症狀具有潛在價值。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">墨西哥老年人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">基於生命八要素的心血管健康狀態</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同心血管健康得分組別</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">抑鬱症狀</div></div>
+</div>
+    <ul class="findings"><li>心血管健康得分較低與抑鬱症狀顯著相關</li><li>生命八要素可作為老年心理健康評估的輔助指標</li><li>特定心血管風險因素對抑鬱的影響更為突出</li></ul>
+    <div class="keywords"><span class="keyword-pill">心血管健康</span><span class="keyword-pill">抑鬱症狀</span><span class="keyword-pill">老年人</span><span class="keyword-pill">生命八要素</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42308666" style="animation-delay:0.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">Int Dent J</span>
+      <span class="paper-date">2026 Jun 17</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.identj.2026.109669" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Self-Efficacy, Psychological State, Oral Health Behaviour, and Oral Health-Related Quality of Life in Chinese Patients With Periodontal Disease.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">自我效能、心理狀態、口腔健康行為及口腔健康相關生活質量在中國牙周病患者中的表現</p>
+    <p class="paper-authors">Yu Y, Du S, Xu K, Wang M et al.</p>
+    <p class="paper-abstract">本研究探討中國牙周病患者的自我效能、心理狀態、口腔健康行為與口腔健康相關生活質量之間的關聯。研究針對確診牙周病的患者群體，評估其自我效能感、焦慮與抑鬱等心理狀態，以及日常口腔清潔行為，並分析這些因素如何共同影響其生活質量。研究發現，較高的自我效能與良好的口腔健康行為顯著提升生活質量，而負面心理狀態則產生阻礙作用。心理因素在牙周病患者的健康行為與生活質量之間扮演關鍵的中介角色。該研究提示，牙周病治療應納入心理評估與自我效能提升的介入策略。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">中國牙周病患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">自我效能、心理狀態、口腔健康行為</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同自我效能與心理狀態水平</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">口腔健康相關生活質量</div></div>
+</div>
+    <ul class="findings"><li>自我效能顯著正向預測口腔健康相關生活質量</li><li>負面心理狀態與較差的口腔健康行為相關</li><li>心理因素在行為與生活質量間具中介效應</li></ul>
+    <div class="keywords"><span class="keyword-pill">自我效能</span><span class="keyword-pill">牙周病</span><span class="keyword-pill">心理狀態</span><span class="keyword-pill">生活質量</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">3 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42308218" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">PLoS One</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1371%2Fjournal.pone.0350609" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Depression, anxiety symptoms, and association with household characteristics in adolescent boys and girls from Matiari District, Pakistan: A community-based cross-sectional study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">巴基斯坦馬蒂亞里區青少年男女的抑鬱與焦慮症狀及其與家庭特徵的關聯：一項基於社區的橫斷面研究</p>
+    <p class="paper-authors">Perquier F, Campisi SC, Zasowski C, Tombeau Cost K et al.</p>
+    <p class="paper-abstract">本研究調查巴基斯坦馬蒂亞里區青少年男女的抑鬱與焦慮症狀，並探討這些心理症狀與家庭特徵之間的關聯。此基於社區的橫斷面研究顯示，該地區青少年抑鬱與焦慮的盛行率相當可觀，且與多項家庭社經特徵密切相關，包括家庭經濟狀況、父母教育水平及家庭結構等。研究特別指出，性別差異在這些關聯中扮演角色，女孩在某些家庭壓力下表現出更顯著的心理症狀。此研究強調了在低收入國家社區中，家庭社經背景作為青少年心理健康關鍵社會決定因素的重要性，並呼籲針對脆弱家庭制定以社區為基礎的心理健康介入措施。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">巴基斯坦馬蒂亞里區青少年</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">家庭特徵（社經狀況等）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同家庭特徵的青少年</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">抑鬱與焦慮症狀</div></div>
+</div>
+    <ul class="findings"><li>青少年抑鬱與焦慮症狀與家庭社經特徵顯著相關</li><li>性別差異影響心理症狀的表現</li><li>低收入社區青少年心理健康風險較高</li></ul>
+    <div class="keywords"><span class="keyword-pill">青少年</span><span class="keyword-pill">抑鬱</span><span class="keyword-pill">焦慮</span><span class="keyword-pill">家庭特徵</span><span class="keyword-pill">社會決定因素</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42308146" style="animation-delay:0.48s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Health Commun</span>
+      <span class="paper-date">2026 Jun 17</span>
+      <a class="paper-doi" href="https://doi.org/10.1080%2F10810730.2026.2689086" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title">Sierra Leone&#39;s Polydrug Crisis is an Epidemic of Structural Violence: Community Engagement During the Ebola Response May Offer a Viable Framework for Communication Interventions.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">塞拉利昂的多重藥物濫用危機是一場結構性暴力流行病：伊波拉響應期間的社區參與可能為溝通干預提供可行框架</p>
+    <p class="paper-authors">Bah U, Sastry S</p>
+    <p class="paper-abstract">本文將塞拉利昂的多重藥物濫用危機界定為一場結構性暴力的流行病，而非單純的公共衛生或行為問題。作者指出該國長期的貧困、戰後創傷、失業及社會結構崩解等結構性暴力因素，才是驅動藥物濫用危機的根本原因。研究特別提出，在伊波拉疫情響應期間發展出的社區參與模式，可作為設計藥物濫用溝通干預框架的可行參考。此觀點挑戰了將藥物濫用個體化的傳統視角，強調必須從結構性層面理解並回應該危機，並利用既有的社區動員經驗來發展具文化適切性的介入策略。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">塞拉利昂面臨藥物濫用危機的社區</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">結構性暴力視角與伊波拉社區參與框架</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">傳統個體化藥物濫用干預視角</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">藥物濫用溝通干預框架的建構</div></div>
+</div>
+    <ul class="findings"><li>多重藥物濫用危機本質上為結構性暴力流行病</li><li>伊波拉社區參與經驗可轉化為藥物濫用干預框架</li><li>傳統個體化視角不足以解決該危機</li></ul>
+    <div class="keywords"><span class="keyword-pill">結構性暴力</span><span class="keyword-pill">多重藥物濫用</span><span class="keyword-pill">社區參與</span><span class="keyword-pill">塞拉利昂</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42307621" style="animation-delay:0.56s">
+    <div class="paper-meta">
+      <span class="paper-journal">Rev Saude Publica</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.11606%2Fs1518-8787.2026060007176" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Intimate partner violence and associated factors among adult women: a population-based study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">成年女性親密伴侶暴力及相關因素：一項基於人群的研究</p>
+    <p class="paper-authors">Simon C, Costa JSDD, Olinto MTA, Bairros FS et al.</p>
+    <p class="paper-abstract">本研究以人群為基礎，調查成年女性親密伴侶暴力的盛行率及其相關因素。研究結果顯示，親密伴侶暴力在成年女性中具有相當的盛行率，且與多項社會決定因素密切相關，包括低社會經濟地位、教育程度不足、童年期暴力暴露經歷以及伴侶的物質濫用行為等。研究強調親密伴侶暴力不僅是個體層面的問題，更深植於社會結構性的不平等之中。此研究為公共衛生政策制定提供了重要依據，呼籲採取多層次的預防策略，從改善女性社經地位、加強教育到提供社會支持，以全面應對親密伴侶暴力問題。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">成年女性</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">親密伴侶暴力暴露</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無暴力暴露的成年女性</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">親密伴侶暴力盛行率及相關因素</div></div>
+</div>
+    <ul class="findings"><li>親密伴侶暴力盛行率顯著且與社經地位相關</li><li>童年暴力暴露為重要風險因素</li><li>伴侶物質濫用與暴力發生顯著相關</li></ul>
+    <div class="keywords"><span class="keyword-pill">親密伴侶暴力</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">成年女性</span><span class="keyword-pill">童年逆境</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">大腦發展與神經科學 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42307922" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">JAMA Psychiatry</span>
+      <span class="paper-date">2026 Jun 17</span>
+      <a class="paper-doi" href="https://doi.org/10.1001%2Fjamapsychiatry.2026.1312" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Social Determinants of Health and Neurobiology Across the Schizophrenia Course: A Systematic Review.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">健康社會決定因素與精神分裂症病程中的神經生物學：系統文獻回顧</p>
+    <p class="paper-authors">Hua JPY, Dal Bon K</p>
+    <p class="paper-abstract">本系統文獻回顧探討健康社會決定因素與精神分裂症病程中神經生物學之間的關聯。研究系統性地檢視了現有文獻，分析貧困、社會孤立、歧視、童年逆境等社會決定因素如何透過神經生物學機制影響精神分裂症的發病、病程與預後。回顧結果顯示，社會決定因素透過影響神經發育、神經炎症、壓力反應系統及多巴胺神經傳導等途徑，在精神分裂症的病理生理學中扮演重要角色。此研究強調生物心理社會模型在理解精神分裂症中的必要性，並呼籲未來研究應更整合社會決定因素的量化評估與神經生物學標記物的檢測。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">精神分裂症患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">健康社會決定因素（貧困、社會孤立等）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同社會決定因素暴露水平</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">神經生物學變化與精神分裂症病程</div></div>
+</div>
+    <ul class="findings"><li>社會決定因素透過多條神經生物學途徑影響精神分裂症</li><li>貧困與童年逆境對神經發育有顯著影響</li><li>生物心理社會模型對精神分裂症研究至關重要</li></ul>
+    <div class="keywords"><span class="keyword-pill">精神分裂症</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">神經生物學</span><span class="keyword-pill">系統文獻回顧</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">跨代傳遞與社會流動 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42312189" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Int J Pediatr</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1155%2Fijpe%2F7491512" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Maternal Depression and Its Association With Child Undernutrition in Urban Ethiopia.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">母親抑鬱及其與衣索比亞城市兒童營養不良的關聯</p>
+    <p class="paper-authors">Gebremelak S, Delbiso TD</p>
+    <p class="paper-abstract">本研究探討衣索比亞城市地區母親抑鬱症狀與兒童營養不良之間的關聯。研究發現，患有抑鬱症狀的母親，其子女發生生長遲緩、消瘦及低體重等營養不良狀況的風險顯著升高。這種跨代影響可能透過多種機制運作，包括母親的餵養實踐受損、照顧能力下降以及家庭食物獲取不足等。研究突顯了在低收入城市環境中，母親心理健康作為兒童營養狀況關鍵決定因素的重要性，並指出現有的兒童營養介入計畫往往忽略了母親心理健康的篩檢與治療。結果呼籲應將母親心理健康服務整合進兒童營養改善計畫中。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">衣索比亞城市地區母親與兒童</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">母親抑鬱症狀</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無抑鬱症狀的母親</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">兒童營養不良（生長遲緩、消瘦、低體重）</div></div>
+</div>
+    <ul class="findings"><li>母親抑鬱與兒童營養不良風險顯著正相關</li><li>影響機制包括餵養實踐受損與照顧能力下降</li><li>兒童營養計畫應整合母親心理健康服務</li></ul>
+    <div class="keywords"><span class="keyword-pill">母親抑鬱</span><span class="keyword-pill">兒童營養不良</span><span class="keyword-pill">跨代傳遞</span><span class="keyword-pill">衣索比亞</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42308566" style="animation-delay:1.6s">
+    <div class="paper-meta">
+      <span class="paper-journal">Psychoneuroendocrinology</span>
+      <span class="paper-date">2026 Jun 16</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.psyneuen.2026.107938" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Cortisol stress reactivity and cumulative output associations with structural neural network architecture in adolescents.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">皮質醇壓力反應性及累積輸出與青少年結構神經網絡架構的關聯</p>
+    <p class="paper-authors">Guzman JM, Hardi FA, Peckins MK, Mitchell C et al.</p>
+    <p class="paper-abstract">本研究探討青少年期皮質醇壓力反應性及累積皮質醇輸出與大腦結構神經網絡架構之間的關聯。研究透過壓力挑戰任務測量青少年的皮質醇反應，並收集唾液皮質醇以評估長期累積輸出，同時利用神經影像學技術建構結構性神經網絡。結果顯示，皮質醇壓力反應模式與大腦結構網絡的拓樸特徵存在顯著關聯，特定壓力反應型態與大腦網絡效率及整合性的改變有關。此研究提供了壓力生理學與大腦結構發育之間聯結的實證證據，支持了慢性壓力透過生物嵌入機制影響青少年神經發育的理論觀點。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">青少年</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">皮質醇壓力反應性與累積輸出</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同皮質醇反應型態</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">大腦結構神經網絡架構特徵</div></div>
+</div>
+    <ul class="findings"><li>皮質醇壓力反應與大腦結構網絡拓樸特徵顯著相關</li><li>特定壓力反應型態影響大腦網絡效率</li><li>研究支持壓力生物嵌入影響神經發育的理論</li></ul>
+    <div class="keywords"><span class="keyword-pill">皮質醇</span><span class="keyword-pill">壓力反應性</span><span class="keyword-pill">神經網絡</span><span class="keyword-pill">青少年</span><span class="keyword-pill">生物嵌入</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42308261" style="animation-delay:2s">
+    <div class="paper-meta">
+      <span class="paper-journal">PLOS Glob Public Health</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1371%2Fjournal.pgph.0006688" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title">Reparations for Indigenous Peoples in the USA and Canada.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">美國與加拿大對原住民的賠償</p>
+    <p class="paper-authors">Gone JP</p>
+    <p class="paper-abstract">本文探討美國與加拿大對原住民的賠償政策及其意義。作者從歷史與社會正義的視角，系統性地回顧兩國原住民賠償機制的發展歷程、實施現況與面臨的挑戰。研究指出，原住民所經歷的集體創傷、土地剝奪與文化滅絕構成了深遠的結構性暴力，而現有的賠償政策在規模與深度上往往不足以彌補這些歷史不公。文章強調，有效的賠償不應僅限於經濟補償，更應包含文化復興、健康服務改善與主權恢復等面向。此研究為理解結構性貧困與健康不平等的歷史根源提供了重要框架。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國與加拿大原住民</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">原住民賠償政策</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無賠償或不同賠償模式</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">賠償政策的成效與挑戰</div></div>
+</div>
+    <ul class="findings"><li>現有賠償政策不足以彌補歷史結構性暴力</li><li>有效賠償應超越經濟補償涵蓋文化與健康面向</li><li>歷史不公是當前原住民貧困與健康不平等的根源</li></ul>
+    <div class="keywords"><span class="keyword-pill">原住民</span><span class="keyword-pill">賠償政策</span><span class="keyword-pill">結構性暴力</span><span class="keyword-pill">社會正義</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42310750" style="animation-delay:2.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">Health Res Policy Syst</span>
+      <span class="paper-date">2026 Jun 17</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs12961-026-01489-y" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Evaluability assessment of a targeted national anti-child poverty policy: option appraisal for evaluating the Scottish Child Payment.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">針對國家反兒童貧困政策的可評估性評估：蘇格蘭兒童津貼的評估選項評估</p>
+    <p class="paper-authors">Shimonovich M, Hamilton OKL, Craig P, McCartney G et al.</p>
+    <p class="paper-abstract">本研究針對蘇格蘭的國家性反兒童貧困政策——蘇格蘭兒童津貼進行可評估性評估。研究透過系統性分析該政策的設計邏輯、實施架構與現有數據基礎，提出多項評估方案選項，以協助決策者選擇最適合的評估策略。蘇格蘭兒童津貼是一項針對低收入家庭的有條件現金轉移政策，旨在直接減少兒童貧困。研究指出，評估此類政策面臨諸多方法學挑戰，包括對照組的選擇、溢出效應的控制以及長期效果的追蹤。此評估框架為其他國家或地區評估類似扶貧政策提供了方法學參考，對循證政策制定具有重要貢獻。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">蘇格蘭低收入家庭兒童</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">蘇格蘭兒童津貼政策</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">政策實施前或其他無津貼地區</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">政策評估方案選項與方法學建議</div></div>
+</div>
+    <ul class="findings"><li>蘇格蘭兒童津貼為針對性反貧困現金轉移政策</li><li>政策評估面臨對照組選擇與溢出效應等方法學挑戰</li><li>研究提供了系統性的評估選項框架</li></ul>
+    <div class="keywords"><span class="keyword-pill">兒童貧困</span><span class="keyword-pill">現金轉移</span><span class="keyword-pill">政策評估</span><span class="keyword-pill">蘇格蘭兒童津貼</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
