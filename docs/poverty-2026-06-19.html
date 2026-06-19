@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-06-19</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-06-19">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-06-19">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-06-19</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 5 篇文獻</span>
+      <span class="stat-item">&#128193; 2 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本次分析的五篇文獻從不同維度揭示了「貧窮印記」在結構性弱勢群體中的深刻影響。研究主題涵蓋社區劣勢對心理介入的調節作用、鄉村黑人女性應對結構不平等的韌性敘事、自然災害與流離失所對心理健康的雙重創傷，以及醫療體系對移民婦女性健康需求的結構性忽視。特別是針對「經期貧窮」的研究，具體展現了性別化貧窮如何透過教育與健康雙軌道剝奪青少年的發展機會。整體而言，這些文獻共同指出，貧窮與邊緣化不僅是物質資源的匱乏，更透過破壞社會支持網絡、削弱醫療可近性與製造持續壓力，嵌入個體的心理與生理發展中。未來的介入策略必須超越個體層面的治療，轉向結構性的政策改革（如消除經期貧窮、提升文化胜任力），並賦權社區內生韌性，以有效打破貧窮與健康不平等的跨代傳遞循環。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">3 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:67%">2 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">3 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42318623" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Child Adolesc Psychopharmacol</span>
+      <span class="paper-date">2026 Jun 19</span>
+      <a class="paper-doi" href="https://doi.org/10.1177%2F10445463261459344" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Neighborhood Disadvantage as a Moderator of Children&#39;s Response to a Dyadic Positive Affect Intervention for Children of Mothers with Depressive Symptoms.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">社區劣勢作為患有憂鬱症母親的兒童對雙人正向情感介入反應的調節因子。</p>
+    <p class="paper-authors">Yerger J, Cárdenas EF, Granros M, Feurer C et al.</p>
+    <p class="paper-abstract">本研究探討社區劣勢如何調節患有憂鬱症母親的兒童對雙人正向情感介入的反應。研究針對具有憂鬱症狀母親的兒童進行介入，評估社區環境是否會影響介入效果。結果顯示，社區劣勢程度顯著調節了兒童對介入的反應，處於高度劣勢社區的兒童，其介入效果可能被削弱，反映出結構性不平等對心理介入成效的制約。這表明僅關注親子互動層面的介入可能不足以抵消廣泛社會環境帶來的負面影響，未來需整合社區層級的資源與支持，以提升對高風險家庭的介入成效，並減輕貧窮印記在心理層面的跨代傳遞。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">患有憂鬱症母親的兒童</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">雙人正向情感介入</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同社區劣勢程度的比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">兒童對介入的反應與治療效果</div></div>
+</div>
+    <ul class="findings"><li>社區劣勢顯著調節兒童對正向情感介入的反應</li><li>高度社區劣勢可能削弱針對親子關係的心理介入成效</li><li>結構性環境因素是影響心理治療預後的關鍵變項</li></ul>
+    <div class="keywords"><span class="keyword-pill">社區劣勢</span><span class="keyword-pill">母親憂鬱症</span><span class="keyword-pill">正向情感介入</span><span class="keyword-pill">調節效應</span><span class="keyword-pill">兒童心理健康</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42316190" style="animation-delay:0.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">Int J Equity Health</span>
+      <span class="paper-date">2026 Jun 18</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs12939-026-02917-9" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Healthcare providers&#39; approaches to sexual function in women with migration histories: a qualitative study using Andersen&#39;s behavioural model.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">醫療照護提供者處理有移民史女性性功能的方法：運用安徒生行為模型的質性研究。</p>
+    <p class="paper-authors">Mirzaei Damabi N, Begum M, Avery JC, Meherali S et al.</p>
+    <p class="paper-abstract">本研究運用安徒生行為模型，透過質性方法探討醫療照護提供者如何處理有移民史女性面臨的性功能問題。研究聚焦於醫護人員在傾向、促進資源及需求等面向的實務做法。結果顯示，醫療提供者往往受到系統性障礙（如語言不通、文化差異與就醫時間限制）的影響，難以有效評估與處理這些女性的性健康需求。此外，移民女性常因社會經濟弱勢與醫療體系的結構性排斥，面臨雙重邊緣化。研究指出，現行醫療體系缺乏針對移民婦女性健康的跨文化敏感度，這不僅影響醫療品質，更可能加劇健康不平等，建議需從結構面改善醫療可近性與文化胜任力。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">醫療照護提供者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">處理有移民史女性的性功能問題（日常實務）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">醫療提供者的評估策略、態度與系統性挑戰</div></div>
+</div>
+    <ul class="findings"><li>醫療提供者面臨語言與文化障礙，難以有效處理移民婦女的性健康問題</li><li>系統性資源限制削弱了醫護人員提供個別化照護的能力</li><li>移民婦女在性健康領域經歷結構性排斥與雙重邊緣化</li></ul>
+    <div class="keywords"><span class="keyword-pill">移民女性</span><span class="keyword-pill">性功能</span><span class="keyword-pill">安徒生行為模型</span><span class="keyword-pill">醫療提供者</span><span class="keyword-pill">健康不平等</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42314904" style="animation-delay:0.16s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Pediatr Adolesc Gynecol</span>
+      <span class="paper-date">2026 Jun 18</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20S1083-3188(26)00429-8.%20doi%3A%2010.1016%2Fj.jpag.2026.06.014" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Breaking Barriers: Assessing the Educational and Reproductive Health Implications of Period Poverty Among Secondary School Girls.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">打破障礙：評估中學女生經期貧窮對教育與生殖健康的影響。</p>
+    <p class="paper-authors">Alawode-Atoki RA, Esan DT</p>
+    <p class="paper-abstract">本研究評估「經期貧窮」對中學女生在教育表現與生殖健康方面的影響。經期貧窮指因經濟困境而無法獲得足夠的生理用品與相關資源。研究發現，經期貧窮不僅導致女孩們在月經期間缺課率上升、學業專注力下降，進而影響整體教育成就，更引發泌尿生殖道感染等健康風險，以及因羞恥感帶來的心理壓力。這項研究揭示了貧窮如何透過性別化的生理需求，具體化為教育與健康的雙重剝奪，形成深刻的貧窮印記。研究呼籲政策制定者與學校應將消除經期貧窮視為促進性別平等與教育公平的關鍵介入點，例如提供免費生理用品與推動校園健康教育。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">中學女生</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">經期貧窮（缺乏生理用品與資源）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無經期貧窮困擾的女生</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">教育表現（出勤率、專注度）與生殖健康結果</div></div>
+</div>
+    <ul class="findings"><li>經期貧窮顯著增加中學女生的缺課率並降低學業表現</li><li>缺乏適當生理用品會增加泌尿生殖道感染的風險</li><li>經期貧窮帶來的羞恥感對青少年心理健康造成負面影響</li></ul>
+    <div class="keywords"><span class="keyword-pill">經期貧窮</span><span class="keyword-pill">中學女生</span><span class="keyword-pill">教育公平</span><span class="keyword-pill">生殖健康</span><span class="keyword-pill">性別不平等</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42314172" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Issues Ment Health Nurs</span>
+      <span class="paper-date">2026 Jun 18</span>
+      <a class="paper-doi" href="https://doi.org/10.1080%2F01612840.2026.2661072" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">&quot;I Know How to Take Care of Myself.&quot;: Composite Narratives Among Rural Black Women Coping with Structural Inequities.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">「我知道如何照顧自己」：鄉村黑人女性應對結構性不平等的複合敘事。</p>
+    <p class="paper-authors">Burton WM, Sanchez S, Newman SD</p>
+    <p class="paper-abstract">本研究透過質性方法探討鄉村黑人女性在面對結構性不平等時的應對策略與複合敘事。研究聚焦於這些女性如何在資源匱乏與系統性壓迫的環境中，展現出自我照顧與韌性。研究發現，參與者透過強調「我知道如何照顧自己」的敘事，建構出一套基於社群支持、文化認同與實用主義的應對機制。這些敘事不僅是個人心理防禦，更是對抗結構性貧窮與健康不平等的生存策略。研究強調，在理解貧窮印記時，必須重視邊緣化群體的主體性與內在力量，未來的心理健康介入應結合這種社區內生的韌性，而非僅採用缺陷導向的視角。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">鄉村黑人女性</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">暴露於結構性不平等</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">應對策略與複合敘事內容</div></div>
+</div>
+    <ul class="findings"><li>鄉村黑人女性透過「自我照顧」敘事展現強大韌性</li><li>應對機制深植於社群支持與文化認同之中</li><li>結構性不平等下的生存策略挑戰了傳統的缺陷導向心理學視角</li></ul>
+    <div class="keywords"><span class="keyword-pill">結構性不平等</span><span class="keyword-pill">鄉村黑人女性</span><span class="keyword-pill">應對策略</span><span class="keyword-pill">韌性</span><span class="keyword-pill">質性研究</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42313810" style="animation-delay:0.48s">
+    <div class="paper-meta">
+      <span class="paper-journal">PLOS Ment Health</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1371%2Fjournal.pmen.0000317" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Understanding the impact of natural disasters on post-traumatic stress disorder and depression symptoms: An examination of counterfactual displacement scenarios.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">理解自然災害對創傷後壓力症候群與憂鬱症狀的影響：反事實流離失所情境的檢視。</p>
+    <p class="paper-authors">Abba-Aji M, Cohen G, Abdalla S, Wang R et al.</p>
+    <p class="paper-abstract">本研究旨在探討自然災害對個體創傷後壓力症候群（PTSD）與憂鬱症狀的影響，並透過反事實流離失所情境分析來釐清災害與遷移的獨立作用。研究利用反事實推論模型，比較實際經歷災害且流離失所、實際經歷災害但未流離失所，以及假設未發生災害等不同情境下的心理健康結果。研究發現，自然災害本身會顯著增加PTSD與憂鬱症狀，而伴隨的強制流離失所則進一步惡化心理健康狀況。這指出災害帶來的社會決定因素破壞（如失去社區網絡與穩定住房）是加劇心理創傷的關鍵，對於弱勢群體而言，災後流離失所往往加深了貧窮印記與心理困境。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">經歷自然災害的民眾</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">自然災害與流離失所情境（反事實模型）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">反事實未流離失所或未受災情境</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">PTSD與憂鬱症狀的嚴重程度</div></div>
+</div>
+    <ul class="findings"><li>自然災害顯著增加受災者的PTSD與憂鬱症狀</li><li>災後流離失所對心理健康的惡化具有獨立的加成效應</li><li>社會網絡與居住穩定性的喪失是災害加深心理創傷的核心機制</li></ul>
+    <div class="keywords"><span class="keyword-pill">自然災害</span><span class="keyword-pill">創傷後壓力症候群</span><span class="keyword-pill">憂鬱症</span><span class="keyword-pill">流離失所</span><span class="keyword-pill">反事實推論</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
