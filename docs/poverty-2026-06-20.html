@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-06-20</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-06-20">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-06-20">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-06-20</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 2 篇文獻</span>
+      <span class="stat-item">&#128193; 2 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本次分析的兩篇文獻分別從「政策介入」與「表觀遺傳學」視角，探討社會弱勢與逆境經驗對個體的深遠影響。第一篇聚焦社會弱勢女性的孕產期照護，提出以連續助產護理模式作為政策介入手段，透過建立持續性信任關係，減輕貧窮與資源剝奪對母嬰健康的衝擊，展現了社會支持的防線價值。第二篇深入分子層面，揭示不良童年經驗的發生時間點如何透過表觀遺傳時鐘加速生物老化，並改變個體的生活史策略（如早熟）。這為「貧窮印記」理論提供了機制性證據，證實早期逆境是嵌入於DNA甲基化模式的生理性損耗。綜合而言，兩項研究串聯了從微觀生物機制到宏觀政策干預的脈絡：表觀遺傳學解釋了貧窮留下的隱形傷痕，而連續護理政策則示範了如何建立緩衝機制，阻斷健康劣勢的跨代傳遞。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">表觀遺傳與生物老化</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42321901" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Health Popul Nutr</span>
+      <span class="paper-date">2026 Jun 19</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs41043-026-01364-0" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Implementation and evaluation of the effectiveness of the continuous midwifery care model in socially vulnerable women: a convergent parallel mixed methods study protocol.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">連續助產護理模式在社會弱勢女性中的實施與效果評估：收斂平行混合方法研究計畫書</p>
+    <p class="paper-authors">Ahadi-Yulghunlu F, Mohammad-Alizadeh-Charandabi S, Abbasalizadeh F, Hajizadeh K et al.</p>
+    <p class="paper-abstract">本研究計畫旨在探討連續助產護理模式對社會弱勢女性之實施可行性與成效。採用收斂平行混合方法設計，結合量化與質性研究，以評估該模式在提升孕產婦健康結果、降低壓力及增強賦權方面的效果。社會弱勢女性常面臨貧窮、社會支持不足等挑戰，導致孕產期風險增加。此護理模式強調由同一群助產士提供從懷孕、分娩到產後的持續性照護，期望建立信任關係並減少因資源不平等帶來的健康劣勢。研究將分析母嬰健康指標作為主要結果，並透過深度訪談了解弱勢女性在接受此模式時的真實經驗與障礙。本計畫的成果將有助於制定針對弱勢群體的精準健康政策，減輕貧窮對孕產健康的負面印記。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">社會弱勢女性（孕產婦）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">連續助產護理模式</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">傳統產科護理模式（隱含對照）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">母嬰健康結果、壓力水平、賦權感與實施可行性</div></div>
+</div>
+    <ul class="findings"><li>採用收斂平行混合方法設計以全面評估護理成效</li><li>目標為提升社會弱勢孕產婦之健康賦權並降低壓力</li><li>旨在減少資源不平等造成的母嬰健康落差</li></ul>
+    <div class="keywords"><span class="keyword-pill">連續助產護理</span><span class="keyword-pill">社會弱勢</span><span class="keyword-pill">孕產婦健康</span><span class="keyword-pill">混合方法</span><span class="keyword-pill">健康賦權</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">表觀遺傳與生物老化 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42321381" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Sci Rep</span>
+      <span class="paper-date">2026 Jun 19</span>
+      <a class="paper-doi" href="https://doi.org/10.1038%2Fs41598-026-58459-1" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Timing of adverse childhood experiences shapes epigenetic ageing and life-history outcomes.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">不良童年經歷的時間點塑造表觀遺傳老化與生活史結果</p>
+    <p class="paper-authors">Wang WJ, Akimova ET</p>
+    <p class="paper-abstract">本研究探討不良童年經歷的發生時間點如何影響表觀遺傳老化及其後續的生活史結果。早期生活壓力被視為貧窮與社會逆境的重要生物印記，而本研究強調「時間」在生物嵌入過程中的關鍵角色。研究透過分析受試者的表觀遺傳時鐘，發現發生於不同發展階段的逆境會導致差異化的生物老化速率。具體而言，發生在特定敏感期的逆境對加速細胞老化的影響最為顯著，這進一步與個體較早的青春期發育、生育年齡提前等生活史策略改變相關聯。這些發現揭示了童年逆境不僅造成短期的心理創傷，更會透過表觀遺傳機制實質改變個體的生命週期發展軌跡。該研究為理解貧窮如何跨代影響生理老化提供了重要的神經生物學與演化發展視角。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">具有不良童年經歷的個體</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">不同時間點（敏感期）的不良童年經歷</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無或晚發生不良童年經歷的對照組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">表觀遺傳老化速率、生活史結果（如青春期發育時間）</div></div>
+</div>
+    <ul class="findings"><li>不良童年經歷的發生時間點是影響生物老化的關鍵因素</li><li>發生在特定敏感期的逆境會顯著加速表觀遺傳老化</li><li>加速的生物老化與生活史策略的提早轉變（如早熟）密切相關</li></ul>
+    <div class="keywords"><span class="keyword-pill">不良童年經歷</span><span class="keyword-pill">表觀遺傳老化</span><span class="keyword-pill">生活史理論</span><span class="keyword-pill">生物嵌入</span><span class="keyword-pill">敏感期</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
