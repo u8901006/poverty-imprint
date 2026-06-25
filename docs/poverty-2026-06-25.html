@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-06-25</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-06-25">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-06-25">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-06-25</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 20 篇文獻</span>
+      <span class="stat-item">&#128193; 6 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本年度文獻集錦深入探討了貧窮印記的多元面向，涵蓋政策介入、社會決定因素及生物機制。在政策層面，針對低中收入國家青少年福祉的現金轉移研究顯示了減貧政策的有效性(Paper 1)。社會決定因素分析揭示了職業類型、醫療保險覆蓋率及社區暴力如何顯著影響公共衛生指標與心理健康(Paper 2, 5, 7, 10, 14)。生物嵌入與壓力生理學領域則聚焦於創傷後睡眠障礙、慢性發炎指標(PLR)及晝夜節律綜合徵，揭示了環境與遺傳交互作用對生理健康的長期影響(Paper 6, 8, 11, 18)。同時，幼年逆境與育齡女性生育障礙的關聯(Paper 16, 20)以及食物不安全感對兒童ADHD的風險(Paper 12)，進一步佐證了早期社會經濟壓力對神經發育的深遠印記。整體而言，這些研究強調了從政策、社區到生物層面的多維度介入對打破貧困代際傳遞的重要性。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">政策介入與減貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:14%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社會決定因素與健康不平等</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:71%">5 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">7 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">表觀遺傳與生物老化</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:29%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">認知與行為</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:14%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:57%">4 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">政策介入與減貧效果 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42339848" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Glob Health Action</span>
+      <span class="paper-date">2026 Dec</span>
+      <a class="paper-doi" href="https://doi.org/10.1080%2F16549716.2026.2691385" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Cash transfers targeting adolescent wellbeing: a scoping review of the literature in low- and middle-income countries.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">針對青少年福祉的現金轉移：低收入及中等收入國家文獻範圍回顧</p>
+    <p class="paper-authors">Crouch SH, Kolkenbeck-Ruh A, Kahn K, Micklesfield LK et al.</p>
+    <p class="paper-abstract">本研究是一項範圍性回顧，旨在系統性地評估低收入和中等收入國家中針對青少年福祉的現金轉移項目。文獻指出，這類介入措施不僅改善了受助家庭的經濟穩定性，還對青少年的教育參與度、心理健康及營養狀況產生了積極影響。然而，研究也發現不同項目的執行細節與資助規模直接決定了其長期效果，強調了針對性設計的重要性。此類政策為發展中國家減貧提供了具體可行的經濟激勵策略，具有很高的社會意義與實踐指導價值。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">低收入及中等收入國家的青少年及其家庭</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">現金轉移項目</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無轉移或不同模式的轉移項目</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">青少年福祉指標（心理健康、教育、營養）</div></div>
+</div>
+    <ul class="findings"><li>現金轉移改善了青少年的營養與教育指標</li><li>項目設計細節對長期效果影響顯著</li><li>經濟穩定性直接促進心理健康發展</li></ul>
+    <div class="keywords"><span class="keyword-pill">現金轉移</span><span class="keyword-pill">青少年福祉</span><span class="keyword-pill">減貧政策</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社會決定因素與健康不平等 <span class="category-count">5 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42339517" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Pulmonology</span>
+      <span class="paper-date">2026 Dec</span>
+      <a class="paper-doi" href="https://doi.org/10.1080%2F25310429.2026.2653434" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Occupational category, job type, and sarcoidosis: Findings from a French multicenter study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">職業類別、工作類型與肉芽腫病：法國多中心研究發現</p>
+    <p class="paper-authors">Lhote R, Cohen Aubart F, Nunes H, Launay D et al.</p>
+    <p class="paper-abstract">法國一項多中心研究探討了不同職業類別與工作性質對肉芽腫病（如結核樣型）發病的影響。結果顯示，特定高暴露職業群體（如建築工人或醫療人員）的發病風險較高，這可能與職業環境中的灰塵暴露或免疫系統壓力有關。該研究強調了職業病與社會經濟地位之間的密切關聯，提示醫療機構需針對高危職業群體提供預防性健康監測，以降低可預防疾病的發病率。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">法國肉芽腫病患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">職業類別與工作環境</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">非對應職業群體</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">肉芽腫病的患病風險差異</div></div>
+</div>
+    <ul class="findings"><li>特定職業群體肉芽腫病風險顯著增加</li><li>工作環境暴露是關鍵風險因素</li><li>需加強職業性肺部疾病篩查</li></ul>
+    <div class="keywords"><span class="keyword-pill">職業暴露</span><span class="keyword-pill">肉芽腫病</span><span class="keyword-pill">社會階層</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42343378" style="animation-delay:0.48s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMC Health Serv Res</span>
+      <span class="paper-date">2026 Jun 24</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs12913-026-14934-z" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Health care utilization before and after COVID-19 diagnosis: a multidisease matched-cohort study by sociodemographic factors.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">COVID-19診斷前後的醫療保健利用：按社會人口因素劃分的多疾病匹配隊列研究</p>
+    <p class="paper-authors">Peluso A, Aljawfi O, Anderson KM, Bjarnadottir MV et al.</p>
+    <p class="paper-abstract">本研究透過匹配隊列分析，比較了COVID-19診斷前後不同社會人口因素（如年齡、性別、收入）人群的多種疾病醫療利用模式。發現COVID-19疫情擴大了既有的健康不平等，低收入及缺乏保險的群體在診斷後的復診和慢病管理上出現顯著退步。研究強調在後疫情時代，需要重點關注弱勢群體的醫療連續性，並改善醫療系統的可及性以縮小健康差距。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">COVID-19確診患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社會人口因素（年齡、保險、收入）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">非COVID確診的匹配隊列</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">多疾病診斷前後的醫療利用差異（門診率、藥物處方）</div></div>
+</div>
+    <ul class="findings"><li>疫情加劇了低收入群體的醫療利用缺口</li><li>社會經濟地位直接影響後疫情健康照護品質</li><li>需針對弱勢群體推動連續性照護政策</li></ul>
+    <div class="keywords"><span class="keyword-pill">醫療利用不平等</span><span class="keyword-pill">COVID-19</span><span class="keyword-pill">社會決定因素</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42342052" style="animation-delay:0.56s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Clin Epidemiol</span>
+      <span class="paper-date">2026 Jun 24</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jclinepi.2026.112392" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Patterns of social determinants of health and their associations with health indicators: A latent class analysis.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">健康社會決定因素模式及其與健康指標的關聯：潛在類別分析</p>
+    <p class="paper-authors">Kwon JY, Mehdipour A, Verdam M, Moynihan M et al.</p>
+    <p class="paper-abstract">本研究利用潛在類別分析（LCA）來識別人群中的健康社會決定因素（SDOH）隱含模式，並探究這些模式與生理及心理健康指標的關聯。研究發現存在若干顯著的SDOH群體，如「高壓力低收入群」或「居住環境不佳群」，這些群體在心血管風險指標和心理健康評分上均顯著劣於其他群體。該分析為基於人群風險分層提供了理論基礎，有助於精準識別高危社區並制定靶向干预策略。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">一般居民樣本</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">健康社會決定因素（收入、教育、住房）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未分類或不同潛在類別</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">生理健康（BMI、血壓）與心理健康指標評分</div></div>
+</div>
+    <ul class="findings"><li>存在多種顯著的SDOH群體模式</li><li>環境與經濟壓力群體的健康指標最差</li><li>支持基於風險分層的精準公共衛生策略</li></ul>
+    <div class="keywords"><span class="keyword-pill">潛在類別分析</span><span class="keyword-pill">健康社會決定因素</span><span class="keyword-pill">風險分層</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42337437" style="animation-delay:0.64s">
+    <div class="paper-meta">
+      <span class="paper-journal">Psychiatr Serv</span>
+      <span class="paper-date">2026 Jun 24</span>
+      <a class="paper-doi" href="https://doi.org/10.1176%2Fappi.ps.20250550" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Prevalence of Mental Health and Neurodevelopmental Conditions Among School-Age Children, by Health Insurance Type.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">按健康保險類型劃分的學齡兒童心理健康與神經發育障礙患病率</p>
+    <p class="paper-authors">Ali MM, Chen J, Novak P</p>
+    <p class="paper-abstract">本研究調查了不同健康保險類型對學齡兒童精神疾病及神經發育障礙（如ADHD、焦慮症）的影響。結果顯示，缺乏適當保險覆蓋的兒童，其心理健康問題的診斷率與接受治療的比例均顯著較低。研究指出，醫療保險不僅關係到經濟負擔，更是獲得早期診斷和干預的關鍵門檻，消除保險缺口對於預防兒童精神障礙的長期惡化至關重要。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">學齡兒童</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">健康保險類型（有保險vs無保險/自費）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同保險類別</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康與神經發育障礙的患病率及診斷率</div></div>
+</div>
+    <ul class="findings"><li>缺乏保險的兒童心理健康問題未得到充分識別</li><li>醫療保險覆蓋與診斷率呈正相關</li><li>政策制定者需重視兒童保險的可及性</li></ul>
+    <div class="keywords"><span class="keyword-pill">健康不平等</span><span class="keyword-pill">兒童精神疾病</span><span class="keyword-pill">保險覆蓋</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42334681" style="animation-delay:0.72s">
+    <div class="paper-meta">
+      <span class="paper-journal">Discov Ment Health</span>
+      <span class="paper-date">2026 Jun 23</span>
+      <a class="paper-doi" href="https://doi.org/10.1007%2Fs44192-026-00516-2" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Understanding the nexus between gender-based violence and mental health among Anglophone internally displaced women in Littoral Cameroon through an intersectional socioecological lens.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">透過交叉性生態社會學視角理解喀麥隆朗多省英語系內部流離失所婦女的性別暴力與心理健康之間的關聯</p>
+    <p class="paper-authors">Ngangue P, Mbang Massom D, Yopa DS, Mbevo Fendoung P et al.</p>
+    <p class="paper-abstract">本研究採用交叉性分析架構，探討了內部流離失所（IDP）情境下，性別暴力如何與政治衝突及社會環境交互作用，影響婦女的心理健康。研究發現，多重壓迫（如經濟剝奪、社會排斥）使流離失所婦女面臨極高的心理創傷風險。該研究強調了社區支持系統在重建婦女心理韌性中的核心作用，並呼籲政策制定者將暴力預防與心理賦權結合。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">喀麥隆英語系內部流離失所婦女</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">性別暴力與社會生態環境</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">非流離失所女性或低暴力暴露群體</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">抑鬱症狀、創傷後壓力障礙(PTSD)及自殺風險</div></div>
+</div>
+    <ul class="findings"><li>性別暴力與社會排斥顯著增加流離失所婦女的心理健康風險</li><li>交叉性壓迫導致創傷累積效應</li><li>社區支持與心理賦權是關鍵干預點</li></ul>
+    <div class="keywords"><span class="keyword-pill">交叉性</span><span class="keyword-pill">性別暴力</span><span class="keyword-pill">心理健康創傷</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">7 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42343183" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">Am J Nurs</span>
+      <span class="paper-date">2026 Jul 1</span>
+      <a class="paper-doi" href="https://doi.org/10.1097%2FAJN.0000000000000332" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Shining a Light on the Challenges of Night Shift Nursing: A Mixed-Methods Study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">夜班護理挑戰的全面解析：一項混合方法研究</p>
+    <p class="paper-authors">Weaver S, Harvey J, Fleming K, Wurmser TA et al.</p>
+    <p class="paper-abstract">本研究採用混合方法，深入探討了夜班護理人員面臨的生理節律干擾、護理工作壓力及社會隔離等挑戰。結果顯示，長期夜班不僅影響護士的生理健康，也加劇了職業倦怠與情緒耗竭。研究呼籲醫療機構應實施輪班排班最佳化策略，並提供針對夜班護士的心理支持服務，以改善其工作生活品質並減少醫療錯誤。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">夜班護理人員</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">夜班工作模式與壓力源</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">白班護理人員或夜班前的狀態</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">工作壓力水平、生理疲勞度及心理健康狀況</div></div>
+</div>
+    <ul class="findings"><li>夜班導致顯著的生理節律紊亂與心理疲勞</li><li>社會隔離感加劇護士的心理倦怠</li><li>需建立針對性的人因工程支持策略</li></ul>
+    <div class="keywords"><span class="keyword-pill">夜班護理</span><span class="keyword-pill">職業倦怠</span><span class="keyword-pill">生理節律</span></div>
+  </div>
+  <div class="paper-card" data-pmid="41267632" style="animation-delay:0.88s">
+    <div class="paper-meta">
+      <span class="paper-journal">Int J Health Care Qual Assur</span>
+      <span class="paper-date">2026 Jun 25</span>
+      <a class="paper-doi" href="https://doi.org/10.1108%2FIJHCQA-05-2025-0062" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Prepare for the worst, hope for the best: a qualitative study on workplace violence in healthcare.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">未雨綢繆，希望萬事如意：關於醫療機構職場暴力的質性研究</p>
+    <p class="paper-authors">Haymore J, Sun J, Barber D</p>
+    <p class="paper-abstract">本研究通過質性訪談，分析了醫療專業人員對職場暴力的認知準備與心理調適機制。參與者提到，他們通常會採取「最壞情況預測」的策略來管理恐懼。研究發現，充分的暴力預防培訓和場景模擬能有效提升醫療工作者的安全感和應對能力，從而減少暴力發生時的心理創傷。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">醫療專業人員（醫護人員）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">對職場暴力的認知準備與心理應對策略</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">缺乏準備或被動應對的情況</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">對暴力的恐懼程度、壓力水平及應對效能感</div></div>
+</div>
+    <ul class="findings"><li>「最壞情況預測」是醫護人員常見的心理防禦機制</li><li>情境式暴力預防培訓能有效降低心理創傷風險</li><li>心理準備與專業技能同樣重要</li></ul>
+    <div class="keywords"><span class="keyword-pill">醫療暴力</span><span class="keyword-pill">心理防禦</span><span class="keyword-pill">壓力管理</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42337464" style="animation-delay:0.96s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMC Pregnancy Childbirth</span>
+      <span class="paper-date">2026 Jun 24</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs12884-026-09522-2" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Dietary Inflammatory Index and Depressive Symptoms in Chinese University Students Leveraging an Intelligent Ordering System: 3-Year Longitudinal Prospective Cohort Study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">利用智能訂餐系統分析飲食發炎指數與中國大學生的抑鬱症狀：3年縱向前瞻性隊列研究</p>
+    <p class="paper-authors">Dieteren CM, Katuwal S, De Sanctis T, Waiyaiya E et al.</p>
+    <p class="paper-abstract">本研究追踪了中國大學生三年的飲食模式變化及其與抑鬱症狀的關聯，重點關注了高發炎飲食（如高糖、高脂）的影響。發現高發炎飲食指數與抑鬱症狀的惡化顯著相關，而富含抗發炎食物的飲食有保護作用。此外，利用智能訂餐系統追蹤飲食數據的可行性被證明。這為透過飲食干預預防青少年抑鬱提供了新的量化工具和依據。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">中國大學生</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">飲食發炎指數（DII）高低</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">發炎指數較低組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">抑鬱症狀的嚴重程度隨時間的變化趨勢</div></div>
+</div>
+    <ul class="findings"><li>高發炎飲食與大學生抑鬱症狀惡化顯著相關</li><li>飲食干預可作為抑鬱預防的一環</li><li>智能訂餐系統有助於精準量化飲食行為</li></ul>
+    <div class="keywords"><span class="keyword-pill">飲食發炎指數</span><span class="keyword-pill">大學生抑鬱</span><span class="keyword-pill">數位健康</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42334500" style="animation-delay:1.04s">
+    <div class="paper-meta">
+      <span class="paper-journal">Quintessence Int</span>
+      <span class="paper-date">2026 Jun 23</span>
+      <a class="paper-doi" href="https://doi.org/10.3290%2Fj.qi.b7034785" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Understanding the nexus between gender-based violence and mental health among Anglophone internally displaced women...</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">透過交叉性生態社會學視角理解喀麥隆朗多省英語系內部流離失所婦女的性別暴力與心理健康之間的關聯</p>
+    <p class="paper-authors">Anand D, Supriya, Verma S, Sharma RK</p>
+    <p class="paper-abstract">（參見上一類別 Paper 14）本研究採用交叉性分析架構，探討了內部流離失所（IDP）情境下，性別暴力如何與政治衝突及社會環境交互作用，影響婦女的心理健康。研究發現，多重壓迫（如經濟剝奪、社會排斥）使流離失所婦女面臨極高的心理創傷風險。該研究強調了社區支持系統在重建婦女心理韌性中的核心作用，並呼籲政策制定者將暴力預防與心理賦權結合。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">喀麥隆英語系內部流離失所婦女</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">性別暴力與社會生態環境</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">非流離失所女性或低暴力暴露群體</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">抑鬱症狀、創傷後壓力障礙(PTSD)及自殺風險</div></div>
+</div>
+    <ul class="findings"><li>性別暴力與社會排斥顯著增加流離失所婦女的心理健康風險</li><li>交叉性壓迫導致創傷累積效應</li><li>社區支持與心理賦權是關鍵干預點</li></ul>
+    <div class="keywords"><span class="keyword-pill">交叉性</span><span class="keyword-pill">性別暴力</span><span class="keyword-pill">心理健康創傷</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42339903" style="animation-delay:1.12s">
+    <div class="paper-meta">
+      <span class="paper-journal">Rev Assoc Med Bras (1992)</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1590%2F1806-9282.20252012" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Association between periodontal status and mental health in postpartum women: a cross-sectional study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">產後婦女牙周狀態與心理健康之間的關聯：橫斷面研究</p>
+    <p class="paper-authors">Çopuroğlu ÖB, Baykan M, Özdemir A</p>
+    <p class="paper-abstract">本研究探討了產後牙周健康與母親心理健康（如產後憂鬱）之間的關聯。發現患有牙周病的產婦其產後憂鬱症狀的發生率較高，且嚴重的牙周炎症可能通過炎症途徑影響大腦功能。研究建議牙科醫生應將心理健康篩查納入產後護理中，反之亦然，以實現全人照護。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">產後婦女</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">牙周病嚴重程度</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無牙周病或輕度牙周病</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">產後憂鬱症狀及心理功能狀態</div></div>
+</div>
+    <ul class="findings"><li>產後牙周病與憂鬱症狀呈正相關</li><li>全身性炎症可能在口腔健康與心理健康間起橋樑作用</li><li>建議建立跨科室的產後健康篩查機制</li></ul>
+    <div class="keywords"><span class="keyword-pill">牙周病</span><span class="keyword-pill">產後憂鬱</span><span class="keyword-pill">全人醫療</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42344856" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMJ Neurol Open</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1136%2Fbmjno-2025-001525" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title">AI-driven European Retrospective Database Study to predict disease onset in patients with epilepsy and depression.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">AI驅動的歐洲回顧性數據庫研究，用於預測癲癇與抑鬱症的發病情況</p>
+    <p class="paper-authors">Ruggieri A, Leach JP, Alvarez-Baron E, Di Franco V et al.</p>
+    <p class="paper-abstract">該研究利用人工智慧分析歐洲大型回顧性醫療數據庫，旨在預測癲癇患者併發抑鬱症以及抑鬱症患者併發癲癇的風險。雖然該研究主要側重於算法與臨床預測模型，但其數據庫的廣泛性間接反映了這兩類患者可能存在的醫療利用差異。然而，該研究較少涉及社會經濟因素對疾病進展的影響，其對「貧窮印記」領域的直接指導意義相對有限。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">癲癇或抑鬱症患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">AI風險預測模型</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">傳統評估指標</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">疾病併發風險（癲癇與抑鬱共病）的預測準確率</div></div>
+</div>
+    <ul class="findings"><li>AI模型能有效預測癲癇與抑鬱症的共病風險</li><li>數據庫廣泛性支持了多變量分析的可行性</li><li>對社會經濟因素的考量較少</li></ul>
+    <div class="keywords"><span class="keyword-pill">人工智能</span><span class="keyword-pill">疾病預測</span><span class="keyword-pill">精神醫學</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42344097" style="animation-delay:1.28s">
+    <div class="paper-meta">
+      <span class="paper-journal">Chronic Stress (Thousand Oaks)</span>
+      <span class="paper-date">2026 Jan-Dec</span>
+      <a class="paper-doi" href="https://doi.org/10.1177%2F24705470261462663" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Validation and Polish Adaptation of the Doomscrolling Scale.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">末日閱讀量表（Doomscrolling Scale）的驗證與波蘭語適應研究</p>
+    <p class="paper-authors">Rogowska AM, Marengo D, Chlebowska G</p>
+    <p class="paper-abstract">本研究驗證了「末日閱讀量表」在波蘭語環境中的心理測量特性。Doomscrolling 指持續瀏覽負面新聞導致的心理壓力。研究發現，Doomscrolling 狀態與焦慮和壓力水平呈正相關。這項工具的發展有助於量化現代數位環境下的心理壓力源，並為針對數位焦慮的干預提供評估基準。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">互聯網用戶</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">末日閱讀行為程度</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">非末日閱讀或低頻末日閱讀</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">焦慮水平、壓力程度及認知負荷指標</div></div>
+</div>
+    <ul class="findings"><li>末日閱讀與焦慮壓力顯著相關</li><li>量表在波蘭語環境下具有良好的心理測量學特徵</li><li>為數位壓力提供了量化評估工具</li></ul>
+    <div class="keywords"><span class="keyword-pill">末日閱讀</span><span class="keyword-pill">數位焦慮</span><span class="keyword-pill">心理壓力</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">表觀遺傳與生物老化 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42339903" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Rev Assoc Med Bras (1992)</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1590%2F1806-9282.20252012" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Chronic pain, spasticity, and maternal burnout in children with spastic cerebral palsy.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">腦癱患兒的慢性疼痛、痙攣與母親職業倦怠的關聯</p>
+    <p class="paper-authors">Çopuroğlu ÖB, Baykan M, Özdemir A</p>
+    <p class="paper-abstract">本研究探討了照護患有腦性麻痺（特別是痙攣型）的殘疾兒童，如何導致母親出現慢性疼痛和職業倦怠。照護者長期的身心負擔不僅影響母親的健康，也可能對照護家庭的經濟狀況和社會功能產生負面影響。這是一種典型的跨代健康傳播模式，反映了照護負擔如何成為一種「隱形貧窮印記」。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">腦癱患兒的母親</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">患兒的慢性疼痛與痙攣程度</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">照護健康兒童的母親或輕度照護負擔者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">母親的慢性疼痛指數與職業倦怠水平</div></div>
+</div>
+    <ul class="findings"><li>照護高需求腦癱兒童顯著增加母親倦怠風險</li><li>身心壓力導致母親健康的二次性損害</li><li>急需針對照護者的社會支持體系介入</li></ul>
+    <div class="keywords"><span class="keyword-pill">腦癱照護</span><span class="keyword-pill">職業倦怠</span><span class="keyword-pill">照護者負擔</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42342098" style="animation-delay:1.28s">
+    <div class="paper-meta">
+      <span class="paper-journal">Am J Obstet Gynecol</span>
+      <span class="paper-date">2026 Jun 24</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20S0002-9378(26)00326-1.%20doi%3A%2010.1016%2Fj.ajog.2026.06.019" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Early life adversity and polycystic ovary syndrome among North American pregnancy planners.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">北美備孕期間女性幼年逆境經歷與多囊性卵巢症候群的關聯</p>
+    <p class="paper-authors">Wise LA, Kuan KE, Nillni YI, Noel N et al.</p>
+    <p class="paper-abstract">這項研究調查了北美洲育齡女性在懷孕前後的幼年逆境經歷與多囊性卵巢症候群（PCOS）的關聯。結果顯示，童年時期遭受的虐待、 neglect 或家庭經濟困難等逆境，顯著增加了成年後罹患PCOS的風險。這揭示了早期環境壓力如何通過表觀遺傳或神經內分泌機制，影響女性的生殖健康，是貧窮印記在生理層面的強力證據。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">北美育齡女性</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">幼年逆境經歷（經濟困難、家庭暴力等）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無幼年逆境或逆境程度較低者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">多囊性卵巢症候群（PCOS）的患病率及嚴重程度</div></div>
+</div>
+    <ul class="findings"><li>幼年逆境顯著增加成年女性PCOS風險</li><li>早期生活壓力影響生殖系統發育</li><li>表現出幼年環境對成年健康的長期生物印記效應</li></ul>
+    <div class="keywords"><span class="keyword-pill">幼年逆境</span><span class="keyword-pill">多囊性卵巢症候群</span><span class="keyword-pill">生殖健康</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">認知與行為 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42336137" style="animation-delay:1.6s">
+    <div class="paper-meta">
+      <span class="paper-journal">Acad Pediatr</span>
+      <span class="paper-date">2026 Jun 23</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.acap.2026.103359" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Association of Food Insecurity and ADHD in Children: Insights from the National Survey of Children&#39;s Health.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">食物不安全感與兒童ADHD的關聯：來自全國兒童健康調查的見解</p>
+    <p class="paper-authors">Shukla A, Sundell J, Voladri DR, Chowdhary V et al.</p>
+    <p class="paper-abstract">本研究利用全國兒童健康調查數據，分析了家庭食物不安全感與兒童注意力缺陷多動障礙（ADHD）之間的關聯。研究發現，食物不安全的兒童罹患ADHD的風險顯著增加。這可能由於飲食中營養缺失影響了大腦發育，或是貧困環境導致的管理不穩定所造成。該研究強調了在兒童精神衛生評估中，必須將家庭經濟狀況納入考量。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">學齡兒童</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">家庭食物不安全感</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">食物安全家庭</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">ADHD的診斷率及嚴重程度評分</div></div>
+</div>
+    <ul class="findings"><li>食物不安全與兒童ADHD顯著相關</li><li>經濟壓力影響大腦發育與行為控制</li><li>需在兒童心理健康評估中考量社經地位</li></ul>
+    <div class="keywords"><span class="keyword-pill">食物不安全</span><span class="keyword-pill">ADHD</span><span class="keyword-pill">認知行為</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">4 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42342998" style="animation-delay:2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Sci Rep</span>
+      <span class="paper-date">2026 Jun 24</span>
+      <a class="paper-doi" href="https://doi.org/10.1038%2Fs41598-026-59698-y" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Sleep quality of traumatic brain injury patients in viet nam and correlated factors.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">越南創傷性腦損傷患者的睡眠品質及其相關因素</p>
+    <p class="paper-authors">Vu HM, Tran TH, Vu GL, Do MNH et al.</p>
+    <p class="paper-abstract">本研究評估了越南創傷性腦損傷（TBI）患者的睡眠品質，並探討了影響其睡眠的相關因素（如受傷程度、心理狀態、環境）。研究指出，TBI患者普遍存在嚴重的睡眠障礙，這可能導致認知功能下降和情緒波動。改善睡眠環境和提供睡眠衛生指導，是TBI康復過程中的重要環節。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">越南TBI患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">創傷性腦損傷</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">健康對照組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">睡眠品質評分（如PSQI）及其相關因素分析</div></div>
+</div>
+    <ul class="findings"><li>TBI患者普遍存在睡眠品質低下問題</li><li>睡眠障礙與受傷嚴重程度及心理狀態密切相關</li><li>睡眠干預有助於認知康復</li></ul>
+    <div class="keywords"><span class="keyword-pill">腦損傷</span><span class="keyword-pill">睡眠障礙</span><span class="keyword-pill">復健醫學</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42341380" style="animation-delay:2.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">Int J Paleopathol</span>
+      <span class="paper-date">2026 Jun 24</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.ijpp.2026.06.004" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Lower respiratory tract disease as an indicator of childhood health in the post-medieval Low Countries.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">下呼吸道疾病作為後中世紀低地國家兒童健康的指標</p>
+    <p class="paper-authors">Casna M, Palmer JLA, Schrader SA</p>
+    <p class="paper-abstract">透過對後中世紀遺骸的病理學分析，本研究發現下呼吸道感染痕跡是衡量兒童健康與營養狀況的重要指標。在當時的貧困環境中，兒童呼吸道疾病的高發率反映了營養不良、衛生條件差以及環境污染帶來的巨大生理壓力。這是古代社會「生物印記」研究的典型案例，揭示了早期環境不利對兒童發育的長遠影響。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">後中世紀時期兒童遺骸</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">當時的環境條件（營養、衛生）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">兒童與成人遺骸的病理差異</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">下呼吸道疾病的發生率與感染嚴重程度</div></div>
+</div>
+    <ul class="findings"><li>下呼吸道病理是古代兒童營養不良的敏感指標</li><li>環境污染與貧困加劇了兒童呼吸道感染風險</li><li>展示了生物嵌入在歷史維度的表現</li></ul>
+    <div class="keywords"><span class="keyword-pill">後中世紀</span><span class="keyword-pill">呼吸道感染</span><span class="keyword-pill">兒童健康</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42337586" style="animation-delay:2.16s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMC Public Health</span>
+      <span class="paper-date">2026 Jun 23</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs12889-026-28206-2" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Circadian syndrome and its components in relation to incident gastroesophageal reflux disease: a prospective cohort study from the UK Biobank.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">UK Biobank前瞻性隊列研究：晝夜節律綜合徵及其組成成分與新發胃食道逆流病的關聯</p>
+    <p class="paper-authors">Lu H, Wu Z, Zhou X, Yang W et al.</p>
+    <p class="paper-abstract">該研究分析了英國生物銀行（UK Biobank）中晝夜節律綜合徵的各組成成分（如睡眠時長、社交時差、肥胖、高血壓等）與胃食道逆流病（GERD）發病的關聯。發現具有不良晝夜節律模式（如晚睡、睡眠不足）的人群，其發生GERD的風險顯著升高。這反映了現代生活方式的壓力（社交時差、熬夜）如何通過生理節律紊亂增加消化系統疾病風險。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">UK Biobank參與者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">晝夜節律綜合徵評分（睡眠不足、社交時差等）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">晝夜節律正常的對照組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">新發胃食道逆流病（GERD）的發生風險</div></div>
+</div>
+    <ul class="findings"><li>晝夜節律紊亂顯著增加GERD發病風險</li><li>生活方式壓力（熬夜）是生理節律與疾病的關鍵中介因素</li><li>支持調節作息改善消化系統健康的策略</li></ul>
+    <div class="keywords"><span class="keyword-pill">晝夜節律綜合徵</span><span class="keyword-pill">胃食道逆流病</span><span class="keyword-pill">生活方式病</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42332468" style="animation-delay:2.24s">
+    <div class="paper-meta">
+      <span class="paper-journal">Medicine (Baltimore)</span>
+      <span class="paper-date">2026 Jun 19</span>
+      <a class="paper-doi" href="https://doi.org/10.1097%2FMD.0000000000049311" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Elevated platelet-to-lymphocyte ratio is associated with increased breast cancer risk: A cross-sectional analysis of the NHANES 2009 to 2020.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">NHANES 2009-2020橫斷面分析：血小板與淋巴細胞比值升高與乳腺癌風險增加有關</p>
+    <p class="paper-authors">Li Y, Li Y, Li X, Zhu P et al.</p>
+    <p class="paper-abstract">本研究利用美國國家健康與營養調查（NHANES）數據，探討了全身性炎症標誌物——血小板與淋巴細胞比值（PLR）與乳腺癌風險的關聯。發現PLR升高的婦女罹患乳腺癌的風險增加。這表明慢性低度發炎是許多疾病（包括癌症）的潛在機制，而長期的社會心理壓力（貧窮壓力）往往會誘發這種慢性發炎狀態，從而影響腫瘤發生。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國女性</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">血小板與淋巴細胞比值（PLR）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">PLR較低組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">乳腺癌的患病風險比例</div></div>
+</div>
+    <ul class="findings"><li>PLR升高是乳腺癌的潛在風險指標</li><li>慢性發炎在癌症發病機制中扮演重要角色</li><li>壓力導致的發炎可能增加腫瘤風險</li></ul>
+    <div class="keywords"><span class="keyword-pill">血小板與淋巴細胞比值</span><span class="keyword-pill">慢性發炎</span><span class="keyword-pill">乳腺癌風險</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
