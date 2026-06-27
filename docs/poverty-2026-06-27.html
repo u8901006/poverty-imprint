@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-06-27</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-06-27">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-06-27">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-06-27</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 6 篇文獻</span>
+      <span class="stat-item">&#128193; 4 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>這六篇文獻深入探討了社會經濟地位（SES）與心理健康及生理健康之間的複雜互動。研究顯示，SES 直接影響從糖尿病風險預測（貧困收入比）、燒傷患童康復至青少年早死等結果。其中，飲食發炎指數（DII）對抑鬱症的影響在社經地位較低群體中減弱，揭示了生物途徑與環境因素的交互作用。此外，每日體育博彩對脆弱群體的心理危害，以及青少年憂鬱症透過成年行為導致早死的途徑，強調了早期的心理干預與政策介入的重要性。最後，STAT-C 等臨床干預的擴展策略研究，提供了實現心理健康成果的可行路徑。這些證據共同構建了「貧窮印記」的多維度圖譜，指出需結合生物機制、社會決定因素與政策制定以減少健康不平等。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">3 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">3 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42363498" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Medicine (Baltimore)</span>
+      <span class="paper-date">2026 Jun 26</span>
+      <a class="paper-doi" href="https://doi.org/10.1097%2FMD.0000000000049402" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">An interpretable predictive model for depression risk in diabetic patients: A web-based application using NHANES data.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">糖尿病成人憂鬱症風險的可解釋預測模型：基於 NHANES 資料的網頁應用程式</p>
+    <p class="paper-authors">Li Y, Ren T, Zhou G, Li Z et al.</p>
+    <p class="paper-abstract">這項研究利用美國國家健康與營養調查（NHANES）數據，開發了一個可解釋的機器學習模型，用於預測糖尿病成人罹患憂鬱症的風險。研究透過處理類別不平衡和成本敏感學習，比較了七種演算法，結果顯示支援向量機模型在敏感度和 F1 分數上表現最佳。SHAP分析進一步確認貧困收入比、胸痛、睡眠時長等因素為關鍵預測因子。研究證實該模型能進行個體化風險評估，並開發出互動式網頁應用，支持精準篩檢與早期介入，具有很高的臨床應用價值。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國成年糖尿病患者（N=1140）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">可解釋的機器學習模型（SVM等）及相關預測因子</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">傳統模型或未經不平衡處理的模型</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">憂鬱症篩檢的敏感性、F1分數及關鍵預測因子（如貧困收入比）</div></div>
+</div>
+    <ul class="findings"><li>支援向量機模型在處理類別不平衡後表現最佳，敏感度更高</li><li>SHAP分析發現貧困收入比、睡眠時長及飲食品質是關鍵預測因子</li><li>開發的網頁應用程式支持個體化風險評估與早期介入</li></ul>
+    <div class="keywords"><span class="keyword-pill">機器學習</span><span class="keyword-pill">糖尿病</span><span class="keyword-pill">憂鬱症</span><span class="keyword-pill">風險預測</span><span class="keyword-pill">貧困收入比</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42361343" style="animation-delay:0.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">Prim Care Companion CNS Disord</span>
+      <span class="paper-date">2026 Jun 25</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%2025nr04142.%20doi%3A%2010.4088%2FPCC.25nr04142" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Daily Fantasy Sports as an Emerging Public Health Concern: A Comparative Public Health Perspective of Digital Wagering and Youth Vulnerability.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">每日體育博彩：數位賭博與青少年脆弱性的公共衛生比較觀點</p>
+    <p class="paper-authors">Gupta M, Khurana P, Sharma A, Rangolia S et al.</p>
+    <p class="paper-abstract">本文比較了印度的每日體育博彩與美國的網路體育博彩趨勢，重點關注青少年及社經地位較弱勢群體的心理健康影響。研究指出，參與博彩與強迫性行為、焦慮及壓力相關障礙有顯著關聯，且可能導致更複雜的賭博活動。文章強調需針對脆弱族群制定基於證據的法規與公衛干預措施，並考慮文化差異與媒體整合策略以減少心理危害。這對公共衛生政策制定者及臨床醫師保護高危人群具有重要指導意義。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">青少年及患有精神疾病或社經地位較弱勢的人群</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">每日體育博彩（DFS）參與</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不參與或不同層級的博彩行為</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理危害（成癮、焦慮、壓力障礙）及賭博行為的演變</div></div>
+</div>
+    <ul class="findings"><li>每日體育博彩參與會增加成癮風險及焦慮等心理問題</li><li>青少年與弱勢族群是此類數位賭博的主要受害者</li><li>文化差異與監管環境影響賭博相關危害的程度</li></ul>
+    <div class="keywords"><span class="keyword-pill">每日體育博彩</span><span class="keyword-pill">心理危害</span><span class="keyword-pill">脆弱性</span><span class="keyword-pill">公共衛生政策</span><span class="keyword-pill">青少年</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42347930" style="animation-delay:0.16s">
+    <div class="paper-meta">
+      <span class="paper-journal">Eur Child Adolesc Psychiatry</span>
+      <span class="paper-date">2026 Jun 25</span>
+      <a class="paper-doi" href="https://doi.org/10.1007%2Fs00787-026-03103-6" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">How adolescent depressive symptoms are associated with premature mortality: Behavioral and socioeconomic pathways across the life course.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">青少年憂鬱症狀如何與早死相關：跨生命的行為與社經途徑</p>
+    <p class="paper-authors">Nam N, Son H, Kim J</p>
+    <p class="paper-abstract">研究利用追蹤數據探討青少年憂鬱症狀與成年早期早死之間的長期關聯。結果顯示，高水準的青少年憂鬱症狀與全因早死風險增加有關，特別是死於外因（如意外或自殺）。中介分析發現，早期成年時期的吸菸、使用大麻、教育程度降低及就業困難是主要的行為與社經途徑。這證實了童年心理問題透過成人後的生活途徑影響長期健康結局，突顯了早期心理干預以減少長期健康差距的重要性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">青少年（追蹤至成年早期）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">青少年時期的憂鬱症狀強度</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低憂鬱症狀或無症狀組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">成年早期的早死風險（全因、外因、自殺）</div></div>
+</div>
+    <ul class="findings"><li>青少年時期的高憂鬱症狀與成年早期早死風險增加顯著相關</li><li>行為途徑（如吸菸、使用大麻）是中介機制的主導因素</li><li>社經地位下降（教育及就業）也是重要的中介路徑</li></ul>
+    <div class="keywords"><span class="keyword-pill">青少年憂鬱症</span><span class="keyword-pill">早死</span><span class="keyword-pill">行為途徑</span><span class="keyword-pill">社經地位</span><span class="keyword-pill">成年早期</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42348733" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Burn Care Res</span>
+      <span class="paper-date">2026 Jun 25</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20irag102.%20doi%3A%2010.1093%2Fjbcr%2Firag102" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Family Income and Recovery Outcomes in Pediatric Burn Survivors: A Burn Model System National Database Study Assessing Functional and Psychosocial Differences.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">家庭收入對兒童燒傷存活者康復結果的影響：評估功能與心理社會差異的全國資料庫研究</p>
+    <p class="paper-authors">Wang S, Pickering TA, Wiechman S, Roaten K et al.</p>
+    <p class="paper-abstract">研究探討低收入家庭對兒童燒傷存活者功能恢復的影響。分析顯示，低收入兒童燒傷面積較大且吸入性損傷風險更高。然而，在校回歸及多項心理社會指標在調整燒傷嚴重度後未顯著差異。研究認為除了社經地位外，社會支持等因素對恢復更為關鍵。此結果挑戰了傳統觀念，並呼籲解決導致低收入兒童受傷比例過高的系統性不平等，強調醫療照護需超越單純的生理指標。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">兒童燒傷存活者（&lt;18歲）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">家庭收入水平（&lt;$50k, $50-100k, &gt;$100k）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同收入層級的對照組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">返校率及心理社會恢復指標（憂鬱、自尊等）</div></div>
+</div>
+    <ul class="findings"><li>低收入兒童雖然受傷更嚴重，但在調整嚴重度後恢復結果無差異</li><li>社會支持被認為比單純的社經地位更能影響康復</li><li>研究呼籲解決導致低收入兒童燒傷比例過高的系統性不平等</li></ul>
+    <div class="keywords"><span class="keyword-pill">社經地位</span><span class="keyword-pill">燒傷患童</span><span class="keyword-pill">功能恢復</span><span class="keyword-pill">心理社會</span><span class="keyword-pill">社會支持</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42348516" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">PLoS One</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1371%2Fjournal.pone.0351937" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">STAT-C, an innovative training workshop supporting management of sick leave related to common mental health disorders: A case study for spontaneous scaling in primary care.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">STAT-C：一項支持管理常見心理健康疾病請病假的創新訓練工作坊：初級照護中自發性擴展的個案研究</p>
+    <p class="paper-authors">Mochcovitch D, McLean RKD, Milat A, Cameron C et al.</p>
+    <p class="paper-abstract">本研究評估了STAT-C訓練工作坊在初級照護中應對常見心理健康疾病請病假問題的自發性擴展過程。透過綜合知識轉譯法，研究發現該工作坊在標準化專業資訊與符合病患價值方面具有優勢。雖然初級照護人員的自我效能感有所提升，但動態評估指標的缺乏限制了進一步擴展。研究提供了在現實條件下實施創新的關鍵步驟與挑戰，強調了倫理層面在決策制定中的重要性，具有中等應用價值。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">初級照護工作者、決策者及病患</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">STAT-C 訓練工作坊</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未接受該干預的情境或非自發性擴展</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">對心理健康請假的管理能力、知識轉譯效果及擴展成功率</div></div>
+</div>
+    <ul class="findings"><li>該工作坊在標準化資訊與符合病患價值方面取得成功</li><li>缺乏動態評估指標是限制進一步擴展的主要挑戰</li><li>倫理層面（如目標導向與義務導向推理）影響擴展決策</li></ul>
+    <div class="keywords"><span class="keyword-pill">知識轉譯</span><span class="keyword-pill">擴展策略</span><span class="keyword-pill">心理健康請假</span><span class="keyword-pill">自發性擴展</span><span class="keyword-pill">初級照護</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42341296" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Med Internet Res</span>
+      <span class="paper-date">2026 Jun 24</span>
+      <a class="paper-doi" href="https://doi.org/10.2196%2F83784" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Dietary Inflammatory Index and Depressive Symptoms in Chinese University Students Leveraging an Intelligent Ordering System: 3-Year Longitudinal Prospective Cohort Study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">利用智能點餐系統探討中國大學生飲食發炎指數與憂鬱症狀的關係：三年前瞻性縱向研究</p>
+    <p class="paper-authors">Hong P, Hao C, Weiqiang Z, Jie Q et al.</p>
+    <p class="paper-abstract">這是一項針對中國大學生三年的前瞻性縱向研究，探討飲食發炎指數與憂鬱症狀的關聯。研究利用智能點餐系統連續監測飲食，發現抗發炎飲食模式與較低的憂鬱症發生風險相關。值得注意的是，這種保護性效果在家庭關係不和諧或社經地位較低（貧困）的學生中顯著減弱。研究強調飲食透過炎症途徑影響心理健康的生物機制，並支持結合飲食指導與心理社會支持的綜合干預策略。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">中國大學生</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">飲食發炎指數（DII）（抗發炎飲食 vs 發炎飲食）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高DII（最發炎飲食）組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">憂鬱症狀的發生率及改善程度</div></div>
+</div>
+    <ul class="findings"><li>抗發炎飲食與較低的憂鬱症發生風險顯著相關</li><li>飲食的保護作用在家庭關係不和諧或貧困學生中較弱</li><li>智能系統提供了比自報更精確的飲食監測數據</li></ul>
+    <div class="keywords"><span class="keyword-pill">飲食發炎指數</span><span class="keyword-pill">憂鬱症</span><span class="keyword-pill">炎症</span><span class="keyword-pill">社經地位</span><span class="keyword-pill">前瞻性研究</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
