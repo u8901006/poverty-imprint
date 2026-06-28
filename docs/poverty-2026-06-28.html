@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-06-28</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-06-28">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-06-28">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-06-28</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 6 篇文獻</span>
+      <span class="stat-item">&#128193; 4 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本次分析的六篇文獻廣泛涵蓋了與「貧窮印記」理論密切相關的社會決定因素、心理健康及政策介入等核心面向。研究顯示，無論是面臨親密伴侶暴力的弱勢女性、高遺傳風險的青少年，還是處於高壓醫療環境中的專業人員，其心理健康與壓力反應皆深受所處社會結構與環境的深刻影響。文獻特別突顯了社會經濟地位、職場支持度（如「重要性」感）與工作負荷作為關鍵社會決定因素的角色。在政策層面，研究指出單純依賴個體層面的壓力管理成效有限，必須透過系統性的組織變革與結構性資源重分配，方能有效打破壓力與健康惡化的循環。整體而言，這些研究強化了將心理健康視為社會環境產物的觀點，為未來制定精準且具文化適配性的健康促進與預防介入政策提供了重要實證基礎。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">大腦發展與神經科學</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">3 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42363504" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Medicine (Baltimore)</span>
+      <span class="paper-date">2026 Jun 26</span>
+      <a class="paper-doi" href="https://doi.org/10.1097%2FMD.0000000000049457" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Mental health challenges in the Asir region: Assessment of anxiety, depression, and stress in the general population.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">阿西爾地區的心理健康挑戰：一般民眾焦慮、憂鬱與壓力評估</p>
+    <p class="paper-authors">Kandasamy G, Orayj K, Asiri R, Alanazi TS et al.</p>
+    <p class="paper-abstract">本研究針對沙烏地阿拉伯阿西爾地區的一般民眾，進行焦慮、憂鬱與壓力水平的全面性評估。隨著現代化與社會結構的快速變遷，該地區民眾面臨不同於以往的壓力源。研究採用標準化心理測量工具，發現該地區一般人口中存在顯著的心理健康挑戰，焦慮與壓力的盛行率高於預期。分析顯示，年齡、性別、就業狀態與社會經濟地位等社會決定因素，與心理健康狀況呈現顯著相關。年輕人、女性及經濟弱勢群體呈現更高的心理困擾。此研究強調，在非西方與快速發展的社會中，心理健康問題已成為重要的公共衛生議題，呼籲政策制定者根據區域性社會決定因素，規劃具文化適配性的心理健康初級預防與社區介入資源。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">沙烏地阿拉伯阿西爾地區一般民眾</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">人口學特徵與社會經濟地位</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同人口學與社經分組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">焦慮、憂鬱與壓力水平</div></div>
+</div>
+    <ul class="findings"><li>該地區一般民眾的焦慮與壓力盛行率顯著偏高</li><li>女性與年輕族群是心理健康困擾的高風險群體</li><li>低社會經濟地位與失業狀態顯著預測較差的心理健康結果</li></ul>
+    <div class="keywords"><span class="keyword-pill">焦慮與壓力</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">社區心理健康</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">大腦發展與神經科學 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42363958" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Eur Child Adolesc Psychiatry</span>
+      <span class="paper-date">2026 Jun 27</span>
+      <a class="paper-doi" href="https://doi.org/10.1007%2Fs00787-026-03071-x" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Brain correlates of cognitive reserve in offspring of patients with schizophrenia or bipolar disorder.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">精神分裂症或躁鬱症患者後代認知儲備的大腦相關性</p>
+    <p class="paper-authors">Camprodon-Boadas P, De la Serna E, Ortuño M, Ilzarbe D et al.</p>
+    <p class="paper-abstract">本研究探討精神分裂症或雙相情緒障礙症患者的後代，其大腦結構與功能特徵如何作為「認知儲備」的神經基礎。作為高遺傳風險族群，這些後代在發展過程中面臨較高的精神疾病風險。研究透過神經影像學技術，分析高風險青少年的大腦連結性與灰質體積，並評估其認知功能表現。結果顯示，即使帶有高遺傳風險，部分後代透過較佳的大腦網絡彈性與特定腦區的結構代償，展現出較高的認知儲備，從而延緩或減免了精神病理特徵的顯現。這項發現為理解生物嵌入與環境保護因子的交互作用提供了神經科學視角，指出提升認知儲備可能是預防跨代精神疾病傳遞的潛在介入目標。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">精神分裂症或雙相情緒障礙症患者的後代</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">認知儲備與大腦影像特徵</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">健康對照組後代</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">大腦結構與功能連結及認知表現</div></div>
+</div>
+    <ul class="findings"><li>高風險族群的認知儲備與特定大腦網絡的彈性密切相關</li><li>大腦結構代償機制能減輕遺傳風險帶來的認知損害</li><li>認知儲備可作為預測跨代精神疾病發病的重要保護因子</li></ul>
+    <div class="keywords"><span class="keyword-pill">認知儲備</span><span class="keyword-pill">神經影像學</span><span class="keyword-pill">跨代傳遞</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">3 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42365432" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">Int J Gynaecol Obstet</span>
+      <span class="paper-date">2026 Jun 27</span>
+      <a class="paper-doi" href="https://doi.org/10.1002%2Fijgo.71154" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Socioeconomic determinants and mental health correlates of intimate partner violence-related emergency department visits among women in California.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">加州女性因親密伴侶暴力相關急診就醫的社會經濟決定因素與心理健康相關性</p>
+    <p class="paper-authors">Akinyemi O, Fasokun M, Thompson T, Ogunyankin F et al.</p>
+    <p class="paper-abstract">本研究探討美國加州女性因親密伴侶暴力導致急診就醫的社會經濟決定因素及其與心理健康的關聯。親密伴侶暴力不僅造成身體傷害，更常伴隨嚴重的心理創傷。研究分析發現，低社會經濟地位（如低收入、低教育水平、失業等）是導致女性暴露於暴力風險並因此急診就醫的關鍵社會決定因素。此外，這些急診就醫的女性常合併高比例的憂鬱症、焦慮症及創傷後壓力症等心理健康問題。研究強調，醫療體系在處理急診個案時，除處理急性生理傷害外，必須整合社會工作與心理健康評估，以打破暴力與貧窮交織的惡性循環，為弱勢女性提供具文化敏感度且全方位的介入措施。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">加州因親密伴侶暴力急診就醫的女性</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社會經濟地位與心理健康狀態</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同社經層級或非暴力急診女性</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">急診就醫率與心理健康共病症發生率</div></div>
+</div>
+    <ul class="findings"><li>低社經地位顯著增加親密伴侶暴力相關急診就醫風險</li><li>急診就醫女性伴隨極高比例的心理健康共病</li><li>需在急診部門整合社經評估與心理衛生介入</li></ul>
+    <div class="keywords"><span class="keyword-pill">親密伴侶暴力</span><span class="keyword-pill">社會經濟地位</span><span class="keyword-pill">心理健康共病</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42364179" style="animation-delay:0.88s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Occup Health</span>
+      <span class="paper-date">2026 Jun 27</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20uiag032.%20doi%3A%2010.1093%2Fjoccuh%2Fuiag032" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Factors Affecting the Early Resignation of Newly Employed Nurses: A prospective observational study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">影響新進護理人員早期離職的因素：一項前瞻性觀察研究</p>
+    <p class="paper-authors">Cho S, Kang KW, Kim H, Jung I et al.</p>
+    <p class="paper-abstract">本研究透過前瞻性觀察設計，探討新進護理人員在就業初期提早離職的影響因素。醫療機構面臨嚴重的護理人力短缺，新進人員的高流動率不僅增加成本，更影響醫療品質。研究追蹤新進護理師的工作適應歷程，發現工作環境中的社會支持度不足、高強度的工作負荷、輪班制度導致的睡眠剝奪，以及薪資福利與付出不成正比等社會與結構性因素，是導致早期離職的主因。此外，初期的職業倦怠與心理健康惡化也扮演中介角色。此研究凸顯了改善勞動條件與工作環境作為健康社會決定因素的重要性，建議管理層應制定針對性的留才策略與福祉政策。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">新進就業的護理人員</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">工作環境、負荷、社會支持與薪資福利等職場因素</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未離職的護理人員</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">早期離職率</div></div>
+</div>
+    <ul class="findings"><li>工作負荷過重與輪班制度是新進護理師離職的關鍵驅動力</li><li>職場社會支持不足顯著預測早期離職意願</li><li>職業倦怠在不良工作環境與離職決策間具中介效應</li></ul>
+    <div class="keywords"><span class="keyword-pill">護理人員流動率</span><span class="keyword-pill">職場社會支持</span><span class="keyword-pill">職業倦怠</span></div>
+  </div>
+  <div class="paper-card" data-pmid="41365635" style="animation-delay:0.96s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMJ Lead</span>
+      <span class="paper-date">2026 Jun 26</span>
+      <a class="paper-doi" href="https://doi.org/10.1136%2Fleader-2025-001409" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Mattering at work: a scoping review with implications for the healthcare work environment.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">職場中的重要性：一項對醫療工作環境具啟示的範圍審查</p>
+    <p class="paper-authors">Hall K, Datesman A, Haizlip J, Epstein B</p>
+    <p class="paper-abstract">本範圍審查系統性探討醫療工作環境中「重要性」的概念，即員工感覺自己被組織與他人重視、依賴的程度。在醫療體系中，專業人員常面臨高壓與去人性化的環境，導致職業倦怠與人才流失。研究彙整文獻指出，當醫護人員在職場中體驗到高程度的「重要性」時，不僅能顯著提升其心理健康與工作滿意度，還能正向影響團隊協作與病患安全指標。反之，缺乏被重視的感覺會引發嚴重的壓力反應與疏離感。作為一種關鍵的社會心理決定因素，「重要性」不僅是個人主觀感受，更應被視為組織必須主動建構的環境特徵。研究建議醫療領導者應將營造此文化視為維護勞動力福祉的核心策略。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">醫療保健環境中的員工</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">職場中的「重要性」體驗</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">缺乏「重要性」體驗的員工</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康、工作滿意度與留任率</div></div>
+</div>
+    <ul class="findings"><li>職場「重要性」體驗與醫護人員較低的職業倦怠率直接相關</li><li>提升員工被重視的感覺能改善團隊動力與病患照護品質</li><li>「重要性」是醫療工作環境中具可塑性的社會心理保護因子</li></ul>
+    <div class="keywords"><span class="keyword-pill">職場重要性</span><span class="keyword-pill">醫療工作環境</span><span class="keyword-pill">社會心理保護因子</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="40721299" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMJ Lead</span>
+      <span class="paper-date">2026 Jun 26</span>
+      <a class="paper-doi" href="https://doi.org/10.1136%2Fleader-2023-000891" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Well-being initiatives for hospital employees provided by the Dutch University Medical Centres: an exploratory study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">荷蘭大學醫學中心為醫院員工提供的福祉倡議：一項探索性研究</p>
+    <p class="paper-authors">Boskma A, Sturms L, Franx A, van der Laan M</p>
+    <p class="paper-abstract">本研究探討荷蘭大學醫學中心為醫院員工所實施的各項福祉倡議。醫療人員長期處於高壓環境，其身心健康直接影響醫療體系的穩定性。研究透過探索性分析，盤點並評估這些頂尖醫學中心提供的員工支持計畫，包括心理諮商資源、彈性排班、正念訓練與體能促進活動等。結果顯示，雖然多數機構已建立起基礎的福祉框架，但倡議的實際利用率與成效評估卻呈現顯著差異。部分計畫因缺乏系統性整合或與員工實際需求脫節，而未能達到預期的減壓效果。研究強調，有效的政策介入不應僅停留在提供資源，更需要從組織結構面消除壓力源，並建立科學化的成效追蹤機制，以確實保障醫療勞動力的健康。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">荷蘭大學醫學中心的醫院員工</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">機構提供的各類員工福祉倡議</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無接受或不同類型的福祉計畫</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">倡議的利用率與員工身心健康成效</div></div>
+</div>
+    <ul class="findings"><li>大多數醫學中心已建立員工福祉計畫的基礎框架</li><li>福祉倡議的實際利用率與成效評估存在巨大差異</li><li>有效的政策介入需結構性減少壓力源，而非單純依賴個體壓力管理</li></ul>
+    <div class="keywords"><span class="keyword-pill">員工福祉</span><span class="keyword-pill">政策介入</span><span class="keyword-pill">醫療人力資源</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
