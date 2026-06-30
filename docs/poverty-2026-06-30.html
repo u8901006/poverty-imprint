@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-06-30</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-06-30">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-06-30">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-06-30</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 8 篇文獻</span>
+      <span class="stat-item">&#128193; 4 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本組文獻涵蓋了「貧窮印記」研究中的多個核心領域，包括社會環境對大腦發展的影響、精神健康服務的社會決定因素以及特定弱勢群體的身心健康。研究顯示，鄰里劣勢與兒童大腦髓鞘化顯著相關，揭示了貧窮的生物嵌入機制；同時，社區黨派背景與鄰里社經地位也被證實與心理健康狀況及醫療支出密切相關。在臨床與系統層面，COVID-19疫情導致兒童行為健康急診需求激增，而社會心理因素則顯著影響精神科再入院率。此外，研究亦關注特定族群（如自閉症青少年、HIV婦女及發展中國家兒童）的神經認知差異與疾病負擔，顯示出社會經濟地位、性別與地區因素在健康不平等中的交錯影響。這些發現強調了針對性政策介入與早期預防的重要性。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">大腦發展與神經科學</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">3 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">3 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42368744" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Imaging Neurosci (Camb)</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20IMAG.a.1288.%20doi%3A%2010.1162%2FIMAG.a.1288" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Neighborhood disadvantage and brain myelination: Insights from infancy to childhood</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">鄰里劣勢與大腦髓鞘化：從嬰兒期到兒童期的見解</p>
+    <p class="paper-authors">Shah L, Bond E, Planalp E, DiPiero M et al.</p>
+    <p class="paper-abstract">本研究旨在探討鄰里社會經濟劣勢如何從嬰兒期到兒童期影響大腦白質的髓鞘化發展。研究利用神經影像學數據，追蹤了居住在不同社區環境中的兒童，分析其大腦結構發育軌跡。結果顯示，長期暴露於高劣勢鄰里環境的兒童，其大腦特定區域的髓鞘化速度顯著慢於居住在優勢環境的同齡兒童。這種發育差異可能與環境中的慢性壓力及資源匮乏有關，進而影響認知功能與情緒調節能力。此研究提供了貧窮與環境壓力直接影響大腦生物學發展的證據，強調了早期環境介入對於促進兒童神經發育的重要性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">兒童（從嬰兒期到兒童期）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">鄰里社會經濟劣勢</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">居住在優勢或非劣勢環境的兒童</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">大腦髓鞘化程度與發展軌跡</div></div>
+</div>
+    <ul class="findings"><li>鄰里劣勢與兒童大腦髓鞘化延緩顯著相關</li><li>環境壓力可能通過生物機制影響大腦結構發育</li><li>發現顯示了貧窮對神經發展的長期潛在影響</li></ul>
+    <div class="keywords"><span class="keyword-pill">鄰里劣勢</span><span class="keyword-pill">髓鞘化</span><span class="keyword-pill">神經影像</span><span class="keyword-pill">大腦發育</span><span class="keyword-pill">社會環境</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">大腦發展與神經科學 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42374865" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Autism Res</span>
+      <span class="paper-date">2026 Jun 30</span>
+      <a class="paper-doi" href="https://doi.org/10.1002%2Faur.70270" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Sex Differences in Psychopathology and Neurocognition in Community Youth With Autism Spectrum Disorder</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">社區自閉症譜系障礙青少年在病理學與神經認知上的性別差異</p>
+    <p class="paper-authors">Barzilay R, Katz J, Sood R, Moore TM et al.</p>
+    <p class="paper-abstract">本研究旨在探討社區中患有自閉症譜系障礙（ASD）的青少年，其精神病理學特徵與神經認知功能是否存在性別差異。研究分析了大型社區樣本，比較男性與女性ASD患者在症狀表現、執行功能及處理速度等方面的異同。結果顯示，女性ASD患者在特定內化症狀（如焦慮、憂鬱）上的負擔較重，且在部分神經認知測試中表現出不同的優劣勢模式。這項研究挑戰了過去以男性為主的ASD研究框架，強調了性別在理解自閉症神經發展異常中的關鍵作用，有助於制定更具性別敏感度的評估與介入策略。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">社區自閉症譜系障礙青少年</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">性別（男性 vs 女性）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同性別的ASD患者之間的比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">精神病理學特徵與神經認知功能</div></div>
+</div>
+    <ul class="findings"><li>女性ASD患者內化症狀負擔顯著高於男性</li><li>神經認知功能存在顯著的性別差異</li><li>研究支持ASD診斷與介入需考慮性別特異性</li></ul>
+    <div class="keywords"><span class="keyword-pill">自閉症譜系障礙</span><span class="keyword-pill">性別差異</span><span class="keyword-pill">神經認知</span><span class="keyword-pill">精神病理學</span><span class="keyword-pill">青少年</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">3 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42374744" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">Pediatr Emerg Care</span>
+      <span class="paper-date">2026 Jun 30</span>
+      <a class="paper-doi" href="https://doi.org/10.1097%2FPEC.0000000000003644" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Pediatric Behavioral Health Emergencies Before, During, and After the COVID-19 Pandemic</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">COVID-19大流行前、期間及之後的兒童行為健康急診情況</p>
+    <p class="paper-authors">Chi V, Vongsachang H, Saynina O, Wang NE</p>
+    <p class="paper-abstract">本研究評估了COVID-19大流行對兒童行為健康急診就診趨勢的影響，涵蓋大流行前、期間及結束後的階段。透過分析急診部門的數據，研究發現在大流行期間，兒童因行為健康問題（如自殺企圖、情緒障礙）緊急就診的數量顯著激增，且在疫情結束後維持在高水位。研究指出，社會隔離、家庭壓力增加及醫療資源重組是導致此現象的主要因素。此結果揭示了突發公共衛生危機對兒童心理健康的嚴重衝擊，並強調了加強社區急診心理服務資源與預防措施的緊迫性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">兒童與青少年</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">COVID-19大流行時期（前、中、後）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同時期的急診就診率</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">行為健康急診就診人次與類型</div></div>
+</div>
+    <ul class="findings"><li>疫情期間兒童行為健康急診需求顯著增加</li><li>自殺企圖與情緒障礙是主要的急診原因</li><li>疫情對心理健康的影響具有持續性</li></ul>
+    <div class="keywords"><span class="keyword-pill">COVID-19</span><span class="keyword-pill">兒童心理健康</span><span class="keyword-pill">急診醫學</span><span class="keyword-pill">行為健康</span><span class="keyword-pill">公共衛生危機</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42371376" style="animation-delay:0.88s">
+    <div class="paper-meta">
+      <span class="paper-journal">Community Ment Health J</span>
+      <span class="paper-date">2026 Jun 29</span>
+      <a class="paper-doi" href="https://doi.org/10.1007%2Fs10597-026-01674-x" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Psychosocial Factors Associated with Psychiatric Readmission Following Inpatient Discharge: A Systematic Review</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">精神科住院出院後再入院相關的社會心理因素：一項系統性回顧</p>
+    <p class="paper-authors">Martínez-Montás GF, Moreta-Manzueta GE, Colón-Santana OR</p>
+    <p class="paper-abstract">本系統性回顧旨在找出導致精神疾病患者出院後再入院的關鍵社會心理因素。研究整合了多篇相關文獻，分析人口學特徵、家庭支持、經濟狀況及治療依從性等因素對再入院率的影響。結果顯示，缺乏穩定住所、家庭支持不足、藥物依從性低以及失業是預測再入院的最強風險因子。研究建議，為了降低再入院率，臨床介入應超越單純的症狀治療，需納入出院計劃中的社會心理支持，如住房協助與就業輔導，以解決根本的社會決定因素。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">精神科住院患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">各種社會心理因素（住房、支持、就業等）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">再入院患者與未再入院患者的比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">出院後再入院率</div></div>
+</div>
+    <ul class="findings"><li>社會心理因素是精神科再入院的重要預測指標</li><li>缺乏住房與家庭支持是主要風險因子</li><li>綜合性出院計劃有助於降低再入院風險</li></ul>
+    <div class="keywords"><span class="keyword-pill">再入院</span><span class="keyword-pill">社會心理因素</span><span class="keyword-pill">精神衛生服務</span><span class="keyword-pill">出院計劃</span><span class="keyword-pill">系統性回顧</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42371938" style="animation-delay:0.96s">
+    <div class="paper-meta">
+      <span class="paper-journal">PLoS One</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1371%2Fjournal.pone.0352678" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Lived experience of depression in women living with Human Immunodeficiency Virus in Gondar City health facilities, Northwest, Ethiopia</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">衣索比亞西北部Gondar市衛生設施中HIV感染女性的憂鬱症生活體驗：一項現象學研究</p>
+    <p class="paper-authors">Zeleke TA, Ayele TA, Denu ZA, Mwanri L et al.</p>
+    <p class="paper-abstract">本研究採用現象學方法，深入探討衣索比亞西北部HIV感染女性對憂鬱症的主觀生活體驗。通過深度訪談，研究發現參與者普遍面臨社會污名化、疾病羞恥感、經濟困難以及對未來的恐懼，這些因素相互交織，導致深度的心理痛苦與孤獨感。許多女性表達了在維持抗病毒治療與應對心理健康挑戰之間的掙扎。研究強調，在資源受限的環境中，針對HIV感染女性的心理健康介入需要整合醫療照護與社會支持，以減輕污名並改善其生活品質。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">衣索比亞Gondar市HIV感染女性</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">HIV感染與生活處境（質性研究）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無對照組（描述性體驗）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">憂鬱症的主觀生活體驗與感受</div></div>
+</div>
+    <ul class="findings"><li>污名化與羞恥感是HIV女性憂鬱的主要來源</li><li>經濟困難加劇了心理健康的惡化</li><li>心理與醫療照護的整合極為迫切</li></ul>
+    <div class="keywords"><span class="keyword-pill">HIV</span><span class="keyword-pill">憂鬱症</span><span class="keyword-pill">女性</span><span class="keyword-pill">生活體驗</span><span class="keyword-pill">現象學</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">3 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42372137" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Proc Natl Acad Sci U S A</span>
+      <span class="paper-date">2026 Jul 7</span>
+      <a class="paper-doi" href="https://doi.org/10.1073%2Fpnas.2522718123" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title">Local partisan context and mental health.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">當地黨派背景與心理健康</p>
+    <p class="paper-authors">Baxter-King R, Brown JR, Enos RD, Naeim A et al.</p>
+    <p class="paper-abstract">本研究調查了居住環境的政治黨派組成如何影響個人的心理健康狀況。研究假設處於政治少數派（即個人的政治立場與當地主流政黨不同）可能會增加社會壓力，進而損害心理健康。分析結果支持了此一觀點，發現生活在政治異質性高或自身屬於少數派地區的居民，其報告的心理困擾與憂鬱症狀顯著較高。這項研究揭示了政治環境作為一種社會決定因素，透過製造社會疏離感與壓力，對群體心理健康產生潛在的廣泛影響。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">一般社區居民</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">當地黨派背景（處於政治少數或多數派環境）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">處於政治多數派環境的居民</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康指標（如憂鬱、壓力感）</div></div>
+</div>
+    <ul class="findings"><li>政治少數派身份與心理健康惡化有關</li><li>社區政治環境構成一種社會壓力源</li><li>黨派分歧可能加劇社區層級的心理健康不平等</li></ul>
+    <div class="keywords"><span class="keyword-pill">政治環境</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">心理健康</span><span class="keyword-pill">少數派壓力</span><span class="keyword-pill">黨派背景</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42374589" style="animation-delay:1.28s">
+    <div class="paper-meta">
+      <span class="paper-journal">Arch Public Health</span>
+      <span class="paper-date">2026 Jun 30</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs13690-026-01991-3" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Mental healthcare expenditure in the Netherlands by urbanicity and neighbourhood socioeconomic status and interactions with age over the period 2015-2020</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">2015-2020年間荷蘭依城市化程度與鄰里社經地位劃分的精神醫療支出及其與年齡的交互作用</p>
+    <p class="paper-authors">Dijkstra L, Gülöksüz S, Batalla A, van Os J</p>
+    <p class="paper-abstract">本研究分析了2015至2020年間荷蘭精神醫療支出的分布，探討城市化程度、鄰里社經地位（SES）以及年齡層之間的交互關係。研究發現，低社經地位社區的精神醫療支出顯著高於高社經地位社區，且這種差異在特定年齡層（如成年早期與老年期）更為明顯。此外，城市化程度亦與支出模式有關，城市地區因服務可及性高，支出較為集中。研究結果指出，社會經濟不平等直接反映在醫療資源的使用上，建議政策制定者需針對弱勢社區進行資源重新分配，以縮小健康差距。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">荷蘭全國人口（2015-2020）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">鄰里社經地位與城市化程度</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同社經地位與城市化地區的支出比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">精神醫療支出金額</div></div>
+</div>
+    <ul class="findings"><li>低SES社區的精神醫療支出顯著較高</li><li>年齡與社區環境對醫療支出有交互影響</li><li>醫療資源分布反映了既有的社會經濟不平等</li></ul>
+    <div class="keywords"><span class="keyword-pill">醫療支出</span><span class="keyword-pill">社經地位</span><span class="keyword-pill">城市化</span><span class="keyword-pill">健康不平等</span><span class="keyword-pill">荷蘭</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42368187" style="animation-delay:1.36s">
+    <div class="paper-meta">
+      <span class="paper-journal">Clin Med Insights Pediatr</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1177%2F11795565261456621" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Epidemiological Patterns of Neurological and Neuromuscular Disorders in the Potohar Region of Pakistan</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">巴基斯坦Potohar地區神經及神經肌肉疾病的流行病學模式</p>
+    <p class="paper-authors">Gull SA, Batool S, Iqbal N, Batool F et al.</p>
+    <p class="paper-abstract">本研究旨在調查巴基斯坦Potohar地區神經及神經肌肉疾病的流行病學特徵。透過社區篩檢與醫院記錄回顧，研究識別了該地區高發的特定疾病類型及其人口學分布。結果顯示，由於遺傳因素、近親通婚盛行以及基礎醫療資源不足，該地區特定遺傳性神經肌肉疾病的患病率高於全球平均水平。此外，貧窮限制了患者獲得早期診斷與康復服務的機會。此研究強調了在低資源環境中建立針對性神經疾病監測系統與遺傳諮詢服務的重要性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">巴基斯坦Potohar地區居民</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">居住地區環境（包含遺傳與社經背景）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">全球或其他地區的患病率數據</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">神經及神經肌肉疾病的患病率與類型</div></div>
+</div>
+    <ul class="findings"><li>該地區遺傳性神經肌肉疾病患病率偏高</li><li>近親通婚是主要的風險因素之一</li><li>貧窮與醫療資源匮乏惡化了疾病預後</li></ul>
+    <div class="keywords"><span class="keyword-pill">流行病學</span><span class="keyword-pill">神經疾病</span><span class="keyword-pill">巴基斯坦</span><span class="keyword-pill">遺傳性疾病</span><span class="keyword-pill">醫療資源</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
