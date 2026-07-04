@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-07-04</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-07-04">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-07-04">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-07-04</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 11 篇文獻</span>
+      <span class="stat-item">&#128193; 5 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>這組文獻廣泛探討了影響健康與發展的社會、生物及環境機制，深刻揭示了貧窮與壓力對個體產生的「印記」效應。研究範疇涵蓋生物嵌入（如加工肉類飲食引發痛風的蛋白質組學證據）、神經科學（母職對大腦結構老化的影響）以及心理健康（氣候焦慮、雙語能力的保護作用）。多篇文獻聚焦於社區與社會決定因素，明確指出空氣污染、社區劣勢及糧食不安全顯著惡化身心健康，特別是在兒童、青少年與弱勢族群中。同時，政策介入研究證實了監督式運動與現金福利（如養老金）在改善慢性病預後與降低死亡率方面的潛力。整體而言，這些研究強調從跨世代、跨領域視角切入，並推行促進健康公平的政策以減少社會不平等對健康的長期危害。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:25%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">大腦發展與神經科學</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:25%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:75%">3 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">4 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">2 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42398753" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Adv Res</span>
+      <span class="paper-date">2026 Jul 3</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20S2090-1232(26)00531-X.%20doi%3A%2010.1016%2Fj.jare.2026.07.013" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Processed meat intake and incident gout: Integrated evidence from epidemiology, plasma proteomics, and machine learning.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">加工肉類攝取與痛風發生：來自流行病學、血漿蛋白質組學和機器學習的整合證據</p>
+    <p class="paper-authors">Wang Z, Shi D, Pan X, Chen W et al.</p>
+    <p class="paper-abstract">本研究整合流行病學、機器學習與蛋白質組學方法，探討加工肉類攝取與痛風發生的關聯及其生物特徵。追蹤近40萬名受試者平均15.7年，發現較高加工肉類攝取與痛風風險增加獨立相關，且風險隨時間累積。低社經地位與不良生活型態亦增加風險。蛋白質組學分析鑑定出40個與加工肉類和痛風共同相關的循環蛋白，涉及代謝失調、炎症與神經內分泌訊號傳遞。研究支持在飲食建議中考量加工肉類攝取，並為其生物機制提供了探索性證據。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">UK Biobank中無痛風的受試者 (395,356人)</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">加工肉類攝取量 (低、中、高)</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低加工肉類攝取組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">新發痛風事件及相關血漿蛋白質特徵</div></div>
+</div>
+    <ul class="findings"><li>加工肉類攝取量越高，痛風發生風險顯著增加，且呈劑量反應關係。</li><li>低社經地位與不良生活型態族群面臨更高的痛風風險。</li><li>鑑定出40個共同相關蛋白，揭示代謝失調與炎症是潛在的生物通路。</li></ul>
+    <div class="keywords"><span class="keyword-pill">痛風</span><span class="keyword-pill">加工肉類</span><span class="keyword-pill">蛋白質組學</span><span class="keyword-pill">社會經濟地位</span><span class="keyword-pill">代謝炎症</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">大腦發展與神經科學 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42400108" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Hum Brain Mapp</span>
+      <span class="paper-date">2026 Jul</span>
+      <a class="paper-doi" href="https://doi.org/10.1002%2Fhbm.70591" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title">Early Adulthood Signatures of Motherhood in Brain Aging.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">早期成年期母職的大腦老化特徵</p>
+    <p class="paper-authors">Peng W, Rilling JK</p>
+    <p class="paper-abstract">本研究旨在探討母職是否影響大腦老化軌跡及其與認知表現的關聯。針對超過1000名22-37歲年輕成人，利用結構性MRI預測大腦年齡並評估流動與結晶認知。結果顯示，調整年齡、SES及BMI後，母親的大腦預測年齡顯著比非母親年輕，此效應在父親中未觀察到。然而，儘管母親的大腦結構顯示較年輕，其認知表現並未優於非父母，結晶認知甚至略低。研究指出，母職相關的大腦結構差異在生育後不久即已出現，但這並未轉化為認知優勢。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">1,000多名年輕成人 (22-37歲)</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">母職 (經歷過生育的女性)</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無子女女性與父親</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">大腦預測年齡與認知功能表現</div></div>
+</div>
+    <ul class="findings"><li>母親的大腦預測年齡顯著小於非母親，顯示較年輕的大腦結構特徵。</li><li>此大腦老化差異未觀察於父親身上，顯示性別特異性。</li><li>較年輕的大腦年齡並未伴隨認知功能的提升，結晶認知反而略低。</li></ul>
+    <div class="keywords"><span class="keyword-pill">母職</span><span class="keyword-pill">大腦老化</span><span class="keyword-pill">神經影像</span><span class="keyword-pill">認知功能</span><span class="keyword-pill">性別差異</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">3 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42397399" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">Eur Child Adolesc Psychiatry</span>
+      <span class="paper-date">2026 Jul 3</span>
+      <a class="paper-doi" href="https://doi.org/10.1007%2Fs00787-026-03026-2" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Scoping review: climate change-related anxiety and worry in children, adolescents, and young adults.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">範圍綜述：兒童、青少年和年輕成人與氣候變遷相關的焦慮與擔憂</p>
+    <p class="paper-authors">Rodney-Wolf K, Eisenschmidt P, Schmitz J</p>
+    <p class="paper-abstract">本範圍綜述探討25歲以下族群中氣候焦慮、關注、痛苦與擔憂的盛行率及其與心理健康的關聯。納入51項研究後發現，這四種情緒反應的盛行率介於18%至90%，定義與測量工具的不一致導致差異巨大。現有證據顯示，氣候相關焦慮與福祉降低、憂鬱及廣泛性焦慮症狀呈正相關。年齡、性別、社經地位、居住地、教育程度及氣候知識是潛在影響因子。未來研究需使用標準化工具與縱向設計，以釐清適應性與不適應性反應的區別。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">25歲以下的兒童、青少年及年輕成人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">氣候焦慮、關注、痛苦或擔憂 (氣候變遷相關情緒)</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">較低的氣候情緒反應</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康狀況 (如憂鬱、焦慮症狀、幸福感)</div></div>
+</div>
+    <ul class="findings"><li>氣候相關焦慮與擔憂與較差的整體心理健康及憂鬱症狀有關。</li><li>盛行率因測量工具定義不同而差異極大 (18%-90%)。</li><li>社會人口因素如社經地位和教育水準影響氣候焦慮的程度。</li></ul>
+    <div class="keywords"><span class="keyword-pill">氣候焦慮</span><span class="keyword-pill">心理健康</span><span class="keyword-pill">青少年</span><span class="keyword-pill">系統性綜述</span><span class="keyword-pill">社會決定因素</span></div>
+  </div>
+  <div class="paper-card" data-pmid="41904710" style="animation-delay:0.88s">
+    <div class="paper-meta">
+      <span class="paper-journal">Child Dev</span>
+      <span class="paper-date">2026 Jul 3</span>
+      <a class="paper-doi" href="https://doi.org/10.1093%2Fchidev%2Faacag037" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Early bilingualism is associated with lower mental health problems across childhood: A longitudinal investigation.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">早期雙語與整個童年較少的心理健康問題相關：一項縱向調查</p>
+    <p class="paper-authors">Salgado-Garcia P, Devine RT, Krott A</p>
+    <p class="paper-abstract">本研究利用英國千禧世代隊列，追蹤15,435名兒童，探討早期雙語能力與心理健康軌跡的關聯。家長在兒童3至11歲間評估其情緒與行為困難。結果顯示，調整性別、社經地位、移民狀態及族裔後，早期雙語兒童的內化與外化問題持續低於單語同儕。此心理健康的優勢在低至中家庭社經地位兒童中最為顯著。研究顯示，早期雙語能力可能對童年常見的心理健康困難具有保護作用，特別是在資源較少的家庭中。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">英國千禧世代隊列中的15,435名兒童</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">早期雙語能力</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">單語兒童</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">童年至青春期早期的內化與外化問題 (SDQ評分)</div></div>
+</div>
+    <ul class="findings"><li>早期雙語兒童在3至11歲期間的心理健康問題顯著少於單語兒童。</li><li>雙語帶來的心理健康優勢在低至中等社經地位家庭中最強。</li><li>研究結果支持語言環境對兒童心理發展具有長期保護效應。</li></ul>
+    <div class="keywords"><span class="keyword-pill">雙語</span><span class="keyword-pill">心理健康</span><span class="keyword-pill">兒童發展</span><span class="keyword-pill">縱向研究</span><span class="keyword-pill">社會經濟地位</span></div>
+  </div>
+  <div class="paper-card" data-pmid="41842875" style="animation-delay:0.96s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Nutr Educ Behav</span>
+      <span class="paper-date">2026 Jul</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jneb.2026.02.008" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Food Insecurity, Multilevel Coping Strategies, and Depression among Single Female Caregivers: Findings from the Stretching It Study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">單身女性照顧者的糧食不安全、多層次應對策略與憂鬱症：來自「Stretching It」研究的發現</p>
+    <p class="paper-authors">Taylor K, Lu Y, Cheney MK, Carpenter L et al.</p>
+    <p class="paper-abstract">本研究調查高貧困率地區單身女性照顧者的糧食安全狀態、應對策略與憂鬱症的關聯。收集86名受試者資料，發現糧食不安全率與憂鬱症率極高。嚴重的糧食不安全與較多的憂鬱症狀，以及較多使用社群、人際及個人應對策略相關。然而，使用聯邦政策相關策略與糧食不安全程度無關。較多使用社群及人際應對策略反而伴隨更多憂鬱症狀。建議針對此高危險族群設計介入措施時，需同時關注糧食不安全的應對機制與心理健康。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國高貧困地區的單身女性照顧者 (86人)</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">糧食不安全嚴重程度與多層次應對策略</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">較輕微的糧食不安全</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">憂鬱症狀嚴重程度</div></div>
+</div>
+    <ul class="findings"><li>嚴重的糧食不安全與較高的憂鬱症狀顯著相關。</li><li>使用社群和人際應對策略與憂鬱症狀增加有關，而非緩解。</li><li>聯邦政策層級的應對策略使用率低，且與改善憂鬱症無直接關聯。</li></ul>
+    <div class="keywords"><span class="keyword-pill">糧食不安全</span><span class="keyword-pill">憂鬱症</span><span class="keyword-pill">單身母親</span><span class="keyword-pill">應對策略</span><span class="keyword-pill">社會支持</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">4 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42399841" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMC Public Health</span>
+      <span class="paper-date">2026 Jul 3</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs12889-026-28264-6" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Association between residential physical environmental exposures and multidimensional successful ageing in the UK biobank.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">住宅物理環境暴露與英國生物銀行多維度成功老化的相關性</p>
+    <p class="paper-authors">Zhou J, He L, Wei H, Zhao H et al.</p>
+    <p class="paper-abstract">本研究利用英國生物銀行數據，分析28,090名60歲以上受試者的住宅環境與多維度成功老化指數（SAI）的關聯。研究建構整合認知、生理等11項指標的SAI，並評估空氣污染、噪音等14種環境暴露。結果顯示，調整社會人口與生活型態因子後，PM2.5、NO2及NOx等交通相關空氣污染物仍與較低的SAI顯著負相關，且影響在男性與低社經地位族群中更強。中介分析指出，慢性炎症與代謝失調是連結空氣污染與老化的重要生物途徑。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">UK Biobank中28,090名60歲及以上受試者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">住宅環境暴露 (空氣污染、噪音、自然環境)</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">較低水平的環境暴露</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">多維度成功老化指數 (SAI)</div></div>
+</div>
+    <ul class="findings"><li>交通相關空氣污染與較低的多維度成功老化指數顯著負相關。</li><li>空氣污染對成功老化的負面影響在低社經地位族群中更為顯著。</li><li>慢性炎症和代謝失調是空氣污染影響老化的潛在中介路徑。</li></ul>
+    <div class="keywords"><span class="keyword-pill">空氣污染</span><span class="keyword-pill">成功老化</span><span class="keyword-pill">社會經濟地位</span><span class="keyword-pill">炎症</span><span class="keyword-pill">環境暴露</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42396888" style="animation-delay:1.28s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Glob Health</span>
+      <span class="paper-date">2026 Jul 3</span>
+      <a class="paper-doi" href="https://doi.org/10.7189%2Fjogh.16.04216" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Inequities in contraceptive use among adults in Lebanon: a national study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">黎巴嫩成人避孕使用的不平等：一項全國性研究</p>
+    <p class="paper-authors">Fayyad R, Fahme S, Saad GE, Dagher M et al.</p>
+    <p class="paper-abstract">本研究透過全國電話調查，評估黎巴嫩成年人避孕使用率、未滿足需求及影響使用的決定因素。研究納入3,146名育齡期性活躍成人，避孕使用率為58%，其中僅31.3%使用現代方法。性別分析顯示，女性與男性均存在高比例的未滿足計畫生育需求。邏輯迴歸模型顯示，年齡、國籍、婚姻狀況、就業、自評健康、憂鬱症及糧食不安全感均與避孕使用顯著相關。研究指出黎巴嫩存在顯著的避孕使用不平等，需加強生殖健康政策以促進公平。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">黎巴嫩3,146名育齡期性活躍成人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社會人口、經濟及健康相關決定因子</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同特徵群體間的比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">避孕使用率及未滿足的計畫生育需求</div></div>
+</div>
+    <ul class="findings"><li>黎巴嫩避孕使用率偏低，現代避孕方法使用率僅約三分之一。</li><li>糧食不安全感與憂鬱症等社會健康因素與避孕使用顯著相關。</li><li>研究揭示了基於國籍、就業狀況及健康狀態的顯著健康不平等。</li></ul>
+    <div class="keywords"><span class="keyword-pill">避孕</span><span class="keyword-pill">健康不平等</span><span class="keyword-pill">生殖健康</span><span class="keyword-pill">糧食不安全</span><span class="keyword-pill">黎巴嫩</span></div>
+  </div>
+  <div class="paper-card" data-pmid="41103131" style="animation-delay:1.36s">
+    <div class="paper-meta">
+      <span class="paper-journal">Int Health</span>
+      <span class="paper-date">2026 Jul 3</span>
+      <a class="paper-doi" href="https://doi.org/10.1093%2Finthealth%2Fihaf078" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Social ties, employment and mental health in people with disabilities in Korea: evidence from a 2016-2018 panel survey.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">韓國殘障人士的社會紐帶、就業與心理健康：來自2016-2018年小組調查的證據</p>
+    <p class="paper-authors">Kim JH, Lee HJ, Lee GM, Kim Y</p>
+    <p class="paper-abstract">本研究分析韓國殘障人士的全國代表性小組數據，探討人際關係對主觀健康與心理健康的影響。使用廣義估計方程模型，調整社會人口與行為因子。結果顯示，與人際關係得分最高者相比，得分最低者報告主觀健康不佳的機率高出近兩倍，幸福感較低，且經歷憂鬱症的機率也顯著增加。研究強調，對於面臨社會孤立風險的殘障人士而言，社會連結是影響其心理健康與主觀健康的關鍵決定因素。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">韓國具有經濟活動能力的殘障人士</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">人際關係得分 (社會紐帶)</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高人際關係得分組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">主觀健康、幸福感及憂鬱症</div></div>
+</div>
+    <ul class="findings"><li>低人際關係得分與較差的主觀健康及較高的憂鬱風險顯著相關。</li><li>社會連結對殘障人士的心理健康具有獨立的保護作用。</li><li>研究結果支持促進殘障人士社會融入的政策與介入措施。</li></ul>
+    <div class="keywords"><span class="keyword-pill">殘障</span><span class="keyword-pill">社會連結</span><span class="keyword-pill">心理健康</span><span class="keyword-pill">主觀健康</span><span class="keyword-pill">社會孤立</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42399212" style="animation-delay:1.44s">
+    <div class="paper-meta">
+      <span class="paper-journal">Int J Eat Disord</span>
+      <span class="paper-date">2026 Jul 3</span>
+      <a class="paper-doi" href="https://doi.org/10.1002%2Feat.70168" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Neighborhood Disadvantage and Comorbid Mental Health Conditions in Adolescents and Young Adults With Eating Disorders.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">社區劣勢與飲食失調青少年和年輕成年人的共病心理健康狀況</p>
+    <p class="paper-authors">Chaphekar AV, Duan Q, Zahner J, Beck AF</p>
+    <p class="paper-abstract">本研究利用電子病歷資料庫，探討社區劣勢與飲食失調青少年及年輕成人共病焦慮和憂鬱症的關聯。研究納入100,924名9至25歲的飲食失調患者，以地區劣勢指數（ADI）作為暴露指標。邏輯迴歸模型分析發現，較高程度的社區劣勢與較高的焦慮和憂鬱症機率顯著相關。研究亦觀察到基於社會人口特徵的差異。結果強調，了解飲食失調的臨床表現時，必須考慮患者所處的社區背景與環境壓力。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">100,924名9至25歲患有飲食失調的個體</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社區劣勢程度 (ADI百分位數)</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">較低程度的社區劣勢</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">共病焦慮症與憂鬱症的診斷</div></div>
+</div>
+    <ul class="findings"><li>社區劣勢程度越高，飲食失調患者共病焦慮和憂鬱症的風險越大。</li><li>社會環境因素是飲食失調嚴重度與併發症的重要預測指標。</li><li>研究顯示在治療飲食失調時需評估並處理環境社會決定因素。</li></ul>
+    <div class="keywords"><span class="keyword-pill">飲食失調</span><span class="keyword-pill">社區劣勢</span><span class="keyword-pill">焦慮</span><span class="keyword-pill">憂鬱症</span><span class="keyword-pill">社會決定因素</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42400142" style="animation-delay:1.6s">
+    <div class="paper-meta">
+      <span class="paper-journal">Am J Health Promot</span>
+      <span class="paper-date">2026 Jul 3</span>
+      <a class="paper-doi" href="https://doi.org/10.1177%2F08901171261462604" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Supervised Exercise Interventions: Evidence, Outcomes, and Policy Implications for Chronic Disease Management.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">監督式運動介入：慢性病管理的證據、結果與政策含義</p>
+    <p class="paper-authors">Abdullah K, Ablah E, Collie-Akers V, Whitsel LP</p>
+    <p class="paper-abstract">本研究透過系統性回顧，探討監督式運動介入對慢性疾病管理的臨床、心理社會及經濟影響。研究納入2010至2024年間文獻，發現SEIs在心血管、代謝等族群中能顯著降低再住院率與死亡率，提升生理機能並減少疲勞與憂鬱。經濟分析顯示SEIs具成本效益，部分研究指出一年內可節省醫療支出。然而，少數族裔、鄉村居民及低社經地位族群在參與上仍存在差異。結論指出，擴大保險給付並強化醫療系統整合，對改善SEIs的可及性與公平性至關重要。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">患有慢性疾病的成年人 (18歲以上)</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">監督式運動介入</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">常規護理或無監督運動</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">臨床結果、心理社會結果及經濟成本效益</div></div>
+</div>
+    <ul class="findings"><li>監督式運動介入能改善多種慢性疾病的臨床結果並降低死亡率。</li><li>介入措施具有成本效益，甚至可在短期內減少醫療支出。</li><li>低收入及少數族裔族群在獲得介入服務方面面臨顯著障礙。</li></ul>
+    <div class="keywords"><span class="keyword-pill">監督式運動</span><span class="keyword-pill">慢性病管理</span><span class="keyword-pill">健康平等</span><span class="keyword-pill">成本效益</span><span class="keyword-pill">健康政策</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42398989" style="animation-delay:1.68s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMJ Open</span>
+      <span class="paper-date">2026 Jul 3</span>
+      <a class="paper-doi" href="https://doi.org/10.1136%2Fbmjopen-2026-119914" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Impact of a non-contributory pension for older adults on hospitalisations and mortality: a protocol for a natural experimental study of the Brazilian continuous cash benefit (BPC).</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">非供款養老金對老年人住院和死亡率的影響：巴西持續現金福利(BPC)自然實驗研究的方案</p>
+    <p class="paper-authors">Silva SAGD, Dias FS, Guimarães JMN, Casais G et al.</p>
+    <p class="paper-abstract">本研究方案旨在評估巴西主要非供款社會年金（BPC）對老年人及其家庭成員住院率和死亡率的影響。BPC提供月薪給65歲以上貧困老人或殘障者。研究利用一億巴西世代隊列與行政資料連結，採自然實驗設計。將2016年後開始領取BPC者定義為處理組，並使用模糊斷點迴歸設計及逆機率加權生存模型估計效果。結果包括全因及特定原因死亡率與住院率。此研究將提供社會保護政策健康效果的關鍵證據，支持決策。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">巴西一億世代隊列中符合資格的老年人與其同住成員</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">領取巴西持續現金福利 (BPC)</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未領取但符合資格或接近資格的對照組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">全因及特定原因死亡率、住院率</div></div>
+</div>
+    <ul class="findings"><li>研究設計採用自然實驗與斷點迴歸，以減少選擇性偏誤。</li><li>評估非供款年金對個人及家庭成員健康的溢出效應。</li><li>為社會福利政策改善公共衛生結果提供實證基礎。</li></ul>
+    <div class="keywords"><span class="keyword-pill">社會年金</span><span class="keyword-pill">死亡率</span><span class="keyword-pill">住院率</span><span class="keyword-pill">自然實驗</span><span class="keyword-pill">健康政策</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
