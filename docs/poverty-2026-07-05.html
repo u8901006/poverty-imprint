@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-07-05</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-07-05">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-07-05">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-07-05</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 3 篇文獻</span>
+      <span class="stat-item">&#128193; 3 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本次分析的三篇文獻從多維度闡釋了社會環境與貧窮印記的交互作用。首篇聚焦社會決定因素，以蛋白質體學證實高社會脆弱性會在老年黑人體內轉化為發炎反應，具體展現社會弱勢的「生物嵌入」機制。次篇探討心臟衰竭對牙周組織的損害，鑑於兩者皆為低社經地位常見共病，此發現為貧窮相關疾病間的隱蔽生理連結提供線索。末篇從心理健康出發，以縱貫性數據證實擺脫在職貧窮能顯著改善勞工心理狀態，強調經濟脫貧的健康介入價值。綜上，貧窮不僅是經濟現象，更透過發炎機制、跨器官病理連結與心理壓力，深刻烙印於生物與精神層面，支持將減貧視為基礎健康政策。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42401874" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMC Med</span>
+      <span class="paper-date">2026 Jul 4</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs12916-026-04997-4" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Social vulnerability index and inflammation: a proteomic analysis linking social context to biological risk in older black adults.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">社會脆弱性指數與發炎反應：連結社會情境與老年黑人生物風險的蛋白質體學分析</p>
+    <p class="paper-authors">Yaskolka Meir A, Adeola HA, Tasaki S, Liang L et al.</p>
+    <p class="paper-abstract">本研究探討社會脆弱性指數（SVI）與發炎反應之間的關聯，特別針對老年黑人族群進行蛋白質體學分析。研究將社會環境背景與生物風險指標相連結，旨在揭示社會決定因素如何嵌入生物系統中。透過大規模的蛋白質組學數據，研究發現居住於高社會脆弱性社區的老年黑人成年人，其體內多種發炎相關蛋白質表現量顯著上升。這些發炎標誌物與心血管疾病、代謝症候群及早期死亡風險密切相關。研究結果強調，種族與社區層級的社會弱勢不僅是心理社會壓力源，更會實體轉化為細胞層級的發炎反應，從而增加健康不平等的生物風險。此研究為理解結構性種族主義與貧窮如何透過發炎路徑損害少數族裔老年健康提供了重要的機轉性證據。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">老年黑人成年人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">高社會脆弱性指數（SVI）暴露</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低社會脆弱性指數（SVI）對照</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">發炎相關蛋白質表現量（蛋白質體學分析結果）</div></div>
+</div>
+    <ul class="findings"><li>高SVI與多種發炎蛋白質表達顯著增加相關</li><li>社會環境脆弱性能具體轉化為生物發炎風險</li><li>老年黑人族群面臨社區弱勢與發炎反應的雙重負擔</li><li>蛋白質體學能有效捕捉社會決定因素的生物嵌入效應</li></ul>
+    <div class="keywords"><span class="keyword-pill">社會脆弱性指數</span><span class="keyword-pill">發炎反應</span><span class="keyword-pill">蛋白質體學</span><span class="keyword-pill">健康不平等</span><span class="keyword-pill">老年黑人</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42401591" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Sci Rep</span>
+      <span class="paper-date">2026 Jul 4</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%2020556.%20doi%3A%2010.1038%2Fs41598-026-58806-2" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Heart failure promotes gingival inflammation and impairs periodontal remodeling.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">心臟衰竭促進牙齦發炎並損害牙周重塑</p>
+    <p class="paper-authors">Berger M, Rizk M, Kern JS, Schulze-Späte U et al.</p>
+    <p class="paper-abstract">本研究探討心臟衰竭對口腔健康的影響，特別是對牙齦發炎與牙周組織重塑的具體作用。研究透過動物模型與臨床樣本分析，發現心臟衰竭不僅是全身性心血管疾病，更會直接惡化口腔微環境。結果顯示，心臟衰竭患者或模型動物體內，牙齦發炎指標顯著上升，且牙周組織的修復與重塑機制受到明顯抑制。這種病理連結可能與全身性血流動力學改變、氧化壓力增加及免疫發炎反應的系統性擴散有關。雖然本研究未直接探討社會經濟因素，但心臟衰竭與牙周病皆與低社經地位及貧窮印記高度相關，此生物機轉揭示了貧窮相關疾病之間可能存在隱蔽的生理聯繫，為跨領域的全身性健康評估提供了新視角。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">心臟衰竭患者及動物模型</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">心臟衰竭狀態</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無心臟衰竭之對照組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">牙齦發炎程度與牙周組織重塑能力</div></div>
+</div>
+    <ul class="findings"><li>心臟衰竭會直接促進牙齦發炎反應</li><li>心臟衰竭狀態下牙周組織的重塑與修復能力受損</li><li>心血管疾病與口腔健康之間存在顯著的病理生理學連結</li><li>全身性血液動力學改變與發炎可能為兩者之間的傳導機制</li></ul>
+    <div class="keywords"><span class="keyword-pill">心臟衰竭</span><span class="keyword-pill">牙齦發炎</span><span class="keyword-pill">牙周重塑</span><span class="keyword-pill">全身性發炎</span><span class="keyword-pill">口腔全身健康</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42401095" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">Soc Sci Med</span>
+      <span class="paper-date">2026 Jul 3</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.socscimed.2026.119556" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Escaping in-work poverty and mental health: A longitudinal study of Swedish workers.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">擺脫在職貧窮與心理健康：一項針對瑞典勞工的縱貫性研究</p>
+    <p class="paper-authors">Kim W, Baron S, Almroth M, Johansson G et al.</p>
+    <p class="paper-abstract">本項縱貫性研究探討擺脫「在職貧窮」狀態對勞工心理健康所產生的影響。研究以瑞典勞工為樣本，追蹤那些初始處於在職貧窮（即有工作但收入仍低於貧窮線）的個體，觀察其後續若成功脫離在職貧窮時，心理健康狀況的變化。研究結果顯示，成功逃離在職貧窮與心理健康顯著改善存在因果關聯，包括減少憂鬱與焦慮症狀以及提升整體生活滿意度。即使在控制了初始健康狀態與其他社會人口學變項後，此正向效應依然顯著。此研究挑戰了「只要有工作就能免於貧窮困境」的迷思，強調工作品質與充足薪資的重要性，並證實了減輕在職貧窮不僅是經濟議題，更是促進公共心理健康的關鍵政策目標。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">瑞典在職貧窮勞工</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">成功擺脫在職貧窮狀態</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">持續處於在職貧窮狀態的勞工</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康指標變化（如憂鬱、焦慮症狀及生活滿意度）</div></div>
+</div>
+    <ul class="findings"><li>成功擺脫在職貧窮能顯著改善勞工的心理健康</li><li>脫離在職貧窮能具體降低憂鬱與焦慮症狀</li><li>經濟改善對心理健康的益處獨立於其他社會人口學因素</li><li>僅有工作不足以保障心理健康，薪資充足性才是關鍵</li></ul>
+    <div class="keywords"><span class="keyword-pill">在職貧窮</span><span class="keyword-pill">心理健康</span><span class="keyword-pill">縱貫性研究</span><span class="keyword-pill">勞工</span><span class="keyword-pill">社會流動</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
