@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-07-06</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-07-06">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-07-06">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-07-06</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 7 篇文獻</span>
+      <span class="stat-item">&#128193; 3 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本組文獻深入探討了「貧窮印記」在不同情境下的多維度展現，涵蓋了從個體心理壓力到宏觀結構不平等的廣泛視角。研究一致指出，社會經濟劣勢並非單一變量，而是與環境災害（如颶風）、制度排斥（如兒童福利系統的標籤化）、慢性疾病（如長新冠與癌症）及口腔健康惡化產生交乘效應，進一步將弱勢群體推向失能、營養不良與早死的風險。無論是醫學生的財務焦慮、游牧地區兒童的嚴重營養不良，還是住宿照護中「居家感」的剝奪，皆揭示了結構性脆弱性如何透過生物嵌入與心理壓力路徑損害整體健康。這些發現強調，單純的生物醫學介入不足以打破貧窮與疾病的惡性循環，未來的政策與臨床實踐必須採納創傷知情與社會決定因素的整合視角，針對特定弱勢群體設計具適切性的扶貧與健康促進策略。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">4 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">跨代傳遞與社會流動</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:25%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42402169" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Teach Learn Med</span>
+      <span class="paper-date">2026 Jul 5</span>
+      <a class="paper-doi" href="https://doi.org/10.1080%2F10401334.2026.2697783" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">&quot;I Live Week to Week&quot;: Medical Students&#39; Experiences with Financial Burden in Online Discourse.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">「我過著月光的生活」：醫學生在網路論壇中對財務負擔的經歷探討。</p>
+    <p class="paper-authors">Cho B, Pundaky G, Choudhry SH, D&#39;Mello K et al.</p>
+    <p class="paper-abstract">本研究透過質性文本分析，探討醫學生在網路論壇中分享的財務負擔經驗。研究揭示了處於貧困或財務壓力下的醫學生如何經歷「周結」狀態，及其對心理健康、學業表現和職業選擇的深遠負面影響。財務壓力不僅顯著加劇了焦慮與職業倦怠，更暴露了醫學教育中隱性社會經濟不平等的深層問題。研究強調，即使是處於高教育水平的醫學生群體，財務劣勢依然會產生嚴重的貧窮印記，呼籲醫學院校必須正視此問題，並針對弱勢學生提供更具針對性的財務支持與心理輔導介入。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">面臨財務壓力的醫學生</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">財務負擔與貧困經歷</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無明顯財務壓力的醫學生（隱性對照）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康狀態、學業體驗與職業規劃影響</div></div>
+</div>
+    <ul class="findings"><li>醫學生普遍面臨嚴重的「周結」財務壓力與不穩定性</li><li>財務負擔顯著增加醫學生的焦慮、憂鬱與倦怠風險</li><li>現有醫學教育體系缺乏對社經弱勢學生的財務安全網機制</li></ul>
+    <div class="keywords"><span class="keyword-pill">醫學生</span><span class="keyword-pill">財務負擔</span><span class="keyword-pill">心理健康</span><span class="keyword-pill">社會經濟地位</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42402815" style="animation-delay:0.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">Sociol Health Illn</span>
+      <span class="paper-date">2026 Jul</span>
+      <a class="paper-doi" href="https://doi.org/10.1111%2F1467-9566.70230" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Contextualising, Conceptualising and Constructing At-Homeness: Towards an Integrative Framework for Residential Care.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">脈絡化、概念化與建構「居家感」：邁向住宿照護的整合性框架。</p>
+    <p class="paper-authors">Cui J, Wu J</p>
+    <p class="paper-abstract">本研究旨在為住宿照護環境建構「居家感」的整合性理論框架。研究指出，對於依賴機構照護的弱勢或貧困長者而言，「居家感」不僅是物理空間的安全，更包含心理歸屬、自主控制與社會連結。缺乏居家感的機構化生活會導致認知衰退、抑鬱與社會剝奪感加劇。透過分析空間、關係與政策維度，本研究提出一個能促進心理韌性與福祉的照護模式，強調在資源受限的照護體系中，重塑居家感是減輕貧窮與制度化帶來之心理創傷印記的關鍵策略。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">住宿照護機構中的住民（多為弱勢長者）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">「居家感」的建構與優化照護環境</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">傳統機構化、缺乏居家感的照護模式</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理福祉、歸屬感與生活質量</div></div>
+</div>
+    <ul class="findings"><li>居家感涵蓋物理環境、心理安全感與社會連結三個核心維度</li><li>缺乏居家感的機構化生活與住民的抑鬱及認知退化顯著相關</li><li>重塑居家感能有效提升弱勢長者的心理韌性並減輕創傷印記</li></ul>
+    <div class="keywords"><span class="keyword-pill">居家感</span><span class="keyword-pill">住宿照護</span><span class="keyword-pill">心理福祉</span><span class="keyword-pill">機構化</span><span class="keyword-pill">弱勢群體</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">4 篇</span></div>
+    
+  <div class="paper-card" data-pmid="41526272" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Epidemiol</span>
+      <span class="paper-date">2026 Jul 5</span>
+      <a class="paper-doi" href="https://doi.org/10.2188%2Fjea.JE20250127" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Tooth Loss and Socioeconomic Inequalities in Disability and Mortality: A Large-scale Prospective Cohort Study in Japan.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">牙齒脫落與失能及死亡率的社會經濟不平等：日本大規模前瞻性隊列研究。</p>
+    <p class="paper-authors">Matsuyama Y, Watt RG, Aida J</p>
+    <p class="paper-abstract">本研究利用日本大規模前瞻性隊列資料，探討牙齒脫落如何作為社會經濟不平等的生物標誌物，進而影響失能與死亡率。研究發現，低社會經濟地位群體面臨更高的牙齒脫落風險，而這種口腔健康惡化不僅反映醫療資源获取不均，更直接透過營養不良、慢性發炎等生理路徑，加速身體失能並增加死亡風險。此研究凸顯了口腔健康在貧窮印記傳導中的關鍵中介角色，呼籲公共衛生政策必須將牙科保健納入減少健康不平等與延緩老化的核心議題中。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">日本成年人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">牙齒脫落與低社會經濟地位</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同社會經濟階層與口腔健康狀態的對比</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">失能發生率與全因死亡率</div></div>
+</div>
+    <ul class="findings"><li>牙齒脫落與低社會經濟地位之間存在顯著相關性</li><li>牙齒脫落是預測未來失能和早死的獨立危險因子</li><li>口腔健康不平等透過生理發炎與營養路徑加劇了整體健康的社會階層差異</li></ul>
+    <div class="keywords"><span class="keyword-pill">牙齒脫落</span><span class="keyword-pill">社會經濟不平等</span><span class="keyword-pill">失能</span><span class="keyword-pill">死亡率</span><span class="keyword-pill">健康社會決定因素</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42405200" style="animation-delay:0.48s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Clim Chang Health</span>
+      <span class="paper-date">2026 Jul-Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.joclim.2026.100694" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Post-hurricane related flooding and essential services interruptions, and their impact on the quality of life of women with gynecological cancer in Puerto Rico.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">颶風後的洪水與基礎服務中斷對波多黎各婦科癌症女性生活質量的影響。</p>
+    <p class="paper-authors">Cardona-Cordero N, Bolaños A, Castro-Jiménez L, García-Camacho SI et al.</p>
+    <p class="paper-abstract">本研究調查波多黎各颶風後的洪水與基礎服務中斷，對婦科癌症女性生活質量的嚴重衝擊。研究發現，災害導致的停電、缺水與醫療中斷，對原本處於社經弱勢的癌症患者造成毀滅性打擊。貧困社區的基礎設施脆弱性放大了環境災難的健康後果，導致癌症治療延誤、症狀惡化與極度的心理創傷。此研究揭示了氣候變遷、結構性脆弱性與健康不平等的交疊效應，強調在災難應響中必須優先保障弱勢群體的醫療連續性，以防止災害留下永久的貧窮與疾病印記。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">波多黎各患有婦科癌症的女性</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">颶風引發的洪水與基礎服務（水電、醫療）中斷</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未受災害嚴重影響或具備較高抗災能力的同類患者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">生活質量、治療連續性與心理健康狀態</div></div>
+</div>
+    <ul class="findings"><li>基礎服務中斷極度降低了婦科癌症患者的生活質量與治療依從性</li><li>社經劣勢與貧困社區加劇了自然災害對健康照護系統的破壞程度</li><li>氣候災難對弱勢群體的健康影響存在不平等的放大效應</li></ul>
+    <div class="keywords"><span class="keyword-pill">氣候變遷</span><span class="keyword-pill">災難脆弱性</span><span class="keyword-pill">婦科癌症</span><span class="keyword-pill">生活質量</span><span class="keyword-pill">健康不平等</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42403350" style="animation-delay:0.56s">
+    <div class="paper-meta">
+      <span class="paper-journal">Physiother Res Int</span>
+      <span class="paper-date">2026 Jul</span>
+      <a class="paper-doi" href="https://doi.org/10.1002%2Fpri.70251" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Regional Disparities in Functional and Socioeconomic Impacts of Long COVID in Brazil: A Cross-Sectional Observational Study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">巴西長新冠在功能與社會經濟影響上的區域差異：一項橫斷面觀察性研究。</p>
+    <p class="paper-authors">Dos Santos ACP, Goulart CDL, Neves VR, Milani M et al.</p>
+    <p class="paper-abstract">本研究評估巴西長新冠在功能受損與社會經濟影響上的區域差異。結果顯示，長新冠不僅造成持續的生理與認知功能障礙，更在貧困率較高的地區引發更嚴重的失業、收入減少與社會排斥。結構性不平等使得弱勢地區缺乏復健資源，導致長新冠的負面影響被長期鎖定，形成「疾病-貧窮」的惡性陷阱。研究強調，長新冠的應對策略必須結合區域社會經濟背景，以防止突發的健康危機轉化為長期的社會階層固化與貧窮印記。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">巴西的長新冠患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">居住地區的經濟發展水平與醫療資源可及性</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高收入地區與低收入地區的長新冠患者對比</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">功能恢復狀態與社會經濟影響（如失業率、收入損失）</div></div>
+</div>
+    <ul class="findings"><li>長新冠造成的社會經濟後果存在顯著的區域不平等</li><li>貧困地區患者面臨更嚴重的功能退化與勞動力喪失風險</li><li>缺乏復健資源與社會支持導致疾病進一步加劇貧窮</li></ul>
+    <div class="keywords"><span class="keyword-pill">長新冠</span><span class="keyword-pill">區域不平等</span><span class="keyword-pill">社會經濟影響</span><span class="keyword-pill">功能退化</span><span class="keyword-pill">健康落差</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42402167" style="animation-delay:0.64s">
+    <div class="paper-meta">
+      <span class="paper-journal">Matern Child Nutr</span>
+      <span class="paper-date">2026 Jul</span>
+      <a class="paper-doi" href="https://doi.org/10.1111%2Fmcn.70217" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Determinants of Infant and Young Child Feeding Practices of Children With Severe Acute Malnutrition in Agrarian and Pastoralist Settings of Ethiopia.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">衣索比亞農業與游牧地區重度急性營養不良兒童的嬰幼兒餵養實踐決定因素。</p>
+    <p class="paper-authors">Areb M, Huybregts L, Tamiru D, Touré M et al.</p>
+    <p class="paper-abstract">本研究探討衣索比亞農業與游牧地區重度急性營養不良（SAM）兒童的嬰幼兒餵養實踐決定因素。研究發現，極端貧困、食物不安全、缺乏清潔水源以及母親教育水平低下，是導致不當餵養習慣的核心驅動力。游牧群體的高流動性與季節性貧困更進一步限制了營養干預的可及性。這些社會決定因素相互交織，不僅加劇了兒童的急性營養不良，更可能在關鍵發育期造成不可逆的認知與生長遲滯，凸顯了在貧窮印記早期介入中結合當地生計模式進行多維度政策設計的迫切性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">衣索比亞重度急性營養不良兒童及其照護者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">農業與游牧生計模式及相關社會經濟環境</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">農業區與游牧區的餵養實踐差異對比</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">嬰幼兒餵養實踐模式與兒童營養狀況</div></div>
+</div>
+    <ul class="findings"><li>母親教育水平與家庭食物安全是決定適當餵養實踐的核心因素</li><li>游牧環境的高流動性與季節性貧困嚴重阻礙了營養干預的落實</li><li>結構性貧困透過不良餵養習慣直接導致兒童重度急性營養不良</li></ul>
+    <div class="keywords"><span class="keyword-pill">重度急性營養不良</span><span class="keyword-pill">嬰幼兒餵養</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">游牧社區</span><span class="keyword-pill">衣索比亞</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">跨代傳遞與社會流動 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42404681" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">Qual Soc Work</span>
+      <span class="paper-date">2026 Jul</span>
+      <a class="paper-doi" href="https://doi.org/10.1177%2F14733250261446675" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Victims or perpetrators? Young mothers who survived intimate partner violence and their involvement with the child welfare system in Ontario.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">受害者還是施虐者？安大略省倖存於親密伴侶暴力的年輕母親及其與兒童福利系統的互動。</p>
+    <p class="paper-authors">Chowdhury R, Goel M, Goulden A, Wong FKC et al.</p>
+    <p class="paper-abstract">本研究探討安大略省曾遭受親密伴侶暴力的年輕母親，在接觸兒童福利系統時面臨的雙重困境。研究指出，這些母親往往因貧困和暴力創傷而被系統錯誤標籤化為「施虐者」或「失職者」，而非需要支持的受害者。這種制度性偏見不僅阻礙了她們獲取親職與心理援助，更大幅增加了子女被強制帶離的風險，從而形成暴力與貧窮的跨代循環。研究強烈呼籲兒童福利系統必須採用創傷知情視角，打破將貧困與創傷反應病理化的惡性循環，以阻斷負面印記的跨代傳遞。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">經歷親密伴侶暴力的年輕母親</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">接觸並介入兒童福利系統</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">一般母親群體或未接觸該系統的受暴母親</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">制度性標籤化經驗、親職支持獲取情況與跨代影響</div></div>
+</div>
+    <ul class="findings"><li>暴力倖存母親常被兒童福利系統錯誤標籤為施虐者或失職者</li><li>系統性偏見深植於對貧困階層與創傷反應的結構性誤解</li><li>現行制度性干預可能無意間加劇而非緩解跨代脆弱性與創傷印記</li></ul>
+    <div class="keywords"><span class="keyword-pill">親密伴侶暴力</span><span class="keyword-pill">兒童福利系統</span><span class="keyword-pill">跨代傳遞</span><span class="keyword-pill">創傷知情</span><span class="keyword-pill">制度性偏見</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
