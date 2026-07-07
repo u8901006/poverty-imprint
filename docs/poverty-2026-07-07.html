@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-07-07</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-07-07">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-07-07">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-07-07</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 8 篇文獻</span>
+      <span class="stat-item">&#128193; 3 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>這八篇文獻探討了環境壓力源、社經地位與健康結果之間的複雜交互作用，反映了「貧窮印記」的多面向影響。研究顯示，極端高溫與武裝衝突等環境及社會危機會顯著損害心理健康，且對弱勢群體衝擊更大。失業與教育期望落空等社經挫折被證實與憂鬱症狀及生活品質下降密切相關，揭示了社會流動受阻的心理代價。生理方面，飲食與月經健康是影響代謝疾病與生活滿意度的關鍵。此外，針對少數族裔的研究表明，家庭的積極社教化能緩解種族歧視帶來的物質濫用風險。整體而言，這些研究強調了結構性環境因素、家庭韌性與生物健康之間的緊密連結。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">4 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">2 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">4 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42411112" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Psychol Med</span>
+      <span class="paper-date">2026 Jul 7</span>
+      <a class="paper-doi" href="https://doi.org/10.1017%2FS0033291726105169" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Extreme heat and mental health: systematic review and qualitative investigation of risk and protective factors.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">極端高溫與心理健康：風險與保護因素的系統性回顧與定性研究。</p>
+    <p class="paper-authors">Baecker L, Khan M, Iyengar U, Tadayon A et al.</p>
+    <p class="paper-abstract">本篇系統性回顧探討了極端高溫對心理健康的影響。研究綜合指出，高溫與心理健康問題惡化（如焦慮、自殘風險）有顯著關聯。研究識別了風險因素（如都市熱島效應）與保護因素（如社會支持、冷氣設施），發現低收入與邊緣群體更為脆弱。該研究強調氣候變遷對心理健康的潛在威脅，特別是在資源匱乏社區中，並建議將心理健康納入氣候適應政策。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">一般人口與心理疾患高危險群</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">極端高溫暴露</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無熱浪或適溫環境</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康結果（如住院率、情緒障礙）</div></div>
+</div>
+    <ul class="findings"><li>極端高溫顯著增加心理健康不良事件的風險</li><li>低收入群體受熱浪影響更為嚴重</li><li>社會支持與基礎設施是重要的保護因子</li></ul>
+    <div class="keywords"><span class="keyword-pill">Extreme heat</span><span class="keyword-pill">Mental health</span><span class="keyword-pill">Climate change</span><span class="keyword-pill">Health disparity</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42404692" style="animation-delay:0.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">Depress Anxiety</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1155%2Fda%2F6025004" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Association Between Unmet Educational Aspirations and Depressive Symptoms in Working Young Adults.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">職場青年教育期望落空與憂鬱症狀的關聯性研究。</p>
+    <p class="paper-authors">Kim W, Lee SY, Ju YJ</p>
+    <p class="paper-abstract">本研究探討了職場青年未能滿足教育期望與憂鬱症狀之間的關聯。發現指出，教育期望落差（即實際教育程度低於期望）顯著預測了更高的憂鬱症狀水平。這反映了社會流動受阻對心理健康的負面影響，即個人在無法達成預期社會地位時會產生心理痛苦。此結果支持了社會經濟地位與心理健康緊密相連的觀點。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">職場青年</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">教育期望落空</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">教育期望達成者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">憂鬱症狀</div></div>
+</div>
+    <ul class="findings"><li>教育期望落空與憂鬱症狀呈正相關</li><li>此關聯在控制了社經地位後依然顯著</li><li>社會流動感知影響心理健康</li></ul>
+    <div class="keywords"><span class="keyword-pill">Educational aspiration</span><span class="keyword-pill">Depression</span><span class="keyword-pill">Young adults</span><span class="keyword-pill">Social mobility</span></div>
+  </div>
+  <div class="paper-card" data-pmid="40720323" style="animation-delay:0.16s">
+    <div class="paper-meta">
+      <span class="paper-journal">Cultur Divers Ethnic Minor Psychol</span>
+      <span class="paper-date">2026 Jul</span>
+      <a class="paper-doi" href="https://doi.org/10.1037%2Fcdp0000759" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Does parental racial socialization protect Black youth from the impact of racism on problematic substance use over the long term?</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">父母種族社教化是否能保護黑人青少年免受種族主義對物質濫用的長期影響？</p>
+    <p class="paper-authors">Kuo C, Ahn LH, Sifat M, Green KM</p>
+    <p class="paper-abstract">本研究調查父母種族社教化是否能緩解種族主義對黑人青少年問題物質使用的長期影響。結果顯示，雖然遭受種族歧視會增加物質濫用風險，但父母傳遞的文化自豪感與種族準備教育能顯著發揮緩衝作用，降低此風險。這表明家庭內的代際傳遞機制（如文化傳承）可以對抗結構性種族主義帶來的負面健康結果。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">黑人青少年</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">父母種族社教化</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低度種族社教化</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">問題物質使用（受種族主義影響）</div></div>
+</div>
+    <ul class="findings"><li>種族歧視增加長期物質濫用風險</li><li>父母種族社教化具有保護作用</li><li>文化自豪感能緩解壓力引發的行為問題</li></ul>
+    <div class="keywords"><span class="keyword-pill">Racial socialization</span><span class="keyword-pill">Racism</span><span class="keyword-pill">Substance use</span><span class="keyword-pill">Resilience</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42407342" style="animation-delay:0.24s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Pediatr Nurs</span>
+      <span class="paper-date">2026 Jul 6</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.pedn.2026.06.027" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Experiences of families with children diagnosed with spinal muscular atrophy: A qualitative study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">脊髓性肌肉萎縮症兒童家庭的經驗：一項質性研究。</p>
+    <p class="paper-authors">Kurt A, Özsavran M</p>
+    <p class="paper-abstract">這項質性研究探索了脊髓性肌肉萎縮症（SMA）兒童家庭的照護經驗。研究發現，家長面臨巨大的情感壓力、照護負擔及經濟壓力，尤其是在疾病診斷與治療過程中。這種長期壓力可能對家庭功能造成損害，甚至導致貧窮。研究強調，醫療團隊需提供更全面的心理社會支持與經濟諮詢，以緩解罕病家庭所承受的長期壓力。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">脊髓性肌肉萎縮症兒童的家庭</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">兒童罹患SMA與照護過程</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無特定對照組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">家庭照護經驗與壓力</div></div>
+</div>
+    <ul class="findings"><li>家庭面臨嚴重的照護與經濟負擔</li><li>疾病診斷初期壓力最大</li><li>亟需整合性的醫療與社會支持系統</li></ul>
+    <div class="keywords"><span class="keyword-pill">Spinal muscular atrophy</span><span class="keyword-pill">Family experience</span><span class="keyword-pill">Caregiver burden</span><span class="keyword-pill">Qualitative study</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42407304" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Gac Sanit</span>
+      <span class="paper-date">2026 Jul 6</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.gaceta.2026.102588" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">[Impact of armed conflict on the health of women and girls].</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">武裝衝突對女性與女童健康的影響。</p>
+    <p class="paper-authors">Obón-Azuara B, Gil-Borrelli C, Gutiérrez-Cía I, Rodríguez Arenas MÁ et al.</p>
+    <p class="paper-abstract">本文探討了武裝衝突作為極端的社會決定因素對女性與女童健康的影響。文章指出，衝突環境導致性別暴力增加、生殖健康服務中斷以及心理健康受損。特別是在資源匱乏的地區，女性面臨更高的死亡率和疾病負擔。研究強調，國際援助需特別關注衝突背景下的性別不平等，並將婦女健康納入人道主義救援的核心議程。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">女性與女童</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">武裝衝突環境</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">非衝突或和平環境</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">健康結果（包含身心與生殖健康）</div></div>
+</div>
+    <ul class="findings"><li>武裝衝突嚴重危害女性健康</li><li>生殖健康服務在衝突中常受中斷</li><li>性別暴力是衝突地區的主要風險</li></ul>
+    <div class="keywords"><span class="keyword-pill">Armed conflict</span><span class="keyword-pill">Women&#39;s health</span><span class="keyword-pill">Gender-based violence</span><span class="keyword-pill">Social determinants</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42406174" style="animation-delay:0.48s">
+    <div class="paper-meta">
+      <span class="paper-journal">Int J Health Econ Manag</span>
+      <span class="paper-date">2026 Jul 6</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%2015.%20doi%3A%2010.1007%2Fs10754-026-09419-9" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">In health and unemployment: well-being impacts of joblessness on oneself and partners.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">健康與失業：失業對自身及伴侶福祉的影響。</p>
+    <p class="paper-authors">Escudero-Castillo I, Mato-Díaz FJ, Rodríguez-Álvarez A</p>
+    <p class="paper-abstract">本研究分析失業對個人和其伴侶福祉的影響。結果顯示，失業不僅顯著降低當事人的心理健康水平，還會產生溢出效應，導致伴侶的幸福感下降。這表明經濟壓力具有家庭內的傳播性，失業帶來的經濟不確定性會影響整個家庭單位的穩定。研究建議社會保障政策應考慮失業對家庭系統的整體衝擊。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">就業者與其伴侶</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">失業狀態</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">就業狀態</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">個人與伴侶的主觀福祉</div></div>
+</div>
+    <ul class="findings"><li>失業對當事人福祉有直接負面影響</li><li>失業對伴侶福祉產生負面溢出效應</li><li>經濟壓力在家庭系統中傳播</li></ul>
+    <div class="keywords"><span class="keyword-pill">Unemployment</span><span class="keyword-pill">Well-being</span><span class="keyword-pill">Spillover effect</span><span class="keyword-pill">Socioeconomic status</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42410344" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMC Cardiovasc Disord</span>
+      <span class="paper-date">2026 Jul 7</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20569.%20doi%3A%2010.1186%2Fs12872-026-05557-7" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Sustainable diets and functional foods for the prevention of cardio-metabolic diseases and sustainable development goals of the UNO. An international consensus of scientific statement...</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">預防心臟代謝疾病的永續飲食與功能性食品：國際營養學院科學共識聲明。</p>
+    <p class="paper-authors">Ridwan H, Ahmed S, Singh RB, Chakravorty S et al.</p>
+    <p class="paper-abstract">本文獻是國際營養學院的共識聲明，旨在推廣永續飲食與功能性食品以預防心臟代謝疾病。研究強調植物性飲食與功能性營養素在改善代謝健康中的關鍵作用，並將其與聯合國永續發展目標（SDGs）相結合。聲明指出，不良的飲食習慣不僅導致慢性病，也加劇了環境負擔，倡導透過政策改變來促進全球健康與環境可持續性的雙重目標。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">一般大眾與慢性病高危險群</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">永續飲食與功能性食品</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">傳統西方飲食</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心臟代謝疾病預防與SDGs達成</div></div>
+</div>
+    <ul class="findings"><li>永續飲食有助於預防心臟代謝疾病</li><li>營養政策應與聯合國SDGs目標一致</li><li>功能性食品在疾病預防中具有潛力</li></ul>
+    <div class="keywords"><span class="keyword-pill">Sustainable diet</span><span class="keyword-pill">Cardio-metabolic diseases</span><span class="keyword-pill">Functional foods</span><span class="keyword-pill">SDGs</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42410478" style="animation-delay:0.88s">
+    <div class="paper-meta">
+      <span class="paper-journal">Reprod Health</span>
+      <span class="paper-date">2026 Jul 6</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs12978-026-02401-1" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Menstrual health and health-related quality of life in Spain: a multicenter cross-sectional study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">西班牙的月經健康與健康相關生活品質：多中心橫斷面研究。</p>
+    <p class="paper-authors">García-Egea A, López-Jiménez T, Rodríguez-Domínguez C, Mahtani-Chugani V et al.</p>
+    <p class="paper-abstract">這項西班牙多中心橫斷面研究調查了月經健康與健康相關生活品質的關係。結果顯示，月經困擾（如劇烈疼痛、不規則出血）顯著降低了女性的生活品質，影響其日常生活與心理狀態。研究強調了月經健康作為公共衛生議題的重要性，並呼籲醫療體系提供更完善的月經健康支持與教育，以減少其對女性社會參與與福祉的負面影響。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">西班牙女性</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">月經健康狀況（疼痛、規律性等）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無月經困擾者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">健康相關生活品質</div></div>
+</div>
+    <ul class="findings"><li>月經困擾顯著降低生活品質</li><li>月經不適影響日常功能</li><li>需加強公共衛生層面的月經教育</li></ul>
+    <div class="keywords"><span class="keyword-pill">Menstrual health</span><span class="keyword-pill">Quality of life</span><span class="keyword-pill">Cross-sectional study</span><span class="keyword-pill">Women&#39;s health</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
