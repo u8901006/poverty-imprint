@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-07-08</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-07-08">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-07-08">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-07-08</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 7 篇文獻</span>
+      <span class="stat-item">&#128193; 4 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本次分析的七篇文獻廣泛探討了貧窮印記從生物機制到政策介入的多維度影響。在生物層面，研究揭示了社會經濟劣勢透過生命歷程機制嵌入生理壓力系統（如異質性負荷）。在社會環境層面，文獻指出政治環境、衝突地區的糧食安全及基本設施缺乏是影響心理健康與營養狀況的關鍵決定因素。臨床與政策方面，研究強調了針對低收入群體的醫療補助障礙、營養援助計畫對皮膚健康的潛在益處，以及創傷知照護在文化脈絡中的重要性。整體而言，這些研究呼籲結合跨部門合作與結構性改革，以緩解貧窮對個體健康的長期負面印記。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">2 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42412066" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Stress</span>
+      <span class="paper-date">2026 Dec 31</span>
+      <a class="paper-doi" href="https://doi.org/10.1080%2F10253890.2026.2687780" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Explaining variations in allostatic load in later life: a longitudinal cohort study of socioeconomic life course mechanisms in Germany.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">解釋晚年異質性負荷的變異：德國社會經濟生命歷程機制的縱向隊列研究。</p>
+    <p class="paper-authors">Pförtner TK, Demirer I, Schwichtenberg J, Mavarani L et al.</p>
+    <p class="paper-abstract">本研究利用德國 Heinz Nixdorf Recall 隊列的縱向數據，檢驗生命歷程社會經濟地位（SES）對晚年異質性負荷（AL）的影響機制。研究測試了積累、敏感期、路徑及社會流動四種模型，發現當前 SES 與生命歷程 SES 均顯著負向預測 AL。中介分析證實「路徑模型」解釋力最強（約 49-73%），顯示當前 SES 在生物嵌入過程中的關鍵作用。此外，敏感期模型也獲得部分支持，表明社會經濟劣勢是透過多重生命歷程機制嵌入生理系統的。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">45-75歲德國成年人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">生命歷程社會經濟地位與當前社會經濟地位</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同生命歷程模型（積累、敏感期、路徑、社會流動）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">異質性負荷（Allostatic Load, AL）</div></div>
+</div>
+    <ul class="findings"><li>當前社經地位對異質性負荷的影響最為顯著。</li><li>路徑模型獲得最強證據支持，顯示當前地位中介了早期影響。</li><li>敏感期模型獲得部分支持，表明早期劣勢有直接影響。</li><li>異質性負荷的生物嵌入是多種機制共同運作的結果。</li></ul>
+    <div class="keywords"><span class="keyword-pill">異質性負荷</span><span class="keyword-pill">社會經濟地位</span><span class="keyword-pill">生命歷程流行病學</span><span class="keyword-pill">生物嵌入</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42372137" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Proc Natl Acad Sci U S A</span>
+      <span class="paper-date">2026 Jul 7</span>
+      <a class="paper-doi" href="https://doi.org/10.1073%2Fpnas.2522718123" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Local partisan context and mental health.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">地方黨派背景與心理健康。</p>
+    <p class="paper-authors">Baxter-King R, Brown JR, Enos RD, Naeim A et al.</p>
+    <p class="paper-abstract">本研究利用全國調查與精細地理數據，探討居住地黨派背景對心理健康的影響。結果顯示，居住在民主黨佔多數社區的共和黨人，其焦慮、抑鬱和孤獨感顯著高於居住在共和黨佔多數社區的同黨人士；民主黨人則未受社區黨派構成影響。此關聯在強烈黨派支持者中最明顯，且影響程度與社區貧窮對心理健康的影響相當，表明政治環境是重要的社會決定因素。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國成年選民（民主黨與共和黨支持者）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">居住在黨派構成不同的社區（如共和黨人居住於民主黨佔多數社區）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">居住於與自身黨派同質的社區</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">焦慮、抑鬱、孤獨感等心理健康指標</div></div>
+</div>
+    <ul class="findings"><li>共和黨人在民主黨佔多數的社區心理健康較差。</li><li>民主黨人的心理健康不受社區黨派構成影響。</li><li>政治邊緣化對心理健康的影響規模相當於貧困的影響。</li><li>強烈黨派傾向者受環境影響最大。</li></ul>
+    <div class="keywords"><span class="keyword-pill">黨派背景</span><span class="keyword-pill">心理健康</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">政治極化</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42412777" style="animation-delay:0.48s">
+    <div class="paper-meta">
+      <span class="paper-journal">PLoS One</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1371%2Fjournal.pone.0347187" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Prevalence of undernutrition and its associated factors among pregnant women attending antenatal care service in public hospitals in Mogadishu, Somalia.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">索馬利亞摩加迪休公立醫院產前檢查孕婦營養不良盛行率及其相關因素。</p>
+    <p class="paper-authors">Tahlil AA, Abdillahi NA, Adam AJ, Ali AA et al.</p>
+    <p class="paper-abstract">本研究針對摩加迪休公立醫院產前檢查的孕婦進行橫斷面調查，評估營養不良盛行率及其相關因素。結果顯示孕婦營養不良率高達 75.7%。邏輯迴歸分析發現，家庭月收入低、嚴重家庭糧食不安全、缺乏廁所設施、大家庭及都市居住等因素顯著相關。研究強調，在衝突與貧困背景下，需透過跨部門介入改善食物安全、衛生設施及營養服務，以降低母兒健康風險。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">在摩加迪休公立醫院接受產前護理的孕婦</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社會人口學特徵、家庭經濟狀況、糧食安全、衛生設施等</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">營養不良（MUAC &lt; 23 cm）</div></div>
+</div>
+    <ul class="findings"><li>孕婦營養不良盛行率極高（75.7%）。</li><li>低收入與嚴重糧食不安全是主要風險因素。</li><li>缺乏廁所設施等環境衛生問題顯著增加風險。</li><li>亟需針對性的營養補充與 WASH 介入措施。</li></ul>
+    <div class="keywords"><span class="keyword-pill">孕婦營養不良</span><span class="keyword-pill">懷孕</span><span class="keyword-pill">糧食不安全</span><span class="keyword-pill">索馬利亞</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42411848" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">Psychol Psychother</span>
+      <span class="paper-date">2026 Jul 7</span>
+      <a class="paper-doi" href="https://doi.org/10.1111%2Fpapt.70091" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Childhood trauma and adult life among women seeking therapy in Kabul: An interpretative phenomenological analysis.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">喀布爾尋求治療女性的童年創傷與成年生活：一項解釋現象學分析。</p>
+    <p class="paper-authors">Ebrahimi A, Goodarzi MA, Aflakseir A, Imani M et al.</p>
+    <p class="paper-abstract">本研究採用解釋現象學分析法（IPA），探究喀布爾尋求治療女性對童年創傷的主觀經驗。研究發現，童年創傷並非過去事件，而是一種持續的體驗過程，核心主題包括受限的能動性、充滿羞恥的自我概念破碎、親密關係受阻以及持久的不安全感。這些經歷深植於性別壓迫、持續不安全及經濟困難的社會結構中，強調心理介入需具文化敏感度並關注結構性因素。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">在喀布爾尋求心理諮詢與治療的成年女性</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">童年創傷經驗</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">成年生活中的主觀意義、心理困擾、人際關係模式</div></div>
+</div>
+    <ul class="findings"><li>童年創傷被視為一種持續的、具身化的當前體驗。</li><li>創傷經驗導致自我概念破碎與深深的羞恥感。</li><li>親密關係受阻與持續的不安全感是普遍現象。</li><li>心理困擾與當地的貧困及性別不平等結構緊密相連。</li></ul>
+    <div class="keywords"><span class="keyword-pill">童年創傷</span><span class="keyword-pill">解釋現象學分析</span><span class="keyword-pill">女性心理健康</span><span class="keyword-pill">喀布爾</span></div>
+  </div>
+  <div class="paper-card" data-pmid="41852201" style="animation-delay:0.88s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Forensic Sci</span>
+      <span class="paper-date">2026 Jul</span>
+      <a class="paper-doi" href="https://doi.org/10.1111%2F1556-4029.70317" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">A rare case of self-inflicted throat incision in a patient with psychotic depressive disorder: A case report and literature review.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">精神病性抑鬱症患者自割喉嚨的罕見案例：案例報告與文獻回顧。</p>
+    <p class="paper-authors">Duran FM, Semerkant T, Esme H</p>
+    <p class="paper-abstract">本案例報告描述一名 71 歲精神病性抑鬱症女性患者罕見的自割喉嚨自殺行為，並回顧相關文獻。文獻指出，雖然此方法罕見，但常發生於社會經濟條件較差、失業及物質濫用普遍的地區。本研究強調，喉部割傷涉及重要解剖結構，需多學科團隊立即手術介入。同時，嚴密的精神科治療與追蹤對於預防因經濟壓力與精神疾病引發的自殺企圖至關重要。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">一名71歲女性病例及文獻回顧中的自殺未遂者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">精神病性抑鬱症、經濟困難、物質濫用（文獻分析）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">其他自殺方式或一般人群</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">自殺方式、創傷模式、死亡率</div></div>
+</div>
+    <ul class="findings"><li>自割喉嚨雖罕見，但在特定人群與貧困地區有跡可循。</li><li>經濟困難與失業是此類自殺行為的重要誘因。</li><li>精神疾病（特別是抑鬱症）是主要驅動力。</li><li>多學科團隊的早期介入顯著降低死亡率與病殘率。</li></ul>
+    <div class="keywords"><span class="keyword-pill">自殺</span><span class="keyword-pill">割喉傷</span><span class="keyword-pill">經濟困難</span><span class="keyword-pill">精神病性障礙</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42415405" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">JBI Evid Synth</span>
+      <span class="paper-date">2026 Jul 1</span>
+      <a class="paper-doi" href="https://doi.org/10.11124%2FJBIES-25-00090" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Barriers to outpatient mental health services experienced by adult Medicaid recipients: a scoping review protocol.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">成人醫療補助受益者門診心理健康服務的障礙：範圍綜述方案。</p>
+    <p class="paper-authors">Kaur N, Keyes KM, Branas CC, Mojtabai R et al.</p>
+    <p class="paper-abstract">本範圍綜述方案旨在總結美國成人醫療補助受益者在使用門診心理健康服務時面臨的障礙。研究將聚焦 2014 年《平價醫療法案》實施後的證據，計畫檢索 MEDLINE 等數據庫。研究將依據健康服務障礙框架，將障礙分類為結構性、提供者層面、社會層面及患者成本障礙。結果將以敘述性方式呈現，旨在識別知識缺口，協助改善低收入群體的心理健康服務可及性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國成人醫療補助受益者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">使用門診心理健康專業服務</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">服務使用障礙的分類與證據地圖</div></div>
+</div>
+    <ul class="findings"><li>研究將系統性地將障礙分為結構、提供者、社會及成本四類。</li><li>聚焦於 ACA 實施後的現有障礙變化。</li><li>旨在填補對低收入群體心理衛生服務可及性的認知缺口。</li><li>結果將指導未來的政策制定與服務優化。</li></ul>
+    <div class="keywords"><span class="keyword-pill">醫療補助</span><span class="keyword-pill">心理健康服務</span><span class="keyword-pill">服務障礙</span><span class="keyword-pill">範圍綜述</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42411616" style="animation-delay:1.28s">
+    <div class="paper-meta">
+      <span class="paper-journal">Pediatr Dermatol</span>
+      <span class="paper-date">2026 Jul 7</span>
+      <a class="paper-doi" href="https://doi.org/10.1111%2Fpde.70282" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Supplemental Nutrition Assistance Program (SNAP), Skin Health, and Equity in Pediatric Populations: Integrating Nutrition Policy Into Dermatologic Care.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">補充營養援助計畫（SNAP）、皮膚健康與兒科人群公平性：將營養政策融入皮膚科護理。</p>
+    <p class="paper-authors">Shaikh UR, Nguyen HP, Richter CG, Raj LK et al.</p>
+    <p class="paper-abstract">本評論探討美國補充營養援助計畫（SNAP）對兒科皮膚健康的潛在影響與公平性。文章回顧了貧困、糧食不安全及微量營養素缺乏與兒童皮膚疾病的關聯。作者建議皮膚科醫師將營養篩查納入常規護理，並利用現有工具連結家庭與社區資源。透過將營養政策融入皮膚科臨床實務，可有效改善兒童皮膚健康結果並促進健康公平。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國兒科人群</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">SNAP 參與與營養篩查</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無營養援助或篩查</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">皮膚健康狀況、健康公平</div></div>
+</div>
+    <ul class="findings"><li>SNAP 是減少兒童糧食不安全關鍵的政策。</li><li>營養不良與微量營養素缺乏直接影響兒科皮膚疾病。</li><li>皮膚科醫師應在臨床中實施糧食安全篩查。</li><li>跨專業合作與政策倡導對改善健康公平至關重要。</li></ul>
+    <div class="keywords"><span class="keyword-pill">SNAP</span><span class="keyword-pill">兒科皮膚科</span><span class="keyword-pill">糧食不安全</span><span class="keyword-pill">健康公平</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
