@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-07-09</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-07-09">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-07-09">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-07-09</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 5 篇文獻</span>
+      <span class="stat-item">&#128193; 4 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本合集涵蓋了從社會決定因素、壓力生理學到認知行為的多元研究。研究顯示，貧困與獨居對尼日利亞老年人健康構成雙重負擔；心理社會逆境顯著影響慢性脊椎關節炎的治療預後；青少年ADHD症狀軌跡預測未來手機成癮風險；庫欣氏症患者因長期壓力荷爾蒙暴露面臨高殘疾負擔；而校園歧視經驗則損害健康專業學生的福祉。這些發現共同強調了生物社會因素在健康結果中的關鍵作用。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">認知與行為</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42420863" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMC Geriatr</span>
+      <span class="paper-date">2026 Jul 8</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs12877-026-07942-5" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Double burden of living alone and in poor socioeconomic conditions among urban-dwelling older Nigerians: a multilevel analysis.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">尼日利亞城市老年人獨居與貧困社經條件的双重負擔：多層次分析。</p>
+    <p class="paper-authors">Mobolaji JW</p>
+    <p class="paper-abstract">本研究針對尼日利亞城市老年人進行多層次分析，探討獨居與貧困社經地位的雙重負擔對健康的影響。結果顯示，同時面臨這兩種劣勢的老年人，其身心健康狀況顯著較差，且功能性限制較高。研究強調，針對同時面臨這兩種劣勢的老年人，社會支持政策需同時關注居住安排與經濟狀況，以有效改善老年健康結果。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">尼日利亞城市老年人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">獨居與貧困社經條件 (雙重負擔)</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">僅面臨一項風險或無風險的老年人</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">身心健康狀況與功能性限制</div></div>
+</div>
+    <ul class="findings"><li>獨居與貧困對老年健康有交互作用</li><li>雙重負擔導致顯著更差的身心健康結果</li><li>多層次分析確認個體與環境因素的影響</li></ul>
+    <div class="keywords"><span class="keyword-pill">老年健康</span><span class="keyword-pill">社會經濟地位</span><span class="keyword-pill">獨居</span><span class="keyword-pill">雙重負擔</span><span class="keyword-pill">社會決定因素</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42415000" style="animation-delay:0.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMC Med Educ</span>
+      <span class="paper-date">2026 Jul 7</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%201095.%20doi%3A%2010.1186%2Fs12909-026-09806-3" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Diversity climate and discrimination at German universities: a cross-sectional study among students in health-related degree programs.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">德國大學的多樣性氣候與歧視：針對健康相關學位學生的橫斷面研究。</p>
+    <p class="paper-authors">Hanft-Robert S, Adedeji A, Junger A, Wember M et al.</p>
+    <p class="paper-abstract">本研究調查德國大學健康科系學生的多樣性氣候與歧視現況。結果顯示，負面的校園氣候與歧視經驗普遍存在，且對少數群體學生的心理健康與學業投入產生負面影響。研究指出，改善社區環境中的結構性歧視與建立包容性氣候，對於培育具備文化敏感度的未來醫療人員具有重要政策意義。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">德國大學健康相關科系學生</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">校園多樣性氣候與歧視經驗</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無特定對照組 (橫斷面調查)</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康、學業投入與歧視感知</div></div>
+</div>
+    <ul class="findings"><li>負面多樣性氣候與歧視經驗相關</li><li>歧視對少數群體學生心理健康有害</li><li>包容性環境對醫療教育至關重要</li></ul>
+    <div class="keywords"><span class="keyword-pill">歧視</span><span class="keyword-pill">多樣性氣候</span><span class="keyword-pill">醫療教育</span><span class="keyword-pill">社會環境</span><span class="keyword-pill">心理健康</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42418108" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Endocrinol Invest</span>
+      <span class="paper-date">2026 Jul 8</span>
+      <a class="paper-doi" href="https://doi.org/10.1007%2Fs40618-026-02966-5" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Low work ability and high disability burden in Cushing&#39;s syndrome: a multicenter cohort study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">庫欣氏症候群的低工作能力與高殘疾負擔：一項多中心隊列研究。</p>
+    <p class="paper-authors">Steinkogler A, Zopp S, Moser K, Schweizer JROL et al.</p>
+    <p class="paper-abstract">本研究透過多中心隊列研究，評估庫欣氏症候群患者的工作能力與殘疾負擔。結果顯示，由於長期皮質醇過多導致的肌肉骨骼與認知損傷，患者即便在治療後仍面臨極低的工作能力與高殘疾率。研究突顯了壓力荷爾蒙病理對長期職業功能的深遠生物嵌入影響，呼籲加強長期康復介入。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">庫欣氏症候群患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">庫欣氏症候群與其病理生理狀態 (長期皮質醇暴露)</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">一般人口基數或健康對照組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">工作能力與殘疾負擔</div></div>
+</div>
+    <ul class="findings"><li>庫欣氏症患者工作能力顯著低於常人</li><li>長期皮質醇過多導致高殘疾負擔</li><li>治療後仍需關注長期功能恢復</li></ul>
+    <div class="keywords"><span class="keyword-pill">庫欣氏症候群</span><span class="keyword-pill">皮質醇</span><span class="keyword-pill">工作能力</span><span class="keyword-pill">殘疾負擔</span><span class="keyword-pill">壓力生理</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">認知與行為 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42419457" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Affect Disord</span>
+      <span class="paper-date">2026 Jul 8</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jad.2026.122230" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Longitudinal trajectories of ADHD-like symptoms across adolescence and associations with problematic smartphone use: Evidence from a five-wave cohort study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">青少年期ADHD樣症狀的縱向軌跡及其與問題性智慧型手機使用的關聯：來自五波隊列研究的證據。</p>
+    <p class="paper-authors">Xiang K, Huang S, Lai X, Ke L et al.</p>
+    <p class="paper-abstract">本研究利用五波追蹤資料，分析青少年ADHD樣症狀的發展軌跡及其與問題性智慧型手機使用的關聯。發現持續高水平的ADHD症狀軌跡顯著預測成年早期的問題性手機使用。研究建議，早期識別並持續監測ADHD症狀，並結合行為干預措施，有助於預防日後的數位成癮問題。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">青少年至成年早期族群</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">ADHD樣症狀的縱向軌跡</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同發展軌跡的組別 (如持續高症狀 vs 低症狀)</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">問題性智慧型手機使用</div></div>
+</div>
+    <ul class="findings"><li>持續高ADHD症狀軌跡預測手機成癮</li><li>症狀軌跡具有縱向穩定性</li><li>針對ADHD症狀的早期干預可減少行為問題</li></ul>
+    <div class="keywords"><span class="keyword-pill">ADHD</span><span class="keyword-pill">問題性手機使用</span><span class="keyword-pill">縱向研究</span><span class="keyword-pill">青少年</span><span class="keyword-pill">行為成癮</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42420679" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Rheumatol Int</span>
+      <span class="paper-date">2026 Jul 8</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20193.%20doi%3A%2010.1007%2Fs00296-026-06123-2" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Disease-related and psychosocial factors associated with difficult-to-manage and treatment-refractory axial spondyloarthritis: insights from the Greek AxSpA Registry.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">與難治性和治療抵抗性軸柱脊椎關節炎相關的疾病及心理社會因素：來自希臘登錄研究的見解。</p>
+    <p class="paper-authors">Kougkas N, Tsafis K, Deligeorgakis D, Papadopoulos V et al.</p>
+    <p class="paper-abstract">本研究分析希臘脊椎關節炎登錄資料，探討疾病相關與心理社會因素與難治性疾病的關聯。發現除了高疾病活動度外，低社經地位、心理壓力及缺乏社會支持是導致治療抗性的關鍵因素。這表明在風濕病臨床管理中，整合心理社會評估對於改善預後至關重要，尤其是針對資源匱乏的患者群體。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">軸柱脊椎關節炎 患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">疾病相關因素與心理社會因素 (如壓力、社經地位)</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">治療反應良好與治療抗性患者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">難治性或治療抵抗性疾病狀態</div></div>
+</div>
+    <ul class="findings"><li>心理社會因素與治療抗性顯著相關</li><li>低社經地位是預後不良的預測因子</li><li>整合性評估有助於慢性病管理</li></ul>
+    <div class="keywords"><span class="keyword-pill">軸柱脊椎關節炎</span><span class="keyword-pill">治療抵抗性</span><span class="keyword-pill">心理社會因素</span><span class="keyword-pill">社經地位</span><span class="keyword-pill">慢性疼痛</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
