@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-07-10</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-07-10">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-07-10">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-07-10</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 7 篇文獻</span>
+      <span class="stat-item">&#128193; 5 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>這七篇文獻從多元視角探討了社會決定因素、健康不平等與發展軌跡之間的複雜關聯。在跨代傳遞方面，馬德里的研究揭示了早年無家可歸如何透過脆弱的生命軌跡再製跨代逆境。在社區與社會決定因素層面，英國南亞族群的多重病況、美國癌症倖存者在鄉村與弱勢地區的心理福祉，以及跨性別者的伴侶暴力與HIV/STI預防，均凸顯了結構性弱勢、地理位置與邊緣化身份對健康的深遠影響。大腦發展研究指出體重增加與神經發展的雙向關聯，呼應了貧窮環境中常見的代謝與認知雙重負擔。此外，醫療保險制度類別直接影響弱勢群體行為健康服務的使用率，而認知研究強調了執行功能在幼兒早期數學能力發展中的關鍵角色。總體而言，這些研究證實了生物、心理與社會因素的交織作用，強調未來需採取跨層次的精準政策與臨床介入，以打破貧窮與健康劣勢的循環。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">跨代傳遞與社會流動</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">3 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">認知與行為</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">大腦發展與神經科學</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">跨代傳遞與社會流動 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42429069" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Span J Psychol</span>
+      <span class="paper-date">2026 Jul 10</span>
+      <a class="paper-doi" href="https://doi.org/10.1017%2FSJP.2026.10041" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Youth-Onset Homelessness, Vulnerable Life Trajectories, and Mental Health: Intergenerational Reproduction of Adversity and Precarity in Madrid, Spain.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">早年發生的無家可歸、脆弱生命軌跡與心理健康：西班牙馬德里逆境與不穩定感的跨代再製</p>
+    <p class="paper-authors">Torrego S, Panadero S, Calvo F, Vázquez JJ</p>
+    <p class="paper-abstract">本研究探討西班牙馬德里地區早年發生無家可歸現象的青年，其脆弱生命軌跡與心理健康狀況，以及逆境與不穩定感的跨代再製機制。研究聚焦於這些青年如何在缺乏社會支持網絡的情況下，重複經歷其原生家庭所面臨的困境。研究發現，早年無家可歸不僅與嚴重的心理健康問題直接相關，更形成了一種跨代傳遞的模式，使得貧窮、社會排除與居住不穩定在世代間延續。這些青年往往伴隨著教育中斷、勞動市場邊緣化與長期依賴社會救助的風險。本文強調，傳統的危機處理模式無法有效中斷此循環，必須採取基於生命歷程觀點的早期預防與持續性支持介入，方能打破這種深層的跨代弱勢印記。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">馬德里地區早年無家可歸的青年</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">早年無家可歸與生命軌跡脆弱性</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">一般非無家可歸青年</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康惡化與跨代逆境再製</div></div>
+</div>
+    <ul class="findings"><li>早年無家可歸導致嚴重的心理健康問題</li><li>生命軌跡呈現高度脆弱性與不穩定</li><li>逆境與貧窮呈現顯著的跨代再製現象</li><li>傳統危機處理模式無法打破此循環</li></ul>
+    <div class="keywords"><span class="keyword-pill">早年無家可歸</span><span class="keyword-pill">跨代傳遞</span><span class="keyword-pill">心理健康</span><span class="keyword-pill">生命軌跡</span><span class="keyword-pill">社會排除</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42426722" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMC Health Serv Res</span>
+      <span class="paper-date">2026 Jul 9</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs12913-026-15025-9" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">A comparison of behavioral health service use among dually eligible, Medicaid-only, and Medicare-only beneficiaries.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">雙重資格、僅Medicaid與僅Medicare受惠者之行為健康服務使用比較</p>
+    <p class="paper-authors">Karakus M, Ghose SS, Ilie C, Lee P et al.</p>
+    <p class="paper-abstract">本研究比較了符合雙重資格（同時具備 Medicare 與 Medicaid 資格）、僅有 Medicaid 以及僅有 Medicare 的受惠者，在行為健康服務使用上的差異。雙重資格者通常是低收入、高失能且具有複雜健康需求的弱勢群體，而單一保險受惠者的社經背景與健康狀況則有所不同。研究結果顯示，不同保險類別的受惠者在門診精神科就診、物質濫用治療以及心理健康處方藥物的使用率上存在顯著差異。雙重資格者雖然理論上擁有更全面的保險覆蓋，但在實際獲取行為健康服務時仍面臨障礙。這反映了現有醫療保險制度在資源配置與服務整合上的破碎化，導致最弱勢群體的行為健康需求未能被有效滿足，凸顯了醫療政策在應對貧窮相關健康問題時的結構性局限。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">雙重資格、僅Medicaid與僅Medicare受惠者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">不同類別的醫療保險資格</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">三類保險受惠者之間的比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">行為健康服務的使用率與差異</div></div>
+</div>
+    <ul class="findings"><li>雙重資格者的行為健康服務使用模式與單一保險者顯著不同</li><li>保險覆蓋範圍廣並未完全轉化為實際服務的可及性</li><li>制度破碎化阻礙了弱勢群體獲取心理與物質濫用治療</li></ul>
+    <div class="keywords"><span class="keyword-pill">行為健康服務</span><span class="keyword-pill">醫療保險</span><span class="keyword-pill">雙重資格</span><span class="keyword-pill">弱勢群體</span><span class="keyword-pill">健康不平等</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">3 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42424304" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">PLoS Med</span>
+      <span class="paper-date">2026 Jul</span>
+      <a class="paper-doi" href="https://doi.org/10.1371%2Fjournal.pmed.1004844" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Genetic and sociodemographic factors associated with trajectories of physical and mental health multimorbidity in a South Asian cohort in the UK: A multistate modelling analysis.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">英國南亞族群身心多重病況軌跡相關之遺傳與社會人口學因素：多狀態建模分析</p>
+    <p class="paper-authors">Stow D, Tsang RSM, Katzourou IK, Huang Q et al.</p>
+    <p class="paper-abstract">本研究利用多狀態建模分析，探討英國南亞族群中，遺傳與社會人口學因素如何共同影響身體與心理健康多重病況的發展軌跡。南亞裔在英國常面臨種族歧視、社經地位較低及居住環境劣勢等社會決定因素的影響。研究追蹤受試者從健康狀態轉變為單一疾病，再演進為身心多重並發症的過程。結果顯示，除了特定的遺傳易感性外，低教育程度、低收入與職業劣勢等社會人口學因素顯著加速了多重病況的進展。這表明貧窮與社會邊緣化不僅是疾病的背景條件，更是直接驅動身心健康惡化的關鍵路徑。該研究強調，針對少數族裔的健康介入不能僅聚焦於生物醫學層面，必須同時處理結構性社會劣勢，才能有效延緩多重病況的發生。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">英國南亞族群隊列</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">遺傳易感性與社會人口學劣勢</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同社經與遺傳特徵的族群內比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">身心多重病況的發展軌跡與轉換率</div></div>
+</div>
+    <ul class="findings"><li>社會人口學劣勢顯著加速身心多重病況的進展</li><li>遺傳因素與社經地位在疾病軌跡中產生交互作用</li><li>少數族裔的健康劣勢深植於結構性社會決定因素中</li></ul>
+    <div class="keywords"><span class="keyword-pill">多重病況</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">南亞族群</span><span class="keyword-pill">健康不平等</span><span class="keyword-pill">多狀態建模</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42423918" style="animation-delay:0.88s">
+    <div class="paper-meta">
+      <span class="paper-journal">Cancer Causes Control</span>
+      <span class="paper-date">2026 Jul 9</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20125.%20doi%3A%2010.1007%2Fs10552-026-02212-6" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">The role of rurality and area-level disadvantage in lifestyle risk factors and psychological well-being among cancer survivors: findings from the 2021 NCI HINTS-SEER.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">鄉村地區與地區層級劣勢在癌症倖存者生活型態危險因子與心理幸福感中的角色：來自2021年NCI HINTS-SEER的發現</p>
+    <p class="paper-authors">Kumar AM, Miller CA, Han R, Barsell DJ et al.</p>
+    <p class="paper-abstract">本研究基於 2021 年美國國家癌症研究所 HINTS-SEER 數據，探討鄉村地區與地區層級劣勢如何影響癌症倖存者的生活型態危險因子與心理幸福感。癌症倖存者的長期健康極大程度受其居住環境的社經條件所制約。研究發現，居住在高度弱勢地區的癌症倖存者，其吸菸、飲酒等高風險生活型態的盛行率較高，且心理幸福感顯著較低。鄉村地區的倖存者則面臨醫療資源可及性低與社會孤立的雙重壓力。地區層級的貧窮不僅限制了健康食品的取得與運動空間，更透過慢性壓力與缺乏社區支持，直接侵蝕倖存者的心理韌性。此研究證實了空間與地區劣勢會在癌症康復期留下深遠的貧窮印記，呼籲腫瘤後續照護應納入社區層級的環境評估與資源連結。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國癌症倖存者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">居住於鄉村地區與地區層級弱勢環境</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">居住於都市與非弱勢地區的癌症倖存者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">生活型態危險因子與心理幸福感</div></div>
+</div>
+    <ul class="findings"><li>地區弱勢與癌症倖存者的不良生活型態顯著相關</li><li>鄉村地區的倖存者面臨較低的醫療可及性與社會孤立</li><li>空間劣勢透過慢性壓力機制損害心理幸福感</li></ul>
+    <div class="keywords"><span class="keyword-pill">癌症倖存者</span><span class="keyword-pill">地區劣勢</span><span class="keyword-pill">鄉村健康</span><span class="keyword-pill">心理幸福感</span><span class="keyword-pill">生活型態</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42427092" style="animation-delay:0.96s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Interpers Violence</span>
+      <span class="paper-date">2026 Jul 9</span>
+      <a class="paper-doi" href="https://doi.org/10.1177%2F08862605261463259" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Intimate Partner Violence and HIV/STI Prevention Among Transgender and Nonbinary Persons.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">跨性別與非二元性別者之伴侶暴力與HIV/STI預防</p>
+    <p class="paper-authors">Storholm ED, Lucas R, Spencer C, Wagner GJ et al.</p>
+    <p class="paper-abstract">本研究探討伴侶暴力對跨性別與非二元性別者預防 HIV 及性傳染病行為的影響。跨性別群體本就處於社會階層的最底層，面臨極高的貧窮率、失業與無家可歸風險，這些結構性劣勢大幅增加了其遭受暴力的脆弱性。研究指出，親密伴侶暴力不僅造成直接的身體與心理傷害，更透過剝奪個人的自主權與協商能力，阻礙了安全性行為的實踐與暴露前預防用藥的持續使用。暴力恐懼與經濟依賴交織，使得這些邊緣化個體在面對傳染病風險時缺乏保護自己的能力。此研究凸顯了伴侶暴力是貧窮與邊緣化環境下，推動 HIV/STI 流行的核心社會機制，強調公共衛生介入必須結合暴力防治、住房支持與經濟賦權，才能真正達到疾病預防的效果。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">跨性別與非二元性別者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">經歷親密伴侶暴力</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未經歷親密伴侶暴力的跨性別者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">HIV/STI 預防行為的減少</div></div>
+</div>
+    <ul class="findings"><li>伴侶暴力顯著削弱跨性別者的 HIV/STI 預防行為</li><li>暴力與經濟依賴剝奪了安全性行為的協商權</li><li>結構性貧窮與邊緣化是推動該族群傳染病風險的底層機制</li></ul>
+    <div class="keywords"><span class="keyword-pill">伴侶暴力</span><span class="keyword-pill">跨性別者</span><span class="keyword-pill">HIV預防</span><span class="keyword-pill">結構性劣勢</span><span class="keyword-pill">性傳染病</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">認知與行為 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42424910" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Acta Psychol (Amst)</span>
+      <span class="paper-date">2026 Jul 9</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.actpsy.2026.107382" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Executive function and Chinese preschoolers&#39; early mathematical skills: The indirect role of patterning and spatial skills.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">執行功能與中國學前兒童早期數學技能：模式化與空間技能的間接角色</p>
+    <p class="paper-authors">Xie H, Yaacob NRN, Ouyang H</p>
+    <p class="paper-abstract">本研究探討中國學前兒童的執行功能如何透過模式化與空間技能的間接作用，影響其早期數學能力。在貧窮印記的研究脈絡中，早期認知能力如執行功能，往往會因為家庭社經地位的差異而呈現不平等。研究發現，學前兒童的執行功能不僅直接預測數學技能，還透過促進模式化與空間技能的發展產生顯著的間接效應。這意味著高階認知控制能力是基礎數學學習的關鍵底層機制。由於弱勢家庭兒童常因環境刺激不足而導致執行功能發展遲緩，這項發現暗示了貧窮可能透過阻斷認知發展鏈，進而造成早期教育成就的落後。這為針對弱勢兒童的早期認知介入提供了明確的靶點。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">中國學前兒童</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">執行功能、模式化技能與空間技能</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同認知技能水平的兒童</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">早期數學技能的表現</div></div>
+</div>
+    <ul class="findings"><li>執行功能直接且間接影響學前兒童的數學能力</li><li>模式化與空間技能在執行功能與數學能力間扮演關鍵中介角色</li><li>認知發展鏈的斷裂可能是弱勢兒童學習落後的潛在機制</li></ul>
+    <div class="keywords"><span class="keyword-pill">執行功能</span><span class="keyword-pill">數學技能</span><span class="keyword-pill">學前兒童</span><span class="keyword-pill">空間技能</span><span class="keyword-pill">模式化</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">大腦發展與神經科學 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42424896" style="animation-delay:1.6s">
+    <div class="paper-meta">
+      <span class="paper-journal">Dev Cogn Neurosci</span>
+      <span class="paper-date">2026 Jul 8</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.dcn.2026.101776" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Weight gain and brain development in the ABCD study cohort: A decade of insight and the road ahead.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">ABCD研究隊列中的體重增加與大腦發展：十年的洞察與未來展望</p>
+    <p class="paper-authors">Adise S, Buchbinder N, Huber RS, Kiss O et al.</p>
+    <p class="paper-abstract">本研究利用 ABCD（青少年大腦認知發展）研究隊列的十年數據，探討兒童與青少年時期體重增加與大腦發展之間的雙向關聯。體重增加與肥胖在貧窮群體中極為普遍，常被視為貧窮印記的生理表現之一。研究整合了長期縱向的神經影像學與體質指數數據，分析大腦結構如皮質厚度、白質完整性與體重變化的動態交互作用。結果顯示，特定腦區如前額葉皮質與紋狀體的發育軌跡與體重增加密切相關，暗示神經認知控制機制的弱化可能導致衝動進食與代謝異常；反之，代謝狀況的改變也會影響腦部髓鞘化與突觸修剪。此研究為理解低收入社區常見的代謝與認知雙重負擔提供了神經生物學基礎，強調了早期體重管理對保護大腦發育的重要性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">ABCD 研究隊列中的兒童與青少年</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">體重增加與大腦結構發育軌跡</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同體重變化軌跡的受試者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">大腦結構變化與神經發育指標</div></div>
+</div>
+    <ul class="findings"><li>體重增加與大腦發育存在顯著的縱向雙向關聯</li><li>前額葉與紋狀體的發育異常與體重增加密切相關</li><li>代謝狀況改變會直接影響腦部微觀結構的成熟</li></ul>
+    <div class="keywords"><span class="keyword-pill">大腦發展</span><span class="keyword-pill">體重增加</span><span class="keyword-pill">ABCD研究</span><span class="keyword-pill">神經影像學</span><span class="keyword-pill">前額葉皮質</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
