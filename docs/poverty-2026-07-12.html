@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-07-12</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-07-12">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-07-12">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-07-12</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 4 篇文獻</span>
+      <span class="stat-item">&#128193; 3 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本批次四篇文獻從不同維度探討了社會經濟地位與結構性弱勢如何轉化為個體健康與心理的「貧窮印記」。在心理健康層面，研究揭示了童年期社經劣勢對青少年精神病理的長期損害，並透過交叉性視角，證實性別、移民背景與低教育程度等結構性因素在歐洲各國會產生加乘的憂鬱症風險。在生理與認知層面，針對多重感覺障礙長者開發的預測列線圖，凸顯了弱勢老年群體面臨較高的認知退化風險，並提供了具高臨床應用價值的早期篩檢工具。在政策介入方面，紐約市的成本抵消型社區支持農業試點計畫，展現了透過降低財務門檻來改善低收入家庭飲食品質與減輕食物不安全感的可行性。整體而言，這些研究呼籲公共衛生政策必須超越單一因素，結合臨床預防工具與社區結構性補貼，才能有效打破貧窮與健康不平等的跨代循環。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">認知與行為</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42437107" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">JCPP Adv</span>
+      <span class="paper-date">2026 Jul 11</span>
+      <a class="paper-doi" href="https://doi.org/10.1002%2Fjcv2.70131" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Investigating the toll of childhood socioeconomic disadvantage on adolescent mental health in three UK cohorts.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">探討童年社會經濟劣勢對英國三個世代隊列青少年心理健康的影響</p>
+    <p class="paper-authors">Rawers C, McBride O, Murphy J, McElroy E</p>
+    <p class="paper-abstract">本研究利用英國三個大型世代隊列數據，探討童年期社會經濟劣勢對青少年心理健康的長期影響。研究聚焦於這種劣勢是否會導致內化症狀（如憂鬱、焦慮）與外化症狀（如行為問題）的增加，並評估其劑量反應關係。結果顯示，童年期持續處於社經劣勢的青少年，其心理健康問題的風險顯著高於其他群體，且暴露於劣勢環境的時間越長，負面影響越深遠。該研究強調了早期社經環境在塑造青少年精神病理學上的關鍵作用，並指出亟需針對低收入家庭提供早期預防與介入措施，以減輕貧窮對心理發展的長期負面印記。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">英國三個世代隊列中的青少年</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">童年期社會經濟劣勢</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">童年期無社經劣勢或僅短暫暴露的同齡者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">青少年期的內化症狀與外化症狀風險</div></div>
+</div>
+    <ul class="findings"><li>童年期社經劣勢顯著增加青少年期心理健康問題的風險</li><li>劣勢暴露與心理症狀之間存在顯著的劑量反應關係</li><li>持續處於劣勢環境對精神病理發展的打擊最為嚴重</li></ul>
+    <div class="keywords"><span class="keyword-pill">社會經濟劣勢</span><span class="keyword-pill">青少年心理健康</span><span class="keyword-pill">世代隊列</span><span class="keyword-pill">精神病理學</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42432638" style="animation-delay:0.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMC Public Health</span>
+      <span class="paper-date">2026 Jul 10</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%202116.%20doi%3A%2010.1186%2Fs12889-026-28473-z" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Intersectional inequalities in depressive symptoms according to gender, migration, and education in 30 European countries.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">30個歐洲國家中基於性別、移民與教育程度的憂鬱症狀交叉性不平等</p>
+    <p class="paper-authors">von dem Knesebeck O, Lüdecke D, Vonneilich N</p>
+    <p class="paper-abstract">本研究探討在30個歐洲國家中，性別、移民背景與教育程度這三個社會決定因素如何交互作用，進而影響憂鬱症狀的不平等現象。透過交叉性理論視角進行分析，研究發現單一維度的弱勢（如低學歷）會因其他維度（如女性或移民身份）而產生加乘效應。擁有移民背景且教育程度較低的女性，面臨最高水準的憂鬱症狀。此研究強調，貧窮與社會剝奪的影響並非單一存在，而是透過多重結構性弱勢的交匯，深刻烙印在個體的心理健康層面，政策制定應採取交叉性視角以精準扶助邊緣群體。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">30個歐洲國家的成年居民</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">性別、移民背景與教育程度的交叉弱勢身份</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">非弱勢或僅具備單一弱勢身份的群體</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">憂鬱症狀的嚴重程度與不平等分布</div></div>
+</div>
+    <ul class="findings"><li>性別、移民與低教育程度對憂鬱症狀具有顯著的交叉加乘效應</li><li>低教育程度的移民女性是憂鬱症狀風險最高的群體</li><li>單一維度的社會決定因素分析會低估心理健康不平等的真實程度</li></ul>
+    <div class="keywords"><span class="keyword-pill">交叉性</span><span class="keyword-pill">憂鬱症狀</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">健康不平等</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42436486" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Int J Behav Nutr Phys Act</span>
+      <span class="paper-date">2026 Jul 11</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs12966-026-01906-z" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Preliminary trial findings from Harvest Share: a cost-offset community supported agriculture model to improve diet in New York City.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">Harvest Share的初步試驗結果：一項旨在改善紐約市飲食的成本抵消型社區支持農業模式</p>
+    <p class="paper-authors">LeCroy MN, Cardenas L, Chan SWC, Scherer M et al.</p>
+    <p class="paper-abstract">「Harvest Share」是一項旨在改善低收入社區飲食品質的成本抵消型社區支持農業（CSA）試點計畫。本研究於紐約市進行初步試驗，評估該模式對提升參與者新鮮蔬果攝取量的成效。透過補貼有機農產品的費用，有效降低了低收入家庭獲取健康食物的財務門檻。初步結果顯示，參與該計畫的居民其蔬果攝取頻率與整體飲食品質有顯著提升，且食物不安全感有所下降。此研究證實了結合農業與社會補貼的創新政策，能有效對抗「食物沙漠」現象，是減輕貧窮相關健康風險的實用介入策略。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">紐約市低收入社區居民</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">成本抵消型社區支持農業（CSA）計畫</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">參與計畫前的基線狀態</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">飲食品質改善、蔬果攝取量與食物不安全感</div></div>
+</div>
+    <ul class="findings"><li>成本抵消CSA模式能有效提升低收入者新鮮蔬果的攝取量</li><li>參與者的整體飲食品質獲得顯著改善</li><li>該補貼介入措施有助於降低弱勢群體的食物不安全感</li></ul>
+    <div class="keywords"><span class="keyword-pill">社區支持農業</span><span class="keyword-pill">食物不安全</span><span class="keyword-pill">飲食干預</span><span class="keyword-pill">低收入家庭</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">認知與行為 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42435357" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">Dement Geriatr Cogn Disord</span>
+      <span class="paper-date">2026 Jul 11</span>
+      <a class="paper-doi" href="https://doi.org/10.1159%2F000552805" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Development and Validation of a Nomogram for Predicting Cognitive Impairment in Older Adults with Multimodal Sensory Impairments: A Study Based on NHANES.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">預測多模態感覺障礙老年人認知障礙的列線圖開發與驗證：基於NHANES的研究</p>
+    <p class="paper-authors">Liu S, Ai S, Damodaran T</p>
+    <p class="paper-abstract">本研究基於美國國家健康與營養調查（NHANES）數據，針對伴有多重感覺障礙（如視力與聽力同時受損）的老年人，開發並驗證了一個預測認知功能障礙的列線圖模型。多重感覺損失通常與老化的社會孤立及神經退化密切相關，且在低收入或醫療資源匱乏的長者中更為普遍。研究納入多項人口學與臨床變項，成功建立具備高準確度與區辨力的預測工具。該列線圖不僅有助於臨床醫療人員早期識別具高風險的認知退化個案，也能為制定針對感官障礙長者的認知預防策略提供客觀依據。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">伴有多重感覺障礙的老年人（NHANES數據）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">多種人口學與臨床預測因子（用於模型建構）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無或僅有單一感覺障礙的老年人</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">認知功能障礙的發生風險</div></div>
+</div>
+    <ul class="findings"><li>成功開發針對多重感覺障礙長者的認知障礙預測列線圖</li><li>該預測模型在驗證中展現出良好的區辨力與校準度</li><li>多重感覺損失是老年人認知退化風險的重要預測指標</li></ul>
+    <div class="keywords"><span class="keyword-pill">認知障礙</span><span class="keyword-pill">感覺障礙</span><span class="keyword-pill">列線圖</span><span class="keyword-pill">老年醫學</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
