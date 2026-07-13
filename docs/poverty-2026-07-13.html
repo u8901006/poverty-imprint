@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-07-13</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-07-13">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-07-13">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-07-13</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 2 篇文獻</span>
+      <span class="stat-item">&#128193; 2 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>這兩篇文獻從不同維度探討結構性社會因素如何對弱勢群體健康產生深遠影響，進而刻下「貧窮印記」。第一篇研究聚焦空間與社區維度，揭示黑人孕婦因居住於資源匱乏與種族隔離社區，導致孕產期抑鬱風險顯著上升，強調環境劣勢在心理健康中的生物嵌入效應。第二篇文獻從醫療保險制度切入，指出跨性別者尋求性別肯定醫療時遭保險拒保，不僅剝奪醫療可及性，更引發醫療債務與健康惡化的惡性循環。綜合而言，兩項研究共同指出，單純依賴臨床醫療無法解決由社會結構不平等衍生的健康問題。要消除貧窮與歧視的健康印記，必須推行跨層級的政策介入，包含改善社區環境與打破制度性保險障礙，以實現健康公平。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42437495" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">West J Nurs Res</span>
+      <span class="paper-date">2026 Jul 12</span>
+      <a class="paper-doi" href="https://doi.org/10.1177%2F01939459261460989" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Neighborhood Characteristics and Depressive Symptoms Among Black Pregnant Women in Two Midwest Metropolitan Areas.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">美國中西部兩個大都會區黑人孕婦的社區特徵與抑鬱症狀</p>
+    <p class="paper-authors">Hyer S, Vaughan S, Jones K, Grady S et al.</p>
+    <p class="paper-abstract">本研究探討美國中西部兩個大都會區的社區環境特徵與黑人孕婦抑鬱症狀之間的關聯。研究透過問卷與地理資訊系統數據，評估社區的社會經濟地位、種族隔離程度等指標，並測量孕婦的抑鬱症狀。結果顯示，居住在社會經濟劣勢較高、資源匱乏社區的黑人孕婦，其出現顯著抑鬱症狀的風險大幅增加。此研究強調結構性種族主義與社區剝奪對弱勢孕產期心理健康的深遠影響，指出單純依賴個體層面的醫療介入不足，必須將公共衛生視角擴及社區環境改善。這些發見為制定針對弱勢孕婦的社區導向心理健康預防策略提供重要依據，突顯健康公平在母子保健中的關鍵地位。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國中西部兩個大都會區的黑人孕婦</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">居住於不同特徵的社區（如社會經濟劣勢、種族隔離、資源匱乏）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">居住在不同社區特徵環境下的孕婦相互比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">抑鬱症狀的發生率與嚴重程度</div></div>
+</div>
+    <ul class="findings"><li>居住於社會經濟劣勢社區與黑人孕婦抑鬱症狀顯著相關。</li><li>社區層面的結構性因素（如種族隔離）對孕產期心理健康有獨立影響。</li><li>個體層面的醫療干預需結合社區環境改善才能有效促進健康公平。</li></ul>
+    <div class="keywords"><span class="keyword-pill">黑人孕婦</span><span class="keyword-pill">社區特徵</span><span class="keyword-pill">抑鬱症狀</span><span class="keyword-pill">健康公平</span><span class="keyword-pill">社會決定因素</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42438997" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Soc Work Public Health</span>
+      <span class="paper-date">2026 Jul 13</span>
+      <a class="paper-doi" href="https://doi.org/10.1080%2F19371918.2026.2703482" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Coverage Denied: Health Insurance Barriers to Gender-Affirming Care.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">保險拒保：性別肯定醫療的健保障礙</p>
+    <p class="paper-authors">Rogers AT, Schott EMP, Osuna Berumen P, Zaman H</p>
+    <p class="paper-abstract">本文探討跨性別者與性別多元群體在尋求性別肯定醫療時所面臨的健康保險障礙。研究分析了現行保險體系中的排除條款、繁瑣的預先授權程序以及理賠拒絕等結構性問題，如何將醫療負擔轉嫁給個體，進而加劇該群體的經濟弱勢與健康風險。結果指出，保險拒保不僅延遲了必要的醫療服務，導致心理健康惡化，更迫使許多跨性別者陷入醫療債務或完全放棄治療，形成一種「貧窮印記」的惡性循環。研究呼籲政策制定者與保險機構必須廢除歧視性的保險條款，簡化核保與理賠流程。此文獻強調，將性別肯定醫療納入全面保險覆蓋不僅是醫療公平的問題，更是防止弱勢群體因醫療支出而陷入結構性貧窮的關鍵社會政策介入手段。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">尋求性別肯定醫療的跨性別與性別多元群體</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">面臨健康保險的排除條款與拒保障礙</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">具備充分保險覆蓋與無保險覆蓋或被拒保的狀態之隱含比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">醫療可及性、醫療債務負擔、心理健康狀況與經濟弱勢</div></div>
+</div>
+    <ul class="findings"><li>健康保險的排除條款與繁瑣的預先授權是性別肯定醫療的主要障礙。</li><li>保險拒保直接導致跨性別者面臨醫療債務，增加其陷入貧窮的風險。</li><li>醫療延遲與無法取得服務對該群體的心理健康造成嚴重負面影響。</li><li>消除保險障礙是防止結構性貧窮與促進健康公平的必要政策介入。</li></ul>
+    <div class="keywords"><span class="keyword-pill">性別肯定醫療</span><span class="keyword-pill">健康保險障礙</span><span class="keyword-pill">醫療債務</span><span class="keyword-pill">跨性別健康</span><span class="keyword-pill">政策介入</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
