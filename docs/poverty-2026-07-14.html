@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-07-14</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-07-14">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-07-14">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-07-14</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 6 篇文獻</span>
+      <span class="stat-item">&#128193; 3 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本次分析的六篇文獻從多個維度探討了社會決定因素、創傷與健康結果之間的複雜關聯，深刻反映了「貧窮印記」與弱勢處境對個體生理與心理的深遠影響。在跨代傳遞方面，研究揭示了母親受虐經驗如何削弱育兒敏感度，而子女的財務支持則能有效減輕中國老年人的多維度健康貧窮，顯示家庭資源流動的雙面性。在社會決定因素層面，美國癲癇手術的研究直指社經地位如何轉化為醫療不平等，導致弱勢族群延遲治療且預後較差；孟加拉國老年寡婦的質性研究則凸顯了性別、喪偶與經濟弱勢交織下的心理社會困境。此外，兒童下尿路障礙伴隨的精神症狀，以及產後婦女牙周病與心理健康的關聯，進一步強化了「身心一體」與生物嵌入的視角。整體而言，這些研究呼籲臨床與政策必須超越單一疾病視角，採取結構性與跨領域的整合介入，以阻斷劣勢的代際與生理延續。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">跨代傳遞與社會流動</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:67%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">3 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">跨代傳遞與社會流動 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42443786" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMC Geriatr</span>
+      <span class="paper-date">2026 Jul 13</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs12877-026-07961-2" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">The association between intergenerational financial support and multidimensional health poverty among Chinese older adults: analysis of data from the China Health and Retirement Longitudinal Study (CHARLS).</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">中國老年人跨代財務支持與多維度健康貧窮之間的關聯：來自中國健康與養老追蹤調查的數據分析</p>
+    <p class="paper-authors">Cai Y, Yao Y, Xue Y, Jing Z et al.</p>
+    <p class="paper-abstract">本研究利用中國健康與養老追蹤調查（CHARLS）數據，探討跨代財務支持與中國老年人多維度健康貧窮之間的關聯。隨著人口老齡化加劇，老年人的健康與經濟脆弱性成為重要議題。研究發現，來自子女的跨代財務支持對緩解老年人的健康貧窮具有顯著作用。獲得足夠財務支持的老年人，在生理、心理及社會參與等多維度健康指標上的貧窮風險顯著降低。此研究強調了家庭內部資源代際轉移對抗老齡化相關健康不平等的緩衝效應，並顯示缺乏此類支持會加劇老年期的健康剝奪。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">中國老年人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">接受跨代財務支持</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未接受或少接受跨代財務支持者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">多維度健康貧窮風險顯著降低</div></div>
+</div>
+    <ul class="findings"><li>跨代財務支持顯著降低多維度健康貧窮風險</li><li>家庭資源轉移對老齡化健康不平等具有緩衝效應</li><li>缺乏財務支持會加劇老年期的生理與心理健康剝奪</li></ul>
+    <div class="keywords"><span class="keyword-pill">跨代財務支持</span><span class="keyword-pill">健康貧窮</span><span class="keyword-pill">老年人</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42439405" style="animation-delay:0.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Reprod Infant Psychol</span>
+      <span class="paper-date">2026 Jul 13</span>
+      <a class="paper-doi" href="https://doi.org/10.1080%2F02646838.2026.2694045" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">The relationship between maternal experiences of abuse and maternal sensitivity in early mother-infant interactions.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">母親受虐經驗與早期母嬰互動中母親敏感度的關係</p>
+    <p class="paper-authors">Anderson F, Edmonds CJ, Trevillion K, Howard LM</p>
+    <p class="paper-abstract">本探討母親過去受虐經驗與早期母嬰互動中母親敏感度之間的關係。母親敏感度是嬰兒安全依戀發展的核心要素。研究指出，有受虐經歷的母親在與嬰兒互動時，往往展現出較低的敏感度與回應性。過去的創傷經驗可能透過改變壓力反應系統、影響心智化能力或引發創傷後壓力症狀，進而干擾母親解讀嬰兒線索的能力。此研究揭示了創傷的跨代傳遞機制，強調在產後照護中，必須針對有創傷史的母親提供心理支持與育兒指導，以阻斷負面印記的代際延續。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">有早期母嬰互動經驗的母親</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">母親過去的受虐經驗</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無受虐經驗的母親</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">母嬰互動中的母親敏感度降低</div></div>
+</div>
+    <ul class="findings"><li>受虐經驗顯著降低母親的育兒敏感度與回應性</li><li>創傷透過干擾解讀嬰兒線索的能力影響互動品質</li><li>揭示了負面經驗透過親職行為跨代傳遞的心理機制</li></ul>
+    <div class="keywords"><span class="keyword-pill">母親受虐</span><span class="keyword-pill">母親敏感度</span><span class="keyword-pill">跨代傳遞</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">3 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42443101" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Women Aging</span>
+      <span class="paper-date">2026 Jul 13</span>
+      <a class="paper-doi" href="https://doi.org/10.1080%2F08952841.2026.2701465" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Psychosocial challenges faced by older widows in Bangladesh: A qualitative study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">孟加拉國老年寡婦面臨的心理社會挑戰：一項質性研究</p>
+    <p class="paper-authors">Hasan MK, Hossain MS, Pope ND</p>
+    <p class="paper-abstract">本研究透過質性方法，深入探討孟加拉國老年寡婦所面臨的心理社會挑戰。在南亞社會文化背景下，喪偶對老年女性往往意味著社會地位喪失、經濟邊緣化與孤立無援。研究發現，這些婦女普遍經歷深度的悲傷、焦慮與抑鬱，同時面臨嚴重的社會排斥與歧視。缺乏家庭支持系統和經濟自主權進一步惡化了她們的心理健康狀況。該研究突顯了性別、年齡與喪偶狀態交織下所產生的複合性弱勢，強調需要針對此一高危險群體制定具備文化敏感性的心理社會支持與扶貧政策。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">孟加拉國老年寡婦</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">喪偶狀態及相關社會文化處境</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">一般老年女性或非寡婦群體</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">面臨高強度的心理社會挑戰（悲傷、焦慮、社會排斥）</div></div>
+</div>
+    <ul class="findings"><li>寡婦面臨嚴重的社會排斥與經濟邊緣化</li><li>心理健康深受複雜悲傷、焦慮與社會孤立影響</li><li>性別與喪偶的交織效應加劇了心理社會脆弱性</li></ul>
+    <div class="keywords"><span class="keyword-pill">老年寡婦</span><span class="keyword-pill">心理社會挑戰</span><span class="keyword-pill">社會排斥</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42443001" style="animation-delay:0.48s">
+    <div class="paper-meta">
+      <span class="paper-journal">An Pediatr (Engl Ed)</span>
+      <span class="paper-date">2026 Jul 13</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.anpede.2026.504292" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Psychiatric symptoms in children with overactive bladder and underactive bladder.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">膀胱過度活動症與膀胱活動不足兒童的精神症狀</p>
+    <p class="paper-authors">Yitik Tonkaz G, Tonkaz G, Arslan HF, Deliağa H et al.</p>
+    <p class="paper-abstract">本研究旨在評估患有膀胱過度活動症（OAB）與膀胱活動不足（UAB）兒童的精神症狀表現。下尿路功能障礙在兒童中並不罕見，且常伴隨心理行為問題。研究針對這兩組兒童進行精神病理學評估，結果顯示，相較於健康對照組，OAB與UAB患兒均顯示出較高的精神症狀發生率，包括焦慮、抑鬱及注意力問題。這表明下尿路症狀不僅是生理問題，更與兒童的心理壓力及神經發展密切相關。臨床上，在治療兒童排尿障礙時，應常規納入心理健康篩檢，以提供全面的身心整合照護。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">患有膀胱過度活動症或膀胱活動不足的兒童</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">OAB或UAB的臨床診斷</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">健康兒童</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">精神症狀發生率與嚴重程度顯著增加</div></div>
+</div>
+    <ul class="findings"><li>OAB與UAB兒童的精神症狀發生率顯著高於健康兒童</li><li>常合併出現焦慮、抑鬱及注意力缺陷等問題</li><li>兒童排尿障礙治療需常規納入心理健康篩檢</li></ul>
+    <div class="keywords"><span class="keyword-pill">膀胱過度活動症</span><span class="keyword-pill">膀胱活動不足</span><span class="keyword-pill">兒童精神症狀</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42334500" style="animation-delay:0.56s">
+    <div class="paper-meta">
+      <span class="paper-journal">Quintessence Int</span>
+      <span class="paper-date">2026 Jul 13</span>
+      <a class="paper-doi" href="https://doi.org/10.3290%2Fj.qi.b7034785" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Association between periodontal status and mental health in postpartum women: a cross-sectional study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">產後婦女牙周狀況與心理健康的關聯：一項橫斷面研究</p>
+    <p class="paper-authors">Anand D, Supriya, Verma S, Sharma RK</p>
+    <p class="paper-abstract">本橫斷面研究探討產後婦女牙周健康狀況與心理健康之間的關聯。產後期是女性生理與心理劇烈變化的脆弱階段。研究發現，產後婦女的牙周病嚴重程度與其抑鬱及焦慮症狀呈顯著正相關。這可能歸因於慢性牙周發炎引發的全身性發炎反應，進而影響中樞神經系統與情緒調節；同時，心理健康狀況不佳也可能導致自我照護能力下降，加劇口腔健康惡化。此研究支持了「口腔-大腦軸線」的概念，指出在產後護理中，應將口腔健康檢查作為評估整體生理與心理健康的重要指標。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">產後婦女</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">牙周狀況不佳或患有牙周病</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">牙周健康的產後婦女</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">抑鬱與焦慮等心理健康症狀加劇</div></div>
+</div>
+    <ul class="findings"><li>牙周病嚴重程度與產後抑鬱及焦慮呈顯著正相關</li><li>慢性發炎可能是連結口腔健康與心理狀態的生理機制</li><li>產後護理應整合口腔健康評估以促進整體身心照護</li></ul>
+    <div class="keywords"><span class="keyword-pill">牙周狀況</span><span class="keyword-pill">產後心理健康</span><span class="keyword-pill">慢性發炎</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42440376" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">Epilepsia</span>
+      <span class="paper-date">2026 Jul 13</span>
+      <a class="paper-doi" href="https://doi.org/10.1002%2Fepi.70367" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Socioeconomic status and epilepsy surgery in the United States: Timing and outcomes.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">美國的社經地位與癲癇手術：時機與結果</p>
+    <p class="paper-authors">Yardi R, Gordillo A, Sancheti H, Lapin B et al.</p>
+    <p class="paper-abstract">本研究探討美國社經地位（SES）與癲癇手術時機及預後結果之間的關聯。癲癇手術是難治型癲癇的有效治療方式，但醫療取得的不平等可能導致不同族群結果差異。研究分析發現，低社經地位患者接受癲癇手術的時間往往顯著晚於高社經地位患者，且術後的癲癇緩解率與功能恢復結果也較差。這種差異可能源自於醫療資源取得的不平等、健康素養差異或系統性延遲轉診。此研究強調社經劣勢會直接轉化為神經醫學治療上的不平等，呼籲政策制定者消除結構性障礙以確保醫療公平。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國接受癲癇手術的患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">低社經地位</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高社經地位</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">手術時機延遲、術後癲癇緩解率與功能恢復較差</div></div>
+</div>
+    <ul class="findings"><li>低社經地位患者接受癲癇手術的時機顯著延遲</li><li>低社經地位與較差的術後癲癇緩解率及預後直接相關</li><li>醫療資源取得的結構性不平等是造成差異的關鍵</li></ul>
+    <div class="keywords"><span class="keyword-pill">社經地位</span><span class="keyword-pill">癲癇手術</span><span class="keyword-pill">醫療不平等</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
