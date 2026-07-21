@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-07-21</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-07-21">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-07-21">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-07-21</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 10 篇文獻</span>
+      <span class="stat-item">&#128193; 7 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本次分析的十篇文獻從多重維度深刻揭示了「貧窮印記」的運作機制與介入契機。在生物嵌入層面，研究證實社區貧窮的持續時間與童年不可預測性能加速生物老化並導致性別特異性的神經發育障礙；而童年經濟流動性對發炎的緩解作用受制於特質敵意，顯示心理特質在逆境生理編碼中的調節角色。在認知行為層面，執行功能不僅是社經地位影響問題行為的中介，更是保護弱勢兒童的緩衝器。同時，職業類型與社區環境等社會決定因素在緊急狀態下進一步放大了心理健康不平等。值得關注的是，ACA醫療補助擴張成功降低了親密伴侶暴力率，證明結構性扶貧政策能切斷壓力與暴力的跨代傳遞。總結而言，打破貧窮印記需採取結合生物、心理、社會與政策層面的整合策略。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:67%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">3 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">認知與行為</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">大腦發展與神經科學</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">跨代傳遞與社會流動</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42477629" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMC Pregnancy Childbirth</span>
+      <span class="paper-date">2026 Jul 21</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs12884-026-09612-1" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Investigation of the impact of social, behavioral, and pre-existing clinical risk factors on preeclampsia.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">探討社會、行為及既有臨床風險因素對子癇前症的影響</p>
+    <p class="paper-authors">Sarder U, Gary T, Britt A, Alexander L et al.</p>
+    <p class="paper-abstract">本研究探討社會、行為及既有臨床風險因素對子癇前症的影響。子癇前症不僅威脅母嬰健康，更可能對後代產生長遠的健康印記。研究系統性評估孕婦的社經地位、行為模式及臨床疾病史與子癇前症的關聯。結果顯示，低社經地位與不良行為習慣顯著增加患病風險，且這些社會行為因素與臨床風險產生交互作用，惡化懷孕結果。此研究強調社會決定因素如何透過生物嵌入機制轉化為孕產期生理壓力，突顯在產前照護納入社會心理評估與行為介入的重要性，以減輕貧窮對母嬰健康的跨代影響。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">孕婦</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社會、行為及既有臨床風險因素</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無此類風險因素者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">子癇前症發生率</div></div>
+</div>
+    <ul class="findings"><li>低社經地位顯著增加子癇前症風險</li><li>不良行為習慣與臨床風險因素有交互作用</li><li>社會壓力可透過生理途徑影響孕產結果</li></ul>
+    <div class="keywords"><span class="keyword-pill">子癇前症</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">生物嵌入</span><span class="keyword-pill">產前風險</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42477854" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Trop Med Health</span>
+      <span class="paper-date">2026 Jul 20</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs41182-026-01033-2" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title">Understanding school-related gender-based violence (SRGBV) in sub-Saharan Africa: a systematic review of prevalence, drivers, and reported intervention strategies.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">理解撒哈拉以南非洲地區的校園性別暴力：盛行率、驅動因素與干預策略的系統性回顧</p>
+    <p class="paper-authors">Alhassan A, Lanyo GS, Godwin GK, Kagbo JE et al.</p>
+    <p class="paper-abstract">本系統性文獻回顧探討撒哈拉以南非洲地區校園性別暴力（SRGBV）的盛行率、驅動因素及干預策略。SRGBV嚴重影響兒童身心發展，形成深遠的貧窮與創傷印記。研究發現該地區SRGBV盛行率居高不下，形式多樣。驅動因素涵蓋宏觀社會文化規範（如父權體制）、社區層面的薄弱保護機制，以及學校的管理不善與權力不對等。在干預策略上，研究指出單一介入效果有限，必須結合教育課程改革、社區意識提升與校園安全政策強化等多層次架構。此研究強調將性別暴力視為社會決定因素交織產物的必要性，為資源受限地區提供基於證據的綜合預防框架。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">撒哈拉以南非洲地區學生</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">校園性別暴力（SRGBV）相關環境與干預</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無暴力暴露環境</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">SRGBV 盛行率、驅動因素、干預策略效果</div></div>
+</div>
+    <ul class="findings"><li>SRGBV 在該地區盛行率高且形式多樣</li><li>父權文化與性別不平等是核心驅動因素</li><li>多層次干預優於單一介入策略</li></ul>
+    <div class="keywords"><span class="keyword-pill">校園性別暴力</span><span class="keyword-pill">撒哈拉以南非洲</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">性別不平等</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42476961" style="animation-delay:0.48s">
+    <div class="paper-meta">
+      <span class="paper-journal">Am J Epidemiol</span>
+      <span class="paper-date">2026 Jul 20</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20kwag176.%20doi%3A%2010.1093%2Faje%2Fkwag176" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Neighborhood poverty duration, timing, and severity from adolescence to early midlife and biological aging.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">從青春期到中年初期的社區貧窮持續時間、時機與嚴重程度及生物老化</p>
+    <p class="paper-authors">D&#39;Alessio AS, Harris KM, Aiello AE, Levitt B et al.</p>
+    <p class="paper-abstract">本研究探討從青春期到中年初期，社區貧窮的持續時間、發生時機與嚴重程度與生物老化的關聯。貧窮會透過長期累積的壓力在身體細胞層面留下印記，加速老化。研究利用縱貫性資料，追蹤個體成長過程中暴露於高貧窮社區的歷程，並透過生物標記物評估生物年齡。結果顯示，貧窮暴露的累積時間越長、嚴重程度越高，生物老化速度越快。特別是在青春期暴露於嚴重社區貧窮，對老化的加速效果最顯著。此研究提供強烈證據，證實社區劣勢環境會嵌入生理系統導致提早衰老，凸顯早期生命階段介入社區貧窮對促進健康公平的迫切性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">從青春期追蹤至中年初期的個體</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社區貧窮的持續時間、時機與嚴重程度</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無或低度社區貧窮暴露者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">生物老化指標</div></div>
+</div>
+    <ul class="findings"><li>貧窮暴露時間越長，生物老化速度越快</li><li>青春期是社區貧窮加速生物老化的關鍵敏感期</li><li>貧窮嚴重程度與生物年齡呈顯著劑量反應關係</li></ul>
+    <div class="keywords"><span class="keyword-pill">生物老化</span><span class="keyword-pill">社區貧窮</span><span class="keyword-pill">敏感期</span><span class="keyword-pill">縱貫性研究</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">3 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42478253" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Korean Med Sci</span>
+      <span class="paper-date">2026 Jul 20</span>
+      <a class="paper-doi" href="https://doi.org/10.3346%2Fjkms.2026.41.e191" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Assessing the Relationship Between Work-Related Factors and Mental Health in Public Health Doctors During National Health Emergencies.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">評估國家衛生緊急狀態下工作相關因素與公共衛生醫師心理健康的關係</p>
+    <p class="paper-authors">Yun JA, Lee J, Song H, Choi S et al.</p>
+    <p class="paper-abstract">本研究旨在評估國家衛生緊急狀態期間，工作相關因素對公共衛生醫師心理健康的影響。在面對大規模傳染病疫情時，公衛醫師作為防疫核心，其心理健康常被忽視。研究分析工作負荷、職業風險暴露、組織支持度及工作自主性等因素與憂鬱、焦慮及壓力症狀的關聯。研究發現，高工作負荷與低組織支持是導致心理健康惡化的最主要因素。此外，缺乏防護裝備與面對不確定性的高壓環境進一步加劇心理困擾。該研究揭示了在公共衛生危機中，職業環境的結構性壓力源如何損害專業人員心理健康，強調建立完善職場支持系統對維持防疫人力資源穩定的關鍵作用。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">公共衛生醫師</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">國家衛生緊急狀態下的工作相關因素</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">非緊急狀態或低壓工作環境</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康狀況（憂鬱、焦慮、壓力）</div></div>
+</div>
+    <ul class="findings"><li>高工作負荷顯著導致心理健康惡化</li><li>組織支持不足是加劇心理困擾的關鍵因素</li><li>職業風險暴露與防護不足增加焦慮症狀</li></ul>
+    <div class="keywords"><span class="keyword-pill">心理健康</span><span class="keyword-pill">職業壓力</span><span class="keyword-pill">公共衛生緊急狀態</span><span class="keyword-pill">公衛醫師</span></div>
+  </div>
+  <div class="paper-card" data-pmid="41297924" style="animation-delay:0.88s">
+    <div class="paper-meta">
+      <span class="paper-journal">Ind Health</span>
+      <span class="paper-date">2026 Jul 20</span>
+      <a class="paper-doi" href="https://doi.org/10.2486%2Findhealth.2024-0099" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title">Lessons from the COVID-19 pandemic: the relationship between fear of COVID-19 and type of work.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">COVID-19 疫情的教訓：對 COVID-19 的恐懼與工作類型的關係</p>
+    <p class="paper-authors">Kitamura H, Ando H, Ogami A, Tsuji M et al.</p>
+    <p class="paper-abstract">本研究探討COVID-19疫情中不同類型工作與對病毒恐懼程度的關係。疫情不僅是衛生危機，更是社會心理壓力測試。研究透過問卷調查，比較一線醫護、必要服務業工作者與遠端辦公者的恐懼水準。結果顯示，必須親自到崗且面對高人群接觸的職業，其對病毒的恐懼與心理壓力顯著高於可遠端辦公的白領。此外，工作場所防護措施充足與否，強烈調節了工作類型與恐懼間的關係。此研究揭示職業類型作為社會決定因素，如何在危機中劃分出不同的心理脆弱群體，強調未來災害應對中，針對高暴露職業提供心理支持與實質防護資源的必要性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">不同職業類型的勞動者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">工作類型（一線、必要服務、遠端辦公）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低暴露或可遠端辦公的工作者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">對 COVID-19 的恐懼程度與心理壓力</div></div>
+</div>
+    <ul class="findings"><li>高人群接觸職業的 COVID-19 恐懼顯著較高</li><li>遠端辦公者呈現較低的心理壓力水準</li><li>職場防護措施能有效緩衝工作帶來的恐懼感</li></ul>
+    <div class="keywords"><span class="keyword-pill">COVID-19恐懼</span><span class="keyword-pill">職業類型</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">心理壓力</span></div>
+  </div>
+  <div class="paper-card" data-pmid="41125348" style="animation-delay:0.96s">
+    <div class="paper-meta">
+      <span class="paper-journal">Ind Health</span>
+      <span class="paper-date">2026 Jul 20</span>
+      <a class="paper-doi" href="https://doi.org/10.2486%2Findhealth.2025-0091" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Work-related health issues among pharmacists during the COVID-19 pandemic compared to pre-pandemic levels.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">藥師在 COVID-19 疫情期間的工作相關健康問題與疫情前水準的比較</p>
+    <p class="paper-authors">Suzuki T, Satake S, Yoshioka Y, Hamada K et al.</p>
+    <p class="paper-abstract">本研究比較藥師在COVID-19疫情期間與疫情前的工作相關健康問題變化。藥師在疫情期間面臨工作型態劇變與民眾焦虑情緒的衝擊。研究評估了藥師在身心健康與職業倦怠等方面的差異。結果顯示，疫情期間藥師的工作相關健康問題總體顯著增加，特別是心理倦怠與壓力相關症狀大幅上升。此外，因防疫措施導致流程改變與長時間佩戴防護裝備，身體不適如頭痛等也有所增加。此研究量化了疫情對基層醫療人員健康的具體衝擊，反映在系統性公共衛生壓力下，弱勢醫療環節的脆弱性，呼籲管理層重視藥師職業健康並建立長期支持機制。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">藥師</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">COVID-19 疫情期間的工作環境</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">疫情前的工作環境</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">工作相關健康問題（心理倦怠、身體不適）</div></div>
+</div>
+    <ul class="findings"><li>疫情期間藥師健康問題顯著高於疫情前</li><li>心理倦怠與壓力症狀的增加最為突出</li><li>防護裝備與流程改變導致新的身體不適</li></ul>
+    <div class="keywords"><span class="keyword-pill">藥師</span><span class="keyword-pill">職業健康</span><span class="keyword-pill">COVID-19</span><span class="keyword-pill">職業倦怠</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">認知與行為 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42474648" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Youth Adolesc</span>
+      <span class="paper-date">2026 Jul 20</span>
+      <a class="paper-doi" href="https://doi.org/10.1007%2Fs10964-026-02390-1" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">The Dual Role of Executive Functioning in the Association Between Family Socioeconomic Status and Children&#39;s Problem Behaviors.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">執行功能在家庭社經地位與兒童問題行為關聯中的雙重角色</p>
+    <p class="paper-authors">Zhu X, Tang Y, Zhao J, Zhao X</p>
+    <p class="paper-abstract">本研究探討執行功能在家庭社經地位與兒童問題行為間的雙重角色。低收入家庭兒童常表現較高問題行為，認知控制能力被認為是連結環境壓力與行為適應的橋樑。研究驗證兩條路徑：家庭社經地位會透過影響兒童執行功能發展，進而增加問題行為（中介效應）；同時，較高執行功能能緩衝低社經地位的負面影響（調節效應）。這種雙重角色表明，認知發展不僅是貧窮壓力的受害者，也是抵禦逆境的保護傘。研究支持在早期教育與扶貧政策中，納入針對弱勢兒童的執行功能訓練，以打破貧窮與不良行為結果間的恶性循環。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">兒童及其家庭</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">家庭社經地位與執行功能水準</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同社經地位或執行功能水準的兒童</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">兒童問題行為（內在化與外在化）</div></div>
+</div>
+    <ul class="findings"><li>執行功能在社經地位與問題行為間具中介作用</li><li>執行功能同時發揮調節效應，緩衝貧窮的負面影響</li><li>認知能力是打破貧窮與行為問題連結的關鍵切入點</li></ul>
+    <div class="keywords"><span class="keyword-pill">執行功能</span><span class="keyword-pill">社經地位</span><span class="keyword-pill">問題行為</span><span class="keyword-pill">認知發展</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">大腦發展與神經科學 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42474092" style="animation-delay:1.6s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Dev Orig Health Dis</span>
+      <span class="paper-date">2026 Jul 20</span>
+      <a class="paper-doi" href="https://doi.org/10.1017%2FS2040174426100622" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Developmental origins of ADHD: sex-specific influences of early life unpredictability on symptom profiles.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">ADHD 的發育起源：早期生活不可預測性對症狀特徵的性別特異性影響</p>
+    <p class="paper-authors">Sweiss EC, Vargas V, Sandman C, Poggi Davis E et al.</p>
+    <p class="paper-abstract">本研究從發育起源探討注意力不足過動症（ADHD）的成因，聚焦早期生活環境不可預測性如何對不同性別兒童產生特定症狀影響。早期不可預測性（如照料者行為不一致）是嚴重壓力源，會干擾神經系統發育。研究追蹤發現，早期不可預測性確實增加ADHD風險，但呈現顯著性別差異：男性更容易表現出多動與衝動症狀，女性則偏向注意力不集中與內在化症狀。此發現支持壓力生理學的發育可塑性概念，指出大腦對早期壓力的編碼因性別而異。這不僅豐富ADHD病理理論，也提示臨床診斷需考慮性別與早期環境壓力的交互作用，避免女性患者漏診。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">兒童</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">早期生活環境的不可預測性</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">早期生活環境穩定可預測的兒童</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">ADHD 症狀特徵（依性別區分）</div></div>
+</div>
+    <ul class="findings"><li>早期環境不可預測性是 ADHD 的重要發育風險因素</li><li>早期壓力對 ADHD 症狀的影響具有顯著的性別特異性</li><li>男性偏向多動衝動，女性偏向注意力缺陷與內在化症狀</li></ul>
+    <div class="keywords"><span class="keyword-pill">ADHD</span><span class="keyword-pill">早期不可預測性</span><span class="keyword-pill">性別差異</span><span class="keyword-pill">神經發育</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">跨代傳遞與社會流動 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42476151" style="animation-delay:2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Biopsychosoc Sci Med</span>
+      <span class="paper-date">2026 Jul 20</span>
+      <a class="paper-doi" href="https://doi.org/10.1097%2FPSY.0000000000001507" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Childhood Economic Mobility and Systemic Inflammation Among Men Who Experienced Low Income in Toddlerhood: The Moderating Role of Trait Hostility.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">幼年期低收入男性的童年經濟流動性與系統性發炎：特質敵意的調節作用</p>
+    <p class="paper-authors">Jones EJ, Miller P, Shaw DS, Votruba-Drzal E et al.</p>
+    <p class="paper-abstract">本研究探討童年期經濟流動性與系統性發炎的關聯，並檢驗特質敵意在其中的調節角色。生命早期低收入會導致長期生理壓力，而後續經濟向上流動能否修復此損害是研究核心。研究針對幼年低收入男性進行追蹤，測量成年後經濟變化與發炎標記物水準。結果發現，實現經濟向上流動者，其發炎水準低於持續貧困者。然而，此保護效果僅限於低特質敵意個體；高敵意特質者即使經濟流動，發炎水準依然偏高。此研究揭示心理特質在社經逆境生物嵌入過程中的關鍵調節作用，說明單純改善物質條件未必能逆轉貧窮印記，需同時關注心理介入。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">幼年期處於低收入狀態的男性</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">童年期經濟向上流動與特質敵意水準</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">持續處於低收入狀態者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">成年期系統性發炎標記物水準</div></div>
+</div>
+    <ul class="findings"><li>經濟向上流動有助於降低系統性發炎</li><li>高特質敵意會抵銷經濟流動帶來的抗發炎保護效果</li><li>社會流動的生理效益受制於個體心理特質</li></ul>
+    <div class="keywords"><span class="keyword-pill">經濟流動性</span><span class="keyword-pill">系統性發炎</span><span class="keyword-pill">特質敵意</span><span class="keyword-pill">生物嵌入</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="39721732" style="animation-delay:2.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Inj Prev</span>
+      <span class="paper-date">2026 Jul 20</span>
+      <a class="paper-doi" href="https://doi.org/10.1136%2Fip-2024-045319" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Is the Affordable Care Act Medicaid expansion in the USA associated with reductions in intimate partner violence victimisation?</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">美國《平價醫療法案》醫療補助擴張是否與親密伴侶暴力受害率的降低有關？</p>
+    <p class="paper-authors">Bevilacqua KG, Assini-Meytin LC, Nair R, Decker MR et al.</p>
+    <p class="paper-abstract">本研究評估美國《平價醫療法案》（ACA）醫療補助擴張政策是否與親密伴侶暴力（IPV）受害率降低有關。IPV與貧窮高度共病，缺乏醫療資源常使受害者被困於暴力中。研究利用差異中之差異法，比較實施與未實施擴張州的IPV受害率變化。結果發現，ACA醫療補助擴張顯著降低了女性IPV受害率。機制分析指出，擴張醫療保險不僅提高受害者接受醫療心理服務的可及性，更減輕了與伴侶間的經濟依賴，賦予受害者離開暴力關係的能力。此研究提供強而有力的政策評估證據，證明廣泛醫療保險作為結構性扶貧措施，能有效打破暴力與貧窮的恶性循環。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國育齡女性</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">ACA 醫療補助擴張政策</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未實施醫療補助擴張的州</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">親密伴侶暴力（IPV）受害率</div></div>
+</div>
+    <ul class="findings"><li>ACA 醫療補助擴張顯著降低女性 IPV 受害率</li><li>醫療可及性提升是減少暴力的關鍵機制</li><li>減輕經濟依賴賦予了受害者離開暴力的能力</li></ul>
+    <div class="keywords"><span class="keyword-pill">平價醫療法案</span><span class="keyword-pill">醫療補助擴張</span><span class="keyword-pill">親密伴侶暴力</span><span class="keyword-pill">政策評估</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
