@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-07-22</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-07-22">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-07-22">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-07-22</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 4 篇文獻</span>
+      <span class="stat-item">&#128193; 4 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本次分析的四篇文獻從多個維度探討了壓力、社會決定因素與心理健康的複雜關聯，為「貧窮印記」研究提供了宏觀與微觀視角。在宏觀社會層面，研究指出社經不平等直接加劇中高收入國家的焦慮症負擔，且在COVID-19危機中產生疊加效應，使弱勢群體精神科急診需求急劇上升，凸顯社會結構對心理健康的烙印。在微觀生物與行為層面，庫辛症候群研究為「壓力生物嵌入」提供實證，證實長期皮質醇暴露如何將壓力轉化為憂鬱與焦慮的生理病變；而青少年社交媒體研究則揭示現代行為模式如何干擾心理發展。總結而言，心理健康是生物機制、行為與社會不平等交織的產物，未來介入需兼顧社經弱勢緩解與壓力生理機制的早期阻斷。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">認知與行為</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42479800" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">PLoS One</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1371%2Fjournal.pone.0352932" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Anxiety disorder burden inequalities across middle- and high-income countries: 1990-2035 trends and projections.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">中高收入國家焦慮症負擔的不平等：1990-2035年趨勢與預測</p>
+    <p class="paper-authors">He Y, Liu L, Song W, Li Y et al.</p>
+    <p class="paper-abstract">本文透過1990至2035年的趨勢分析與預測，探討中高收入國家之間焦慮症負擔的不平等現象。研究利用全球疾病負擔數據，分析社會人口學指標與焦慮症失能調整生命年的關聯。結果顯示，儘管高收入國家整體負擔較高，但中等收入國家的增長率最為顯著，且國家間的差異隨時間擴大。社會經濟因素是驅動這些不平等的核心要素。研究預測若不進行針對性的公共衛生介入，到2035年這種因貧富差距導致的焦慮症負擔不平等將進一步加劇，呼籲各國應根據自身經濟發展階段制定特定的心理健康政策，以減輕社會經濟不平等對心理健康的負面影響。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">中高收入國家人口</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社會經濟不平等與發展水平</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同收入水平國家間的比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">焦慮症失能調整生命年（DALYs）的差異與未來趨勢</div></div>
+</div>
+    <ul class="findings"><li>中等收入國家焦慮症負擔增長率顯著高於高收入國家</li><li>國家間焦慮症負擔的不平等現象隨時間呈現擴大趨勢</li><li>社會人口學指數與焦慮症負擔密切相關</li><li>預測至2035年不平等狀況將進一步加劇</li></ul>
+    <div class="keywords"><span class="keyword-pill">焦慮症</span><span class="keyword-pill">社會經濟不平等</span><span class="keyword-pill">疾病負擔</span><span class="keyword-pill">全球疾病負擔</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42479701" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">PLoS One</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1371%2Fjournal.pone.0324305" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">The effect of COVID-19 and socioeconomic inequalities on emergency department accesses for psychiatric conditions.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">COVID-19與社會經濟不平等對精神科急診就醫的影響</p>
+    <p class="paper-authors">Schepisi C, Ventura M, Di Napoli A, Aragona M et al.</p>
+    <p class="paper-abstract">本研究旨在探討COVID-19疫情與社會經濟不平等對精神科急診就醫次數的交互影響。研究分析地區的急診數據，比較疫情前後不同社會經濟弱勢地區民眾因精神疾病就醫的變化。結果發現，疫情期間整體精神科急診量發生顯著變化，且社會經濟地位較低的群體受到的衝擊最為嚴重。社會經濟不平等不僅獨立增加精神疾病的急診需求，更與疫情產生疊加效應，導致弱勢群體的心理危機急劇惡化。此研究強調了在公共衛生危機期間，社會經濟決定因素對心理健康服務利用的深遠影響，並呼籲未來在制定危機應對策略時，必須將社會脆弱性納入考量，以避免進一步擴大心理健康不平等。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">疫情期間有精神科急診需求之民眾</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">COVID-19疫情與社會經濟不平等（雙重暴露）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">疫情前不同社經地位群體的急診量比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">精神科急診就醫次數的變化</div></div>
+</div>
+    <ul class="findings"><li>COVID-19疫情顯著改變了精神科急診的整體就醫模式</li><li>低社經地位地區的精神科急診需求受疫情衝擊最大</li><li>社經不平等與疫情對心理健康產生了嚴重的疊加效應</li><li>弱勢群體在公共衛生危機中面臨更高的心理危機風險</li></ul>
+    <div class="keywords"><span class="keyword-pill">COVID-19</span><span class="keyword-pill">社會經濟不平等</span><span class="keyword-pill">精神科急診</span><span class="keyword-pill">心理健康不平等</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">認知與行為 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42479007" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Adolesc Health</span>
+      <span class="paper-date">2026 Jul 21</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20S1054-139X(26)00162-X.%20doi%3A%2010.1016%2Fj.jadohealth.2026.04.019" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Long-Term Consequences of Time Spent on Social Media in Adolescence on Mental Health in Young Adulthood: A Cohort Study From Sweden.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">青少年時期社交媒體使用時間對年輕成年期心理健康的長期後果：一項來自瑞典的世代研究</p>
+    <p class="paper-authors">Zetterqvist M, Raninen J, Gripe I, Ramstedt M et al.</p>
+    <p class="paper-abstract">本項來自瑞典的世代研究探討青少年時期使用社交媒體的時間長度，對年輕成年期心理健康所造成的長期後果。研究透過長期追蹤青少年至成年早期，控制了基線心理健康狀態與其他混淆變項，評估每日社交媒體使用時數與後續憂鬱、焦慮等心理健康問題的關聯。研究結果顯示，青少年時期過度使用社交媒體與成年早期較差的心理健康狀態顯著相關，且存在劑量反應關係。這項發現支持了社交媒體替代假說，即過度投入虛擬社交可能剝奪了現實生活中對大腦發展與心理韌性至關重要的經歷。研究建議家長與政策制定者應重視青少年時期的螢幕時間管理，以預防未來的精神疾病風險。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">青少年至年輕成年人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">青少年時期社交媒體使用時間</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低頻率或無使用社交媒體者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">年輕成年期的心理健康狀態（憂鬱與焦慮）</div></div>
+</div>
+    <ul class="findings"><li>青少年期社交媒體使用時間過長會增加成年早期心理健康問題風險</li><li>社交媒體使用時間與後續心理健康惡化存在劑量反應關係</li><li>控制基線心理健康狀態後，此長期負面影響依然顯著</li><li>研究支持社交媒體替代現實生活經歷對心理發展有害的假說</li></ul>
+    <div class="keywords"><span class="keyword-pill">社交媒體</span><span class="keyword-pill">青少年</span><span class="keyword-pill">心理健康</span><span class="keyword-pill">世代研究</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42478884" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Eur J Endocrinol</span>
+      <span class="paper-date">2026 Jul 21</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20lvag125.%20doi%3A%2010.1093%2Fejendo%2Flvag125" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Depression and Anxiety in Patients with Endogenous Cushing Syndrome: A Nationwide Matched Cohort Study Using Affective Drug Dispensations.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">內源性庫辛症候群患者的憂鬱與焦慮：一項使用情感性藥物配發資料的全國性配對世代研究</p>
+    <p class="paper-authors">Kaminer K, Shimon I, Rudman Y, Diker-Cohen T et al.</p>
+    <p class="paper-abstract">本研究透過全國性配對世代研究，探討內源性庫辛症候群（長期皮質醇過度分泌）患者罹患憂鬱症與焦慮症的風險。研究利用處方配發資料庫，將患者與一般人口配對，追蹤其情感性藥物的使用情況。結果顯示，庫辛症候群患者領取抗憂鬱與抗焦慮藥物的比率顯著高於對照組。這表明長期暴露於高水平的壓力荷爾蒙（皮質醇）會直接損害大腦情緒調節迴路，導致精神病理學發生。此研究為「壓力生物嵌入」模型提供了強烈的人體實證，證實慢性壓力生理學機制在引發憂鬱與焦慮中的關鍵角色，有助於理解社會壓力如何轉化為生物學層面的傷害。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">內源性庫辛症候群患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">長期皮質醇過度分泌（慢性高壓力荷爾蒙暴露）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無庫辛症候群之一般人口（配對對照組）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">憂鬱症與焦慮症藥物配發率</div></div>
+</div>
+    <ul class="findings"><li>庫辛症候群患者罹患憂鬱與焦慮的風險顯著高於一般人口</li><li>長期皮質醇過度分泌是引發情感障礙的直接生理風險因子</li><li>壓力荷爾蒙對大腦情緒調節機制具有實質性的損害</li><li>研究為慢性壓力導致精神疾病的生物嵌入機制提供了人類實證</li></ul>
+    <div class="keywords"><span class="keyword-pill">庫辛症候群</span><span class="keyword-pill">皮質醇</span><span class="keyword-pill">壓力生理學</span><span class="keyword-pill">憂鬱症</span><span class="keyword-pill">焦慮症</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
