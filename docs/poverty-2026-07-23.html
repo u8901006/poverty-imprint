@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-07-23</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-07-23">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-07-23">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-07-23</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 12 篇文獻</span>
+      <span class="stat-item">&#128193; 2 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>這份文獻涵蓋了貧窮印記的多個維度，特別是在社會決定因素、心理健康及政策介入方面。研究強調了環境污穢（如磚窯）、居住條件（貧民窟/多病共存）以及社會排斥（種族微侵犯、跨性別人士 HIV）如何構成持續的生理與心理壓力源。此外，心理健康狀態直接影響生物健康結果，如心血管疾病患者的服藥依從性。政策介入方面，工作場所安全、法律援助及社區賦權（如 CHIMES 干預）被證實能有效改善弱勢群體的健康與福祉。這些發現突顯了社會結構不平等對健康的深刻影響，呼籲醫療與公共政策必須從單一治療轉向環境與社會系統性的改變，以打破貧窮印記的負面循環。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:71%">5 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">7 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">5 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42481785" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Environ Geochem Health</span>
+      <span class="paper-date">2026 Jul 22</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20475.%20doi%3A%2010.1007%2Fs10653-026-03371-w" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Artisanal brick kilns in Mexico: socio-environmental impacts, health effects, and regulatory challenges</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">墨西哥傳統磚窯：社會環境影響、健康影響與監管挑戰</p>
+    <p class="paper-authors">Saldaña-Villanueva K, González-Palomo AK, Méndez-Rodríguez KB, Pérez-Vázquez FJ</p>
+    <p class="paper-abstract">本文檢視墨西哥傳統磚窯對社會環境、健康及法規監管帶來的影響。研究發現，這些工廠通常位於偏鄉，工人多為貧困人口，暴露於高濃度粉塵與高溫環境中，健康風險極高。現行法規執行不力，導致環境健康不平等加劇。研究呼籲加強對這些脆弱勞動力的環境保護與勞工權益監管。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">墨西哥傳統磚窯工人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">磚窯工作環境（粉塵、高溫、弱勢勞動）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">一般大眾或優質工作環境</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">社會環境影響與健康效應的評估</div></div>
+</div>
+    <ul class="findings"><li>磚窯工人暴露於高濃度粉塵與高溫環境</li><li>貧困勞動力在法規執行上處於劣勢</li><li>環境壓力源導致環境健康不平等加劇</li></ul>
+    <div class="keywords"><span class="keyword-pill">磚窯</span><span class="keyword-pill">環境健康</span><span class="keyword-pill">勞工權益</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42483003" style="animation-delay:0.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMJ Public Health</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1136%2Fbmjph-2025-002878" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Effects of household and neighbourhood attributes on four definitions of multimorbidity: a comparative multilevel analysis of linked clinical and census data of Wales</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">居住與社區屬性對四種多病共存定義的影響：威爾斯臨床與普查數據的多層次分析</p>
+    <p class="paper-authors">Abubakar EO, MacRae C, Zheng C, Rowley-Abel L et al.</p>
+    <p class="paper-abstract">本研究利用威爾斯連結的臨床與人口普查數據，比較居住環境與社區屬性對多病共存定義的影響。研究發現，居住在貧困、衰敗社區的居民，其多病共存的發生率顯著更高。環境壓力源與健康社會決定因素緊密相連，改變居住環境可能對預防與管理慢性疾病具有重大意義。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">威爾斯居民</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">居住條件與社區屬性（貧困/環境品質）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">優質居住條件</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">多病共存發生率與嚴重程度</div></div>
+</div>
+    <ul class="findings"><li>貧困居住條件顯著增加多病共存風險</li><li>環境因素對健康影響具有跨層級效應</li><li>社區衰敗是生物老化的社會指標之一</li></ul>
+    <div class="keywords"><span class="keyword-pill">多病共存</span><span class="keyword-pill">社區環境</span><span class="keyword-pill">健康社會決定因素</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42484193" style="animation-delay:0.16s">
+    <div class="paper-meta">
+      <span class="paper-journal">Rev Bras Enferm</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1590%2F0034-7167-2025-0281" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Social determinants of health that permeate adolescent students&#39; mental distress</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">滲透青少年學生心理困擾的社會決定因素</p>
+    <p class="paper-authors">Silva LMR, Martins SS, Rezio LA, Oliveira PR et al.</p>
+    <p class="paper-abstract">本文分析了滲透青少年學生心理困擾的主要社會決定因素。研究指出，家庭經濟狀況、學業壓力以及社區支持系統的缺失，是導致青少年心理危機的重要推手。特別是處於經濟弱勢或邊緣化的學生，更容易受到多重壓力源的影響。改善這些社會決定因素是減少青少年心理健康的關鍵策略。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">青少年學生</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社會決定因素（家庭經濟、學業壓力、社區支持）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">有利因素（經濟穩定、良好支持）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理困擾與心理健康狀態</div></div>
+</div>
+    <ul class="findings"><li>經濟弱勢學生心理風險顯著增加</li><li>社區支持系統對青少年心理防禦至關重要</li><li>學校環境與家庭背景的交互作用影響心理健康</li></ul>
+    <div class="keywords"><span class="keyword-pill">青少年心理健康</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">弱勢群體</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42484189" style="animation-delay:0.24s">
+    <div class="paper-meta">
+      <span class="paper-journal">Rev Bras Enferm</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1590%2F0034-7167-2025-0035" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Health, well-being, and environmental working conditions in the face of COVID-19: sustainable development goal three</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">COVID-19 影響下的健康、福祉與環境工作條件（SDG 3）</p>
+    <p class="paper-authors">Daher DV, Araújo MHM, Brito IDS, Teixeira ER et al.</p>
+    <p class="paper-abstract">本研究評估 COVID-19 疫情下，健康、福祉及環境工作條件對員工的影響（聚焦 SDG 3）。研究發現，工作條件的安全程度直接影響員工的心理健康與身體狀況。不安全的環境與缺乏彈性的工作安排會加劇工作壓力，造成健康不平等。因此，建立安全與永續的工作環境是當務之急。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">工作者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">COVID-19 時期的環境與工作條件</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">疫情前的常態工作條件</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">健康狀況、福祉與工作壓力</div></div>
+</div>
+    <ul class="findings"><li>疫情加劇了環境工作條件對健康的負面影響</li><li>缺乏彈性工作安排導致健康不平等擴大</li><li>安全的工作環境是心理健康的基礎底線</li></ul>
+    <div class="keywords"><span class="keyword-pill">COVID-19</span><span class="keyword-pill">工作條件</span><span class="keyword-pill">健康不平等</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42484799" style="animation-delay:0.32s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Community Health</span>
+      <span class="paper-date">2026 Jul 22</span>
+      <a class="paper-doi" href="https://doi.org/10.1007%2Fs10900-026-01604-8" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Prevalence of Civil Legal Needs and Assistance Among Low-Income US Veterans: Results from the National Veterans Homeless and Poverty Experiences Survey</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">美國低收入退伍軍人的民事法律需求與援助：全國退伍軍人無家可歸與貧困經驗調查結果</p>
+    <p class="paper-authors">Cruz MR, Tsai J</p>
+    <p class="paper-abstract">本研究針對美國低收入退伍軍人進行全國調查，探討其民事法律需求與援助狀況。結果顯示，這群退伍軍人面臨著極高的民事法律需求（如住房、親屬撫養），但獲得法律援助的比例極低。法律需求是導致貧困循環的重要驅動力。建議政策應擴大針對退伍軍人的法律援助服務。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">低收入美國退伍軍人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">民事法律需求與援助服務</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高收入退伍軍人</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">法律援助獲得率與貧困狀況</div></div>
+</div>
+    <ul class="findings"><li>退伍軍人面臨極高的民事法律需求但援助不足</li><li>法律問題是維持低收入的關鍵障礙</li><li>法律援助服務對於終止貧困循環至關重要</li></ul>
+    <div class="keywords"><span class="keyword-pill">退伍軍人</span><span class="keyword-pill">法律援助</span><span class="keyword-pill">社會流動</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">7 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42482327" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Int J Qual Stud Health Well-being</span>
+      <span class="paper-date">2026 Dec 31</span>
+      <a class="paper-doi" href="https://doi.org/10.1080%2F17482631.2026.2706909" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Mental health first aid in the workplace: a reflexive thematic analysis of UK workers&#39; experiences</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">工作場所的心理健康第一援助：英國員工經驗的反思性主題分析</p>
+    <p class="paper-authors">Atanda O, Vangeli E, Brown SD, Callaghan P et al.</p>
+    <p class="paper-abstract">本文旨在分析英國員工對工作場所心理健康第一援助（MHFA）的經驗與反思。研究顯示，儘管員工普遍認同 MHFA 的價值，但在實際應用中仍面臨認知誤區與支持不足的障礙。雇主的支持承諾與員工的實際感受存在落差。結論指出，推動工作場所心理健康政策需從雇主責任與員工參與雙管齊下，改善組織氛圍以降低職業倦怠。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">英國員工</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">工作場所心理健康第一援助（MHFA）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未接受 MHFA 訓練或現有模式</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">員工的經驗、認知與感知支持度</div></div>
+</div>
+    <ul class="findings"><li>員工渴望更多心理支持但常感不足</li><li>雇主承諾與員工感受存在認知落差</li><li>認知誤區是實施 MHFA 的主要障礙</li></ul>
+    <div class="keywords"><span class="keyword-pill">心理健康第一援助</span><span class="keyword-pill">工作場所</span><span class="keyword-pill">職業倦怠</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42319282" style="animation-delay:0.48s">
+    <div class="paper-meta">
+      <span class="paper-journal">Am J Nurs</span>
+      <span class="paper-date">2026 Aug 1</span>
+      <a class="paper-doi" href="https://doi.org/10.1097%2FAJN.0000000000000350" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Racial Microaggressions in Nursing: A Scoping Review</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">護理中的種族微侵犯：範圍審查</p>
+    <p class="paper-authors">Walsh H</p>
+    <p class="paper-abstract">這篇範圍審查探討護理人員工作中遭遇的種族微侵犯。研究發現少數族裔護理人員常遭受微侵犯，這顯著加劇其職業倦怠感。護理人員經常因無法有效處理微侵犯而感到情緒耗竭。建議護理教育與臨床實務中應納入多元化與反種族主義的培訓，以提升照護環境的包容性與護理人員的心理健康。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">少數族裔護理人員</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">遭遇種族微侵犯</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無微侵犯遭遇者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">職業倦怠感與情緒耗竭程度</div></div>
+</div>
+    <ul class="findings"><li>種族微侵犯在護理工作中頻繁發生</li><li>微侵犯直接導致護理人員職業倦怠</li><li>多元文化培訓對緩解微侵犯影響至關重要</li></ul>
+    <div class="keywords"><span class="keyword-pill">種族微侵犯</span><span class="keyword-pill">護理人員</span><span class="keyword-pill">職業倦怠</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42487401" style="animation-delay:0.56s">
+    <div class="paper-meta">
+      <span class="paper-journal">AIDS Care</span>
+      <span class="paper-date">2026 Jul 22</span>
+      <a class="paper-doi" href="https://doi.org/10.1080%2F09540121.2026.2696879" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Patient-related factors leading to AIDS from HIV infection among transgenders in Pakistan</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">巴基斯坦跨性別族群中，導致 HIV 感染者發展為艾滋病（AIDS）的病患相關因素</p>
+    <p class="paper-authors">Muzaffar H, Bukhsh A, Shahid N, Aqeel M et al.</p>
+    <p class="paper-abstract">本研究關注巴基斯坦跨性別族群中，導致 HIV 感染者發展為艾滋病（AIDS）的病患相關因素。研究指出，社會污名化、缺乏社會支持以及醫療可及性差是主要障礙。患者在面對 HIV 療療與醫療服務時，常因恐懼遭拒絕而延誤就醫。這反映了社會決定因素如何深刻影響 HIV 感染者的健康結果與疾病進程。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">巴基斯坦跨性別族群 HIV 感染者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">病患相關因素（社會污名、支持不足）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">一般 HIV 感染者或非跨性別族群</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">發展為艾滋病的風險與進展速度</div></div>
+</div>
+    <ul class="findings"><li>社會污名化是延誤 HIV 治療的主要障礙</li><li>醫療可及性差導致健康結果惡化</li><li>跨性別族群面臨獨特的結構性健康壓力</li></ul>
+    <div class="keywords"><span class="keyword-pill">跨性別健康</span><span class="keyword-pill">社會污名化</span><span class="keyword-pill">HIV 艾滋病</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42482230" style="animation-delay:0.64s">
+    <div class="paper-meta">
+      <span class="paper-journal">Lipids Health Dis</span>
+      <span class="paper-date">2026 Jul 22</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs12944-026-03017-x" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Mental health-related quality of life is associated with sustained lipid-lowering therapy adherence after acute coronary syndrome</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">心理健康相關生活品質與急性冠狀動脈症候群後持續降膽固醇藥物依從性之關聯</p>
+    <p class="paper-authors">Ali AH, Tak KA, Taylor-Yeremeeva EM, Shao CR et al.</p>
+    <p class="paper-abstract">本研究探討急性冠狀動脈症候群（ACS）患者心理健康相關生活品質與持續降膽固醇藥物依從性之間的關聯。結果顯示，心理健康相關生活品質較低的患者，其長期降膽固醇藥物的依從性顯著較差。這暗示改善患者心理健康狀態是提升心血管長期管理成效的關鍵，建議臨床醫師應將心理健康評估納入常規追蹤。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">急性冠狀動脈症候群患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">心理健康相關生活品質（HRQoL）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">心理健康相關生活品質較高者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">降膽固醇藥物的依從性與心血管結果</div></div>
+</div>
+    <ul class="findings"><li>心理健康較差顯著降低藥物依從性</li><li>心理干預有助於改善慢性病管理結果</li><li>生物心理交互作用在心血管疾病中極其重要</li></ul>
+    <div class="keywords"><span class="keyword-pill">心理健康相關生活品質</span><span class="keyword-pill">藥物依從性</span><span class="keyword-pill">心血管疾病</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42481196" style="animation-delay:0.72s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMJ Open</span>
+      <span class="paper-date">2026 Jul 21</span>
+      <a class="paper-doi" href="https://doi.org/10.1136%2Fbmjopen-2025-110262" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Lived experiences of hysterectomy and its effects on the physical, psychological, social and marital life of women under 40 years of age: a qualitative phenomenological study conducted in Lahore, Pakistan</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">巴基斯坦拉合爾 40 歲以下婦女子宮切除術的經驗及其對身心、社交與婚姻生活的影響</p>
+    <p class="paper-authors">Aftab MM, Shahzad RB, Ali S, Elahi NN et al.</p>
+    <p class="paper-abstract">本研究透過現象學方法，探討巴基斯坦年輕婦女接受子宮切除術後的經驗。結果顯示，手術不僅造成身體機能損傷，更嚴重影響了心理狀態、社交生活及婚姻關係。婦女普遍表達了對身體形象與性功能的焦慮，以及對未來生活的擔憂。建議未來應提供更全面的術前諮詢與術後心理支持。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">巴基斯坦年輕婦女（&lt;40歲）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">子宮切除術</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未接受手術者或一般群體</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">身體、心理、社交與婚姻生活品質的改變</div></div>
+</div>
+    <ul class="findings"><li>年輕婦女面臨特殊的生理與心理調適挑戰</li><li>手術後對性功能與婚姻關係造成負面衝擊</li><li>術前諮詢與術後支持系統的必要性極高</li></ul>
+    <div class="keywords"><span class="keyword-pill">子宮切除術</span><span class="keyword-pill">婦女健康</span><span class="keyword-pill">身心社會福祉</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42484133" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">Cad Saude Publica</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1590%2F0102-311XEN090525" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Validation of the Edinburgh Postnatal Depression Scale to assess maternal prenatal depression symptoms in Brazil: an item response theory analysis</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">巴西產前抑鬱量表的有效性驗證：產前抑鬱症狀的項目反應理論分析</p>
+    <p class="paper-authors">Baldisserotto ML, Theme-Filha MM, Amaral ACS, Papaterra M</p>
+    <p class="paper-abstract">本研究利用項目反應理論驗證巴西產前抑鬱量表（EPDS）在評估孕婦產前抑鬱症狀上的有效性。分析結果顯示，該量表具備良好的心理測量特性，能準確區分不同抑鬱程度的孕婦。這證實了在巴西本土文化背景下，EPDS 仍是一個可靠且實用的篩查工具，有助於早期識別產前心理風險。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">巴西孕婦</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">產前抑鬱量表（EPDS）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未使用該量表或替代評估工具</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">產前抑鬱症狀的準確測量與區分能力</div></div>
+</div>
+    <ul class="findings"><li>EPDS 在巴西孕婦群體中具備良好的心理測量品質</li><li>量表能有效區分不同嚴重程度的產前抑鬱</li><li>證實了跨文化工具本土化驗證的重要性</li></ul>
+    <div class="keywords"><span class="keyword-pill">產前抑鬱</span><span class="keyword-pill">心理健康篩查</span><span class="keyword-pill">心理測量學</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42482009" style="animation-delay:0.88s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMC Public Health</span>
+      <span class="paper-date">2026 Jul 21</span>
+      <a class="paper-doi" href="https://doi.org/10.1186%2Fs12889-026-28349-2" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">The combined HIV services and microenterprise for equitable and sustainable recovery (CHIMES) intervention for sober living home residents: a CFIR-guided qualitative study to inform a pilot assessment in Tanzania</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">針對清醒住宅居民的 CHIMES 干預（結合 HIV 服務與微型企業）：針對坦尚尼亞的 CFIR 指導定性研究</p>
+    <p class="paper-authors">Janson S, Glover W, Mushy SE, Mayo-Wilson LJ et al.</p>
+    <p class="paper-abstract">本研究旨在設計並初步評估針對坦尚尼亞清醒住宅居民的 CHIMES 干預（結合 HIV 服務與微型企業）。定性研究顯示，將醫療服務與經濟賦權結合，能顯著提升居民的康復信心與自我效能。CFIR 框架指出，環境結構與資源支持是實施此介入成功與否的關鍵。該模式展示了在康復社區進行綜合干預的潛力。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">坦尚尼亞清醒住宅居民</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">CHIMES 干預（HIV 服務+微型企業）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">標準清醒住宅護理</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">康復信心、自我效能與服務可及性</div></div>
+</div>
+    <ul class="findings"><li>醫療與經濟賦權結合提升康復效果</li><li>環境結構與資源支持是干預成功的關鍵</li><li>該模式適用於資源有限的康復社區</li></ul>
+    <div class="keywords"><span class="keyword-pill">CHIMES 干預</span><span class="keyword-pill">清醒住宅</span><span class="keyword-pill">經濟賦權</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
