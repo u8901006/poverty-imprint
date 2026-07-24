@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-07-24</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-07-24">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-07-24">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-07-24</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 5 篇文獻</span>
+      <span class="stat-item">&#128193; 4 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本次分析的五篇文獻從不同維度揭示了健康不平等的機制，與「貧窮印記」核心概念高度相關。宏觀層面上，里約熱內盧的研究突顯種族與地域交織導致糧食不安全，這是貧窮最直接的物質表徵與社區剝奪。跨代傳遞機制方面，母體健康與後代心理福祉的縱向研究證實了健康劣勢的代際延續，呼應生物嵌入理論。脆弱群體方面，HIV感染者於疫情中的創傷後壓力症狀，顯示累積性弱勢如何放大壓力反應。其餘兩篇分別探討偏鄉兒童遠距醫療與護理人員幸福感，間接指向改善資源匱乏地區健康落差與維繫基層醫療勞動力的介入策略。總體而言，這些研究強調需從結構性不平等、代際傳遞與資源重分配著手，以緩解貧窮對健康的深遠影響。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">跨代傳遞與社會流動</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42492040" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Am J Public Health</span>
+      <span class="paper-date">2026 Jul 23</span>
+      <a class="paper-doi" href="https://doi.org/10.2105%2FAJPH.2026.308566" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Racial and Territorial Inequalities in Food Insecurity in One of the Largest Metropolises in Latin America: Rio de Janeiro, Brazil, 2023-2024.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">拉丁美洲最大都會區之一糧食不安全的種族與地域不平等：巴西里約熱內盧，2023-2024年</p>
+    <p class="paper-authors">Câmara JHR, de Castro Junior PCP, da Silva Luiz GB, Suéte Matos YAC et al.</p>
+    <p class="paper-abstract">本研究探討巴西里約熱內盧這個拉丁美洲大都市中，糧食不安全的種族與地域不平等現象。研究資料收集自2023至2024年，精確描繪出特定種族群體與地理區域在獲取足夠且具營養食物上的顯著差異。糧食不安全作為貧窮的核心指標，不僅反映經濟剝奪，更深層連結至歷史與結構性的社會排斥。研究發現，非白人族群及特定邊緣化領土的居民面臨更高的糧食不安全風險。此結果強調，在巨型都市中，空間與種族維度交織成為決定食物取得權的關鍵社會決定因素，這種地域性的資源匱乏會在居民身上留下深遠的貧窮印記，進而影響其整體生理健康與社會流動機會。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">里約熱內盧都市居民</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">種族與地域背景（結構性社會決定因素）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同種族與地域群體間的比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">糧食不安全發生率與不平等程度</div></div>
+</div>
+    <ul class="findings"><li>糧食不安全在特定種族群體間存在顯著差異</li><li>地域因素與種族因素交織加劇食物取得障礙</li><li>巨型都市內存在明顯的空間健康與資源不平等</li></ul>
+    <div class="keywords"><span class="keyword-pill">糧食不安全</span><span class="keyword-pill">種族不平等</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">空間剝奪</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">跨代傳遞與社會流動 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42493691" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Qual Life Res</span>
+      <span class="paper-date">2026 Jul 23</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20232.%20doi%3A%2010.1007%2Fs11136-026-04339-0" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Intergenerational associations between maternal health and offspring mental wellbeing: evidence from a nationally representative longitudinal study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">母體健康與後代心理福祉的跨代關聯：來自全國代表性縱向研究的證據</p>
+    <p class="paper-authors">Seema M, Afoakwah C, Byrnes J</p>
+    <p class="paper-abstract">本研究透過全國代表性的縱向資料，探討母親健康狀況與子女心理健康福祉之間的跨代關聯。研究聚焦於母親的生理與心理健康如何作為早期環境暴露，進而影響子代長大後的心理適應狀態。這種跨代傳遞機制是「貧窮印記」理論的核心，揭示了健康劣勢如何透過生物嵌入與社會學習途徑延續。研究結果指出，母親的健康劣勢不僅限制其自身的社會參與，更會對後代的心理發展產生長期負面影響，形成跨代際的循環。這強調了打破貧窮循環必須關注母親的健康投資，因為保護母親健康等同於預防下一代心理健康問題與社會流動受阻。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">母親與其子女</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">母親的身心健康狀況</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">母親健康狀況良好與不佳的比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">子女的長期心理健康福祉</div></div>
+</div>
+    <ul class="findings"><li>母親健康狀況與子女心理健康呈顯著跨代關聯</li><li>母親健康劣勢可能透過生物與環境雙重路徑傳遞給下一代</li><li>改善母親健康是促進子代社會流動與心理適應的關鍵切入點</li></ul>
+    <div class="keywords"><span class="keyword-pill">跨代傳遞</span><span class="keyword-pill">母親健康</span><span class="keyword-pill">心理福祉</span><span class="keyword-pill">縱向研究</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42494072" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">AIDS Res Hum Retroviruses</span>
+      <span class="paper-date">2026 Jul 23</span>
+      <a class="paper-doi" href="https://doi.org/10.1177%2F08892229261472161" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Post-Traumatic Stress Symptoms Related to the COVID-19 Pandemic in Persons Living and Aging with HIV.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">感染HIV且隨之老化者中與COVID-19大流行相關的創傷後壓力症狀</p>
+    <p class="paper-authors">Walmsley S, Mabipoor M, Wai A, Cooper C et al.</p>
+    <p class="paper-abstract">本研究探討感染HIV且隨之老化的族群在COVID-19疫情期間所經歷的創傷後壓力症狀。HIV感染者往往屬於社會經濟弱勢群體，面臨污名化與資源缺乏，這些累積性的社會壓力構成了深刻的貧窮印記。疫情作為一種急性外部壓力源，對這群已具備高基線壓力負荷的個體造成加乘效應。研究評估了該族群在疫情中的心理反應，發現他們展現出顯著的創傷後壓力症狀。此結果印證了「雙重污名」與累積性弱勢會導致更脆弱的壓力生理反應，顯示出慢性疾病、社會邊緣化與突發公共衛生危機交織下，對弱勢群體心理健康造成的嚴重破壞。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">感染HIV且隨之老化的個體</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">COVID-19大流行作為急性壓力源</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">疫情前後或不同壓力暴露程度的比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">創傷後壓力症狀的發生率與嚴重程度</div></div>
+</div>
+    <ul class="findings"><li>HIV老化族群在疫情中出現顯著的創傷後壓力症狀</li><li>累積性社會弱勢加劇了對公共衛生危機的心理脆弱性</li><li>慢性疾病與急性壓力源交織產生加乘的健康風險</li></ul>
+    <div class="keywords"><span class="keyword-pill">創傷後壓力症狀</span><span class="keyword-pill">HIV</span><span class="keyword-pill">疫情影響</span><span class="keyword-pill">累積性弱勢</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42490579" style="animation-delay:0.88s">
+    <div class="paper-meta">
+      <span class="paper-journal">PLoS One</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1371%2Fjournal.pone.0354376" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title">Identify perceived strategies for promoting happiness among nurses: Protocol for a mixed-methods study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">識別促進護理人員幸福感的感知策略：一項混合方法研究的方案</p>
+    <p class="paper-authors">Kazemi SS, Ranjbar M, Rafighi M</p>
+    <p class="paper-abstract">本研究為一項混合方法學研究方案，旨在識別促進護理人員幸福感的策略。雖然未直接探討貧窮，但護理人員常面臨職場剝削、過勞與資源不足，這些皆是結構性壓力的展現。護理人員的心理健康直接影響其提供醫療服務的品質，特別是對弱勢群體的照護。研究擬透過質性與量化並行的方法，挖掘能提升護理人員快樂與職業滿意度的具體策略。在貧窮印記的廣義框架下，基層醫療勞動力的健康維護是確保邊緣社區獲得優質醫療資源的先決條件，減少醫療系統內的剝削有助於間接緩解弱勢患者的健康不平等。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">護理人員</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">促進幸福感的潛在策略與工作環境因素</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同背景或採用不同應對策略的護理人員比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">護理人員的幸福感與快樂程度感知</div></div>
+</div>
+    <ul class="findings"><li>護理人員面臨結構性職場壓力影響其幸福感</li><li>需採用混合方法深入探討主觀幸福感的來源與促進策略</li><li>提升護理人員福祉對整體醫療體系品質具間接影響</li></ul>
+    <div class="keywords"><span class="keyword-pill">護理人員</span><span class="keyword-pill">職場幸福感</span><span class="keyword-pill">混合方法</span><span class="keyword-pill">結構性壓力</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42492057" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">JMIR Pediatr Parent</span>
+      <span class="paper-date">2026 Jul 23</span>
+      <a class="paper-doi" href="https://doi.org/10.2196%2F89927" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Multidisciplinary Telehealth for Pediatric Developmental and Mental Health Care in Rural and Remote Australia: Interview Study Among Caregivers and Service Providers.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">澳洲農村與偏遠地區兒童發展與心理健康照護的跨專業遠距醫療：照顧者與服務提供者的訪談研究</p>
+    <p class="paper-authors">Sivak L, Zimmet M, Dear B, Evans R et al.</p>
+    <p class="paper-abstract">本研究透過對澳洲農村與偏遠地區的照顧者與服務提供者進行訪談，探討跨專業遠距醫療在兒童發展與心理健康照護中的應用。偏遠地區常伴隨醫療資源匱乏、交通不便與經濟條件受限，這些都是貧窮與空間剝奪的特徵。遠距醫療作為一種政策介入工具，旨在打破地理障礙，將專業的兒童心理與發展資源引入資源不足的地區。研究揭示了在真實世界情境下，利益關係人對遠距醫療的接受度、實施障礙與成功要素。此介入模式不僅能早期識別偏遠地區兒童的發展遲緩與心理問題，更能有效減輕弱勢家庭的照顧負擔，是抹除地域性貧窮印記的重要創新策略。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">農村與偏遠地區的兒童及其照顧者、服務提供者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">跨專業遠距醫療服務模式</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">傳統面對面醫療服務模式</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">兒童發展與心理健康照護的可近性與服務體驗</div></div>
+</div>
+    <ul class="findings"><li>遠距醫療能有效突破偏鄉兒童心理健康的地理資源屏障</li><li>照顧者與提供者對跨專業遠距模式有特定的實作期待與挑戰</li><li>創新服務交付模式是減輕偏遠弱勢家庭照顧負擔的關鍵</li></ul>
+    <div class="keywords"><span class="keyword-pill">遠距醫療</span><span class="keyword-pill">兒童心理健康</span><span class="keyword-pill">偏遠地區</span><span class="keyword-pill">資源可近性</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
