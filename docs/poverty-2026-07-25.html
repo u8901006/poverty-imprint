@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-07-25</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-07-25">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-07-25">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-07-25</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 5 篇文獻</span>
+      <span class="stat-item">&#128193; 3 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本次分析的五篇文獻從「貧窮印記」的廣泛視角，揭示了社會環境、健康介入與身心機制的複雜交互作用。在社會決定因素層面，研究指出社區貧窮對個體的影響具有長「半衰期」，持續的貧窮暴露會加速生物老化，強化了生命歷程早期預防的緊迫性。在政策與臨床介入方面，將早期關係健康計畫整合至兒科照護，展現了打破弱勢代際循環的潛力；而職業介入的審查則強調職場環境改善對緩解心理壓力的重要性。面對COVID-19危機，受傷老年人心理狀態的穩定性，暗示結構化的醫療支持能緩衝社會孤立的衝擊；瑜伽治療師調查則補充了身心介入在基層的潛力。總體而言，這些研究呼籲跨生命週期的多層次介入，以對抗貧窮與壓力帶來的深遠印記。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">表觀遺傳與生物老化</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">3 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42497181" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">PLoS One</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1371%2Fjournal.pone.0354239" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Randomized single-blind study to examine the implementation and effectiveness of integrating evidence-based early relational health programs in pediatrics for families with low incomes: A clinical trial protocol.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">隨機單盲研究：探討在兒科為低收入家庭整合實證早期關係健康計畫的實施與有效性：臨床試驗協議</p>
+    <p class="paper-authors">Canfield CF, Miller EB</p>
+    <p class="paper-abstract">本研究為一項隨機單盲臨床試驗協議，旨在探討將實證基礎的早期關係健康計畫整合至兒科初級照護中，對低收入家庭實施過程與成效的影響。低收入環境往往伴隨較高的親職壓力與不穩定的親子互動，這些因素可能對兒童的早期發展造成負面的生物嵌入效應。該計畫的核心在於透過兒科醫療作為接觸點，提供促進依附關係與親子互動的結構化介入。研究將評估該整合模式在真實世界兒科環境中的可行性、接受度以及對親子互動品質的初步效果。透過隨機分派與單盲設計，試圖降低偏見並提高證據等級。此類將心理健康與社會決定因素考量納入常規兒科照護的創新模式，若被證實有效，將有潛力打破貧窮對兒童早期發展的不良循環，提供一個具擴展性的公共衛生介入框架，為弱勢兒童提供發展保護因子。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">低收入家庭的兒科就診者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">整合至兒科的實證早期關係健康計畫</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">常規兒科照護</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">實施可行性、接受度及親子互動成效</div></div>
+</div>
+    <ul class="findings"><li>提出將早期關係健康計畫整合入兒科照護的創新框架</li><li>採用隨機單盲設計以提升介入效果評估的嚴謹性</li><li>聚焦於低收入家庭，旨在減緩貧窮帶來的早期發展風險</li></ul>
+    <div class="keywords"><span class="keyword-pill">早期關係健康</span><span class="keyword-pill">兒科介入</span><span class="keyword-pill">低收入家庭</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">表觀遺傳與生物老化 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42496171" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Am J Epidemiol</span>
+      <span class="paper-date">2026 Jul 24</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20kwag182.%20doi%3A%2010.1093%2Faje%2Fkwag182" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">The Long Half-Life of Neighborhood Poverty: Duration, Timing, and Biological Aging.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">社區貧窮的長半衰期：持續時間、時間點與生物老化</p>
+    <p class="paper-authors">Taddess BA, Lippert AM</p>
+    <p class="paper-abstract">本研究探討社區貧窮的持續時間與暴露時間點對個體生物老化的影響，揭示了貧窮印記在生理層面的長期「半衰期」。貧窮不僅是當下的經濟匱乏，更會透過長期壓力與資源剝奪，在細胞層面留下痕跡並加速老化。研究利用生物年齡指標，分析個體在生命歷程中不同階段居住於高貧窮社區的持續時間，如何累積性地導致生物年齡超過實際年齡。研究發現，社區貧窮對生物老化的影響具有極強的持久性，即使後期脫離貧窮社區，早期的暴露依然會產生殘餘效應，猶如放射性的「半衰期」般緩慢衰退。這項發現強調了生命歷程流行病學視角的重要性，指出為了預防貧窮導致的過早老化與相關慢性疾病，公共衛生政策必須在早期且持續地介入社區弱勢環境，而非僅依賴事後的醫療補救。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">具有不同社區貧窮暴露歷史的個體</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社區貧窮的持續時間與暴露時間點</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無或較短時間的社區貧窮暴露</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">生物老化指標</div></div>
+</div>
+    <ul class="findings"><li>社區貧窮暴露會顯著加速個體的生物老化</li><li>貧窮對生理的影響具有長期的「半衰期」效應，早期暴露的殘餘影響持久</li><li>暴露的時間點與持續時間是決定生物老化程度的關鍵因素</li></ul>
+    <div class="keywords"><span class="keyword-pill">社區貧窮</span><span class="keyword-pill">生物老化</span><span class="keyword-pill">生命歷程</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">3 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42497144" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">PLoS One</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1371%2Fjournal.pone.0354462" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Occupational interventions and their effects on work-related and mental health outcomes: A scoping review protocol.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">職業介入措施及其對工作相關與心理健康結果的影響：範圍審查協議</p>
+    <p class="paper-authors">Nowrouzi-Kia B, Lau HKC, Siddiqui S, Premji R et al.</p>
+    <p class="paper-abstract">本文為一篇範圍審查協議，系統性地探討職業介入措施對工作相關結果與心理健康結果的影響。職場環境與個人的社經地位息息相關，不良的工作條件往往是社會壓力的重要來源，進而導致焦慮、憂鬱等心理健康問題。該審查協議旨在廣泛搜尋並梳理現有的職業介入文獻，包含職場人因工程調整、心理安全感促進、重返工作計畫等。透過定義明確的納入與排除標準，本研究將繪製出職業介入的類型、目標族群及其在改善心理健康與減少工作障礙方面的證據圖譜。此審查有助於釐清當前職業健康領域的介入盲區，並為未來制定能夠兼顧工作表現與勞工心理福祉的實證指南提供基礎，特別是針對處於弱勢勞動條件的族群，可能具有預防貧窮與健康惡化雙重效用的參考價值。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">面臨工作相關挑戰或心理健康問題的勞工</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">各類職業介入措施</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無介入、常規照護或其他介入</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">工作相關結果與心理健康結果</div></div>
+</div>
+    <ul class="findings"><li>建立系統性檢視職業介入與心理健康連結的審查框架</li><li>強調職場介入在預防與緩解心理健康問題中的潛在角色</li><li>為未來制定結合職業與心理健康的整合性實證指南鋪路</li></ul>
+    <div class="keywords"><span class="keyword-pill">職業介入</span><span class="keyword-pill">心理健康</span><span class="keyword-pill">範圍審查</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42498289" style="animation-delay:0.88s">
+    <div class="paper-meta">
+      <span class="paper-journal">Int J Yoga Therap</span>
+      <span class="paper-date">2026 Jul 22</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20Article%209.%20doi%3A%2010.17761%2F2026-D-25-00039" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title">Characteristics of Practicing Yoga Therapists in the United States and Canada: An Update.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">美國與加拿大執業瑜伽治療師的特徵：最新更新</p>
+    <p class="paper-authors">Abatemarco A, Nault D, Hughes EAN, Snow J et al.</p>
+    <p class="paper-abstract">本研究旨在更新並描述美國與加拿大現職瑜伽治療師的人口學與專業特徵。瑜伽治療作為一種輔助與整合性健康介入手段，近年來逐漸被應用於緩解壓力、焦慮、憂鬱及創傷後壓力症候群等心理健康問題。研究透過調查這些治療師的教育背景、臨床訓練、執業場域與服務對象，反映了該領域的專業化進程。雖然本研究主要為描述性調查，但了解瑜伽治療師的特徵有助於評估此類身心介入在主流醫療體系外的可及性。對於資源匮乏的弱勢族群而言，身心靈介入可能是一種低成本、易於推廣的壓力調節與心理健康促進策略。透過掌握目前瑜伽治療師的分布與服務模式，未來可進一步探討如何將其系統性地納入社區健康中心，以作為緩解社會壓力與支持弱勢族群心理健康的潛在資源。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國與加拿大的執業瑜伽治療師</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">無（描述性研究）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">人口學特徵、教育訓練背景、執業模式與服務對象</div></div>
+</div>
+    <ul class="findings"><li>提供了美加地區瑜伽治療師最新的人口學與專業輪廓</li><li>反映出瑜伽治療作為身心介入手段的專業化趨勢</li><li>凸顯了將瑜伽治療納入常規心理健康照護體系的潛在基礎</li></ul>
+    <div class="keywords"><span class="keyword-pill">瑜伽治療</span><span class="keyword-pill">輔助醫學</span><span class="keyword-pill">身心健康</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42496356" style="animation-delay:0.96s">
+    <div class="paper-meta">
+      <span class="paper-journal">Geriatrics (Basel)</span>
+      <span class="paper-date">2026 Jul 18</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%2090.%20doi%3A%2010.3390%2Fgeriatrics11040090" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Pre-Pandemic- and During-COVID-19 Anxiety and Depression Symptoms and Health-Related Quality of Life Were Similar in Injured Older Adults Enrolled in a Clinical Trial.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">疫情前與COVID-19期間的焦慮與憂鬱症狀及健康相關生活品質在參與臨床試驗的受傷老年人中保持相似</p>
+    <p class="paper-authors">Ortiz D, Perkins AJ, Gao S, Sergiwa NA et al.</p>
+    <p class="paper-abstract">本研究比較了受傷老年人在COVID-19疫情前與疫情期間的焦慮、憂鬱症狀及健康相關生活品質。疫情帶來的社會隔離與不確定性被廣泛認為會對心理健康造成嚴重衝擊，然而，本研究發現參與臨床試驗的受傷老年族群，其焦慮與憂鬱水準在兩個時期並無顯著差異，生活品質亦保持穩定。這一發現挑戰了「疫情必然導致老年人心理健康惡化」的普遍假設。研究推測，受傷老年人可能因過去面對健康逆境的經驗，而發展出較高的心理韌性。此外，參與臨床試驗本身可能提供了一種結構化的社會支持與醫療監測，發揮了保護因子的作用，抵銷了疫情帶來的孤立感。在貧窮與健康不平等的脈絡下，這暗示著當面對宏觀社會壓力時，持續性的醫療關注與社會連結能有效緩衝負面影響，對於設計支持弱勢高齡者的社區介入策略具有重要啟示。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">參與臨床試驗的受傷老年人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">COVID-19疫情時期（暴露於大流行壓力）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">疫情前期</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">焦慮與憂鬱症狀、健康相關生活品質</div></div>
+</div>
+    <ul class="findings"><li>疫情期間受傷老年人的焦慮與憂鬱症狀並未顯著高於疫情前</li><li>健康相關生活品質在兩個時期保持相對穩定</li><li>參與臨床試驗提供的結構化支持可能具有保護心理健康的緩衝效果</li></ul>
+    <div class="keywords"><span class="keyword-pill">COVID-19</span><span class="keyword-pill">老年人</span><span class="keyword-pill">心理韌性</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
