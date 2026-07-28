@@ -58,12 +58,12 @@ jobs:
             node -e "import{writeFileSync}from'fs';writeFileSync('papers.json',JSON.stringify({date:'${{ steps.date.outputs.target }}',count:0,papers:[]},null,2))"
           fi
 
-      - name: Generate report with Zhipu AI
+      - name: Generate report with NVIDIA Nemotron
         env:
-          ZHIPU_API_KEY: ${{ secrets.ZHIPU_API_KEY }}
-          ZHIPU_BASE_URL: "https://open.bigmodel.cn/api/coding/paas/v4"
-          ZHIPU_MAX_TOKENS: "50000"
-          ZHIPU_TIMEOUT_MS: "480000"
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          NVIDIA_BASE_URL: "https://integrate.api.nvidia.com/v1"
+          NVIDIA_MAX_TOKENS: "16384"
+          NVIDIA_TIMEOUT_MS: "480000"
           REPORT_DATE: ${{ steps.date.outputs.target }}
         run: node scripts/generate-report.mjs
         timeout-minutes: 12

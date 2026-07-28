@@ -6,12 +6,12 @@ const REPORT_DATE = process.env.REPORT_DATE || new Date().toISOString().slice(0,
 const INPUT = resolve(process.cwd(), 'papers.json');
 const OUTPUT = resolve(DOCS_DIR, `poverty-${REPORT_DATE}.html`);
 
-const BASE_URL = process.env.ZHIPU_BASE_URL || 'https://open.bigmodel.cn/api/coding/paas/v4';
-const API_KEY = process.env.ZHIPU_API_KEY || '';
-const MAX_TOKENS = parseInt(process.env.ZHIPU_MAX_TOKENS || '50000', 10);
-const TIMEOUT_MS = parseInt(process.env.ZHIPU_TIMEOUT_MS || '480000', 10);
+const BASE_URL = process.env.NVIDIA_BASE_URL || 'https://integrate.api.nvidia.com/v1';
+const API_KEY = process.env.NVIDIA_API_KEY || '';
+const MAX_TOKENS = Math.min(parseInt(process.env.NVIDIA_MAX_TOKENS || '16384', 10), 16384);
+const TIMEOUT_MS = parseInt(process.env.NVIDIA_TIMEOUT_MS || '480000', 10);
 
-const MODEL_CHAIN = ['glm-5-turbo', 'glm-4.7', 'glm-4.7-flash'];
+const MODEL_CHAIN = ['nvidia/nemotron-3-super-120b-a12b', 'nvidia/nemotron-3-nano-30b-a3b'];
 
 const SYSTEM_PROMPT = `你是一位專業的「貧窮印記」（Poverty Imprint）研究文獻分析師。你的專長涵蓋生物嵌入、壓力生理學、神經科學、表觀遺傳學、心理健康、社會決定因素與政策介入。
 
@@ -65,7 +65,7 @@ function extractJson(text) {
   }
 }
 
-async function callZhipuApi(messages) {
+async function callNvidiaApi(messages) {
   for (const model of MODEL_CHAIN) {
     console.log(`Trying model: ${model}...`);
     try {
@@ -79,7 +79,10 @@ async function callZhipuApi(messages) {
           model,
           messages,
           max_tokens: MAX_TOKENS,
-          temperature: 0.7,
+          temperature: 1.0,
+          top_p: 0.95,
+          stream: false,
+          chat_template_kwargs: { enable_thinking: false },
         }),
         signal: AbortSignal.timeout(TIMEOUT_MS),
       });
@@ -240,7 +243,7 @@ function getFooterHtml() {
       <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
       <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
     </div>
-    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by NVIDIA Nemotron</p>
   </footer>`;
 }
 
@@ -361,7 +364,7 @@ function generateAnalyzedHtml(analysis, papers, date) {
 
 async function main() {
   if (!API_KEY) {
-    console.error('ZHIPU_API_KEY is not set');
+    console.error('NVIDIA_API_KEY is not set');
     process.exit(1);
   }
 
@@ -388,9 +391,9 @@ async function main() {
   }
 
   const userPrompt = buildUserPrompt(papers);
-  console.log(`Sending ${papers.length} papers to Zhipu AI (prompt: ${userPrompt.length} chars)...`);
+  console.log(`Sending ${papers.length} papers to NVIDIA Nemotron (prompt: ${userPrompt.length} chars)...`);
 
-  const aiResponse = await callZhipuApi([
+  const aiResponse = await callNvidiaApi([
     { role: 'system', content: SYSTEM_PROMPT },
     { role: 'user', content: userPrompt },
   ]);
