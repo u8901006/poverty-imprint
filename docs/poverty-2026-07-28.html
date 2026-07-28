@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-07-28</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-07-28">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-07-28">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-07-28</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 4 篇文獻</span>
+      <span class="stat-item">&#128193; 4 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本組文獻探討了從臨床工具開發、心理健康風險到環境神經科學的多層次議題。糖尿病優先事項問卷（DPQ）的研究展示了透過共設計提升病人中心醫療的可行性，有助於優化慢性病照護。產後自殺風險的系統性回顧則揭示了超越憂鬱症的複雜風險檔案，強調了當前預防策略的缺口，對於高壓力群體的心理健康防護至關重要。坦尚尼亞的兒童神經發育研究直接證實了貧窮印記，顯示社會經濟地位的差異如何導致並持續影響認知發展，突顯了早期社會介入的必要性。最後，關於螢幕時間的研究提供了現代數位環境對青少年大腦成熟影響的實證，提示生活方式對神經發育的潛在干擾。整體而言，這些研究強調了針對生物、心理及社會決定因素進行精準介入的重要性。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">認知與行為</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">大腦發展與神經科學</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">認知與行為 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42509010" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMJ Open</span>
+      <span class="paper-date">2026 Jul 27</span>
+      <a class="paper-doi" href="https://doi.org/10.1136%2Fbmjopen-2025-109436" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Diabetes Priorities Questionnaire (DPQ): a codesigned preclinic priority setting tool to enable patient-centred care for people with type 2 diabetes.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">糖尿病優先事項問卷：一種共設計的診前優先順序設定工具，旨在為第 2 型糖尿病患者實現以病人為中心的照護。</p>
+    <p class="paper-authors">Ravi S, Ayre J, Serrano J, Maberly G et al.</p>
+    <p class="paper-abstract">本研究介紹了糖尿病優先事項問卷（DPQ）的開發過程，這是一項透過與患者及醫療人員共同設計的診前工具，旨在協助第 2 型糖尿病患者確定護理優先順序。研究指出，傳統的醫療諮詢往往未能有效解決患者最迫切的個人需求。透過 DPQ，患者能在就診前明確表達其健康關切事項，促進更以病人為中心的對話。該工具經過多輪的設計與測試，證實具有良好的實用性與可接受性。研究結果顯示，DPQ 能有效幫助臨床醫生了解患者的優先事項，優化醫患溝通效率，並有潛力改善慢性病的自我管理成果，特別是在強調個別化醫療的現代環境中具有重要價值。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">第 2 型糖尿病患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">使用糖尿病優先事項問卷 (DPQ) 進行診前優先順序設定</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">傳統診療流程（未使用該工具）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">提升以病人為中心的照護品質與醫患溝通效率</div></div>
+</div>
+    <ul class="findings"><li>DPQ 能有效捕捉患者的個人健康優先事項</li><li>共設計過程確保了工具在臨床環境中的實用性</li><li>使用該工具有助於改善醫患間的溝通動態</li></ul>
+    <div class="keywords"><span class="keyword-pill">第 2 型糖尿病</span><span class="keyword-pill">以病人為中心的照護</span><span class="keyword-pill">共設計</span><span class="keyword-pill">決策輔助</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42507276" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Curr Psychiatry Rep</span>
+      <span class="paper-date">2026 Jul 27</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%2055.%20doi%3A%2010.1007%2Fs11920-026-01706-z" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Postpartum Suicidality beyond Depression: a Systematic Review of Risk Profiles and Prevention Gaps.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">產後自殺風險超越憂鬱症：風險檔案與預防缺口的系統性回顧。</p>
+    <p class="paper-authors">Baldini V, Gnazzo M, Varallo G, De Ronchi D et al.</p>
+    <p class="paper-abstract">本篇系統性回顧旨在分析產後自殺意念與行為的風險檔案，並探討當前預防策略的不足。研究發現，產後自殺風險不僅與產後憂鬱症相關，更與廣泛的精神病理特徵（如焦慮、強迫症及創傷後壓力症）密切關聯。文獻分析指出，現有的產後護理過度聚焦於憂鬱症篩檢，導致其他高風險族群被忽略。此外，研究強調了社會經濟壓力與缺乏社會支持在產後自殺風險中的角色。結論建議，臨床應採用更全面的多維度風險評估工具，並針對不同風險檔案制定具體的預防計畫，以填補現有心理健康服務的缺口，進而有效降低產後悲劇的發生。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">產後婦女</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">各類精神病理風險因子（如憂鬱症以外之焦慮、創傷等）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">僅患有產後憂鬱症或無風險因子者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">產後自殺風險檔案與預防介入的成效</div></div>
+</div>
+    <ul class="findings"><li>產後自殺風險具有異質性，不完全由憂鬱症解釋</li><li>現有篩檢工具忽略非憂鬱症類的高風險群</li><li>社會支持與經濟狀況是關鍵的環境風險因子</li></ul>
+    <div class="keywords"><span class="keyword-pill">產後自殺</span><span class="keyword-pill">精神病理</span><span class="keyword-pill">風險評估</span><span class="keyword-pill">預防醫學</span><span class="keyword-pill">系統性回顧</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42507661" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">PLoS One</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1371%2Fjournal.pone.0354139" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Socioeconomic disparities in children&#39;s neurodevelopment before and during primary education: Evidence from Bagamoyo, Tanzania.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">兒童在小學教育前後的神經發育社會經濟差異：來自坦尚尼亞 Bagamoyo 的證據。</p>
+    <p class="paper-authors">Manyiri MW, Loss G, Martin-Herz SP, Sumari D et al.</p>
+    <p class="paper-abstract">本研究以坦尚尼亞 Bagamoyo 地區的兒童為對象，探討社會經濟地位（SES）差異對學齡前及小學階段神經發育的影響。研究結果顯示，來自低 SES 家庭的兒童在認知、語言及運動發育等神經發育指標上，顯著落後於高 SES 同儕。這種發育落差在進入正式學校教育後依然存在，甚至有擴大趨勢，表明單靠學校教育難以完全彌補早期的劣勢。研究指出，營養不良、家庭學習資源匮乏及環境刺激不足是主要驅動因素。這項研究強調了在兒童生命早期進行針對性介入的必要性，特別是在低收入國家，透過改善家庭與社區環境來促進神經發育，對於打破貧窮循環具有重要意義。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">坦尚尼亞 Bagamoyo 地區學齡前及學齡兒童</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">低社會經濟地位 (SES)</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高社會經濟地位</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">神經發育指標（認知、語言、運動能力）</div></div>
+</div>
+    <ul class="findings"><li>SES 差異導致兒童神經發育顯著落後</li><li>學校教育未能有效縮小既有的發育差距</li><li>營養與家庭環境是影響發育的關鍵機制</li></ul>
+    <div class="keywords"><span class="keyword-pill">社會經濟地位</span><span class="keyword-pill">神經發育</span><span class="keyword-pill">兒童發展</span><span class="keyword-pill">教育公平</span><span class="keyword-pill">低收入國家</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">大腦發展與神經科學 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42509994" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Children (Basel)</span>
+      <span class="paper-date">2026 Jul 22</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20969.%20doi%3A%2010.3390%2Fchildren13070969" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Screen Time Is Associated with Altered Neural Maturation in a Massive Adolescent Cohort.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">螢幕時間與龐大青少年隊列中神經成熟改變的關聯性。</p>
+    <p class="paper-authors">Atalay AS, Newman BT, Druzgal TJ</p>
+    <p class="paper-abstract">本研究利用大規模青少年隊列的數據，調查螢幕時間與大腦神經成熟之間的關聯。透過神經影像學分析，研究發現青少年過度的螢幕時間與特定腦區（如執行功能與認知控制相關區域）的神經成熟改變顯著相關。雖然此研究屬於橫斷面分析，尚未確立因果關係，但結果強烈暗示現代數位環境可能正在重塑青少年大腦的發育軌跡。研究建議，監測與適度限制螢幕時間對於保護青少年的神經發育關鍵期可能是必要的。這項發現為理解當代生活方式（如智慧型手機普及）對神經科學的影響提供了新的視角，並為家長與教育者在制定媒體使用指南時提供了科學依據。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">青少年族群（大規模隊列）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">高強度螢幕時間使用</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低螢幕時間使用</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">大腦神經成熟度的影像學指標改變</div></div>
+</div>
+    <ul class="findings"><li>螢幕時間與特定腦區的神經成熟改變具有統計相關性</li><li>受影響的腦區主要涉及認知控制與執行功能</li><li>研究支持對青少年數位媒體使用進行適度管控</li></ul>
+    <div class="keywords"><span class="keyword-pill">螢幕時間</span><span class="keyword-pill">神經發育</span><span class="keyword-pill">青少年</span><span class="keyword-pill">神經影像學</span><span class="keyword-pill">認知控制</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by GLM AI</p>
+  </footer>
+</div>
+</body>
+</html>
