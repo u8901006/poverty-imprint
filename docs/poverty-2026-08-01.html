@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-08-01</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-08-01">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-08-01">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-08-01</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 17 篇文獻</span>
+      <span class="stat-item">&#128193; 7 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本批次25篇文獻探討貧窮與社會弱勢環境、族群及代際之健康影響，橫跨生理、心理、社會與政策層面。多篇研究聚焦於創傷、逆境與壓力之生理嵌入，如表觀遺傳老化加速（Webb等，2026）、慢性疼痛（Ray等，2026；Aroke等，2026）、心血管負擔（Gump等，2026）及睡眠障礙（Xing等，2026），證實弱勢環境如何透過生理路徑影響健康。在心理健康層面，多篇證實貧窮與精神病理之關聯，包括青少年抑鬱（Kato，2026）、創傷後應激（Tan等，2026）、暴露暴力與行為問題（Swingler等，2026）、精神分裂與社區資源不足（Haft等，2026）。社會決定因素方面，住房補助（Chu等，2026）與社區缺乏（Segrin等，2026；Webb等，2026）被證明與鉛中毒、慢性疼痛及心理症狀顯著相關。家庭與人際關係亦為關鍵調節因素，如親子關係緩衝經濟壓力對情緒症狀之影響（Steare等，2026）。政策層面研究則強調參與式政策制定（Hamilton等，2026）與結構性弱勢群體之照護需求（Jeong等，2026）。跨代影響方面，原住民青年之韌性與精神文化連結（Anderson等，2026）及阿富汗人口心理健康需求（Saeed等，2026）凸顯文化與制度脆弱性之交互作用。整體而言，文獻支持貧窮透過多層機制（生理、心理、社會）嵌入身心健康，需以跨領域、預防導向且具文化適切性的干預來破壞惡性循環。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">3 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">3 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">表觀遺傳與生物老化</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:67%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">3 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:67%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">認知與行為</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:67%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">跨代傳遞與社會流動</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:67%">2 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">3 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42097902" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Sleep Health</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.sleh.2026.03.010" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Wrist-worn accelerometer measured sleep fragmentation and obesity risk: Socioeconomic gradients and mediation by allostatic load.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">腕帶式加速計測量的睡眠碎片化與肥胖風險：社經梯度及全負荷之中介作用</p>
+    <p class="paper-authors">Xing J, Lin X, Zhang Y, Tang Y et al.</p>
+    <p class="paper-abstract">本研究利用腕帶式加速計客觀測量睡眠碎片化，探討其與肥胖風險之關聯，並檢驗社會經濟地位（SES）梯度是否透過身體全負荷（allostatic load）進行中介。結果顯示，低SES群體睡眠碎片化程度較高，此現象部分透過升高的全負荷（如壓力激素、代謝指標）連結至較高肥胖風險。研究證實，社會經濟逆境可透過睡眠 disruption 與生理壓力反應的累積，間接增加代謝疾病風險，支持貧窮的生理嵌入假設。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">成年人（美國國家健康與營養調查NHANES樣本）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">低社會經濟地位、睡眠碎片化（腕帶加速計測量）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高SES組 vs 低SES組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">肥胖風險、全負荷指標（炎症、代謝、心血管風險）</div></div>
+</div>
+    <ul class="findings"><li>低SES與較高睡眠碎片化顯著相關</li><li>全負荷在SES與肥胖風險之間具部分中介效應</li><li>客觀睡眠測量強調行為生理路徑在健康不平等中的角色</li></ul>
+    <div class="keywords"><span class="keyword-pill">睡眠碎片化</span><span class="keyword-pill">社會經濟地位</span><span class="keyword-pill">全負荷</span><span class="keyword-pill">肥胖</span><span class="keyword-pill">生物嵌入</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42033878" style="animation-delay:0.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Psychiatr Res</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jpsychires.2026.03.045" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Neighborhood disadvantage and accelerated epigenetic aging in the early aftermath of trauma: The moderating role of individual psychological resources.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">社區弱勢與創傷後表觀遺傳老化加速：個人心理資源之調節作用</p>
+    <p class="paper-authors">Webb EK, Zannas AS, Linnstaedt SD, House SL et al.</p>
+    <p class="paper-abstract">本研究探討創傷暴露後，社區弱勢是否與表觀遺傳時鐘（DNAm Age）加速相關，並測試個人心理資源（如樂觀、自我效能）是否可緩解此關聯。結果顯示，創傷暴露者若居住於弱勢社區，其表觀年齡顯著超過實際年齡；然而，具較高心理資源者此加速效應被顯著緩和。研究指出，社會環境可透過表觀遺傳機制嵌入生物老化過程，但個人韌性因素具備緩衝作用，具有重要臨床與政策啟示。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">創傷暴露成年人（美國創傷研究樣本）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社區弱勢指數（貧困、失業、教育程度低）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高 vs 低社區弱勢；高 vs 低心理資源</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">表觀遺傳年齡加速（DNAm Age）</div></div>
+</div>
+    <ul class="findings"><li>社區弱勢與創傷互動顯著預測表觀遺傳老化加速</li><li>心理資源（樂觀、應對能力）調節此關聯</li><li>表觀遺傳為社會逆境生物嵌入之可量測機制</li></ul>
+    <div class="keywords"><span class="keyword-pill">表觀遺傳老化</span><span class="keyword-pill">社區弱勢</span><span class="keyword-pill">創傷</span><span class="keyword-pill">心理資源</span><span class="keyword-pill">DNAm Age</span></div>
+  </div>
+  <div class="paper-card" data-pmid="41831685" style="animation-delay:0.16s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Acad Nutr Diet</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jand.2026.156328" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Associations of High Serum Ferritin Concentrations with Learning Disability and Attention Deficit/Hyperactivity Disorder among Children and Adolescents.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">高血清鐵蛋白濃度與兒童青少年學習障礙及注意力缺陷/多動障礙之關聯</p>
+    <p class="paper-authors">Xiao X, Liu B, Xiong Y, Wangchen Z et al.</p>
+    <p class="paper-abstract">本研究分析高血清鐵蛋白（反映鐵載體過載或炎症）與兒童青少年學習障礙及ADHD之關聯。結果顯示，高鐵蛋白濃度與學習障礙及注意力不集中症狀顯著相關，即使控制社經變數後仍具獨立預測力。鐵蛋白升高可能反映慢性炎症或代謝失調，提醒營養與代謝狀態在神經發展障礙中的潛在角色，尤其在弱勢群體中營養不良與慢性壓力共存時，生物路徑可能進一步擴大發展風險。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">兒童與青少年（美國國家健康與營養調查）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">高血清鐵蛋白濃度（≥300 ng/mL 男，≥200 ng/mL 女）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">正常鐵蛋白濃度組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">學習障礙、ADHD診斷或症狀篩檢</div></div>
+</div>
+    <ul class="findings"><li>高鐵蛋白與學習障礙及ADHD顯著正相關</li><li>關聯在調整社經因素後仍具獨立性</li><li>提醒代謝炎症在神經發展障礙中的潛在角色</li></ul>
+    <div class="keywords"><span class="keyword-pill">血清鐵蛋白</span><span class="keyword-pill">學習障礙</span><span class="keyword-pill">ADHD</span><span class="keyword-pill">代謝炎症</span><span class="keyword-pill">神經發展</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">3 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42119554" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Psychiatr Res</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jpsychires.2026.05.009" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Impacts of perseverative coping on depression risk among young people living in poverty.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">持續性應對策略對貧困青年抑鬱風險之影響</p>
+    <p class="paper-authors">Kato T</p>
+    <p class="paper-abstract">本研究探討貧困環境中青年之應對策略（尤其持續性/反覆思慮型應對）如何影響其抑鬱風險。結果顯示，持續性應對（如反覆思索問題而未採取行動）與較高抑鬱症狀顯著相關，尤其在經濟壓力持續時此關聯更強。研究指出，雖然應對是適應性反應，但當壓力源無法被改變（如結構性貧窮）時，某些應對策略可能轉為 maladaptive，增加心理負擔。強調需透過結構性介入減少無法控制之壓力源，而非僅依賴個人應對訓練。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">生活在貧困中的青年（15-24歲）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">持續性應對策略（perseverative coping）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低持續性應對 vs 高持續性應對</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">抑鬱症狀嚴重程度（量表測量）</div></div>
+</div>
+    <ul class="findings"><li>持續性應對與貧困青年抑鬱風險正相關</li><li>此關聯在長期經濟壓力下被放大</li><li>顯示個人心理機制在結構性逆境中的潛在負面角色</li></ul>
+    <div class="keywords"><span class="keyword-pill">持續性應對</span><span class="keyword-pill">抑鬱</span><span class="keyword-pill">貧困青年</span><span class="keyword-pill">應對策略</span><span class="keyword-pill">精神病理</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42068654" style="animation-delay:0.48s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Psychiatr Res</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jpsychires.2026.04.038" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Links between parental internalizing disorder severity and default mode network connectivity in adolescent offspring.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">父母內化障礙嚴重程度與青少年子女預設模式網路連結之關聯</p>
+    <p class="paper-authors">Tan SL, Pawlak M, Bray S, Kopala-Sibley DC</p>
+    <p class="paper-abstract">本研究檢視父母焦慮、抑鬱等內化障礙嚴重程度，是否與其青少年子女大腦預設模式網路（DMN）之靜態連結功能異常相關。結果顯示，父母內化症狀嚴重程度與子女DMN內部連結過強（過度內省）及與外在網路之脫節顯著相關，此模式與內化精神病理風險一致。研究支持父母心理健康透過遺傳與環境路徑影響子女神經發展，提醒早期家庭干預對打斷代際傳遞之重要性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">有父母患內化障礙的青少年（12-18歲）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">父母內化障礙嚴重程度（診斷與症狀量表）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">父母低 vs 高內化症狀</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">青少年靜態功能連結（fMRI測量DMN）</div></div>
+</div>
+    <ul class="findings"><li>父母內化障礙嚴重程度預測子女DMN過度連結</li><li>此神經標記與內化症狀風險一致</li><li>支持親代心理健康對子女腦發展之跨代影響</li></ul>
+    <div class="keywords"><span class="keyword-pill">預設模式網路</span><span class="keyword-pill">父母心理健康</span><span class="keyword-pill">青少年</span><span class="keyword-pill">fMRI</span><span class="keyword-pill">內化障礙</span></div>
+  </div>
+  <div class="paper-card" data-pmid="41619963" style="animation-delay:0.56s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Am Acad Child Adolesc Psychiatry</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jaac.2026.01.010" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Adolescents&#39; Relationships With Their Parents and Peers as Mediators Between Economic Circumstances and Emotional Symptoms: A Multicountry Longitudinal Analysis.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">青少年與父母及同伴關係作為經濟狀況與情緒症狀之中介因素：多國家縱向分析</p>
+    <p class="paper-authors">Steare T, Rose-Clarke K, Araya M, Cueto S et al.</p>
+    <p class="paper-abstract">本多國家縱向研究探討青少年親子與同伴關係品質，是否在家庭經濟困窘與青少年情緒症狀（焦慮、抑鬱）之間具中介作用。結果顯示，經濟壓力透過削弱親子支持與增加同伴衝突，間接增加情緒症狀風險。反之，良好親子關係具顯著緩衝效應，即使在貧困context下仍能降低情緒問題。研究強調人際關係作為社會心理緩衝資源的重要性，提醒家庭與學校介入應著重促進關係品質，而非單聚焦經濟補助。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">多國家青少年樣本（歐洲、亞洲、拉美）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">家庭經濟困窘（收入不足、物質匱乏）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高 vs 低親子/同伴關係品質</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">青少年情緒症狀（焦慮、抑鬱量表）</div></div>
+</div>
+    <ul class="findings"><li>親子關係品質在經濟壓力與情緒症狀間具有部分中介作用</li><li>同伴關係惡化為另一條風險路徑</li><li>良好親子關係可緩衝貧困對心理健康之負面影響</li></ul>
+    <div class="keywords"><span class="keyword-pill">親子關係</span><span class="keyword-pill">同伴關係</span><span class="keyword-pill">情緒症狀</span><span class="keyword-pill">經濟壓力</span><span class="keyword-pill">縱向研究</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">表觀遺傳與生物老化 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42033878" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Psychiatr Res</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jpsychires.2026.03.045" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Neighborhood disadvantage and accelerated epigenetic aging in the early aftermath of trauma: The moderating role of individual psychological resources.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">社區弱勢與創傷後表觀遺傳老化加速：個人心理資源之調節作用</p>
+    <p class="paper-authors">Webb EK, Zannas AS, Linnstaedt SD, House SL et al.</p>
+    <p class="paper-abstract">本研究探討創傷暴露後，社區弱勢是否與表觀遺傳時鐘（DNAm Age）加速相關，並測試個人心理資源（如樂觀、自我效能）是否可緩解此關聯。結果顯示，創傷暴露者若居住於弱勢社區，其表觀年齡顯著超過實際年齡；然而，具較高心理資源者此加速效應被顯著緩和。研究指出，社會環境可透過表觀遺傳機制嵌入生物老化過程，但個人韌性因素具備緩衝作用，具有重要臨床與政策啟示。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">創傷暴露成年人（美國創傷研究樣本）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社區弱勢指數（貧困、失業、教育程度低）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高 vs 低社區弱勢；高 vs 低心理資源</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">表觀遺傳年齡加速（DNAm Age）</div></div>
+</div>
+    <ul class="findings"><li>社區弱勢與創傷互動顯著預測表觀遺傳老化加速</li><li>心理資源（樂觀、應</li><li>心理資源（樂觀、應對能力）調節此關聯</li><li>表觀遺傳為社會逆境生物嵌入之可量測機制</li></ul>
+    <div class="keywords"><span class="keyword-pill">表觀遺傳老化</span><span class="keyword-pill">社區弱勢</span><span class="keyword-pill">創傷</span><span class="keyword-pill">心理資源</span><span class="keyword-pill">DNAm Age</span></div>
+  </div>
+  <div class="paper-card" data-pmid="41831685" style="animation-delay:0.88s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Acad Nutr Diet</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jand.2026.156328" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Associations of High Serum Ferritin Concentrations with Learning Disability and Attention Deficit/Hyperactivity Disorder among Children and Adolescents.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">高血清鐵蛋白濃度與兒童青少年學習障礙及注意力缺陷/多動障礙之關聯</p>
+    <p class="paper-authors">Xiao X, Liu B, Xiong Y, Wangchen Z et al.</p>
+    <p class="paper-abstract">本研究分析高血清鐵蛋白（反映鐵載體過載或炎症）與兒童青少年學習障礙及ADHD之關聯。結果顯示，高鐵蛋白濃度與學習障礙及注意力不集中症狀顯著相關，即使控制社經變數後仍具獨立預測力。鐵蛋白升高可能反映慢性炎症或代謝失調，提醒營養與代謝狀態在神經發展障礙中的潛在角色，尤其在弱勢群體中營養不良與慢性壓力共存時，生物路徑可能進一步擴大發展風險。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">兒童與青少年（美國國家健康與營養調查）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">高血清鐵蛋白濃度（≥300 ng/mL 男，≥200 ng/mL 女）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">正常鐵蛋白濃度組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">學習障礙、ADHD診斷或症狀篩檢</div></div>
+</div>
+    <ul class="findings"><li>高鐵蛋白與學習障礙及ADHD顯著正相關</li><li>關聯在調整社經因素後仍具獨立性</li><li>提醒代謝炎症在神經發展障礙中的潛在角色</li></ul>
+    <div class="keywords"><span class="keyword-pill">血清鐵蛋白</span><span class="keyword-pill">學習障礙</span><span class="keyword-pill">ADHD</span><span class="keyword-pill">代謝炎症</span><span class="keyword-pill">神經發展</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">3 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42383178" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Environ Epidemiol</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1097%2FEE9.0000000000000503" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Impact of federal housing assistance on children&#39;s blood Lead Levels, NHANES 1999-2016.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">聯邦住房補助對兒童血鉛水平之影響：NHANES 1999-2016</p>
+    <p class="paper-authors">Chu MT, Fenelon A, Adamkiewicz G, Zota AR</p>
+    <p class="paper-abstract">本研究利用美國國家健康與營養調查（NHANES）長期資料，評估聯邦住房補助計畫（如Section 8）是否與兒童血鉛濃度下降相關。結果顯示，領取住房補助的兒童，其血鉛水平顯著低於未領補助但符合資格之低收入同儕，即使控制房屋舊齡、地理位置及社會人口變數後仍具此效果。研究證實，改善居住條件之政策介入可有效減少環境毒物暴露，特別是對弱勢兒童具有預防鉛中毒與發展風險之公共衛生價值。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">1-5歲美國兒童（NHANES 1999-2016）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">聯邦住房補助參與（Section 8、公共房屋等）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未領補助但收入符合資格之低收入組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">血鉛濃度（μg/dL）</div></div>
+</div>
+    <ul class="findings"><li>住房補助與較低兒童血鉛水平顯著相關</li><li>效應在調整混雜變數後仍具獨立性</li><li>支持住房政策為預防環境暴露之有效公共衛生策略</li></ul>
+    <div class="keywords"><span class="keyword-pill">住房補助</span><span class="keyword-pill">血鉛</span><span class="keyword-pill">兒童健康</span><span class="keyword-pill">環境毒素</span><span class="keyword-pill">公共衛生政策</span></div>
+  </div>
+  <div class="paper-card" data-pmid="41669991" style="animation-delay:1.28s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Child Psychol Psychiatry</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1111%2Fjcpp.70132" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Longitudinal associations between violence exposure and adolescent conduct problems in a high-adversity, South African setting.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">暴露暴力與青年行為問題之縱向關聯：高逆境南非環境研究</p>
+    <p class="paper-authors">Swingler S, Han Q, Cullen AE, du Toit S et al.</p>
+    <p class="paper-abstract">本研究在南非高逆境社區中追蹤青少年，探討暴力暴露（家庭、社區、學校）與行為問題（攻擊性、違規、反社會行為）之長期關聯。結果顯示，早期暴力暴露顯著預測後續行為問題增加，此關聯隨時間持續並具累積效應。即使控制社經與家庭因素後，社區暴力仍為獨立風險因子。研究強調在結構性暴力環境中，早期暴力預防與創傷知照護之必要性，以打破暴力與行為問題之惡性循環。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">南非都市弱勢社區青少年（11-18歲）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">暴力暴露程度（目擊、經歷家庭/社區暴力）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低 vs 高暴力暴露組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">行為問題（攻擊性、違規、反社會行為量表）</div></div>
+</div>
+    <ul class="findings"><li>早期暴力暴露預測青少年後續行為問題增加</li><li>關聯具時間累積效應</li><li>社區暴力為行為問題之獨立社會決定因素</li></ul>
+    <div class="keywords"><span class="keyword-pill">暴力暴露</span><span class="keyword-pill">行為問題</span><span class="keyword-pill">青少年</span><span class="keyword-pill">南非</span><span class="keyword-pill">社會決定因素</span></div>
+  </div>
+  <div class="paper-card" data-pmid="41017638" style="animation-delay:1.36s">
+    <div class="paper-meta">
+      <span class="paper-journal">Psychol Health Med</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1080%2F13548506.2025.2564313" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Neighborhood disadvantage and social isolation are associated with psychological and physical symptom burden in cancer survivors.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">社區弱勢與社會隔離與癌症倖存者心理生理症狀負擔之關聯</p>
+    <p class="paper-authors">Segrin C, Badger TA, Morrill KE, Sikorskii A</p>
+    <p class="paper-abstract">本研究探討社區弱勢（貧困、資源缺乏）與社會隔離，是否與癌症倖存者之心理（抑鬱、焦慮）及生理（疲勞、疼痛）症狀負擔相關。結果顯示，居住於弱勢社區及感覺社會隔離的倖存者，報告較高身心症狀負擔，即使控制癌症類型、治療及人口變數後仍具此關聯。研究指出，社會環境與人際連結對癌症復原具持續影響，提醒癌症照護需延伸至社會層面介入，尤其對弱勢群體之生存品質具重要意義。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國癌症倖存者（5年內診斷）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社區弱勢指數、社會隔離感受</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低 vs 高社區弱勢；低 vs 高社會隔離</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理症狀（抑鬱、焦慮）、生理症狀（疲勞、疼痛）負擔</div></div>
+</div>
+    <ul class="findings"><li>社區弱勢與社會隔離皆預測較高心理生理症狀負擔</li><li>關聯在調整臨床變數後仍具獨立性</li><li>提醒癌症復原需關注社會決定因素</li></ul>
+    <div class="keywords"><span class="keyword-pill">社區弱勢</span><span class="keyword-pill">社會隔離</span><span class="keyword-pill">癌症倖存者</span><span class="keyword-pill">心理生理症狀</span><span class="keyword-pill">復原</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42530468" style="animation-delay:1.6s">
+    <div class="paper-meta">
+      <span class="paper-journal">Health Expect</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1111%2Fhex.70780" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Dividends and Disconnects: Involving Public and Stakeholder Groups in the Development of a Modelling Study Exploring Income Policy and Health.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">股息與斷層：在探討所得政策與健康之模型研究中納入公眾與利益相關者</p>
+    <p class="paper-authors">Hamilton OKL, Fergie G, Shimonovich M, McHardy F et al.</p>
+    <p class="paper-abstract">本論文反思參與式模型建構過程，探討如何讓受所得政策影響之社區成員、公眾與利益相關者參與健康影響評估模型之開發。作者發現，雖然參與提升模型之社會正當性與政策相關性，但過程中亦存在權力失衡、知識斷層（如學者與社區語言不通）及參與疲勞等挑戰。研究主張，真正有效的政策模型需結合嚴謹科學與有意義的民主參與，並提出改進策略如語言適切性、長期關係建立及共同設計，以確保模型結果真正回應弱勢社區之需求。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">政策模型研究參與者（學者、政策制定者、社區代表）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">參與式模型開發過程（工作坊、討論、反饋）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">傳統自上而下模型 vs 參與式共同設計</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">模型政策相關性、公眾信任、正當性感受</div></div>
+</div>
+    <ul class="findings"><li>參與提升模型之政策相關性與社會正當性</li><li>但存在權力失衡、語言斷層及參與疲勞挑戰</li><li>強調需結合科學嚴謹與民主參與以提升健康公平模型品質</li></ul>
+    <div class="keywords"><span class="keyword-pill">參與式研究</span><span class="keyword-pill">所得政策</span><span class="keyword-pill">健康影響評估</span><span class="keyword-pill">利益相關者</span><span class="keyword-pill">模型建構</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42535394" style="animation-delay:1.68s">
+    <div class="paper-meta">
+      <span class="paper-journal">Palliat Med</span>
+      <span class="paper-date">2026 Jul 31</span>
+      <a class="paper-doi" href="https://doi.org/10.1177%2F02692163261465882" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Advance Care Planning in structurally vulnerable populations: A scoping review of barriers, facilitators, and interventions.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">結構性弱勢族群之預先護理規劃：障礙、促進因子與介入之範疇性文獻回顧</p>
+    <p class="paper-authors">Jeong A, Li BCM, Carter RZ</p>
+    <p class="paper-abstract">本範疇性回顧檢視結構性弱勢族群（如無家可歸者、精神疾病患者、貧困者、少數民族）在預先護理規劃（ACP）之參與障礙與促進因子。結果顯示，主要障礙包括醫療系統缺乏信任、法律知識不足、語言與文化隔離、以及日常生存壓力掩蓋長期照護需求。促進因子則包含社區導向介入、同儀、創傷知護理方式及簡化文書流程。研究結論指出，標準ACP模式在弱勢族群中效果有限，必須以文化適切、去中心化及結構敏感之方式重新設計，才能真正提升其照護自主與尊嚴。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">結構性弱勢族群（無家可歸、精神疾病、貧困、少數民族）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">預先護理規劃介入（文件、對話、代理人指定）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">有 vs 無結構敏感ACP介入</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">ACP完成率、知識提升、參與感滿意度</div></div>
+</div>
+    <ul class="findings"><li>結構性弱勢族群面臨信任、知識與生存優先權之ACP障礙</li><li>社區導向、創傷知介入為關鍵促進因子</li><li>標準ACP模式需改造以適應結構脆弱情境</li></ul>
+    <div class="keywords"><span class="keyword-pill">預先護理規劃</span><span class="keyword-pill">結構性弱勢</span><span class="keyword-pill">障礙與促進因子</span><span class="keyword-pill">創傷知護理</span><span class="keyword-pill">社區導向</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">認知與行為 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42424910" style="animation-delay:2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Acta Psychol (Amst)</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.actpsy.2026.107382" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Executive function and Chinese preschoolers&#39; early mathematical skills: The indirect role of patterning and spatial skills.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">執行功能與中國學前兒童早期數學技能：圖案與空間技能之間接作用</p>
+    <p class="paper-authors">Xie H, Yaacob NRN, Ouyang H</p>
+    <p class="paper-abstract">本研究探討執行功能（工作記憶、抑制控制、認知靈活性）如何透過圖案辨識與空間技能間接影響中國學前兒童之早期數學表現。結果顯示，執行功能與早期數學能力呈正相關，但此關聯主要經由圖案理解與空間關係處理能力部分中介。研究強調，非數念知識（如模式識別、空間定位）在數學學習早期階段具關鍵鋪墊作用，尤其對執行功能較弱之兒童，強化此類前備技能可能比直接數字訓練更有效。發現具教育實踐價值，支持將認知與空間訓練納入早期數學啟蒙課程。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">中國學前兒童（4-6歲）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">執行功能（工作記憶、抑制、認知靈活性）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高 vs 低執行功能組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">早期數學技能（數感、計數、簡單運算）</div></div>
+</div>
+    <ul class="findings"><li>執行功能透過圖案與空間技能間接影響早期數學</li><li>圖案理解為關鍵中介變數</li><li>支持非數念前備技能在數學學習中的基礎角色</li></ul>
+    <div class="keywords"><span class="keyword-pill">執行功能</span><span class="keyword-pill">早期數學</span><span class="keyword-pill">圖案技能</span><span class="keyword-pill">空間技能</span><span class="keyword-pill">學前教育</span></div>
+  </div>
+  <div class="paper-card" data-pmid="41831685" style="animation-delay:2.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Acad Nutr Diet</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jand.2026.156328" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Associations of High Serum Ferritin Concentrations with Learning Disability and Attention Deficit/Hyperactivity Disorder among Children and Adolescents.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">高血清鐵蛋白濃度與兒童青少年學習障礙及注意力缺陷/多動障礙之關聯</p>
+    <p class="paper-authors">Xiao X, Liu B, Xiong Y, Wangchen Z et al.</p>
+    <p class="paper-abstract">本研究分析高血清鐵蛋白（反映鐵載體過載或炎症）與兒童青少年學習障礙及ADHD之關聯。結果顯示，高鐵蛋白濃度與學習障礙及注意力不集中症狀顯著相關，即使控制社經變數後仍具獨立預測力。鐵蛋白升高可能反映慢性炎症或代謝失調，提醒營養與代謝狀態在神經發展障礙中的潛在角色，尤其在弱勢群體中營養不良與慢性壓力共存時，生物路徑可能進一步擴大發展風險。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">兒童與青少年（美國國家健康與營養調查）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">高血清鐵蛋白濃度（≥300 ng/mL 男，≥200 ng/mL 女）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">正常鐵蛋白濃度組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">學習障礙、ADHD診斷或症狀篩檢</div></div>
+</div>
+    <ul class="findings"><li>高鐵蛋白與學習障礙及ADHD顯著正相關</li><li>關聯在調整社經因素後仍具獨立性</li><li>提醒代謝炎症在神經發展障礙中的潛在角色</li></ul>
+    <div class="keywords"><span class="keyword-pill">血清鐵蛋白</span><span class="keyword-pill">學習障礙</span><span class="keyword-pill">ADHD</span><span class="keyword-pill">代謝炎症</span><span class="keyword-pill">神經發展</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">跨代傳遞與社會流動 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="41619963" style="animation-delay:2.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Am Acad Child Adolesc Psychiatry</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jaac.2026.01.010" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Adolescents&#39; Relationships With Their Parents and Peers as Mediators Between Economic Circumstances and Emotional Symptoms: A Multicountry Longitudinal Analysis.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">青少年與父母及同伴關係伴狀況與情緒症狀之中介因素：多國家縱向分析</p>
+    <p class="paper-authors">Steare T, Rose-Clarke K, Araya M, Cueto S et al.</p>
+    <p class="paper-abstract">本多國家縱向研究探討青少年親子與同伴關係品質，是否在家庭經濟困窘與青少年情緒症狀（焦慮、抑鬱）之間具中介作用。結果顯示，經濟壓力透過削弱親子支持與增加同伴衝突，間接增加情緒症狀風險。反之，良好親子關係具顯著緩衝效應，即使在貧困context下仍能降低情緒問題。研究強調人際關係作為社會心理緩衝資源的重要性，提醒家庭與學校介入應著重促進關係品質，而非單聚焦經濟補助。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">多國家青少年樣本（歐洲、亞洲、拉美）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">家庭經濟困窘（收入不足、物質匱乏）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高 vs 低親子/同伴關係品質</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">青少年情緒症狀（焦慮、抑鬱量表）</div></div>
+</div>
+    <ul class="findings"><li>親子關係品質在經濟壓力與情緒症狀間具有部分中介作用</li><li>同伴關係惡化為另一條風險路徑</li><li>良好親子關係可緩衝貧困對心理健康之負面影響</li></ul>
+    <div class="keywords"><span class="keyword-pill">親子關係</span><span class="keyword-pill">同伴關係</span><span class="keyword-pill">情緒症狀</span><span class="keyword-pill">經濟壓力</span><span class="keyword-pill">縱向研究</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42538640" style="animation-delay:2.48s">
+    <div class="paper-meta">
+      <span class="paper-journal">Soc Work</span>
+      <span class="paper-date">2026 Jul 31</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20swag034.%20doi%3A%2010.1093%2Fsw%2Fswag034" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Examining Spirituality&#39;s Influence on Resilience among Adopted or Fostered Native American Emerging Adults.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">探討靈性對被領養或寄養原住民新興成年人之韌性影響</p>
+    <p class="paper-authors">Anderson M, Limb G, Burgon J</p>
+    <p class="paper-abstract">本研究探討傳統原住民靈性實踐（如參與儀式、認同精神世界、長者指導）是否與被領養或寄養之原住民新興成年人（18-29歲）之心理韌性相關。結果顯示，較高靈性參與與較低抑鬱、較高生活滿意度及應對能力顯著正相關，即使控制創傷史及社經因素後仍具此關聯。研究指出，文化連結與精神實踐在修復領養創傷、建立身份認同及促進情感調節中具有保護作用，強調在弱勢原住民青年服務中納入文化適切之靈性層面，具備重要預防與療癒潛力。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">被領養或寄養之原住民新興成年人（美國，18-29歲）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">靈性參與程度（儀式出席、精神認同、文化實踐）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低 vs 高靈性參與組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理韌性（應對能力、抑鬱、生活滿意度）</div></div>
+</div>
+    <ul class="findings"><li>靈性參與與心理韌性顯著正相關</li><li>關聯在控制創傷與社經後仍具獨立性</li><li>文化與精神實踐為原住民青年韌性之保護因子</li></ul>
+    <div class="keywords"><span class="keyword-pill">靈性</span><span class="keyword-pill">韌性</span><span class="keyword-pill">原住民青年</span><span class="keyword-pill">領養</span><span class="keyword-pill">文化連結</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by NVIDIA Nemotron</p>
+  </footer>
+</div>
+</body>
+</html>
