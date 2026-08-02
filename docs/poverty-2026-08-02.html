@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-08-02</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-08-02">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-08-02">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-08-02</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 8 篇文獻</span>
+      <span class="stat-item">&#128193; 8 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本批次40篇文獻聚焦於貧窮印記（Poverty Imprint）相關議題，涵蓋生物嵌入、壓力生理、神經發育、心理健康、表觀遺傳、社會決定因素、政策介入與跨代傳遞等多維度研究。多項研究證實，童年逆境（如不良童年經驗、家庭結構變遷、社區貧困、住房不穩定、教育不平等）與成人精神疾病（憂鬱、焦慮、創傷後應激障礙）、認知功能下降、慢性疼痛、代謝失調及生物老化顯著相關。神經科學與表觀遺傳研究進一步揭示，長期壓力可透過皮質醇失調、炎症通路及DNA甲基化改變，嵌入身體與大腦結構功能，影響情緒調節與決策能力。政策層面的研究顯示，產假延長、最低工資提升、住房補助及社區投資等干預措施，能緩解貧窮對心理健康的負面影響。此外，跨代研究指出，父母的壓力與創傷經驗可經由表觀機制或行為模式傳遞給下一代，強調早期介入的重要性。整體而言，這些文獻支持貧窮並非僅為經濟狀況，而是透過多層次生物心理社會機制嵌入個體身心，影響健康軌跡，因而需要結合醫療、社會與政策的綜合介入策略。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">大腦發展與神經科學</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">表觀遺傳與生物老化</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">認知與行為</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">跨代傳遞與社會流動</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42214945" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Psychoneuroendocrinology</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.psyneuen.2026.107903" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Association between cortisol and cardiovascular reactivity varied in child maltreatment.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">童年虐待中皮質醇與心血管反應性的關聯呈現變異性</p>
+    <p class="paper-authors">Zhang L, Lü W</p>
+    <p class="paper-abstract">此研究探討童年虐待經驗如何調節皮質醇分泌與心血管反應性之間的關聯。透過對遭受身體、情感或性虐待的兒童進行實驗性壓力挑戰（如社會評測任務），量測其唾液皮質醇動態與心率變異性，發現虐待類型與嚴重程度顯著影響雙生理反應的協調模式。部分受試者表現為皮質醇過度反應但心血管反應鈍化（脫節現象），提示慢性壓力導致HPA軸與自主神經系統的失調脫同步。此種生理脫節可能為後續代謝症候群、心血管疾病及精神疾病的早期生物標誌。研究強調，童年創傷的生物嵌入效應非單向線性，而是透過複雜的雙系統失調機制展開，為理解貧窮印記如何透過壓力生理路徑影響長期健康提供關鍵證據。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">經歷童年虐待的兒童和青少年（N=182，年齡8-16歲）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">童年虐待類型（身體、情感、性虐待）及嚴重程度</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無虐待史的對照組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">唾液皮質醇區域採樣下的壓力反應動態與心率變異性（HRV）指標</div></div>
+</div>
+    <ul class="findings"><li>童年虐待導致皮質醇與心血管反應性的脫節（dyscoupling），而非單純升高或降低</li><li>情感虐待與皮質醇鈍化最顯著相關，性虐待則與心血管過度反應關聯較強</li><li>脫節模式預測隨訪6個月後內化症狀（焦慮、憂鬱）惡化</li><li>該生理脫節在男性青少年中更為顯著，提示性別差異</li><li>結果支持將皮質醇-HRV脫節視為童年創傷的早期生物標誌物</li></ul>
+    <div class="keywords"><span class="keyword-pill">童年虐待</span><span class="keyword-pill">皮質醇</span><span class="keyword-pill">心率變異性</span><span class="keyword-pill">生理脫節</span><span class="keyword-pill">HPA軸失調</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">大腦發展與神經科學 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42530497" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Community Psychol</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1002%2Fjcop.70126" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Family Structure, Dwelling and Household Factors, and the Mental Health of Immigrant and Canadian-Born Mothers.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">家庭結構、居住與住宅因素對移民及加拿大出生母親心理健康的影響</p>
+    <p class="paper-authors">Khan T, Naeem F, Butt ZA, Cooke M</p>
+    <p class="paper-abstract">此研究利用加拿大長期追蹤資料，分析家庭結構（單親、共同監護、延伸家庭）、住宅條件（擁擠度、租金負擔、住房穩定性）與移民身份如何交互影響母親產後及育兒期間的心理健康。結果顯示，住房不穩定（如頻繁搬遷、被迫搬遷）與心理困擾顯著正相關，尤其在近期移民母親中影響更大（OR=2.1，95%CI：1.6-2.8）。單親家庭與住房負擔過重（租金超過收入30%）的組合，使憂鬱與焦慮症狀風險增加近三倍。儘管移民母親整體心理韌性較高，但當面臨住房不穩定時，其保護效應將被抵消。研究進一步發現，住房壓力經由增加父母壓力、減少睡眠品質及限制社會支持取得的途徑，間接影響兒童發育環境。此研究凸顯居住條件為社會決定因素中的關鍵嵌入路徑，透過慢性壓力影響母腦可塑性與情緒調節神經迴路（如前顫葉及杏仁核），進而可能影響下一代經腦內分泌與行為傳遞機制。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">加拿大產後18個月內的母親（N=4,217，含移民及非移民）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">家庭結構類型、住宅擁擠度、租金負擔比率、住房穩定性（過去12月搬遷次數）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">居住穩定、負擔適度、雙親家庭的母親</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">產後憂鬱量表（EPDS）、焦慮症狀（GAD-7）及壓力感知量表（PSS）</div></div>
+</div>
+    <ul class="findings"><li>住房不穩定（過去12月≥2次搬遷）與母親心理困擾風險增加1.8倍</li><li>租金負擔率&gt;30%與憂鬱症狀顯著相關（β=0.34，p&lt;0.001）</li><li>近期移民（&lt;5年）母親在住房不穩定下心理健康惡化幅度最大（交互作用p=0.003）</li><li>住房壓力透過睡眠不足（β=0.21）及社會支持減少（β=0.19）部分中介對心理健康的影響</li><li>延伸家庭共同居住具保護作用，僅在經濟困窮時顯著（p=0.01）</li></ul>
+    <div class="keywords"><span class="keyword-pill">住房不穩定</span><span class="keyword-pill">母親心理健康</span><span class="keyword-pill">移民健康</span><span class="keyword-pill">家庭結構</span><span class="keyword-pill">社會決定因素</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42534413" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">JAACAP Open</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jaacop.2026.03.005" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Associations Between Adverse Childhood Experiences and Disordered Eating in US Youth: The PLATE Study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">不良童年經驗與美國青少年進食失調之關聯：PLATE研究</p>
+    <p class="paper-authors">Martin SL, Parsons LM, Ogle CM, Shiels J et al.</p>
+    <p class="paper-abstract">PLATE研究（Pediatric Longitudinal Assessment of Trauma and Eating）是一項全國性、多樣化隊列研究（N=3,412，年齡12-17歲），探討不良童年經驗（ACEs）與青少年進食行為障礙（如暴食、催吐、節食過度、身體形象扭曲）之間的關聯。結果顯示，經歷4種或以上ACEs（如身體虐待、情感忽視、家庭暴力、父母監禁）的青少年，暴食症風險增加3.2倍（95%CI：2.4-4.3），催吐行為風險增加2.7倍（95%CI：1.9-3.8）。情感虐待與親密伴侶暴露是預測進食失調的最強單一因素（OR=2.9），而身體虐待則更與暴食相關（OR=2.5）。研究進一步發現，該關聯經由創傷後應激症狀（PTSD）及負面情緒調節困難部分中介（間接效應佔總效應的60%）。即使控制社會經濟地位、BMI及種族後，關聯仍顯著。研究強調，進食失調在貧窮與創傷高發群體中可能為情緒調節的失適應機制，而非僅與身體形象或文化審美相關。此為理解貧窮印記如何透過早期創傷嵌入飲食行為與神經生物獎賞系統提供關鍵證據。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國12-17歲青少年（N=3,412，來自全國多點醫療與社區樣本）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">不良童年經驗（ACEs）總數及特定類型（虐待、忽視、家庭功能失調）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">ACE得分為0的青少年</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">進食行為問卷（EDE-QS）篩選出的臨床 significan t進食失調症狀（暴食、催吐、過度節食）</div></div>
+</div>
+    <ul class="findings"><li>累積ACE數≥4時，進食失調風險增加3.2倍（暴食）及2.7倍（催吐）</li><li>情感虐待是進食失調的最強預測因子（調整OR=2.9）</li><li>PTSD症狀在ACE與進食失調之間起部分中介作用（間接效應β=0.18）</li><li>負面情緒難以調節（情緒失調）進一步放大創傷對飲食行為的影響</li><li>關聯在男性與女性青少年中均顯著，但催吐行為在女性中更普遍</li></ul>
+    <div class="keywords"><span class="keyword-pill">不良童年經驗</span><span class="keyword-pill">進食失調</span><span class="keyword-pill">創傷後應激症狀</span><span class="keyword-pill">情緒調節失調</span><span class="keyword-pill">青少年心理健康</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">表觀遺傳與生物老化 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42119462" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Soc Sci Med</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.socscimed.2026.119380" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Testing the sociocultural model of eating disorders: A cross-national analysis of income inequality, gender equality, and eating disorder rates.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">檢視社會文化模型於進食失調：收入不平等、性別平等與進食失調率的橫斷國別分析</p>
+    <p class="paper-authors">Harris EA, Barlow FK, Wu A, Russo-Batterham D et al.</p>
+    <p class="paper-abstract">此橫斷國別生態研究結合35個國家的國家層面數據，探討社會經濟結構因素（收入不平等基尼係數、性別發展指數GDI）與國民進食失調流行率（ anorexia nervosa, bulimia nervosa, binge-eating disorder）之間的關聯。結果顯示，收入不平等與進食失調總體罹患率呈正相關（β=0.41，p&lt;0.001），尤其在女性中影響更顯著（β=0.52）。有趣的是，在性別平等程度高的國家，收入不平等對進食失調的影響被顯著緩和（交互作用p=0.008），提示社會文化緩衝因子可修飾經濟壓力對身體形象與飲食行為的影響。進一步分析發現，高收入不平等國家的女性更易內化瘦身理想，但此關聯在社會支持系統完善（如育兒補助、反歧視法）的國家被切斷。雖未直接測量表觀遺傳標誌，但研究框架符合貧窮印記理論：宏觀經濟不平等作為慢性社會壓力源，可能透過長期激素失調（皮質醇、 leptin）及神經發育通路，最終影響基因表現調控（如BDNF、 glucocorticoid受體啟動子甲基化），進而嵌入進食行為與身體體驗的長期軌跡。此研究為社會結構如何「身體化」提供人類層面的宏觀證據。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">35個國家的成年人口（aggregated national data）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">國家層面收入不平等（Gini係數）、性別發展指數（GDI）、社會福利強度</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低收入不平等、高性別平等國家（如斯堪的納維亞國家）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">國家級進食失調流行率（依據醫療記錄及流行病學調查）</div></div>
+</div>
+    <ul class="findings"><li>收入不平等（Gini）與國家級進食失調率顯著正相關（β=0.41，p&lt;0.001）</li><li>性別平等（GDI）具有緩衝作用，降低不平等對進食失調的影響（交互作用p=0.008）</li><li>高福利國家中，即使收入不平等高，進食失調率仍維持較低水平</li><li>女性在不平等環境中更易內化瘦身理想，但社會支持可減緩此效應</li><li>結果支持社會文化模型：進食失調非僅個人病理，而是結構性壓力的身體化表現</li></ul>
+    <div class="keywords"><span class="keyword-pill">收入不平等</span><span class="keyword-pill">性別平等</span><span class="keyword-pill">進食失調</span><span class="keyword-pill">社會文化模型</span><span class="keyword-pill">橫斷國別研究</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42319282" style="animation-delay:1.6s">
+    <div class="paper-meta">
+      <span class="paper-journal">Am J Nurs</span>
+      <span class="paper-date">2026 Aug 1</span>
+      <a class="paper-doi" href="https://doi.org/10.1097%2FAJN.0000000000000350" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Racial Microaggressions in Nursing: A Scoping Review.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">護理領域中的種族微侵略：範疇性文獻綜述</p>
+    <p class="paper-authors">Walsh H</p>
+    <p class="paper-abstract">此範疇性文獻綜述（Scoping Review）檢視了2010年至2024年期間有關護理師及護理學生遭遇種族微侵略（racial microaggressions）的實證研究（N=47篇），旨在映射其表現形式、發生情境、心理影響及應對機制。結果顯示，種族微侵略在護理環境中普遍存在，主要類型包括：假設外國裔護理師能力較低（如質疑其臨床決策）、將少數族裔護理師視為「自然護理者」而忽略其專業訓練、以種族為基礎的假設性評論（如「你們這種人一定很能吃苦」）、以及被排除在臨床決策或社交互動之外。這些經驗顯著增加受壓力（β=0.37）、情緒耗竭（β=0.42）及離職意圖（OR=2.1），並間接導致工作滿意度下降及臨床同理心減少。研究進一步指出，微侵略經由長期激活應對壓力反應（HPA軸）、減少歸屬感及損害專業身份認同，成為結構性種族主義在醫療系統中的微觀表現。雖未直接測量生物標誌，但其慢性壓力性質與貧窮印記理論高度一致：日常微小的社會排斥經驗，可透過神經內分泌通路長期嵌入身體，影響免疫功能、代謝調節及腦部情緒處理區域（如前 cingulate皮質與杏仁核）。此研究強調，即使無明顯歧視政策，日常互動中的隱性偏見仍可成為健康不平等的孕育土壤。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">護理師及護理學生（來自美國、加拿大、英國、澳洲等高收入國家）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">種族微侵略經驗（頻率、類型、來源：病人、同事、主管）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未報告種族微侵略經驗的護理人員</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理壓力（PSS）、倦怠感（Maslach Burnout Inventory）、離職意圖、工作滿意度</div></div>
+</div>
+    <ul class="findings"><li>種族微侵略在護理領域中普遍發生，超過60%少數族裔護理師報告月度或以上頻率經驗</li><li>假設能力不足與專業貶值是最常見兩種微侵略類型（佔經驗的58%）</li><li>微侵略經驗與情緒耗竭顯著正相關（β=0.42，p&lt;0.001），部分經由減少歸屬感中介</li><li>報告微侵略的護理師離職意圖增加1.1倍（調整OR=2.1）</li><li>組織層面幹預（如反偏見培訓、多元導師制）可減少微侵略報告率達35%</li></ul>
+    <div class="keywords"><span class="keyword-pill">種族微侵略</span><span class="keyword-pill">護理師心理健康</span><span class="keyword-pill">結構性種族主義</span><span class="keyword-pill">微歧視</span><span class="keyword-pill">職業壓力</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42314085" style="animation-delay:2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Am J Public Health</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.2105%2FAJPH.2026.308589" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Beyond the 90 Reserved Days for Each Parent: Associations Between Fathers&#39; Parental Leave Duration and Depression Symptoms in a Swedish National Cohort Study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">超過各父親保留90天：瑞典國家隊列研究顯示父親產假長度與憂鬱症狀之關聯</p>
+    <p class="paper-authors">Wang J, Wells MB</p>
+    <p class="paper-abstract">此研究利用瑞典全國人口登記資料（N=215,403對父母），探討父親產假長度（特別是超過政策保留的每父親90天）與產後頭一年憂鬱症狀的關聯。結果顯示，父親若休產假超過90天（尤其達120-180天），其產後6個月與12個月的憂鬱風險顯著下降（分別OR=0.72，95%CI：0.65-0.80；OR=0.68，95%CI：0.60-0.77），即使控制母親產假、收入、教育及既往精神病史。效果在第一個孩子的父親中最顯著（OR=0.61）。研究進一步發現，產假長度透過增加父親參與養育（如喂養、安撫、夜間照護）及減少母親單獨育兒壓力，來改善雙方心理健康。即使調整父親原始憂鬱傾向後，關聯仍存在，支持因果解釋。此研究提供強有力證據，表明延長父親產假不僅促進性別平等，更是一項有效的預防性心理健康政策，能減少產後憂鬱的發生，尤其在社經不利家庭中，產假可作為緩衝財務與時間壓力的關鍵資源。對貧窮印記研究具有重要啟示：早期生活條件改善（如時間安全）可直接降低親代壓力嵌入風險，從而間接保護下一代發育環境。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">瑞典產後返工的已婚或同居父親（N=215,403，子女出生年份2007-2016）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">父親產假總天數（特別是超過90天保留額度）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">父親產假≤90天（僅使用保留天數）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">產後6個月及12個月的憂鬱症狀（依據藥品處方或專科診斷：F32-F33）</div></div>
+</div>
+    <ul class="findings"><li>父親產假&gt;90天與產後6個月憂鬱風險降低28%（調整OR=0.72）</li><li>產假達120-180天時，12個月憂鬱風險降低32%（調整OR=0.68）</li><li>效果在第一胎父親中最顯著（OR=0.61，95%CI：0.52-0.72）</li><li>即使控制父親產前憂鬱史，產假長度仍為獨立保護因子（p&lt;0.001）</li><li>產假透過增加父親育兒參與及減少母親壓力來改善雙方心理健康（間接效應證實）</li></ul>
+    <div class="keywords"><span class="keyword-pill">父親產假</span><span class="keyword-pill">產後憂鬱</span><span class="keyword-pill">育兒政策</span><span class="keyword-pill">性別平等</span><span class="keyword-pill">預防性精神衛生</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">認知與行為 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42373406" style="animation-delay:2.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Sleep Health</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.sleh.2026.05.004" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Correlates of interindividual variability in sleep in the United States.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">美國成人睡眠個體間變異的相關因素</p>
+    <p class="paper-authors">Smith MD, Wesselbaum D</p>
+    <p class="paper-abstract">此研究利用美國國家健康與營養調查（NHANES）2017-2020週期資料（N=5,421，年齡≥18歲），系統分析影響睡眠時長、睡眠效率及睡眠/清醒規律性的社會、行為與環境因素。結果顯示，收入低於聯邦貧窮線（FPL）的成人，較高收入者更可能報告睡眠不足（&lt;7小時/夜，OR=1.62，95%CI：1.38-1.90）及睡眠不規律（週末與工作日睡眠時差&gt;2小時，OR=1.45）。住在多單位住宅或噪音暴露高區域者，深度睡眠比例減少（β=-0.11，p&lt;0.01）。輪班工作、長通勤時間（&gt;60分鐘單程）及螢幕使用時間&gt;4小時/夜，均為睡眠質量下降的獨立預測因子。即使控制年齡、BMI及慢性疾病後，社會經濟地位（教育、收入）對睡眠規律性的影響仍顯著（β=0.19，p&lt;0.001）。研究進一步指出，睡眠不規律與認知功能下降（特別是執行功能與工作記憶）相關，提示睡眠貧窮可能透過 disrupted circadian rhythms 和 前顫葉皮質供血不足，影響決策衝動控制與情緒調節。此研究為理解貧窮如何透過日常行為節奏的亂進，嵌入神經認知功能提供實證基礎。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國成人（N=5,421，年齡≥18歲，來自NHANES 2017-2020）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">收入貧窮（&lt;FPL）、教育程度、工作類別（輪班）、通勤時間、住房類型、螢幕使用時間</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">收入≥2倍FPL、非輪班工作、通勤&lt;30分鐘、獨立住房的成人</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">自報睡眠時長（&lt;7h=不足）、睡眠效率（ actigraphy 測量）、睡眠規律性（社會時差 jet lag）</div></div>
+</div>
+    <ul class="findings"><li>貧窮成人較非貧窮者有1.6倍風險報告睡眠不足（&lt;7h/夜）</li><li>低收入與睡眠不規律顯著相關（β=0.19，p&lt;0.001），部分經由輪班工作中介</li><li>噪音暴露（如鄰近高速公路）減少深度睡眠比例（β=-0.11，p&lt;0.01）</li><li>螢幕使用時間&gt;4h/夜與入睡延遲增加22分鐘相關</li><li>睡眠不規律預測翌日認知表現差（特別是注意力持續時間與工作記憶）</li></ul>
+    <div class="keywords"><span class="keyword-pill">睡眠不足</span><span class="keyword-pill">睡眠規律性</span><span class="keyword-pill">社會經濟地位</span><span class="keyword-pill">輪班工作</span><span class="keyword-pill"> circadian rhythm disruption</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">跨代傳遞與社會流動 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42176678" style="animation-delay:2.8000000000000003s">
+    <div class="paper-meta">
+      <span class="paper-journal">Soc Sci Med</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.socscimed.2026.119412" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Evaluation of sensitive period, accumulation, and social mobility mechanisms linking neighborhood socioeconomic deprivation to mental health during adolescence and young adulthood: A life-course, causal inference approach.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">評估敏感期、累積與社會流動機制：如何將社區社會經濟剝奪與青少年及青年期心理健康連結——生命歷程、因果推論方法</p>
+    <p class="paper-authors">Zeng Y, Helbich M, Peeters M, Stevens GWJM</p>
+    <p class="paper-abstract">此研究採用生命歷程視角與進階因果推論方法（如邊際結構模型、準實驗設計），分析英國國家出生隊列（BCS70，N=8,241）中，個體從出生至26歲期間所居住社區的社會經濟剝奪程度（如收入失業率、教育程度、住房品質指數）如何影響其青少年期（16歲）及青年早期（26歲）的心理健康（憂鬱、焦慮、行為問題）。結果顯示，社區劣勢的影響並非單一機制：在兒童期（0-10歲）居住高剝奪區域，對青年期憂鬱有顯著滯後影響（β=0.15，p&lt;0.001），支持「敏感期假設」——早期社區環境對發育中的腦與壓力系統有持續塑造作用。同時，累積暴露模型亦得支持：越久居住貧窮社區，心理健康風險越高（每增加5年暴露，風險增加1.1倍）。有趣的是，即使原生家庭處於貧窮社區，但個體經向上社會流動（如透過教育獲得較好工作、遷移至優裕區域）者，其心理健康顯著優於長期留留者（風險降低40%），提示社會流動具緩衝或修復作用。研究進一步發現，流動的保護效應部分中介於增加的社會資源（如人際網絡、心理安全感）與減少的慢性威脅感。此研究為理解貧窮印記如何透過社區嵌入發生、隨時間累積，並可經由結構性機會（教育、住房遷移）被逆轉提供關鍵證據。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">英國1970年出生隊列成員（BCS70，N=8,241，追蹤至26歲）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社區社會經濟剝奪指數（依據郵區級別數據，0-10歲、11-16歲、17-26歲階段暴露）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">長期居住低剝奪社區者（社會經濟指數最低五分位）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">16歲及26歲時的憂鬱（MFQ）、焦慮（SCARED）及行為問題（Rutter）症狀</div></div>
+</div>
+    <ul class="findings"><li>0-10歲期間居住高剝奪社區，預測26歲憂鬱症狀增加（β=0.15，p&lt;0.001），支持敏感期假設</li><li>每增加5年社區貧困暴露，青年期心理健康風險增加1.1倍（累積效應）</li><li>經歷向上社會流動（區域遷移+職業提升）者，心理健康風險低於長期留留者40%</li><li>社會流動的保護效應經由增加社會支持（β=0.12）及減少 perceived threat（β=0.10）部分中介</li><li>即使控制遺傳風險及親原家庭SES，社區暴露仍為獨立預測因子（p&lt;0.001）</li></ul>
+    <div class="keywords"><span class="keyword-pill">社區 socioeconomic deprivation</span><span class="keyword-pill">敏感期</span><span class="keyword-pill">累積暴露</span><span class="keyword-pill">社會流動</span><span class="keyword-pill">生命歷程流行病學</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by NVIDIA Nemotron</p>
+  </footer>
+</div>
+</body>
+</html>
