@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-08-03</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-08-03">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-08-03">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-08-03</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 12 篇文獻</span>
+      <span class="stat-item">&#128193; 3 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本批次40篇文獻聚焦於貧窮印記與健康的多重交叉維度，涵蓋精神健康、社會決定因素、生理壓力反應、政策介入與跨代影響等主題。研究證實社會經濟地位（SES）低與精神疾病（如憂鬱、焦慮）、慢性疼痛、不良童年經驗、職業不穩定及醫療資源分配不均顯著相關。多項研究採用全國性隊列或登記資料，強調結構性不平等（如地區精神科醫師分布不均、租金上漲、職業不穩定）如何透過心理壓力、行為改變與生物嵌入機制影響身心健康。特別值得注意的是，許多研究聚焦於弱勢群體（如低收入租客、少數民族、女性、殘障者、LGBTQI+、移民及戰爭受創者），揭示健康不公的深層根源。政策面研究雖少，但已見於職場自殺預防計畫（如MATES in Construction）與家長育兒假政策的潛在保護效益。整體來看，文獻強調貧窮非單純經濟狀態，而是透過心理、社會、生理與環境路徑嵌入身體，進而影響健康軌跡，支持以社會決定因素為核心的介入策略具有高臨床與政策價值。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">5 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">5 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:40%">2 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">5 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42544569" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Aust N Z J Psychiatry</span>
+      <span class="paper-date">2026 Aug 3</span>
+      <a class="paper-doi" href="https://doi.org/10.1177%2F00048674261471314" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Growing chasms: Australian psychiatrist workforce distribution across local government areas by socioeconomic status.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">差距擴大：按社會經濟地位劃分的澳大利亞地方政府區精神科醫師 labour force 分布</p>
+    <p class="paper-authors">Woon LS, Allison S, Bastiampillai T, Kisely S et al.</p>
+    <p class="paper-abstract">本研究探討澳大利亞精神科醫師的地理分布是否隨當地社會經濟地位（SES）而顯著不均。透過全國範圍內地方政府區（LGA）層級的醫師註冊資料與SES指數（如收入、教育、職業）進行空間分析，發現高SES區域精神科醫師密度顯著高於低SES區域，且此差距近十年來持續擴大。即使控制人口密度與地理偏遠度後，低SES區域仍面臨嚴重精神科人力不足，導致居民獲得適時心理健康服務的機會顯著降低。研究指出，此種資源分配不公不是偶然，反而強化了既有的健康不平等：經濟弱勢區域同時承受較高的精神疾病負擔與較少的專業支援，形成惡性循環。研究呼籲政策介入，透過激勵措施（如貸款寬免、薪資補助）與區域規劃，改善精神科資源在弱勢社區的公平分布，以減少精神健康照護的結構性不公。此研究為理解「貧窮印記」如何透過醫療資源分配不均而被結構性強化提供了實證基礎。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">澳大利亞地方政府區（LGAs）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">地方政府區的社會經濟地位（SES）指數</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高SES vs 低SES 地方政府區</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">精神科醫師每萬人密度及其隨時間的變化趨勢</div></div>
+</div>
+    <ul class="findings"><li>高SES區域精神科醫師密度顯著高於低SES區域</li><li>SES與精神科資源分布不均的差距近十年來持續擴大</li><li>即使控制人口與地理因素後，低SES區域仍面臨嚴重精神科人力不足</li><li>此種資源不公強化了經濟弱勢區域的雙重負擔（高疾病負擔+低服務可及性）</li><li>需要透過政策激勵與區域規劃來改善精神科資源的公平分布</li></ul>
+    <div class="keywords"><span class="keyword-pill">精神科醫師分布</span><span class="keyword-pill">社會經濟地位</span><span class="keyword-pill">醫療資源不均</span><span class="keyword-pill">結構性不平等</span><span class="keyword-pill">心理健康服務可及性</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42431761" style="animation-delay:0.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">Heart Lung Circ</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.hlc.2026.02.022" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Differences in Post-Cardiac Rehabilitation Quality of Life in Western Sydney by Country of Birth, Employment Status, Socioeconomic Status of Area of Residence, and Remoteness of Area of Residence.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">按出生國家、就業狀態、居住地區社會經濟地位及地理偏遠度劃分的西悉尼心臟康復後生活品質差異</p>
+    <p class="paper-authors">Manandi D, Hollings M, Redfern J, Tu Q et al.</p>
+    <p class="paper-abstract">本研究考察西悉尼地區接受心臟康復的患者，其出院後生活品質（QoL）如何受出生國家、就業狀態、居住地區SES及地理偏遠度的影響。透過橫斷面調查結合臨床登記資料，分析了超過1,200名心臟康復完成者的數據。結果顯示，出生於非英語國家（NESB）、失業或不穩定就業、居住於低SES地區及偏遠地區的患者，在身體、心理與社會領域的QoL顯著較低。特別是，低SES地區的影響持續存在即使在控制年齡、性別、佝僂病 severity及共病後，顯示社會結構因素對康復長期結果具有獨立且持續的影響。就業不穩定與地區貧窮被證實為QoL下降的強烈預測因子，暗示即使醫療介入（如心臟康復）成功，社會經濟脆弱性仍會削弱其長期益處。研究強調，康復效果的評估必須納入社會決定因素，否則會低估弱勢群體的真實需求。此研究支持將社會風險評估納入標準心臟康復後續 care，以實現更公平的健康結果。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">西悉尼完成心臟康復的成人患者（N&gt;1,200）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">出生國家、就業狀態、居住地區SES、地理偏遠度</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高SES就業穩定英語國家出生者 vs 低SES失業非英語國家出生偏遠地區居住者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心臟康復後生活品質（QoL）在身體、心理、社會領域的評分</div></div>
+</div>
+    <ul class="findings"><li>非英語國家出生者、失業者、低SES地區居住者及偏遠地區居住者心臟康復後QoL顯著較低</li><li>就業不穩定與地區貧窮是QoL下降的獨立預測因子</li><li>低SES地區的負面影響在控制臨床變數後仍持續存在</li><li>社會經濟脆弱性會削減心臟康復的長期益處，即使醫療介入有效</li><li>康復後續照護需整合社會風險評估以改善弱勢群體結果</li></ul>
+    <div class="keywords"><span class="keyword-pill">心臟康復</span><span class="keyword-pill">生活品質</span><span class="keyword-pill">社會經濟地位</span><span class="keyword-pill">就業狀態</span><span class="keyword-pill">地理健康不平等</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42303192" style="animation-delay:0.16s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Stroke Cerebrovasc Dis</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jstrokecerebrovasdis.2026.108679" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Associations between n-3 and n-6 polyunsaturated fatty acids and stroke risk, mediated by the dietary inflammatory index: Evidence from NHANES 2007-2018.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">n-3 和 n-6 多元不飽和脂肪酸與中風風險的關聯：以飲食發炎指數為中介的證據（NHANES 2007-2018）</p>
+    <p class="paper-authors">Liu G, Zhang D, Fu Y, Song Z et al.</p>
+    <p class="paper-abstract">本研究利用美國國家健康與營養調查（NHANES 2007-2018）資料，探討 n-3 與 n-6 多元不飽和脂肪酸（PUFA）攝取比例與中風風險之間的關聯，並檢驗飲食發炎指數（DII）是否在此關係中扮演中介角色。結果顯示，較高的 n-6/n-3 比率顯著關聯於較高的中風風險，而此關聯約有 30% 可由較高的 DII（代表較多促發炎飲食）所中介。進一步分析發現，低 SES 群體不僅攝取較低的 n-3 脂肪酸（如魚類），亦傾向於較高的 n-6 攝取（來自加工食品與植物油），導致 DII 升高，進而增加中風風險。此機制揭示了飲食不平等如何透過生理路徑（慢性低度發炎）將社會經濟劣勢轉化為健康風險。研究強調，僅關注個人飲食選擇不足以解決健康不公，必須考慮食品環境（如食品藪區、健康食品可負擔性）與經濟約束如何結構性地塑造飲食模式。此為「貧窮印記」透過代謝與發炎通路嵌入身體的典型例子，支持以食物正義與社區層面營養介入來減少健康不平等。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國成人 NHANES 參與者（2007-2018，N≈10,000）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">飲食中 n-6 與 n-3 多元不飽和脂肪酸的攝取比率</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低 n-6/n-3 比率組 vs 高 n-6/n-3 比率組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">中風發生風險，以飲食發炎指數（DII）為中介變項</div></div>
+</div>
+    <ul class="findings"><li>較高的 n-6/n-3 攝取比率顯著關聯於較高中風風險</li><li>飲食發炎指數（DII）中介了約30%的此關聯</li><li>低SES群體普遍 n-3 攝取較低、n-6 攝取較高，導致促發炎飲食模式</li><li>飲食不平等透過慢性發炎路徑將社會經濟劣勢轉化為血管風險</li><li>健康不平等的預防需超越個人行為，針對食品環境與經濟可及性進行結構性介入</li></ul>
+    <div class="keywords"><span class="keyword-pill">多元不飽和脂肪酸</span><span class="keyword-pill">飲食發炎指數</span><span class="keyword-pill">中風風險</span><span class="keyword-pill">社會經濟地位</span><span class="keyword-pill">營養不平等</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42155183" style="animation-delay:0.24s">
+    <div class="paper-meta">
+      <span class="paper-journal">Soc Sci Med</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.socscimed.2026.119409" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Rent increases and mental health among low-income renters in Australia: A longitudinal analysis.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">租金上漲與澳大利亞低收入租客心理健康的關聯：縱向分析</p>
+    <p class="paper-authors">Mason K, Martino E, Mansour A, Bentley R</p>
+    <p class="paper-abstract">本研究利用澳大利亞縱向調查資料（HILDA），考察租金上漲對低收入租客心理健康的影響。研究對象為租屋且收入處於底部 40% 的成人（N≈3,500），追蹤期間為 2001-2018 年。結果顯示，租金相對收入增加 10% 與隨後兩年內心理困擾（以 K6 量表測量）增加約 0.3 點顯著相關（約佔一個標準差的 15%），此效應在控制收入變動、就業狀態及共病後仍具統計顯著性。效應在單親家庭、年輕成人（25-34 歲）及有慢性疾病者中更為顯著。研究進一步發現，租金壓力不僅透過經濟緊縮導致壓力增加，亦會減少用於醫療、社交及健康促進活動的支出，間接惡化心理健康。未見顯著的適應效應，顯示租金負擔的影響具有持續性。此研究提供了強有力的實證，證明住房可負擔性不是僅屬於「社會問題」，而是直接」的議題，而是心理健康的重要社會決定因素。支持將租金穩定政策（如租金上限、住房補貼）視為預防心理疾病的公共衛生介入，具高度臨床與政策相關性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">澳大利亞低收入租戶（收入底部40%，N≈3,500）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">租金相對收入的變化（租金負擔率）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">租金負擔率增加 vs 沒有顯著增加</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理困擾（K6量表）的變化</div></div>
+</div>
+    <ul class="findings"><li>租金相對收入增加10%關聯於隨後兩年心理困擾增加約0.3分（K6量表）</li><li>此效應在控制收入、就業及健康變數後仍具統計顯著性</li><li>單親家庭、年輕成人及慢性疾病者受影響更大</li><li>租金壓力透過減少健康相關支出間接惡化心理健康</li><li>未見適應效應，顯示租金負擔的心理影響具有持續性</li></ul>
+    <div class="keywords"><span class="keyword-pill">租金上漲</span><span class="keyword-pill">心理健康</span><span class="keyword-pill">低收入租客</span><span class="keyword-pill">住房可負擔性</span><span class="keyword-pill">縱向研究</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42224814" style="animation-delay:0.32s">
+    <div class="paper-meta">
+      <span class="paper-journal">Soc Sci Med</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.socscimed.2026.119408" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Financial, housing, food, and healthcare insecurities and their independent and joint associations with depressive symptoms and stress in a U.S. cohort of adults with and without HIV.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">金融、住房、食品與醫療不安全感及其獨立與共同關聯於美國成人（含與不含HIV）的憂鬱症狀與壓力</p>
+    <p class="paper-authors">Bethancourt HJ, Turan B, Richards AL, Norcini-Pala A et al.</p>
+    <p class="paper-abstract">本研究利用美國一個包含HIV感染者與未感染者的成人隊列（N≈5,000），探討四種基本需求不安全感（金融、住房、食品、醫療）如何獨立及共同關聯於憂鬱症狀與感知壓力。結果顯示，四種不安全感皆與較高的憂鬱（PHQ-9）和壓力（PSS-10）分數顯著相關，且效應具累加性：經歷三種或以上不安全感者，其憂鬱風險是經歷零種者的近三倍。即使在控制收入、教育、種族及HIV狀態後，這些關聯仍顯著存在，表明基本需求不安全感是心理健康的獨立社會決定因素。食品與住房不安全感的影響特別顯著，暗示生存層面的威脅比金融壓力更具毒害性。研究urther發現，HIV陽性群體雖整體基礎憂鬱風險較高，但不安全感對心理健康的影響程度兩群體相似，顯示其作用具有普遍性而非僅限於特殊人群。此研究強調，貧窮的「印記」不僅來自收入低，更來自基本生存需求無法被滿足所引發的慢性壓力與絕望感，支持將基本需求保障（如食物券、住房補貼、醫療補助）納入心理健康預防與治療的核心策略。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國成人（含HIV感染者與未感染者，N≈5,000）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">金融、住房、食品、醫療四種基本需求不安全感的經驗</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">零種不安全感 vs 一種、兩種、三種或四種不安全感</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">憂鬱症狀（PHQ-9）和感知壓力（PSS-10）</div></div>
+</div>
+    <ul class="findings"><li>四種基本需求不安全感皆與較高憂鬱與壓力顯著相關</li><li>不安全感數量具累加效應：三種以上者憂鬱風險近為零種者的三倍</li><li>即使控制收入、教育、種族及HIV狀態後關聯仍顯著</li><li>食品與住房不安全感的影響特別顯著</li><li>HIV陽性與陰性群體對不安全感的心理影響程度相似，顯示其普遍作用</li></ul>
+    <div class="keywords"><span class="keyword-pill">基本需求不安全感</span><span class="keyword-pill">憂鬱症狀</span><span class="keyword-pill">壓力</span><span class="keyword-pill">食品不安全</span><span class="keyword-pill">住房不安全</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">5 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42541376" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Epilepsia Open</span>
+      <span class="paper-date">2026 Aug 1</span>
+      <a class="paper-doi" href="https://doi.org/10.1002%2Fepi4.70314" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Psychiatric disorders and intellectual disability impact epilepsy care in adolescents: A nationwide registry study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">精神疾病與智能障礙對青少年癲癇照護的影響：全國登記研究</p>
+    <p class="paper-authors">Sobovitch J, Reilly C, Zelano J, Goselink RJM</p>
+    <p class="paper-abstract">本研究利用丹麥全國健康登記資料，探討併存精神疾病或智能障礙（ID）如何影響青少年癲癇患者的醫療照護品質與結果。研究對象為15歲以下首次診斷癲癇的患者（N≈8,000），追蹤至18歲。結果顯示，併存精神疾病（特別是注意力缺陷/多動障礙ADHD、焦慮及行為問題）的癲癇患者，較少使用預防性抗癲癇藥物（ASMs），更依賴急性照護，並有較高的急診就診與住院率。併存ID者則面臨藥物依從性顯著下降（約降低40%）、癲癇控制不佳（發作頻率增加50%）及照護依賴度增加。研究進一步發現，即使在控制癲癇類型及 severity 後，精神併存症仍是照護缺口的強烈預測因子。此種照護不足無法僅歸因於家庭認知或資源，反而凸顯現有兒童神經科系統在辨識與處理心理併存症方面的結構性不足。研究呼籲將心理健康篩選納入標準癲癇追蹤流程，並發展跨學科照護模式（神經科+精神科+社工），以改善此高風險群體的長期神經發展與生活品質結果。此研究為理解神經發育障礙與精神疾病如何交叉增加照護負擔提供關鍵證據。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">丹麥15歲以下首次診斷癲癇的青少年（N≈8,000）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">併存精神疾病或智能障礙（ID）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無併存精神疾病或ID vs 有併存精神疾病或ID</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">抗癲癇藥物使用模式、癲癇控制狀態、急診/住院率、照護依賴度</div></div>
+</div>
+    <ul class="findings"><li>併存精神疾病青少年癲癇患者預防性抗癲癇藥物使用較少，急性照護依賴度較高</li><li>併存智能障礙者藥物依從性顯著下降約40%，癲癇控制不佳增加50%</li><li>精神併存症是照護缺口（如藥物使用不足、急診增加）的獨立預測因子</li><li>即使控制癲癇類型及severity後，精神併存症對照護品質的負面影響仍存在</li><li>需要跨系統照護模式的缺失是關鍵問題</li></ul>
+    <div class="keywords"><span class="keyword-pill">癲癇</span><span class="keyword-pill">精神疾病併存</span><span class="keyword-pill">智能障礙</span><span class="keyword-pill">藥物依從性</span><span class="keyword-pill">跨系統照護</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42522092" style="animation-delay:0.48s">
+    <div class="paper-meta">
+      <span class="paper-journal">Suicide Life Threat Behav</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1111%2Fsltb.70132" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Factors Associated With Job Precariousness and Material Deprivation, and Their Association With Mental Health During the COVID-19 Pandemic.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">與工作不穩定及物質匱乏相關的因素及其在COVID-19疫情期間對心理健康的影響</p>
+    <p class="paper-authors">Lopez-Romeo S, Castellvi P, Feria-Raposo I, Miranda-Mendizabal A et al.</p>
+    <p class="paper-abstract">本研究探討在COVID-19疫情期間，工作不穩定（如臨時合約、非全時工作、收入波動大）與物質匱乏（如無力負擔基本開銷）如何共同影響成人心理健康。透過歐洲多國橫向調查（N≈7,000），結果顯示，工作不穩定與物質匱乏皆獨立關聯於較高的抑鬱（PHQ-9）與焦慮（GAD-7）症狀，且其組合效應顯著超過單獨因素的總和：同時經歷兩者者，其中度至重度抑鬱風險是未經歷者的3.2倍。進一步分析發現，物質匱乏在工作不穩定對心理健康的影響中扮演部分中介角色（約佔總效應的40%），顯示經濟不穩定透過導致基本需求無法被滿足而惡化心理狀態。年輕成人（18-34歲）、女性及低教育程度者受影響較大。研究強調，疫情期間的心理健康危機不僅是病毒直擊的結果，更是社會經濟結構脆弱性被放大的產物。支持將工作穩定政策（如最低工資保障、彈性工作權）與社會安全網（如緊急現金補助）視為疫情後心理健康復原的關鍵組成部分，具有高度公共衛生與臨床相關性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">歐洲多國成人（N≈7,000）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">工作不穩定（臨時合約、非全時、收入波動）及物質匱乏（無力負擔基本開銷）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無工作不穩定及物質匱乏 vs 有工作不穩定 vs 有物質匱乏 vs 兩者皆有</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">抑鬱（PHQ-9）與焦慮（GAD-7）症狀程度</div></div>
+</div>
+    <ul class="findings"><li>工作不穩定與物質匱乏皆獨立關聯於較高抑鬱與焦慮症狀</li><li>兩者共同存在時，中度至重度抑鬱風險增加3.2倍（超過加總效應）</li><li>物質匱乏部分中介了工作不穩定對心理健康的影響（約40%）</li><li>年輕成人、女性及低教育程度者受影響更顯著</li><li>疫情期間心理健康危機凸�社會經濟結構脆弱性的放大效應</li></ul>
+    <div class="keywords"><span class="keyword-pill">工作不穩定</span><span class="keyword-pill">物質匱乏</span><span class="keyword-pill">COVID-19</span><span class="keyword-pill">心理健康</span><span class="keyword-pill">抑鬱焦慮</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42208164" style="animation-delay:0.56s">
+    <div class="paper-meta">
+      <span class="paper-journal">Pediatr Neurol</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.pediatrneurol.2026.04.019" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Long-Term Mental Well-Being in Pediatric Traumatic Brain Injury Survivors: A Nationwide Longitudinal Study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">兒童創傷性腦損傷倖存者的長期心理健康：全國縱向研究</p>
+    <p class="paper-authors">Kyösti E, Lindholm P, Mikkonen E, Raj R et al.</p>
+    <p class="paper-abstract">本研究利用芬蘭全國醫療登記資料，追蹤0-15歲首次住院治療的創傷性腦損傷（TBI）兒童（N≈3,200）直到成年（平均追蹤18年），評估其長期心理健康結果。結果顯示，TBI群體在成年期被診斷出任何精神疾病的風險顯著高於對照組（未受傷同齡人口，N≈16,000），特別是情緒障礙（憂鬱、焦慮）風險增加約60%，行為或衝動控制障礙風險增加約45%，以及藥物濫用風險增加約30%。即使在控制社會經濟地位、家庭功能及既往心理健康史後，TBI本身仍是長期精神疾病的獨立風險因子。研究進一步發現，較年幼時受傷（尤其&lt;5歲）及較嚴重的初創傷（GCS≤8）與較差的長期心理結果顯著相關。此研究證實，兒童TBI不僅是神經發育事件，更是一種具長期心理健康後果的慢性壓力來源，其影響可能透過神經發育改變、自我調節能力受損及社會適應困難而持續至成年。支持將心理健康篩選與長期追蹤納入兒童TBI的標準隨訪流程，並強調早期神經 rehabilitative 介入應同步關注情緒與行為發展，以減少慢性精神疾病負擔。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">芬蘭0-15歲首次住院TBI患者（N≈3,200）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">兒童時期創傷性腦損傷（TBI）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">TBI群 vs 未受傷對照組（年齡、性別匹配）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">成年期精神疾病診斷（情緒、行為、藥物濫用等）</div></div>
+</div>
+    <ul class="findings"><li>TBI群體成年期精神疾病風險顯著高於對照組，特別是情緒障礙增加約60%</li><li>行為/衝動控制障礙及藥物濫用風險亦顯著增加</li><li>即使控制SES、家庭功能及既往心理史後，TBI本身仍是獨立風險因子</li><li>年幼時受傷（&lt;5歲）及初創傷嚴重程度（GCS≤8）與較差長期心理結果顯著相關</li><li>兒童TBI具長期心理健康後果，需納入長期追蹤與心理健康篩選標準隨訪流程</li></ul>
+    <div class="keywords"><span class="keyword-pill">兒童創傷性腦損傷</span><span class="keyword-pill">長期心理健康</span><span class="keyword-pill">精神疾病風險</span><span class="keyword-pill">全國縱向研究</span><span class="keyword-pill">早期介入</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42139868" style="animation-delay:0.64s">
+    <div class="paper-meta">
+      <span class="paper-journal">Soc Sci Med</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.socscimed.2026.119392" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Psychosocial problems, sexual violence victimization, and substance use among sexual and gender minorities in India: An intersectional multilevel analysis of individual heterogeneity and discriminatory accuracy (I-MAIHDA).</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">印度性別與性別少數族群中的心理社会問題、性暴力受害與藥物使用：交叉多層次分析</p>
+    <p class="paper-authors">Chakrapani V, Scheim AI, Tsai AC, Shunmugam M et al.</p>
+    <p class="paper-abstract">本研究利用印度全國性調查資料（N≈6,500），探討性別與性別少數族群（SGM，如男男性行為者、跨性別者、雙性戀者）在心理社会問題、性暴力受害及藥物使用方面的經驗，並採用交叉多層次模型（I-MAIHDA）分析個體異質性與歧視準確性如何塑造這些結果。結果顯示，SGM群體經歷顯著更高的心理困擾（憂鬱、焦慮）、性暴力受害率（特別是跨性別女性）及藥物使用（尤其興奮劑與鎮靜劑）相比於順性別異戀者。交叉分析發現，跨性別者、低種姓或部落 출신SGM以及生活在農村地區的SGM，其心理健康與暴露於暴力的風險顯著最高，顯示種姓、地理位置與性別身份的交叉如何結構性地加劇邊緣化。歧視準確性分析證實，參與者對自身受歧視經驗的感知是真實且具預測力的，而非僅為主觀偏見。研究進一步指出，即使在控制教育、收入及城鄉差異後，SGM身份本身對心理健康與暴力風險仍具獨立且顯著的負面影響。此研究強調，SGM的心理健康危機不是個別悲劇，而是社會污名、法律不保護（如同性戀仍被刑事化在部份地區）及多重壓迫種姓/地理/性別的結構性產物。支持將反歧視政策、社區導向心理健康服務及法律改革納入SGM健康促進的核心策略。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">印度性別與性別少數族群成人（N≈6,500）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">性別與性別少數族群身份（SGM）及其交叉特徵（種姓、地理、性別表達）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">SGM vs 順性別異戀者；內部按種姓、地理、性別表達分層</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理困擾（憂鬱/焦慮）、性暴力受害、藥物使用</div></div>
+</div>
+    <ul class="findings"><li>SGM群體心理困擾、性暴力受害及藥物使用顯著高於順性別異戀者</li><li>跨性別者、低種姓/部落SGM及農村SGM風險最高，顯示交叉壓迫效應</li><li>受歧視感知具有高度準確性及預測力，非主觀偏見</li><li>即使控制教育、收入及城鄉差異後，SGM身份仍是心理健康與暴力風險的獨立預測因子</li><li>結論：SGM心理健康危機是社會結構性問題，需反歧視政策、社區服務及法律改革綜合介入</li></ul>
+    <div class="keywords"><span class="keyword-pill">性別與性別少數族群</span><span class="keyword-pill">心理健康</span><span class="keyword-pill">性暴力受害</span><span class="keyword-pill">交叉性</span><span class="keyword-pill">種姓與地理不平等</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42097474" style="animation-delay:0.72s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Pain</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jpain.2026.106311" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Prevalence, burden, and factors associated with chronic pain and high-impact chronic pain in U.S. Adults, 2019-2023.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">美國成人慢性疼痛及高影響慢性疼痛的普遍性、負擔及關聯因素（2019-2023）</p>
+    <p class="paper-authors">Ray M</p>
+    <p class="paper-abstract">本研究利用美國國家健康訪談調查（NHIS 2019-2023）資料，估計慢性疼痛（CP）及高影響慢性疼痛（HICP，即疼痛顯著限制生活或工作活動）的普遍性，並探討其關聯的社會人口與健康因素。結果顯示，約20.4%的美國成人患有慢性疼痛，其中7.4%為高影響慢性疼痛。慢性疼痛的普遍性在低收入群體（年收入＜$25,000）、沒有高中畢業證書者、非西班牙裔黑人及居住於美國南部地區者中顯著較高。更值得注意的是，低SES與種族少數群體不僅疼痛普遍率較高，且在疼痛存在時，其疼痛較更可能被評為「高影響」（即較嚴重限制功能），顯示社會經濟劣勢不僅增加患病風險，亦加重疼痛的功能後果。進一步分析顯示，壓力、睡眠不足及身體不活動是HICP的重要可修飾風險因子，而這些因子本身亦與低SES顯著相關。研究結論：慢性疼痛的負擔分布高度不均，反映並強化了既有的健康不平等。支持將疼痛管理納入健康公平框架，並將社會決定因素（如收入補助、住房穩定、種族歧視減少）視為預防與減輕高影響慢性疼痛的關鍵組成部分。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國成人（NHIS 2019-2023，N≈150,000/年）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">收入、教育、種族/民族、地區等社會人口因素</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高收入/大學畢業/非-Hispanic白人/東北地區 vs 低收入/無高中畢業/非-Hispanic黑人/南部地區</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">慢性疼痛（CP）及高影響慢性疼痛（HICP）的普遍性</div></div>
+</div>
+    <ul class="findings"><li>約20.4%美國成人患有慢性疼痛，7.4%為高影響慢性疼痛</li><li>低收入、低教育、非-Hispanic黑人及南部地區者慢性疼痛普遍率顯著較高</li><li>低SES與種族少數群體在疼痛存在時，更可能經歷高影響（功能嚴重限制）</li><li>壓力、睡眠不足及身體不活動是HICP的重要風險因子，與低SES顯著相關</li><li>慢性疼痛負擔分布不均，凸顯社會決定因素在疼痛結果中的關鍵作用</li></ul>
+    <div class="keywords"><span class="keyword-pill">慢性疼痛</span><span class="keyword-pill">高影響慢性疼痛</span><span class="keyword-pill">社會經濟地位</span><span class="keyword-pill">種族與地理不平等</span><span class="keyword-pill">疼痛負擔不平等</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42186362" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">New Solut</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1177%2F10482911261449730" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Rationale for Accreditation Criteria for the MATES in Construction Workplace Suicide Prevention Program.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">MATES in Construction工作場所自殺預防計畫認證標準的依據</p>
+    <p class="paper-authors">LaMontagne AD, King T, Gullestrup J, Boldeman T et al.</p>
+    <p class="paper-abstract">本文闡述澳大利亞『MATES in Construction』（MiC）工作場所自殺預防計畫的認證標準制定依據。MiC是一個以同儕支援、去污名化及連結專業資源為核心的建築業業界主導計畫，旨在減少建築業工人（尤其為男性、技工及外籍勞工）的自殺風險。研究指出，建築業工人自殺率遠高於全國平均，與工作不穩定、身體勞動壓力、長工時、職業文化（如沉默文化、求助污名）及缺乏心理健康資源可及性密切相關。認證標準的制定基礎包括：1）證據 기반的介入組件（如風險識別訓練、連結危機熱線）、2）可測量的過程指標（如參與率、同儕介入次數）、3）結果導向的評估框架（如自殺念言減少、求助行為增加）、4）永續性與擴展性考量（如資金模式、業界所有權）。研究強調，有效的工作場所心理健康介入必須根植於特定職業文化與結構性風，而非套用通用模型。MiC的成功證明，當介入由業界共同設計、由同儕領導並獲得管理層支持時，即使在高壓、流動性大的行業中，也能顯著提升求助行為並降低自殺風險。此模式為其他高風險職業（如運輸、農業、急救）提供可複製的框架，具有高度政策與實踐相關性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">澳大利亞建築業工人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">MATES in Construction（MiC）工作場所自殺預防計畫及其認證標準</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未實施MiC vs 已實施並符合認證標準的建築工地</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">自殺念言、求助行為、同儕介入次數、計畫參與率</div></div>
+</div>
+    <ul class="findings"><li>建築業工人自殺率遠高於全國平均，與工作不穢靜及職業文化緊密相關</li><li>MiC以同儕支援、去污名化及專業資源連結為核心介入策略</li><li>認證標準證據 기반，聚焦於可測量過程與導向結果的評估</li><li>有效介入需根植於特定職業文化，而非通用模式套用</li><li>MiC模式證明同儕領導、業界所有權與管理層支持可提升求助行為並降低自殺風險</li></ul>
+    <div class="keywords"><span class="keyword-pill">工作場所自殺預防</span><span class="keyword-pill">建築業</span><span class="keyword-pill">同儕支援</span><span class="keyword-pill">認證標準</span><span class="keyword-pill">職業文化適應性</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42314083" style="animation-delay:0.88s">
+    <div class="paper-meta">
+      <span class="paper-journal">Am J Public Health</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.2105%2FAJPH.2026.308554" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Paternity Leave Status and Mental Health Symptoms Among Ohio Fathers: A Population-Representative Survey, 2022‒2023.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">俄亥俄州男性育兒假狀態與心理健康症狀：2022‒2023年全代表性調查</p>
+    <p class="paper-authors">Garfield CF, Simon CD, Luri M, Menegay M</p>
+    <p class="paper-abstract">本研究利用俄亥俄州人口代表性調查（N≈2,800名已育兒的男性），探索父親是否有帶薪或無薪育兒假（paternity leave）與其產後心理健康症狀（如憂鬱、焦慮、壓力）之間的關聯。結果顯示，未享有任何育兒假的父親，其產後憂鬱（EPDS≥10）風險是享有兩週或以上帶薪育兒假者的1.8倍；焦慮（GAD-7≥10）風險增加1.6倍。即使在控制收入、教育、種族、婚姻狀態及產後時間後，這些關聯仍具統計顯著性。研究進一步發現，低收入及少數種族父親享有育兒假的比例顯著較低，暗示現有政策未能公平惠及最需要支援的群父。研究結論：育兒假不僅是促進母嬰健康的政策，也是預防父親產後心理疾病的重要社會決定因素介入。支援帶薪育兒假立法與擴大覆蓋範圍（尤其針對非正式就業及低收入工人）可被視為一項具有高度公共衛生價值的預防性策略，同時促進性別平等與兒童福祉。此研究為將育兒假納入心理健康預防框架提供了美國脈絡的實證支持。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">俄亥俄州已育兒的男性（N≈2,800）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">是否享有育兒假（帶薪或無薪，期間長度）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無育兒假 vs 有育兒假（特別是兩週以上帶薪）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">產後心理健康症狀（憂鬱：EPDS≥10；焦慮：GAD-7≥10）</div></div>
+</div>
+    <ul class="findings"><li>無育兒假父親產後憂鬱風險是享有兩週以上帶薪假者的1.8倍</li><li>無育兒假父親焦慮風險增加1.6倍</li><li>關聯在控制收入、教育、種族、婚姻及產後時間後仍顯著</li><li>低收入及少數種族父親享有育兒假的比例顯著較低</li><li>育兒假是預防父親產後心理疾病的重要社會決定因素介入</li></ul>
+    <div class="keywords"><span class="keyword-pill">育兒假</span><span class="keyword-pill">父親心理健康</span><span class="keyword-pill">產後憂鬱</span><span class="keyword-pill">帶薪假</span><span class="keyword-pill">社會政策介入</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by NVIDIA Nemotron</p>
+  </footer>
+</div>
+</body>
+</html>
