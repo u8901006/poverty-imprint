@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-08-04</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-08-04</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 35 篇文獻</span>
+      <span class="stat-item">&#9888; AI 分析暫時無法使用，僅顯示原始摘要</span>
+    </div>
+  </header>
+  <section class="papers-section">
+    <h2>&#128209; 文獻列表</h2>
+    
+    <div class="paper-card" data-pmid="42545794" style="animation-delay:0s">
+      <div class="paper-meta">
+        <span class="paper-journal">Ann Med</span>
+        <span class="paper-date">2026 Dec</span>
+        <a class="paper-doi" href="https://doi.org/10.1080%2F07853890.2026.2708520" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Subjective social status and health of Saudi medical students: a cross-sectional study on the role of peer comparisons.</h3>
+      <p class="paper-authors">Torchyan AA, Alsergani AH, Alhejji FA, Aldhafian FA et al.</p>
+      <p class="paper-abstract">BACKGROUND: This study examined the relationship between peer subjective social status (SSS), a measure of perceived social position within social hierarchies, and health outcomes in a young adult population. METHODS: A cross-sectional study was conducted in 2025 at the College of Medicine, King Saud University, Saudi Arabia, involving 390 undergraduate students aged 18 and older. Peer SSS was assessed using the validated MacArthur Scale, a 10-rung ladder representing perceived social standing r...</p>
+    </div>
+    <div class="paper-card" data-pmid="42547837" style="animation-delay:0.08s">
+      <div class="paper-meta">
+        <span class="paper-journal">Int J Obes (Lond)</span>
+        <span class="paper-date">2026 Aug 3</span>
+        <a class="paper-doi" href="https://doi.org/10.1038%2Fs41366-026-02181-5" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Socioeconomic position, genetic susceptibility, and epigenetic profiles in obesity across the life course: a systematic review.</h3>
+      <p class="paper-authors">van Uhm J, Meeusen REH, Jansen PR, van Haelst MM et al.</p>
+      <p class="paper-abstract">BACKGROUND: While genetic studies have identified hundreds of loci associated with adiposity, the phenotypic expression of this individual genetic risk is not fixed but dependent on environmental circumstances. Socioeconomic Position (SEP), which includes education, income, and area-level deprivation, serves as an important environmental modulator of genetic liability. However, the literature on Gene-Environment (G&amp;#xd7;E) interactions remains fragmented, particularly regarding how these evolve ...</p>
+    </div>
+    <div class="paper-card" data-pmid="42545973" style="animation-delay:0.16s">
+      <div class="paper-meta">
+        <span class="paper-journal">PLoS Med</span>
+        <span class="paper-date">2026 Aug 3</span>
+        <a class="paper-doi" href="https://doi.org/10.1371%2Fjournal.pmed.1005083" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Trajectories of physical function, depressive symptoms, and cognitive performance before and after falls in older adults: A matched multicohort study.</h3>
+      <p class="paper-authors">Lin J, Kivimäki M, Zhang Z, Wang H et al.</p>
+      <p class="paper-abstract">BACKGROUND: Impairments in physical, psychological, and cognitive functioning are associated with an increased risk of falls. However, how these functional domains change longitudinally before and after fall events remains unclear. We examined individual and joint trajectories of these outcomes preceding and following falls. METHODS AND FINDINGS: Using data collected between 2010 and 2021 from three national cohorts in China, the UK, and the USA, we included 28,773 adults aged &amp;#x2265;60 years a...</p>
+    </div>
+    <div class="paper-card" data-pmid="42545247" style="animation-delay:0.24s">
+      <div class="paper-meta">
+        <span class="paper-journal">Med Lav</span>
+        <span class="paper-date">2026 Aug 3</span>
+        <a class="paper-doi" href="https://doi.org/10.23749%2Fmdl.2026.19054" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">The Impact of Robotization on Employees&#39; Mental and Physical Health: A Qualitative Study in the Czech and Slovak Republics.</h3>
+      <p class="paper-authors">Hubačová Pirová V, Lipšová V, Murza J, Musil Z et al.</p>
+      <p class="paper-abstract">BACKGROUND: This study aimed to explore the impact of introducing robotic technologies on employees&#39; mental and physical health across three Czech and one Slovak manufacturing company. It sought to understand employees&#39; subjective experiences and perceptions of organizational support during the robotization process. METHODS: A qualitative study was conducted between 2023 and 2025 in four companies. 27 semi-structured interviews with employees (15 women, 12 men) and 19 unstructured interviews wit...</p>
+    </div>
+    <div class="paper-card" data-pmid="42544795" style="animation-delay:0.32s">
+      <div class="paper-meta">
+        <span class="paper-journal">Afr J Reprod Health</span>
+        <span class="paper-date">2026 Aug 3</span>
+        <a class="paper-doi" href="https://doi.org/pii%3A%20(Afr%20J%20Reprod%20Health%202026%3B%2030%20%5B14%5D%3A75-85)..%20doi%3A%2010.29063%2Fajrh2026%2Fv30i14.9" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Depressive symptoms, alcohol, and drug dependence among female sex workers in Kisumu, Kenya: A cross-sectional study.</h3>
+      <p class="paper-authors">Osire EA, Awandu SS, Otieno FO, Zulaika G et al.</p>
+      <p class="paper-abstract">Female sex workers (FSW) have increased likelihood of depressive symptoms, alcohol and drug dependence. Analysis of cross-sectional baseline data from 407 women in a trial of menstrual cups was done to assess depressive symptoms (PHQ-9), alcohol (AUDIT) and drug dependence (DAST). Multinomial logistic regression identified factors associated with having 2 or 3 elevated scores, relative to having no elevated score. Median age was 27.3 years; 60% of the FSWs had less than secondary education, 41% ...</p>
+    </div>
+    <div class="paper-card" data-pmid="42544631" style="animation-delay:0.4s">
+      <div class="paper-meta">
+        <span class="paper-journal">Afr J Reprod Health</span>
+        <span class="paper-date">2026 Aug 3</span>
+        <a class="paper-doi" href="https://doi.org/pii%3A%20.%20(Afr%20J%20Reprod%20Health%202026%3B%2030%20%5B14%5D%3A%2057-65)..%20doi%3A%2010.29063%2Fajrh2026%2Fv30i14.7" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Psychosocial determinants of postpartum blues among matrilineal mothers in West Sumatra, Indonesia.</h3>
+      <p class="paper-authors">Oktavia SN, Kanathasan JS</p>
+      <p class="paper-abstract">Postpartum blues typically occur during the first two weeks after childbirth and may increase the risk of subsequent depressive disorders. In Minangkabau communities of West Sumatra, Indonesia, where matrilineal family systems and neo-local or dual family residence systems exist and husbands frequently migrate, it is insufficiently understood how family structure and partner presence may influence the maternal mood. This study aimed to examine psychosocial determinants of postpartum blues among ...</p>
+    </div>
+    <div class="paper-card" data-pmid="42478884" style="animation-delay:0.48s">
+      <div class="paper-meta">
+        <span class="paper-journal">Eur J Endocrinol</span>
+        <span class="paper-date">2026 Aug 3</span>
+        <a class="paper-doi" href="https://doi.org/10.1093%2Fejendo%2Flvag125" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Depression and anxiety in patients with endogenous Cushing syndrome: a nationwide matched-cohort study using affective drug dispensations.</h3>
+      <p class="paper-authors">Kaminer K, Shimon I, Rudman Y, Diker-Cohen T et al.</p>
+      <p class="paper-abstract">OBJECTIVE: Cushing syndrome (CS) is associated with depression and anxiety. This study compared treated mood and anxiety disorders between patients with CS and controls, assessing differences by etiology and remission status. METHODS: A retrospective matched-cohort study of patients with endogenous CS (2000-2024) from the Clalit Health Services database. Each patient was matched with 5 controls by age, sex, socioeconomic status, and BMI. Mood and anxiety disorders were identified through affecti...</p>
+    </div>
+    <div class="paper-card" data-pmid="42037171" style="animation-delay:0.56s">
+      <div class="paper-meta">
+        <span class="paper-journal">Eur J Prev Cardiol</span>
+        <span class="paper-date">2026 Aug 3</span>
+        <a class="paper-doi" href="https://doi.org/10.1093%2Feurjpc%2Fzwag229" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Climate change and cardiovascular risk factors management: emerging challenges and strategies for prevention and adaptation.</h3>
+      <p class="paper-authors">Marketou M, Caples N, Abela M, Dendale P et al.</p>
+      <p class="paper-abstract">Climate change represents an escalating global health crisis that profoundly influences the risk factors for cardiovascular disease (CVD). Human-driven alterations in climate-including rising ambient temperatures, more frequent and severe heatwaves, air pollution, and extreme weather events-directly and indirectly exacerbate hypertension, diabetes, hyperlipidaemia, and physical inactivity. Exposure to high temperatures and pollution promotes vascular dysfunction, inflammation, and oxidative stre...</p>
+    </div>
+    <div class="paper-card" data-pmid="42543905" style="animation-delay:0.64s">
+      <div class="paper-meta">
+        <span class="paper-journal">J Health Psychol</span>
+        <span class="paper-date">2026 Aug 2</span>
+        <a class="paper-doi" href="https://doi.org/10.1177%2F13591053261470607" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Mental and physical health impacts of extreme weather events on women of reproductive age: A systematic review.</h3>
+      <p class="paper-authors">Chukwu OO, Ezenwa M, Okpala MO, Alagbonsi AI</p>
+      <p class="paper-abstract">This systematic review synthesizes evidence on the mental and physical health consequences of EWEs among WRA. A systematic search was conducted across PubMed, Scopus, Web of Science, Embase, and PsycINFO, as well as grey literature sources, for studies published between January 1, 2014 and April 30, 2024. Twenty-two studies met the inclusion criteria. Exposure to EWEs was consistently associated with elevated anxiety, depression, PTSD, and eco-anxiety among WRA, alongside increased risks of pret...</p>
+    </div>
+    <div class="paper-card" data-pmid="42546234" style="animation-delay:0.72s">
+      <div class="paper-meta">
+        <span class="paper-journal">Health Aff (Millwood)</span>
+        <span class="paper-date">2026 Aug</span>
+        <a class="paper-doi" href="https://doi.org/10.1377%2Fhlthaff.2025.01656" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">The Expanded Child Tax Credit: Highest Burdens, Smallest Improvements Among Low-Income, Female-Headed Households.</h3>
+      <p class="paper-authors">Herbst K, Runkle J, Malmin N, Sugg M</p>
+      <p class="paper-abstract">The 2021 expansion of the Child Tax Credit provided advance monthly cash transfers to most US households with children. Although prior evaluations documented overall improvements in household well-being, less is known about variation by household structure. This study examined policy-period changes in parental mental health and material hardship among female-headed households. Using data from 1.3&amp;#xa0;million respondents to the Census Bureau&#39;s Household Pulse Survey (2020-25) and an intersection...</p>
+    </div>
+    <div class="paper-card" data-pmid="42545808" style="animation-delay:0.8s">
+      <div class="paper-meta">
+        <span class="paper-journal">Ann N Y Acad Sci</span>
+        <span class="paper-date">2026 Aug</span>
+        <a class="paper-doi" href="https://doi.org/10.1111%2Fnyas.70366" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">On the Limitations of Burnout as an Indicator of Job-Related Distress.</h3>
+      <p class="paper-authors">Bianchi R</p>
+      <p class="paper-abstract">Burnout continues to shape discussions of stress and mental health in the workplace. This paper contends that the burnout framework is inadequate because it overlooks crucial aspects of the job-related distress it purports to capture. The narrow symptom focus of the burnout construct has little theoretical or empirical justification and omits red-flag features of severe distress, such as suicidality. The paper examines how the issue of burnout&#39;s symptom scope relates to other controversial facet...</p>
+    </div>
+    <div class="paper-card" data-pmid="42517168" style="animation-delay:0.88s">
+      <div class="paper-meta">
+        <span class="paper-journal">Eur J Phys Rehabil Med</span>
+        <span class="paper-date">2026 Aug</span>
+        <a class="paper-doi" href="https://doi.org/10.23736%2FS1973-9087.26.09409-8" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Depressive symptoms score and risk of incident spinal pain in middle-aged and elderly populations: a prospective cohort study based on china health and retirement longitudinal study data.</h3>
+      <p class="paper-authors">Yuan Y, Yu X, Li Z, Yuan S et al.</p>
+      <p class="paper-abstract">BACKGROUND: Spinal pain is a common musculoskeletal disorder, the leading cause of disability in middle-aged and elderly populations (females more affected), burdening quality of life, function, and socioeconomic status. It is frequently comorbid with depressive symptoms via bidirectional mechanisms: chronic pain induces depressive symptoms through neuroendocrine and immune dysfunctions, while depressive symptoms exacerbates pain by lowering pain thresholds and promoting negative coping. Previou...</p>
+    </div>
+    <div class="paper-card" data-pmid="42504867" style="animation-delay:0.96s">
+      <div class="paper-meta">
+        <span class="paper-journal">Aust Occup Ther J</span>
+        <span class="paper-date">2026 Aug</span>
+        <a class="paper-doi" href="https://doi.org/10.1111%2F1440-1630.70113" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">An exploration of the changes to occupational participation during military-to-civilian transition: The experiences of Australian Defence Force members.</h3>
+      <p class="paper-authors">Kerr NC, Lane SJ, Plotnikoff RC, Ashby S</p>
+      <p class="paper-abstract">INTRODUCTION: The transition from military-to-civilian life is associated with challenges including shifts in identity and employment, reestablishment of family and personal relationships, and financial hardship. To better support transition, it is important to explore the perspectives of those who have transitioned from the Australian Defence Force (ADF) into civilian life. Thus, the study aims to explore how occupational participation during military service influences the experience of transi...</p>
+    </div>
+    <div class="paper-card" data-pmid="42490322" style="animation-delay:1.04s">
+      <div class="paper-meta">
+        <span class="paper-journal">AANA J</span>
+        <span class="paper-date">2026 Aug 1</span>
+        <a class="paper-doi" href="https://doi.org/10.70278%2FAANAJ%2F.0000001096" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Beyond the Nociceptor--Addressing Social Determinants of Pain in Anesthesia Care.</h3>
+      <p class="paper-authors">Aroke EN, Thurston K</p>
+      <p class="paper-abstract">Despite advances in regional anesthesia and multimodal analgesia, pain disparities in perioperative and chronic pain populations persist, particularly among marginalized groups who experience higher postoperative pain and poorer recovery. Social determinants of pain (SDOP) link social adversity to nociceptive processing through biological pathways. Chronic stress and allostatic load induce epigenetic changes that accelerate aging and affect pain biology. Most clinicians lack understanding of how...</p>
+    </div>
+    <div class="paper-card" data-pmid="42391932" style="animation-delay:1.12s">
+      <div class="paper-meta">
+        <span class="paper-journal">Maturitas</span>
+        <span class="paper-date">2026 Aug</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.maturitas.2026.109040" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Change of sexual activity and its relation to the quality of life in older people: Cognition of Older People, Education, Recreational Activities, NutritIon, Comorbidities, fUnctional Capacity Studies (COPERNICUS).</h3>
+      <p class="paper-authors">Kujawska A, Kujawski S, Hajek A, Del Sequeros Pedroso-Chaparro M et al.</p>
+      <p class="paper-abstract">OBJECTIVES: Longitudinal changes in sexual activity and their impact on quality of life in older adults have not been thoroughly examined. The current study examined the change in sexual activity over two years and its relation to quality of life in older people in Poland. STUDY DESIGN: This was a two-year longitudinal observational study. Changes in quality of life were evaluated using analysis of covariance models, adjusting for baseline scores, demographic factors, changes in marital status, ...</p>
+    </div>
+    <div class="paper-card" data-pmid="42383937" style="animation-delay:1.2s">
+      <div class="paper-meta">
+        <span class="paper-journal">Mayo Clin Proc</span>
+        <span class="paper-date">2026 Aug</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.mayocp.2025.11.018" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Total and Premature Mortality in Single-Person Households: Comparative Study of Korean and UK Data.</h3>
+      <p class="paper-authors">Yun JS, Lee J, Won HH, Kim B et al.</p>
+      <p class="paper-abstract">OBJECTIVE: To investigate the relationship between living in a single-person household and risk of mortality, particularly premature mortality. METHODS: Using data from the Korean National Health Information Database (NHID) (n=2,443,202) and the UK Biobank (n=496,925), this study analyzed the mortality risks associated with living alone in the middle-aged population. We performed Cox proportional hazard regression analyses for the association of single-person household status with total and prem...</p>
+    </div>
+    <div class="paper-card" data-pmid="42323163" style="animation-delay:1.28s">
+      <div class="paper-meta">
+        <span class="paper-journal">Am J Clin Nutr</span>
+        <span class="paper-date">2026 Aug</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.ajcnut.2026.101402" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Nutritional anemia is associated with increased risk of severe COPD exacerbations: a prospective cohort study.</h3>
+      <p class="paper-authors">Dehondt V, Kint N, Vanfleteren LE, Lahousse L</p>
+      <p class="paper-abstract">BACKGROUND: Anemia prevalence in chronic obstructive pulmonary disease (COPD) varies widely across studies, and data on anemia subtypes and their association with mortality or COPD exacerbation readmission are limited. OBJECTIVES: We aimed to investigate anemia subtypes and their association with mortality and readmission for acute exacerbation of COPD (AECOPD) in patients hospitalized for AECOPD. METHODS: In this prospective observational cohort study, patients with COPD aged &amp;#x2265;45 y hospi...</p>
+    </div>
+    <div class="paper-card" data-pmid="42322688" style="animation-delay:1.36s">
+      <div class="paper-meta">
+        <span class="paper-journal">Int Dent J</span>
+        <span class="paper-date">2026 Aug</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.identj.2026.109661" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Career Status and Mental Health Among Female Dentists in China: A Nationwide Cross-Sectional Survey.</h3>
+      <p class="paper-authors">Dong T, Yang Y, Liu L, Ouyang N et al.</p>
+      <p class="paper-abstract">INTRODUCTION AND AIMS: Female dentists make up a large proportion in China and often face heavy workloads and occupational pressure. This study aims to conduct a comprehensive analysis of the current situation, challenges and mental health conditions of female dentists in China. METHODS: A cross-sectional survey among female dentists in China was conducted using a structured questionnaire. The survey collected information on demographic characteristics, workload, income satisfaction, psychologic...</p>
+    </div>
+    <div class="paper-card" data-pmid="42308666" style="animation-delay:1.44s">
+      <div class="paper-meta">
+        <span class="paper-journal">Int Dent J</span>
+        <span class="paper-date">2026 Aug</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.identj.2026.109669" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Self-Efficacy, Psychological State, Oral Health Behaviour, and Oral Health-Related Quality of Life in Chinese Patients With Periodontal Disease.</h3>
+      <p class="paper-authors">Yu Y, Du S, Xu K, Wang M et al.</p>
+      <p class="paper-abstract">INTRODUCTION AND AIMS: Periodontal disease, a major oral disease, includes various inflammatory diseases that affect the tooth support structure (gums, alveolar bone, and periodontal ligament) and can lead to tooth loss and promote systemic inflammation, affecting more than 1 billion people worldwide. This study aimed to investigate the relationship between self-efficacy, psychological state, oral health behaviours, and oral health-related quality of life (OHRQoL) in patients with periodontal di...</p>
+    </div>
+    <div class="paper-card" data-pmid="42258257" style="animation-delay:1.52s">
+      <div class="paper-meta">
+        <span class="paper-journal">J Fam Psychol</span>
+        <span class="paper-date">2026 Aug</span>
+        <a class="paper-doi" href="https://doi.org/10.1037%2Ffam0001479" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Caregiver distress explains links between objective and subjective socioeconomic status and adolescent internalizing and externalizing behaviors.</h3>
+      <p class="paper-authors">Miller P, Jones E, Parker H, Leverett-Ptak C et al.</p>
+      <p class="paper-abstract">The United States is amid an unprecedented adolescent mental health crisis, and adolescents who experience socioeconomic disadvantage are at elevated risk for behavioral problems. Low socioeconomic status (SES) is related to parent distress and is one potential pathway through which disadvantage relates to adolescent internalizing and externalizing problems. Empirical support for this pathway is typically based on a single measure of objective SES considered in isolation. However, parents&#39; subje...</p>
+    </div>
+    <div class="paper-card" data-pmid="42250404" style="animation-delay:1.6s">
+      <div class="paper-meta">
+        <span class="paper-journal">Semin Arthritis Rheum</span>
+        <span class="paper-date">2026 Aug</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.semarthrit.2026.153016" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Long-term rheumatologic comorbidities in familial Mediterranean fever.</h3>
+      <p class="paper-authors">Magen E, Aamar S, Magen I, Merzon E et al.</p>
+      <p class="paper-abstract">OBJECTIVES: Familial Mediterranean fever (FMF) is characterized by pyrin inflammasome dysregulation and chronic subclinical inflammation. Whether FMF carries an increased long-term burden of rheumatologic and autoimmune inflammatory disease is unclear. We evaluated baseline and long-term occurrence of rheumatologic and selected autoimmune comorbidities in FMF. METHODS: This was a nationwide, retrospective, population-based matched-cohort study using electronic health records from Leumit Health S...</p>
+    </div>
+    <div class="paper-card" data-pmid="42241952" style="animation-delay:1.68s">
+      <div class="paper-meta">
+        <span class="paper-journal">Child Abuse Negl</span>
+        <span class="paper-date">2026 Aug</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.chiabu.2026.108147" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Dual system involvement: A scoping review on the intersection of child welfare and juvenile justice systems.</h3>
+      <p class="paper-authors">Magalhães E, Park K, d&#39;Eça L, Brazão N</p>
+      <p class="paper-abstract">BACKGROUND: Youth involved in both the child welfare and juvenile justice systems represent a highly vulnerable population facing overlapping adversities and complex mental health needs. It is therefore critical to synthesize existing research in ways that inform further research, practice, and policy. This scoping review maps research on dual-system involvement (DSI) and identifies areas requiring further investigation, with particular attention to population characteristics across ecological s...</p>
+    </div>
+    <div class="paper-card" data-pmid="42241916" style="animation-delay:1.76s">
+      <div class="paper-meta">
+        <span class="paper-journal">Soc Sci Med</span>
+        <span class="paper-date">2026 Aug</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.socscimed.2026.119454" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Educational inequalities are associated with distinct metabolomic and gut microbiome patterns in adults.</h3>
+      <p class="paper-authors">Brix F, Demetrowitsch T, Jensen-Kroll J, Roeder N et al.</p>
+      <p class="paper-abstract">Educational attainment is a well-established determinant of health inequalities and non-communicable diseases. While social gradients in health are consistently observed, the biological mechanisms through which educational disadvantage becomes embedded in human physiology remain insufficiently understood. We analyzed baseline data from 1773 adults in the population-based Food Chain Plus (FoCus) cohort. Phenotype, lifestyle, and nutrition were integrated with non-targeted serum and urine metabolo...</p>
+    </div>
+    <div class="paper-card" data-pmid="42227931" style="animation-delay:1.84s">
+      <div class="paper-meta">
+        <span class="paper-journal">J Adolesc Health</span>
+        <span class="paper-date">2026 Aug</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jadohealth.2026.03.014" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Generative Artificial Intelligence in the Lives of Young Adults: Exploring Motivations and Mental Health.</h3>
+      <p class="paper-authors">Maheux AJ, Maes C, Buck B</p>
+      <p class="paper-abstract">PURPOSE: Young people have rapidly adopted generative artificial intelligence (genAI) technology, yet little is known about how genAI use relates to mental health. This observational study examined associations between genAI use motivations-social-emotional support, task automation, learning/exploration, and dating/sexuality-and internalizing symptoms, as well as sociodemographic differences. METHODS: U.S. young adults (N = 1003; ages 18-25; 56.3% women, 39.4% men, 4.3% another gender) completed...</p>
+    </div>
+    <div class="paper-card" data-pmid="42209315" style="animation-delay:1.92s">
+      <div class="paper-meta">
+        <span class="paper-journal">J Surg Educ</span>
+        <span class="paper-date">2026 Aug</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jsurg.2026.104009" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">LGBTQI+ Allyship in Postgraduate Surgical Education: A Scoping Review.</h3>
+      <p class="paper-authors">Tokidis E, Valverde J, Stephenson-Allen A, Chui K et al.</p>
+      <p class="paper-abstract">BACKGROUND: Allyship to individuals identifying as Lesbian, Gay, Bisexual, Trans, Queer, Intersex (LGBTQI+) in surgical education is critical to supporting the development of inclusive learning and training environments, and equipping trainees with appropriate knowledge and insight to provide competent care to LGBTQI+ populations. Despite this, significant gaps persist in the integration of LGBTQI+ topics and allyship training within surgical curricula. This study aims to evaluate contemporary e...</p>
+    </div>
+    <div class="paper-card" data-pmid="42546976" style="animation-delay:2s">
+      <div class="paper-meta">
+        <span class="paper-journal">Neurotoxicology</span>
+        <span class="paper-date">2026 Aug 3</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.neuro.2026.103542" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Postnatal Exposure to Current Use Pesticides and Neurodevelopmental Outcomes in Children and Adolescents: A Systematic Review.</h3>
+      <p class="paper-authors">Viglietti PG, Goldberg A, Rousseau KL, Fuhrimann S et al.</p>
+      <p class="paper-abstract">BACKGROUND: Evidence on the neurodevelopmental impacts of postnatal exposure to current-use pesticides (CUPs) remains fragmented. This systematic review synthesises the international epidemiological evidence linking chronic postnatal CUP exposure with neurocognitive (NC), neurobehavioural (NB), and neurological (N_) outcomes in children and adolescents. METHODS: Following PRISMA 2020 (PROSPERO-CRD42021258519), we searched PubMed, Scopus, Web of Science, Cochrane, and EBSCOhost for epidemiologica...</p>
+    </div>
+    <div class="paper-card" data-pmid="42544863" style="animation-delay:2s">
+      <div class="paper-meta">
+        <span class="paper-journal">Health Expect</span>
+        <span class="paper-date">2026 Aug</span>
+        <a class="paper-doi" href="https://doi.org/10.1111%2Fhex.70801" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Treatment Experiences of Individuals With Co-Occurring Mental Health and Substance Use Disorders and Perspectives of Mental Health Workers in Ashanti Region, Ghana.</h3>
+      <p class="paper-authors">Darko G, Anokye GA, Yinzooya YM, Agengre T</p>
+      <p class="paper-abstract">BACKGROUND: Co-occurring mental health and substance use disorders remain a major challenge for treatment and recovery in low-resource settings where services are often fragmented. People with these conditions usually receive care in systems with limited coordination, financial barriers and stigma. Our study explored the treatment experiences of individuals with co-occurring disorders and the perspectives of mental health workers. METHODS: A qualitative exploratory design was used to examine the...</p>
+    </div>
+    <div class="paper-card" data-pmid="42454757" style="animation-delay:2s">
+      <div class="paper-meta">
+        <span class="paper-journal">Suicide Life Threat Behav</span>
+        <span class="paper-date">2026 Aug</span>
+        <a class="paper-doi" href="https://doi.org/10.1111%2Fsltb.70130" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Collectivism and Suicide Risk: Reinterpreting Interpersonal Theory Constructs in Southern Belize.</h3>
+      <p class="paper-authors">Kirsch J, Praetorius R, Fabbri M, Oladeji O</p>
+      <p class="paper-abstract">BACKGROUND: Over 70% of global suicides occur in low- and middle-income countries (LMICs), yet cultural mechanisms of suicide risk remain underexplored. Collectivism is often assumed protective, but emerging evidence from vertically collectivist settings suggests a more complex relationship. METHODS: Qualitative interviews were conducted with 29 community stakeholders across health, education, religious, and social service sectors in Toledo District, southern Belize. Data were analyzed using ref...</p>
+    </div>
+    <div class="paper-card" data-pmid="42018713" style="animation-delay:2s">
+      <div class="paper-meta">
+        <span class="paper-journal">J Trauma Acute Care Surg</span>
+        <span class="paper-date">2026 Aug 1</span>
+        <a class="paper-doi" href="https://doi.org/10.1097%2FTA.0000000000004983" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Disparities in trauma care: A Western Trauma Association panel discussion on sex, financial, and geographic disparities in trauma care.</h3>
+      <p class="paper-authors">Murphy PB, Cronn S, Tatbe L, West MA et al.</p>
+      <p class="paper-abstract">Reducing disparities and achieving health equity are critical goals for the trauma community. Although significant advances have been made in short-term trauma outcomes, disparities persist across various dimensions including race, sex, gender, socioeconomic status, and geographic location. This manuscript represents a distillation of a panel discussion from the 2024 Western Trauma Association meeting that examined three under-recognized categories of trauma disparities beyond traditional demogr...</p>
+    </div>
+    <div class="paper-card" data-pmid="41817624" style="animation-delay:2s">
+      <div class="paper-meta">
+        <span class="paper-journal">Health Psychol</span>
+        <span class="paper-date">2026 Aug</span>
+        <a class="paper-doi" href="https://doi.org/10.1037%2Fhea0001598" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">The costs and benefits of striving: Subclinical cardiovascular disease, depression, and hostility as children navigate adversity.</h3>
+      <p class="paper-authors">Gump BB, Pilkay S, Wang X, Vasilenko S et al.</p>
+      <p class="paper-abstract">BACKGROUND: Adversity (e.g., poverty, discrimination, or stress) does not always produce harmful effects. &quot;Striving&quot; against adversity has been linked to positive psychological outcomes, such as lower depression, suggesting resilience; however, striving against severe adversity appears to simultaneously produce cardiovascular disease (CVD) risk (framed in the literature as &quot;John Henryism&quot;). METHOD: We assessed striving (self-report survey) and adversity (nine indices, including socioeconomic sta...</p>
+    </div>
+    <div class="paper-card" data-pmid="40704921" style="animation-delay:2s">
+      <div class="paper-meta">
+        <span class="paper-journal">J Interpers Violence</span>
+        <span class="paper-date">2026 Aug</span>
+        <a class="paper-doi" href="https://doi.org/10.1177%2F08862605251355626" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Factor Analysis of Adverse Childhood Experiences in the Future of Families and Child Wellbeing Study Sample.</h3>
+      <p class="paper-authors">Moore CR, Herrenkohl TI, Stoddard SA</p>
+      <p class="paper-abstract">Adverse Childhood Experiences (ACEs), including exposure to abuse, neglect, or other significant household challenges within the first 18&amp;#x2009;years of life, have been associated with myriad negative health and wellbeing outcomes, particularly when assessed as a composite index of ACE types. Increasingly, ACEs have been operationalized as indicators of latent constructs of adversity; however, the dimensionality of latent ACE constructs remains unclear. Further, measurement invariance of latent...</p>
+    </div>
+    <div class="paper-card" data-pmid="40266557" style="animation-delay:2s">
+      <div class="paper-meta">
+        <span class="paper-journal">J Racial Ethn Health Disparities</span>
+        <span class="paper-date">2026 Aug</span>
+        <a class="paper-doi" href="https://doi.org/10.1007%2Fs40615-025-02441-6" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Psychotherapy is not just for Rich White People: Outcomes for Clients from Minoritized Backgrounds and in a Community Training Clinic.</h3>
+      <p class="paper-authors">Haft SL, Liu NH</p>
+      <p class="paper-abstract">Although dose-response and similar psychotherapy outcome studies have been plentiful in recent years, most assume a one-size-fits-all approach. They often rely on homogeneous populations, which usually means wealthy, Eurocentric groups. Although financial hardship, race, ethnicity, and sexual minoritized status are associated with significantly worse mental health outcomes, these samples remain underrepresented in psychotherapy research. Previous research on the contributions of these demographi...</p>
+    </div>
+    <div class="paper-card" data-pmid="42538119" style="animation-delay:2s">
+      <div class="paper-meta">
+        <span class="paper-journal">BMJ Open</span>
+        <span class="paper-date">2026 Jul 31</span>
+        <a class="paper-doi" href="https://doi.org/10.1136%2Fbmjopen-2026-122310" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Mental health of people living in Afghanistan: protocol for a systematic review.</h3>
+      <p class="paper-authors">Saeed H, Kaya B, Kuhn I, Mughal F et al.</p>
+      <p class="paper-abstract">INTRODUCTION: Afghanistan has experienced decades of war, political instability, displacement, poverty and structural upheaval, all of which are likely to have contributed to the population&#39;s deteriorating mental health. Individual studies and reports describe depression, anxiety, trauma-related distress and a severe lack of access to care, especially among women. However, the evidence remains fragmented. There has been no recent synthesis of evidence on mental health conditions, determinants, c...</p>
+    </div>
+    <div class="paper-card" data-pmid="42536707" style="animation-delay:2s">
+      <div class="paper-meta">
+        <span class="paper-journal">Sex Reprod Health Matters</span>
+        <span class="paper-date">2026 Jul 31</span>
+        <a class="paper-doi" href="https://doi.org/10.1080%2F26410397.2026.2702119" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Menstrual health outcomes and associations with depression and anxiety in Spain: a cross-sectional study.</h3>
+      <p class="paper-authors">García-Egea A, López-Jiménez T, Apalategi-Gómez U, Fernández-Domínguez MJ et al.</p>
+      <p class="paper-abstract">This study analysed the relationship between menstrual health and self-reported depression and anxiety in women and people who menstruate (PWM) (&amp;#x2265;18 years) in Spain, from a critical gender perspective. An online survey was used to collect data in 32 healthcare centres in 2023. Descriptive and ordinal logistic regression models were performed with 1,404 participants. Menstrual bleeding of over 80&amp;#x2005;ml was associated with higher odds of more severe depression (aOR=1.61; 95%CI: 1.45-1.7...</p>
+    </div>
+    <div class="paper-card" data-pmid="41456977" style="animation-delay:2s">
+      <div class="paper-meta">
+        <span class="paper-journal">Pain Manag Nurs</span>
+        <span class="paper-date">2026 Aug</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.pmn.2025.12.005" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Exploring Biopsychosocial Factors Influencing the Association Between Chronic Pain and Cognitive Impairment.</h3>
+      <p class="paper-authors">Domoyeri P, Fazeli PL, Mosley PJ, Aroke EN</p>
+      <p class="paper-abstract">PURPOSE: Chronic pain and cognitive impairment share similar biopsychosocial risk factors; however, little work has directly explored how these factors influence the relationship between chronic pain and cognitive impairment. This review aimed toexamine and integrate available evidence on biopsychosocial factors that influence the relationship between chronic pain and cognitive impairment in adults and develop a framework that will guide future research on this topic. DESIGN: Integrative review....</p>
+    </div>
+  </section>
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by NVIDIA Nemotron</p>
+  </footer>
+</div>
+</body>
+</html>
