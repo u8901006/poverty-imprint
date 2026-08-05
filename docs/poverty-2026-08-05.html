@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-08-05</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-08-05">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-08-05">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-08-05</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 6 篇文獻</span>
+      <span class="stat-item">&#128193; 3 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本批次文獻聚焦於貧窮印記的多維度表現，涵蓋心理健康、社會決定因素、生物嵌入與政策介入等領域。研究顯示，性別與年齡差異顯著影響抑鬱症發生率與後續住院風險（Paper 1），個人、健康、生活方式與社會因素在青少年到成年階段對抑鬱症狀具有持續且累積的影響（Paper 2）。財富與表觀遺傳年齡加速之間存在中介關係，影響內在能力（Paper 3），職業壓力透過睡眠品質影響抑鬱，而工作參與度具調節作用（Paper 4）。運動能力與健康相關體適能對西班牙青少年的心理健康有正向保護作用（Paper 5）。長照機構照顧助理的工作滿意度受組織支持、工作負荷與人際關係等因素顯著影響（Paper 6）。最後，結條件現金轉移政策在結核病治療中的執行顯示，條件設計可提升依從性與治療效果，但需平衡公平性與執行成本（Paper 7）。綜合來看，貧窮的影響透過生物、心理、社會與制度路徑嵌入個體生命歷程，早期介入與結構性政策具高臨床與公共衛生價值。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">3 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">表觀遺傳與生物老化</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:33%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:67%">2 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">3 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42552765" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">West J Nurs Res</span>
+      <span class="paper-date">2026 Aug 4</span>
+      <a class="paper-doi" href="https://doi.org/10.1177%2F01939459261464350" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Sex and Age Disparities in Depression Incidence and Subsequent Hospitalization: A Nationwide Population-Based Cohort Study and Implications for Nursing Practice.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">性別與年齡差異在抑鬱症發生率及後續住院：全國人口基礎隊列研究與對護理實踐的啟示</p>
+    <p class="paper-authors">Lin YW, Sung FC, Ma WF, Lin CL et al.</p>
+    <p class="paper-abstract">本研究利用全國人口隊列資料，探討性別與年齡對抑鬱症新發病例及其後住院風險的影響。結果顯示，女性在青壯年階段抑鬱症發生率顯著高於男性，但隨著年齡增長，此差異逐漸縮小；男性在老年階段則顯示出較高的後續住院風險。研究進一步指出，早期發現與性別敏感之護理介入對降低住院率具有關鍵意義。研究強調將性別與年齡視為抑鬱症防治的重要層級決定因素，並建議護理實踐應整合生命週期視角與社會決定因素，以提升精準預防與早期干預效能。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">全國人口基礎隊列（台灣地區，橫跨不同年齡層與性別）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">性別與年齡作為社會人口暴露變項</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同性別與年齡組間的抑鬱症發生率及後續住院風險</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">抑鬱症新發病例 incidencence 與其後住院率</div></div>
+</div>
+    <ul class="findings"><li>女性在青壯年期抑鬱症發生率顯著高於男性</li><li>男性在老年階段抑鬱症後續住院風險較高</li><li>性別與年齡交互作用對抑鬱症軌跨具有重要影響</li><li>早期發現與性別敏感護理介入可降低住院率</li><li>需將生命週期視角納入抑鬱症防治策略</li></ul>
+    <div class="keywords"><span class="keyword-pill">抑鬱症</span><span class="keyword-pill">性別差異</span><span class="keyword-pill">年齡效應</span><span class="keyword-pill">住院風險</span><span class="keyword-pill">護理實踐</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42551934" style="animation-delay:0.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">Eur J Public Health</span>
+      <span class="paper-date">2026 Aug 4</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20ckag122.%20doi%3A%2010.1093%2Feurpub%2Fckag122" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Estimating the associations between personal, health, lifestyle, and social factors on depressive symptoms from adolescence to adulthood: a fixed effect approach using panel data.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">從青少年到成年階段個人、健康、生活方式與社會因素對抑鬱症狀的影響：以面板資料的固定效應模型估計</p>
+    <p class="paper-authors">Sørensen CLB, Larsen FB, Bültmann U, Plana-Ripoll O et al.</p>
+    <p class="paper-abstract">本研究使用縱向面板資料與固定效應模型，控制個體不變異質性，探討個人、健康、生活方式（如運動、飲食、睡眠）及社會因素（如教育、就業、人際關係）從青少年到成年階段對抑鬱症狀的動態影響。結果顯示，健康行為惡化（特別是睡眠品質下降與久坐行為增加）與社會疏離（如人際支持減少、就業不穩定）與抑鬱症狀惡化顯著正相關；而規律運動、穩定就業與良好人際關係則具保護作用。研究強調，社會決定因素與個人行為因素在不同年發階段具有累積效應，早期生活逆境可能透過行為與社會路徑延伸影響成年心理健康，支持貧窮印記理論中的生命歷程觀點。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">青少年至成年過渡期個人（橫跨多個發展階段）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">個人、健康、生活方式與社會因素的時序變化</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">同一個體在不同時期的抑鬱症狀變化（內在控制）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">抑鬱症狀得分變化（如CES-D或類似量表）</div></div>
+</div>
+    <ul class="findings"><li>睡眠品質惡化與抑鬱症狀顯著正相關</li><li>社會疏離（人際支持減少、就業不穩定）加劇抑鬱症狀</li><li>規律運動與穩定就業對抑鬱症具保護作用</li><li>健康與社會因素的影響具有累積效應</li><li>早期生活逆境可能透過行為路徑影響成年心理健康</li></ul>
+    <div class="keywords"><span class="keyword-pill">抑鬱症狀</span><span class="keyword-pill">面板資料</span><span class="keyword-pill">固定效應模型</span><span class="keyword-pill">生活方式因素</span><span class="keyword-pill">社會決定因素</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42550031" style="animation-delay:0.16s">
+    <div class="paper-meta">
+      <span class="paper-journal">Am J Hum Biol</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1002%2Fajhb.70318" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Associations Between Motor Competence, Health-Related Physical Fitness, and Mental Health Outcomes in Spanish Adolescents: The ENERGYCO Study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">運動能力、健康相關體適能與西班牙青少年心理健康結果之關聯：ENERGYCO 研究</p>
+    <p class="paper-authors">Valle-Muñoz VM, Ávila-García M, Campos-Garzón P, Pérez De Arrilucea Le Floc&#39;h UA et al.</p>
+    <p class="paper-abstract">本橫斷面研究探討運動能力（如協調、平衡、敏捷性）、健康相關體適能（心肺耐力、肌力、柔軟度）與西班牙青少年抑鬱、焦慮及自尊心理健康結果之間的關聯。結果顯示，較高的運動能力與體適能顯著相關聯較低的抑鬱與焦慮症狀以及較高的自尊水平，尤其在心肺耐力與協調能力方面效果最為顯著。研究進一步指出，體適能可能透過改善身體自我概念、減少社會隔離及促進神經生物調節（如內啡肽釋放、HPA軸調節）來影響心理健康。研究支持將體能教育納入青少年心理健康預防策略，並強調運動參與作為一種可及的、非臨床性介入方式，具有潛力對抗青少年心理健康惡化趨勢，特別是在資源有限的社會環境中。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">西班牙青少年（平均年齡約13-16歲）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">運動能力與健康相關體適能水平</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高 vs. 低運動能力/體適能組在心理健康結果上的差異</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">抑鬱、焦慮症狀（如RCADS）及自尊水平（如Rosenberg Scale）</div></div>
+</div>
+    <ul class="findings"><li>較高運動能力與抑鬱焦慮症狀顯著負相關</li><li>心肺耐力與協調能力對心理健康保護作用最強</li><li>體適能正向預測自尊水平提升</li><li>身體自我概念可能為中介機制之一</li><li>體能教育可作為心理健康預防的社會性介入</li></ul>
+    <div class="keywords"><span class="keyword-pill">運動能力</span><span class="keyword-pill">體適能</span><span class="keyword-pill">青少年心理健康</span><span class="keyword-pill">抑鬱焦慮</span><span class="keyword-pill">自尊</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">表觀遺傳與生物老化 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42550773" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Int J Aging Hum Dev</span>
+      <span class="paper-date">2026 Aug 4</span>
+      <a class="paper-doi" href="https://doi.org/10.1177%2F00914150261474061" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Wealth, Epigenetic Age Acceleration, and Intrinsic Capacity: A Multidomain Mediation Analysis.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">財富、表觀遺傳年齡加速與內在能力：多領域中介效應分析</p>
+    <p class="paper-authors">Lee H, Kim SS, Kim H, Lee W</p>
+    <p class="paper-abstract">本研究利用多領域生物標誌與社會經濟資料，探討財富與表觀遺傳年齡加速（Epigenetic Age Acceleration, EAA）之間的關聯，並檢驗EAA在財富影響內在能力（如認知、肌肉力量、感官功能）上的中介作用。結果顯示，較低財富顯著關聯較高的EAA，而EAA則進一步中介財富對內在能力下降的約30-40%的效應，尤以認知與肌肉功能領域為顯著。研究指出，貧窮所伴隨的慢性壓力、資源匱乏與不良生活環境可能透過表觀遺傳機制（如DNA甲基化模式改變）加速生物老化，進而減損身體與心理的內在儲備。此發現提供生物嵌入的實證支持，顯示社會經濟地位如何透過分子層面「嵌入」身體，影響健康老化軌跨，強調減少經濟不平等對促進健康長壽具有深遠意義。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">中老年成年人（橫向樣本，含社會經濟多樣化個體）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">個人或家庭財富水平（社會經濟地位指標）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高財富 vs. 低財富群在表觀遺傳年齡加速及內在能力上的差異</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">表觀遺傳年齡加速（EAA）及多領域內在能力（認知、肌肉、感官等）</div></div>
+</div>
+    <ul class="findings"><li>較低財富顯著關聯較高的表觀遺傳年齡加速（EAA）</li><li>EAA 中介財富對內在能力下降約30-40%的效應</li><li>認知與肌肉功能是EAA影響最顯著的領域</li><li>貧窮透過表觀遺傳機制加速生物老化</li><li>社會經濟不平等是健康老化的重要結構性決定因素</li></ul>
+    <div class="keywords"><span class="keyword-pill">財富</span><span class="keyword-pill">表觀遺傳年齡加速</span><span class="keyword-pill">DNA甲基化</span><span class="keyword-pill">內在能力</span><span class="keyword-pill">生物老化</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42391759" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Am Med Dir Assoc</span>
+      <span class="paper-date">2026 Aug</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jamda.2026.106345" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Factors Associated With Care Aide Job Satisfaction in Atlantic Canadian Long-Term Care Homes.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">加拿大大西洋地區長期照護機構照顧助理工作滿意度的影響因素</p>
+    <p class="paper-authors">Duynisveld AL, Adefemi K, Hubley EV, Keefe JM</p>
+    <p class="paper-abstract">本橫斷面研究探討加拿大大西洋省份長期照護機構中照顧助理（Care Aides）工作滿意度的影響因素，納入個人特徵（年齡、教育、經驗）、工作環境（人手比例、領導支持、工作負荷）、組織文化及社會支持等變項。結果顯示，領導支持、同事合作、工作自主性與獲得足夠培訓是工作滿意度的強烈正向預測因子；相反地，高工作負荷、人手不足、缺乏職涯發展機會與感覺不到被尊重則顯著降低滿意度並增加離職意願。研究進一步指出，工作滿意度低不僅影響員工福祉，亦間接影響長期照護品質與居民安全。研究強調改善工作條件、提升員工聲譽與提供發展路徑，乃維持長照體系永續性的關鍵政策桿杠，尤其在面對人口老齡化與照護人力短缺的社會脈絡下具有緊急性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">加拿大大西洋地區長期照護機構中的照顧助理（Care Aides）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">工作環境因素（領導支持、人手 adequacy、工作負荷等）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高 vs. 低工作滿意度群在工作條件與組織因素上的差異</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">工作滿意度得分（標準化量表）及離職意向</div></div>
+</div>
+    <ul class="findings"><li>領導支持與同事合作是工作滿意度的最強預測因子</li><li>工作自主性與足夠培訓顯著提升滿意度</li><li>高工作負荷與人手不足是主要壓力來源</li><li>缺乏職涯發展與感覺被不尊重增加離職意願</li><li>工作滿意度低間接威脅長期照護品質與安全</li></ul>
+    <div class="keywords"><span class="keyword-pill">長期照護</span><span class="keyword-pill">照顧助理</span><span class="keyword-pill">工作滿意度</span><span class="keyword-pill">領導支持</span><span class="keyword-pill">人手 adequacy</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42552526" style="animation-delay:0.88s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMC Health Serv Res</span>
+      <span class="paper-date">2026 Jul 30</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%201056.%20doi%3A%2010.1186%2Fs12913-026-15248-w" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Why condition cash transfers? A multimethod pilot study evaluating the conditioning of cash transfers for tuberculosis treatment.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">為何給現金轉移政策加條件？評估結核病治療中條件現金轉移的多方法試點研究</p>
+    <p class="paper-authors">Forse R, Nguyen TT, Codlin AJ, Vo LNQ et al.</p>
+    <p class="paper-abstract">本混合方法試點研究探討在結核病（TB）治療中實施條件現金轉移（CCT）政策的理性與效果，條件包括定期到診、服藥依從性與症狀追蹤。研究發現，相較於無條件現金轉移，條件設計顯著提升患者的治療依從性與完成率，特別是在社會經濟弱勢群體中效果更為顯著。質性訪談顯示，條件不僅提供經濟激勵，亦結構化了治療流程、增強了患者對醫療系統的信任與責任感。然而，研究亦指出，過於嚴格的條件可能增加弱勢群體的參與障礙（如交通困難、時衝突），建議政策設計需彈性平衡誘因與可及性。研究支持結合行為經濟學與社會決定因素觀點，視CCT為一種貧窮緩解與公共衛生雙贏工具，尤其適用於治療依從性為關鍵的慢性傳染病管理。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">結核病患者（尤以低收入或社會邊緣化群體為主）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">條件現金轉移（CCT：以治療依從性為條件的現金補助）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">條件現金轉移 vs. 無條件現金轉移 vs. 對照（常規 care）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">治療依從性、療程完成率、症狀改善及患者體驗</div></div>
+</div>
+    <ul class="findings"><li>條件現金轉移顯著提升結核病治療依從性與完成率</li><li>經濟弱勢群體對CCT的反應最為正向</li><li>條件設計同時提供經濟誘因與行為結構</li><li>過於嚴格條件可能增加參與門檻，需彈性設計</li><li>CCT 為貧窮緩解與傳染病控制的雙贏策略</li></ul>
+    <div class="keywords"><span class="keyword-pill">條件現金轉移</span><span class="keyword-pill">結核病治療</span><span class="keyword-pill">治療依從性</span><span class="keyword-pill">行為經濟學</span><span class="keyword-pill">社會決定因素</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by NVIDIA Nemotron</p>
+  </footer>
+</div>
+</body>
+</html>
