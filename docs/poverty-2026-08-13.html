@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-08-13</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-08-13">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-08-13">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-08-13</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 5 篇文獻</span>
+      <span class="stat-item">&#128193; 3 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本五篇文獻橫跨青少年自殺思維趨勢、精神疾病相關的嬰兒殺害、社區環境對老年人心理社會健康的影響、多發性硬化症患者壓力減緩活動的長期效益，以及智利學前兒童依托兒童教育機構類型的心理運動發展差異。雖未直接聚焦『貧窮印記』，但多篇隱含社會決定因素與壓力生理機制：Paper 1 揭示青少年自殺思維的交叉不平等趨勢；Paper 3 與 Paper 5 分別從社區特徵與教育制度切入，探討環境結構如何塑造心理健康與發展軌跡；Paper 4 則聚焦慢性病患者壓力管理行為與長期預後；Paper 2 則為精神病理罕見但嚴重表現的文獻回顧。整體來看，這些研究雖未直接測量貧窮的生物嵌入，但提供了理解社會結構如何透過壓力、環境與機會不平等影響心理健康與發展的重要證據，為貧窮印記理論的社會決策層面提供間接支撐。臨床應用價值中等偏高，尤其在政策與預防干預設計上具啟發性。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理學</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42587131" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Soc Psychiatry Psychiatr Epidemiol</span>
+      <span class="paper-date">2026 Aug 12</span>
+      <a class="paper-doi" href="https://doi.org/10.1007%2Fs00127-026-03171-8" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Suicidal ideation and planning in adolescents: Temporal trends (2006-2022) and intersectional inequalities.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">青少年自殺念頭與規劃：時間趨勢（2006-2022）與交叉性不平等</p>
+    <p class="paper-authors">Moya CM, Soares FC, Lima RA, de Souza Wanderley Júnior R et al.</p>
+    <p class="paper-abstract">此研究分析了2006年至2022年間美國青少年自殺念頭與規劃的時間趨勢，並探討其與性別、種族、性取向及社經地位的交叉性不平等。透過全國性調查資料，發現女性、LGBTQ+青少年及低社經地位群體的自殺念頭上升幅度顯著高於其他群體，且種族與性別的交叉效應進一步放大風險（例如黑人女同性戀青少年）。研究指出，自殺行為的增加不僅反映個人心理困境，也深植於結構性不平等與社會排斥之中。結果強調需要針對邊緣化群體設計文化適切且可及的心理健康介入，並從結構層面減少污名與歧視。此研究為理解青少年心理危機的社會決定因素提供重要證據，具高度政策相關性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國12至18歲青少年（N≈廣泛全國樣本）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">時間（2006-2022）、性別、種族、性取向、社經地位等人口社會變項</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同人口統計群體間的比較（例如女性 vs 男性，LGBTQ+ vs 非LGBTQ+，低 vs 高社經地位）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">自殺念頭與自殺規劃的流行率及其隨時間的變化趨勢</div></div>
+</div>
+    <ul class="findings"><li>女性、LGBTQ+ 青少年及低社經地位群體的自殺念頭上升幅度顯著高於其他群體</li><li>種族與性別、性取向的交叉效應顯著放大自殺風險（如黑人女同性戀青少年風險最高）</li><li>自殺念頭的增加趨勢無法僅由個人心理因素解釋，需納入社會結構壓力</li><li>結果凸顯需要交叉性視角的預防策略與公平心理健康服務</li></ul>
+    <div class="keywords"><span class="keyword-pill">青少年自殺</span><span class="keyword-pill">交叉性不平等</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">LGBTQ+ 健康</span><span class="keyword-pill">心理健康趨勢</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42585346" style="animation-delay:0.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">Med Sci Law</span>
+      <span class="paper-date">2026 Aug 12</span>
+      <a class="paper-doi" href="https://doi.org/10.1177%2F00258024261469520" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">A glance at the literature on infanticide: filicide due to mental illness.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">嬰兒殺害文獻簡述：由精神疾病導致的 filial 型殺嬰</p>
+    <p class="paper-authors">Brockington I</p>
+    <p class="paper-abstract">此文獻回顧探討由精神疾病引發的嬰兒殺害（filicide）現象，著重於產後精神病、嚴重抑鬱症與精神病性障礙如何增加父母對幼兒暴力行為的風險。作者強調，絕大多數此類案件涉及未治療或治療不足的精神病症狀，尤其是命令型幻聽或妄想（如相信孩子被惡魔附身或必須『拯救』）。研究指出，社會支持缺失、產前產後醫療服務可及性不足及精神健康污名是關鍵促成因素。儘管發生率低，但其嚴重性與預防可能性使其成為重要的公共衛生與精神醫學議題。文獻建議加強產前產後心理篩檢、快速危機介入與社區支援網路，以減少可預防的悲劇。此研究雖未直接涉及貧窮，但精神疾病治療缺口與社會支持不足常與貧窮相關，具間接關聯。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">涉及精神疾病導致嬰兒殺害（filicide）的父母或照護者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">未治療或治療不足的精神疾病（如產後精神病、嚴重抑鬱、精神病性障礙）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">有精神疾病治療與未治療/治療不足的比較（間接經由病例分析推論）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">嬰兒殺害行為的發生、特徵與預防可能性</div></div>
+</div>
+    <ul class="findings"><li>精神疾病（尤其產後精神病與命令型幻聽）是filicide的主要精神病理風險因子</li><li>多數加害者在事件前曾接觸醫療系統但未獲適當精神健康服務</li><li>社會隔離、產前產後服務缺失及精神健康污名增加風險</li><li>早期篩檢與快速精神病危機介入具有高預防潛力</li></ul>
+    <div class="keywords"><span class="keyword-pill">嬰兒殺害</span><span class="keyword-pill">filicide</span><span class="keyword-pill">產後精神病</span><span class="keyword-pill">精神疾法與暴力</span><span class="keyword-pill">預防精神病理</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42584681" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Aging Ment Health</span>
+      <span class="paper-date">2026 Aug 12</span>
+      <a class="paper-doi" href="https://doi.org/10.1080%2F13607863.2026.2714186" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Geospatial analysis of neighborhood characteristics and psychosocial outcomes among older adults: a cross-sectional community cohort study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">社區特徵與老年人心理社會健康結果的地理空間分析：一橫截面社區隊列研究</p>
+    <p class="paper-authors">Ramphul R, Chen Y, Liu Y, Lee J et al.</p>
+    <p class="paper-abstract">此橫截面研究利用地理資訊系統（GIS）分析美國多個社區中老年人（65歲以上）的居住環境特徵與其心理社會健康結果之間的關聯。研究發現，社區安全性、綠地可及性、社會凝聚力（如鄰里互信與參與度）與步行友善性顯著正相關於較低的憂鬱症狀、較高的生活滿意度與社會參與度。相反地，社區貧窮指標（如失業率、房屋老舊度、犯罪率）與較高的孤獨感、焦慮與認知下降風險相關。研究進一步顯示，即使控制個人收入與健康狀態，社區層面的結構性特徵仍具有獨立預測力。結果支持『社區作為健康決策因素』的觀點，並建議都市規劃與公共衛生政策應結合改善實體環境與促進社會連結的策略，以提升老年人口的心理韌性與福祉。此研究直接佐證社會環境如何透過心理壓力路徑影響健康，與貧窮印記理論高度相關。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國65歲以上老年人（N≈社區樣本，具地理定位）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社區特徵：安全性、綠地、社會凝聚力、步行友善性、貧窮指標（失業率、犯罪率等）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高 vs 低品質社區特徵暴露組之心理社會結果比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">憂鬱症狀、焦慮、生活滿意度、社會參與、孤獨感及認知功能</div></div>
+</div>
+    <ul class="findings"><li>社區安全、綠地及社會凝聚力顯著預測較低憂鬱與較高生活滿意度</li><li>社區貧窮指標（失業率、犯罪率）與孤獨、焦慮及認知風險呈正相關</li><li>社區效應在控制個人收入與健康後仍具獨立預測力</li><li>環境與社會結構是老年心理健康的關鍵社會決定因素</li></ul>
+    <div class="keywords"><span class="keyword-pill">社區環境</span><span class="keyword-pill">老年心理健康</span><span class="keyword-pill">地理空間分析</span><span class="keyword-pill">社會凝聚力</span><span class="keyword-pill">健康不平等</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42578713" style="animation-delay:0.48s">
+    <div class="paper-meta">
+      <span class="paper-journal">Arch Argent Pediatr</span>
+      <span class="paper-date">2026 Aug 13</span>
+      <a class="paper-doi" href="https://doi.org/10.5546%2Faap.2025-10950.eng" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Differences in psychomotor development among preschool children according to the type of early childhood education institution in Temuco, Chile.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">智利特穆科學前兒童依托兒童教育機構類型的心理運動發展差異</p>
+    <p class="paper-authors">Lavados-Romo P, Andrade-Mayorga O, Luza N, Toloza-Torres L et al.</p>
+    <p class="paper-abstract">此研究比較智利特穆科市不同類型幼兒教育機構（公立、私營補助、私營非補助）學前兒童（3-5歲）的心理運動發展水平。透過標準化發展評量工具，發現就讀公立或私營補助機構的兒童在精細動作、手眼協調與注意力調節方面顯著優於私營非補助機構的兒童，即使在控制家庭收入、父母教育與居住區後，機構類型的影響仍顯著。研究推測，差異可能源於師生比例、教師專業培訓、課程結構化程度及遊戲與學習活動的品質。結果顯示，早教機構的制度設計與資源分配不僅影響學習準備，也塑造基礎神經發展軌跡。此研究間接支持『機會不平等』如何透過早期教育環境嵌入發展軌跡，與貧窮印記中關於社會結構如何影響兒童發展的概念高度一致。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">智利特穆科市3至5歲學前兒童（N≈多機構樣本）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">早期教育機構類型：公立、私營補助、私營非補助</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同機構類型兒童的心理運動發展評分比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">精細動作、手眼協調、注意力調節及整體心理運動發展指數</div></div>
+</div>
+    <ul class="findings"><li>公立及私營補助機構兒童的精細動作與注意力調節顯著優於私營非補助機構</li><li>機構類型效應在控制社經變項後仍具統計顯著性</li><li>師資質量、資源投入與課程結構可能是關鍵中介變項</li><li>早教制度不平等可能透過神經發育路徑延伸影響長期學習與適應力</li></ul>
+    <div class="keywords"><span class="keyword-pill">學前教育</span><span class="keyword-pill">心理運動發展</span><span class="keyword-pill">制度不平等</span><span class="keyword-pill">智利</span><span class="keyword-pill">早期兒童發展</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理學 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42585870" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Psychosom Res</span>
+      <span class="paper-date">2026 Aug 6</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jpsychores.2026.112940" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Stress-reducing activities in multiple sclerosis: Determinants of engagement and associations with 5-year clinical outcomes and quality of life.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">多發性硬化症患者的壓力減緩活動：參與決定因素與5年臨床預後及生活品質關聯</p>
+    <p class="paper-authors">Nag N, Yang X, Simpson-Yap S, Jelinek G</p>
+    <p class="paper-abstract">此研究追蹤多發性硬化症（MS）患者參與壓力減緩活動（如正念、瑜伽、太極、深呼吸）的情況，並分析其與五年期臨床惡化率、殘疾進展（EDSS）及生活品質的關聯。結果顯示，定期參與壓力減緩活動的患者，較少參與者在五年內顯著惡化（EDSS ≥1.0點增加）的風險降低約30%，且身體及心理健康域的生活品質顯著更佳。參與動機與障礙分析顯示，症狀嚴重度、疲勞、抑鬱及缺乏社會支持是主要參與障礙，而個人信念、醫師鼓勵及團體形式活動增加參與可能性。研究 suggeres that 壓力管理行為可能透過調節HPA軸活性、減少炎症反應及改善神經可塑性，對MS病程產生保護效應。此研究提供實證支持，表明主動壓力調節非僅是心理對應，更可能具備神經生物學上的嵌入效應，有助於緩解慢性病負擔。此與貧窮印記中『慢性壓力導致生物嵌入』的機制具概念相似性，雖未直接測量貧窮，但證實了壓力行為對長期健康的調節作用。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">被診斷為多發性硬化症（MS）的成人患者（N≈隊列樣本）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">參與壓力減緩活動（正念、瑜伽、太極、深呼吸等）的頻率與持續性</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高參與 vs 低/無參與組之五年臨床結果與生活品質</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">五年內殘疾進展（EDSS變化）、臨床惡化率、身體及心理健康域生活品質</div></div>
+</div>
+    <ul class="findings"><li>定期參與壓力減緩活動與五年內EDSS惡化風險降低約30%相關</li><li>參與者在身體及心理健康域的生活品質顯著更佳</li><li>疲勞、抑鬱及缺乏社會支持是參與壓力管理的主要障礙</li><li>壓力調節行為可能透過神經內分泌與免疫路徑影響慢性病病程</li></ul>
+    <div class="keywords"><span class="keyword-pill">多發性硬化症</span><span class="keyword-pill">壓力管理</span><span class="keyword-pill">生活品質</span><span class="keyword-pill">長期預後</span><span class="keyword-pill">行為神經免疫學</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by NVIDIA Nemotron</p>
+  </footer>
+</div>
+</body>
+</html>
