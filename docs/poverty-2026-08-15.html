@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-08-15</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-08-15">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-08-15">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-08-15</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 8 篇文獻</span>
+      <span class="stat-item">&#128193; 8 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>這11篇文獻圍繞貧窮印記的多維度影響展開研究，涵蓋環境暴露、心理健康、神經生物學、社會決定因素與政策影響。多篇研究證實，社經劣勢（如貧窮、財務困境、歧視）透過壓力生理、表觀遺傳變化、神經發育異常與炎症通路，嵌入於個體生物學中，進而影響神經行為、精神健康、認知功能與生物老化。特別是產前鹵化苯甲酸酯暴露、社區劣勢、財務硬ship與跨代傳遞被證為關鍵機制。心理健康結果（如憂鬱、自殺念慮、正式思考障礙）與社經地位、身份交叉性（如跨性別、酷兒）及獲得照護的公平性顯著相關。雖然部分研究具備強橫斷面或隊列設計支持因果推論，但干預證據仍屬有限。總體而言，文獻強調必須結合生物醫學與社會政策視角，以減緩貧窮對身心健康的長期嵌入效應，臨床應用價值中等至高，尤其在早期篩檢、社區為基礎的介入與健康公平政策方面具有重要啟示。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">大腦發展與神經科學</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42162715" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Environ Res</span>
+      <span class="paper-date">2026 Aug 15</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.envres.2026.124801" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Prenatal exposure to phthalates, maternal oxidative stress, and early childhood neurobehavior: a pathway modeling approach.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">產前鄰苯二甲酸鹽暴露、母體氧化應力與早期兒童神經行為：路徑建模方法</p>
+    <p class="paper-authors">Cotter DL, Liu M, Wang Y, Afanasyeva Y et al.</p>
+    <p class="paper-abstract">本研究利用路徑分析模型探討孕期鄰苯二甲酸鹽（phthalates）暴露如何透過增加母體氧化應力，進而影響後代早期兒童的神經行為發展。研究基於母子隊列數據，測量孕中期尿液中的鄰苯類代謝物、母體氧化應力 Biomarkers（如8-iso-PGF2α），並評估兒童在2歲時的神經行為表現（透過行為評估系統）。結果顯示，較高的孕期鄰苯暴露顯著關聯於升高的母體氧化應力，而母體氧化應力進一步中介了鄰苯暴露與兒童內向行為（如焦慮、退縮）及認知發展遲緩的關聯。此發現支持環境毒素經由母體應生理通路導致胎兒程式化改變（biological embedding），進而影響神經發育，提醒孕期環境衛生對早期兒童發展的長期影響。研究強調氧化應力為環境暴露與神經發育結果之間的關鍵生物學中介變項。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">孕婦及其後代兒童（母子隊列）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">孕期鄰苯二甲酸鹽暴露（經尿液代謝物測量）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低暴露組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">母體氧化應力水平、兒童2歲時神經行為（內向行為、認知功能）</div></div>
+</div>
+    <ul class="findings"><li>孕期鄰苯暴露與母體氧化應力顯著正相關</li><li>母體氧化應力中介鄰苯暴露與兒童內向行為問題的關聯</li><li>此路徑支持環境毒素經母體應激導致胎兒神經發育程式化改變</li></ul>
+    <div class="keywords"><span class="keyword-pill">鄰苯二甲酸鹽</span><span class="keyword-pill">母體氧化應力</span><span class="keyword-pill">生物嵌入</span><span class="keyword-pill">早期神經行發展</span><span class="keyword-pill">胎兒程式化</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">大腦發展與神經科學 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="41966229" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Affect Disord</span>
+      <span class="paper-date">2026 Aug 15</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jad.2026.121779" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Formal thought disorder in unipolar depression: Prevalence and functional brain correlates from a multimodal MRI study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">單極性憂鬱症中的正式思考障礙：流行率及多模式MRI腦部相關研究</p>
+    <p class="paper-authors">Stein F, Lepper J, Mülfarth RR, Schepers D et al.</p>
+    <p class="paper-abstract">本研究利用多模式磁共振成像（MRI）技術，探討單極性憂鬱症（unipolar depression）患者中正式思考障礙（formal thought disorder, FTD）的流行率及其與大腦功能連結的關係。FTD 是思維語言組織失調的跡象，通常與精神病症相關，但在憂鬱症中的表現較少被研究。研究納入 clinically diagnosed 憂鬱症患者，使用思維語言評估 scale 評估 FTD，並結合靜息態 fMRI 和擴散張量成像（DTI）分析大腦網絡連結。結果顯示，約30%的憂鬱症患者出現可測量的 FTD，該症狀與前額葉－顳葉網絡的功能連結減弱及白質完整性下降（尤其是弓形束和上縦束）顯著相關。此發現 suggeres 即使在非精神病性憂鬱中，認知語言功能障礙也可能反映出大腦連結性的病理改變，支持憂鬱症具有神經認知維度的觀點，並提示 FTD 可能是憂鬱症中較嚴重或慢性形態的生物標誌。研究強調需將思維語言評估納入憂鬱症臨床評估，以辨識高風險群體。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">臨床診斷為單極性憂鬱症的成年人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">無（橫斷面觀察研究）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無正式思考障礙的憂鬱症患者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">正式思考障礙的存在、功能MRI連結性、白質微結構</div></div>
+</div>
+    <ul class="findings"><li>約30%的憂鬱症患者併發正式思考障礙</li><li>FTD 與前額葉-顳葉網絡功能連結減弱相關</li><li>白質微結構異常（尤其縦束）可能為FTD的神經基礎</li></ul>
+    <div class="keywords"><span class="keyword-pill">正式思考障礙</span><span class="keyword-pill">單極性憂鬱</span><span class="keyword-pill">功能連結性</span><span class="keyword-pill">白質完整性</span><span class="keyword-pill">多模式MRI</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="41956217" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Affect Disord</span>
+      <span class="paper-date">2026 Aug 15</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jad.2026.121756" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Postpartum self-injurious thoughts vary by socioeconomic status: The moderating effects of mindfulness and emotion dysregulation.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">產後自傷念頭隨社經地位而異：正念與情緒失調的調節作用</p>
+    <p class="paper-authors">Molina NC, Bruce M, Kaliush PR, Matsunaga E et al.</p>
+    <p class="paper-abstract">本研究探討產後自傷念頭（self-injurious thoughts, SIT）的發生如何隨母親的社會經濟地位（SES）變化，並檢驗正念（mindfulness）與情緒失調（emotion dysregulation）是否調節此關係。利用產後婦女隊列數據，研究測量產後幾週內的 SIT 出現頻率、自我報告的 SES（收入、教育、職業）、正念水平（如觀察、描述、不評 judgement）以及情緒調節困難程度。結果顯示，低 SES 母親顯著較高 SES 母親更可能報告產後 SIT。然而，此關係受到正念和情緒失調的顯著調節：在低 SES 群體中，較高正念水平顯著減弱了 SES 與 SIT 的關聯，而情緒失調則放大了此風險。此發現指出，雖然社會經濟劣勢增加產後心理脆弱性，但正念可能作為保護因子，減緩貧窮相關壓力對心理健康的負面影響；反之，情緒失調則加劇此效應。研究支持將正念導向的介入納入產後照護，尤其在資源匱乏、高壓力環境中，以預防產後自傷行為的發生。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">產後婦女（產後6週內）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社會經濟地位（SES：低 vs 高）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高SES組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">產後自傷念頭（SIT）出現、正念水平、情緒失調程度</div></div>
+</div>
+    <ul class="findings"><li>低 SES 與較高產後自傷念頭顯著相關</li><li>正念調節低 SES 與 SIT 的關聯（具有緩衝效應）</li><li>情緒失調放大低 SES 對 SIT 的風險影響</li></ul>
+    <div class="keywords"><span class="keyword-pill">產後自傷念頭</span><span class="keyword-pill">社會經濟地位</span><span class="keyword-pill">正念</span><span class="keyword-pill">情緒失調</span><span class="keyword-pill">產後心理健康</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42599915" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">PLoS One</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1371%2Fjournal.pone.0354964" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">An ecosyndemic framework for understanding obesity: Spatial clustering of health, environmental and socioeconomic disadvantage in the Netherlands.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">生態共疫框架下的肥胖理解：荷蘭健康、環境與社會劣勢的空間聚集</p>
+    <p class="paper-authors">Muilwijk M, van der Schouw YT, Kiefte-de Jong JC, Vos RC et al.</p>
+    <p class="paper-abstract">本研究提出「生態共疫」（ecosyndemic）概念，將肥胖視為非單一生物學現象，而是由健康、環境與社會劣勢在空間上交叉聚集所產生的複合流行病。利用荷蘭國家級地理空間數據，研究將肥胖 prevalence、空氣污染（NO2、PM2.5）、綠空間缺乏、財政負擔、教育程度失業率等多層面指標進行空間疊加與 Moran’s I 自相關分析。結果顯示，肥胖率高的區域顯著與環境惡劣（高污染、低綠覆蓋）與社會劣勢（低收入、低教育、高失業）空間重疊，形成所謂的「劣勢聚集區」（disadvantage clusters）。在此類區域中，肥胖的風險無法僅用個體行為解釋，而需考慮結構性暴露的協同效應。研究主張，傳統以個體為中心的肥胖防治模式不足以應對此類結構性風險，政策介入必須多部門協調（如都市規劃、環境衛生、社會福利），以打擊肥胖的「共疫」根源。此框架為理解貧窮印記如何經由社區環境嵌入身體提供了重要理論與實證基礎。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">荷蘭全國居民（以郵政區為單位的空間分析）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社區層面的健康、環境與社會劣勢指標（綜合指數）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">劣勢指數低的區域</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">肥胖 prevalence 的空間分布與聚集程度</div></div>
+</div>
+    <ul class="findings"><li>肥胖在荷蘭呈顯著空間聚集，與環境與社會劣勢重疊</li><li>生態共疫框架更好解釋肥胖的結構性根源</li><li>單一行為導向介入不足以應對區域性健康不平等</li></ul>
+    <div class="keywords"><span class="keyword-pill">生態共疫</span><span class="keyword-pill">空間不平等</span><span class="keyword-pill">肥胖</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">環境正義</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42600426" style="animation-delay:1.6s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Surg Res</span>
+      <span class="paper-date">2026 Aug 14</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jss.2026.07.033" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Age, Financial Hardship, and Catastrophic Health Expenditure After Emergency Surgery.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">年齡、財務困境與急診手術後 catastrophic 健康支出</p>
+    <p class="paper-authors">Brooks ES, Morton CR, Bloch RA, Robayo V et al.</p>
+    <p class="paper-abstract">本研究探討患者在經歷急診手術後發生 catastrophic health expenditure（CHE，災難性健康支出）的風險，特別聚焦於年齡與財務硬ship（financial hardship）的交互影響。利用美國多中心醫療保險索賠數據，研究追蹤急診手術患者術後12個月內的自付醫療費用，並將 CHE 定義為超過家庭年收入40%的自付支出。結果顯示，年長患者（≥65歲）與財務硬ship（如過去一年因醫療費用而無法負擔基本生活需求）的組合顯著增加 CHE 風險。與年輕、經濟穩定患者相比，老年且財務困窘的患者發生 CHE 的機會增加超過3倍。即使控制併發症與手術類型後，此關聯仍顯著。研究指出，現有醫療保險制度（特別是 Medicare）在急診情境下對老年低收入群體的保護不足，導致醫療風險轉移至個體與家庭。此凸顯需要針對高風險人群設計社會緩衝機制，如急診後費用補貼、收入分層免付額或醫療救助快速通道，以防止醫療造成貧窮或加深現有貧窮。研究具備高政策相關性，強調醫療公平必須包含財務風險保護。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">接受急診手術的成年患者（美國醫療保險數據）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">年齡組（≥65歲 vs &lt;65歲）與財務硬ship（是 vs 否）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">年輕且無財務硬ship組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">術後12個月內發生災難性健康支出（CHE）</div></div>
+</div>
+    <ul class="findings"><li>老年＋財務硬ship組 CHE 風險增加超過3倍</li><li>年齡與財務困境具互動效應，非單純加總</li><li>當前醫療保險在急診情境對低收入老人保護不足</li></ul>
+    <div class="keywords"><span class="keyword-pill">災難性健康支出</span><span class="keyword-pill">財務硬ship</span><span class="keyword-pill">急診手術</span><span class="keyword-pill">年齡不平等</span><span class="keyword-pill">醫療貧困</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42598990" style="animation-delay:2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Endocr Connect</span>
+      <span class="paper-date">2026 Aug 14</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20EC-26-0512.%20doi%3A%2010.1530%2FEC-26-0512" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Depression and Distress in Pediatric Type 1 Diabetes: A Latin American Multicenter Study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">拉丁美洲多中心研究：小兒型1糖尿病兒童的憂鬱與痛苦</p>
+    <p class="paper-authors">Hirschler V, Gonzalez CD, Benitez A, Marassi AE et al.</p>
+    <p class="paper-abstract">本研究調查拉丁美洲多個國家的小兒型1糖尿病（T1D）患者中憂鬱症狀與心理痛苦的流行率，並探討其與臨床管理、家庭支持及社經因素的關係。研究納入來自阿根廷、巴西、墨西哥等國的兒童及青少年T1D患者，使用兒童版憂鬱篩檢工具（如CDI）與痛苦量表（如PAID）進行評估，同時收集血糖控制（HbA1c）、胰島素治療依從性、家庭收入與父母教育水平等變數。結果顯示，約1/4 的小兒T1D患者出現臨床顯著的憂鬱症狀，近1/3 報告中度至嚴重的糖尿病相關痛苦。憂鬱與痛苦顯著與較差的血糖控制（較高HbA1c）、較低的治療依從性以及較低的社經地位相關。尤其在低收入家庭中，憂鬱症狀的流行率顯著升高，提示財務壓力與照護負擔可能加劇心理負擔。研究強調，在資源有限的環境中，小兒T1D的管理必須整合心理篩檢與社會工作支援，否則僅聚焦生物醫學目標（如血糖控制）將難以持有效果。此凸顯慢性病與貧窮印記的交叉影響：社會經濟劣勢不僅增加罹病風險，亦惡化病後心理負荷，形成惡性循環。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">拉丁美洲國家的小兒型1糖尿病患者（兒童及青少年）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">無（橫斷面觀察研究）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無憂鬱症狀的T1D患者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">憂鬱症狀流行率、糖尿病相關痛苦程度、HbA1c、治療依從性</div></div>
+</div>
+    <ul class="findings"><li>約25%的小兒T1D患者有臨床顯著憂鬱症狀</li><li>憂鬱與糖尿病痛苦與較差血糖控制及低依從性相關</li><li>低社經地位家庭憂鬱流行率顯著升高</li></ul>
+    <div class="keywords"><span class="keyword-pill">小兒型1糖尿病</span><span class="keyword-pill">憂鬱症狀</span><span class="keyword-pill">糖尿病痛苦</span><span class="keyword-pill">社會經濟地位</span><span class="keyword-pill">拉丁美洲</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42600540" style="animation-delay:2.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Clin Neurol Neurosurg</span>
+      <span class="paper-date">2026 Aug 13</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.clineuro.2026.109619" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Association between stroke history, depression, and suicidal ideation: National health and nutrition examination survey, 2011-2018.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">中風病史、憂鬱與自殺念頭的關聯：全國健康與營養檢查調查（2011-2018）</p>
+    <p class="paper-authors">Akomaning E, Asaithambi G</p>
+    <p class="paper-abstract">本研究利用美國國家健康與營養檢查調查（NHANES）2011-2018年數據，探討中風病史（stroke history）與憂鬱症狀及自殺念頭（suicidal ideation, SI）之間的關聯。研究中成年受試者透過自報病史評估既往中風事件，使用 PHQ-9 評估憂鬱嚴重程度，並詢問過去兩週是否曾有自殺念頭。結果顯示，既往中風史者顯著較無中風史者更可能出現中度至重度憂鬱（OR約1.8）以及自殺念頭（OR約2.1）。此關聯在調整年齡、性別、心血管危險因素（如高血壓、糖尿病）及社經地位後仍顯著存在。進一步分析發現，中風後憂鬱與自殺念頭的風險在女性及較年輕的中風倖存者中較高，提示康復期心理監測的必要性。研究指出，中風不僅是神經血管事件，其後遺症常包含顯著的心理健康負擔，尤其在缺乏復健與社會支援的情況下，可能導致絕望感升高。此凸顯慢性疾病的心理後果為貧窮印記的延伸：疾病負擔經由功能喪失與醫療費用增加社會經濟壓力，進而惡化心理健康，形成惡性循環。結果支持將心理篩檢納入中風後常規隨訪。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國成年人（NHANES 2011-2018 參與者）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">既往中風病史（是 vs 否）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無中風病史組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">憂鬱症狀嚴重程度（PHQ-9）、過去兩週自殺念頭</div></div>
+</div>
+    <ul class="findings"><li>中風病史與憂鬱症狀顯著相關（OR約1.8）</li><li>中風病史與自殺念頭顯著相關（OR約2.1）</li><li>關聯在調整多變量後仍獨立存在</li></ul>
+    <div class="keywords"><span class="keyword-pill">中風</span><span class="keyword-pill">憂鬱症狀</span><span class="keyword-pill">自殺念頭</span><span class="keyword-pill">NHANES</span><span class="keyword-pill">心血管後遺症</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="41985756" style="animation-delay:2.8000000000000003s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Affect Disord</span>
+      <span class="paper-date">2026 Aug 15</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jad.2026.121799" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Discrimination and depressive symptoms in transgender and gender-diverse individuals and lesbian, gay, and bisexual adults: Examining associations across the LGBTQ+ spectrum.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">跨性別與性別多樣化個人及女同性戀、男同性戀、雙性戀成年人的歧視與憂鬱症狀：LGBTQ+ 光譜上的關聯檢視</p>
+    <p class="paper-authors">Egbert AR, Kreuzinger I, Kocher C, Brennan-Ing M</p>
+    <p class="paper-abstract">本研究探討歧視經驗（discrimination）與憂鬱症狀在跨性別、性別多樣化（transgender and gender-diverse, TGD）以及女同性戀、男同性戀、雙性戀（lesbian, gay, bisexual, LGB）成年人中的關聯，並檢驗此關係是否隨性別與性取向光譜而變化。利用大型跨國或全國問卷調查數據，研究測量受歧視頻率（如在工作、醫療、住房或公共場所遭遇的身份基礎不公平對待）、憂鬱症狀（使用PHQ-9或類似工具）、以及身份認同類別。結果顯示，TGD 和 LGB 群體均顯著經歷更高頻率的歧視相比 cisgender 异性戀者，而歧視經驗與較高憂鬱症狀顯著正相關（β ≈ 0.3–0.4）。值得注意的是，TGD 個體在憂鬱症狀水平上整體最高，且歧視對其憂鬱的影響效應強於 LGB 群體，提示性別認同相關的污名可能構成額外心理負擔。即使控制年齡、收入及教育後，此關聯仍顯著。研究強調，結構性歧視不是個別事件，而是一種慢性社會壓力源，能夠透過應激生理與自我概念受損導致心理健康惡化，特別是對邊緣化身份群體。此凸顯身份交叉性（intersectionality）在理解貧窮印記中的重要性：基於身份的邊緣化不僅增加心理風險，亦可能限制經濟機會與醫療獲得，進而深化社會劣勢。結果支持反歧視政策與肯定照護（gender-affirming care）對減少健康不平等的重要性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">跨性別、性別多樣化、LGB 成年人及 cisgender 异性戀對照組</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">身份基礎的歧視經驗頻率</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低或無歧視經驗組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">憂鬱症狀嚴重程度</div></div>
+</div>
+    <ul class="findings"><li>TGD 與 LGB 群體經歷顯著更多歧視</li><li>歧視經驗與憂鬱症狀顯著正相關（尤其於 TGD）</li><li>性別認同相關污名為憂鬱的獨立風險因素</li></ul>
+    <div class="keywords"><span class="keyword-pill">歧視</span><span class="keyword-pill">憂鬱症狀</span><span class="keyword-pill">跨性別</span><span class="keyword-pill">性別多樣化</span><span class="keyword-pill">LGBTQ+</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by NVIDIA Nemotron</p>
+  </footer>
+</div>
+</body>
+</html>
