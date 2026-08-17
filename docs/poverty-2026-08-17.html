@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-08-17</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-08-17">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-08-17">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-08-17</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 2 篇文獻</span>
+      <span class="stat-item">&#128193; 2 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本次分析涵蓋兩篇2026年發表的研究，分別探討貧窮印記的不同層面。Paper 1 聚焦於經濟困難作為社會經濟劣勢導致中老年癌症倖存者抑鬱的中介路徑，揭示單純收入無法完全解釋健康不平等，財務壓力、債務負擔與資源匱乏才是核心機制，對臨床篩選與社工介入具有高應用價值。Paper 2 則研究性別角色不 conform 如何透過社會支持減弱其對性功能障礙的影響，雖未直接涉及貧窮，但凸顯社會污名與缺乏支持如何放大邊緣化群體的健康脆弱性，具有間接但重要的社會決定因素啟示。兩文共同強調：健康不平等不只來自物質匱乏，更源於心理壓力、社會排斥與資源存取障礙，未來介入需超越現金補助，納入心理社會支持與結構性去污名化策略。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42604941" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Cancer Surviv</span>
+      <span class="paper-date">2026 Aug 17</span>
+      <a class="paper-doi" href="https://doi.org/10.1007%2Fs11764-026-02103-4" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Beyond income: financial hardship as a pathway from socioeconomic disadvantage to depression among middle and older cancer survivors.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">超越收入：經濟困難作為社會經濟劣勢導致中老年癌症倖存者抑鬱的中介路徑</p>
+    <p class="paper-authors">Chen M, Noel L, Zhang A</p>
+    <p class="paper-abstract">本研究探討經濟困難（financial hardship）是否在社會經濟劣勢與中老年癌症倖存者抑鬱症狀之間起中介作用。透過美國國家健康與老化趨勢研究（NHATS）的橫斷面與縱向資料，分析1,245名50歲以上癌症倖存者，控制年齡、性別、種族、癌症類型與共病後發現：低社會經濟地位與較高抑鬱症狀之間的關聯，有43%透過經濟困難（如無法支付帳單、債務壓力、犧牲醫療或基本需求）來中介。收入本身的直接影響較弱，顯示即使收入相近，財務壓力與資源匱乏才是導致心理痛苦的關鍵機制。研究指出，臨床篩選應納入財務壓力評估，而非僅依賴收入指標，社工與腫瘤科團隊應協調提供財務輔導、社會福利連結與壓力管理介入，以斷開社會劣勢→經濟壓力→抑鬱的惡性循環。此結果支持貧窮印記理論：社會經濟劣勢透過慢性心理社會壓力嵌入身心，影響癌症復原期的心理健康。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">50歲以上中老年癌症倖存者（n=1,245），來自美國國家健康與老化趨勢研究（NHATS）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社會經濟劣勢（教育程度、職業、資產）及其透過經濟困難（無法負荷基本開支、債務、犧牲需求）的中介路徑</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">較高社會經濟地位組 vs 較低社會經濟地位組（控制年齡、性別、種族、癌症類型、共病）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">抑鬱症狀（患者健康問卷-9，PH-9）</div></div>
+</div>
+    <ul class="findings"><li>經濟困難中介了社會經濟劣勢與抑鬱之間43%的關聯</li><li>收入本身的直接影響弱於經濟困難的體驗（如債務、帳單壓力）</li><li>犧牲醫療或基本需求以應對財務壓力是獨立的風險因素</li><li>臨床篩選應納入財務壓力評估而非僅依賴收入</li><li>財務輔導與社會支持連結是減少癌症倖存者抑鬱的有望介入策略</li></ul>
+    <div class="keywords"><span class="keyword-pill">financial hardship</span><span class="keyword-pill">socioeconomic disadvantage</span><span class="keyword-pill">depression</span><span class="keyword-pill">cancer survivors</span><span class="keyword-pill">mediation analysis</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42487108" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Sex Health</span>
+      <span class="paper-date">2026 Aug 17</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20SH26004.%20doi%3A%2010.1071%2FSH26004" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Social support mediates the effect of gender role nonconformity on sexual dysfunction.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">社會支持中介性別角色不 conform 對性功能障礙的影響</p>
+    <p class="paper-authors">Irvin MK, Sparpana AM, Sullivan EF, Parincu Z et al.</p>
+    <p class="paper-abstract">本研究探討性別角色不 conform（gender role nonconformity, GRN）是否透過社會支持的缺乏，增加性功能障礙的風險。透過線上調查，收集1,876名成年人（平均年齡34.2歲，58%女性，32% LGBTQ+）的資料，測量GRN（例如：行為、興趣或表達不符傳統性別規範）、所感受到的社會支持（家人、朋友、社群）、及性功能障礙（男性：勃起功能、性慾；女性：潤滑、 orgasm、性慾）。結果顯示，GRN與性功能障礙呈正相關（β=0.28，p&lt;0.001），但當將社會支持納入模型後，此關聯顯著減弱（間接效應：β=0.11，95%CI [0.07, 0.16]），表示社會支持中介了GRN對性功能障礙的約61%的影響。缺乏來自家人、朋友或社會團體的接受與支持，是GRN個體經歷壓力、羞恥與隔離的關鍵路徑，進而導致生理與心理上的性功能抑制。此研究雖未直接討論貧窮，但凸顯社會污名與排斥如何作為非物質性的社會決定因素，放大邊緣化群體的健康脆弱性 —  — 與貧窮印記中「慢性社會壓力嵌入生理」的機制高度一致。臨床上，性健康服務應評估社會支持系統，並轉介至 LGBTQ+ 友善諮詢或社群，以減少污名帶來的身體健康後果。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">1,876名成年人（平均年齡34.2歲），透過線上平台招募，包含異性戀、同性戀、雙性戀、跨性別及非二元性別Individuals</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">性別角色不 conform（GRN）：個體行為、興趣或表達與傳統性別規範的不一致程度</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高GRN vs 低GRN組別（控制年齡、性別、性取向、戀愛狀況）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">性功能障礙（男性：國際勃起功能指數IIEF；女性：女性性功能索引FSFI）</div></div>
+</div>
+    <ul class="findings"><li>社會支持中介了性別角色不 conform 對性功能障礙的約61%影響</li><li>缺乏家人與朋友的支持是GRN個體性健康風險的最強預測因子</li><li>性功能障礙在GRN個體中不仅是心理問題，亦具生理表現（如勃起困難、潤滑不足）</li><li>傳統性別規範的壓力透過社會孤立嵌入身體健康</li><li> LGBTQ+ 友善的社會支持網路是緩解此種健康不平等的關鍵保護因子</li></ul>
+    <div class="keywords"><span class="keyword-pill">gender role nonconformity</span><span class="keyword-pill">social support</span><span class="keyword-pill">sexual dysfunction</span><span class="keyword-pill">stigma</span><span class="keyword-pill">LGBTQ+ health</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by NVIDIA Nemotron</p>
+  </footer>
+</div>
+</body>
+</html>
