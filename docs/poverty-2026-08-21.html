@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-08-21</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-08-21">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-08-21">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-08-21</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 1 篇文獻</span>
+      <span class="stat-item">&#128193; 1 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本文獻為一篇針對北歐國家（如瑞典、丹麥、芬蘭、挪威、冰島）緊急醫療服務（Emergency Medical Services, EMS）中性別相關議題的範疇式文獻回顧（scoping review），以組織社會化（organizational socialization）為理論框架，探討男女急救人員在職場中的適應與認同經驗。研究發現，雖北歐國家以性別平等聞名，但EMS領域仍存在性別刻板印象、職業角色強化與隱性偏見，女性常感受到「格格不入」的壓力，而男性則可能因符合傳統陽剛 norms 而獲得非正式優勢。研究強調，僅依賴政策或數目代表性不足以實現真正的包容，需透過深層組織文化改革、領導力培訓與日常互動中的性別敏感實踐，才能促進真正的歸屬感與專業認同。此研究對理解職場性別動態在高壓、男性主導職業中的運作具有重要啟發，尤其對改善女性在急救前照護領域的留任與發展具參考價值。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42625212" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Scand J Trauma Resusc Emerg Med</span>
+      <span class="paper-date">2026 Aug 17</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20139.%20doi%3A%2010.1186%2Fs13049-026-01677-3" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Fitting in or standing out: a scoping review of gender-related findings in Nordic EMS through an organizational socialization lens.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">適應或突出：透過組織社會化視角探討北歐EMS中性別相關發現的範疇式回顧</p>
+    <p class="paper-authors">Veronica L, Ericsson RC, Sinisalo R, Venesoja A</p>
+    <p class="paper-abstract">本範疇式文獻回顧 synthesizes 現有研究，探討北歐國家（瑞典、丹麥、芬蘭、挪威、冰島）緊急醫療服務（EMS）中性別如何透過組織社會化過程被建構與體驗。研究發現，儘管北歐以性別平等著稱，EMS領域仍深植於傳統陽剛文化，女性急救人員常經歷被視為「異類」、需額外證明能力以及被邊緣化的壓力，反映出「適應」與「突出」的雙重困境；男性則可能無意識受益於符合職業規範的氣質與行為，獲取非正式的權威與歸屬感。研究強調，組織社會化不僅透過正式規章，更透過日常互動、幽默、身體姿態與敘事傳統強化性別規範。缺乏針對性別敏感的導師制度、缺乏對微侵略的回應機制以及領導層對性別動態的缺乏覺察，是維持不平等的關鍵因素。本研究呼籲超越「加入女性」的表面策略，轉而改造組織文化、重新定義專業規範，並嵌入持續的反思與教育，以建構真正包容的EMS環境。此研究對理解職場性別不平等的隱性機制具有重要理論與實務價值。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">北歐國家（瑞典、丹麥、芬蘭、挪威、冰島）的急救醫療服務人員（EMTs、paramedics）及相關職場參與者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">組織社會化過程（含正式與非正式規範、領導行為、同儕互動、職場文化與日常實踐）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無明確對照組；為範疇式回顧，比較不同性別在相似組織脈絡中的經驗與表現</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">性別如何影響個人在EMS中的適應經驗、專業認同、歸屬感與職業留隱；揭示性別規範如何透過組織社會化被再生產與體驗</div></div>
+</div>
+    <ul class="findings"><li>儘管北歐以性別平等著稱，EMS領域仍維持強烈的陽剛文化規範，女性常感受到格格不入與需額外證明能力的壓力。</li><li>男性急救人員可能無意識受益於符合傳統職業氣質（如肢體強度、情緒克制）而獲得非正式權威與歸屬感。</li><li>組織社會化透過日常互動（如幽默、身體語言、敘事傳統）微妙強化性別規範，而非僅靠正式政策。</li><li>缺乏性別敏感的導師制度、對微侵略的回應機制缺失及領導層對性別動態的覺察不足，是維持不平等的關鍵結構性因素。</li><li>真正的包容需超越數目代表性，必須改造組織文化、重新定義專業規範並嵌入持續的反思與教育。</li></ul>
+    <div class="keywords"><span class="keyword-pill">性別與組織社會化</span><span class="keyword-pill">北歐急救醫療服務</span><span class="keyword-pill">職場性別刻板印象</span><span class="keyword-pill">隱性偏見與微侵略</span><span class="keyword-pill">專業認同與歸屬感</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by NVIDIA Nemotron</p>
+  </footer>
+</div>
+</body>
+</html>
