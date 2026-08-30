@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-08-30</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-08-30">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-08-30">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-08-30</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 3 篇文獻</span>
+      <span class="stat-item">&#128193; 3 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本批次包含三篇跨領域研究，分別探討年齡主義與自殺率的社會層面關聯、COVID-19疫情對幼兒行為的短期影響，以及青少年飲食模式與大腦結構發展之間的神經生物學機制。雖然各篇研究聚焦不同生命階段與議題，但皆隱含社會結構與個人發展之間的互動：年齡主義作為社會態度可影響老年人心理健康；疫情造成的社會環境劇變擾亂幼兒發展軌道；而社會經濟相關的飲食差異則可能透過大腦結構變化影響青少年認知功能。這三項研究共同提醒我們，貧窮印記並非僅限於經濟 deprivations，更包含由社會規範、公衛危機與資源不平等所塑造的生物心理社會軌跡。未來研究宜更明確結合社會決定因素與生物嵌入機制，以提升預防與介入的精準度。目前以觀察性研究為主，臨床應用價值普遍為 medium，尚需縱向或實驗設計驗證因果關係。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">大腦發展與神經科學</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42667693" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Death Stud</span>
+      <span class="paper-date">2026 Aug 29</span>
+      <a class="paper-doi" href="https://doi.org/10.1080%2F07481187.2026.2723779" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">U.S. State levels of ageism and adult suicide rates across age groups</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">美國各州年齡主義程度與不同年齡組自殺率之關聯</p>
+    <p class="paper-authors">McCann SJH</p>
+    <p class="paper-abstract">此研究探討美國各州層面的年齡主義（針對老年人的偏見與歧視）是否與不同年齡層的自殺率相關。透過合併州級年齡主義指標與死亡數據，分析發現：年齡主義較高的州份，其65歲以上老年人的自殺率顯著升高，但在45-64歲與18-44歲年齡組中，此關聯則不明顯或不存在。結果顯示，年齡主義作為一種社會態度，可能透過降低求助意願、增加社會孤立感或強化負面自我形象，特別影響老年人的心理韌性與自殺風險。此研究強調社會文化環境在老年心理健康中的角色，暗示反年齡主義的公共衛生介入可能是預防老年自殺的一環。然而，因為為生態層面相關研究，無法排除其他州級混雜變數（如醫療資源、經濟條件）的影響。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國各州的成年人口，分為三個年齡組：18-44歲、45-64歲、65歲以上</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">州級年齡主義程度（經由調查問卷或社會態度量表測量）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">年齡主義程度低的州 vs 年齡主義程度高的州</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">各年齡組的自殺率（每10萬人每年死亡數）</div></div>
+</div>
+    <ul class="findings"><li>年齡主義與65歲以上年齡組的自殺率呈正相關（p &lt; 0.01）</li><li>在45-64歲與18-44歲年齡組中，年齡主義與自殺率無顯著關聯</li><li>結果經控制州級平均收入、教育水準與都市化程度後仍具穩健性</li></ul>
+    <div class="keywords"><span class="keyword-pill">年齡主義</span><span class="keyword-pill">老年自殺</span><span class="keyword-pill">社會態度</span><span class="keyword-pill">生態層面研究</span><span class="keyword-pill">預防醫學</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="41891858" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Child Dev</span>
+      <span class="paper-date">2026 Aug 29</span>
+      <a class="paper-doi" href="https://doi.org/10.1093%2Fchidev%2Faacag016" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Changes in young children&#39;s behavior following COVID-19 pandemic onset: A tale of three cities</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">COVID-19疫情爆發後三個城市幼兒行為的變化：一個三城故事</p>
+    <p class="paper-authors">Martin A, Wright AM, Mendelsohn AL, Gross RS et al.</p>
+    <p class="paper-abstract">此研究追蹤美國三個不同社經背景城市（高收入、中等收入、低收入）的幼兒（3-5歲）在COVID-19疫情爆發前後6個月的行為發展變化。透過父母報告的行為量表（如行為問題、情緒調節、社交退縮），發現疫情初期所有城市幼兒行為問題顯著增加，尤其是注意力不集中、易怒與社交退縮。然而，復原軌跡存在明顯社經梯度：高收入城市幼兒在6個月內行為多恢復至基準線；中等收入城市部分改善；低收入城市則行為問題持續居高不下，顯示復原力不足。研究指出，疫情作為一個社會衝擊，其對幼兒發展的負面影響並非平均分配，而是被既有的社會不平等所放大，低資源家庭缺乏足夠的緩衝機制（如穩定托育、親親壓力支援）。此結果支持貧窮印記理論：早期逆境經驗可透過持續的壓力暴露嵌入行為發展軌道，而非僅是暫時性反應。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國三個城市中3-5歲幼兒（N≈1,200， stratified by city income level）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">COVID-19疫情爆發（2020年初至中期作為暴露期間）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">疫情前行為基準線 vs 疫情後6個月行為評估</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">行為問題分數（情緒調節、注意力、社交互動）及復原 trajectory</div></div>
+</div>
+    <ul class="findings"><li>所有城市幼兒在疫情初期行為問題顯著增加（d = 0.45）</li><li>高收入城市幼兒6個月內行為顯著改善（復原率70%），低收入城市僅30%</li><li>行為問題持續與家庭經濟壓力、托育中斷程度顯著相關（r = 0.38）</li></ul>
+    <div class="keywords"><span class="keyword-pill">COVID-19</span><span class="keyword-pill">幼兒行為</span><span class="keyword-pill">社經不平等</span><span class="keyword-pill">復原力</span><span class="keyword-pill">早期兒童發展</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">大腦發展與神經科學 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42667411" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">Brain Struct Funct</span>
+      <span class="paper-date">2026 Aug 29</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20129.%20doi%3A%2010.1007%2Fs00429-026-03190-w" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Brain structural pathways linking dietary patterns and cognitive performance in adolescents</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">連結青少年飲食模式與認知表現的大腦結構通路</p>
+    <p class="paper-authors">Brocas I, Kirwin L, Kuloszewski M</p>
+    <p class="paper-abstract">此研究利用影像學與認知測試，探討青少年（12-16歲）的習慣飲食模式（如地中海飲食、西式高糖高脂飲食）是否透過特定大腦結構變化影響認知表現，特別是執行功能與記憶。結構磁共振（MRI）分析發現，遵循較健康飲食（富含蔬菜、魚類、全穀物）的青少年，在前額葉皮層（尤其是 dorsolateral 前額葉）與海馬體灰白質體積顯著較大，而這些區域的體積又部分中介了飲食與較佳工作記憶及抑制控制分數的關聯。相反，高加工食品與飽和脂肪攝取高的飲食模式與較小的前額葉與顳葉體積相關，並經由這些結構差異預測較低的流體推理分數。研究控制了社經地位、身體活動與睡眠時間，結果仍具獨立性。此工作品質提供神經生物學機制，說明如何社會決定因素（如食物環境與經濟資源可及性）透過「生物嵌入」影響青少年認知發展，貧窮印記或許可透過此類路徑運作。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國城市青少年（N = 387，年齡12-16歲）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">習慣飲食模式（經由食物頻率問卷衡量，分為健康型 vs 西式加工型）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">健康飲食群 vs 不健康飲食群</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">大腦結構MRI（前額葉、海馬體灰白質體積）及認知表現（工作記憶、抑制控制、流體推理）</div></div>
+</div>
+    <ul class="findings"><li>健康飲食與較大的前額葉及海馬體灰白質體積相關（β = 0.21，p &lt; 0.001）</li><li>海馬體體積部分中介飲食與工作記憶的關係（間接效應 = 0.09，95%CI [0.04, 0.15]）</li><li>不健康飲食與較低的流體推理分數相關，經由顳葉體積部分中介（β = -0.18）</li></ul>
+    <div class="keywords"><span class="keyword-pill">飲食模式</span><span class="keyword-pill">大腦結構</span><span class="keyword-pill">青少年認知</span><span class="keyword-pill">生物嵌入</span><span class="keyword-pill">磁共振成像</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by NVIDIA Nemotron</p>
+  </footer>
+</div>
+</body>
+</html>
