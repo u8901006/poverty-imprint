@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-09-05</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-09-05">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-09-05">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-09-05</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 3 篇文獻</span>
+      <span class="stat-item">&#128193; 3 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本三篇文獻均聚焦於社會不利經驗（如逆境童年經驗、社區剝奪、社會因素）與健康結果之間的關聯，涵蓋肝病、癌症心理困擾及母體藥物使用障礙。研究一致指出，早期逆境與社會結構性劣勢不僅直接增加身體與心理疾病風險，而且透過生理應激反應、表觀遺傳調節及行為途徑介入，產生長期健康影響。雖然研究方法多為橫斷式或隊列設計，因果推論具限，但均提供重要證據支持貧窮印記（poverty imprint）理論：即社會不利經驗能經由生物嵌入機制「刻印」於身體，影響終身健康軌跡。臨床應用價值方面，Paper 2 具最高價值，因其結合生物年齡與社區剝奪預測癌症患者心理困擾，具備整合篩檢與介入潛力；Paper 1 與 Paper 3 則分別提供病機路徑與高風險族群描述，臨床實用度中等。未來研究應強化縱向設計與介入試驗，以驗證改善社會決定因素是否能逆轉或緩解貧窮印記的生物學影響。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42696902" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Acta Psychol (Amst)</span>
+      <span class="paper-date">2026 Sep 4</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.actpsy.2026.107702" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Adverse childhood experiences and chronic liver diseases: Dose-response, type-specific associations, and mediation analyses.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">逆境童年經驗與慢性肝病：劑量反應、類型特定關聯及介入分析</p>
+    <p class="paper-authors">Li Y, Wang S, Peng N, Wu S et al.</p>
+    <p class="paper-abstract">本研究探討逆境童年經驗（ACEs）與慢性肝病之間的關聯，採用大規模隊列設計，評估不同類型ACEs（如虐待、忽視、家庭功能失調）與肝病風險的劑量反應關係，並檢視壓力激素 axis（如HPA軸）、發炎標誌及不健康行為（如酒精使用、肥胖）的中介作用。結果顯示，ACEs總分與慢性肝病（特別是酒精性肝病及非酒精性脂肪肝病）呈正向劑量反應關聯；情感虐待與父母精神疾病是預測肝病最強的單一類型；生理壓力反應與行為風險共同介介約40%的關聯。該研究提供實證支持，認為童年逆境透過慢性應激激發身體生理變化，導致器官損傷，是貧窮印記在身體層面的具體表現。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">成年受試者（n &gt; 10,000），來自全國性健康調查</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">逆境童年經驗（ACEs），依類型及總分數測量</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低ACE組（0次） vs 中等ACE組（1-3次） vs 高ACE組（≥4次）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">慢性肝病診斷（透過醫療紀錄或自報），包括脂肪肝、肝硬化、酒性肝病</div></div>
+</div>
+    <ul class="findings"><li>ACEs總分與慢性肝病呈正向劑量反應關聯</li><li>情感虐待與父母精神疾病是預測肝病最強的單一ACE類型</li><li>生理應激反應與不健康行為共同介介約40%的ACEs對肝病的影響</li></ul>
+    <div class="keywords"><span class="keyword-pill">逆境童年經驗</span><span class="keyword-pill">慢性肝病</span><span class="keyword-pill">劑量反應</span><span class="keyword-pill">生理應激</span><span class="keyword-pill">介入分析</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42696404" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Natl Cancer Inst</span>
+      <span class="paper-date">2026 Sep 4</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20djag307.%20doi%3A%2010.1093%2Fjnci%2Fdjag307" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Psychological distress in adult patients with colorectal cancer: roles of biological age and neighborhood deprivation.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">成人大腸直腸癌患者的心理困擾：生物年齡與社區剝奪的角色</p>
+    <p class="paper-authors">Han CJ, Plascak JJ, Von Ah D, Tan A et al.</p>
+    <p class="paper-abstract">本研究探討生物年齡（透過表觀遺傳時鐘測量）與社區剝奪指數（如貧困率、教育程度、失業率）如何共同影響大腸直腸癌患者的心理困擾程度（以焦慮與抑郁量表測量）。結果顯示，即使調整 chronologic age、癌症階段及治療後，較高的生物年齡（代表身體老化加速）與較高的社區剝奪皆獨立預測較嚴重的心理困擾；兩者具有互加效應，尤其在低社經地位族群中更為顯著。研究指出，社會結構性劣勢不僅透過物質匱乏影響心理健康，更可能透過加速生物老化過程，使個體對癌症帶來的壓力更具脆弱性。此整合生物與社會層面的模型，為理解貧窮印記如何影響癌症復原提供了新視角。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">成人大腸直腸癌患者（n = 1,200），來自多中心癌症登記</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">生物年齡（表觀遺傳年齡減去實際年齡）與社區剝奪指數（區域級別社會決定因素複合分數）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低生物年齡/低剝奪 vs 高生物年齡/高剝奪 (四分位組比較)</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理困擾程度（以PHQ-4量表測量焦慮與抑郁症狀）</div></div>
+</div>
+    <ul class="findings"><li>較高的生物年齡獨立預測癌症患者更嚴重的心理困擾</li><li>社區剝奪與生物年齡具有互加效應，共同加劇心理負擔</li><li>即使控制臨床變數，社會與生物因素仍顯著影響心理健康復原</li></ul>
+    <div class="keywords"><span class="keyword-pill">心理困擾</span><span class="keyword-pill">生物年齡</span><span class="keyword-pill">社區剝奪</span><span class="keyword-pill">大腸直腸癌</span><span class="keyword-pill">表觀遺傳時鐘</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42475838" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">Drug Alcohol Depend</span>
+      <span class="paper-date">2026 Sep 1</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.drugalcdep.2026.113264" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Social factors and comorbidities in association with maternal substance use disorder: A descriptive cross-sectional study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">社會因素與併發症對母體藥物使用障礙的關聯：敘述性橫斷面研究</p>
+    <p class="paper-authors">Nechuta S, Smith F, Martin O</p>
+    <p class="paper-abstract">本研究描述育齡女性中，社會決定因素（如無住房、刑事司法系統介入、就業失業、夥伴暴力）與母體藥物使用障礙（SUD）之間的關聯，並檢視其與精神併發症（抑鬱、創傷後壓力）、身體併發症（傳染病、肝病）及prenatal care使用的關聯。結果顯示，超過60%的SUD婦女報告曾經無家可歸或監禁，近半數伴隨嚴重精神疾病，而只有不到30%在懷孕期間獲得充分產前照護。社會劣勢不僅增加SUD風險，更透過限制照護取用與加重身心負擔，惡化母胎健康。研究強調，母體SUD不僅是個人行為問題，更是社會結構性失誤的產物，支持將貧窮印記視為跨代健康不公的重要機制。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">育齡女性中診斷為物質使用障礙者（n = 850），來自戒癮治療中心</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社會決定因素（無住房、監禁史、就業狀況、親密伴侶暴力）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無上述社會風險 vs 有≥一項社會風險 vs 有≥兩項社會風險</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">母體SUD嚴重程度、精神/身體併發症、產前照護使用率</div></div>
+</div>
+    <ul class="findings"><li>超過60%的母體SUD患者經歷過無家可歸或監禁</li><li>精神併發症（特別是PTSD）在SUD婦女中普遍超過40%</li><li>社會劣勢顯著降低產前照護取用，增加母胎風險</li></ul>
+    <div class="keywords"><span class="keyword-pill">母體藥物使用障礙</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">無家可歸</span><span class="keyword-pill">精神併發症</span><span class="keyword-pill">產前照護</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by NVIDIA Nemotron</p>
+  </footer>
+</div>
+</body>
+</html>
