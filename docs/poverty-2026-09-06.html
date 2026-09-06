@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-09-06</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-09-06">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-09-06">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-09-06</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 2 篇文獻</span>
+      <span class="stat-item">&#128193; 2 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本次分析涵蓋兩篇研究：一篇聚焦於大學生時間貧窮的量表簡化與潛在亞型識別（Wang et al., 2026），另一篇探討美國在COVID-19疫情期間，州級驅逐與止贖禁令對房屋財務困難所導致之焦慮與憂鬱的緩衝作用（Boen et al., 2026）。第一篇屬於『認知與行為』（Cognition &amp; Behavior）類別，利用遺傳演算法縮短量表並透過潛類別分析識別出四組時間貧窮亞型，特別指出『主觀匱乏感』可存在於客觀不忙碌之個體中，強調時間貧窮需區分客觀資源匱乏與主觀認知衝突。第二篇屬於『政策介入與扶貧效果』（Policy Interventions &amp; Poverty Reduction）類別，以全美層級的住戶調查資料證實，州級防止驅逐與止贖的政策在疫情期間顯著緩解了財務困難對心理健康的負面影響，凸顯社會政策在緩解貧窮相關心理風險中的關鍵角色。兩篇研究均提供具臨床與政策實用價值的證據：前者提升時間貧窮評估效率，支援精準干預；後者驗證住房穩定政策的心理健康保護效應。整體而言，這兩項研究補充了貧窮印記研究中關於主觀體驗與結構性保護因子的理解，提示未來介入應同時關注個體感知與宏觀政策環境。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">認知與行為</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">認知與行為 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42700654" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Acta Psychol (Amst)</span>
+      <span class="paper-date">2026 Sep 5</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.actpsy.2026.107761" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Objective busyness or subjective scarcity? Scale abbreviation and heterogeneity profiles of college students&#39; perceived time poverty via genetic algorithm.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">客觀忙碌或主觀匱乏？透過遺傳演算法簡化量表並識別大學生感知時間貧窮的異質性亞型</p>
+    <p class="paper-authors">Wang H, Cheng W, Cheng L, Qian Z et al.</p>
+    <p class="paper-abstract">本研究針對大學生在數位智慧時代面臨的時間貧窮問題，發現現有量表過長且以變數為中心的模型掩蓋了時間體驗的異質性。研究一採用遺傳算法對《大學生感知時間貧窮量表》（CSPTP）進行簡化，在訓練樣本（n=811）中經全域優化搜尋後，開發出8項短縮版（CSPTP-GA）。該版本在驗證樣本（n=719）中顯示良好信度（Cronbach&#39;s α &gt; 0.70）、優秀適合度指標（χ²/df=2.78, RMSEA=0.05, CFI=0.992, IFI=0.992, TLI=0.984, SRMR=0.03），並在性別與教育程度上具強度量測不變性。研究二以CSPTP-GA對507名大學生進行潛類別分析，識別出四個亞型：低時間貧窮組（31%）、學術衝突感知組（20%）、中度時間貧窮組（16%）和高時間貧窮組（33%）。值得注意的是，學術衝突感知組雖客觀上不忙碌，卻主觀感受強烈焦慮，驗證了『忙碌不等於貧窮』的理論假設。此外，男性與大學生相較於女性與研究生，較不易落入高時間貧窮狀態。此研究不僅證明遺傳演算法在量表簡化中的效度，更凸顯區分客觀資源匱乏與主觀認知衝突對精準介入的重要性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">大學生（n=811訓練樣本，n=719驗證樣本，n=507潛類別分析樣本）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">使用遺傳演算法簡化College Students&#39; Perceived Time Poverty Scale (CSPTP) 為8項短縮版 (CSPTP-GA)</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未使用簡化程序之原始量表；不同亞型間之時間貧窮體驗與焦慮水準比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">CSPTP-GA展現良好信效度與量測不變性；潛類別分析識別出四組異質亞型，其中『學術衝突感知組』主觀時間匱乏感高但客觀忙碌度低；男性與大學生具有較低高時間貧窮風險</div></div>
+</div>
+    <ul class="findings"><li>遺傳演算法成功將CSPTP簡化為8項短表（CSPTP-GA），保持良好心理測量特性</li><li>透過潛類別分析識別出四個時間貧窮亞型：低、學術衝突感知、中度、高時間貧窮組</li><li>學術衝突感知組（20%）主觀感受時間匱乏但客觀上不忙碌，支持『忙碌≠貧窮』假設</li><li>男性與大學生相較於女性與研究生，較不易落入高時間貧窮狀態</li><li>CSPTP-GA在性別與教育程度上具有強度量測不變性，適用於大規模篩查</li></ul>
+    <div class="keywords"><span class="keyword-pill">時間貧窮</span><span class="keyword-pill">量表簡化</span><span class="keyword-pill">遺傳演算法</span><span class="keyword-pill">潛類別分析</span><span class="keyword-pill">主觀匱乏</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="37334797" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Health Soc Behav</span>
+      <span class="paper-date">2026 Sep</span>
+      <a class="paper-doi" href="https://doi.org/10.1177%2F00221465231175939" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">The Buffering Effect of State Eviction and Foreclosure Policies for Mental Health during the COVID-19 Pandemic in the United States.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">州級驅逐與止贖政策在美國COVID-19疫情期間對心理健康的緩衝效應</p>
+    <p class="paper-authors">Boen CE, Keister LA, Gibson-Davis CM, Luck A</p>
+    <p class="paper-abstract">本研究利用美國人口普查局Household Pulse Survey的住戶層級資料（n=805,223；2020年8月至2021年8月）結合州級驅逐與止贖禁令數據，採用雙向固定效應線性概率模型，考察財務困難（難以支付家庭開支、房租或房貸）與焦慮/憂鬱之間的關聯，並評估州級防止驅逐與止贖政策是否能緩衝此關係。結果顯示，報告財務困難的個體焦慮與憂鬱風險顯著增加，但身處實施驅逐/止贖禁令之州的個體，此關聯被明顯削弱。這表明州級住房穩定政策在疫情經濟衰退期間，能有效減緩財務壓力對心理健康的負面衝擊。研究進一步指出，各州政策回應的異質性可能導致疫情期間心理健康的不公平分配。研究強調，社會政策－特別是保障住房穩定的政策－在緩解貧窮相關心理風險中具有關鍵緩衝作用，未來危機應對應將此納入公共衛生與社會福祉的核心考量。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國成年人（來自Household Pulse Survey，n=805,223，2020年8月-2021年8月）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">州級驅逐與止贖禁令（eviction/foreclosure bans）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">/無州級禁令之州，或政策實施前後之比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">財務困難與焦慮/憂鬱風險增加的關聯，在實施州級驅逐/止贖禁令之州被顯著緩衝（變弱）</div></div>
+</div>
+    <ul class="findings"><li>州級驅逐與止贖禁令顯著減弱財務困難對焦慮與憂鬱的負面影響</li><li>身處實施禁令之州的租戶與房主，面臨房屋支出困難時，心理健康損害較低</li><li>州級政策的存在，能有效緩衝經濟衰退期間貧窮相關壓力對心理健康的沖擊</li><li>各州在疫情期間政策回應的差異，可能導致心理健康結果的地理不公平</li><li>住房穩定屬於社會決定因素，其政策介入具有直接心理健康保護效益</li></ul>
+    <div class="keywords"><span class="keyword-pill">驅逐禁令</span><span class="keyword-pill">止贖政策</span><span class="keyword-pill">財務困難</span><span class="keyword-pill">心理健康</span><span class="keyword-pill">COVID-19</span><span class="keyword-pill">州級政策</span><span class="keyword-pill">住房穩定</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by NVIDIA Nemotron</p>
+  </footer>
+</div>
+</body>
+</html>
