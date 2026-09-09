@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-09-09</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-09-09">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-09-09">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-09-09</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 5 篇文獻</span>
+      <span class="stat-item">&#128193; 5 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本組五篇文獻聚焦於貧窮印記（Poverty Imprint）在不同人群與階段的影響機制與干預途徑。Paper 1 提供發展障礙的環境與臨床風險因素敘事性綜述，強調早期生命中的手術、出生體重、母親精神疾病與疫情相關壓力如何透過生物嵌入影響兒童神經發育，提示早期干預與照護者心理健康支援的重要性。Paper 2 探討智慧手機生態瞬間性介入（EMA）在工作場所的應用，證明數位工具可有效降低在職成年人的壓力、焦慮與憂鬱，顯示科技介入在減緩貧窮相關壓力中的潛力。Paper 3 透過交叉性分析揭示在加泰隆尼亞青少年中，性別、社經地位與國籍如何交互作用影響焦慮與情緒障礙的診斷機率，指出移民背景與社會定位如何調節貧窮對心理健康的影響，提醒單一軸分析可能掩蓋結構性不公。Paper 4 則以燒傷兒童為研究對象，發現雖然低收入家庭孩子燒傷程度更重、吸入性損傷較常見，但在控制燒傷嚴重度後，社經地位本身對復原的社會與心理結果無顯著影響，顯示醫療資源的公平分配與社會支持可能緩解貧窮的負面影響。Paper 5 描述美國出生時就帶有 HIV 的成人終生倖存者，發現其一半貧窮生活、九成接受治療但僅四成病毒抑制穩定，顯示長期社會結構性劣勢如何與健康結果雙重互動，強調住房、創傷知照護與長效藥物的必要性。整體來看，這五篇文獻共同支持貧窮印記透過生理應激、神經發育干擾、醫療與社會資源不均等多重途徑嵌入個體生命歷程，而早期干預、交叉性政策設計、數位健康工具與社會支持系統是緩解其影響的關鍵方向。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">認知與行為</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42625915" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">World J Clin Pediatr</span>
+      <span class="paper-date">2026 Sep 9</span>
+      <a class="paper-doi" href="https://doi.org/10.5409%2Fwjcp.119109" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Clinical and environmental risk factors for childhood developmental disabilities: A narrative review (1990-2025)</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">兒童發展障礙的臨床與環境風險因素：敘事性綜述（1990-2025）</p>
+    <p class="paper-authors">Estupiñán-Pérez VH, Jiménez-Urrego ÁM, Botero Carvajal A</p>
+    <p class="paper-abstract">本文敘事性回顧了1990年至2025年間關於兒童發展障礙（Developmental Disabilities, DD）的臨床與環境/心理社會風險因素，涵蓋32項研究（19項臨床/程序性，13項環境/心理社會/早期干預），總參與者超過10萬人，並納入登記檔案資料超過180萬人。研究顯示，先天性心臟病的心臟手術與認知與運動發展較低相關，此關聯主要由手術期間複雜度、低出生體重及延長的加護病房住院時間驅動，而非手術技術本身。母親精神疾病顯著增加兒童不良神經發展結果的風險（調整後 odds ratio 約為 3-4）。多領域、以家庭為中心的干預（包括遠距醫療）能改善發展結果並減少發展遲緩。此外，多項隊列研究指出，2019年冠狀病毒病（COVID-19）疫情期間及其後，兒童的溝通與社會情感發展顯著增加遲疑。研究結論指出，臨床與環境/心理社會因素是兒童發展障礙的主要且潛在可改變的決定因素，優先方向包括加強發展監測、評估照護者心理健康、以及確保公平取得早期干預服務。這些發現支持貧窮印記理論：早期生命中的生理壓力（如手術創傷、母親心理困境）及社會環境（如疫情壓力）可透過生理嵌入機制影響兒童長期發展軌跡。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">18歲以下兒童，特別是經歷先天性心臟病手術、低出生體重、母親精神疾病暴露或COVID-19疫情期間出生的兒童</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">先天性心臟病心臟手術（暴露）；母親精神疾病（暴露）；多領域家庭中心早期干預（介入）；COVID-19疫情相關壓力暴露</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未接受手術的對照組；無母親精神疾病暴露組；未接受早期干預組；疫情前或未暴露組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">認知與運動發展分數；神經發展遲緩風險（OR）；早期干預後發展改善；疫情期間溝通與社會情感發展遲疑增加</div></div>
+</div>
+    <ul class="findings"><li>先天性心臟病手術後認知運動發展較低，主要由手術複雜度、低出生體重與延長ICU住院時間驅動，而非手術技術</li><li>母親精神疾病顯著增加兒童不良神經發展結果風險（調整後OR約3-4）</li><li>多領域、以家庭為中心的干預（含遠距醫療）可改善發展結果並減少遲緩</li><li>COVID-19疫情期間及其後，兒童溝通與社會情感發展遲疑增加</li><li>臨床與環境/心理社會因素是兒童發展障礙的主要可修改決定因素</li></ul>
+    <div class="keywords"><span class="keyword-pill">發展障礙</span><span class="keyword-pill">先天性心臟病手術</span><span class="keyword-pill">母親精神疾病</span><span class="keyword-pill">早期干預</span><span class="keyword-pill">COVID-19影響</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42710031" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">JMIR Mhealth Uhealth</span>
+      <span class="paper-date">2026 Sep 8</span>
+      <a class="paper-doi" href="https://doi.org/10.2196%2F72435" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">A Smartphone-Based Ecological Momentary Intervention for Workplace Mental Health: Randomized Controlled Trial</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">以智慧手機為基礎的生態瞬間性介入於職場心理健康：隨機對照試驗</p>
+    <p class="paper-authors">Li S, Lo LHL, Lau CYC, Lam M et al.</p>
+    <p class="paper-abstract">本隨機對照試驗評估了名為 Neurum 的智慧手機應用程式在減輕在職成年人工作相關壓力、焦慮與憂鬱方面的效能。共招募201名工作成人，隨機分配至介入組（n=102）或對照組（n=99），介入為期4週，包含認知行為療法、正念與自我調節練習，透過生態瞬間性評量（EMA）與介入推送。主要結果使用抑鬱、焦慮與壓力量表-21項（DASS-21）測量。結果顯示，介入組DASS-21總分平均下降14.518分，而對照組上升3.319分（F1,176=59.358，p&lt;.001，η²=0.252），此效應主要由壓力減少驅動（介入組壓力分數下降6.692，對照組上升2.000）。參與者平均每日使用Neurum約4.95分鐘，完成6.27次練習並記錄9.74次情緒日誌。然而，練習次數或日誌紀錄與分數改變之間的關聯未達顯著水準。研究結論指出，Neurum在非臨床場域中有效減輕工作成年人的憂鬱、焦慮與壓力症狀，雖使用率存在變異（較高脫落率：介入組21人 vs 對照組2人），但仍展現數位心理健康介入作為傳統面對面服務之可行、低成本替代方案的潛力，尤其適用於資源匱乏或不便於就醫的人群。此研究支持利用科技降低心理健康服務門檻，以緩解貧窮或社會邊緣化群體因工作壓力導致的心理健康惡化。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">非機構化在職成年人（工作成人），平均年齡34.65歲，男女比例約1:1</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">4週智慧手機生態瞬間性介入（Neurum app），包含認知行為療法、正念、自我調節練習與情緒日誌</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未接受介入的對照組（僅監測）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">DASS-21總分及子分數（憂鬱、焦慮、壓力）變化；使用度（練習次數、日誌紀錄、每日使用時間）</div></div>
+</div>
+    <ul class="findings"><li>介入組DASS-21總分顯著下降（MD=-14.518），對照組上升（MD=+3.319）</li><li>壓力減少是主要效應來源（介入組壓力分數下降6.692，對照組上升2.000）</li><li>參與者平均每日使用介入4.95分鐘，完成約6次練習與9.7次情緒紀錄</li><li>練習或日誌次數與心理改善之間的關聯未達統計顯著</li><li>數位介入在非臨床設定中有效降低工作成年人的憂鬱、焦慮與壓力</li></ul>
+    <div class="keywords"><span class="keyword-pill">生態瞬間性介入</span><span class="keyword-pill">智慧手機心理健康</span><span class="keyword-pill">工作場所壓力</span><span class="keyword-pill">DASS-21</span><span class="keyword-pill">數位健康干預</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42709207" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">Eur Child Adolesc Psychiatry</span>
+      <span class="paper-date">2026 Sep 8</span>
+      <a class="paper-doi" href="https://doi.org/10.1007%2Fs00787-026-03182-5" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">An intersectional analysis of the socio-structural factors associated with anxiety and mood disorder diagnoses in young people in Catalonia: a primary care cohort study (2008-2022)</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">加泰隆尼亞青少年焦慮與情緒障礙診斷的社會結構因素交叉性分析：初級保健隊列研究（2008-2022）</p>
+    <p class="paper-authors">Bennett M, López-Jiménez T, Lozano-Sánchez A, Evangelidou S et al.</p>
+    <p class="paper-abstract">本研究利用加泰隆尼亞2008年至2022年間的初級保健電子病歷資料，分析性別、社會經濟地位（SES）與國籍如何交互作用影響10-24歲青少年焦慮與情緒障礙的診斷機率。研究納入2,086,641名個體，採用性別分層回歸模型考察SES-國籍交叉點對焦慮與情緒障礙新發診斷的影響。結果顯示，西班牙國籍青少年中，SES越低，焦慮與情緒障礙診斷風險越高，尤其在女童中最顯著（例如，低SES女童焦慮險比HR=1.31，95%CI 1.29-1.33）。此社經梯度在拉丁美洲國籍青少年中較弱，而在其他國籍群體中則幾乎不存在，該群體在所有SES層級均展現較低診斷風險（例如，情緒障礙HR範圍0.54-0.83）。有趣的是，拉丁美洲國籍且處於中高SES層級的女孩，反而比參考組（西班牙國籍、低SES）更可能被診斷出情緒障礙（中等SES HR=1.22，高等SES HR=1.17），提示移民身份與社會適應壓力可能與診斷實務互動。研究結論指出，診斷不平等受國籍、SES與性別交叉影響深化，凸顯移民相關社會定位（如文化適應壓力、歧視、醫療可及性）是理解心理健康不平等的關鍵維度。這些差異可能反映出不均等的壓力暴露以及診斷認知中的結構性偏見。交叉性分析能揭露單一軸分析（如僅看收入或僅看性別）所掩蓋的異質性，為設計更公平的心理健康服務提供理論與實證基礎。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">加泰隆尼亞10-24歲青少年（N=2,086,641），按性別、社會經濟地位（SES）及國籍（西班牙、拉丁美洲、其他）分層</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">無（觀察性研究）；暴露變項為SES-國籍交叉點</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">參考組：西班牙國籍、低SES、女性（作為風險基準）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">焦慮與情緒障礙的新發診斷風險（ hazard ratio, HR ）</div></div>
+</div>
+    <ul class="findings"><li>西班牙國籍青少年中，SES越低焦慮與情緒障礙診斷風險越高（女童最顯著：HR=1.31）</li><li>此社經梯度在拉丁美洲國籍青少年中顯著減弱，在其他國籍群體中近乎消失</li><li>拉丁美洲國籍中高SES女孩反而比西班牙國籍低SES女孩更可能被診斷出情緒障礙（HR=1.22、1.17）</li><li>診斷不平等受國籍、SES與性別交叉影響深化</li><li>移民相關社會定位（如文化壓力、歧視）是心理健康不平等的關鍵結構性維度</li></ul>
+    <div class="keywords"><span class="keyword-pill">交叉性分析</span><span class="keyword-pill">社會經濟地位</span><span class="keyword-pill">國籍</span><span class="keyword-pill">性別</span><span class="keyword-pill">焦慮與情緒障礙診斷不平等</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42348733" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Burn Care Res</span>
+      <span class="paper-date">2026 Sep 8</span>
+      <a class="paper-doi" href="https://doi.org/10.1093%2Fjbcr%2Firag102" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Family Income and Recovery Outcomes in Pediatric Burn Survivors: A Burn Model System National Database Study Assessing Functional and Psychosocial Differences</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">家庭收入與兒童燒傷倖存者的復原結果：燒傷模式系統國家資料庫研究－評估功能與心理社會差異</p>
+    <p class="paper-authors">Wang S, Pickering TA, Wiechman S, Roaten K et al.</p>
+    <p class="paper-abstract">本研究探討家庭收入是否影響兒童燒傷後的功能與心理社會復原。以2015-2024年美國多中心縱向燒傷模式系統資料庫為基礎，納入18歲以下兒童燒傷患者，依家庭收入分為三組：&lt;$50k（n=115）、$50k-$100k（n=55）及&gt;$100k（n=34）。結果顯示，低收入組（&lt;$50k）兒童平均燒傷體表面積（%TBSA）顯著更高（p&lt;.001），且吸入性損傷發生率亦較高（p=.03），提示低收入家庭孩子承受較重的燒傷傷害負擔。然而，在統計模型中控制%TBSA burned後，低收入組在返回學校或任何心理社會結果（PROMIS憂鬱、憤怒、同伴關係、焦慮、疼痛干擾、家庭關係、創後成長、身體形象、疼痛強度）上皆無顯著差異（p=.40）。此發現表明，雖然貧窮與更嚴重的初始傷害相關，但一旦控制傷害嚴重度， socioeconomic status 本身並不直接預測較差的功能或心理社會復原，顯示醫療資源的公平分配與個人、家庭或社會支持系統可能在修復過程中發揮關鍵緩衝作用。研究同時強調，必須解決導致低收入家庭兒童 disproportionate injury burden（不成比例傷害負擔）的系統性不平等，例如住房安全、工作環境與預防性健康教育的不足。此研究支持「貧窮印記」理論中關於結構性暴露與修復力量的雙重觀點：貧窮增加風險暴露，但修復結果更受即時醫療與社會支持影響，而非長期收入狀況本身。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">18歲以下兒童燒傷倖存者（N=204），依家庭收入分組：&lt;$50k、$50k-$100k、&gt;$100k</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">家庭收入水平（作為社會經濟地位的暴露變項）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高收入組（&gt;$100k）作為參考；亦以低收入組（&lt;$50k）與中收入組比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">12個月後返回學校；PROMIS量表測量的心理社會功能（憂鬱、憤怒、同伴關係、焦慮、疼痛干擾、家庭關係、創後成長、身體形象、疼痛強度）</div></div>
+</div>
+    <ul class="findings"><li>低收入家庭兒童燒傷%TBSA顯著更高（p&lt;.001），吸入性損傷發生率亦較高（p=.03）</li><li>控制%TBSA burned後，家庭收入對返回學校無顯著影響（p=.40）</li><li>控制%TBSA burned後，家庭收入對所有PROMIS心理社會結果無顯著差異（p=.40）</li><li>低收入組在功能與心理社會復原上無劣勢，一旦傷害嚴重度被控制</li><li>系統性不平等導致低收入家庭兒童承受不成比例的燒傷風險，需透過預防與公平資源分配解決</li></ul>
+    <div class="keywords"><span class="keyword-pill">兒童燒傷</span><span class="keyword-pill">家庭收入</span><span class="keyword-pill">%TBSA burned</span><span class="keyword-pill">心理社會復原</span><span class="keyword-pill">結構性不平等</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">認知與行為 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42709558" style="animation-delay:1.6s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Assoc Nurses AIDS Care</span>
+      <span class="paper-date">2026 Sep 8</span>
+      <a class="paper-doi" href="https://doi.org/10.1097%2FJNC.0000000000000692" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Characteristics and Needs of US Adult Lifetime Survivors With HIV: A Cross-Sectional Study-Medical Monitoring Project 2015-2022 Cycles</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">美國出生時帶有HIV的成人終生倖存者特徵與需求：橫斷面研究－醫療監測專案2015-2022週期</p>
+    <p class="paper-authors">Lampe MA, Buchacz K, Yuan XA, Kalari S et al.</p>
+    <p class="paper-abstract">本橫斷面研究利用美國醫療監測專案（Medical Monitoring Project）2015至2022年週期資料，分析出生時就帶有HIV或在出生後12個月內診斷的美國成人終生倖存者（N=292）的人口特徵、社會決定因素與HIV治療結果。結果顯示，該群體平均62%為女性，58%為黑人，26%為西班牙裔/拉丁裔；三分之一年齡超過30歲。一半受訪者生活在貧窮中（50%），21%住房不穩定，93%曾接受HIV治療，但僅43%在過去12個月內達成持續病毒抑制。多數人自評健康狀況良好或更好，並對HIV護理感到滿意。研究終身倖存者面臨重大的社會經濟挑戰——特別是貧窮與住房不穩定——這些因素可能干擾治療依從性與長期健康管理，導致病毒抑制率偏低。然而，他們對自身健康與護理的主觀評價相對正向，提示韌性與適應機制可能發揮作用。研究結論指出，擴大依從性支援、提供創傷知照護（trauma-informed care）、增加長效抗逆轉錄病毒藥物（long-acting ART）的可及性，以及改善住房條件，是提升此群體生活品質、健康結果與整體福祉的關鍵策略。此研究揭示貧窮印記如何在慢性疾病背景下透過結構性劣勢（住房、收入）與健康結果（病毒抑制）形成惡性循環，同時強調多層面介入（醫療、社會、住房）的必要性，以打破貧窮與健康惡化的互動。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國出生時帶有HIV或在出生後12個月內診斷的成人終生倖存者（N=292），年齡≥18歲</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">無（橫斷面觀察研究）；暴露變項為貧窮狀況、住房穩定性、種族/民族</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">非貧窮群體；穩定住房群體；達成持續病毒抑制群體</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">貧窮比例（50%）；住房不穩定比例（21%）；HIV護理接受率（93%）；過去12個月持續病毒抑制率（43%）；自評健康狀況；對HIV護理滿意度</div></div>
+</div>
+    <ul class="findings"><li>一半（50%）的終生HIV倖存者生活在貧窮中</li><li>21%報告住房不穩定</li><li>93%曾接受HIV治療，但僅43%在過去12個月內達成持續病毒抑制</li><li>多數自評健康良好或更好，並對護理感到滿意</li><li>貧窮、住房不穩定與低病毒抑制率提示社會結構性因素對健康結果的長期影響</li></ul>
+    <div class="keywords"><span class="keyword-pill">終生HIV倖存者</span><span class="keyword-pill">貧窮</span><span class="keyword-pill">住房不穩定</span><span class="keyword-pill">病毒抑制</span><span class="keyword-pill">創傷知照護</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by NVIDIA Nemotron</p>
+  </footer>
+</div>
+</body>
+</html>
