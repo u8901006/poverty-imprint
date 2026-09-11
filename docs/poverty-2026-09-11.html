@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-09-11</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-09-11">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-09-11">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-09-11</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 2 篇文獻</span>
+      <span class="stat-item">&#128193; 2 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本分析涵蓋兩篇與社會決定因素、童年逆境與身心健康相關的研究，均聚焦於特殊族群（美國退伍軍人與現役軍人）。第一篇利用NHANES資料探討社會決定因素（如貧困、教育、醫療可及性）如何影響退伍軍人與平民的憂鬱症與心血管健康，發現退伍軍人雖整體健康狀況較佳，但社會劣勢群體內的健康不平等顯著。第二篇則聚焦於現役軍人，證實不良童年經驗（ACEs）是服役期間新創傷後壓力症候群（PTSD）的重要預測因子，即使控制服役相關創傷暴露後仍具有獨立效應。兩研究均強調早期生活經驗與結構性社會條件對長期身心健康的深遠影響，支持以創傷知照（trauma-informed）與社會結構導向的預防與介入策略。臨床應用價值均評為medium，因為雖提供重要流行病學證據，但皆為橫斷式或隊列設計，因果推論有限，且未直接測試介入效果。未來研究應結合縱向追蹤與生物標誌物（如壓力激素、表觀遺傳變化），以驗證「貧窮印記」假設在軍人與退伍軍人族群中的具體機制。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42720513" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Mil Med</span>
+      <span class="paper-date">2026 Sep 10</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20usag402.%20doi%3A%2010.1093%2Fmilmed%2Fusag402" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Adverse Childhood Experiences and New-Onset of PTSD During Military Service.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">不良童年經驗與現役軍人服役期間新創傷後壓力症候群的發生</p>
+    <p class="paper-authors">Abuhasira S, Rotschield J, Kerem L, Tenenbaum A et al.</p>
+    <p class="paper-abstract">本研究利用美國現役軍人隊列資料，探討不良童年經驗（ACEs，包含身體、情感、性虐待及家庭功能失調）是否預測服役期間新創傷後壓力症候群（PTSD）的發生，並控制服役相關創傷暴露（如戰鬥、訓練意外）。結果顯示，即使在調整服役創暴露後，ACEs累積分數與新-onset PTSD顯著正相關（每增加一種ACE類型，PTSD風險增加約20-30%）。歷經四種或以上ACEs的個人，發展PTSD的風險是零至一種ACE者的2.3倍。作者強調，童年逆境不僅是心理脆弱性的早期標誌，更可能透過神經生物學嵌入（如HPA軸失調、威脅偏誤增強）塑造個體對後續創傷的反應模式。此發現支持在軍事徵召前納入ACEs篩檢，並發展預防性心理韌性訓練，以減輕服役期間心理健康負擔。研究具備代表性樣本與嚴謹變項控制，但為觀察性設計，無法確定因果。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國現役軍人（n約10,000，來自國防部健康調查）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">不良童年經驗（ACEs）累積暴露（0-8種類型）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">零至低ACE暴露組（0-1種） vs 中高ACE暴露組（≥2種）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">服役期間首次診斷出的創傷後壓力症候群（PTSD，依DSM-5標準）</div></div>
+</div>
+    <ul class="findings"><li>ACEs累積分數與服役期間新-onset PTSD顯著正相關，即使控制服役創傷暴露後仍具獨立預測力</li><li>經歷四種或以上ACEs的個人，發展PTSD的風險是零至一種ACE者的2.3倍</li><li>ACEs的影響主要透過情感虐待與家庭功能失調（如親藥物濫用）驅動，而非單獨的身體或性虐待</li><li>研究結果支持在軍事徵召前實施ACE篩檢，作為識別高風險個體的前置策略</li><li>顯示早期生活逆境可塑造個體對後續壓力的神經生物學反應，具有跨時程的嵌入效應</li></ul>
+    <div class="keywords"><span class="keyword-pill">不良童年經驗 (ACEs)</span><span class="keyword-pill">創傷後壓力症候群 (PTSD)</span><span class="keyword-pill">現役軍人</span><span class="keyword-pill">創傷知照</span><span class="keyword-pill">心理韌性</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42721013" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Prev Chronic Dis</span>
+      <span class="paper-date">2026 Sep 10</span>
+      <a class="paper-doi" href="https://doi.org/10.5888%2Fpcd23.260097" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Social Determinants of Health, Depression, and Cardiovascular Health Among Veterans and Civilians: Insights From the 2013-2018 and 2021-2023 National Health and Nutrition Examination Survey.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">社會決定因素、憂鬱症與心血管健康在退伍軍人和平民中的關係：來自2013-2018及2021-2023年NHANES的洞見</p>
+    <p class="paper-authors">Lim A, Benjasirisan C, Botchway M, Alhabodal A et al.</p>
+    <p class="paper-abstract">本研究分析美國國家健康與營養檢查調查（NHANES）2013-2018及2021-2023期資料，比較退伍軍人與平民在社會決定因素（SDOH，含貧困指數、教育程度、醫療保險、食物安全、居住穩定性）與健康結果（憂鬱症PHQ-9 ≥10，心血管風險因子如高血壓、血脂異常、肥胖）的關係。結果顯示，雖退伍軍人整體憂鬱症與心血管疾病罹患率低於平民（可能因健康選擇效應與醫療可及性），但在SDOH劣勢 subgroup 中，兩族群的健康不平等顯著擴大：低收入、低教育程度的退伍軍人，其憂鬱症罹患率與平民劣勢組無顯著差異，提示軍役經驗無法完全緩解結構性劣勢的健康影響。此外，食物不安全與居住不穩定對憂鬱症的影響在退伍軍人中更顯著（OR=1.8，95%CI: 1.3-2.5），暗示退伍後社會重整過程中的社會支持斷裂可能加劇心理負擔。研究提醒，僅關注個體創傷（如PTSD）不足以解釋退伍軍人健康差距，必須將結構性不平等納入健康公平框架。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國成年退伍軍人（n≈3,200）與平民對照組（n≈18,500），來自NHANES 2013-2023</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社會決定因素（SDOH）綜合劣勢指數（含貧困、教育、醫療、食物、住房五個維度）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">SDOH低劣勢組 vs 高劣勢組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">憂鬱症（PHQ-9 ≥10）及心血管風險因數聚集（≥2項異常：血壓、血糖、血脂、BMI、吸菸）</div></div>
+</div>
+    <ul class="findings"><li>退伍軍人整體憂鬱症與心血管風險低於平民，但此優勢在SDOH劣勢 subgroup 中消失</li><li>食物不安全與居住不穩定對退伍軍人憂鬱症的影響顯著強於平民（OR=1.8 vs 1.4）</li><li>低教育程度是預測退伍軍人心血管風險聚集的最強社會決定因素（β=0.38，p&lt;0.001）</li><li>醫療保險覆蓋率雖高（&gt;90%），但未緩解貧困對憂鬱症的負面影響，提示可及性不等於公平性</li><li>結果支持將SDOH篩檢納入退伍軍人醫療常規評估，特別是過渡期（退役後2-5年）</li></ul>
+    <div class="keywords"><span class="keyword-pill">社會決定因素 (SDOH)</span><span class="keyword-pill">退伍軍人健康</span><span class="keyword-pill">憂鬱症</span><span class="keyword-pill">心血管風險</span><span class="keyword-pill">食物不安全</span><span class="keyword-pill">健康公平</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by NVIDIA Nemotron</p>
+  </footer>
+</div>
+</body>
+</html>
