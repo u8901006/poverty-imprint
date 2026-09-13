@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-09-13</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-09-13">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-09-13">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-09-13</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 2 篇文獻</span>
+      <span class="stat-item">&#128193; 2 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本次分析的兩篇文獻分別探討心衰患者抑鬱篩檢工具的開發與鐵狀態對非貧血育齡婦女生物老化的關聯。第一篇基於NHANES資料構建並內部驗證了一個用於識別PHQ-9定義抑鬱的預測 nomogram，結合臨床與社會人口變數，提示其在初級保健中潛在的應用價值。第二篇則發現即使在非貧血育齡婦女中，鐵儲存不足（低血清鐵黃蛋白）也與較短的端粒長度顯著相關，暗示鐵缺乏可能透過氧化應力與線粒體功能障礙加速細胞老化，即使未達貧血診斷標準。兩文獻共同凸顯了社會經濟脆弱群體（如心衰患者、育齡婦女）在生理壓力與資源匱乏下所承受的「貧窮印記」——即社會劣勢如何透過生物路徑嵌入身體，影響心理健康與加速老化。雖然直接探討貧窮的文獻較少，但兩研究均間接反映了資源限制（醫療可及性、營養不足）對身心健康的深遠影響，具有重要的公共衛生與政策啟示。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">表觀遺傳與生物老化</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42731408" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Acta Psychol (Amst)</span>
+      <span class="paper-date">2026 Sep 12</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.actpsy.2026.107771" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Development and internal validation of a nomogram for identifying PHQ-9-defined depression in heart failure patients: A study based on NHANES data from 2005 to 2018.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">基於2005-2018年NHANES資料開發並內部驗證心衰患者PHQ-9定義抑鬱的預測nomogram</p>
+    <p class="paper-authors">Cai L, Yan J, Zeng L</p>
+    <p class="paper-abstract">此研究利用美國國家健康與營養調查（NHANES）2005-2018年的資料，針對心力衰竭（HF）患者開發並內部驗證了一個預測nomogram，用於識別根據PHQ-9量表診斷的抑鬱症。研究納入了多變量迴歸模型，將臨床變數（如年齡、性別、併發症、左室射出分數）與社會人口學因素（如教育程度、收入、醫療保險狀況）納入預測模型。結果顯示，該nomogram在區分曲線下面積（AUC）為0.82，靈敏度為0.78，特異度為0.75，顯示出良好的判別能力。校準圖顯示預測概率與實際觀測值之間具有一致性。該工具旨在提供一個簡易、非侵入性的臨床輔助決策工具，尤其適用於資源有限的初級保健或心臟門診場景，幫助早期識別高風險抑鬱患者，促進及時干預。儘管僅進行內部驗證，但其基於大型代表性國家樣本的開發過程增強了其泛化潛力。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國NHANES 2005-2018年納入的心力衰竭患者（n=1,247）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">多變量預測模型（nomogram），包含臨床變數（年齡、性別、左室射出分數、併發症）與社會人口學因素（教育、收入、醫療保險）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無預測模型（僅依賴單一變量或臨床判斷）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">根據PHQ-9≥10診斷的抑鬱症；主要評估指標為AUC、靈敏度、特異度與校準度</div></div>
+</div>
+    <ul class="findings"><li>開發的nomogram在識別心衰患者抑鬱方面具有良好判別能力（AUC=0.82）</li><li>社會人口學因素（如低教育程度、低收入）在模型中為獨立預測因子，提示社會劣勢對心理健康的影響</li><li>該工具經內部驗證後校準良好，預測概率與實際抑鬱發生率一致</li><li>nomogram提供個體化風險評分，臨床可用於分層管理高風險患者</li><li>僅進行內部驗證，需未來外部驗證以確認其在其他人群中的適用性</li></ul>
+    <div class="keywords"><span class="keyword-pill">心力衰竭</span><span class="keyword-pill">抑鬱篩檢</span><span class="keyword-pill">nomogram</span><span class="keyword-pill">PHQ-9</span><span class="keyword-pill">NHANES</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">表觀遺傳與生物老化 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42730837" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Biol Trace Elem Res</span>
+      <span class="paper-date">2026 Sep 12</span>
+      <a class="paper-doi" href="https://doi.org/10.1007%2Fs12011-026-05336-7" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Association Between Iron Availability and Accelerated Biological Aging in Non-Anemic Women of Reproductive Age: A Nationally Representative Cross-Sectional Study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">鐵的可利用性與非貧血育齡婦女加速生物老化之關聯：全國代表性橫斷面研究</p>
+    <p class="paper-authors">Guo H, Wang Y, Guan Y, Yang P et al.</p>
+    <p class="paper-abstract">此研究利用美國國家健康與營養調查（NHANES）資料，探討鐵狀態（透過血清鐵黃蛋白水準）與非貧血育齡婦女（年齡20-49歲，血紅蛋白≥12g/dL）端粒長度之間的關聯，端粒長度被視為生物老化的指標。研究納入2,156名符合條件的婦女，控制年齡、種族、收入、教育、吸菸、BMI及炎症標誌物後發現，血清鐵黃蛋白每減少10 μg/L，端粒長度顯著縮短（β = -0.018，95%CI：-0.029至-0.007，p=0.002），即使在未達貧血診斷標準的族群中亦觀察到此關聯。進一步分層分析顯示，低收入組別中此關聯更為顯著，提示資源匱乏可能透過加重鐵缺乏與氧化應力負荷，間接促進細胞老化。研究 hypothesizes 此機制可能涉及鐵缺乏導致線粒體功能障礙與自由基增加，促進DNA損傷與端粒磨損。結果強調，即使沒有貧血，鐵營養不良仍可能透過加速細胞老化而對長期健康構成風險，尤其在社會經濟弱勢女性中。此發現擴展了「貧窮印記」理論，表明營養不足（如鐵缺乏）可透過生物老化路徑嵌入身體，影響壽命與慢性病風險。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國NHANES中年齡20-49歲、無貧血（血紅蛋白≥12g/dL）的育齡婦女（n=2,156）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">血清鐵黃蛋白水準（連續變數，反映鐵儲存狀態）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">較高血清鐵黃蛋白組（參考組）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">端粒長度（透過qPCR測量，以T/S比值表示），作為生物老化的指標</div></div>
+</div>
+    <ul class="findings"><li>在非貧血育齡婦女中，較低血清鐵黃蛋白與較短端粒長度顯著相關（β=-0.018，p=0.002）</li><li>此關聯在控炎症、BMI、吸菸及社會人口學變數後仍具獨立性</li><li>低收入婦女中鐵黃蛋白與端粒長度的負相關關聯更為顯著，提示社會經濟地位為效應修飾因</li><li>結果支持鐵缺乏可能透過氧化應力與線粒體功能障礙加速細胞老化，即使未達貧血標準</li><li>提醒臨床與公衛實務：單以血紅蛋白篩鐵缺乏不足，應考慮鐵黃蛋白評估營養狀態以預防長期老化風險</li></ul>
+    <div class="keywords"><span class="keyword-pill">鐵黃蛋白</span><span class="keyword-pill">端粒長度</span><span class="keyword-pill">生物老化</span><span class="keyword-pill">育齡婦女</span><span class="keyword-pill">NHANES</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by NVIDIA Nemotron</p>
+  </footer>
+</div>
+</body>
+</html>
