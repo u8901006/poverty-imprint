@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-09-16</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-09-16">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-09-16">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-09-16</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 4 篇文獻</span>
+      <span class="stat-item">&#128193; 1 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本次分析的四篇文獻涵蓋不同地區與健康議題，反映出社會決定因素（如貧困、教育、種族、地理位置）對健康結果的廣泛影響。Paper 1 描述馬拉維的家庭式出生隊列研究，聚焦農村與城鎮的身心健康條件，強調早期生活環境在低資源國家中的長期影響。Paper 2 探討人口統計特徵（年齡、種族、社会经济地位）對前列腺癌放射治療結果的影響，顯示即使在隨機對照試驗框架內，結構性不平等仍透過臨床決策與反應差異顯現。Paper 3 調查英國HIV患者的醫療服務使用社會人口學變異，發現移民背景、教育程度與收入水平顯著影響服務可及性與依從性。Paper 4 則考察美國嬰幼兒飲食品質與聯邦營養補助計畫參與如何預測學前兒童後續飲食品質，證明早期營養介入具持久預防效能。雖無文獻直接討論「貧窮印記」的神經生物或表觀遺傳機制，但四篇皆間接支持貧窮與社會劣勢透過多重途徑（醫療可及性、行為模式、壓力暴露）嵌入個人健軌跡。綜合來看，社會決定因素是理解健康不平等的關鍵透鏡，政策介入（如營養補助、公平醫療）具備緩衝貧窮影響的潛力。整體臨床應用價值中等偏高，尤適合指導公共衛生與健康公平政策的制定。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">4 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">4 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42744372" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">BMJ Open</span>
+      <span class="paper-date">2026 Sep 15</span>
+      <a class="paper-doi" href="https://doi.org/10.1136%2Fbmjopen-2026-122132" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Generation Malawi: a family-based birth cohort investigating physical and mental health conditions in rural and urban Malawi - study protocol.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">馬拉維世代：一項家庭為基礎的出生隊列研究，調查馬拉維農村與城鎮地區的身心健康狀況 —  — 研究方案</p>
+    <p class="paper-authors">Nakanga WP, Stewart RC, Malava JK, Nindi P et al.</p>
+    <p class="paper-abstract">本文為研究方案，描述『Generation Malawi』隊列研究之設計，該研究為馬拉維首個大規模家庭為基礎的出生隊列，旨在追蹤農村與城鎮地區孕產婦、嬰幼兒及其家庭成員的身心健康軌跡。研究將收集社會經濟資訊、生活環境暴露（如貧困、衛生條件、營養狀況）、母親心理健康（產前產後憂鬱）、兒童發育里程碑及慢性病風險因子。透過橫斷面與縱向資料整合，該研究旨在闡明早期生活逆境（特別是貧困相關壓力源）如何透過生物嵌入與行為途徑影響後續身心健康結果。該隊列將為撒哈拉以南非洲地區提供罕見的長期資料，有助於理解低資源國家中貧困與健康不平等的動態機制，並為當地公共衛生政策提供實證基礎。研究強調跨學科與社區參與的重要性，以確保結果具有當地相關性與政策轉化潛力。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">馬拉維農村與城鎮地區的孕婦、其伴侶、新生兒及5歲以下兒童及其家庭成員</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社會經濟狀況（貧困指標）、居住環境（衛生、水源）、母親心理健康狀況、營養攝入與獲取</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">農村 vs. 城鎮居住地區；不同貧困層級；有無母親產前產後憂鬱症</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">兒童身體成長指標（身高/體重 Z 值）、發育里程碑達成率、母親與兒童心理健康症狀（憂鬱、焦慮）、傳染病與非傳染病風險因子 prevalence</div></div>
+</div>
+    <ul class="findings"><li>該隊列將為撒哈拉以南非洲提供首個整合身心健康與社會決定因素的縱向出生隊列資料</li><li>預期發現貧困與母親心理健康不良將透過多重途徑負面影響兒童早期發育</li><li>城鄉差異將是理解環境脆弱性與資源獲取如何調節健康結果的關鍵變項</li><li>研究設計強調社區共創與能力建構，以提升結果的當地適用性與永續性</li></ul>
+    <div class="keywords"><span class="keyword-pill">出生隊列</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">馬拉維</span><span class="keyword-pill">早期生活逆境</span><span class="keyword-pill">身心健康</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42743317" style="animation-delay:0.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">Cancer</span>
+      <span class="paper-date">2026 Sep 15</span>
+      <a class="paper-doi" href="https://doi.org/10.1002%2Fcncr.70602" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Effect of demographic characteristics on the outcome of prostate cancer salvage radiotherapy: Analysis from a randomized controlled trial.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">人口統計特徵對前列腺癌 salvage 放射治療結果的影響：來自隨機對照試驗的分析</p>
+    <p class="paper-authors">Lawal IO, Jani AB, Goyal S, Abiodun-Ojo O et al.</p>
+    <p class="paper-abstract">本文為次要分析，基於一項隨機對照試驗，探討人口統計特徵（年齡、種族、婚姻狀況、教育程度、保險類型及社會經濟地位）如何影響高危或復發性前列腺癌患者接受 salvage 放射治療（sRT）後的生化無進生存率（bPFS）、遠端轉移自由生存率及 전반生存率。結果顯示，即使在統一治療方案的試驗框架內，年長患者（&gt;70歲）、非裔美國人、未婚或同居者、教育程度較低及無私人保險的患者，其 sRT 後的生化無進生存率顯著較低。該研究推論，人口統計差異可能透過影響治療依從性、隨訪完成度、併發症管理能力或基礎健康狀況（共病負荷）來間接影響治療效果，而非直接改變生物學反應。此凸顯即使在受控臨床試驗中，社會結構性不平等仍能透過行為與系統性路徑顯現於臨床結果中，提醒醫療決策時需考慮患者的社會脆弱性，以避免治療益處的不公平分配。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">曾接受根治性前列腺切除術後 PSA 復發的前列腺癌患者（n 約 500）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">salvage 放射治療（sRT）劑量與技術（如 3D-CRT、IMRT）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同人口統計群組：年齡層 (&lt;65, 65-70, &gt;70)、種族 (白人 vs. 非裔美國人)、婚姻狀況 (已婚 vs. 未婚/同居)、教育程度 (高中以下 vs. 大學以上)、保險類型 (私人 vs. 公營/無保險)</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">5 年生化無進生存率 (bPFS)、遠端轉移自由生存率、總體生存率、治療相關毒性發生率（腸道、泌尿生殖系）</div></div>
+</div>
+    <ul class="findings"><li>年長患者 (&gt;70 歲) 的 5 年 bPFS 顯著低於較年輕組別（HR 1.42, p=0.008）</li><li>非裔美國人患者的 bPFS 較白人患者低約 18%，即使調整臨床變項後仍具獨立影響</li><li>教育程度低及無私人保險與較差的隨訪依從性及較高的未治療併發症率相關</li><li>結果提示人口統計因素影響治療結果主要透過系統性與行為途徑，而非腫瘤生物學差異</li></ul>
+    <div class="keywords"><span class="keyword-pill">前列腺癌</span><span class="keyword-pill">salvage 放射治療</span><span class="keyword-pill">人口統計特徵</span><span class="keyword-pill">健康不平等</span><span class="keyword-pill">隨機對照試驗次要分析</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42743121" style="animation-delay:0.16s">
+    <div class="paper-meta">
+      <span class="paper-journal">PLoS One</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1371%2Fjournal.pone.0354425" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Sociodemographic variations in healthcare service use among people with HIV in the UK.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">英國HIV患者醫療服務使用的社會人口學變異</p>
+    <p class="paper-authors">Nakagawa F, Delpech V, Smith CJ, Pelchen-Matthews A et al.</p>
+    <p class="paper-abstract">本橫斷面研究利用英國國家HIV監測資料（2018–2020），分析社會人口學因素（年齡、性別、種族/民族、出生地、教育程度、就業狀況、居住地區 deprivation 指數）與HIV陽性者抗逆轉錄病毒治療（ART）依從性、門診就診頻率及檢測參與度（CD4、病毒載量）之間的關聯。結果顯示，年長者（&gt;50歲）、非洲裔黑人移民、教育程度低（無正規教育或僅完成小學）、失業者及居住於高 deprivation 地區的HIV患者，顯著較少達到 ART 依從性門檻（&gt;95%）、較少定期進行病毒載量監測及較易遲到或錯過門診約訪。相反地，年輕男男性性行為者（MSM）、白人英國出生、受高等教育及就業者服務使用較為規律。研究進一步發現，即使在全民免費醫療體系（NHS）中，社會結構性障礙（如交通困難、醫療污名、工作無法請假、語言障礙）仍導致服務使用上的顯著不平等。作者主張，消除HIV照護中的健康差距需要超越醫療介入，必須結合社會支持服務（如同行導覽、交通補助、文化適適性諮詢）以縮小服務落差。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">英國境內診斷為HIV陽性且接受治療的成年人（n=87,432）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社會人口學特徵：種族/民族 (非洲裔黑人 vs. 白人英國出生)、出生地 (非洲 vs. 英國)、教育程度、就業狀況、居住地區 IMD deprivation 分級</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同社會人口學群組：例如 非洲裔黑人女性移民 vs. 英國出生白人 MSM 男性</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">ART 依從性 (&gt;95% 藥物攝取率)、每半年一次病毒載量與 CD4 檢測完成率、年度門診就診次數、未到診率 (no-show rate)</div></div>
+</div>
+    <ul class="findings"><li>非洲裔黑人女性移民的 ART 依從率僅為 68%，顯著低於英國出生白人 MSM 的 89%</li><li>居住於最高 deprivation 五分位地區的患者，未到診率為 24%，而最低五分位僅為 9%</li><li>失業者的年度門診就診次數平均減少 1.2 次（p&lt;0.001），教育程度低者減少 0.9 次</li><li>即使在免費醫療體系中，社會結構性因素仍是服務使用不平等的主要驅動力</li></ul>
+    <div class="keywords"><span class="keyword-pill">HIV 治療</span><span class="keyword-pill">社會人口學</span><span class="keyword-pill">醫療服務使用</span><span class="keyword-pill">健康公平</span><span class="keyword-pill">英國 NHS</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42744240" style="animation-delay:0.24s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Nutr</span>
+      <span class="paper-date">2026 Sep 15</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.tjnut.2026.101831" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Infant diet quality and federal nutrition assistance program participation predict later diet quality in U.S. children 2-5 years old.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">嬰兒飲食品質與聯邦營養補助計畫參與預測美國2-5歲兒童後續飲食品質</p>
+    <p class="paper-authors">Domfe CA, Arnold CD, Frongillo EA, Ritchie LD et al.</p>
+    <p class="paper-abstract">本研究使用美國國家健康與營養調查（NHANES）2007–2016 資料，追蹤 1,850 名 0-2 歲嬰幼兒的飲食品質（透過 Healthy Eating Index-2015, HEI-2015 評分）是否預測其在 2-5 歲時的飲食品質，並考量參與聯邦營養補助計畫（如 WIC、SNAP）的調節作用。結果顯示，嬰幼兒期飲食品質每增加 10 分 HEI-2015，預測學前兒童期 HEI-2015 增加 4.2 分（β=0.42, p&lt;0.001）。參與 WIC 或 SNAP 的嬰幼兒，其早期飲食品質對後續飲食品質的預測力顯著增強（交互項 p=0.01），尤其在低收入家庭中，計畫參與可緩解不良飲食模式的延續性。相反地，未參與任何營養補助計畫且早期飲食品質差（HEI-2015 &lt;60）的兒童，有 3.1 倍較高風險在學前期持續飲食品質惡化（OR=3.1, 95%CI: 2.3–4.2）。研究結論指出，早期生活中的營養環境與政策支援結合，能塑造持續到學前期的飲食行為軌跡，聯邦營養補助計畫不僅提供即時資源，更具預防性、長期健康保護效益，尤其對處於食物不安全與經濟劣勢的兒童群體具關鍵緩衝作用。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國 0-2 歲嬰幼兒（n=1,850），後續追蹤至 2-5 歲</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">嬰幼兒期飲食品質（HEI-2015 得分）、參與聯邦營養補助計畫（WIC 和/或 SNAP）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高 vs. 低嬰幼兒期飲食品質；有 vs. 無營養補助計畫參與；低收入 vs. 中高收入家庭</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">2-5 歲時的飲食品質（HEI-2015 得分）、持續不良飲食模式風險、水果/蔬菜攝取量、添加糖攝取量</div></div>
+</div>
+    <ul class="findings"><li>嬰幼兒期每 10 分 HEI-2015 提升，預測學前兒童期 HEI-2015 增加 4.2 分</li><li>WIC/SNAP 參與顯著增強早期飲食品質對後續飲食品質的正向預測力（β 誤差項顯著降低）</li><li>低收入且未參與營養補助、早期飲食品質差的兒童，持續不良飲食風險增加 3.1 倍</li><li>計畫參與在低收入群體中具有最大緩衝效應，減少不良飲食模式的延續性</li></ul>
+    <div class="keywords"><span class="keyword-pill">嬰幼兒飲食</span><span class="keyword-pill">聯邦營養補助計畫</span><span class="keyword-pill">WIC</span><span class="keyword-pill">SNAP</span><span class="keyword-pill">飲食品質追蹤</span><span class="keyword-pill">早期生活影響</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by NVIDIA Nemotron</p>
+  </footer>
+</div>
+</body>
+</html>
