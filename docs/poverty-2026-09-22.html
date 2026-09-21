@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-09-22</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-09-22">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-09-22">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-09-22</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 2 篇文獻</span>
+      <span class="stat-item">&#128193; 2 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本次分析包含兩篇2026年發表的研究，聚焦於貧窮印記在不同社會脈絡中的表現。第一篇論文透過網絡分析探討韓國不同性別、世代與收入層級的幸福感結構，發現低收入群體的幸福感網絡較為脆弱，貧困經驗透過壓力與社會支持的中介路徑影響心理健康。第二篇研究則利用全國性GIS分析與人工審核，揭示美國在電痙攣療法（ECT）的地理與社會經濟可及性存在顯著不平等，低收入與農村地區患者面臨較高的治療門檻。兩項研究均強調社會經濟地位如何透過心理、醫療與環境路徑嵌入個人健康結果，支持貧窮印記理論在心理健康與醫療公平領域的應用。整體而言，這兩篇文獻提供了跨文化與跨系統的實證證據，顯示貧窮不僅是經濟狀況，更是透過多層次機制影響身心健康的社會決定因素，具有中等至高的臨床與政策應用價值。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42765130" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Epidemiol Psychiatr Sci</span>
+      <span class="paper-date">2026 Sep 21</span>
+      <a class="paper-doi" href="https://doi.org/10.1017%2FS2045796026100973" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Network analysis of Korean happiness: a comparative study by sex, generation and income level.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">韓國幸福感的網絡分析：按性別、世代與收入層級的比較研究</p>
+    <p class="paper-authors">Lee DW, Xiao Y, Jung SJ, Oh SS et al.</p>
+    <p class="paper-abstract">本研究採用網絡分析方法，探討韓國不同年齡層、性別及收入水平者在幸福感構成上的差異。透過大規模問卷調查數據，研究團隊將幸福感拆解為生活滿意度、情感健康、社會連結與目的感等節點，並分析其間的關聯強度與網絡穩定性。結果顯示，低收入群體的幸福感網絡結構較為脆弱，節點間連接較弱，特別是在情感健康與社會支持之間的連結顯著減弱。此外，年長世代女性在低收入條件下，幸福感網絡中目的感節點的中心性下降最為顯著， suggering 貧窮經驗可能透過削弱社會資源與增加慢性壓力，間接影響心理韌性。該研究指出，收入不平等不僅影響平均幸福感水平，更重塑其內在心理結構，支持貧窮印記理論在心理層面的生物心理社會嵌入機制。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">韓國成人（不同年齡層、性別與收入水平）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">不同收入層級（作為社會經濟暴露變量）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高收入群體 vs 低收入群體；男性 vs 女性；不同年齡世代</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">幸福感網絡結構（節點強度、連結密度、中心性指標），特別是情感健康、社會支持與目的感之間的關聯模式</div></div>
+</div>
+    <ul class="findings"><li>低收入群體的幸福感網絡結構較為脆弱，節點間連接較弱</li><li>情感健康與社會支持之間的連結在低收入群體中顯著減弱</li><li>年長世代女性在低收入條件下，幸福感網絡中目的感節點的中心性下降最為顯著</li><li>網絡分析揭示貧窮對心理健康的影響並非單一路徑，而是透過多個心理節點的系統性重塑</li></ul>
+    <div class="keywords"><span class="keyword-pill">幸福感網絡分析</span><span class="keyword-pill">收入不平等</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">心理韌性</span><span class="keyword-pill">世代與性別差異</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42764427" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">J ECT</span>
+      <span class="paper-date">2026 Sep 21</span>
+      <a class="paper-doi" href="https://doi.org/10.1097%2FYCT.0000000000001332" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Geographic Disparities and Socioeconomic Barriers to Electroconvulsive Therapy in the United States: A Nationwide GIS Analysis and Manual Audit.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">美國電痙攣療法的地理與社會經濟障礙：全國性GIS分析與人工審核</p>
+    <p class="paper-authors">Whaley D</p>
+    <p class="paper-abstract">本研究利用全國性地理資訊系統（GIS）數據結合人工審核方法，調查美國電痙攣療法（ECT）服務的可及性分布及其與社會經濟因素的關聯。研究團隊映射了全美ECT治療中心的地理位置，並結合縣級層面的收入、教育、醫療保險覆蓋率及城鄉分類數據，分析服務可及性的社會經濟梯度。結果顯示，ECT服務高度集中於都市高收入地區，而低收入縣、農村地區及醫療資源匱乏地區的ECT可及性顯著不足。即使控制人口密度與醫院數量後，社會經濟劣勢地區（特別是中南部與 Appalachia 地區）的ECT服務密度仍顯著低於富裕都會區。此外，人工審核發現，低收入地區的ECT設施不僅數量少，且更可能缺乏專業人員、設備維護不良或缺乏標準化流程。該研究強調，即使是在被證明對嚴重抑鬱症及精神病態有效的醫療干預中，社會經濟與地理不平等仍構成重大障礙，凸顯醫療正義與政策介入的必要性。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國境內需要或潛在需要電痙攣療法（ECT）的精神疾病患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">地理位置與社會經濟狀況（縣級收入、教育、保險覆蓋率、城鄉分類）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高收入都市縣 vs 低收入農村縣；有ECT服務設施地區 vs 無服務地區</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">ECT服務的地理分布密度（每萬人口服務中心數）、服務可及性的社會經濟梯度、設施品質的人工審核結果</div></div>
+</div>
+    <ul class="findings"><li>ECT服務高度集中於都市高收入地區，低收入與農村地區可及性顯著不足</li><li>即使控制人口密度與醫院數量後，社會經濟劣勢地區的ECT服務密度仍顯著低於富裕地區</li><li>人工審核發現低收入地區的ECT設施不僅數量少，且更可能缺乏專業人員或設備維護不良</li><li>地理與社會經濟雙重障礙共同限制弱勢群體獲得有效精神療法的機會</li><li>研究證明醫療資源分配的不公正並非偶然，而是系統性結構所致</li></ul>
+    
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by NVIDIA Nemotron</p>
+  </footer>
+</div>
+</body>
+</html>
