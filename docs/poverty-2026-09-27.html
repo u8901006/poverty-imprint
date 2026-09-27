@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-09-27</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-09-27">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-09-27">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-09-27</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 1 篇文獻</span>
+      <span class="stat-item">&#128193; 1 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本研究探討宗教參與如何調節美國黑白族群在憂鬱症發生率上的種族/民族差異，特別是關於「黑白心理健康悖論」——即儘管黑人面臨較多社會經濟劣勢，但其憂鬱症發生率反而較低或無顯著差異的現象。研究發現，宗教參與在黑人族群中具有較強的保護作用，能顯著降低憂鬱風險；而在白人族群中，宗教參與的保護效應較弱。此結果支持宗教作為社會資源在種族健康差異中的緩衝角色，尤其在系統性種族主義與經濟壓力高的環境中。研究強調，未來心理健康干預應考慮文化適切的宗教與靈性資源整合，以縮小種族心理健康差距。該研究透過大規模橫斷面資料分析，提供實證支持，指出宗教參與不僅是個人信仰表達，更是結構性壓力下的重要韌性資源，具有中等至高臨床與公共衛生應用價值。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42800820" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Racial Ethn Health Disparities</span>
+      <span class="paper-date">2026 Sep 26</span>
+      <a class="paper-doi" href="https://doi.org/10.1007%2Fs40615-026-03196-4" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Religious Involvement, Racial/Ethnic Disparities, and Depression: Exploring the Black-white Mental Health Paradox.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">宗教參與、種族/民族差異與憂鬱症：探索黑白心理健康悖論</p>
+    <p class="paper-authors">Daniels CL, Shattuck EC, Sunil TS, Xu X</p>
+    <p class="paper-abstract">本研究利用美國全國性健康調查資料，探討宗教參與程度是否調節黑白族群在憂鬱症發生率上的差異，特別是針對『黑白心理健康悖論』——即儘管黑人普遍面臨較高的社會經濟劣勢、種族歧視與壓力，但其憂鬱症患病率卻不顯著高於白人，甚至在某些族群中較低。研究發現，黑人參與宗教活動（如定期參與禮拜、祈禱、屬於宗教團體）與較低憂鬱風顯著相關，此關聯在白人族群中較為弱化。宗教參與的保護效應在黑人中具有更強的調節作用，可能透過提供社會支持、生命意義、應對機制及社群歸屬感來達成。研究進一步控制了收入、教育、婚姻狀況及慢性病等變數後，宗教參與對黑人憂鬱症的保護效應仍具顯著統計意義。作者指出，宗教機構在種族少數族群中可能功能類似非正式的心理衛生支援網路，尤其在正規醫療資源不足或被污名化的情況下。此結果暗示，文化適切的心理健康介入應考慮整合宗教與靈性資源，而非僅依賴西式臨床模式。研究具有重要的公共衛生啟示，支持將宗教社群納入種族健康公平策略中。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國成年黑人和白人族群（年齡≥18歲），來自全國性健康調查樣本</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">宗教參與程度（例如：參加宗教禮拜頻率、個人祈禱習慣、是否屬於宗教團體）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低宗教參與者 vs 高宗教參與者，按種族/民族（黑人 vs 白人）進行 strata 分析</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">憂鬱症狀狀嚴重程度（經標準化量表測量，如PHQ-9或CES-D）及臨床診斷憂鬱症的發生率</div></div>
+</div>
+    <ul class="findings"><li>宗教參與在黑人族群中與較低憂鬱風險顯著相關，此關聯在白人族群中較弱。</li><li>即使控制社會經濟地位、教育與健康狀況後，宗教參與對黑人憂鬱症的保護效應仍具統計顯著性。</li><li>宗教參與可能透過提供社會支持、意義建構與應對資源，緩解種族主義與經濟壓力對心理健康的影響。</li><li>研究支持將宗教與靈性資源納入文化適切的心理健康干預，以減少種族心理健康 disparities。</li><li>結果強調，結構性壓力下的韌性資源（如宗教社群）在健康公平中具有關鍵作用。</li></ul>
+    <div class="keywords"><span class="keyword-pill">宗教參與</span><span class="keyword-pill">種族健康差異</span><span class="keyword-pill">憂鬱症</span><span class="keyword-pill">黑白心理健康悖論</span><span class="keyword-pill">文化適切干預</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by NVIDIA Nemotron</p>
+  </footer>
+</div>
+</body>
+</html>
