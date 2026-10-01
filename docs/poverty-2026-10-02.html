@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-10-02</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-10-02">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-10-02">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-10-02</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 28 篇文獻</span>
+      <span class="stat-item">&#128193; 9 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本批次文獻共19篇，聚焦於貧窮印記與健康的多重交點，涵蓋精神健康、神經發育、表觀遺傳、社會決定因素與政策效應。多項研究證實社會經濟地位與兒童及青少年的大腦結構、功能連接及認知發展顯著相關，特別是非常早產兒及 tourette 症候群兒童的研究顯示， socioeconomic context 與功能性腦網絡異常及臨床嚴重度密切相關。表觀遺傳層面，NHANES 資料顯示較低 socioeconomic position 與加速表觀遺傳老化顯著相關，支持生物嵌入假設。精神健康方面，大規模隊列研究證實可修正風險因素（如睡眠、體力活動、飲食）在預防憂鬱症中具有年齡與性別特異性；而以色列全國心理健康保險改革顯著提升了社區照護的可及性，顯示政策介入的潛力。另外，研究也揭露結構性脆弱族群（如低收入退伍軍人、原住民青年、使用藥物的孕婦、食物不安全的青少年母親）在獲得醫療、法律與社會服務方面的系統性障礙。跨代影響方面，原住民青年的靈性與韌性關聯提示文化因素可能為緩衝機制。整體而言，這些文獻強調貧窮與不平等透過多重生物、心理與社會路徑嵌入個體發展軌跡，同時也證明多層級介入（從政策到社區照護）具備緩解貧窮印記的實質潛力，臨床與公共衛生應用價值普遍屬 medium 至 high。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:14%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">大腦發展與神經科學</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:43%">3 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:86%">6 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">表觀遺傳與生物老化</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:14%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">7 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:57%">4 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">認知與行為</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:29%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">跨代傳遞與社會流動</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:29%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:29%">2 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42814287" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Geroscience</span>
+      <span class="paper-date">2026 Sep 30</span>
+      <a class="paper-doi" href="https://doi.org/10.1007%2Fs11357-026-02565-5" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Associations between socioeconomic position index and epigenetic aging in NHANES</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">社會經濟地位指數與 NHANES 中表觀遺傳老化的關聯</p>
+    <p class="paper-authors">Caunca MR, Kezios K, Schneider ALC, Shen H et al.</p>
+    <p class="paper-abstract">本研究利用美國國家健康與營養調查（NHANES）資料，探討社會經濟地位（SEP）指數與表觀遺傳年齡加速之間的關聯。研究對象為多族群成人樣本，測量多種表觀遺傳時鐘（如Horvath、Hannum、PhenoAge與GrimAge）。結果顯示，較低的SEP指數與多種表觀遺傳年齡加速顯著正相關，尤其是GrimAge指標，此關聯在調整傳統危險因素（如吸煙、BMI）後仍持續存在。研究進一步指出，該關聯可能透過慢性壓力、不良生活條件與限制醫療資源獲取等途徑介入，支持「生物嵌入」假設——即長期處於社會經濟劣勢會導致可量測的生物老化加速。此發現具備重要公共衛生意義，顯示社會不平等不僅影響健康行為，更可透過分子機制影響壽命與老年疾病風險。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">NHANES參與者的多族群成人樣本</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社會經濟地位（SEP）指數（收入、教育、職業）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">較高 vs 較低SEP組別</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">多種表觀遺傳時鐘測量的表觀遺傳年齡加速</div></div>
+</div>
+    <ul class="findings"><li>較低SEP與多種表觀遺傳年齡加速顯著相關</li><li>GrimAge時鐘顯示最強關聯</li><li>調整傳統危險因素後關聯仍存在</li><li>支持社會經濟壓力透過生物路徑嵌入假設</li><li>顯示社會不平等可能加速生物老化過程</li></ul>
+    <div class="keywords"><span class="keyword-pill">socioeconomic position</span><span class="keyword-pill">epigenetic aging</span><span class="keyword-pill">DNA methylation</span><span class="keyword-pill">NHANES</span><span class="keyword-pill">biological embedding</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">大腦發展與神經科學 <span class="category-count">3 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42592071" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Pediatr Clin Pract</span>
+      <span class="paper-date">2026 Oct</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jpedcp.2026.200230" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Neonatal Brain Structure, Early Life Context, and Academic Achievement among Children Born Very Preterm</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">非常早產兒的新生兒腦部結構、早期生活情境與學業成就</p>
+    <p class="paper-authors">Oftedal S, Bora S, Pannek K, Fiori S et al.</p>
+    <p class="paper-abstract">此研究探討非常早產兒（胎齡&lt;32週）的新生腦部結構如何與其早期生活環境及後續學業成就相關。使用MRI評估新生兒腦部白質與灰質體積，並追蹤兒童至學齡期進行認知與學業評估。結果顯示，較佳的新生腦部結構（特別是額葉與小腦白質完整度）與較佳的學業成就正相關。然而，此關聯被早期生活情境顯著調節：在 socioeconomically disadvantaged（社會經濟弱勢）環境中的兒童，即使新生腦結構較好，其學業成就提升幅度亦較小；反而在資源豐裕、親養支持佳的環境中，腦部結構優勢能更有效轉化為學習表現。此功能顯示，早期生活經驗能調節神經發展的可塑性路徑，強調僅靠生物學優勢不足以保證最佳發展，環境支援是關鍵調節因子。研究結論呼應「雙重風險」模型：神經生物학적脆弱性與社會劣勢的疊加會導致發展結果惡化。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">出生時胎齡&lt;32週的非常早產兒</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">新生兒腦部結構（MRI測量白質/灰質體積）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">較佳 vs 較差新生腦部結構組別</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">學齡期的學業成就（標準化測驗成績）及認知功能</div></div>
+</div>
+    <ul class="findings"><li>新生腦部結構與後續學業成就正相關</li><li>社會經濟地位調節腦結構與學業成就之間的關聯</li><li>弱勢環境中，腦結構優勢轉化為學業表現的效益減少</li><li>資源豐裕環境能放大神經發育優勢的影響</li><li>支持早期生活經驗調節神經可塑性的觀點</li></ul>
+    <div class="keywords"><span class="keyword-pill">very preterm</span><span class="keyword-pill">neonatal brain structure</span><span class="keyword-pill">socioeconomic context</span><span class="keyword-pill">academic achievement</span><span class="keyword-pill">neurodevelopment</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42391732" style="animation-delay:0.48s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Psychiatr Res</span>
+      <span class="paper-date">2026 Oct</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jpsychires.2026.06.053" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Linking socioeconomic context to functional brain network abnormalities and clinical severity in children with Tourette syndrome</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">將社會經濟脈絡與 tourette 症候群兒童的功能腦網絡異常及臨床嚴重度連結</p>
+    <p class="paper-authors">Liu Z, Lei T, Wang X, Zhang W et al.</p>
+    <p class="paper-abstract">此研究透過功能性磁共振成像（fMRI）探討社會經濟地位（SES）與 tourette 症候群（TS）兒童的腦網絡功能連通性及其臨床症狀嚴重度之間的關聯。納入一群被診斷為TS的兒童，測量靜態功能連通性，特別聚焦於額葉-基底神經節迴路與額顳網絡。結果顯示，較低SES與多個腦網絡的異常功能連通性顯著相關，特別是額葉內部連通性減弱與額顳網絡過度連通。這些網絡異常進一步中介了SES與 tic 嚴重度及共病（如注意力缺陷多動障礙、強迫症）之間的關聯。也就是說，社會經濟劣勢可能透過改變神經網絡的發展軌跡，增加TS兒童症狀負擔與治療難度。研究強調，TS的表現不僅由遺傳與神經生物學因素決定，亦深受社會環境影響，支持將TS視為神經發育與社會決定因素交互作用的結果。此舉具有重要臨床啟示：評估與治療TS時應考慮社會脈絡，而非僅聚焦於神經生物學修正。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">被診斷為tourette syndrome的兒童</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社會經濟地位（SES，收入、教育、職業）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">較高SES vs 較低SES組別</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">靜態功能fMRI測量的腦網絡連通性及臨床tic嚴重度（YGTSS評分）</div></div>
+</div>
+    <ul class="findings"><li>較低SES與額葉-基底神經節網絡功能連通性異常相關</li><li>較低SES與額顳網絡過度連通相關</li><li>腦網絡異常中介SES與tic嚴重度及共病之間的關聯</li><li>支持社會環境透過神經機制影響TS表現</li><li>顯示SES應為TS評估與治療的重要考量因素</li></ul>
+    
+  </div>
+  <div class="paper-card" data-pmid="undefined" style="animation-delay:0.56s">
+    <div class="paper-meta">
+      <span class="paper-journal"></span>
+      <span class="paper-date"></span>
+      
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title"></h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem"></p>
+    
+    
+    
+    
+    <div class="keywords"><span class="keyword-pill">Tourette syndrome</span><span class="keyword-pill">socioeconomic status</span><span class="keyword-pill">functional connectivity</span><span class="keyword-pill">fMRI</span><span class="keyword-pill">brain networks</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">6 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42817766" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">Epidemiol Psychiatr Sci</span>
+      <span class="paper-date">2026 Oct 1</span>
+      <a class="paper-doi" href="https://doi.org/10.1017%2FS2045796026100985" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Prioritizing and integrating age- and sex-specific modifiable risk factors related with depression: a prospective cohort study of 428,078 adults</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">優先級與整合與憂鬱症相關之年齡與性別特異可修正風險因素：428,078名成人的前瞻性隊列研究</p>
+    <p class="paper-authors">Chen L, Wei S, Zhao J, Tian F et al.</p>
+    <p class="paper-abstract">此大型前瞻性隊列研究分析英國生物銀行（UK Biobank）超過42萬名成人資料，旨在識別並優先排序與憂鬱症發生相關之可修正風險因素，並檢視其效應是否隨年齡與性別而異。研究追蹤參與者多年，評估生活方式（睡眠、體力活動、飲食、吸煙、酒精）、身體指標（BMI、血壓）及社會因素（孤獨、教育）與新發憂鬱症的關聯。結果顯示，多個因素均為獨立危險因素，但其重要性呈顯著的年齡與性別分層：在年輕成人（尤其是女性）中，睡眠不足與孤獨是最強預測因子；而在中老年男性中，吸煙與低體力活動的相對貢獻升高。此發現凸顯「一刀切」預防策略的局限性，主oz主張未來憂鬱症預防介入應依照發展階段與性別特點進行精準設計——例如青年女性著重睡眠衛生與社會連結，中年男性則聚焦戒菸與增加運動。此研究提供了具可操作性的風險分層框架，有助於提升預防資源的分配效率。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">英國生物銀行中428,078名成人參與者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">多種可修正風險因素（睡眠、體力活動、飲食、吸煙、酒精、BMI、孤獨等）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">有無特定風險因素暴露組別</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">隨訪期間新發臨床診斷的憂鬱症（根據醫療紀錄或自我報告）</div></div>
+</div>
+    <ul class="findings"><li>睡眠不足與孤獨在年輕女性中是憂鬱症最強風險因素</li><li>吸煙與低體力活動在中老年男性中的相對貢獻較高</li><li>多種生活方式因素皆為獨立預測因子，但效應具年齡性別特異性</li><li>支持開發年齡與性別精準的憂鬱症預防策略</li><li>顯示個人化預防較普遍性介入更具潛在效益</li></ul>
+    
+  </div>
+  <div class="paper-card" data-pmid="undefined" style="animation-delay:0.88s">
+    <div class="paper-meta">
+      <span class="paper-journal"></span>
+      <span class="paper-date"></span>
+      
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title"></h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem"></p>
+    
+    
+    
+    
+    <div class="keywords"><span class="keyword-pill">depression</span><span class="keyword-pill">modifiable risk factors</span><span class="keyword-pill">age-specific</span><span class="keyword-pill">sex-specific</span><span class="keyword-pill">prospective cohort</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42816744" style="animation-delay:0.96s">
+    <div class="paper-meta">
+      <span class="paper-journal">Adm Policy Ment Health</span>
+      <span class="paper-date">2026 Oct 1</span>
+      <a class="paper-doi" href="https://doi.org/10.1007%2Fs10488-026-01529-3" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Did Nationwide Mental Health Insurance Reform in Israel Increase Access to Community-Based Care? : A Population-Based Retrospective Cohort Study</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">以色列全國心理健康保險改革是否增加了社區照護的可及性？：以人口為基礎的回顧性隊列研究</p>
+    <p class="paper-authors">Alfandari Cohen AE, Weinstein O, Kodesh A, Bodenheimer G et al.</p>
+    <p class="paper-abstract">此研究評估以色列2015年實施的全國性心理健康保險改革對精神健康服務可及性的影響，特別聚焦於社區為基礎的照護（如門診心理治療、精神科門診）。改革前，精神健康服務由四家健康維護組織（HMOs）分散管理，改革後統一由國家負責資金與管理，目標是減少行政障礙並提升服務整合。利用全國醫療保險資料庫，研究比較改革前後（2013-2014 vs 2016-2017）成人心理健康門診使用率的變化。結果顯示，改革後總門診訪問次數顯著增加約18%，尤其是年輕成人（18-34歲）與低 socio-economic status 群體的成長幅度最大。此外，先前未使用過精神健康服務的新用戶比例亦顯著上升，顯示改革成功降低了初門檻。研究未發現顯著增加重複或濫用服務的情況，顯示需求增加主要來自於先前服務不足的人群。此結果提供實證支持，證明財務與行政整合是提升邊緣群體心理健康服務可及性的有效政策槓桿。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">以色列全國參與公共醫療保險系統的成人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">2015年全國性心理健康保險改革（服務資金與管理統一）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">改革前 (2013-2014) vs 改革後 (2016-2017)</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">社區為基礎的心理健康門診服務使用率（次數/人年）</div></div>
+</div>
+    <ul class="findings"><li>心理健康保險改革後總門診使用率增加約18%</li><li>年輕成人與低SES群體可及性提升幅度最大</li><li>新用戶比例顯著增加，顯示降低了服務獲得門檻</li><li>未觀察到顯著過度使用或濫用現象</li><li>支持財務與行政整合為提升邊緣群體服務可及性的有效策略</li></ul>
+    
+  </div>
+  <div class="paper-card" data-pmid="undefined" style="animation-delay:1.04s">
+    <div class="paper-meta">
+      <span class="paper-journal"></span>
+      <span class="paper-date"></span>
+      
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title"></h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem"></p>
+    
+    
+    
+    
+    <div class="keywords"><span class="keyword-pill">mental health insurance</span><span class="keyword-pill">access to care</span><span class="keyword-pill">community-based care</span><span class="keyword-pill">Israel</span><span class="keyword-pill">policy reform</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42387285" style="animation-delay:1.12s">
+    <div class="paper-meta">
+      <span class="paper-journal">Psychiatr Serv</span>
+      <span class="paper-date">2026 Oct 1</span>
+      <a class="paper-doi" href="https://doi.org/10.1176%2Fappi.ps.20260095" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">VA Health Care Utilization Among U.S. Veterans: The Influence of Social Determinants of Health and Health Factors</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">美國退伍軍人醫療系統的醫療利用：健康社會決定因素與健康因素的影響</p>
+    <p class="paper-authors">Na PJ, Fischer IC, Tsai J, Jeste DV et al.</p>
+    <p class="paper-abstract">此研究分析美國退伍軍人事務部（VA）醫療系統中，健康社會決定因素（SDOH）如何影響退伍軍人對醫療服務的利用模式。使用全國性VA資料庫，研究探討住房不穩定、食物不安全、交通障礙、就業狀況及社會孤立等SDOH指標與初級保健、精神健康及專科門診的使用率關聯。結果顯示，經歷多重SDOH劣勢的退伍軍人（例如同時面臨住房不穩定與食物不安全）顯著較少使用預防性與初級保健服務，但急診與住院率卻較高，顯示他們傾向於在健康問題惡化後才求醫。相反地，具備較好社會支持與穩定生活條件的退伍軍人更可能定期使用初級保健與心理健康服務。研究進一步指出，SDOH的影響在調整傳統臨床 comorbidity 後仍獨立存在，強調即使在普惠醫療系統中，社會條件仍是獲取與維持預防性照護的關鍵門檻。此凸顯了將SDOH篩選納入常規臨床實踐的必要性，以主動識別並協助面臨結構性障礙的退伍軍人。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國退伍軍人事務部（VA）醫療系統中的退伍軍人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">健康社會決定因素（SDOH：住房、食物、交通、就業、社會孤立）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">多重SDOH劣勢 vs 較少SDOH劣勢組別</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">VA內初級保健、精神健康及專科門診的使用率及急診/住院率</div></div>
+</div>
+    <ul class="findings"><li>多重SDOH劣勢與預防性及初級保健利用率降低相關</li><li>SDOH劣勢群體急診與住院率相對較高</li><li>SDOH對醫療利用的影響在調整臨床 comorbidity 後仍獨立存在</li><li>支持在VA系統中常規篩選SDOH以改善預防性照護參與度</li><li>顯示即使在普惠醫療中，社會條件仍是獲取預防性服務的關鍵門檻</li></ul>
+    
+  </div>
+  <div class="paper-card" data-pmid="undefined" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal"></span>
+      <span class="paper-date"></span>
+      
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title"></h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem"></p>
+    
+    
+    
+    
+    <div class="keywords"><span class="keyword-pill">social determinants of health</span><span class="keyword-pill">veterans</span><span class="keyword-pill">VA healthcare</span><span class="keyword-pill">healthcare utilization</span><span class="keyword-pill">access to care</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">表觀遺傳與生物老化 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42814287" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Geroscience</span>
+      <span class="paper-date">2026 Sep 30</span>
+      <a class="paper-doi" href="https://doi.org/10.1007%2Fs11357-026-02565-5" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Associations between socioeconomic position index and epigenetic aging in NHANES</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">社會經濟地位指數與 NHANES 中表觀遺傳老化的關聯</p>
+    <p class="paper-authors">Caunca MR, Kezios K, Schneider ALC, Shen H et al.</p>
+    <p class="paper-abstract">本研究利用美國國家健康與營養調查（NHANES）資料，探討社會經濟地位（SEP）指數與表觀遺傳年齡加速之間的關聯。研究對象為多族群成人樣本，測量多種表觀遺傳時鐘（如Horvath、Hannum、PhenoAge與GrimAge）。結果顯示，較低的SEP指數與多種表觀遺傳年齡加速顯著正相關，尤其是GrimAge指標，此關聯在調整傳統危險因素（如吸煙、BMI）後仍持續存在。研究進一步指出，該關聯可能透過慢性壓力、不良生活條件與限制醫療資源獲取等途徑介入，支持「生物嵌入」假設——即長期處於社會經濟劣勢會導致可量測的生物老化加速。此發現具備重要公共衛生意義，顯示社會不平等不僅影響健康行為，更可透過分子機制影響壽命與老年疾病風險。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">NHANES參與者的多族群成人樣本</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社會經濟地位（SEP）指數（收入、教育、職業）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">較高 vs 較低SEP組別</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">多種表觀遺傳時鐘測量的表觀遺傳年齡加速</div></div>
+</div>
+    <ul class="findings"><li>較低SEP與多種表觀遺傳年齡加速顯著相關</li><li>GrimAge時鐘顯示最強關聯</li><li>調整傳統危險因素後關聯仍存在</li><li>支持社會經濟壓力透過生物路徑嵌入假設</li><li>顯示社會不平等可能加速生物老化過程</li></ul>
+    <div class="keywords"><span class="keyword-pill">socioeconomic position</span><span class="keyword-pill">epigenetic aging</span><span class="keyword-pill">DNA methylation</span><span class="keyword-pill">NHANES</span><span class="keyword-pill">biological embedding</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">7 篇</span></div>
+    
+  <div class="paper-card" data-pmid="40576870" style="animation-delay:1.6s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Racial Ethn Health Disparities</span>
+      <span class="paper-date">2026 Oct</span>
+      <a class="paper-doi" href="https://doi.org/10.1007%2Fs40615-025-02514-6" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Patterns of Social, Economic, And Health Challenges Due to the COVID-19 Pandemic Experienced by Latino Communities: A Latent Class Analysis</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">拉丁裔社區在COVID-19大流行中經歷的社會、經濟與健康挑戰模式：潛在類別分析</p>
+    <p class="paper-authors">Ramirez G, Ou Y, Saxton R, Miller AF et al.</p>
+    <p class="paper-abstract">此研究應用潛在類別分析（LCA）於美國拉丁裔社區的調查資料，以識別在COVID-19大流行期間經歷的社會、經濟與健康挑戰的典型模式。研究發現，拉丁裔人口並非同質體驗大流行影響，而是可被劃分為四個不同的潛在類別：(1) 多重困擾類別（同時面臨收入喪失、食物不安全、住房壓力與醫療獲取困難）；(2) 經濟衝擊類別（主要為工作時數減少或失業）；(3) 健康恐懼類別（主要擔心感染與醫療資源不足）；(4) 復原力類別（報告較少負面影響，具有較強社會支持與適應資源）。顯著的是，多重困擾類別佔約三成樣本，且其成員更可能是非公民、英語能力有限且居住在人口密集城市區域。此凸顯了結構性不平等（如移民身份、語言隔離與居住 segregation）如何在疫情中放大脆弱性。研究強調，未來公共衛生應對必須針對不同脆弱亞群體採取差異化策略，而非單一尺度的普遍介入。社會支持網絡與社區基礎組織在促進復原力方面發揮了關鍵作用。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國境內自認屬拉丁裔的成人參與者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">COVID-19大流行期間經歷的社會、經濟與健康挑戰（收入、食物、住房、醫療獲取等）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同潛在類別間的經驗模式比較</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">透過LCA識別的四種典型社會、經濟與健康挑戰模式</div></div>
+</div>
+    <ul class="findings"><li>拉丁裔社區在大流行中經驗非同質，可分為四個潛在類別</li><li>多重困擾類別佔約30%，特徵為同時面臨多重基本需求危機</li><li>非公民身份、英語能力有限與都市居住增加多重困擾風險</li><li>社會支持與社區資源關聯於復原力類別成員身份</li><li>支持差異化公共衛生應對以因應結構性脆弱性</li></ul>
+    
+  </div>
+  <div class="paper-card" data-pmid="undefined" style="animation-delay:1.68s">
+    <div class="paper-meta">
+      <span class="paper-journal"></span>
+      <span class="paper-date"></span>
+      
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title"></h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem"></p>
+    
+    
+    
+    
+    <div class="keywords"><span class="keyword-pill">COVID-19</span><span class="keyword-pill">Latino communities</span><span class="keyword-pill">latent class analysis</span><span class="keyword-pill">social determinants</span><span class="keyword-pill">health disparities</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42535394" style="animation-delay:1.76s">
+    <div class="paper-meta">
+      <span class="paper-journal">Palliat Med</span>
+      <span class="paper-date">2026 Oct</span>
+      <a class="paper-doi" href="https://doi.org/10.1177%2F02692163261465882" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Advance Care Planning in structurally vulnerable populations: A scoping review of barriers, facilitators, and interventions</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">結構性脆弱族群的預先護理規劃：障礙、促進因子與介入的範圍性回顧</p>
+    <p class="paper-authors">Jeong A, Li BCM, Carter RZ</p>
+    <p class="paper-abstract">此範圍性文獻回顧探討結構性脆弱族群（如無家可歸者、嚴重精神疾病患者、藥物使用者、監禁經驗者及某些種族少數群體）在預先護理規劃（ACP）中的參與障礙與促進因子。研究發現，主要障礙包括：對ACP概念的認知不足、醫療系統內的系統性不信任（尤其基於過往歧視經驗）、無法穩定獲取照護以進行持續對話、以及法律文件簽署的實務困難（如缺乏固定地址或識別證）。促進因子則涉及：由信任的社區工作者或同儕領導的介入、使用簡單語言與視覺輔助工具、將ACP融入現有的減害或外展服務中、以及提供小額誘因以參與規劃過程。研究強調，傳統ACP模式（假設穩定居住、定期醫療聯繫及法律能力）對此類族群不適用，必須經過文化與情境適應。成功的介入強調關係建立而非文件完成，將重點放在尊重自主權與減少恐懼，而非強制完成表格。此工作为改善邊緣人口瀨終照護公平性提供了重要實證基礎。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">結構性脆弱族群（無家可歸、SMI、藥物使用、監禁經驗、種族少數等）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">預先護理規劃（ACP）相關的障礙、促進因子與介入策略</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同介入情境或無介入狀態</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">ACP的知覺可及性、參與意願、完成率及參與者對過程的體驗</div></div>
+</div>
+    <ul class="findings"><li>結構性脆弱族群面臨認知、系統性不信任與獲取穩等多層障礙</li><li>信任的社區或同儕主導介入顯著提升參與度</li><li>簡單語言、視覺輔助與服務整合是關鍵促進因子</li><li>傳統ACP模式需經文化與情境適應才適用於此類族群</li><li>成功介入重視關係建立與尊重自主權，而非強制文件完成</li></ul>
+    
+  </div>
+  <div class="paper-card" data-pmid="undefined" style="animation-delay:1.84s">
+    <div class="paper-meta">
+      <span class="paper-journal"></span>
+      <span class="paper-date"></span>
+      
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title"></h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem"></p>
+    
+    
+    
+    
+    <div class="keywords"><span class="keyword-pill">advance care planning</span><span class="keyword-pill">structurally vulnerable</span><span class="keyword-pill">homelessness</span><span class="keyword-pill">serious mental illness</span><span class="keyword-pill"> barriers</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42592071" style="animation-delay:1.92s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Pediatr Clin Pract</span>
+      <span class="paper-date">2026 Oct</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jpedcp.2026.200230" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Neonatal Brain Structure, Early Life Context, and Academic Achievement among Children Born Very Preterm</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">非常早產兒的新生兒腦部結構、早期生活情境與學業成就</p>
+    <p class="paper-authors">Oftedal S, Bora S, Pannek K, Fiori S et al.</p>
+    <p class="paper-abstract">此研究探討非常早產兒（胎齡&lt;32週）的新生腦部結構如何與其早期生活環境及後續學業成就相關。使用MRI評估新生兒腦部白質與灰質體積，並追蹤兒童至學齡期進行認知與學業評估。結果顯示，較佳的新生腦部結構（特別是額葉與小腦白質完整度）與較佳的學業成就正相關。然而，此關聯被早期生活情境顯著調節：在 socioeconomically disadvantaged（社會經濟弱勢）環境中的兒童，即使新生腦結構較好，其學業成就提升幅度亦較小；反而在資源豐裕、親養支持佳的環境中，腦部結構優勢能更有效轉化為學習表現。此功能顯示，早期生活經驗能調節神經發展的可塑性路徑，強調僅靠生物學優勢不足以保證最佳發展，環境支援是關鍵調節因子。研究結論呼應「雙重風險」模型：神經生物학적脆弱性與社會劣勢的疊加會導致發展結果惡化。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">出生時胎齡&lt;32週的非常早產兒</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">新生兒腦部結構（MRI測量白質/灰質體積）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">較佳 vs 較差新生腦部結構組別</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">學齡期的學業成就（標準化測驗成績）及認知功能</div></div>
+</div>
+    <ul class="findings"><li>新生腦部結構與後續學業成就正相關</li><li>社會經濟地位調節腦結構與學業成就之間的關聯</li><li>弱勢環境中，腦結構優勢轉化為學業表現的效益減少</li><li>資源豐裕環境能放大神經發育優勢的影響</li><li>支持早期生活經驗調節神經可塑性的觀點</li></ul>
+    <div class="keywords"><span class="keyword-pill">very preterm</span><span class="keyword-pill">neonatal brain structure</span><span class="keyword-pill">socioeconomic context</span><span class="keyword-pill">academic achievement</span><span class="keyword-pill">neurodevelopment</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42387285" style="animation-delay:2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Psychiatr Serv</span>
+      <span class="paper-date">2026 Oct 1</span>
+      <a class="paper-doi" href="https://doi.org/10.1176%2Fappi.ps.20260095" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">VA Health Care Utilization Among U.S. Veterans: The Influence of Social Determinants of Health and Health Factors</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">美國退伍軍人醫療系統的醫療利用：健康社會決定因素與健康因素的影響</p>
+    <p class="paper-authors">Na PJ, Fischer IC, Tsai J, Jeste DV et al.</p>
+    <p class="paper-abstract">此研究分析美國退伍軍人事務部（VA）醫療系統中，健康社會決定因素（SDOH）如何影響退伍軍人對醫療服務的利用模式。使用全國性VA資料庫，研究探討住房不穩定、食物不安全、交通障礙、就業狀況及社會孤立等SDOH指標與初級保健、精神健康及專科門診的使用率關聯。結果顯示，經歷多重SDOH劣勢的退伍軍人（例如同時面臨住房不穩定與食物不安全）顯著較少使用預防性與初級保健服務，但急診與住院率卻較高，顯示他們傾向於在健康問題惡化後才求醫。相反地，具備較好社會支持與穩定生活條件的退伍軍人更可能定期使用初級保健與心理健康服務。研究進一步指出，SDOH的影響在調整傳統臨床 comorbidity 後仍獨立存在，強調即使在普惠醫療系統中，社會條件仍是獲取與維持預防性照護的關鍵門檻。此凸顯了將SDOH篩選納入常規臨床實踐的必要性，以主動識別並協助面臨結構性障礙的退伍軍人。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國退伍軍人事務部（VA）醫療系統中的退伍軍人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">健康社會決定因素（SDOH：住房、食物、交通、就業、社會孤立）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">多重SDOH劣勢 vs 較少SDOH劣勢組別</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">VA內初級保健、精神健康及專科門診的使用率及急診/住院率</div></div>
+</div>
+    <ul class="findings"><li>多重SDOH劣勢與預防性及初級保健利用率降低相關</li><li>SDOH劣勢群體急診與住院率相對較高</li><li>SDOH對醫療利用的影響在調整臨床 comorbidity 後仍獨立存在</li><li>支持在VA系統中常規篩選SDOH以改善預防性照護參與度</li><li>顯示即使在普惠醫療中，社會條件仍是獲取預防性服務的關鍵門檻</li></ul>
+    
+  </div>
+  <div class="paper-card" data-pmid="undefined" style="animation-delay:2.08s">
+    <div class="paper-meta">
+      <span class="paper-journal"></span>
+      <span class="paper-date"></span>
+      
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title"></h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem"></p>
+    
+    
+    
+    
+    <div class="keywords"><span class="keyword-pill">social determinants of health</span><span class="keyword-pill">veterans</span><span class="keyword-pill">VA healthcare</span><span class="keyword-pill">healthcare utilization</span><span class="keyword-pill">access to care</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">4 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42816744" style="animation-delay:2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Adm Policy Ment Health</span>
+      <span class="paper-date">2026 Oct 1</span>
+      <a class="paper-doi" href="https://doi.org/10.1007%2Fs10488-026-01529-3" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Did Nationwide Mental Health Insurance Reform in Israel Increase Access to Community-Based Care? : A Population-Based Retrospective Cohort Study</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">以色列全國心理健康保險改革是否增加了社區照護的可及性？：以人口為基礎的回顧性隊列研究</p>
+    <p class="paper-authors">Alfandari Cohen AE, Weinstein O, Kodesh A, Bodenheimer G et al.</p>
+    <p class="paper-abstract">此研究評估以色列2015年實施的全國性心理健康保險改革對精神健康服務可及性的影響，特別聚焦於社區為基礎的照護（如門診心理治療、精神科門診）。改革前，精神健康服務由四家健康維護組織（HMOs）分散管理，改革後統一由國家負責資金與管理，目標是減少行政障礙並提升服務整合。利用全國醫療保險資料庫，研究比較改革前後（2013-2014 vs 2016-2017）成人心理健康門診使用率的變化。結果顯示，改革後總門診訪問次數顯著增加約18%，尤其是年輕成人（18-34歲）與低 socio-economic status 群體的成長幅度最大。此外，先前未使用過精神健康服務的新用戶比例亦顯著上升，顯示改革成功降低了初門檻。研究未發現顯著增加重複或濫用服務的情況，顯示需求增加主要來自於先前服務不足的人群。此結果提供實證支持，證明財務與行政整合是提升邊緣群體心理健康服務可及性的有效政策槓桿。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">以色列全國參與公共醫療保險系統的成人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">2015年全國性心理健康保險改革（服務資金與管理統一）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">改革前 (2013-2014) vs 改革後 (2016-2017)</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">社區為基礎的心理健康門診服務使用率（次數/人年）</div></div>
+</div>
+    <ul class="findings"><li>心理健康保險改革後總門診使用率增加約18%</li><li>年輕成人與低SES群體可及性提升幅度最大</li><li>新用戶比例顯著增加，顯示降低了服務獲得門檻</li><li>未觀察到顯著過度使用或濫用現象</li><li>支持財務與行政整合為提升邊緣群體服務可及性的有效策略</li></ul>
+    
+  </div>
+  <div class="paper-card" data-pmid="undefined" style="animation-delay:2.08s">
+    <div class="paper-meta">
+      <span class="paper-journal"></span>
+      <span class="paper-date"></span>
+      
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title"></h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem"></p>
+    
+    
+    
+    
+    <div class="keywords"><span class="keyword-pill">mental health insurance</span><span class="keyword-pill">access to care</span><span class="keyword-pill">community-based care</span><span class="keyword-pill">Israel</span><span class="keyword-pill">policy reform</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42559648" style="animation-delay:2.16s">
+    <div class="paper-meta">
+      <span class="paper-journal">Child Youth Serv Rev</span>
+      <span class="paper-date">2026 Oct</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20109156.%20doi%3A%2010.1016%2Fj.childyouth.2026.109156" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Does greater purchasing power of Supplemental Nutrition Assistance Program improve children&#39;s development?</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">補充營養援助計畫的購買力提升是否能改善兒童發展？</p>
+    <p class="paper-authors">Hong YS</p>
+    <p class="paper-abstract">此研究探討美國補充營養援助計畫（SNAP，俗稱食物券）受惠額度增加對兒童發展結果的影響。利用準實驗設計，研究比較SNAP福利金額因政策調整而增加的州與未增加的州，在控制人口特徵與時間趨勢後，評估兒童在認知測驗（如語言與數學）、行為表現及健康指標上的差異。結果顯示，SNAP購買力顯著增加與年輕兒童（尤其是3-5歲）在認知及學前準備測驗上的改善顯著相關，效應幅度在調整後約為0.15標準差。此關聯在低收入與少數民族家庭中較為顯著，顯示經濟補助能緩解資源匱乏對早期發展的負面影響。研究未發現較大兒童（6歲以上）有類似顯著改善，提示早期介入可能具有更大的可塑性窗口。此外，作者指出，福利增加的效應部分透過改善家庭食物安全與減少父母壓力來介入。此結果強化了收入補助政策在促進兒童發展公平性方面的作用，尤其關鍵期間是兒童早期階段。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國參與SNAP的低收入家庭兒童（著重於3-5歲兒童）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">SNAP福利金額增加（透過政策調整提升購買力）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">福利增加州 vs 福利未增加州（準實驗設計）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">兒童認知測驗得分（語言、數學）、行為指標及健康結果</div></div>
+</div>
+    <ul class="findings"><li>SNAP購買力增加與3-5歲兒童認知及學前準備改善顯著相關</li><li>效應幅度約為0.15標準差，在低收入及少數民族家庭中較大</li><li>未發現6歲以上兒童有類似顯著改善，提示早期介入窗口</li><li>福利增加的效應部分透過改善食物安全與減少父母壓力介入</li><li>支持收入補助為促進兒童發展公平性的有效政策工具</li></ul>
+    
+  </div>
+  <div class="paper-card" data-pmid="undefined" style="animation-delay:2.24s">
+    <div class="paper-meta">
+      <span class="paper-journal"></span>
+      <span class="paper-date"></span>
+      
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title"></h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem"></p>
+    
+    
+    
+    
+    <div class="keywords"><span class="keyword-pill">Supplemental Nutrition Assistance Program</span><span class="keyword-pill">SNAP</span><span class="keyword-pill">child development</span><span class="keyword-pill">income support</span><span class="keyword-pill">early childhood</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">認知與行為 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42559648" style="animation-delay:2.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Child Youth Serv Rev</span>
+      <span class="paper-date">2026 Oct</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20109156.%20doi%3A%2010.1016%2Fj.childyouth.2026.109156" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Does greater purchasing power of Supplemental Nutrition Assistance Program improve children&#39;s development?</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">補充營養援助計畫的購買力提升是否能改善兒童發展？</p>
+    <p class="paper-authors">Hong YS</p>
+    <p class="paper-abstract">此研究探討美國補充營養援助計畫（SNAP，俗稱食物券）受惠額度增加對兒童發展結果的影響。利用準實驗設計，研究比較SNAP福利金額因政策調整而增加的州與未增加的州，在控制人口特徵與時間趨勢後，評估兒童在認知測驗（如語言與數學）、行為表現及健康指標上的差異。結果顯示，SNAP購買力顯著增加與年輕兒童（尤其是3-5歲）在認知及學前準備測驗上的改善顯著相關，效應幅度在調整後約為0.15標準差。此關聯在低收入與少數民族家庭中較為顯著，顯示經濟補助能緩解資源匱乏對早期發展的負面影響。研究未發現較大兒童（6歲以上）有類似顯著改善，提示早期介入可能具有更大的可塑性窗口。此外，作者指出，福利增加的效應部分透過改善家庭食物安全與減少父母壓力來介入。此結果強化了收入補助政策在促進兒童發展公平性方面的作用，尤其關鍵期間是兒童早期階段。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國參與SNAP的低收入家庭兒童（著重於3-5歲兒童）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">SNAP福利金額增加（透過政策調整提升購買力）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">福利增加州 vs 福利未增加州（準實驗設計）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">兒童認知測驗得分（語言、數學）、行為指標及健康結果</div></div>
+</div>
+    <ul class="findings"><li>SNAP購買力增加與3-5歲兒童認知及學前準備改善顯著相關</li><li>效應幅度約為0.15標準差，在低收入及少數民族家庭中較大</li><li>未發現6歲以上兒童有類似顯著改善，提示早期介入窗口</li><li>福利增加的效應部分透過改善食物安全與減少父母壓力介入</li><li>支持收入補助為促進兒童發展公平性的有效政策工具</li></ul>
+    
+  </div>
+  <div class="paper-card" data-pmid="undefined" style="animation-delay:2.48s">
+    <div class="paper-meta">
+      <span class="paper-journal"></span>
+      <span class="paper-date"></span>
+      
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title"></h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem"></p>
+    
+    
+    
+    
+    <div class="keywords"><span class="keyword-pill">Supplemental Nutrition Assistance Program</span><span class="keyword-pill">SNAP</span><span class="keyword-pill">child development</span><span class="keyword-pill">income support</span><span class="keyword-pill">early childhood</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">跨代傳遞與社會流動 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42538640" style="animation-delay:2.8000000000000003s">
+    <div class="paper-meta">
+      <span class="paper-journal">Soc Work</span>
+      <span class="paper-date">2026 Oct 1</span>
+      <a class="paper-doi" href="https://doi.org/10.1093%2Fsw%2Fswag034" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Examining Spirituality&#39;s Influence on Resilience among Adopted or Fostered Native American Emerging Adults</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">探討靈性對被收養或寄養原住民新成年人韌性的影響</p>
+    <p class="paper-authors">Anderson M, Limb G, Burgon J</p>
+    <p class="paper-abstract">此質性研究探討靈性（spirituality）如何作為韌性（resilience）的來源，特別聚焦於被收養或寄養的原住民新成年人（18-25歲）。透過深度訪談，參與者描述了他們如何透過與傳統原住民靈性實踐的連接——如參與儀式、尋求長者指導、與土地的關係感——來應對早期生活逆境（如創傷、身份困惑與系統性種族主義）所帶來的心理壓力。結果顯示，靈性不僅提供情緒安慰，更被視為重建文化身份與獲得歸屬感的途徑。許多參與者指出，在福利系統中長大經常伴隨文化斷裂，靈性實踐成為他們重新連接原住民身份、對抗內化污名與建構自我效能的關鍵。研究強調，針對此族群的支援服務若忽略文化與靈性維度，將無法充分回應其深層需求。靈性被描述為一種「內在資源」，能在結構性支持不足時提供心理緩衝。此研究提示，促進原住民青年福祉的介入應整合文化安全與靈性支援，而非僅依賴西方心理模式。此觀點具有重要意義，因其挑戰了主流韌性研究常忽略文化脈絡的傾向。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">被收養或寄養的原住民新成年人（18-25歲）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">靈性實踐與文化連接（儀式、長者指導、土地關係感）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">較高靈性參與 vs 較低靈性參與組別</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">自我報告的韌性水準、文化身份感與應對壓力的能力</div></div>
+</div>
+    <ul class="findings"><li>靈性提供情緒安慰並協助重建文化身份</li><li>參與傳統靈性實踐與更高韌性水準相關</li><li>靈性被視為對抗文化斷裂與內化污名的關鍵資源</li><li>福利系統中長大的原住民青年常經歷文化斷裂，靈性有助重新連接</li><li>支持將文化與靈性維度納入原住民青年心理健康服務</li></ul>
+    
+  </div>
+  <div class="paper-card" data-pmid="undefined" style="animation-delay:2.88s">
+    <div class="paper-meta">
+      <span class="paper-journal"></span>
+      <span class="paper-date"></span>
+      
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title"></h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem"></p>
+    
+    
+    
+    
+    <div class="keywords"><span class="keyword-pill">Native American</span><span class="keyword-pill">spirituality</span><span class="keyword-pill">resilience</span><span class="keyword-pill">foster care</span><span class="keyword-pill">adoption</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42418108" style="animation-delay:3s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Endocrinol Invest</span>
+      <span class="paper-date">2026 Oct</span>
+      <a class="paper-doi" href="https://doi.org/10.1007%2Fs40618-026-02966-5" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Low work ability and high disability burden in Cushing&#39;s syndrome: a multicenter cohort study</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">庫欣症候群患者的工作能力低下與高殘障負擔：多中心隊列研究</p>
+    <p class="paper-authors">Steinkogler A, Zopp S, Moser K, Schweizer JROL et al.</p>
+    <p class="paper-abstract">此多中心隊列研究調查了庫欣症候群（Cushing&#39;s syndrome）患者的工作能力及殘障負擔情況。庫欣症候群為身體長期暴露於過量皮質醇的內分泌疾病，常導致身體與心理上的廣泛影響。研究透過標準化問卷評估患者的工作能力（如工作時數、職務勝任力）、身體功能限制及健康相關生活品質。結果顯示，超過60%的患者報告工作能力顯著下降，近半數無法全職工作。常見問題包括易疲倦、肌肉無力、情緒不穩（如焦慮與憂鬱）及認知困難（注意力不集中、記憶力下降）。此外，超過70%的患者經歷中度至重度的殘障負擔，顯著影響日常生活活動。研究進一步指出，即使在病情緩解後，部分身體與認知影響可能持續存在，顯示該疾病具有長期的功能後遺症。此凸顯了庫欣症候群的影響遠超內分泌失調，涵蓋職能復健與心理支持的必要性。對臨床醫師而言，評估庫欣症候群時應常規納入功能評估，而非僅聚焦於荷爾蒙水平。此研究提醒內分泌疾病的管理必須採用 biopsychosocial 模型，以全面應對患者的複雜需求。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">被診斷為庫欣症候群的成人患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">庫欣症候群診斷及其病理生理影響（皮質醇過量）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">庫欣症候群患者 vs 健康對照組或病情緩解後狀態</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">工作能力（工作時數、職務勝任力）、身體功能限制及健康相關生活品質</div></div>
+</div>
+    <ul class="findings"><li>超過60%的庫欣症候群患者報告工作能力顯著下降</li><li>近半數患者無法全職工作，主要症狀包括疲倦、肌肉無力與情緒不穩</li><li>超過70%的患者經歷中度至重度殘障負擔，影響日常生活活動</li><li>即使病情緩解後，部分身體與認知影響可能持續存在，顯示長期功能後遺症</li><li>支持在庫欣症候群管理中納入功能評估與心理支持，而非僅聚焦荷爾蒙水平</li></ul>
+    
+  </div>
+  <div class="paper-card" data-pmid="undefined" style="animation-delay:3s">
+    <div class="paper-meta">
+      <span class="paper-journal"></span>
+      <span class="paper-date"></span>
+      
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title"></h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem"></p>
+    
+    
+    
+    
+    <div class="keywords"><span class="keyword-pill">Cushing&#39;s syndrome</span><span class="keyword-pill">work ability</span><span class="keyword-pill">disability burden</span><span class="keyword-pill">cortisol excess</span><span class="keyword-pill">functional impairment</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by NVIDIA Nemotron</p>
+  </footer>
+</div>
+</body>
+</html>
