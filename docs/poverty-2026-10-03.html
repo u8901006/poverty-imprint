@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-10-03</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-10-03</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 18 篇文獻</span>
+      <span class="stat-item">&#9888; AI 分析暫時無法使用，僅顯示原始摘要</span>
+    </div>
+  </header>
+  <section class="papers-section">
+    <h2>&#128209; 文獻列表</h2>
+    
+    <div class="paper-card" data-pmid="41630518" style="animation-delay:0s">
+      <div class="paper-meta">
+        <span class="paper-journal">Vet Rec</span>
+        <span class="paper-date">2026 Oct 3</span>
+        <a class="paper-doi" href="https://doi.org/10.1002%2Fvetr.70339" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">&quot;For three of my four miscarriages I was at work…&quot; Experiences of miscarriage, infertility and assisted fertility in veterinary workplaces.</h3>
+      <p class="paper-authors">Stavisky J, Scroggie N, Collinson A, Belshaw Z</p>
+      <p class="paper-abstract">BACKGROUND: Miscarriage, infertility and assisted fertility (MIAF) can profoundly impact physical and mental health. The aims of this study were to investigate how veterinary professionals&#39; work environments and employers impacted their experiences of MIAF and to identify how workplace experiences of MIAF could be improved. METHODS: A cross-sectional online survey collected anonymous responses from UK-based veterinary professionals of any gender who had experienced MIAF. The quantitative data we...</p>
+    </div>
+    <div class="paper-card" data-pmid="42827296" style="animation-delay:0.08s">
+      <div class="paper-meta">
+        <span class="paper-journal">Autism</span>
+        <span class="paper-date">2026 Oct 2</span>
+        <a class="paper-doi" href="https://doi.org/10.1177%2F13623613261486061" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Autism and Homelessness: Risk and Protective Factors in a Bayesian Analysis of Autistic Characteristics.</h3>
+      <p class="paper-authors">Osborn EJ, Young RL, Weber N, Fuss B</p>
+      <p class="paper-abstract">Autistic individuals are overrepresented in homeless populations, yet mechanisms driving this association remain unclear, particularly in the context of diagnostic access and structural inequities. We surveyed 333 adults in Australia, assessing autistic traits (Autism-Spectrum Quotient [AQ]-50), homelessness risk factors, adaptive functioning and social support. Bayesian hierarchical logistic regression models were used to estimate associations. Associations between autistic traits and homelessn...</p>
+    </div>
+    <div class="paper-card" data-pmid="42826323" style="animation-delay:0.16s">
+      <div class="paper-meta">
+        <span class="paper-journal">Medicine (Baltimore)</span>
+        <span class="paper-date">2026 Oct 2</span>
+        <a class="paper-doi" href="https://doi.org/10.1097%2FMD.0000000000050958" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">The association between occupational categories, working hours, and depression: A cross-sectional study in the United States.</h3>
+      <p class="paper-authors">Sun WJ, Cui WY</p>
+      <p class="paper-abstract">Depression has become a major public health concern impacting population health. This study aims to investigate the associations between occupation categories, working hours, and depression among United States workers. This cross-sectional study utilized data from the National Health and Nutrition Examination Survey between 2005 and 2014. Depression was assessed using the Patient Health Questionnaire-9. Weighted multivariable logistic regression was employed to examine the association between oc...</p>
+    </div>
+    <div class="paper-card" data-pmid="42826256" style="animation-delay:0.24s">
+      <div class="paper-meta">
+        <span class="paper-journal">Medicine (Baltimore)</span>
+        <span class="paper-date">2026 Oct 2</span>
+        <a class="paper-doi" href="https://doi.org/10.1097%2FMD.0000000000050911" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">The association between education level, widowhood, and depression among elderly Chinese after controlling for demographic, health, and behavioral variables.</h3>
+      <p class="paper-authors">Ling Q, Zhang Y</p>
+      <p class="paper-abstract">With the rapid advancement of China&#39;s aging population, the mental health problems of the elderly, especially depression, have become an important concern in the field of public health. However, research on the combined effect of education level and widowhood on depression is still relatively limited. The aim of this study is to explore the association between education level, widowhood status, and depression symptoms among elderly people in China, and further analyze the moderating effects of h...</p>
+    </div>
+    <div class="paper-card" data-pmid="42826032" style="animation-delay:0.32s">
+      <div class="paper-meta">
+        <span class="paper-journal">JAMA Health Forum</span>
+        <span class="paper-date">2026 Oct 2</span>
+        <a class="paper-doi" href="https://doi.org/10.1001%2Fjamahealthforum.2026.3338" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Patient Navigation and Postpartum Health Care Outcomes: A Randomized Clinical Trial.</h3>
+      <p class="paper-authors">Yee LM, Feinglass J, Williams BR, Diaz L et al.</p>
+      <p class="paper-abstract">IMPORTANCE: Postpartum care in the US is fragmented and inadequate, with major disparities in quality. Patient navigation is a promising health services intervention to improve health care provision and reduce disparities. OBJECTIVE: To evaluate whether postpartum patient navigation improved postpartum health care quality among people with low incomes. DESIGN, SETTING, AND PARTICIPANTS: This randomized clinical trial was conducted at a single urban academic medical center from January 2020 to Ju...</p>
+    </div>
+    <div class="paper-card" data-pmid="42820844" style="animation-delay:0.4s">
+      <div class="paper-meta">
+        <span class="paper-journal">Int J Gynaecol Obstet</span>
+        <span class="paper-date">2026 Oct</span>
+        <a class="paper-doi" href="https://doi.org/10.1002%2Fijgo.71327" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">When doctors falter: Resilience in modern obstetrics and gynecology, a narrative review.</h3>
+      <p class="paper-authors">Tunney E, Kane D, Geary M</p>
+      <p class="paper-abstract">The practice of obstetrics and gynecology (O&amp;amp;G) is frequently regarded as one of the most demanding medical specialties, with physicians being called to duty at any hour of the day or night, with acute patient demands requiring prompt management. Consequently, high levels of physician burnout and psychological distress have been reported among O&amp;amp;G healthcare professionals, with these challenges further compounded by the COVID-19 pandemic. Despite the prevalence of mental health difficult...</p>
+    </div>
+    <div class="paper-card" data-pmid="42817766" style="animation-delay:0.48s">
+      <div class="paper-meta">
+        <span class="paper-journal">Epidemiol Psychiatr Sci</span>
+        <span class="paper-date">2026 Oct 1</span>
+        <a class="paper-doi" href="https://doi.org/10.1017%2FS2045796026100985" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Prioritizing and integrating age- and sex-specific modifiable risk factors related with depression: a prospective cohort study of 428,078 adults.</h3>
+      <p class="paper-authors">Chen L, Wei S, Zhao J, Tian F et al.</p>
+      <p class="paper-abstract">AIMS: To systematically identify and prioritize age- and sex-specific modifiable risk factors for incident depression, and to characterize integrated risk patterns to pinpoint high-risk populations across different life stages. METHOD: Using data from 428,078 participants in a cohort, incident depression was identified using hospital records. Cox proportional hazards models were applied to assess age- (the middle-aged, quinquagenarian and the elderly) and sex-specific (females and males) associa...</p>
+    </div>
+    <div class="paper-card" data-pmid="42816744" style="animation-delay:0.56s">
+      <div class="paper-meta">
+        <span class="paper-journal">Adm Policy Ment Health</span>
+        <span class="paper-date">2026 Oct 1</span>
+        <a class="paper-doi" href="https://doi.org/10.1007%2Fs10488-026-01529-3" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Did Nationwide Mental Health Insurance Reform in Israel Increase Access to Community-Based Care? : A Population-Based Retrospective Cohort Study.</h3>
+      <p class="paper-authors">Alfandari Cohen AE, Weinstein O, Kodesh A, Bodenheimer G et al.</p>
+      <p class="paper-abstract">Israel&#39;s nationwide mental health reform (July 1, 2015) transferred responsibility and funding for mental healthcare from the Ministry of Health to Israel&#39;s four Health Maintenance Organizations (HMOs), aiming to improve access and availability, integrate mental health into general care, and shift delivery toward community-based models. Using electronic health records and administrative data from all four HMOs and the Ministry of Health, we assessed longitudinal trends in mental health service u...</p>
+    </div>
+    <div class="paper-card" data-pmid="42418108" style="animation-delay:0.64s">
+      <div class="paper-meta">
+        <span class="paper-journal">J Endocrinol Invest</span>
+        <span class="paper-date">2026 Oct</span>
+        <a class="paper-doi" href="https://doi.org/10.1007%2Fs40618-026-02966-5" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Low work ability and high disability burden in Cushing&#39;s syndrome: a multicenter cohort study.</h3>
+      <p class="paper-authors">Steinkogler A, Zopp S, Moser K, Schweizer JROL et al.</p>
+      <p class="paper-abstract">CONTEXT: The socio-occupational burden of Cushing&#39;s syndrome (CS) remains underrecognised. In clinical practice, surgically treated patients are often considered recovered, potentially overlooking persistent impairment. PURPOSE: To evaluate work ability, social and employment status in newly diagnosed and remitted CS. METHODS: National observational study with two arms: a monocentric prospective study of patients evaluated for suspected endogenous glucocorticoid excess (cohort 1), and a multicen...</p>
+    </div>
+    <div class="paper-card" data-pmid="42387285" style="animation-delay:0.72s">
+      <div class="paper-meta">
+        <span class="paper-journal">Psychiatr Serv</span>
+        <span class="paper-date">2026 Oct 1</span>
+        <a class="paper-doi" href="https://doi.org/10.1176%2Fappi.ps.20260095" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">VA Health Care Utilization Among U.S. Veterans: The Influence of Social Determinants of Health and Health Factors.</h3>
+      <p class="paper-authors">Na PJ, Fischer IC, Tsai J, Jeste DV et al.</p>
+      <p class="paper-abstract">OBJECTIVE: The authors aimed to use data on social determinants of health (SDOH) and health characteristics to differentiate users of VA health care from nonusers in order to inform clinical and policy decisions. METHODS: Data from 2,636 U.S. veterans in a national study (2025-2026) were analyzed to assess trends in use of VA health care, as well as the SDOH and health characteristics associated with primary use of such care. RESULTS: Primary use of VA health care was higher in 2025-2026 (27%) t...</p>
+    </div>
+    <div class="paper-card" data-pmid="42592071" style="animation-delay:0.8s">
+      <div class="paper-meta">
+        <span class="paper-journal">J Pediatr Clin Pract</span>
+        <span class="paper-date">2026 Oct</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jpedcp.2026.200230" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Neonatal Brain Structure, Early Life Context, and Academic Achievement among Children Born Very Preterm.</h3>
+      <p class="paper-authors">Oftedal S, Bora S, Pannek K, Fiori S et al.</p>
+      <p class="paper-abstract">OBJECTIVE: To examine whether neonatal brain abnormality severity was independently associated with academic achievement at 6 years and whether it modified the association between early life socioeconomic context and achievement in children born very preterm. STUDY DESIGN: A prospective cohort of 133 Australian infants born at &amp;lt;31 weeks&#39; gestation at a tertiary hospital was followed up at age 6 years. Early life socioeconomic context was assessed using a composite index across 6 variables at ...</p>
+    </div>
+    <div class="paper-card" data-pmid="42391732" style="animation-delay:0.88s">
+      <div class="paper-meta">
+        <span class="paper-journal">J Psychiatr Res</span>
+        <span class="paper-date">2026 Oct</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jpsychires.2026.06.053" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Linking socioeconomic context to functional brain network abnormalities and clinical severity in children with Tourette syndrome.</h3>
+      <p class="paper-authors">Liu Z, Lei T, Wang X, Zhang W et al.</p>
+      <p class="paper-abstract">BACKGROUND: Tourette syndrome (TS) shows substantial clinical heterogeneity, but the factors contributing to this variability remain unclear. Socioeconomic status (SES) may influence brain functional connectivity (FC) and symptom expression, yet its role in pediatric TS is still not well understood. OBJECTIVE: To clarify the role of SES in modulating brain-behavior relationships in TS. METHODS: Resting-state fMRI data were acquired from 67 children and adolescents with TS and 49 matched controls...</p>
+    </div>
+    <div class="paper-card" data-pmid="42538640" style="animation-delay:0.96s">
+      <div class="paper-meta">
+        <span class="paper-journal">Soc Work</span>
+        <span class="paper-date">2026 Oct 1</span>
+        <a class="paper-doi" href="https://doi.org/10.1093%2Fsw%2Fswag034" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Examining Spirituality&#39;s Influence on Resilience among Adopted or Fostered Native American Emerging Adults.</h3>
+      <p class="paper-authors">Anderson M, Limb G, Burgon J</p>
+      <p class="paper-abstract">The purpose of this study was to examine the relationship between spirituality and resilience among Native American emerging adults who were adopted or fostered as children-an understudied population at heightened risk for adverse outcomes due to the intersection of poverty, intergenerational trauma, cultural assimilation, and out-of-home care experiences. Utilizing a retrospective survey, data were collected from 405 Native American emerging adults ages 18 to 30 who were either adopted or foste...</p>
+    </div>
+    <div class="paper-card" data-pmid="42535394" style="animation-delay:1.04s">
+      <div class="paper-meta">
+        <span class="paper-journal">Palliat Med</span>
+        <span class="paper-date">2026 Oct</span>
+        <a class="paper-doi" href="https://doi.org/10.1177%2F02692163261465882" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Advance Care Planning in structurally vulnerable populations: A scoping review of barriers, facilitators, and interventions.</h3>
+      <p class="paper-authors">Jeong A, Li BCM, Carter RZ</p>
+      <p class="paper-abstract">BACKGROUND: Individuals experiencing structural vulnerabilities experience greater rates of serious illness and face barriers to accessing healthcare, including advance care planning. However, evidence to understand relevant barriers, facilitators, and effective interventions for advance care planning engagement among different structurally vulnerable populations remains fragmented. AIM: To inform advance care planning interventions for structurally vulnerable patients by reviewing: barriers and...</p>
+    </div>
+    <div class="paper-card" data-pmid="42187215" style="animation-delay:1.12s">
+      <div class="paper-meta">
+        <span class="paper-journal">Dev Psychopathol</span>
+        <span class="paper-date">2026 Oct</span>
+        <a class="paper-doi" href="https://doi.org/10.1017%2FS0954579426101539" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">When stress matters most: developmental timing and socio-ecological stressors among Mexican-origin adolescents from low-income immigrant families.</h3>
+      <p class="paper-authors">Ip KI, Wen W, Lee S, Sim L et al.</p>
+      <p class="paper-abstract">This study investigates the dynamic, time-varying associations between multiple socio-ecological stressors and internalizing symptoms among Mexican-origin youth from low-income immigrant families. Grounded in a socioecological framework and employing time-varying effect modeling&amp;#xa0;(TVEM), we examine how stressors at the interpersonal, family, and neighborhood levels differentially influence anxiety and depressive symptoms across early adolescence (ages 11-13), middle adolescence (ages 14-17),...</p>
+    </div>
+    <div class="paper-card" data-pmid="40576870" style="animation-delay:1.2s">
+      <div class="paper-meta">
+        <span class="paper-journal">J Racial Ethn Health Disparities</span>
+        <span class="paper-date">2026 Oct</span>
+        <a class="paper-doi" href="https://doi.org/10.1007%2Fs40615-025-02514-6" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Patterns of Social, Economic, And Health Challenges Due to the COVID-19 Pandemic Experienced by Latino Communities: A Latent Class Analysis.</h3>
+      <p class="paper-authors">Ramirez G, Ou Y, Saxton R, Miller AF et al.</p>
+      <p class="paper-abstract">OBJECTIVE: Latino communities are diverse and necessitate in-depth knowledge of the heterogeneity of Latinos beyond a singular race or ethnicity. Each subgroup may have been impacted by the COVID-19 pandemic differently. This study examined the patterns of challenges that Latinos faced due to the COVID-19 pandemic, identified subgroups with diverse needs, and explored the association between these subgroups and health outcomes. METHODS: A total of 720 participants enrolled between August 2022 an...</p>
+    </div>
+    <div class="paper-card" data-pmid="42814287" style="animation-delay:1.28s">
+      <div class="paper-meta">
+        <span class="paper-journal">Geroscience</span>
+        <span class="paper-date">2026 Sep 30</span>
+        <a class="paper-doi" href="https://doi.org/10.1007%2Fs11357-026-02565-5" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Associations between socioeconomic position index and epigenetic aging in NHANES.</h3>
+      <p class="paper-authors">Caunca MR, Kezios K, Schneider ALC, Shen H et al.</p>
+      <p class="paper-abstract">Lower socioeconomic position (SEP) is related to poor health, and epigenetic aging represents a potential mechanism of action. We aimed to estimate associations between a novel measure of SEP and epigenetic age in a nationally representative cohort. We used data from NHANES survey waves 1999-2000 and 2001-2002. Our exposure was a novel three-category indicator of SEP, incorporating income, wealth, occupational status, and educational attainment. Our outcomes included 13 different epigenetic cloc...</p>
+    </div>
+    <div class="paper-card" data-pmid="42559648" style="animation-delay:1.36s">
+      <div class="paper-meta">
+        <span class="paper-journal">Child Youth Serv Rev</span>
+        <span class="paper-date">2026 Oct</span>
+        <a class="paper-doi" href="https://doi.org/pii%3A%20109156.%20doi%3A%2010.1016%2Fj.childyouth.2026.109156" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Does greater purchasing power of Supplemental Nutrition Assistance Program improve children&#39;s development?</h3>
+      <p class="paper-authors">Hong YS</p>
+      <p class="paper-abstract">The Supplemental Nutrition Assistance Program (SNAP) plays an important role in reducing poverty. Despite the strong link between poverty and child development, particularly in early childhood, there is limited evidence on the effect of SNAP on the health and development of children, who comprise the largest group of SNAP recipients. The lack of research on this topic is partly due to a lack of variation in SNAP benefit policies across states. This study addresses this research gap by examining ...</p>
+    </div>
+  </section>
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by NVIDIA Nemotron</p>
+  </footer>
+</div>
+</body>
+</html>
