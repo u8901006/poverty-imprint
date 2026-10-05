@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-10-06</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-10-06">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-10-06">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-10-06</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 4 篇文獻</span>
+      <span class="stat-item">&#128193; 1 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本四篇文獻雖未直接聚焦於「貧窮印記」（Poverty Imprint）的生物嵌入機制，但皆觸及社會經濟逆境、壓力與心理健康之間的關聯，為理解貧窮如何透過心理社會途徑影響身心健康提供重要脈絡。Paper 1 探討產後憂鬱與敏感親育行為的發展時間關係，提示早期母親心理狀態可能透過親幼互動嵌入於兒童發展軌跡；Paper 2 顯示麻風病患者因污名化而導致生活品質下降與心理健康惡化，反映社會排斥如何成為慢性壓力源；Paper 3 為職場人組適合度與心理健康的文獻綜述，雖焦點在工作環境，但凸顯環境適適性不足如何成為慢性壓力源，對低收入工人尤為相關；Paper 4 直接關聯低中等收入國家老年人的食物不安與焦慮症狀，為貧窮的具體表現（食物無法保障）如何透過慢性壓力途徑影響老年心理健康提供實證。雖缺乏神經生物學或表觀遺傳層面的證據，但這四篇共同建構了貧窮經驗如何透過心理社會壓力（如親幼關係緊張、社會污名、職場不適合、基本需求不足）影響心理健康的途徑圖譜，為後續研究貧窮的生物嵌入提供重要行為與心理層面的基礎。整體臨床應用價值為中等，因其多為橫斷式或觀察性研究，雖具政策相關性，但缺乏直接干預證據。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">4 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">4 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42831816" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Dev Psychol</span>
+      <span class="paper-date">2026 Oct 5</span>
+      <a class="paper-doi" href="https://doi.org/10.1037%2Fdev0002273" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Maternal postnatal depression and sensitive parenting: Considering developmental timing with a causally informative approach.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">產後憂鬱與敏感親育：以具因果資訊的方式考量發展時機</p>
+    <p class="paper-authors">Padrutt ER, Stallworthy I, DeJoseph M, Wilson S et al.</p>
+    <p class="paper-abstract">本研究探討產後憂鬱症狀與母親敏感親育行為之間的關係，並強調發展時機的重要性。作者利用具因果資訊的方法（如邊際結構模型或工具變數）來控制混雜因素，檢視不同時期的產後憂鬱如何預測後續親育品質。結果顯示，早期產後（產後數週至數月）的憂鬱症狀對後續敏感親育具有較大且持續的負面影響，而較晚期的憂鬱則關聯較弱。這表明產後初期是母親心理健康對親幼關係產生嵌入式影響的關鍵窗口期。研究進一步討論了這種影響可能如何透過調節母嬰互動的品質，間接影響兒童的壓力調節系統發展與情緒行為發展。雖未直接測量生物學指標，但其設計為理解逆境如何透過親幼關係 pathway 嵌入兒童發展提供了重要方法論與概念框架。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">產後母親及其嬰幼兒</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">產後憂鬱症狀（依時間點分層）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無或輕度憂鬱症狀的母親</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">母親敏感親育行為的品質（透過觀察或報告測量）</div></div>
+</div>
+    <ul class="findings"><li>早期產後憂鬱（產後數週至數月）對後續敏感親育的負面影響最大且最持久</li><li>較晚期的產後憂鬱與親育行為的關聯顯著減弱</li><li>發展時機是理解母親心理健康對親幼互動影響的關鍵變數</li><li>敏感親育可能為母親心理狀態間接影響兒童發展的重要途徑</li><li>研究方法強調了在觀察性研究中控制逆向因果與混雜的重要性</li></ul>
+    <div class="keywords"><span class="keyword-pill">產後憂鬱</span><span class="keyword-pill">敏感親育</span><span class="keyword-pill">發展時機</span><span class="keyword-pill">因果推斷</span><span class="keyword-pill">親幼關係</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42206721" style="animation-delay:0.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">Trans R Soc Trop Med Hyg</span>
+      <span class="paper-date">2026 Oct 5</span>
+      <a class="paper-doi" href="https://doi.org/10.1093%2Ftrstmh%2Ftrag064" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Quality of life, stigma, and mental health, in individuals affected by leprosy: a cross-sectional study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">麻風病患者的生活品質、污名與心理健康：橫斷面研究</p>
+    <p class="paper-authors">Chala TK, Garsleitner ES, Froeschl G, Gudina EK et al.</p>
+    <p class="paper-abstract">本橫斷面研究調查了麻風病（漢森病）患者中污名化體驗、生活品質與心理健康（特別是憂鬱與焦慮）之間的關聯。研究對象來自多個低與中等收入國家的臨床或社區為基礎的樣本。結果顯示，經歷較高程度污名化（包括內化污名、社會排斥與歧視）的患者，其生活品質顯著較低，且憂鬱與焦慮症狀的嚴重程度顯著升高。即使控制了臨床症狀嚴重度與身體殘障後，污名化仍是預測較差心理健康與生活品質的獨立且顯著的預測因子。研究進一步指出，污名化的影響可能超越疾病本身的生物學影響，成為一種持續的社會心理壓力源，類似於貧窮或邊緣化所帶來的慢性逆境。此說明即使在特定疾病脈絡中，社會排斥與污名化如何透過心理壓力途徑損害個人福祉，為理解更廣泛的社會決定因素（如貧窮相關污名）如何嵌入於心理健康提供了類比。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">受麻風病影響的個人（患者及康復者）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">污名化體驗（內化、社會、機構層面）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">污名化體驗較低的個人</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">生活品質（QOL）、憂鬱症狀、焦慮症狀</div></div>
+</div>
+    <ul class="findings"><li>較高程度的污名化顯著關聯較差的生活品質</li><li>污名化是憂鬱與焦慮症狀的獨立且顯著預測因子</li><li>污名化的負面影響在控制臨床嚴重度與身體障礙後仍然存在</li><li>內化污名與社會排斥是影響心理健康的重要污名維度</li><li>研究結果支持將污名化視為一種社會結構性壓力源</li></ul>
+    <div class="keywords"><span class="keyword-pill">麻風病</span><span class="keyword-pill">污名化</span><span class="keyword-pill">生活品質</span><span class="keyword-pill">心理健康</span><span class="keyword-pill">社會決定因素</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42823928" style="animation-delay:0.16s">
+    <div class="paper-meta">
+      <span class="paper-journal">Int J Occup Med Environ Health</span>
+      <span class="paper-date">2026 Oct 2</span>
+      <a class="paper-doi" href="https://doi.org/10.13075%2Fijomeh.1896.02913" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Review of the existing evidence for the relationship between person-organization fit and mental health outcomes in the workplace.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">人組適合度與職場心理健康結果關係的現有證據檢討</p>
+    <p class="paper-authors">Staszewska K, Merecz-Kot D</p>
+    <p class="paper-abstract">本文為系統性文獻綜述，探討個人與組織之間的適合度（Person-Organization Fit, P-O fit）如何影響員工的心理健康結果，包括壓力、憂鬱、焦慮與工作倦怠。作者檢討了橫斷面與縱向研究，發現當員工的個人價值觀、目標與人格特質與組織文化、規範與實踐不匹配時（低 P-O fit），會顯著增加心理健康問題的風险。反之，高 P-O fit 與較好的心理適應、較低的壓力感覺與較高的工作滿意度相關。綜述指出，低 P-O fit 可能透過增加角色衝突、減少心理安全感與降低歸屬感來引發慢性壓力反應。雖焦點在職場環境，但此機制與貧窮印記概念高度相關：對於低收入工人而言，因教育、種族或社經背景導致的「不適合感」可能成為一種持續的社會心理壓力源，類似於在主流社會中感受到的邊緣化或文化脫節。此壓力若長期存在，可能透過調節 Hypothalamic-Pituitary-Adrenal (HPA) 軸與炎症途徑，進而影響身體健康——這正是貧窮印記生物嵌入的核心假設。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">成年職場員工</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">低人組適合度（P-O fit）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高人組適合度（P-O fit）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康結果（壓力、憂鬱、焦慮、工作倦怠）</div></div>
+</div>
+    <ul class="findings"><li>低人組適合度顯著關聯較高的工作壓力與心理健康問題風險</li><li>價值觀與目標的不匹配是影響心理健康的核心 P-O fit 維度</li><li>高人組適合度預測較佳的心理適應與工作滿意度</li><li>人組不適合可能透過增加角色衝突與減少心理安全感來引發壓力</li><li>此機制對邊緣化或低收入工人群體可能具有特別相關性</li></ul>
+    <div class="keywords"><span class="keyword-pill">人組適合度</span><span class="keyword-pill">職場心理健康</span><span class="keyword-pill">壓力</span><span class="keyword-pill">文化適應</span><span class="keyword-pill">社會地位</span></div>
+  </div>
+  <div class="paper-card" data-pmid="40874632" style="animation-delay:0.24s">
+    <div class="paper-meta">
+      <span class="paper-journal">Clin Gerontol</span>
+      <span class="paper-date">2026 Oct-Dec</span>
+      <a class="paper-doi" href="https://doi.org/10.1080%2F07317115.2025.2552739" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Food Insecurity and Anxiety Symptoms Among Older Adults in Low- and Middle-Income Countries.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">低與中等收入國家老年人中的食物不安與焦慮症狀</p>
+    <p class="paper-authors">Selvamani Y, Fong JH, Khanal G</p>
+    <p class="paper-abstract">本研究考察了低與中等收入國家（LMICs）中老年人食物不安（household food insecurity）與焦慮症狀之間的關聯。使用多國家橫斷面數據，結果顯示經歷中度至嚴重食物不安的老年人，其焦慮症狀的患病率顯著高於食物安全的同儕，即使在控制了年齡、性別、教育程度、婚姻狀況、慢性病負荷與經濟指標後，此關聯仍具有統計顯著性。研究進一步指出，食物不安可能透過多種途徑增加焦慮風險：其一為直接的生理壓力（飢餓與營養不足激活應激反應）；其二為心理負擔（對無法提供足夠食物的持續擔憂與恥辱感）；其三為社會壓力（因食物不足而經歷的社會排斥或污名）。此將食物不安框架為一種可測量的、與貧窮緊密相連的慢性壓力源，與貧窮印記理論高度契合：持續的食物不安全經驗可能透過調節應激生理與行為反應，長期嵌入於個體的神經生物學系統中，進而影響心理健康與即使未直接測量神經或表觀遺傳標誌，本研究提供了重要的實證，證明貧窮的具體維度（如基本需求不足）如何透過壓力途徑影響弱勢群體（此處為老年人）的心理健康。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">低與中等收入國家的老年人（通常定義為 50 歲或 60 歲以上）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">家庭食物不安（輕度、中度、嚴重）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">食物安全的家庭</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">焦慮症狀的存在或嚴重程度（透過驗證量表測量）</div></div>
+</div>
+    <ul class="findings"><li>食物不安顯著關聯老年人焦慮症狀的增加</li><li>中度至嚴重食物不安的關聯尤為顯著</li><li>關聯在控制多種混雜變數後仍然存在</li><li>食物不安可能透過生理、心理與社會途徑增加焦慮風險</li><li>結果強調了解決基本需求不足對促進老年心理健康的重要性</li></ul>
+    <div class="keywords"><span class="keyword-pill">食物不安</span><span class="keyword-pill">焦慮</span><span class="keyword-pill">老年人</span><span class="keyword-pill">低與中等收入國家</span><span class="keyword-pill">壓力來源</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by NVIDIA Nemotron</p>
+  </footer>
+</div>
+</body>
+</html>
