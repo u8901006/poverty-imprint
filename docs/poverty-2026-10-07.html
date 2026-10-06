@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-10-07</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-10-07">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-10-07">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-10-07</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 5 篇文獻</span>
+      <span class="stat-item">&#128193; 2 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本批次文獻涵蓋青少年孕產婦需求、兒童逆境經驗的介入設計、護理人員職場暴力與心理健康、經濟困難與槍械獲取之關聯，以及終末期腎病患者的心理健康併發症。儘管未直接聚焦於『貧窮印記』（Poverty Imprint）的核心機制（如表觀遺傳、神經生物學嵌入），但多篇研究觸及貧窮相關的社會決定因素與心理創傷後遺影響，如青少年早孕與資源缺乏、不良童年經驗（ACE）與後續心理健康、經濟困難導致的風險行為（槍械獲取）、醫療照護者在高壓環境下的創傷應激，以及慢性疾病併發心理障礙的惡性循環。這些主題間接反映貧窮如何透過壓力暴露、資源匱乏與系統性不平等，嵌入個人與群體的健康軌跡。臨床應用價值方面，政策導向與社會介入研究（如Paper 2、4）具較高潛力，而基礎機制研究尚缺乏。整體而言，雖無直接論述貧窮的生物嵌入過程，但提供了理解貧窮如何透過心理社會途徑影響健康的重要實證，為未來整合生物心理社會模式的研究鋪路。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">4 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:25%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">4 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42836799" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Adolesc Health</span>
+      <span class="paper-date">2026 Oct 6</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20S1054-139X(26)00232-6.%20doi%3A%2010.1016%2Fj.jadohealth.2026.06.011" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Unmet and Overlooked Needs of Pregnant Adolescents and Young Mothers in Zimbabwe: The Mixed-Methods &#39;Kids With Kids&#39; Study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">辛巴巴韋青少年孕產婦及年輕母親的未被滿足與被忽視需求：混合方法『Kids With Kids』研究</p>
+    <p class="paper-authors">Ndondo N, Martin K, Dauya E, Vromman M et al.</p>
+    <p class="paper-abstract">本研究利用混合方法探討辛巴巴韋青少年孕產婦與年輕母親的生活經驗與服務需求。透過深度訪談與問卷調查，發現此群體面臨多重未被滿足的需求，包括缺乏產前產後護具、心理社會支援、教育繼續機會與經濟資源，且常遭受社會污名與家庭壓力。許多青少女母親在缺乏成年人支持的情況下獨自承擔照顧責任，導致焦慮、憂鬱與孤立感增加。研究強調現有衛生與社會服務系統未能充分回應此特殊群體之發展與心理需求，建議制定針對青少年母親的整合式服務模式，結合衛生、教育與社會福利資源，以減少貧窮與不平等對其身心健康的長期影響。此研究雖未直接測量生物指標，但揭露了貧窮與性別不平等如何透過壓力經驗影響青少年母心理健康，具重要社會衛生政策啟示。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">辛巴巴韋青少年孕產婦與年輕母親（年齡未明確說明，但聚焦於青少年）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">青少年早孕及母親身份（暴露於資源匱乏、社會污名與照護負擔）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無明確對照組（為描述性混合方法研究）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">未被滿足的需求（產前產後護具、心理支援、教育、經濟資源）、心理症狀（焦慮、憂鬱）、社會壓力與服務缺口</div></div>
+</div>
+    <ul class="findings"><li>青少年孕產婦面臨多重未被滿足的基本需求，尤其在心理社會支援與教育延續方面</li><li>社會污名與家庭壓力加劇其心理困境，導致孤立與情緒困擾增加</li><li>缺乏整合式服務模式使此群體難以同時獲得衛生、教育與經濟支持</li><li>建議發展針對青少年母親的跨部門介入策略以改善長期健康與社會流動性</li></ul>
+    <div class="keywords"><span class="keyword-pill">青少年早孕</span><span class="keyword-pill">心理社會需求</span><span class="keyword-pill">辛巴巴韋</span><span class="keyword-pill">混合方法研究</span><span class="keyword-pill">產後支援</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42832755" style="animation-delay:0.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">JMIR Serious Games</span>
+      <span class="paper-date">2026 Oct 5</span>
+      <a class="paper-doi" href="https://doi.org/10.2196%2F99789" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">The ACE of Hearts Serious Game for Young People With Adverse Childhood Experiences: Experience-Based Co-Design and Agile Development Study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">ACE of Hearts 嚴肅遊戲：針對具有不良童年經驗青少年的體驗式共同設計與敏捷開發研究</p>
+    <p class="paper-authors">Zhu H, Bisal N, Ma M, Sansoy H et al.</p>
+    <p class="paper-abstract">本研究開發並評估名為『ACE of Hearts』的嚴肅遊戲（serious game），旨在透過互動式敘事與情境模擬，幫助曾歷歷不良童年經驗（ACEs）的年輕人處理創傷、建立情緒調節能力與提升復原力。研究採體驗式共同設計（experience-based co-design）方法，邀請目標使用者參與遊戲內容與機制的迭代開發，並結合敏捷開發流程確保介入貼合真實需求。遊戲內容聚焦於壓力辨識、情緒表達、尋求幫助與人際互動技能的練習。初步測試顯示參與者報告較高的參與度與情感共鳴，認為遊戲提供了安全空間來探索困難經驗。儘管尚未進行長期效果追蹤，但此創新介入展現了利用數位工具解決創傷後遺症的潛力，特別適合資源有限或傳統心理服務可及性低的族群。該研究間接呼應貧窮與ACE之關聯，因經濟困難家庭常併發多重ACE暴露，而此類介入可成為減緩貧窮對心理發展負面影響的補償性策略。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">具有不良童年經驗（ACEs）的年輕人（具體年齡未明確，但聚焦於青少年與青年成人）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">參與『ACE of Hearts』嚴肅遊戲的體驗式共同設計與使用過程</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無對照組（為開發與可行性研究）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">使用者參與度、情感共鳴、對遊戲安全性與相關性的主觀評估、開發過程中的使用者反饋整合</div></div>
+</div>
+    <ul class="findings"><li>體驗式共同設計提高了遊戲對目標使用者的相關性與接受度</li><li>參與者報告在遊戲中感受到安全感，願意探索與創傷相關的主題</li><li>嚴肅遊戲形式可有效練習情緒調節與尋求幫助的實用技能</li><li>敏捷開發流程使介入能快速迭代以回應真實使用者需求</li><li>此類數位介入有潛力彌合傳統心理服務在創傷人群中的可及性落差</li></ul>
+    <div class="keywords"><span class="keyword-pill">不良童年經驗 (ACEs)</span><span class="keyword-pill">嚴肅遊戲</span><span class="keyword-pill">共同設計</span><span class="keyword-pill">創傷復原力</span><span class="keyword-pill">數位心理介入</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42836831" style="animation-delay:0.16s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Eval Clin Pract</span>
+      <span class="paper-date">2026 Oct</span>
+      <a class="paper-doi" href="https://doi.org/10.1111%2Fjep.70639" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">The Unseen Burden in Midwifery: Associations Between Workplace Violence, PTSD Symptoms, and Professional Quality of Life.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">護理中的隱形負擔：職場暴力、創傷後壓力症狀與專業生活品質之關聯</p>
+    <p class="paper-authors">Yücel R, Yücel Ş, Alan Dikmen H, Tokgöz Kekeç H</p>
+    <p class="paper-abstract">本橫斷式研究調查產科護理人員（助產士）遭受職場暴力的頻率，並檢視其與創傷後壓力症候群（PTSD）症狀以及專業生活品質（專業自豪感、倦怠與同理心疲勞）之間的關聯。結果顯示，相當比例的助產士報告曾遭受言語威脅、身體侵犯或性騷擾等形式的職場暴力，且暴露程度顯著正相關於PTSD症狀的嚴重程度（如反覆回憶、迴避、過度警覺）。進一步分析發現，PTSD症狀又中介了職場暴力對專業生活品質的負面影響——暴力經驗越多，PTSD症狀越嚴重，導致專業自豪感下降、倦怠增加及同理心減少。研究指出，醫療環境中的職場暴力不僅是個人安全議題，更是影響醫療品質與人力資源永續性的系統性問題。助產士作為母嬰健康前線工作者，其心理創傷若未獲處理，將間接影響產前產後照護品質，尤其對弱勢孕婦（如貧窮或青少年母親）的支持構成風險。此研究揭示了勞動條件與心理健康如何交互影響服務提供能力，具備政策介入的明確切入點。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">產科護理人員（助產士）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">職場暴力暴露（言語、身體、性騷擾等形式）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未暴露或低暴露於職場暴力的助產士</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">PTSD症狀嚴重程度、專業生活品質（專業自豪感、倦怠、同理心疲勞）</div></div>
+</div>
+    <ul class="findings"><li>職場暴力在助產士中普遍存在，顯著增加PTSD症狀風險</li><li>PTSD症狀中介了職場暴力對專業生活品質的負面影響</li><li>暴露於職場暴力越多，專業自豪感下降、倦怠與同理心疲勞越嚴重</li><li>醫療系統必須將職場安全納入人力資源與品質管理核心策略</li><li>保護前線醫護人員心理健康有間接利於弱勢孕產婦的照護品質</li></ul>
+    <div class="keywords"><span class="keyword-pill">職場暴力</span><span class="keyword-pill">創傷後壓力症候群 (PTSD)</span><span class="keyword-pill">助產士</span><span class="keyword-pill">專業生活品質</span><span class="keyword-pill">醫療人力資源</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42302893" style="animation-delay:0.24s">
+    <div class="paper-meta">
+      <span class="paper-journal">Hemodial Int</span>
+      <span class="paper-date">2026 Oct</span>
+      <a class="paper-doi" href="https://doi.org/10.1111%2Fhdi.70102" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Mental Health Disorders in End-Stage Kidney Disease: A Narrative Review of Clinical Considerations for Integrated Management.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">終末期腎病患者的心理健康障礙：整合管理的臨床考量敘述性回顧</p>
+    <p class="paper-authors">Malhotra K, Fangue-Nelon J, Singh G</p>
+    <p class="paper-abstract">本敘述性文獻回顧探討終末期腎病（ESKD）患者中常見的心理健康障礙類型、風險因素與對治療依從性及生活品質的影響。結果顯示，憂鬱症與焦慮症在透析患者中的患病率顯著高於一般人口，約有20-30%符合臨床診斷標準，且常伴隨睡眠障礙、社會退縮與希望感喪失。主要風險因素包括慢性疾病負擔、透析相關生理壓力（如電解質波動、疲勞）、社會經濟困難（如工作喪失、醫療費用負擔）以及社會支持缺乏。心理障礙又進一步負向影響透析依從性、增加住院率與死亡風險，形成惡性循環。文章強調，若未將心理篩選與介入納入常規腎病照護流程，將無法達到真正的整合式管理。建議在透析中心常規執行簡易心理問卷（如PHQ-9、GAD-7），並結合社會工作者與心理諮商師提供即時支援。儘管未直接探討貧窮，但文中多次提及社會經濟壓力為心理健康惡化的關鍵驅動因素，尤其在缺乏醫療保障或社會福利制度不完善的地區，經濟困難與心理 comorbidity 的交互作用更為顯著，提示貧窮作為社會決定因素在慢性疾病中的放大效應。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">終末期腎病（ESKD）患者，特別是接受透析治療者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">終末期腎病及其治療負擔（透析、生活限制、醫療負荷）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無明確對照組（為敘述性文獻回顧）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康障礙（憂鬱、焦慮）患病率、風險因素、對治療依從性與生命預後的影響</div></div>
+</div>
+    <ul class="findings"><li>ESKD患者中憂鬱與焦慮症患病率高達20-30%，遠超過一般人口</li><li>社會經濟困難是心理健康惡化的重要可修改風險因素</li><li>心理障礙負向影響透析依從性，增加住院與死亡風險</li><li>整合心理篩選與支援入常規透析流程是改善預後的關鍵策略</li><li>社會工作者與心理專業人員應成為多專科腎病照護團隊的標準成員</li></ul>
+    <div class="keywords"><span class="keyword-pill">終末期腎病</span><span class="keyword-pill">心理健康</span><span class="keyword-pill">憂鬱症</span><span class="keyword-pill">焦慮症</span><span class="keyword-pill">整合照護</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42836760" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Chaos</span>
+      <span class="paper-date">2026 Oct 1</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20103114.%20doi%3A%2010.1063%2F5.0346479" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">On the role of economic hardship in gun acquisition in the United States.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">經濟困難在美国槍械獲取中的作用</p>
+    <p class="paper-authors">Wang X, Macinko J, Porfiri M, Sipahi R</p>
+    <p class="paper-abstract">此研究利用美國全國性追蹤數據，探討個人或家庭經濟困難（如失業、收入驟降、住房不穩定）與槍械購買或擁有行為之間的關聯。透過多變量迴歸模型控制年齡、性別、種族、地區與既有犯罪紀錄等變數後，結果顯示：經歷經濟困難的個人較未經歷者更有可能在之後的時期內購買槍械，尤其是手槍。此關聯在經歷多次經濟衝擊或長期經濟壓力的人群中更為顯著。研究者提出兩種可能機制：一是經濟困難增加 perceived threat（被感知威脅），導致自我防衛動機上升；二是經濟壓力可能削弱對社會規範與法律的遵從感，尤其在缺乏信任的社區環境中。雖未直接測量暴力事件發生，但作者警語：經濟困難驅動的槍械擁有增加，可能間接提升自殺、家庭暴力或意外射擊風險，尤其在精神健康不佳或生活壓力叠加的個人中。此研究首次以縱向設計實證支持『經濟壓力作為槍械獲取的社會決定因素』的假說，為理解美國槍支暴力的根源提供了新視角。其政策意涵明確：減少經濟不穩定（如強化失業保障、擴大負擔得起住房）或許是預防槍械相關傷害的間接但有效策略，比純粹聚焦於槍械管制更能從根源解決問題。此發現對貧窮印記研究具有啟示：經濟應激不僅影響身心健康，亦可能透過行為選擇（如武裝自己）重塑個人風險暴露軌跡。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國成年人（具體來源為全國性追蹤調查，如PSID或類似數據）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">經濟困難暴露（失業、收入下降、住房不穩定等）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未經歷顯著經濟困難的個人</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">槍械購買或擁有行為（尤其手槍），隨時間的變化</div></div>
+</div>
+    <ul class="findings"><li>經濟困難顯著增加後續槍械購買可能性，尤其手槍</li><li>此關聯在經歷重複或長期經濟壓力時更為強顯</li><li>機制可能涉及被感知威脅增加與社會規範遵從度下降</li><li>經濟政策（如收入支持、住房保障）可能是減少槍械擁有的預防性介入點</li><li>此發現揭示貧窮如何透過改變風險行為而間接影響安全與健康軌跡</li></ul>
+    <div class="keywords"><span class="keyword-pill">經濟困難</span><span class="keyword-pill">槍械獲取</span><span class="keyword-pill">美國</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">槍支暴力預防</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by NVIDIA Nemotron</p>
+  </footer>
+</div>
+</body>
+</html>
