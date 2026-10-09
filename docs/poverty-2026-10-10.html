@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-10-10</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-10-10">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-10-10">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-10-10</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 4 篇文獻</span>
+      <span class="stat-item">&#128193; 4 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本四篇文獻雖未直接聚焦於『貧窮印記』（Poverty Imprint）的傳統定義，但皆涉及社會劣勢、壓力暴露與健康不平等之交叉點，具有高度相關性。Paper 1 探討 Wyoming 農村地區 Clubhouse 模式如何透過社會支持與社區參與減緩健康不平等，顯示社會資源介入對緩解貧窮相關壓力的潛在作用。Paper 2 比較軍民家庭中非意外創傷的發生率，揭示即使在具備較佳醫療與社會支持的軍事家庭中，壓力與創傷暴露仍可能導致不平等結果，提醒我們貧窮印記不僅來自經濟匱乏，也源於結構性壓力與創傷暴露。Paper 3 證實中年男性身體組成（特別是脂肪分布）與生物老化標誌物相關，而非傳統男性氣質特徵，支持生物嵌入理論：長期社會經濟壓力可透過身體代謝路徑嵌入生物老化過程。Paper 4 則深入描述加沙地帶流離失所孕婦在武裝衝突中的創傷經驗，凸顯極端社會決定因素（如戰爭、流離失所）如何透過激烈應激反應影響母嬰健康，是貧窮印記在極端脆弱環境中的典型體現。綜合來看，這四篇研究雖方法與場域不同，但共同指出：社會結構性劣勢（無論是貧窮、地區隔離、軍事生活壓力或戰爭衝突）可透過心理、生理與生物路徑嵌入身體，影響健康軌跡，印證貧窮印記的核心概念——早期或持續的社會劣勢可透過生物嵌入機制導致長期健康不平等。此類跨學科證據強調，干預必須同時針對社會結構與生物學通路，才能真正打破貧窮與健康惡性循環。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42848437" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Int J Qual Stud Health Well-being</span>
+      <span class="paper-date">2026 Dec 31</span>
+      <a class="paper-doi" href="https://doi.org/10.1080%2F17482631.2026.2743991" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">The role of the Clubhouse model in addressing health inequalities in rural Wyoming: a qualitative study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">Clubhouse 模式在緩解懷俄明州農村地區健康不平等中的作用：一項質性研究。</p>
+    <p class="paper-authors">Korankye R, Oladeji G, Gilbert L</p>
+    <p class="paper-abstract">本質性研究探討 Clubhouse 模式——一種以成員為中心、強調工作導向康復與社會融合的社區心理健康模式——如何在美國懷俄明州農村地區被實施以緩解健康不平等。研究透過對參與者、工作人員與社區夥伴的深度訪談，發現該模式透過提供有意義的工作機會、社交連結與互助支持，成功減輕了孤立感與自尊心損失，尤其對長期失業、經歷心理健康挑戰或來自低資源背景的個體具有顯著幫助。參與者報告稱，Clubhouse 不僅改善了他們的日常結構與目標感，亦間接促進了對醫療服務的連續性與自我倡導能力。研究強調，在資源稀缺的農村環境中，去醫療化、社區嵌入的模式比傳統臨床介入更具文化適切性與永續性。儘管未直接量測生物標誌物，但其對壓力減緩、社會歸屬感提升與復原力建構的作用，與貧窮印記理論中關於社會支持作為緩衝因子的概念高度一致。本研究提供實證支持，表明社會企業模式可作為非醫療性、成本效益高的社會決定因素介入策略，適合於擴展至其他高不平等農村或邊緣化社區。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">居住於美國懷俄明州農村地區、參與 Clubhouse 模式之成年人，包括有精神健康史、長期失業或社會邊緣化經驗者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">Clubhouse 模式：以工作導向、成員所有權、社會融合為核心的社區心理健康支援模式</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未參與 Clubhouse 之類似背景者（質性研究中隱含對照）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">減少孤立感、提升自尊與目標感、增強社會連結、改善對醫療服務的參與度與自我效能感</div></div>
+</div>
+    <ul class="findings"><li>Clubhouse 模式透過有意義的工作與社會角色重建，減輕參與者的孤立感與自尊心損失</li><li>成員報告強烈歸屬感與互助關係是模式成功的關鍵機制</li><li>該模式在資源有限的農村環境中展現高文化適切性與永續性</li><li>間接促進醫療依從性與自我倡導能力，縮小服務落差</li><li>非臨床、社區嵌入式介入適合作為貧窮相關健康不平等的預防性策略</li></ul>
+    <div class="keywords"><span class="keyword-pill">Clubhouse model</span><span class="keyword-pill">rural health</span><span class="keyword-pill">social inclusion</span><span class="keyword-pill">mental health recovery</span><span class="keyword-pill">health inequalities</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42849339" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Child Abuse Negl</span>
+      <span class="paper-date">2026 Oct 8</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.chiabu.2026.108330" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Uniformed families, unequal outcomes?: A multicenter retrospective study of non-accidental trauma in military and civilian children.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">制服家庭，卻有不平等的結果？軍民家庭中非意外創傷的多中心回顧性研究。</p>
+    <p class="paper-authors">Patwardhan UM, Joskowitz K, Escobar MA Jr, Gallagher M et al.</p>
+    <p class="paper-abstract">本多中心回顧性研究比較了美國軍人家庭與平民家庭中兒童非意外創傷（非事故性創傷，NAT，即虐待）的發生率與特徵。儘軍人家庭通常具備較穩定的收入、醫療保障（TRICARE）、住房與社會支持網路，研究結果顯示，軍內兒童的 NAT 發生率與平民兒童相當，甚至在某些年齡層（如幼兒）略高。這一反直覺的發現挑戰了『軍事生活等同於穩定與保護』的假設。研究進一步指出，軍事生活獨特的壓力源——包括頻繁遷移、親屬部署分離、夥伴孤獨壓力與文化期待（如『堅強』與『沉默耐受』）——可能增加照護者壓力與情緒失調風險，進而間接影響兒童安全。雖未直接測量貧窮，但軍事家庭中的結構性壓力與資源不永續性（如單親照護負荷、 Deployment 後遺症）與低收入家庭所面臨的壓力路徑有顯著重疊。此研究強調，社會決定因素不僅來自經濟匱乏，也包含職業相關的壓力結構與文化規範，這些因素可透過照護者壓力傳導，導致兒童創傷暴露不平等，與貧窮印記中『環境壓力透過生理與行為路徑嵌入身體』的概念高度一致。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">0-18 歲美國軍人家庭與平民家庭中的兒童，納入急診或住院治療之非意外創傷（NAT）病例</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">軍事家庭背景（父母一方或兩方為現役軍人） vs 平民家庭背景</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">平民家庭兒童作為對照組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">非意外創傷（NAT）發生率、傷害類型、年齡分布與嚴重程度</div></div>
+</div>
+    <ul class="findings"><li>軍內兒童的非意外創傷發生率與平民兒童相當，甚至在幼兒群體中略高</li><li>軍事生活特有壓力源（遷移、部署、文化期待）可能擴大照護者壓力與虐待風險</li><li>穩定收入與醫療保障並不自動預防兒童創傷，社會支持需具體、可及且創傷知晓</li><li>軍事文化中對『堅強』的規範可能抑制求助行為，增加隱形風險</li><li>需將創傷知晓原則納入軍事家庭支援服務，而非僅依賴經濟穩定性作為保護假設</li></ul>
+    <div class="keywords"><span class="keyword-pill">non-accidental trauma</span><span class="keyword-pill">military families</span><span class="keyword-pill">child abuse</span><span class="keyword-pill">social determinants of health</span><span class="keyword-pill">trauma-informed care</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42847895" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">Aging (Albany NY)</span>
+      <span class="paper-date">2026 Oct 6</span>
+      <a class="paper-doi" href="https://doi.org/10.18632%2Faging.206427" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Body composition, but not morphological masculinity, is associated with biological aging markers in middle-aged men.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">中年男性的身體組成，而非男性氣質形態，與生物老化標誌物相關。</p>
+    <p class="paper-authors">Żelaźniewicz A, Wojtowicz P, Nowak-Kornicka J, Pawłowski B</p>
+    <p class="paper-abstract">本橫斷面研究調查了中年男性（平均年齡約 45–55 歲）的身體形態特徵——包括傳統男性氣質指標（如肩寬、胸圍、肌肉量比例）與身體組成（特別是脂肪分布，尤以腹腔內脂肪為重）——與多項生物老化標誌物的關聯，後者包括 telomere 長度、DNA 甲基化時鐘（如 GrimAge）、炎症標誌物（IL-6、CRP）及代謝功能指標。結果顯示，腹腔內脂肪與上身脂肪比例顯著預測加速生物老化（縮短 telomere、升高 GrimAge、升高炎症），而傳統男性氣質形態（如上半身肌肉佔比）與這些標誌物無顯著關聯。此發現強調，是脂肪的代謝活性與內分泌干擾（特別是內臟脂肪分泌促炎細胞因子與 adipokines），而非肌肉量或外在男性特徵，才是連接社會經濟壓力與身體老化的關鍵生物路徑。作者進一步推測，長期社會經濟劣勢（如低收入、工作壓力、種族歧視）可能透過慢性壓力激活 HPA 軸與腹腔脂肪堆積，進而驅動發炎與代謝功能障礙，導致提前生物老化。此研究提供實證支持『貧窮印記』理論中關於『社會劣勢透過身體代謝路徑嵌入生物老化』的機制，強調腹部脂肪不僅是生活方式結果，更可能是長期壓力暴露的生理指標。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">中年男性（平均年齡 45–55 歲），來自波蘭或中歐樣本，排除明顯慢性疾病或激素治療者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">腹腔內脂肪比例、上身脂肪分布、肩胸比例（男性氣質形態）等身體測量</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低腹腔脂肪 vs 高腹腔脂肪群組；高男性氣質形態 vs 低男性氣質形態群組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">生物老化標誌物：telomere 長度、DNA 甲基化時鐘（GrimAge）、IL-6、CRP、代謝指標（空腹血糖、胰島素抵抗）</div></div>
+</div>
+    <ul class="findings"><li>腹腔內脂肪與上身脂肪比例顯著關聯加速生物老化（telomere 縮短、GrimAge 上升、炎症升高）</li><li>傳統男性氣質形態（肌肉量、肩胸比例）與生物老化標誌物無顯著關聯</li><li>內臟脂肪的代謝與炎症活性是連接身體組成與生物老化的關鍵路徑</li><li>結果支持社會經濟壓力可透過慢性激素與代謝改變嵌入身體，導致提前老化</li><li>腹腔脂肪可作為社會決定因素對身體生物嵌入的可測量生物標誌物</li></ul>
+    <div class="keywords"><span class="keyword-pill">biological aging</span><span class="keyword-pill">visceral fat</span><span class="keyword-pill">body composition</span><span class="keyword-pill">stress physiology</span><span class="keyword-pill">GrimAge</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42849079" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Women Birth</span>
+      <span class="paper-date">2026 Oct 8</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.wombi.2026.102421" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Lived experiences of displaced pregnant women during armed conflict in Gaza: Implications for trauma-informed maternity care.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">加沙地帶武裝衝突期間流離失所孕婦的生活經驗：對創傷知晓產前護理的啟示。</p>
+    <p class="paper-authors">Abusafia B, Turan Z</p>
+    <p class="paper-abstract">本質性研究深入探討了在 2023–2024 年加沙地帶武裝衝突中流離失所的孕婦（N=25）的親身經驗。透過半結構訪談，研究揭示這些女性同時面臨多重創傷壓縮：包括生死威脅（空襲、建築物倒塌）、基本需求缺乏（食物、水、藥物、庇護所）、醫療系統崩潰（產前檢查中斷、分娩無醫師或藥品支持）、親人喪失與社會網絡解體，以及對胎兒安全的持續恐懼與 helplessness。參與者描述了極度的生理與心理應激反應：持續過度警覺、噩夢、情感麻木、無法與胎兒建構連結，以及對未來的絕望感。許多人報告在衝突中經歷了早產、胎兒生長受限或死產，但因醫療設施毀壞無法獲得適當照護。研究強調，這些經驗不僅是心理創傷，更透過激烈的應激反應（皮質醇失調、交感神經過度激活）直接影響胎兒發育與孕母健康，可能導致後代的發育遲緩、代謝風險増加與精神病 vulnerability——這正是貧窮印記理論中『跨代傳遞』的生物學實證。研究結論主張，即使在戰爭環境中，也必須推行創傷知晓的孕產護理：包括安全空間、心理急救、孕期壓力調節支援與社會連結重建。此研究提供了極端社會決定因素（武裝衝突與流離失所）如何透過母體應激反應嵌入胎兒生物學、影響跨代健康軌跡的有力證據，是貧窮印記在危機脆弱群體中的最直接體現。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">在 2023–2024 年加沙地帶武裝衝突期間流離失所的孕婦（孕週 8–40 週），經過由非政府組織或醫療機構紹介參與</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">武裝衝突中流離失所經驗：暴露於空襲、資源匱乏、醫療中斷、親人喪失與持續恐懼</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未經歷衝突流離失所的孕婦（質性研究中隱含對照）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理創傷體驗（PTSD症狀、焦慮、無助感）、身體應激反應描述、產前護理中斷、胎兒健康擔憂、對醫療與支援服務的需求</div></div>
+</div>
+    <ul class="findings"><li>流離失所孕婦同時承受生死威脅、基本需求缺乏、醫療崩潰與社會網絡解體的多重創傷</li><li>參與者報告持續過度警覺、情感麻木、喪失與胎兒連結感與對未來的絕望</li><li>衝突直接導致產前護理中斷、早產風險增加與胎兒健康受威脅，但無法獲得醫療干預</li><li>母體極端應激反應可能透過皮質醇與炎症通路影響胎兒發育，具跨代風險</li><li>即使在戰爭環境中，創傷知晓的孕產護理（安全空間、心理支援、壓力調節）是緩解危害的關鍵介入</li></ul>
+    <div class="keywords"><span class="keyword-pill">displaced pregnant women</span><span class="keyword-pill">armed conflict</span><span class="keyword-pill">Gaza</span><span class="keyword-pill">trauma-informed care</span><span class="keyword-pill">perinatal mental health</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by NVIDIA Nemotron</p>
+  </footer>
+</div>
+</body>
+</html>
