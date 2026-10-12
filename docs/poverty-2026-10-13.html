@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-10-13</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-10-13">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-10-13">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-10-13</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 5 篇文獻</span>
+      <span class="stat-item">&#128193; 2 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>本四篇文獻雖未直接探討「貧窮印記」的核心概念，但均涉及壓力、健康與社會環境之間的關聯，為理解貧窮如何透過生物與心理機制嵌入個體提供間接支持。Paper 1 探討監獄工作人員的職業壓力與健康，反映高壓工作環境對身心健康的影響；Paper 2 檢視腎上腺皮質醇分泌異常與精神疾病的關聯，提供壓力生理機制的實證；Paper 3 分析年輕成人在整合式健康計畫中的醫療利用模式，間接反應可及性與需求的社會決定因素；Paper 4 則聚焦青少年對槍擊暴露的擔憂與其心理健康關聯，顯示社區暴露風險如何透過心理壓力路徑影響發展中的個體。雖無直接針對貧窮或低SES族群的研究，但這些主題均與貧窮印記理論中關於慢性壓力、神經內分泌失調、社會環境毒性壓力及其對身心健康之長遠影響高度相關。綜合來看，這些研究雖臨床應用價值較為分散，但集體上強調了社會結構性壓力源（如工作環境、社區暴露、醫療可及性）如何透過生物心理路徑塑造健康軌跡，為貧窮印記的多層次機制提供補充證據。未來研究應更明確聚焦低SES族群，並整合表觀遺傳、神經影像與長期追蹤，以驗證貧窮如何在生物層面留下持久印記。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">生物嵌入與壓力生理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:67%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">3 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">生物嵌入與壓力生理 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42334287" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Int J Prison Health (2024)</span>
+      <span class="paper-date">2026 Oct 13</span>
+      <a class="paper-doi" href="https://doi.org/10.1108%2FIJOPH-01-2026-0009" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Correctional-staff wellness in a statewide jail system: health appraisals, occupational strain and priorities for organizational support.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">全州監獄系統矯正人員健康狀況：健康評估、職業壓力與組織支援優先事項</p>
+    <p class="paper-authors">Smith HP, Ferdik F, Fix RL</p>
+    <p class="paper-abstract">本研究調查美國某州全州監獄系統中矯正人員的健康狀況、職業壓力來源及其對組織支援的需求。透過問卷調查與健康評估，研究發現矯正人員普遍經歷高水準的職業壓力，包含創傷暴露、班制輪替、危險工作環境及缺乏足夠的社會支持。這些壓力因素顯著相關於較差的自我評估健康、較高的憂鬱與焦慮症狀，以及較低的工作滿意度。參與者強調需要更多的心理健康資源、創傷知識訓練以及改善工作與生活平衡的組織政策。研究結論指出，監獄工作環境構成一種持續的壓力源，若缺乏系統性介入，將導致員工身心健康長期惡化，進而影響監獄運營與再犯風險。此研究雖未聚焦貧窮族群，但揭示高壓、低資源工作環境如何透過慢性壓力激發身體與心理的負面反應，為理解職業壓力的生物嵌入機制提供間接證據。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國全州監獄系統中的矯正工作人員</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">監獄工作環境所帶來的職業壓力（包括創傷暴露、班制、危險條件）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未明確對照組，為橫斷式描述性研究</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">健康自我評估、憂鬱焦慮症狀、工作滿意度及組織支援需求</div></div>
+</div>
+    <ul class="findings"><li>矯正人員經歷高水準職業壓力與創傷暴露</li><li>職業壓力顯著相關於較差的自我評估健康與較高的憂鬱焦慮症狀</li><li>參與者強烈需求增加心理健康資源與創傷知識訓練</li><li>組織層面的支援被視為緩解職業壓力的關鍵因素</li></ul>
+    <div class="keywords"><span class="keyword-pill">職業壓力</span><span class="keyword-pill">矯正工作人員</span><span class="keyword-pill">創傷暴露</span><span class="keyword-pill">心理健康</span><span class="keyword-pill">組織支援</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42861547" style="animation-delay:0.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Clin Endocrinol Metab</span>
+      <span class="paper-date">2026 Oct 12</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20dgag419.%20doi%3A%2010.1210%2Fclinem%2Fdgag419" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Mild Autonomous Cortisol Secretion and Psychiatric Morbidity in Patients With Adrenal Tumors: A Cohort Study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">腎上腺腫瘤患者輕度自主性皮質醇分泌與精神疾病 morbidity 的關聯：隊列研究</p>
+    <p class="paper-authors">Mirzaei H, Lindh JD, Falhammar A, Schaafsma M et al.</p>
+    <p class="paper-abstract">本隊列研究探討腎上腺腫瘤患者中輕度自主性皮質醇分泌（MACS）與精神疾病 comorbidity 的關聯。研究納入具有腎上腺腫瘤的患者，透過深夜唾液皮質醇測定或低劑量地塞米松抑制測試鑑定MACS，並評估其憂鬱、焦慮及其他精神疾病的患病率。結果顯示，具有MACS的患者較非MACS患者有顯著較高的憂鬱症（約2.3倍風險）和焦慮症患病率。即使在控制年齡、性別、腫瘤大小及併發症後，此關聯仍具統計顯著性。研究推論，即使是輕度的皮質醇分泌失調，也足以透過調節神經內分泌系統（尤其是HPA軸）影響腦部功能與情緒調節，進而增加精神疾病風險。此發現支持慢性低階升高的皮質醇（類似於慢性壓力下觀察到的生理狀態）可能促成精神病理的機制。雖研究對象為腫瘤患者而非一般人群或貧窮族群，但其證明了輕微的內分泌擾動如何透過生物途徑影響心理健康，為貧窮印記中壓力生理嵌入的假設提供類比證據。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">被診斷為腎上腺腫瘤的成人患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">輕度自主性皮質醇分泌（MACS）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無MACS的腎上腺腫瘤患者</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">憂鬱症、焦慮症及其他精神疾病的合併發生率</div></div>
+</div>
+    <ul class="findings"><li>MACS患者憂鬱症風險約增加2.3倍</li><li>MACS與焦慮症顯著正相關</li><li>在控制混雜變數後關聯仍具統計顯著性</li><li>即使是輕度皮質醇分泌異常也可能影響精神健康</li></ul>
+    <div class="keywords"><span class="keyword-pill">皮質醇</span><span class="keyword-pill">腎上腺腫瘤</span><span class="keyword-pill">憂鬱症</span><span class="keyword-pill">焦慮症</span><span class="keyword-pill">HPA軸</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">3 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42860264" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Pediatrics</span>
+      <span class="paper-date">2026 Oct 12</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20e2025074683.%20doi%3A%2010.1542%2Fpeds.2025-074683" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Adolescent Worry About Experiencing Firearm Violence and Its Association With Mental Health.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">青少年擔心經歷槍擊暴力及其與心理健康的關聯</p>
+    <p class="paper-authors">Hindmarch GM, Meza JI, Lopez R Jr, Padilla-Frausto DI et al.</p>
+    <p class="paper-abstract">本研究利用美國國家代表性調查資料，探討青少年對未來可能遭遇槍擊暴力的擔憂程度與其心理健康狀況之間的關聯。研究對象為12至17歲的青少年，透過自填問卷評估其對槍擊事件的擔憂頻率（「從不」到「幾乎每天」），並測量憂鬱症狀（PHQ-8）、焦慮症狀（GAD-7）及自殺思想。結果顯示，經常擔心槍擊暴力的青少年顯著較不擔心者具有較高的憂鬱（OR=2.1）、焦慮（OR=1.9）及自殺思想風險（OR=2.5）。此關聯在控制種族、經濟地位、城市化程度及先前創傷暴露後仍存在。研究進一步發現，該擔憂對心理健康的影響在黑人和拉丁裔青少年中更為顯著，提示社會結構性不平等可能加劇種族少數群體在高暴力社區中的心理負擔。作者結論指出，對槍擊暴力的預期性恐懼本身即為一種慢性壓力源，即使未實際暴露，也能透過激活威脅偵測系統與調節情緒處理的神經通路，導致長期的心理健康損害。此研究強調社區暴露風險（即使是感知風險）如何透過心理路徑成為社會決定因素對青少年發展的毒性影響，與貧窮印記理論中關於社區危害與壓力生理嵌入的概念高度一致。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國12至17歲的青少年</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">對未來經歷槍擊暴力的擔憂頻率</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">擔憂程度低或無擔憂的青少年</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">憂鬱症狀、焦慮症狀及自殺思想的存在與嚴重程度</div></div>
+</div>
+    <ul class="findings"><li>經常擔心槍擊暴力青少年憂鬱風險增加2.1倍</li><li>焦慮風險增加1.9倍，自殺思想風險增加2.5倍</li><li>關聯在控制人口統計及先前創傷後仍具顯著性</li><li>黑人和拉丁裔青少年該關聯更為顯著</li></ul>
+    
+  </div>
+  <div class="paper-card" data-pmid="42860847" style="animation-delay:0.48s">
+    <div class="paper-meta">
+      <span class="paper-journal">Perm J</span>
+      <span class="paper-date">2026 Oct 12</span>
+      <a class="paper-doi" href="https://doi.org/10.7812%2FTPP%2F25.243" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Health Care Use Among Recently Enrolled Young Adults in an Integrated Health Plan.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">最近加入整合式健康計畫的年輕成人醫療服務使用模式</p>
+    <p class="paper-authors">Eaton A, Prausnitz SR, Tran HN</p>
+    <p class="paper-abstract">本研究考察美國某大型整合式健康計畫中新近註冊的18至26歲年輕成人（n≈10,000）在首次註冊後6個月內的醫療服務使用模式。研究分析門診、急診、住院及預防保健服務的使用率，並按性別、種族、地理區域及既有健康狀況進行分層。結果顯示，約60%的年輕成人在註冊後至少使用一次門診服務，但預防保健（如疫苗接種、身體檢查）使用率僅為35%。女性使用率顯著高於男性，尤其在生殖健康與心理健康服務方面。來自低收入地區或種族少數群體的年輕成人，儘管需求可能較高，但其預防性服務使用率顯著較低，提示可及性或文化適適性障礙的存在。研究未發現急診使用率有顯著差異，但住院率在有慢性病史的亞組中較高。作者討論指出，即使在普及醫療保障的框架下，年輕成人仍面臨服務使用上的不平等，這些差異可能反映出更深層的社會決定因素，如健康素養、系統導覽能力或對醫療系統的信任缺乏。此研究雖未直接測量貧窮或壓力生理，但揭示了醫療系統如何透過結構性障礙影響弱勢群體的預防性照護，間接關係到長期健康軌跡的形成，為貧窮印記中「資源匱乏導致健康惡化」的途徑提供系統層面的證據。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">美國新近註冊於整合式健康計畫的18至26歲年輕成人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">參與整合式健康計畫（提供全面醫療保障）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未參與此計畫的年輕成人（內部比較：高 vs 低使用者）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">門診、急診、住院及預防保健服務的使用率及模式</div></div>
+</div>
+    <ul class="findings"><li>約60%年輕成人使用門診服務，但預防保健僅35%</li><li>女性使用心理健康與生殖健康服務顯著高於男性</li><li>低收入及少數族群青少年預防服務使用率顯著較低</li><li>即使在普及保障下，預防服務使用仍存在結構性不平等</li></ul>
+    
+  </div>
+  <div class="paper-card" data-pmid="undefined" style="animation-delay:0.56s">
+    <div class="paper-meta">
+      <span class="paper-journal"></span>
+      <span class="paper-date"></span>
+      
+      <span class="badge badge-low">臨床價值：低</span>
+    </div>
+    <h3 class="paper-title"></h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem"></p>
+    
+    
+    
+    
+    <div class="keywords"><span class="keyword-pill">醫療可及性</span><span class="keyword-pill">預防保健</span><span class="keyword-pill">年輕成人</span><span class="keyword-pill">健康不平等</span><span class="keyword-pill">整合式健康計畫</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by NVIDIA Nemotron</p>
+  </footer>
+</div>
+</body>
+</html>
