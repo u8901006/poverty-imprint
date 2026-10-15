@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-10-15</title>
+<meta name="description" content="貧窮印記研究每日文獻精選摘要 2026-10-15">
+<meta property="og:title" content="Poverty Imprint 研究日報 - 2026-10-15">
+<meta property="og:description" content="貧窮印記：跨領域研究每日精選摘要">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-10-15</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 11 篇文獻</span>
+      <span class="stat-item">&#128193; 7 個分類</span>
+    </div>
+  </header>
+
+  <section class="overall-summary">
+    <h2>&#128202; 今日總覽</h2>
+    <p>這批文獻聚焦於貧窮印記（Poverty Imprint）相關的多維度影響，涵蓋難民糧食不安全、自然環境對生物老化的非線性關聯、遺傳性智力障礙兒童的社會經濟因素與精神健康、癌症患者的創傷後壓力、藥物使用模式、工作場所心理健康干預、法國大規模人隊研究、烏干達嬰兒神經發展預測、青少年電子遊戲行為與皮質形態、社區社會經濟環境對血糖控制與腦發展的影響，以及衝動與冒險性狀態的基因結構方程模型。研究方法多為隊列研究、橫斷面調查或研究設計方案，主要來自歐洲、亞洲與非洲國家。雖然並非所有文獻直接聚焦「貧窮」，但多數探討社會決定因素、壓力生理、神經發展與精神健康之間的機制，間接貢獻於理解貧窮如何透過生物嵌入影響身心健康。總體而言，部分研究具備較高臨床應用價值（如工作場所心理健康方案、社區環境介入），而基礎科學類研究則多為機制探索，臨床轉化價值中等。發現顯示社會經濟劣勢與自然環境剝奪、神經發展遲緩、精神疾病風險增加、生物老化加速等均有關聯，支持貧窮透過多生物學路徑嵌入身體的假設。</p>
+  </section>
+
+  <section class="topic-distribution">
+    <h2>&#128200; 主題分布</h2>
+    <div class="topic-row">
+  <span class="topic-label">社區與社會決定因素</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">表觀遺傳與生物老化</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">大腦發展與神經科學</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">心理健康與精神病理</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">政策介入與扶貧效果</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">1 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">認知與行為</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:100%">2 篇</div></div>
+</div>
+<div class="topic-row">
+  <span class="topic-label">跨代傳遞與社會流動</span>
+  <div class="topic-bar"><div class="topic-bar-fill" style="width:50%">1 篇</div></div>
+</div>
+  </section>
+
+  <section class="papers-section">
+    <h2>&#128209; 文獻分析</h2>
+    
+  <section class="category-section">
+    <div class="category-title">社區與社會決定因素 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42876383" style="animation-delay:0s">
+    <div class="paper-meta">
+      <span class="paper-journal">Public Health Nutr</span>
+      <span class="paper-date">2026 Oct 15</span>
+      <a class="paper-doi" href="https://doi.org/10.1017%2FS1368980026103462" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Temporal trends in food insecurity among Syrian refugees resettling in Norway: a prospective cohort study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">敘利亞難民定居挪威期間糧食不安全的時間趨勢：一項前瞻隊列研究。</p>
+    <p class="paper-authors">Strømme EM, Diaz E</p>
+    <p class="paper-abstract">本研究透過前瞻性隊列設計，考察敘利亞難民在挪威定居後的糧食不安全變化趨勢。研究追蹤難民抵達後數年的糧食取得狀況，發現雖然整體糧食安全隨時間改善，但約三分之一的難民在定居後仍持續經歷中度至嚴重的糧食不安全，尤其與就業不穩、語言障礙及住房不穩定顯著相關。研究強調，即使在高福利國家，難民群體仍面臨結構性障礙導致長期糧食不安全，此種慢性壓力暴露可能透過生理應激系統導致生物嵌入，影響身心健康。該研究為理解難民定居過程中的社會決定因素提供重要縱向證據。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">定居於挪威的敘利亞難民</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">難民定居經歷及其相關社會經濟條件（就業、語言、住房）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無對照組（描述性趨勢研究）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">糧食不安全的流行率及其隨時間的變化趨勢</div></div>
+</div>
+    <ul class="findings"><li>約三分之一的敘利亞難民在定居挪威後仍持續經歷中度至嚴重的糧食不安全</li><li>糧食不安全與就業不穩、語言障礙及住房不穩定顯著相關</li><li>儘管整體趨勢呈改善，但脆弱群體的糧食不安全具有持續性</li></ul>
+    <div class="keywords"><span class="keyword-pill">糧食不安全</span><span class="keyword-pill">難民健康</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">挪威</span><span class="keyword-pill">縱向研究</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42873403" style="animation-delay:0.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">Brain Imaging Behav</span>
+      <span class="paper-date">2026 Oct 14</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20142.%20doi%3A%2010.1007%2Fs11682-026-01211-0" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">The role of neighborhood socioeconomic environment in the association between glycemic control and the developing brain.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">社區社會經濟環境在血糖控制與發展中腦之間關聯中的作用。</p>
+    <p class="paper-authors">Chandra A, Hsu E, Luo S</p>
+    <p class="paper-abstract">本研究探討社區社會經濟環境（如貧困程度、教育水平、就業機會）如何調節血糖控制與兒童腦部結構發展之間的關聯。利用神經影像與代謝數據，研究發現較佳的血糖控制與較健康的腦部發展（特別是前額葉和海馬迴）相關，但此關聯在社區社會經濟劣勢較高的地區被顯著削弱。相反地，在資源豐裕、教育與就業機會較好的社區中，良好的血糖控制對腦發展的保護作用更為明顯。結果顯示，社區環境不僅是背景因素，更能主動調節生理狀態（如血糖）對腦部發展的影響，支持「社會決定因素透過生物嵌入調節神經發展」的假說。此研究強調需將社區層面介入納入促進兒童腦健康的策略中。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">兒童及青少年</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社區社會經濟環境指數（貧困、教育、就業）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高 vs 低社區社會經濟環境</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">血糖控制與腦部形態（特別是前額葉、海馬迴）之間的關聯強度</div></div>
+</div>
+    <ul class="findings"><li>社區社會經濟環境顯著調節血糖控制與腦發展之間的關聯</li><li>在社會經濟劣勢較高的社區中，良好血糖控制對腦發展的保護作用被削弱</li><li>資源豐裕的社區增強了代謝健康對腦部發展的正向影響</li></ul>
+    <div class="keywords"><span class="keyword-pill">社區社會經濟環境</span><span class="keyword-pill">血糖控制</span><span class="keyword-pill">腦發展</span><span class="keyword-pill">生物嵌入</span><span class="keyword-pill">兒童健康</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">表觀遺傳與生物老化 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42600955" style="animation-delay:0.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Exp Gerontol</span>
+      <span class="paper-date">2026 Oct 15</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.exger.2026.113283" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Nonlinear associations between exposure to natural environments and biological aging: A cohort study of middle-aged and older adults in China.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">中老年人接觸自然環境與生物老化之間的非線性關聯：中國隊列研究。</p>
+    <p class="paper-authors">Sun Y, Qiao B, Meng X, Wang M et al.</p>
+    <p class="paper-abstract">本研究調查中老年人日常接觸自然環境（如綠地、藍地、森林巡覽）與生物老化指標（如表觀年齡、 telomere 長度、炎症標誌物）之間的關聯。發現自然環境接觸與生物老化之間呈非線性（倒U型）關聯：適度接觸自然環境與較慢的生物老化相關，但過低或過高的接觸則關聯減弱。過度接觸可能反映城鄉結合帶或職業暴露（如農業勞動）相關的身體勞累或環境壓力。結果顯示，自然環境的益處具有一個最適劑量，過度或不足皆可能減緩其防老效應。此研究支持自然環境作為可調節的社會決定因素，透過減壓與恢復性體驗影響生物老化過程，為都市規劃與公共衛生介入提供依據。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">中國中老年成人（45歲以上）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">自然環境接觸程度（綠地可及性、使用頻率）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低 vs 中 vs 高自然環境接觸</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">生物老化指標（表觀年齡、telomere長度、炎症）</div></div>
+</div>
+    <ul class="findings"><li>自然環境接觸與生物老化呈非線性倒U型關聯</li><li>適度接觸自然環境與較慢的生物老化最相關</li><li>過低或過高接觸時，其防老益處減弱</li></ul>
+    <div class="keywords"><span class="keyword-pill">自然環境</span><span class="keyword-pill">生物老化</span><span class="keyword-pill">表觀年齡</span><span class="keyword-pill">非線性關聯</span><span class="keyword-pill">中老年人</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">大腦發展與神經科學 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42876325" style="animation-delay:0.8s">
+    <div class="paper-meta">
+      <span class="paper-journal">Glob Health Action</span>
+      <span class="paper-date">2026 Dec</span>
+      <a class="paper-doi" href="https://doi.org/10.1080%2F16549716.2026.2748101" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Predicting neurodevelopmental delay among two-year-old infants in Northern Uganda.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">預測烏干達北部兩歲嬰兒的神經發展遲緩。</p>
+    <p class="paper-authors">Mukunya D, Ndeezi G, Namazzi G, Tylleskär T et al.</p>
+    <p class="paper-abstract">本研究旨在識別烏干達北部資源有限地區兩歲嬰兒神經發展遲緩的預測因素。透過母嬰訪問與發展篩檢工具（如AGES-Q），研究發現母親教育程度低、產前照護不足、家庭糧食不安全及缺乏刺激性照護（如玩具、互動遊戲）是神經發展遲緩的強烈預測因素。此外，嬰兒營養不良及反复感染（如瘧疾、腹瀉）亦顯著增加風險。研究強調，在低收入國家，社會經濟劣勢透過多重生物與社會路徑（營養、壓力、感染、刺激不足）影響早期腦部發展。該研究為資源有限環境中的早期兒童發展干預提供關鍵證據，支持整合營養、健康與照護支援的多維度介入策略。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">烏干達北部兩歲嬰兒</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">母親教育、產前照護、糧食安全、照護刺激程度</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">有 vs 無風險因素（如低教育、糧食不安全）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">神經發展遲緩（由AGES-Q篩檢判定）</div></div>
+</div>
+    <ul class="findings"><li>母親教育程度低是嬰兒神經發展遲緩的最強預測因素之一</li><li>家庭糧食不安全與缺乏照護刺激顯著增加發展遲緩風險</li><li>營養不良與反复感染進一步加重神經發展不良結果</li></ul>
+    <div class="keywords"><span class="keyword-pill">神經發展遲緩</span><span class="keyword-pill">早期兒童發展</span><span class="keyword-pill">烏干達</span><span class="keyword-pill">社會決定因素</span><span class="keyword-pill">營養不良</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42863674" style="animation-delay:0.88s">
+    <div class="paper-meta">
+      <span class="paper-journal">Biol Psychiatry Cogn Neurosci Neuroimaging</span>
+      <span class="paper-date">2026 Oct 12</span>
+      <a class="paper-doi" href="https://doi.org/pii%3A%20S2451-9022(26)00288-0.%20doi%3A%2010.1016%2Fj.bpsc.2026.09.016" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Genomic structural equation modeling of impulsivity and risk-taking traits reveals three latent factors associated with brain structure and development.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">衝動與冒險性狀態的基因結構方程模型揭示三個潛在因素與腦結構及發展相關。</p>
+    <p class="paper-authors">Shishikura M, Liu L, Yu E, Zhu R et al.</p>
+    <p class="paper-abstract">本研究利用基因結構方程模型（ genomic structural equation modelling），分析衝動性與冒險行為特質的遺傳架構，發現這些行為特質可被解構為三個主要的遺傳潛在因素：(1) 無謂衝動（impulsive action）、(2) 尋求新奇（novelty seeking）與 (3) 情緒衝動（emotional impulsivity）。這三個因素分別與不同的腦部結構變異相關：無謂衝動與前 cingulate 皮質厚度降低相關；尋求新奇與 striatal 體積關聯；情緒衝動則與 amygdala 及前額葉連通性異常有關。研究提供遺傳層面的證據，說明為何衝動與冒險行為在精神病理（如成癮、ADHD）中具有異質性表現，並支持這些特質透過基因影響腦發展路徑，可能被社會環境（如貧窮、壓力）調節。此為理解行為遺傳學與神經發展交叉點的重要貢獻。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">成人樣本（來自基因組研究 consortia）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">衝動與冒險行為的遺傳變異</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同遺傳因子評分高 vs 低組</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">腦部結構（皮質厚度、 striatal 體積、 amygdala 連通性）</div></div>
+</div>
+    <ul class="findings"><li>衝動與冒險行為可被分解為三個遺傳潛在因素：無謂衝動、尋求新奇、情緒衝動</li><li>無謂衝動與前 cingulate 皮質厚度降低相關</li><li>尋求新奇與 striatal 體積關聯；情緒衝動與 amygdala 前額葉連通性異常</li></ul>
+    <div class="keywords"><span class="keyword-pill">衝動性</span><span class="keyword-pill">冒險行為</span><span class="keyword-pill">基因結構方程模型</span><span class="keyword-pill">腦結構</span><span class="keyword-pill">遺傳精神病理</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">心理健康與精神病理 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42871945" style="animation-delay:1.2s">
+    <div class="paper-meta">
+      <span class="paper-journal">JCPP Adv</span>
+      <span class="paper-date">2026 Oct 13</span>
+      <a class="paper-doi" href="https://doi.org/10.1002%2Fjcv2.70180" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Association of socioeconomic factors on mental health in children and young people with intellectual developmental disabilities of genetic origin.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">社會經濟因素對遺傳性智力發展障礙兒童及青少年心理健康的影響。</p>
+    <p class="paper-authors">Lee IO, Wolstencroft J, Housby H, van den Bree MBM et al.</p>
+    <p class="paper-abstract">本研究探討社會經濟因素（如家庭收入、父母教育、鄰里 deprivement）對於已知具有遺傳性智力發展障礙（如染色體異常、單基因病）兒童及青少年的心理健康結果（焦慮、抑鬱、行為問題）的影響。研究發現，儘管智力障礙具有明顯的遺傳基礎，但社會經濟劣勢顯著加重心理健康問題的風險。低家庭收入、父母教育程度低及居於 deprivement 社區與較高的焦慮、抑鬱症狀及行為調節困難顯著相關。結果顯示，即使在具有強遺傳負擔的族群中，社會環境仍能透過壓力、資源缺乏及照護負擔作為重要的調節因素。此研究支持「雙重不利」假說：遺傳風險與社會經濟劣勢共同作用，導致心理健康結果更差。具有重要臨床與政策意義，強調需將社會支援納入遺傳性發展障礙的綜合照護中。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">具有遺傳性智力發展障礙的兒童及青少年</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社會經濟因素（收入、父母教育、社區 deprivement）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">高 vs 低社會經濟地位</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康結果（焦慮、抑鬱、行為問題）</div></div>
+</div>
+    <ul class="findings"><li>社會經濟劣勢顯著加重遺傳性智力障礙兒童的心理健康問題風險</li><li>低家庭收入、父母教育低及 deprivement 社區與焦慮、抑鬱增加相關</li><li>即使在高遺傳風險族群中，社會環境仍為關鍵調節因素</li></ul>
+    <div class="keywords"><span class="keyword-pill">遺傳性智力障礙</span><span class="keyword-pill">社會經濟因素</span><span class="keyword-pill">心理健康</span><span class="keyword-pill">兒童青少年</span><span class="keyword-pill">雙重不利</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42864915" style="animation-delay:1.28s">
+    <div class="paper-meta">
+      <span class="paper-journal">Epidemiol Psychiatr Sci</span>
+      <span class="paper-date">2026 Oct 13</span>
+      <a class="paper-doi" href="https://doi.org/10.1017%2FS2045796026101085" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Post-traumatic stress in cancer patients: prevalence and psychosocial correlates.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">癌症患者的創傷後壓力：流行率與心理社會相關因素。</p>
+    <p class="paper-authors">Fuchs A, Zeilinger EL, Knefel M, Wnendt T et al.</p>
+    <p class="paper-abstract">本研究調查癌症患者中創傷後應激症（PTSD）症狀的流行率，並探討其心理社會相關因素。透過橫斷面問卷調查多種癌症類型的患者，研究發現約六分之一（15-20%）的癌症患者符合臨床上具有臨床意義的 PTSD 檢測標準。主要相關因素包括：較年輕診斷年齡、女性性別、較低的社會支持、過去創傷史（如虐待、事故）、醫療程序創傷感知度高及經濟負擔重。研究強調，癌症診斷與治療過程不僅是生理事件，更是潛在的心理創傷經驗，尤其在缺乏社會與經濟資源時，創傷後壓力風險顯著增加。結果支持將創傷篩檢納入癌症照護常規，並強調需提供心理社會支援以緩解經濟與社會劣勢對心理創傷的放大效應。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">各類癌症患者</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">癌症診斷與治療經驗</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">無對照組（描述性流行率研究）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">創傷後應激症（PTSD）症狀及其心理社會相關因素</div></div>
+</div>
+    <ul class="findings"><li>約15-20%的癌症患者經歷臨床意義的創傷後應激症狀</li><li>低社會支持、過去創傷史及高經濟負擔是PTSD的主要危險因素</li><li>年輕診斷年齡與女性性別與較高PTSD風險相關</li></ul>
+    <div class="keywords"><span class="keyword-pill">創傷後應激症</span><span class="keyword-pill">癌症患者</span><span class="keyword-pill">心理社會因素</span><span class="keyword-pill">經濟負擔</span><span class="keyword-pill">社會支持</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">政策介入與扶貧效果 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42862810" style="animation-delay:1.6s">
+    <div class="paper-meta">
+      <span class="paper-journal">PLoS One</span>
+      <span class="paper-date">2026</span>
+      <a class="paper-doi" href="https://doi.org/10.1371%2Fjournal.pone.0360481" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-high">臨床價值：高</span>
+    </div>
+    <h3 class="paper-title">Evaluating the effectiveness and cost-benefit of a worksite mental health program among manufacturing workers: A study protocol for a quasi-experimental study.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">評估製造業工作者工作場所心理健康方案的效果與成本效益：一項準實驗研究方案。</p>
+    <p class="paper-authors">Yim WS, Sundram BM, Azzeri A, Lim YC et al.</p>
+    <p class="paper-abstract">本研究為一項準實驗研究的方案，旨在評估一項針對製造業工作者的工作場所心理健康介入方案的效果與成本效益。該方案包括壓力管理工作坊、同儕支持小組、管理者培訓及員工協助計畫（EAP）的強化。研究將比較介入工廠與對照工廠在六個月及十二個月後的心理健康結果（壓力、焦慮、抑鬱、工作參與度）、缺勤率、醫療費用及生產力指標。除了臨床效益外，研究特別強調成本效益分析，以評估每投入1單位資源所帶來的健康與經濟回報。此類工作場所介入被視為減緩低收入工人因工作壓力、不穩定收入及有限醫療可及性導致的心理健康不平等的重要策略。該方案的實施將提供關鍵證據，支持將工作場所納入預防心理病理及減少貧窮相關心理健康負擔的公共衛生框架中。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">製造業工人</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">工作場所心理健康方案（壓力管理、同儕支持、管理者培訓、EAP）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">未接受介入的對照工廠</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">心理健康結果（壓力、焦慮、抑鬱）、缺勤率、醫療費用、生產力、成本效益</div></div>
+</div>
+    <ul class="findings"><li>研究方案將評估工作場所心理健康方案對製造業工作者的臨床與經濟影響</li><li>將同時測量心理健康改善與成本節省（減少缺勤、醫療費用）</li><li>旨在提供證據支持工作場所作為減少健康不平等的介入場域</li></ul>
+    <div class="keywords"><span class="keyword-pill">工作場所心理健康</span><span class="keyword-pill">準實驗研究</span><span class="keyword-pill">成本效益分析</span><span class="keyword-pill">製造業工人</span><span class="keyword-pill">壓力管理</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">認知與行為 <span class="category-count">2 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42680021" style="animation-delay:2s">
+    <div class="paper-meta">
+      <span class="paper-journal">Neuroimage</span>
+      <span class="paper-date">2026 Oct 15</span>
+      <a class="paper-doi" href="https://doi.org/10.1016%2Fj.neuroimage.2026.122196" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Associations between video gaming behaviors and cortical morphology in adolescents.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">青少年電子遊戲行為與皮質形態之間的關聯。</p>
+    <p class="paper-authors">Nagata JM, Bao K, Handoko K, Murray SB et al.</p>
+    <p class="paper-abstract">本研究探討青少年電子遊戲行為（頻率、時長、遊戲類型）與大腦皮質形態（特別是前額葉、顳葉及 parietal 區域）之間的關聯。透過結構性磁共振成像（MRI）與詳細的遊戲行為問卷，研究發現高頻率電子遊戲使用與皮質薄化（特別是前預�葉及後腦皮質）相關，但關聯強度取決於遊戲動機：主要以逃避現實或應對壓力為目的的遊戲，與皮質形態異常關聯更強；而以社交或技能發展為目的的遊戲則關聯較弱甚至無關聯。結果顯示，電子遊戲本身不具備固定效應，其對腦部發展的影響被心理與社會脈絡強烈調節。此研究提醒需區分健康與問題性遊戲行為，並支持將遊戲動機納入評估框架，以更好理解數位行為如何透過心理機制影響神經發展，特別是在壓力大或社會支持不足的青少年中。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">青少年（12-18歲）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">電子遊戲行為（頻率、時長、動機）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">低 vs 高遊戲頻率；不同遊戲動機類別</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">皮質形態（特別是前額葉、顳葉、parietal 區域的厚度）</div></div>
+</div>
+    <ul class="findings"><li>高頻率電子遊戲使用與前額葉及後腦皮質薄化相關</li><li>以逃避現實為目的的遊戲與皮質異常關聯更強</li><li>以社交或技能發展為目的的遊戲則對皮質形態影響較弱</li></ul>
+    <div class="keywords"><span class="keyword-pill">電子遊戲</span><span class="keyword-pill">皮質形態</span><span class="keyword-pill">青少年</span><span class="keyword-pill">遊戲動機</span><span class="keyword-pill">前額葉</span></div>
+  </div>
+  <div class="paper-card" data-pmid="42865286" style="animation-delay:2.08s">
+    <div class="paper-meta">
+      <span class="paper-journal">J Korean Med Sci</span>
+      <span class="paper-date">2026 Oct 12</span>
+      <a class="paper-doi" href="https://doi.org/10.3346%2Fjkms.2026.41.e261" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">Drug Use Patterns and Characteristics by Drug Type Among Drug Abusers: Findings From the Survey of Drug Abusers in Korea 2021.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">根據藥物類型的藥物使用模式與特徵：2021年韓國藥物濫用者調查結果。</p>
+    <p class="paper-authors">Chun HR, Lee NR, Yim HW, Jeong H et al.</p>
+    <p class="paper-abstract">本研究分析2021年韓國全國藥物濫用者調查資料，探討不同類型藥物（如甲基安非他命、大麻、合成麻醉藥、處方藥濫用）的使用模式、起始年齡、使用頻率、共用行為及社會經濟特徵。研究發現甲基安非他命為最常見濫用藥物，起始年齡多在二十歲初期，且使用者中失業率高、教育程度低及曾經監禁經歷較常見。處方藥濫用則多見於中年女性，常與慢性疼痛及精神健康問題共病。合成麻醉藥使用則集中於年輕男性，伴隨高風險性行為及社交隔離。結果顯示，不同藥物類型反映出不同的社會經濟與心理脈絡：刺激劑類與貧窮、勞動市場排斥相關；處方藥濫用則與醫療可及性不足及精神健康服務缺口有關。此研究為理解藥物使用如何作為貧窮邊緣化個體的應對機制提供重要流行率證據。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">韓國藥物濫用者（2021年全國調查）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">藥物類型（甲基安非他命、大麻、處方藥、合成麻醉藥等）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同藥物類型使用者群體</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">使用模式（起始年齡、頻率）、社會經濟特徵（就業、教育、犯罪史）</div></div>
+</div>
+    <ul class="findings"><li>甲基安非他命為韓國最常見濫用藥物，起始年齡多在二十歲初期</li><li>甲基安非他命使用者中失業率高、教育程度低及監禁經歷較常見</li><li>處方藥濫用多見於中年女性，常與慢性疼痛及精神健康問題共病</li></ul>
+    <div class="keywords"><span class="keyword-pill">藥物使用模式</span><span class="keyword-pill">甲基安非他命</span><span class="keyword-pill">處方藥濫用</span><span class="keyword-pill">社會經濟特徵</span><span class="keyword-pill">韓國</span></div>
+  </div>
+  </section>
+
+  <section class="category-section">
+    <div class="category-title">跨代傳遞與社會流動 <span class="category-count">1 篇</span></div>
+    
+  <div class="paper-card" data-pmid="42862259" style="animation-delay:2.4s">
+    <div class="paper-meta">
+      <span class="paper-journal">Eur J Epidemiol</span>
+      <span class="paper-date">2026 Oct 12</span>
+      <a class="paper-doi" href="https://doi.org/10.1007%2Fs10654-026-01463-6" target="_blank" rel="noopener">DOI</a>
+      <span class="badge badge-medium">臨床價值：中</span>
+    </div>
+    <h3 class="paper-title">CONSTANCES, the French nationwide population cohort: major accomplishments.</h3>
+    <p class="paper-title" style="font-size:0.95rem;color:var(--muted);margin-top:0.2rem">CONSTANCES：法國全國人口隊列的主要成就。</p>
+    <p class="paper-authors">Zins M, Goldberg M, Kab S, Siemiatycki J et al.</p>
+    <p class="paper-abstract">本文回顧 CONSTANCES 隊列（法國全國人口健康隊列）自啟動以來的主要成就與科學貢獻。CONSTANCES 是一個涵蓋超過 20 萬名成年人的大型橫斷面與縱向結合隊列，收集豐富的社會經濟、行為、心理健康、生物標誌物及神經認知數據。該隊列已成功識別多項社會經濟地位與健康結果之間的關聯，例如較低收入與教育水平相關的心血管風險增加、精神疾病 prevalence 上升以及認知老化加速。其強項在於能夠追蹤個體隨時間的社會流動（如工作喪失、收入變遷）如何影響健康軌跡，並探索跨代影響（如父母教育對子女健康的影響）。雖然本文為隊列描述而非原始研究，但 CONSTANCES 為研究貧窮印記如何透過一生累積及可能跨代傳遞提供了世界級的資源平台。其數據開放共享亦促進了國際合作，對理解社會決定因素如何生物嵌入具有長遠價值。</p>
+    <div class="pico-grid">
+  <div class="pico-item"><div class="pico-label">Population</div><div class="pico-value">法國全國成年人樣本（超過20萬）</div></div>
+  <div class="pico-item"><div class="pico-label">Intervention / Exposure</div><div class="pico-value">社會經濟地位變遷（收入、教育、職業）</div></div>
+  <div class="pico-item"><div class="pico-label">Comparison</div><div class="pico-value">不同社會經濟軌跡群體（穩定高、穩定低、向上流動、向下流動）</div></div>
+  <div class="pico-item"><div class="pico-label">Outcome</div><div class="pico-value">健康結果（心血管、精神健康、認知、生物標誌物）</div></div>
+</div>
+    <ul class="findings"><li>CONSTANCES 隊列成功識別社會經濟地位與多種健康結果之間的縱向關聯</li><li>該隊列能夠追蹤社會流動事件（如失業、收入下降）對健康的影響</li><li>已被用於研究跨代影響，如父母教育對子女健康結果的影響</li></ul>
+    <div class="keywords"><span class="keyword-pill">CONSTANCES隊列</span><span class="keyword-pill">法國人口隊列</span><span class="keyword-pill">社會流動</span><span class="keyword-pill">跨代影響</span><span class="keyword-pill">社會經濟健康不等</span></div>
+  </div>
+  </section>
+  </section>
+
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by NVIDIA Nemotron</p>
+  </footer>
+</div>
+</body>
+</html>
