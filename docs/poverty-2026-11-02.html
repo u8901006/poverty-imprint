@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-11-02</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-11-02</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 40 篇文獻</span>
+      <span class="stat-item">&#9888; AI 分析暫時無法使用，僅顯示原始摘要</span>
+    </div>
+  </header>
+  <section class="papers-section">
+    <h2>&#128209; 文獻列表</h2>
+    
+    <div class="paper-card" data-pmid="42947948" style="animation-delay:0s">
+      <div class="paper-meta">
+        <span class="paper-journal">Paediatr Child Health</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1093%2Fpch%2Fpxag089" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Garden of Emotions: a humanities-informed approach to mitigating the social determinants of health in at-risk children and youth.</h3>
+      <p class="paper-authors">LeBlanc D, Nagel JM, Fana N, Lunney S et al.</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42908174" style="animation-delay:0.08s">
+      <div class="paper-meta">
+        <span class="paper-journal">J Sch Health</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/pii%3A%20e70266.%20doi%3A%2010.1111%2Fjosh.70266" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Suicidal Ideation and Influencing Factors in Adolescents With Non-Suicidal Self-Injury.</h3>
+      <p class="paper-authors">Huang Y, Luo D, Zhou Y, Yang F et al.</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42900193" style="animation-delay:0.16s">
+      <div class="paper-meta">
+        <span class="paper-journal">Bundesgesundheitsblatt Gesundheitsforschung Gesundheitsschutz</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1007%2Fs00103-026-04312-9" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">[Physical activity and mental health in childhood and adolescence: a summary of the evidence from three national studies].</h3>
+      <p class="paper-authors">Reiß F, Niessner C, Kaman A, Volk C et al.</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42897866" style="animation-delay:0.24s">
+      <div class="paper-meta">
+        <span class="paper-journal">Bipolar Disord</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1111%2Fbdi.70192" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Women With Bipolar Disorder are at Increased Risk of Sarcopenia.</h3>
+      <p class="paper-authors">Williams LJ, Stuart AL, Berk M, Quirk SE et al.</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42894347" style="animation-delay:0.32s">
+      <div class="paper-meta">
+        <span class="paper-journal">Nursing</span>
+        <span class="paper-date">2026 Nov 1</span>
+        <a class="paper-doi" href="https://doi.org/10.1097%2FNSG.0000000000000473" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Implementation of a therapy dog program to support nurse health and well-being across an academic medical center.</h3>
+      <p class="paper-authors">Steinberg B, Justice M</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42874602" style="animation-delay:0.4s">
+      <div class="paper-meta">
+        <span class="paper-journal">Lancet Psychiatry</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2FS2215-0366(26)00275-0" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Long-term health, criminal justice, and socioeconomic outcomes among people subject to compulsory mental health care in Norway: a nationwide registry cohort study.</h3>
+      <p class="paper-authors">Hofstad T, Nyttingnes O, Blindheim AA, Håheim ES et al.</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42870691" style="animation-delay:0.48s">
+      <div class="paper-meta">
+        <span class="paper-journal">Dev Sci</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1111%2Fdesc.70289" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Exploring a Range of Potential Factors Promoting and Constraining EF in South African Preschoolers.</h3>
+      <p class="paper-authors">Beukes J, Cook C, Howard SJ, Scerif G et al.</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42868748" style="animation-delay:0.56s">
+      <div class="paper-meta">
+        <span class="paper-journal">Mult Scler Relat Disord</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.msard.2026.107976" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Development and validation of a social vulnerability index for use in Canadians living with multiple sclerosis.</h3>
+      <p class="paper-authors">Gottheil C, Fakolade A, Maxwell CJ, Rotstein DL et al.</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42860264" style="animation-delay:0.64s">
+      <div class="paper-meta">
+        <span class="paper-journal">Pediatrics</span>
+        <span class="paper-date">2026 Nov 1</span>
+        <a class="paper-doi" href="https://doi.org/pii%3A%20e2025074683.%20doi%3A%2010.1542%2Fpeds.2025-074683" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Adolescent Worry About Experiencing Firearm Violence and Its Association With Mental Health.</h3>
+      <p class="paper-authors">Hindmarch GM, Meza JI, Lopez R Jr, Padilla-Frausto DI et al.</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42859635" style="animation-delay:0.72s">
+      <div class="paper-meta">
+        <span class="paper-journal">Brain Behav Immun Health</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.bbih.2026.101358" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Pain mediates the association between psychological distress and increases in inflammation in middle-aged and older rural adults: A longitudinal cohort study.</h3>
+      <p class="paper-authors">Song S</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42849361" style="animation-delay:0.8s">
+      <div class="paper-meta">
+        <span class="paper-journal">Maturitas</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.maturitas.2026.109148" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">A feasibility study investigating quantitative and qualitative effects of exercise in the workplace during work time for menopausal women.</h3>
+      <p class="paper-authors">Delextrat A, Walsh G, Sabir L, Baines K et al.</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42830929" style="animation-delay:0.88s">
+      <div class="paper-meta">
+        <span class="paper-journal">Prev Med Rep</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.pmedr.2026.103642" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Food insecurity and mental health in South Africa: Structural pathways linking socioeconomic position, behavioural risk factors and comorbidity.</h3>
+      <p class="paper-authors">Nkosi L, Nigussie T, Ayo-Yusuf OA</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42820261" style="animation-delay:0.96s">
+      <div class="paper-meta">
+        <span class="paper-journal">Bipolar Disord</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1111%2Fbdi.70189" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">The Impact of Sexual Satisfaction on Marital Adjustment, Quality of Life, and Treatment Adherence in Patients Diagnosed With Bipolar Disorder and Their Spouses: A Cross-Sectional Study.</h3>
+      <p class="paper-authors">Demirel Z, Ozdemir N, Atayoglu AG</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42810317" style="animation-delay:1.04s">
+      <div class="paper-meta">
+        <span class="paper-journal">Soc Sci Med</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.socscimed.2026.119839" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Home as workplace: Employment conditions, employer relationships, and mental health among migrant domestic workers in Macao, China.</h3>
+      <p class="paper-authors">Sumerlin TS, Yosua I, Hall BJ</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42800191" style="animation-delay:1.12s">
+      <div class="paper-meta">
+        <span class="paper-journal">Soc Sci Med</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.socscimed.2026.119843" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Growing up with ADHD: How diagnosis shapes socioeconomic trajectories.</h3>
+      <p class="paper-authors">Tholimet M</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42777310" style="animation-delay:1.2s">
+      <div class="paper-meta">
+        <span class="paper-journal">Soc Sci Med</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.socscimed.2026.119869" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Workplace discrimination in relation to mental well-being and suicidal ideation.</h3>
+      <p class="paper-authors">Weinmann T, Herbig B, Sischka P</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42732758" style="animation-delay:1.28s">
+      <div class="paper-meta">
+        <span class="paper-journal">Clin Psychol Rev</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.cpr.2026.102801" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Burnout and secondary traumatic stress in child protection workers: Untangling the role of personal and work-related factors using meta-analysis.</h3>
+      <p class="paper-authors">Roest J, Vang ML, Stams GJ, Turkanović I et al.</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42732202" style="animation-delay:1.36s">
+      <div class="paper-meta">
+        <span class="paper-journal">Biol Psychiatry Glob Open Sci</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.bpsgos.2026.100789" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Associations Between Teenage Motherhood, Perinatal Cortical Maturation, and Risk of Psychopathology in Children: The Mediating Role of Pregnancy Complications.</h3>
+      <p class="paper-authors">Paysserand A, Belzeaux R, Auzias G, Lefrere A et al.</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42727658" style="animation-delay:1.44s">
+      <div class="paper-meta">
+        <span class="paper-journal">Ann Epidemiol</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.annepidem.2026.110274" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Food insecurity inequities among US adults: An application of intersectional multilevel analysis of individual heterogeneity and discriminatory accuracy (I-MAIHDA) with random effects.</h3>
+      <p class="paper-authors">Robertson M, Sanborn J, Parcesepe A, Penrose K et al.</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42727351" style="animation-delay:1.52s">
+      <div class="paper-meta">
+        <span class="paper-journal">Soc Sci Med</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.socscimed.2026.119795" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">How education gets under the skin: Pathways linking educational advantage to slower biological aging.</h3>
+      <p class="paper-authors">Lisch M, Farina M</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42685392" style="animation-delay:1.6s">
+      <div class="paper-meta">
+        <span class="paper-journal">Soc Sci Med</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.socscimed.2026.119777" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Tree canopy is associated with lower levels of depression, but not for everyone: Findings from a large, nationally representative sample.</h3>
+      <p class="paper-authors">Beyer KMM, Zhou Y, Canales B, Pearson AL</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42671223" style="animation-delay:1.68s">
+      <div class="paper-meta">
+        <span class="paper-journal">Astrobiology</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1177%2F15311074261483886" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Diversity Lost in Space: Discrimination and Exclusion in Astrobiology.</h3>
+      <p class="paper-authors">Aydinoglu AU, Ozer OK</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42649609" style="animation-delay:1.76s">
+      <div class="paper-meta">
+        <span class="paper-journal">Dyslexia</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1002%2Fdys.70047" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Psychoeducational Challenges of Dyslexic Children During the COVID-19 Pandemic: A Systematic Review.</h3>
+      <p class="paper-authors">Ghasemi SA, SalarSadeghi M, Miri M, Khamesan A</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42608666" style="animation-delay:1.84s">
+      <div class="paper-meta">
+        <span class="paper-journal">Aliment Pharmacol Ther</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1111%2Fapt.70930" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Neighbourhood Deprivation Is Associated With Greater Mortality in Patients With Alcohol-Associated Liver Disease.</h3>
+      <p class="paper-authors">Ghani L, Faulkner CS, Aboona MB, Hariharan P et al.</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42593359" style="animation-delay:1.92s">
+      <div class="paper-meta">
+        <span class="paper-journal">Nurs Res</span>
+        <span class="paper-date">2026 Nov-Dec 01</span>
+        <a class="paper-doi" href="https://doi.org/10.1097%2FNNR.0000000000000938" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Cognitive Decline and Fear of Falling Among Community-Dwelling Racially Diverse Older Adults in Low-Income Settings.</h3>
+      <p class="paper-authors">Komalasari R, Hill NL, Thiamwong L</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42576416" style="animation-delay:2s">
+      <div class="paper-meta">
+        <span class="paper-journal">Health Econ</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1002%2Fhec.70142" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Recreational Marijuana Laws and Workplace Absence.</h3>
+      <p class="paper-authors">Brown M</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42574936" style="animation-delay:2s">
+      <div class="paper-meta">
+        <span class="paper-journal">J Prev Alzheimers Dis</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.tjpad.2026.100652" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Comprehensive social determinants of health and brain health in midlife.</h3>
+      <p class="paper-authors">Dintica CS, Cheunkarndee J, Bryan RN, Launer LJ et al.</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42561898" style="animation-delay:2s">
+      <div class="paper-meta">
+        <span class="paper-journal">Psychiatry Res</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.psychres.2026.117337" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Long after the split: The association between parental divorce and mental health in adults.</h3>
+      <p class="paper-authors">Schilke MK, Baiden P, Fuller-Thomson E</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42538234" style="animation-delay:2s">
+      <div class="paper-meta">
+        <span class="paper-journal">Z Evid Fortbild Qual Gesundhwes</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.zefq.2026.06.005" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">[Prevalence and health correlates of specific forms of psychological violence against healthcare workers: A secondary data analysis based on a representative sample].</h3>
+      <p class="paper-authors">Stopperka GM, Braun A, Moser J, Mitzscherlich B et al.</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42537916" style="animation-delay:2s">
+      <div class="paper-meta">
+        <span class="paper-journal">Am J Prev Med</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.amepre.2026.108534" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Structural Context and Lived Experience as Complementary Indicators of Youth Mental Health Risk.</h3>
+      <p class="paper-authors">Mitchell KJ, Colburn D, Banyard V</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42526778" style="animation-delay:2s">
+      <div class="paper-meta">
+        <span class="paper-journal">J Pain</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jpain.2026.106313" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Social determinants of health as predictors of latent symptom clusters in patients undergoing maintenance hemodialysis: A secondary analysis of the HOPE consortium randomized trial.</h3>
+      <p class="paper-authors">Steel JL, Lockwood MB, Yabes JG, Hsu JY et al.</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42525598" style="animation-delay:2s">
+      <div class="paper-meta">
+        <span class="paper-journal">J Trauma Acute Care Surg</span>
+        <span class="paper-date">2026 Nov 1</span>
+        <a class="paper-doi" href="https://doi.org/10.1097%2FTA.0000000000005150" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Socioeconomic and geographic variation in response to trauma medical home intervention.</h3>
+      <p class="paper-authors">Ilkhani S, Boustani M, Holler E, Ortiz D et al.</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42480891" style="animation-delay:2s">
+      <div class="paper-meta">
+        <span class="paper-journal">Am J Obstet Gynecol</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.ajog.2026.07.023" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Depressive symptoms and associated factors among obstetrics and gynecology first-year residents.</h3>
+      <p class="paper-authors">Frank E, Rossi J, Zhao Z, Pereira-Lima K et al.</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42447533" style="animation-delay:2s">
+      <div class="paper-meta">
+        <span class="paper-journal">Early Hum Dev</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.earlhumdev.2026.106619" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Prenatal cannabis exposure and infant neurodevelopment: A scoping review of evidence and methodological gaps.</h3>
+      <p class="paper-authors">Quinn T, Wu W, Pantzer C, Liu P et al.</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42447384" style="animation-delay:2s">
+      <div class="paper-meta">
+        <span class="paper-journal">J Cardiovasc Nurs</span>
+        <span class="paper-date">2026 Nov-Dec 01</span>
+        <a class="paper-doi" href="https://doi.org/10.1097%2FJCN.0000000000001363" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Cardiovascular and All-Cause Mortality in Behavioral Clusters of Adults With Cardiometabolic Syndrome: A Data-Driven Model.</h3>
+      <p class="paper-authors">Hooshanginezhad Z, Mohammadi T, Mohammadi B</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42443101" style="animation-delay:2s">
+      <div class="paper-meta">
+        <span class="paper-journal">J Women Aging</span>
+        <span class="paper-date">2026 Nov-Dec</span>
+        <a class="paper-doi" href="https://doi.org/10.1080%2F08952841.2026.2701465" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Psychosocial challenges faced by older widows in Bangladesh: A qualitative study.</h3>
+      <p class="paper-authors">Hasan MK, Hossain MS, Pope ND</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42443096" style="animation-delay:2s">
+      <div class="paper-meta">
+        <span class="paper-journal">Addiction</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1111%2Fadd.70547" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">The association between job loss and alcohol and tobacco use.</h3>
+      <p class="paper-authors">Weatherburn D, Alexeev S</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42374744" style="animation-delay:2s">
+      <div class="paper-meta">
+        <span class="paper-journal">Pediatr Emerg Care</span>
+        <span class="paper-date">2026 Nov 1</span>
+        <a class="paper-doi" href="https://doi.org/10.1097%2FPEC.0000000000003644" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Pediatric Behavioral Health Emergencies Before, During, and After the COVID-19 Pandemic.</h3>
+      <p class="paper-authors">Chi V, Vongsachang H, Saynina O, Wang NE</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42363958" style="animation-delay:2s">
+      <div class="paper-meta">
+        <span class="paper-journal">Eur Child Adolesc Psychiatry</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1007%2Fs00787-026-03071-x" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Brain correlates of cognitive reserve in offspring of patients with schizophrenia or bipolar disorder.</h3>
+      <p class="paper-authors">Camprodon-Boadas P, De la Serna E, Ortuño M, Ilzarbe D et al.</p>
+      
+    </div>
+    <div class="paper-card" data-pmid="42362066" style="animation-delay:2s">
+      <div class="paper-meta">
+        <span class="paper-journal">J Affect Disord</span>
+        <span class="paper-date">2026 Nov 1</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jad.2026.122176" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Maternal depression and paternity leave-taking in Italy: the mediating role of coparenting and parenting stress.</h3>
+      <p class="paper-authors">Filippi B, Mancinelli E</p>
+      
+    </div>
+  </section>
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by NVIDIA Nemotron</p>
+  </footer>
+</div>
+</body>
+</html>
