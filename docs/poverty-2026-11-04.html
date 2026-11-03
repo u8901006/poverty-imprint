@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Poverty Imprint 研究日報 - 2026-11-04</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--accent-light:#f4e4d4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0%,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:'Inter','Noto Serif TC',serif;line-height:1.7;padding:2rem 1rem;min-height:100vh}
+.container{max-width:880px;margin:0 auto}
+.report-header{text-align:center;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:2px solid var(--line)}
+.logo{font-size:3rem;margin-bottom:0.5rem}
+h1{font-size:1.8rem;font-weight:700;color:var(--accent);font-family:'Noto Serif TC',serif;margin-bottom:0.25rem}
+h2{font-size:1.3rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;font-weight:600;line-height:1.5;margin-bottom:0.5rem}
+.subtitle{color:var(--muted);font-size:0.95rem}
+.date{font-size:1.1rem;font-weight:600;color:var(--muted);margin-top:0.5rem}
+.stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+.stat-item{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0.5rem 1rem;font-size:0.85rem;color:var(--muted)}
+.paper-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:1.5rem;margin-bottom:1.5rem;animation:fadeIn 0.6s ease-out both}
+.paper-card:nth-child(n){animation-delay:calc(var(--idx,0)*0.08s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.paper-meta{display:flex;gap:0.75rem;align-items:center;margin-bottom:0.5rem;flex-wrap:wrap;font-size:0.8rem}
+.paper-journal{background:var(--accent);color:#fff;padding:0.15rem 0.6rem;border-radius:4px;font-weight:500;font-size:0.75rem}
+.paper-date{color:var(--muted)}
+.paper-doi{color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--accent-soft);padding:0.1rem 0.5rem;border-radius:4px;font-size:0.75rem}
+.paper-doi:hover{background:var(--accent-soft)}
+.paper-title{color:var(--text);font-family:'Noto Serif TC',serif;font-size:1.05rem;font-weight:600;line-height:1.6}
+.paper-authors{color:var(--muted);font-size:0.85rem;margin-bottom:0.5rem}
+.paper-abstract{color:var(--text);font-size:0.9rem;line-height:1.8;margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--line)}
+.no-papers{color:var(--muted);text-align:center;padding:3rem 1rem;font-size:1rem}
+.overall-summary{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem;line-height:1.9;font-size:0.95rem}
+.topic-distribution{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem;margin-bottom:2rem}
+.topic-row{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem}
+.topic-label{min-width:180px;font-size:0.85rem;color:var(--text);text-align:right;flex-shrink:0}
+.topic-bar{flex:1;background:var(--bg);border-radius:6px;overflow:hidden;height:24px}
+.topic-bar-fill{background:linear-gradient(90deg,var(--accent),#b36b3f);height:100%;border-radius:6px;display:flex;align-items:center;padding-left:0.5rem;color:#fff;font-size:0.75rem;font-weight:500;min-width:0;transition:width 0.6s ease}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:1rem 0}
+.pico-item{background:var(--bg);border-radius:6px;padding:0.75rem}
+.pico-label{font-size:0.7rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+.pico-value{font-size:0.85rem;color:var(--text);line-height:1.5}
+.badge{display:inline-block;padding:0.2rem 0.7rem;border-radius:12px;font-size:0.75rem;font-weight:600;margin-top:0.5rem}
+.badge-high{background:#d4edda;color:#155724}
+.badge-medium{background:#fff3cd;color:#856404}
+.badge-low{background:#e2e3e5;color:#383d41}
+.findings{margin:0.75rem 0;padding-left:1.25rem}
+.findings li{font-size:0.88rem;color:var(--text);line-height:1.7;margin-bottom:0.3rem}
+.keywords{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.75rem}
+.keyword-pill{background:var(--accent-soft);color:var(--accent);padding:0.15rem 0.6rem;border-radius:12px;font-size:0.75rem;font-weight:500}
+.category-section{margin-bottom:2.5rem}
+.category-title{font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;padding-bottom:0.4rem;border-bottom:2px solid var(--accent-soft);display:flex;align-items:center;gap:0.5rem}
+.category-count{background:var(--accent-soft);color:var(--accent);font-size:0.75rem;padding:0.15rem 0.5rem;border-radius:10px;font-weight:600}
+.report-footer{margin-top:3rem;padding-top:2rem;border-top:2px solid var(--line);text-align:center}
+.footer-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.footer-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.6rem 1.2rem;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:all 0.2s;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.footer-btn:hover{background:var(--accent-soft);border-color:var(--accent)}
+.footer-btn.coffee{background:#ffdd00;border-color:#e6c800;color:#2b2118}
+.footer-btn.coffee:hover{background:#ffe533}
+.footer-note{color:var(--muted);font-size:0.8rem;margin-top:0.75rem}
+@media(max-width:640px){.pico-grid{grid-template-columns:1fr}.topic-row{flex-direction:column;align-items:flex-start}.topic-label{text-align:left;min-width:auto}.stats{flex-direction:column;align-items:center}.footer-links{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="report-header">
+    <div class="logo">&#128300;</div>
+    <h1>Poverty Imprint 研究日報</h1>
+    <p class="subtitle">貧窮印記：跨領域研究每日精選</p>
+    <p class="date">2026-11-04</p>
+    <div class="stats">
+      <span class="stat-item">&#128196; 10 篇文獻</span>
+      <span class="stat-item">&#9888; AI 分析暫時無法使用，僅顯示原始摘要</span>
+    </div>
+  </header>
+  <section class="papers-section">
+    <h2>&#128209; 文獻列表</h2>
+    
+    <div class="paper-card" data-pmid="42972407" style="animation-delay:0s">
+      <div class="paper-meta">
+        <span class="paper-journal">BMC Med</span>
+        <span class="paper-date">2026 Nov 2</span>
+        <a class="paper-doi" href="https://doi.org/pii%3A%20612.%20doi%3A%2010.1186%2Fs12916-026-05382-x" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Early-life parental income mobility and risk of depression and anxiety in adolescence and young adulthood among non-immigrants and second-generation immigrants.</h3>
+      <p class="paper-authors">Okuyama K, Lönn SL, Hamano T, Khoshnood AM et al.</p>
+      <p class="paper-abstract">BACKGROUND: Little is known about the association between early-life income mobility patterns and the subsequent risk of depression/anxiety among immigrant populations. Understanding these associations may help identify persistent low income and declining income as potential risk factors for depression and anxiety in immigrant populations. We aimed to investigate whether parental income mobility patterns during childhood are associated with the risk of depression/anxiety during adolescence and y...</p>
+    </div>
+    <div class="paper-card" data-pmid="42970856" style="animation-delay:0.08s">
+      <div class="paper-meta">
+        <span class="paper-journal">Radiography (Lond)</span>
+        <span class="paper-date">2026 Nov 2</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.radi.2026.103620" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Assessment of mental health literacy among undergraduate radiography students in Ghana: A single-centre cross-sectional study.</h3>
+      <p class="paper-authors">Della Atuwo-Ampoh V, Zormelo G, Angaag N, Armah R et al.</p>
+      <p class="paper-abstract">INTRODUCTION: Mental health literacy (MHL) is a critical determinant of early recognition of mental disorders, appropriate help-seeking behaviour, and stigma reduction. Undergraduate radiography students are vulnerable to mental health challenges; however, evidence on their MHL in Ghana remains scarce. This study assessed MHL level and associated factors among radiography students. METHODS: A quantitative cross-sectional design was employed. Data were collected from 201 students using a structur...</p>
+    </div>
+    <div class="paper-card" data-pmid="42776098" style="animation-delay:0.16s">
+      <div class="paper-meta">
+        <span class="paper-journal">J Adolesc Health</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jadohealth.2026.07.003" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Food Insecurity, Housing Instability, and Neighborhood Context: Pathways to Adolescent Mental Health.</h3>
+      <p class="paper-authors">Singh S, Polavarapu M, Shrestha A, Azeem SS</p>
+      <p class="paper-abstract">PURPOSE: Adolescent mental health challenges in the United States have reached critical levels. This is a sensitive developmental period during which exposure to household-level hardships, such as food insecurity and housing instability, and adverse neighborhood environments may heighten vulnerability to mental, emotional, developmental, and behavioral health (MEDBH). This study examined the pathways through which household-level and neighborhood factors influence adolescent MEDBH. METHODS: Usin...</p>
+    </div>
+    <div class="paper-card" data-pmid="42975016" style="animation-delay:0.24s">
+      <div class="paper-meta">
+        <span class="paper-journal">Child Dev</span>
+        <span class="paper-date">2026 Nov 3</span>
+        <a class="paper-doi" href="https://doi.org/pii%3A%20aacag206.%20doi%3A%2010.1093%2Fchidev%2Faacag206" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Parental scaffolding and cognitive development in early childhood: Insights from a dynamic systems perspective.</h3>
+      <p class="paper-authors">Hamaoui J, Aubin R, Maranda G, Zelazo PD et al.</p>
+      <p class="paper-abstract">Grounded in dynamic systems theory, which conceptualizes parent-child interactions as evolving systems of reciprocal influence over time, the main objective of this study was to examine which patterns of parent-child scaffolding in a problem-solving situation were associated with children&#39;s early cognitive development and to explore whether these patterns were influenced by prior child characteristics. A total of 193 mother-child dyads (109 girls) were observed during a number-image association ...</p>
+    </div>
+    <div class="paper-card" data-pmid="42972174" style="animation-delay:0.32s">
+      <div class="paper-meta">
+        <span class="paper-journal">J Racial Ethn Health Disparities</span>
+        <span class="paper-date">2026 Nov 2</span>
+        <a class="paper-doi" href="https://doi.org/10.1007%2Fs40615-026-03250-1" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Food Insecurity, Mental Health, and Healthcare Financial Hardship in a Nationally Representative Sample of Hispanic/Latino Adults in the United States.</h3>
+      <p class="paper-authors">Masa R, Villegas N, Baruah D, Cianelli R et al.</p>
+      <p class="paper-abstract">BACKGROUND: Food insecurity is a major social determinant of health and may contribute to poorer mental health and healthcare financial hardship, particularly among Hispanic/Latino adults in the United States. Evidence from nationally representative data remains limited. METHODS: This cross-sectional study analyzed data from the 2024 National Health Interview Survey, restricted to Hispanic/Latino adults aged 18&amp;#xa0;years and older.&amp;#xa0;Food insecurity was the primary exposure and was measured ...</p>
+    </div>
+    <div class="paper-card" data-pmid="42970984" style="animation-delay:0.4s">
+      <div class="paper-meta">
+        <span class="paper-journal">Int J Drug Policy</span>
+        <span class="paper-date">2026 Nov 2</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.drugpo.2026.105580" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">How climate change already impacts people who use alcohol and other drugs: Australian service staff perspectives.</h3>
+      <p class="paper-authors">J MS, Julia N, Lisa K, Downey H et al.</p>
+      <p class="paper-abstract">Increased prevalence and intensity of extreme weather events, as well as more gradual climatic shifts, have disproportionate impacts for people who experience poverty and stigmatisation. This includes many who engage with alcohol and other drug (AoD) services. The aim of this paper is to identify a broad range of already-occurring climate change impacts on Australian AoD service users, as observed by service staff. This is an interpretive qualitative study. Climate change impacts are conceptuali...</p>
+    </div>
+    <div class="paper-card" data-pmid="42970044" style="animation-delay:0.48s">
+      <div class="paper-meta">
+        <span class="paper-journal">Int Urol Nephrol</span>
+        <span class="paper-date">2026 Nov 2</span>
+        <a class="paper-doi" href="https://doi.org/10.1007%2Fs11255-026-05465-x" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Disability in chronic kidney disease.</h3>
+      <p class="paper-authors">Parmar MS</p>
+      <p class="paper-abstract">PURPOSE: Frailty, sarcopenia, depression, and cognitive impairment are each well documented in chronic kidney disease (CKD) and have each been the subject of detailed, single-domain reviews, but are rarely considered together as a single construct that determines whether a patient can work, self-manage, and participate in decisions about their own care. This narrative review positions these overlapping yet distinct conditions within the World Health Organization International Classification of F...</p>
+    </div>
+    <div class="paper-card" data-pmid="42776099" style="animation-delay:0.56s">
+      <div class="paper-meta">
+        <span class="paper-journal">J Adolesc Health</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1016%2Fj.jadohealth.2026.07.008" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Changes in Susceptibility to Cannabis Use From Late Childhood to Early Adolescence.</h3>
+      <p class="paper-authors">Tang Z, Dai HD</p>
+      <p class="paper-abstract">PURPOSE: Cannabis use during early adolescence can negatively affect brain development and increase the risk of adverse health. We aimed to examine trends and correlates of cannabis-use susceptibility, a psychosocial receptivity construct capturing openness to future use (i.e., absence of a firm commitment not to use, curiosity, and willingness to try if offered) among youth who have not initiated cannabis. METHODS: This study analyzed five waves of the adolescent brain cognitive development (AB...</p>
+    </div>
+    <div class="paper-card" data-pmid="42045638" style="animation-delay:0.64s">
+      <div class="paper-meta">
+        <span class="paper-journal">AIDS Behav</span>
+        <span class="paper-date">2026 Nov</span>
+        <a class="paper-doi" href="https://doi.org/10.1007%2Fs10461-026-05145-y" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">The Relationship Between Financial Well-Being and Antiretroviral Therapy Adherence in Youth with HIV in the United States.</h3>
+      <p class="paper-authors">Stoner MCD, Shrestha I, Neilands TB, Ming K et al.</p>
+      <p class="paper-abstract">Youth and young adults experience high attrition across the HIV care continuum, including elevated risk of antiretroviral therapy (ART) nonadherence and virologic failure. This study examined how financial well-being relates to ART adherence among youth with HIV (YWH), including those using oral or LAI-based regimens. We analyzed baseline data from YWH aged 18-29 years in the United States enrolled between 2023 and 2025 in a randomized controlled trial addressing HIV care barriers, mental health...</p>
+    </div>
+    <div class="paper-card" data-pmid="42975406" style="animation-delay:0.72s">
+      <div class="paper-meta">
+        <span class="paper-journal">JAMA Netw Open</span>
+        <span class="paper-date">2026 Nov 2</span>
+        <a class="paper-doi" href="https://doi.org/10.1001%2Fjamanetworkopen.2026.46816" target="_blank" rel="noopener">DOI</a>
+      </div>
+      <h3 class="paper-title">Full-Service Mobile Food Markets and Dietary Quality in Low-Income Housing Communities: A Randomized Clinical Trial.</h3>
+      <p class="paper-authors">Horning ML, Gorman KS, Wagner S, Fulkerson JA et al.</p>
+      <p class="paper-abstract">IMPORTANCE: Full-service mobile markets, also known as grocery stores on wheels, may improve diet-related outcomes by bringing low-cost, nutritious food to individuals experiencing low incomes and low food access. OBJECTIVE: To determine the impact of the full-service Twin Cities Mobile Market on dietary outcomes in low-income communities. DESIGN, SETTING, PARTICIPANTS: This cluster randomized clinical trial was conducted over 3 waves (January 2022 to October 2025) across 12 public or private su...</p>
+    </div>
+  </section>
+  
+  <footer class="report-footer">
+    <div class="footer-links">
+      <a href="https://www.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#127973; 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" class="footer-btn" target="_blank" rel="noopener">&#128236; 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" class="footer-btn coffee" target="_blank" rel="noopener">&#9749; Buy me a coffee</a>
+    </div>
+    <p class="footer-note">Poverty Imprint Research Daily &mdash; Powered by NVIDIA Nemotron</p>
+  </footer>
+</div>
+</body>
+</html>
